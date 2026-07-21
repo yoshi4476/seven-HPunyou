@@ -156,8 +156,17 @@ header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(253,252,24
 .logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:15px;text-decoration:none;color:var(--navy)}
 .logo b{color:var(--gold-soft)}
 .nav ul{display:flex;gap:26px;list-style:none}
-.nav ul a{text-decoration:none;font-size:13.5px;color:var(--muted);padding:10px 2px}
+.nav ul li{position:relative}
+.nav ul a{text-decoration:none;font-size:13.5px;color:var(--muted);padding:10px 2px;display:inline-block}
 .nav ul a:hover{color:var(--navy)}
+/* サービスのドロップダウン(ホバー/キーボードフォーカスで展開) */
+.has-sub>a::after{content:"▾";font-size:9px;color:var(--gold-soft);margin-left:5px}
+.nav .sub{position:absolute;top:100%;left:-16px;display:none;min-width:230px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 44px rgba(29,52,97,.16);padding:10px;z-index:70}
+.has-sub:hover .sub,.has-sub:focus-within .sub{display:grid;gap:2px}
+.nav .sub li{position:static}
+.nav .sub a{display:block;padding:11px 14px;border-radius:8px;font-size:13px;color:var(--text);white-space:nowrap}
+.nav .sub a:hover{background:var(--gold-pale);color:var(--gold-em)}
+.nav .sub .all{border-top:1px dashed var(--line);margin-top:4px;color:var(--navy2);font-weight:700}
 .nav .btn{min-height:44px;padding:8px 22px;font-size:13.5px}
 @media(max-width:860px){.nav ul{display:none}}
 
@@ -459,7 +468,16 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
   <div class="nav">
     <a class="logo" href="#top">SEVEN<b>―</b>SENSES</a>
     <ul>
-      <li><a href="#services">サービス</a></li>
+      <li class="has-sub">
+        <a href="#services" aria-haspopup="true">サービス</a>
+        <ul class="sub" aria-label="サービス一覧">
+          <li><a href="/service/hojokin/">補助金申請サポート</a></li>
+          <li><a href="/service/dev/">システム開発・AI導入</a></li>
+          <li><a href="/service/aio/">AIOコンサルティング</a></li>
+          <li><a href="/service/meo/">MEOコンサルティング</a></li>
+          <li><a class="all" href="#services">サービス概要(このページ内)</a></li>
+        </ul>
+      </li>
       <li><a href="#cases">事例</a></li>
       <li><a href="#diagnosis">無料診断</a></li>
       <li><a href="/blog/">ブログ</a></li>
