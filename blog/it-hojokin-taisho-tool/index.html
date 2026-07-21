@@ -62,7 +62,20 @@ header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop
 .logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
 .logo b{color:var(--gold)}
 .nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
-main{max-width:760px;margin:0 auto;padding:44px 22px 80px}
+main{max-width:1150px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-template-columns:minmax(0,760px) 300px;gap:44px;justify-content:center;align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:84px;display:grid;gap:16px}
+@media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
+.side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
+.side .sbox p.t{font-family:var(--num);font-size:11px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.side .sbox li{margin:0}
+.side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
+.side .sbox a:hover{border-color:var(--line2);color:var(--gold-strong)}
+.side .scta{background:linear-gradient(150deg,#132445,#1d3461 60%,#24427c);border-radius:12px;padding:22px;color:#fff;text-align:center}
+.side .scta p{font-family:var(--serif);font-weight:800;font-size:15px;line-height:1.8;margin:0 0 12px;color:#fff}
+.side .scta a{display:block;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.side .scta a.g{background:none;border:1.5px solid rgba(255,255,255,.5);color:#fff}
 .crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
 .crumb a{color:var(--dim);text-decoration:none}
 .crumb a:hover{color:var(--gold-strong)}
@@ -122,6 +135,7 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
   </div>
 </header>
 <main>
+<div class="main-col">
   <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">ブログ</a> › 対象ツールと選び方</nav>
   <span class="cat">補助金</span>
   <h1>IT導入補助金の対象ツールと選び方(令和8年度)</h1>
@@ -326,6 +340,32 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 <li><a href="/blog/it-hojokin-vendor/">IT導入補助金のベンダー(支援事業者)の選び方</a></li>
 <li><a href="/blog/it-hojokin-schedule/">IT導入補助金 令和8年度のスケジュールと逆算準備</a></li></ul>
   </div>
+</div>
+<aside class="side">
+  <div class="sbox">
+    <p class="t">CATEGORY</p>
+    <ul>
+      <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
+      <li><a href="/blog/category/aio/">AIO(AI検索対策)の記事一覧</a></li>
+      <li><a href="/blog/category/meo/">MEOの記事一覧</a></li>
+      <li><a href="/blog/category/dev/">システム開発の記事一覧</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">SERVICE</p>
+    <ul>
+      <li><a href="/service/hojokin/">補助金申請サポート</a></li>
+      <li><a href="/service/dev/">システム開発・AI導入</a></li>
+      <li><a href="/service/aio/">AIOコンサルティング</a></li>
+      <li><a href="/service/meo/">MEOコンサルティング</a></li>
+    </ul>
+  </div>
+  <div class="scta">
+    <p>導入費を最大470万円、<br>圧縮できるか無料診断。</p>
+    <a href="/#diagnosis">無料診断を試す</a>
+    <a class="g" href="/#contact">無料で相談する</a>
+  </div>
+</aside>
 </main>
 <footer>
   <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="/privacy/">プライバシーポリシー</a></nav>

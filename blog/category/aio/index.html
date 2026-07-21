@@ -44,7 +44,20 @@ header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop
 .logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
 .logo b{color:var(--gold)}
 .nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
-main{max-width:1120px;margin:0 auto;padding:56px 22px 90px}
+main{max-width:1150px;margin:0 auto;padding:56px 22px 90px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px;align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:84px;display:grid;gap:16px}
+@media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static}}
+.side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
+.side .sbox p.t{font-family:var(--num);font-size:11px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.side .sbox li{margin:0}
+.side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
+.side .sbox a:hover{border-color:var(--line2);color:var(--gold-strong)}
+.side .scta{background:linear-gradient(150deg,#132445,#1d3461 60%,#24427c);border-radius:12px;padding:22px;color:#fff;text-align:center}
+.side .scta p{font-family:var(--serif);font-weight:800;font-size:15px;line-height:1.8;margin:0 0 12px;color:#fff}
+.side .scta a{display:block;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.side .scta a.g{background:none;border:1.5px solid rgba(255,255,255,.5);color:#fff}
 .crumb{font-size:12px;color:var(--dim);margin-bottom:20px}
 .crumb a{color:var(--dim);text-decoration:none}
 .kicker{font-family:var(--num);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:16px}
@@ -57,8 +70,7 @@ h1{font-family:var(--serif);font-weight:800;font-size:clamp(26px,4.4vw,38px);lin
 .filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
 .filter{display:inline-flex;align-items:center;min-height:44px;padding:8px 20px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:13px;font-weight:700;text-decoration:none;background:#fff}
 .filter[aria-current="true"]{border-color:var(--line2);color:var(--gold-strong);background:rgba(217,179,106,.1)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:920px){.grid{grid-template-columns:1fr 1fr}}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 @media(max-width:600px){.grid{grid-template-columns:1fr}}
 .post{background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;transition:border-color .15s,transform .15s;display:flex;flex-direction:column;box-shadow:0 10px 34px rgba(29,52,97,.06)}
 .post:hover{border-color:var(--line2);transform:translateY(-3px)}
@@ -84,6 +96,7 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
   </div>
 </header>
 <main>
+<div class="main-col">
   <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">ブログ</a> › AIO</nav>
   <p class="kicker">Blog — 毎日更新</p>
   <h1>カテゴリ: <span style='color:#8a6a20'>AIO</span>の記事一覧</h1>
@@ -134,6 +147,32 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
     <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
     大阪・東成区のデジタルマーケティング&AI導入支援会社。IT導入補助金の申請支援50社+、MEO事業「G-ran」運営。<a href="/#contact" style="color:var(--gold-strong)">無料相談はこちら</a>。</div>
   </div>
+</div>
+<aside class="side">
+  <div class="sbox">
+    <p class="t">CATEGORY</p>
+    <ul>
+      <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
+      <li><a href="/blog/category/aio/">AIO(AI検索対策)の記事一覧</a></li>
+      <li><a href="/blog/category/meo/">MEOの記事一覧</a></li>
+      <li><a href="/blog/category/dev/">システム開発の記事一覧</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">SERVICE</p>
+    <ul>
+      <li><a href="/service/hojokin/">補助金申請サポート</a></li>
+      <li><a href="/service/dev/">システム開発・AI導入</a></li>
+      <li><a href="/service/aio/">AIOコンサルティング</a></li>
+      <li><a href="/service/meo/">MEOコンサルティング</a></li>
+    </ul>
+  </div>
+  <div class="scta">
+    <p>導入費を最大470万円、<br>圧縮できるか無料診断。</p>
+    <a href="/#diagnosis">無料診断を試す</a>
+    <a class="g" href="/#contact">無料で相談する</a>
+  </div>
+</aside>
 </main>
 <footer>
   <nav><a href="/">AI導入補助金LP</a><a href="/service/hojokin/">補助金サポート</a><a href="/service/aio/">AIOコンサル</a><a href="/service/meo/">MEOコンサル</a><a href="/service/dev/">システム開発</a><a href="/#diagnosis">無料診断</a><a href="/privacy/">プライバシーポリシー</a></nav>
