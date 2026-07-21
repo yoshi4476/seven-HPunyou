@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIO対策とは?ChatGPTに引用されるサイトの作り方|セブンセンシズ株式会社</title>
+<meta name="description" content="AIO(AI検索最適化)とは、ChatGPTなどのAI検索に自社サイトを引用させるための最適化施策です。AIに引用される7条件と、robots.txt・llms.txt・構造化データの実装手順を自社実践例つきで解説します。">
+<link rel="canonical" href="https://lp.7sensesplus.com/blog/aio-taisaku-guide/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AIO対策とは?ChatGPTに引用されるサイトの作り方">
+<meta property="og:description" content="AIO(AI検索最適化)とは、ChatGPTなどのAI検索に自社サイトを引用させるための最適化施策です。AIに引用される7条件と、robots.txt・llms.txt・構造化データの実装手順を自社実践例つきで解説します。">
+<meta property="og:url" content="https://lp.7sensesplus.com/blog/aio-taisaku-guide/">
+<meta property="og:image" content="https://lp.7sensesplus.com/ogp.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article",
+      "headline": "AIO対策とは?ChatGPTに引用されるサイトの作り方",
+      "description": "AIO(AI検索最適化)とは、ChatGPTなどのAI検索に自社サイトを引用させるための最適化施策です。AIに引用される7条件と、robots.txt・llms.txt・構造化データの実装手順を自社実践例つきで解説します。",
+      "datePublished": "2026-07-19",
+      "dateModified": "2026-07-19",
+      "inLanguage": "ja",
+      "mainEntityOfPage": "https://lp.7sensesplus.com/blog/aio-taisaku-guide/",
+      "author": { "@type": "Person", "@id": "https://lp.7sensesplus.com/#author", "name": "原口 優", "jobTitle": "代表取締役" },
+      "publisher": { "@type": "Organization", "@id": "https://lp.7sensesplus.com/#org", "name": "セブンセンシズ株式会社" } },
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lp.7sensesplus.com/" },
+      { "@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://lp.7sensesplus.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "AIO対策とは?ChatGPTに引用されるサイトの作り方" } ] },
+    { "@type": "FAQPage", "mainEntity": [
+      { "@type": "Question", "name": "AIO対策とSEO対策はどちらを優先すべきですか?", "acceptedAnswer": { "@type": "Answer", "text": "まずSEOの基本を固め、その上にAIO施策を重ねる進め方が現実的です。施策の多くは両方に効きます。" } },
+      { "@type": "Question", "name": "AIO対策の効果が出るまでどれくらいかかりますか?", "acceptedAnswer": { "@type": "Answer", "text": "サイトの状況にもよりますが、実装後1〜3カ月でAIからの言及や流入に変化が見え始める傾向があります。" } },
+      { "@type": "Question", "name": "AIO対策は自社だけで実装できますか?", "acceptedAnswer": { "@type": "Answer", "text": "robots.txtやFAQ追加は自社で可能です。構造化データやllms.txtは専門家の併走が安全です。" } }
+    ] }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
+  --line:#e7e2d4; --line2:rgba(176,139,62,.45);
+  --text:#212b3d; --muted:#5b6472; --dim:#8b90a0;
+  --gold:#9a7a33; --gold-strong:#8a6a20; --gold-ink:#171104;
+  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:2;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-strong)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{max-width:100%;height:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1120px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
+.logo b{color:var(--gold)}
+.nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
+main{max-width:760px;margin:0 auto;padding:44px 22px 80px}
+.crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
+.crumb a{color:var(--dim);text-decoration:none}
+.crumb a:hover{color:var(--gold-strong)}
+.cat{display:inline-block;font-size:11px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
+.meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
+.fresh-note b{color:var(--muted);font-weight:500}
+.summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
+.toc p{font-family:var(--num);font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
+.toc li{margin:7px 0}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--gold-strong)}
+article h2{font-family:var(--serif);font-weight:800;font-size:clamp(20px,3.2vw,25px);line-height:1.6;margin:54px 0 18px;padding-top:14px;border-top:1px solid var(--line);color:#1d3461}
+article h3{font-family:var(--serif);font-weight:800;font-size:17.5px;margin:34px 0 12px;color:var(--gold-strong)}
+article p{margin:16px 0;color:var(--text)}
+article ul,article ol{margin:16px 0 16px 24px;color:var(--text)}
+article li{margin:8px 0}
+article table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
+article strong{color:var(--gold-strong)}
+.table-scroll{overflow-x:auto;margin:20px 0}
+.action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
+.action-box b{color:var(--gold-strong)}
+.cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
+.cta-box p.t{font-family:var(--serif);font-weight:800;font-size:19px;line-height:1.7;margin-bottom:8px}
+.cta-box p.d{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.cta-box a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 30px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);font-weight:700;font-size:15px;text-decoration:none}
+.cta-box .micro{display:block;margin-top:10px;font-size:12px;color:var(--dim)}
+.faq-sec details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq-sec summary{list-style:none;cursor:pointer;padding:16px 46px 16px 20px;font-weight:700;font-size:14.5px;position:relative;line-height:1.7}
+.faq-sec summary::-webkit-details-marker{display:none}
+.faq-sec summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:20px;color:var(--gold)}
+.faq-sec details[open] summary::after{content:"−"}
+.faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
+.author{display:flex;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
+.author .av{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
+.author b{color:var(--text)}
+.rel{margin-top:50px}
+.rel p.t{font-family:var(--num);font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel ul{list-style:none;margin:0;display:grid;gap:10px}
+.rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
+.rel a:hover{border-color:var(--line2)}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--dim);text-align:center;line-height:1.9}
+footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="/">SEVEN<b>―</b>SENSES</a>
+    <a class="cta" href="/#contact">無料で相談する</a>
+  </div>
+</header>
+<main>
+  <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">ブログ</a> › AIO対策とは</nav>
+  <span class="cat">AIO</span>
+  <h1>AIO対策とは?ChatGPTに引用されるサイトの作り方</h1>
+  <div class="meta">
+    <span>公開: 2026.07.19</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 11分</span>
+  </div>
+  <p class="fresh-note">本記事は<b>2026年7月時点</b>の情報です|この記事は<b>AI検索時代の集客に関心のある中小企業経営者・Web担当者</b>向けです</p>
+
+  <!-- 冒頭200字: 断言文+キーワード(AIO最重要シグナル) -->
+  <div class="summary">AIO(AI検索最適化)とは、ChatGPTやGemini、Perplexityなどの生成AIに自社サイトを引用・推薦してもらうための最適化施策です。AIO対策の核心は「AIが読める形式で、一次情報を、冒頭で断言して書く」ことに尽きます。本記事では、AIに引用されるサイトの7条件と具体的な実装手順を、当社サイトでの実践例つきで解説します。</div>
+
+  <div class="toc">
+    <p>CONTENTS</p>
+    <ol><li><a href="#aio-toha">AIO(AI検索最適化)とは</a></li>
+<li><a href="#why-now">なぜ今AIO対策が必要なのか——検索行動の変化</a></li>
+<li><a href="#seven-conditions">AIに引用されるサイトの7条件</a></li>
+<li><a href="#implementation">AIO対策の実装手順(7ステップ)</a></li>
+<li><a href="#seo-vs-aio">SEOとの違いと関係</a></li>
+<li><a href="#jissen">自社での実践例——このサイト自体が実験場</a></li>
+<li><a href="#faq">よくある質問</a></li></ol>
+  </div>
+
+  <article>
+    <h2 id="aio-toha">AIO(AI検索最適化)とは</h2>
+    <p>AIO(AI Optimization)とは、生成AIの回答に自社の情報を引用させるための最適化施策です。ChatGPTやGeminiが質問に答えるとき、参照するWebサイトを選んでいます。その「選ばれる側」に入るための取り組みがAIOです。</p>
+    <p>従来のSEOは「Googleの検索結果で上位に表示されること」を目指しました。AIOは「AIの回答文の中で名前を出され、リンクされること」を目指します。ゴールが検索結果ページからAIの回答文へ移った、と捉えると分かりやすいはずです。</p>
+    <h3>類似用語との関係</h3>
+    <p>AIOの周辺には似た用語がいくつかあります。呼び方は違っても、やるべき施策の中身はほぼ共通です。</p>
+    <div class="table-scroll"><table>
+      <tr><th>用語</th><th>正式名称</th><th>意味合い</th></tr>
+      <tr><td>AIO</td><td>AI Optimization</td><td>AI検索全般への最適化。本記事で使う呼称</td></tr>
+      <tr><td>LLMO</td><td>Large Language Model Optimization</td><td>大規模言語モデルへの最適化。AIOとほぼ同義</td></tr>
+      <tr><td>GEO</td><td>Generative Engine Optimization</td><td>生成エンジン最適化。海外で使われる呼称</td></tr>
+      <tr><td>AEO</td><td>Answer Engine Optimization</td><td>回答エンジン最適化。FAQ整備が中心</td></tr>
+    </table></div>
+    <p>重要なのは用語の違いではありません。「AIが理解しやすく、引用したくなるサイトを作る」という一点に、すべての施策が集約されます。</p>
+    <h3>AI検索には2つのタイプがある</h3>
+    <p>対策を考える前提として、AI検索は大きく2タイプに分かれます。1つは、学習済みの知識から回答する「学習参照型」です。もう1つは、回答のたびにWebを検索して引用元を示す「検索連動型」です。ChatGPT検索やPerplexity、GoogleのAIによる概要は後者にあたります。</p>
+    <p>短期的に成果へつながりやすいのは検索連動型への対策です。検索連動型は回答に出典リンクを付けるため、引用されれば流入が発生します。本記事の実装手順も、まず検索連動型で引用されることを狙う設計です。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> ChatGPTに「あなたの業種+地域+おすすめ」を質問してみてください。自社名が出るか、競合が出るかが現在地の把握になります。</div>
+
+    <h2 id="why-now">なぜ今AIO対策が必要なのか——検索行動の変化</h2>
+    <p>結論から言うと、検索の入口がAIに移りつつあるからです。従来は「Googleで検索→サイトを開いて比較」が主流でした。今は「AIに聞く→AIの答えの中で紹介された1〜2社だけ見る」という行動が広がっています。</p>
+    <p>この変化には2つの側面があります。1つ目は流入数への影響です。AIが回答を完結させる「ゼロクリック」が増え、検索結果からのクリックは減る傾向にあります。2つ目は流入の質の変化です。AIに紹介されて来訪する人は、すでに候補を絞り込んだ状態です。数は少なくても、問い合わせにつながりやすい傾向があります。</p>
+    <div class="table-scroll"><table>
+      <tr><th>観点</th><th>従来のGoogle検索</th><th>AI検索(ChatGPT等)</th></tr>
+      <tr><td>ユーザー行動</td><td>10件の結果を自分で比較</td><td>AIの要約と推薦をまず読む</td></tr>
+      <tr><td>表示される社数</td><td>1ページ10件前後</td><td>回答内で1〜3社程度</td></tr>
+      <tr><td>流入の量</td><td>多いが分散する</td><td>少ないが絞り込み済み</td></tr>
+      <tr><td>対策の主眼</td><td>キーワードと被リンク</td><td>引用されやすい構造と一次情報</td></tr>
+    </table></div>
+    <p>正直に言うと、AI検索経由の流入は現時点ではまだ多数派ではありません。しかしAIの回答に載る枠は1〜3社と極端に狭く、早く取り組んだ側が枠を占めやすい構造です。競合が手を付ける前に始める価値は十分にあります。</p>
+    <p>なお、AI活用そのものを進めたい方は<a href="/blog/ai-hojokin-guide-2026/">AI導入補助金の完全ガイド【2026年版】</a>も参考になります。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> Googleサーチコンソールで自社サイトの検索クリック数の推移を確認し、直近半年の増減をメモしておきましょう。AIO施策前後の比較基準になります。</div>
+
+    <figure style="margin:28px 0 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/assets/img/chip.webp" alt="半導体基板・AIテクノロジーのイメージ" width="1200" height="800" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+<h2 id="seven-conditions">AIに引用されるサイトの7条件</h2>
+    <p>当社が自社サイトと支援先で検証してきた結果、AIに引用されやすいサイトには共通点があります。以下の7条件に整理できます。</p>
+    <div class="table-scroll"><table>
+      <tr><th>条件</th><th>内容</th><th>難易度</th></tr>
+      <tr><td>1. AIクローラー許可</td><td>robots.txtでGPTBot等の巡回を許可している</td><td>低</td></tr>
+      <tr><td>2. llms.txt設置</td><td>AI向けのサイト案内ファイルを置いている</td><td>低</td></tr>
+      <tr><td>3. 構造化データ</td><td>FAQPageやArticle等のJSON-LDを実装している</td><td>中</td></tr>
+      <tr><td>4. FAQの整備</td><td>質問と短い断言回答のセットを用意している</td><td>低</td></tr>
+      <tr><td>5. 冒頭の断言文</td><td>記事冒頭200字で「〜とは…です」と結論を書く</td><td>低</td></tr>
+      <tr><td>6. 一次情報</td><td>自社の実データ・実践例など独自情報がある</td><td>高</td></tr>
+      <tr><td>7. 鮮度の明示</td><td>「2026年7月時点」など時点情報を書いている</td><td>低</td></tr>
+    </table></div>
+    <h3>最も差がつくのは「一次情報」</h3>
+    <p>7条件のうち、技術的な項目(1〜3)は誰でも実装できます。差がつくのは条件6の一次情報です。AIは一般論の焼き直しよりも、実体験・実数値・独自調査を含むページを引用する傾向があります。</p>
+    <p>たとえば「MEOのやり方」という一般論より、「大阪の店舗を支援して得た実際の手順」の方が引用価値は高くなります。自社にしか書けないことを書く。これがAIO最大の攻略法です。</p>
+    <h3>「誰が書いたか」も引用の判断材料になる</h3>
+    <p>もう1つ見落とされがちなのが、発信者情報の明示です。運営会社・所在地・執筆者・実績が明記されたサイトは、匿名サイトより信頼性の評価で有利に働く傾向があります。会社概要ページの整備、記事への執筆者表示、Organization構造化データの実装をセットで行ってください。これはGoogleが重視するE-E-A-T(経験・専門性・権威性・信頼性)の考え方とも重なります。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> 上の表の7条件について、自社サイトの○×を付けてみてください。×が4つ以上なら、次章の実装手順から着手する価値があります。</div>
+
+    <h2 id="implementation">AIO対策の実装手順(7ステップ)</h2>
+    <p>ここからは実装の手順です。前章の7条件を、着手しやすい順に並べ直しています。</p>
+    <div class="table-scroll"><table>
+      <tr><th>手順</th><th>作業内容</th><th>目安工数</th></tr>
+      <tr><td>STEP1</td><td>robots.txtでAIクローラーを許可</td><td>30分</td></tr>
+      <tr><td>STEP2</td><td>llms.txtを作成して設置</td><td>1〜2時間</td></tr>
+      <tr><td>STEP3</td><td>構造化データ(JSON-LD)を実装</td><td>2〜4時間</td></tr>
+      <tr><td>STEP4</td><td>主要ページにFAQを追加</td><td>2〜3時間</td></tr>
+      <tr><td>STEP5</td><td>記事冒頭を断言文に書き換え</td><td>1記事15分</td></tr>
+      <tr><td>STEP6</td><td>一次情報(実例・実数値)を追記</td><td>継続的</td></tr>
+      <tr><td>STEP7</td><td>時点情報と更新日の表示</td><td>30分</td></tr>
+    </table></div>
+    <h3>STEP1: robots.txtでAIクローラーを許可する</h3>
+    <p>AIはクローラー(巡回プログラム)でサイトを読みます。robots.txtでこれを拒否していると、そもそも引用の土俵に乗れません。主要なAIクローラーは次の通りです。</p>
+    <div class="table-scroll"><table>
+      <tr><th>クローラー名</th><th>運営元</th><th>主な用途</th></tr>
+      <tr><td>GPTBot</td><td>OpenAI</td><td>ChatGPTの学習・参照</td></tr>
+      <tr><td>OAI-SearchBot</td><td>OpenAI</td><td>ChatGPT検索の情報取得</td></tr>
+      <tr><td>ClaudeBot</td><td>Anthropic</td><td>Claudeの参照</td></tr>
+      <tr><td>Google-Extended</td><td>Google</td><td>Gemini向けの利用制御</td></tr>
+      <tr><td>PerplexityBot</td><td>Perplexity</td><td>Perplexityの検索回答</td></tr>
+    </table></div>
+    <p>robots.txtに「User-agent: GPTBot」「Allow: /」のように記述すれば許可できます。CMSやセキュリティ設定で拒否されている場合もあるため、現状確認から始めてください。</p>
+    <h3>STEP2: llms.txtを設置する</h3>
+    <p>llms.txtは、AIに向けてサイトの概要と重要ページを案内するテキストファイルです。サイト直下(/llms.txt)に置きます。会社概要・主要サービス・重要記事のURLを簡潔に列挙するだけで作成できます。標準仕様として普及途上ですが、設置コストが低いため先行導入をおすすめします。</p>
+    <h3>STEP3: 構造化データ(JSON-LD)を実装する</h3>
+    <p>構造化データは、ページの内容を機械可読な形式で宣言するコードです。記事ならArticle、よくある質問ならFAQPage、会社情報ならOrganizationを使います。AIとGoogleの両方がページを正確に理解する助けになります。</p>
+    <h3>STEP4: FAQを追加する</h3>
+    <p>AIは「質問+短い答え」の形式を引用しやすい傾向があります。主要ページに2〜3問のFAQを置き、回答は40〜60字で言い切ってください。FAQPage構造化データとセットで実装すると効果的です。</p>
+    <h3>STEP5: 冒頭200字で断言する</h3>
+    <p>AIは記事の冒頭を重視して要約・引用する傾向があります。「〜とは、…です」という定義文とメインキーワードを冒頭200字に必ず入れてください。結論を最後まで引っ張る書き方は、AIOでは不利に働きます。</p>
+    <h3>STEP6: 一次情報を増やす</h3>
+    <p>自社の実践結果・料金・所要時間・失敗例など、体験に基づく情報を追記します。一般論だけの記事は、AIにとって引用する理由がありません。1記事に1つ、自社にしか書けない情報を入れるのが目安です。</p>
+    <h3>STEP7: 鮮度を明示する</h3>
+    <p>「2026年7月時点」のような時点表記と更新日を明示します。AIは情報の新しさを重視するため、古い記事も定期的に見直して更新日を反映させてください。</p>
+    <h3>実装後の効果測定——2つの指標を月1回見る</h3>
+    <p>実装したら、効果測定の仕組みも用意します。見るべき指標は2つです。1つ目は「AI経由の流入数」です。アクセス解析で参照元にchatgpt.comやperplexity.aiが現れているかを確認します。2つ目は「AIへの質問テスト」です。自社の商圏や業種に関する質問をAIに投げ、自社が言及されるかを毎月同じ質問で記録します。この2つを月1回の定点観測にすると、施策の手応えが数字で追えるようになります。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> ブラウザで「自社ドメイン/robots.txt」を開き、GPTBotがブロックされていないか確認してみてください。1分で終わる最初のAIO点検です。</div>
+
+    <figure style="margin:28px 0 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/assets/img/analytics.webp" alt="アクセス解析ダッシュボードのイメージ" width="1200" height="855" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+<h2 id="seo-vs-aio">SEOとの違いと関係</h2>
+    <p>結論として、SEOとAIOは対立せず、土台と応用の関係です。AIの多くは検索エンジンの情報を参照しているため、SEOで評価されるサイトはAIにも見つけられやすくなります。</p>
+    <div class="table-scroll"><table>
+      <tr><th>観点</th><th>SEO</th><th>AIO</th></tr>
+      <tr><td>目標</td><td>検索結果での上位表示</td><td>AI回答内での引用・言及</td></tr>
+      <tr><td>評価者</td><td>検索エンジンのアルゴリズム</td><td>大規模言語モデル</td></tr>
+      <tr><td>重要要素</td><td>キーワード・被リンク・体験</td><td>構造化・断言文・一次情報</td></tr>
+      <tr><td>成果指標</td><td>順位・クリック数</td><td>引用数・AI経由の流入と問合せ</td></tr>
+      <tr><td>共通点</td><td colspan="2">質の高い独自コンテンツと分かりやすい構造が評価される</td></tr>
+    </table></div>
+    <p>正直に言うと、「AIOだけやればSEOは不要」という宣伝文句は疑ってかかるべきです。良質なコンテンツ・適切な構造・独自性という土台は両者共通です。SEOの基本を押さえた上で、AIO特有の施策(llms.txt・断言文・FAQ形式)を重ねるのが最短ルートです。</p>
+    <p>地図検索での露出を高めたい店舗ビジネスの方は、<a href="/blog/meo-osaka-guide/">MEO対策・大阪版:Googleマップ上位表示の実践手順</a>もあわせてご覧ください。AI検索はローカル情報の参照も増えており、MEOとAIOの相乗効果が期待できます。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> 自社の主力記事1本を選び、「冒頭に定義文があるか」「FAQがあるか」の2点だけチェックしてみてください。SEOとAIOの両方に効く最小の改善です。</div>
+
+    <h2 id="jissen">自社での実践例——このサイト自体が実験場</h2>
+    <p>当社は、この記事が載っているサイト自体をAIO実装の実験場にしています。読んでいただいているこのページも、実装例そのものです。具体的には次の施策を実装済みです。</p>
+    <ul>
+      <li>robots.txtでGPTBot・ClaudeBot等のAIクローラーを許可</li>
+      <li>サイト直下にllms.txtを設置し、主要ページをAIに案内</li>
+      <li>全記事にArticle・FAQPage・BreadcrumbListの構造化データを実装</li>
+      <li>各記事の冒頭200字に「〜とは…です」の断言文を配置</li>
+      <li>「2026年7月時点」の時点表記と対象読者の明示</li>
+      <li>補助金申請支援50社+の実務など、一次情報の記事化</li>
+    </ul>
+    <p>このページのソースコードを表示すれば、FAQPage構造化データや断言文の実装をそのまま確認できます。教材として自由に参考にしてください。</p>
+    <p>効果測定は「AI経由の流入(参照元にchatgpt.com等)」「AIに自社名を質問したときの言及」の2軸で継続観測しています。結果は今後の記事で随時共有していく予定です。</p>
+    <p>「自社サイトがAIに読まれる状態になっているか分からない」という方向けに、当社では<a href="/#diagnosis">無料サイト診断</a>を提供しています。robots.txt・構造化データ・断言文の有無など、本記事の7条件をベースに現状を診断します。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> このページで右クリック→「ページのソースを表示」を選び、ld+jsonの記述を探してみてください。構造化データの実物が確認できます。</div>
+  </article>
+
+  <!-- FAQ(回答40〜60字・JSON-LDと完全一致させる) -->
+  <section class="faq-sec">
+    <h2 id="faq">よくある質問</h2>
+    <details><summary>AIO対策とSEO対策はどちらを優先すべきですか?</summary><div class="a">まずSEOの基本を固め、その上にAIO施策を重ねる進め方が現実的です。施策の多くは両方に効きます。</div></details>
+    <details><summary>AIO対策の効果が出るまでどれくらいかかりますか?</summary><div class="a">サイトの状況にもよりますが、実装後1〜3カ月でAIからの言及や流入に変化が見え始める傾向があります。</div></details>
+    <details><summary>AIO対策は自社だけで実装できますか?</summary><div class="a">robots.txtやFAQ追加は自社で可能です。構造化データやllms.txtは専門家の併走が安全です。</div></details>
+  </section>
+
+  <div class="cta-box">
+    <p class="t">あなたのサイトは、AIに「読まれる」状態ですか?</p>
+    <p class="d">本記事の7条件をベースに、robots.txt・構造化データ・断言文の実装状況を無料で診断します。診断結果は改善優先度つきでお返しします。</p>
+    <a href="/#diagnosis">無料サイト診断を受けてみる</a>
+    <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
+  </div>
+
+  <div class="author">
+    <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="56" height="56" loading="lazy" style="object-fit:cover;border-radius:50%">
+    <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
+    大阪・東成区のデジタルマーケティング&AI導入支援会社。IT導入補助金の申請支援50社+、MEO事業「G-ran」運営。補助金・AIO・MEO・システム開発の実務ノウハウを毎日発信しています。</div>
+  </div>
+
+  <div class="rel">
+    <p class="t">RELATED</p>
+    <ul><li><a href="/blog/meo-osaka-guide/">MEO対策・大阪版:Googleマップ上位表示の実践手順</a></li>
+<li><a href="/blog/excel-dakkyaku/">エクセル脱却の業務システム、費用と進め方</a></li>
+<li><a href="/blog/ai-hojokin-guide-2026/">AI導入補助金の完全ガイド【2026年版】</a></li></ul>
+  </div>
+</main>
+<footer>
+  <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="/privacy/">プライバシーポリシー</a></nav>
+  <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
+</footer>
+</body>
+</html>

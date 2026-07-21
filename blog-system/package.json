@@ -1,0 +1,23 @@
+{
+  "name": "seven-senses-blog-system",
+  "version": "1.0.0",
+  "private": true,
+  "description": "セブンセンシズ株式会社 毎日ブログ自動更新システム (記事生成→品質ループ→画像→安全ゲート→通知→レポート)",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generate": "node scripts/generate-articles.mjs",
+    "generate:news": "node scripts/generate-articles.mjs --news",
+    "quality": "node scripts/quality-loop.mjs",
+    "images": "node scripts/embed-images.mjs",
+    "safety": "node scripts/safety-gate.mjs",
+    "notify": "node scripts/notify-search.mjs",
+    "report": "node scripts/report-slack.mjs",
+    "pipeline": "node scripts/generate-articles.mjs && node scripts/quality-loop.mjs && node scripts/embed-images.mjs && node scripts/safety-gate.mjs && node scripts/notify-search.mjs && node scripts/report-slack.mjs"
+  },
+  "dependencies": {
+    "sharp": "^0.33.4"
+  }
+}

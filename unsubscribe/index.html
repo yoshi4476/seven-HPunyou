@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>メール配信停止|セブンセンシズ株式会社</title>
+<meta name="description" content="セブンセンシズ株式会社からのご案内メールの配信停止手続きページです。">
+<link rel="canonical" href="https://lp.7sensesplus.com/unsubscribe/">
+<meta name="robots" content="noindex,follow">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdfcf9;--bg2:#f4f1e9;--panel:#ffffff;--line:#e7e2d4;--line2:rgba(176,139,62,.45);
+--text:#212b3d;--muted:#5b6472;--dim:#8b90a0;--gold:#9a7a33;--gold-strong:#8a6a20;--gold-ink:#171104;
+--serif:"Shippori Mincho B1",serif;--sans:"Noto Sans JP",sans-serif;--num:"Oswald","Noto Sans JP",sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15.5px;line-height:2;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--gold-strong)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+header{background:rgba(253,252,249,.9);border-bottom:1px solid var(--line)}
+.nav{max-width:1120px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center}
+.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
+.logo b{color:var(--gold)}
+main{max-width:560px;margin:0 auto;padding:60px 22px 90px;flex:1;width:100%}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(22px,4vw,28px);margin-bottom:14px;color:#1d3461}
+p.d{color:var(--muted);font-size:14px;margin-bottom:28px}
+.card{background:var(--panel);border:1px solid var(--line2);border-radius:16px;padding:32px 28px}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:7px}
+.field input{width:100%;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:13px 16px;color:var(--text);font-size:15px;font-family:var(--sans);min-height:48px}
+.field input:focus{outline:none;border-color:var(--gold)}
+.field .err{display:none;color:#b3261e;font-size:12px;margin-top:5px}
+.field.invalid input{border-color:#c9564d}
+.field.invalid .err{display:block}
+.btn{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:50px;padding:12px 28px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);font-weight:700;font-size:15px;border:none;cursor:pointer;font-family:var(--sans)}
+.micro{display:block;margin-top:12px;font-size:12px;color:var(--dim);text-align:center}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:34px 22px;font-size:12.5px;color:var(--dim);text-align:center}
+footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="logo" href="/">SEVEN<b>―</b>SENSES</a></div></header>
+<main>
+  <h1>メール配信停止のお手続き</h1>
+  <p class="d">当社からのご案内メールの配信を停止します。ご登録のメールアドレスを入力して送信してください。手続き完了後、確認メールを1通お送りします(お問い合わせへの返信など、お取引に必要なご連絡は除きます)。</p>
+  <div class="card">
+    <form id="unsubForm" novalidate>
+      <div class="field"><label for="u-email">メールアドレス</label><input id="u-email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
+      <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+      <button class="btn" type="submit" id="u-btn">配信を停止する</button>
+      <span class="micro">お手続きはこの1回で完了します。</span>
+    </form>
+    <div id="unsubDone" hidden style="text-align:center;padding:14px 0">
+      <p style="font-family:var(--serif);font-size:19px;font-weight:800;margin-bottom:10px">配信停止を承りました。</p>
+      <p style="color:var(--muted);font-size:13.5px">確認メールをお送りしました。ご利用ありがとうございました。</p>
+    </div>
+  </div>
+</main>
+<footer>
+  <nav><a href="/">トップ</a><a href="/privacy/">プライバシーポリシー</a></nav>
+  <p>© 2026 SEVEN SENSES INC.</p>
+</footer>
+<script>
+const GAS_ENDPOINT=""; // LP本体と同じGAS WebアプリURLを設定
+const TS=Date.now();
+const form=document.getElementById("unsubForm");
+const mail=document.getElementById("u-email");
+mail.addEventListener("input",()=>{ if(mail.parentElement.classList.contains("invalid")) mail.parentElement.classList.remove("invalid"); });
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  if(form.website.value) return;
+  if(Date.now()-TS<3000) return;
+  const ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(mail.value);
+  mail.parentElement.classList.toggle("invalid",!ok);
+  if(!ok) return;
+  const payload={type:"unsubscribe",email:mail.value.trim(),website:"",ts:TS};
+  const done=()=>{form.hidden=true;document.getElementById("unsubDone").hidden=false;};
+  if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定:",payload); done(); return; }
+  fetch(GAS_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify(payload)}).finally(done);
+});
+</script>
+</body>
+</html>

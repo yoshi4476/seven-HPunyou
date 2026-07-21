@@ -1,0 +1,18 @@
+# 通常の検索エンジン
+User-agent: *
+Allow: /
+
+# AIクローラー(AI Overview・ChatGPT・Claude・Perplexityからの引用を受けるため明示的に許可)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://lp.7sensesplus.com/sitemap.xml

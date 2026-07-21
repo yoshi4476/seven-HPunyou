@@ -1,0 +1,115 @@
+# =============================================================
+# 毎日ブログ自動更新ワークフロー (セブンセンシズ株式会社)
+# - JST 朝7時  (UTC 22:00): 本流記事2本 (キーワードキューから優先度順)
+# - JST 夕17時 (UTC 08:00): ニュース型記事1本
+# - workflow_dispatch で手動実行も可能 (mode: main / news)
+#
+# 必要な設定:
+#   Secrets: ANTHROPIC_API_KEY, SLACK_WEBHOOK, (任意) INDEXNOW_KEY, (任意) UNSPLASH_ACCESS_KEY
+#   Variables: CLAUDE_MODEL (例: Opus 4.8 の正式ID。docs.claude.com で確認して設定),
+#              (任意) SITE_URL
+# =============================================================
+name: 毎日ブログ自動更新
+
+on:
+  schedule:
+    - cron: '0 22 * * *' # JST 朝7時 → 本流2本
+    - cron: '0 8 * * *'  # JST 夕17時 → ニュース1本
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '実行モード (main=本流2本 / news=ニュース1本)'
+        required: false
+        default: 'main'
+        type: choice
+        options:
+          - main
+          - news
+
+permissions:
+  contents: write # 生成した記事・キュー更新をリポジトリへコミットするため
+
+concurrency:
+  group: auto-publish
+  cancel-in-progress: false # 実行中のパイプラインを中断しない (生成途中の記事破損防止)
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }} # モデルIDはハードコード禁止。Variables で管理する
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
+      UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }} # (任意) 画像フォールバック②の写真API。未設定なら③ローカル素材へ
+      SITE_URL: ${{ vars.SITE_URL }} # 未設定時はスクリプト側のデフォルト (仮ドメイン) を使用
+      MIN_SCORE: '90'      # 品質ループの合格ライン
+      MAX_REVISIONS: '5'   # 品質ループの最大改稿回数
+
+    steps:
+      - name: リポジトリ取得
+        uses: actions/checkout@v4
+
+      - name: Node.js 20 セットアップ
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: 依存関係インストール
+        run: npm ci
+
+      # 夕方スケジュール or 手動 news 指定時は --news でニュース1本モード
+      - name: 記事生成 (Anthropic API)
+        run: |
+          if [ "${{ github.event.schedule }}" = "0 8 * * *" ] || [ "${{ inputs.mode }}" = "news" ]; then
+            node scripts/generate-articles.mjs --news
+          else
+            node scripts/generate-articles.mjs
+          fi
+
+      # 執筆AIとは別セッション(別API呼び出し)で採点→90点未満は差し戻し改稿(最大5回)
+      - name: 品質ループ (採点・改稿)
+        run: node scripts/quality-loop.mjs
+
+      # サムネ生成(SVG→PNG/WebP) + 本文画像の3段フォールバック
+      # (①AI生成SVG図解 → ②Unsplash写真 → ③ローカル素材)・alt付与・150KB圧縮
+      - name: 画像生成・埋め込み (Sharp + 3段フォールバック)
+        run: node scripts/embed-images.mjs
+
+      # 執筆AIから独立した機械チェック。不合格は human-review/ へ隔離
+      - name: 安全ゲート (機械チェック)
+        run: node scripts/safety-gate.mjs
+
+      - name: 生成コンテンツをコミット
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add content/ data/ logs/ public/
+          if git diff --cached --quiet; then
+            echo "コミット対象の変更なし"
+          else
+            git commit -m "chore(blog): 自動生成記事の追加 ($(date -u +%Y-%m-%d))"
+            git push
+          fi
+
+      # ---- ここは導入先の Astro プロジェクト構成に合わせて調整する ----
+      # 例1: このリポジトリ自体が Astro プロジェクトの場合
+      #   run: npm run build && npx wrangler pages deploy dist --project-name=7senses-lp
+      # 例2: Cloudflare Pages の Git 連携を使う場合、push した時点で自動デプロイされる
+      #       ため、このステップはビルド検証のみでよい
+      - name: ビルド & デプロイ
+        run: |
+          echo "TODO: Astro プロジェクトへの組込み後に有効化 (README.md 参照)"
+          # npm run build
+          # npx wrangler pages deploy dist --project-name=<PROJECT>
+
+      # sitemap.xml (差分のみ lastmod 更新) + 画像sitemap + IndexNow + GSC ping
+      - name: 検索エンジン通知
+        run: node scripts/notify-search.mjs
+
+      # 失敗時も必ず日次レポートを Slack へ送信する
+      - name: Slack 日次レポート
+        if: always()
+        run: node scripts/report-slack.mjs

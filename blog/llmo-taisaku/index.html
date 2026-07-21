@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLMO対策 完全ガイド|AIに引用されるサイト設計|セブンセンシズ株式会社</title>
+<meta name="description" content="LLMO対策とは、ChatGPTなどの大規模言語モデルに自社サイトを引用・言及させるための最適化施策です。AIが引用元を選ぶ仕組みから、llms.txt・構造化データ・断言文などの設計原則と実装チェックリストまで、自社実践例つきで解説します。">
+<link rel="canonical" href="https://lp.7sensesplus.com/blog/llmo-taisaku/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLMO対策 完全ガイド|AIに引用されるサイト設計">
+<meta property="og:description" content="LLMO対策とは、ChatGPTなどの大規模言語モデルに自社サイトを引用・言及させるための最適化施策です。AIが引用元を選ぶ仕組みから、llms.txt・構造化データ・断言文などの設計原則と実装チェックリストまで、自社実践例つきで解説します。">
+<meta property="og:url" content="https://lp.7sensesplus.com/blog/llmo-taisaku/">
+<meta property="og:image" content="https://lp.7sensesplus.com/ogp.png">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article",
+      "headline": "LLMO対策 完全ガイド|AIに引用されるサイト設計",
+      "description": "LLMO対策とは、ChatGPTなどの大規模言語モデルに自社サイトを引用・言及させるための最適化施策です。AIが引用元を選ぶ仕組みから、llms.txt・構造化データ・断言文などの設計原則と実装チェックリストまで、自社実践例つきで解説します。",
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-14",
+      "inLanguage": "ja",
+      "mainEntityOfPage": "https://lp.7sensesplus.com/blog/llmo-taisaku/",
+      "author": { "@type": "Person", "@id": "https://lp.7sensesplus.com/#author", "name": "原口 優", "jobTitle": "代表取締役" },
+      "publisher": { "@type": "Organization", "@id": "https://lp.7sensesplus.com/#org", "name": "セブンセンシズ株式会社" } },
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lp.7sensesplus.com/" },
+      { "@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://lp.7sensesplus.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "LLMO対策 完全ガイド|AIに引用されるサイト設計" } ] },
+    { "@type": "FAQPage", "mainEntity": [
+      { "@type": "Question", "name": "LLMO対策とAIO対策は何が違うのですか?", "acceptedAnswer": { "@type": "Answer", "text": "呼び方の違いで、中身はほぼ同じです。どちらもAIに引用されやすいサイト構造と一次情報の整備を指します。" } },
+      { "@type": "Question", "name": "LLMO対策はどのくらいの期間で効果が見えますか?", "acceptedAnswer": { "@type": "Answer", "text": "サイト状況によりますが、実装後1〜3カ月でAI経由の流入や言及に変化が見え始める傾向があります。" } },
+      { "@type": "Question", "name": "小規模サイトでもLLMO対策の意味はありますか?", "acceptedAnswer": { "@type": "Answer", "text": "あります。AIの回答枠は少数のため、一次情報を持つ小規模サイトが大手より言及される例もあります。" } }
+    ] }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
+  --line:#e7e2d4; --line2:rgba(176,139,62,.45);
+  --text:#212b3d; --muted:#5b6472; --dim:#8b90a0;
+  --gold:#9a7a33; --gold-strong:#8a6a20; --gold-ink:#171104;
+  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:2;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-strong)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{max-width:100%;height:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1120px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
+.logo b{color:var(--gold)}
+.nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
+main{max-width:760px;margin:0 auto;padding:44px 22px 80px}
+.crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
+.crumb a{color:var(--dim);text-decoration:none}
+.crumb a:hover{color:var(--gold-strong)}
+.cat{display:inline-block;font-size:11px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
+.meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
+.fresh-note b{color:var(--muted);font-weight:500}
+.summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
+.toc p{font-family:var(--num);font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
+.toc li{margin:7px 0}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--gold-strong)}
+article h2{font-family:var(--serif);font-weight:800;font-size:clamp(20px,3.2vw,25px);line-height:1.6;margin:54px 0 18px;padding-top:14px;border-top:1px solid var(--line);color:#1d3461}
+article h3{font-family:var(--serif);font-weight:800;font-size:17.5px;margin:34px 0 12px;color:var(--gold-strong)}
+article p{margin:16px 0;color:var(--text)}
+article ul,article ol{margin:16px 0 16px 24px;color:var(--text)}
+article li{margin:8px 0}
+article table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
+article strong{color:var(--gold-strong)}
+.table-scroll{overflow-x:auto;margin:20px 0}
+.action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
+.action-box b{color:var(--gold-strong)}
+.cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
+.cta-box p.t{font-family:var(--serif);font-weight:800;font-size:19px;line-height:1.7;margin-bottom:8px}
+.cta-box p.d{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.cta-box a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 30px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);font-weight:700;font-size:15px;text-decoration:none}
+.cta-box .micro{display:block;margin-top:10px;font-size:12px;color:var(--dim)}
+.faq-sec details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq-sec summary{list-style:none;cursor:pointer;padding:16px 46px 16px 20px;font-weight:700;font-size:14.5px;position:relative;line-height:1.7}
+.faq-sec summary::-webkit-details-marker{display:none}
+.faq-sec summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:20px;color:var(--gold)}
+.faq-sec details[open] summary::after{content:"−"}
+.faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
+.author{display:flex;gap:16px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
+.author .av{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
+.author b{color:var(--text)}
+.rel{margin-top:50px}
+.rel p.t{font-family:var(--num);font-size:11px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel ul{list-style:none;margin:0;display:grid;gap:10px}
+.rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
+.rel a:hover{border-color:var(--line2)}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--dim);text-align:center;line-height:1.9}
+footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="/">SEVEN<b>―</b>SENSES</a>
+    <a class="cta" href="/#contact">無料で相談する</a>
+  </div>
+</header>
+<main>
+  <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">ブログ</a> › LLMO対策 完全ガイド</nav>
+  <span class="cat">AIO</span>
+  <h1>LLMO対策 完全ガイド|AIに引用されるサイト設計</h1>
+  <div class="meta">
+    <span>公開: 2026.07.14</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 12分</span>
+  </div>
+  <p class="fresh-note">本記事は<b>2026年7月時点</b>の情報です|この記事は<b>AI検索からの集客を強化したい中小企業経営者・Web担当者</b>向けです</p>
+
+  <!-- 冒頭200字: 断言文+キーワード(AIO最重要シグナル) -->
+  <div class="summary">LLMO対策とは、ChatGPTやGemini、Claudeなどの大規模言語モデル(LLM)に自社サイトを引用・言及させるための最適化施策です。LLMO対策の本質は「AIが読み取りやすい構造」と「AIが引用したくなる一次情報」の2つを揃えることにあります。本記事では、AIが引用元を選ぶ仕組みから、引用されるサイト設計の原則、実装チェックリストまでを当社の実践例つきで解説します。</div>
+
+  <div class="toc">
+    <p>CONTENTS</p>
+    <ol><li><a href="#llmo-toha">LLMO対策とは——AI時代の新しい集客最適化</a></li>
+<li><a href="#shikumi">AIがサイトを引用する仕組みを理解する</a></li>
+<li><a href="#sekkei">AIに引用されるサイト設計・5つの原則</a></li>
+<li><a href="#checklist">LLMO対策の実装チェックリスト(12項目)</a></li>
+<li><a href="#sokutei">効果測定の方法——3つの指標を定点観測する</a></li>
+<li><a href="#jissen">当社の実践例——このサイト自体がLLMOの実験場</a></li>
+<li><a href="#faq">よくある質問</a></li></ol>
+  </div>
+
+  <article>
+    <h2 id="llmo-toha">LLMO対策とは——AI時代の新しい集客最適化</h2>
+    <p>LLMO(Large Language Model Optimization)対策とは、大規模言語モデルを使ったAIサービスの回答の中で、自社の名前やサイトを引用・言及してもらうための最適化施策です。ユーザーが「大阪でAIO対策に強い会社は?」とChatGPTに聞いたとき、その回答に自社が登場するかどうか。これがLLMOの成果指標です。</p>
+    <p>従来のSEOが「検索結果ページの上位10枠」を奪い合う競争だったのに対し、LLMOは「AIの回答文に登場する1〜3枠」を巡る競争です。枠が極端に少ないぶん、選ばれたときのインパクトは大きくなります。AIに紹介されて来訪するユーザーは、すでにAIによる絞り込みを経ているため、問い合わせにつながりやすい傾向があります。</p>
+    <h3>LLMO・AIO・GEO——用語の整理</h3>
+    <p>この分野は呼び方が乱立していますが、指している中身はほぼ同じです。混乱しないよう最初に整理しておきます。</p>
+    <div class="table-scroll"><table>
+      <tr><th>用語</th><th>正式名称</th><th>ニュアンス</th></tr>
+      <tr><td>LLMO</td><td>Large Language Model Optimization</td><td>大規模言語モデル(モデル側)への最適化を強調した呼称</td></tr>
+      <tr><td>AIO</td><td>AI Optimization</td><td>AI検索全般への最適化。当社が主に使う呼称</td></tr>
+      <tr><td>GEO</td><td>Generative Engine Optimization</td><td>生成エンジン最適化。海外の論文・記事で多い呼称</td></tr>
+      <tr><td>AEO</td><td>Answer Engine Optimization</td><td>回答エンジン最適化。FAQ整備を中心とした呼称</td></tr>
+    </table></div>
+    <p>本記事では「LLMO対策」で統一しますが、<a href="/blog/aio-taisaku-guide/">AIO対策の基礎ガイド</a>で解説した内容と地続きです。用語ではなく「AIに引用される状態を作る」という目的で捉えてください。当社の支援メニューの全体像は<a href="/service/aio/">AIOコンサルティングのサービス案内</a>にまとめています。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> ChatGPTとGeminiの両方に「自社の業種+地域+おすすめの会社」を質問し、回答に出てくる社名をメモしてください。LLMO対策の現在地が5分で分かります。</div>
+
+    <h2 id="shikumi">AIがサイトを引用する仕組みを理解する</h2>
+    <p>結論から言うと、AIの引用元選定は「検索→取得→評価→生成」の4段階で行われます。この流れを理解すると、どこに施策を打つべきかが明確になります。</p>
+    <div class="table-scroll"><table>
+      <tr><th>段階</th><th>AIの動き</th><th>サイト側で効く施策</th></tr>
+      <tr><td>1. 検索</td><td>質問を検索クエリに変換しWebを検索</td><td>SEOの基礎(検索で見つかる状態)</td></tr>
+      <tr><td>2. 取得</td><td>クローラーがページ本文を読み込む</td><td>robots.txtでのAIクローラー許可・llms.txt</td></tr>
+      <tr><td>3. 評価</td><td>回答に使える情報かを判定</td><td>断言文・構造化データ・一次情報・発信者明示</td></tr>
+      <tr><td>4. 生成</td><td>要約して回答を作り出典を付ける</td><td>引用しやすい短文・FAQ形式・時点表記</td></tr>
+    </table></div>
+    <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/assets/img/code.webp" alt="LLMO対策の実装対象となるWebサイトのソースコード画面" width="1200" height="801" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+    <h3>取得段階でつまずくサイトが意外に多い</h3>
+    <p>見落とされがちなのが段階2の「取得」です。セキュリティ設定やCDNの初期設定でAIクローラー(GPTBot・ClaudeBotなど)がブロックされているサイトは珍しくありません。どれだけ良い記事を書いても、AIが読めなければ引用の土俵に乗れません。robots.txtの確認は、LLMO対策の一丁目一番地です。</p>
+    <h3>評価段階では「機械が理解できるか」が問われる</h3>
+    <p>段階3の評価では、人間向けのデザインの巧拙は関係ありません。見出し構造が論理的か、結論が冒頭にあるか、情報の発信者が明示されているか、構造化データで内容が宣言されているか。こうした「機械可読性」が判定材料になります。人間の読者とAIの両方に伝わる書き方が、LLMO時代のライティングです。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> 「自社ドメイン/robots.txt」をブラウザで開き、「GPTBot」「Disallow」の記述有無を確認してください。取得段階のつまずきが1分で点検できます。</div>
+
+    <h2 id="sekkei">AIに引用されるサイト設計・5つの原則</h2>
+    <p>当社が自社サイトと支援先で検証してきた結果、AIに引用されやすいサイト設計は次の5原則に集約できます。</p>
+    <h3>原則1: 結論を冒頭200字で断言する</h3>
+    <p>AIはページ冒頭を重視して要約する傾向があります。「〜とは、…です」という定義文とメインキーワードを冒頭200字に入れてください。結論を最後に持ってくる起承転結型の構成は、LLMOでは不利に働きます。本記事の冒頭も、この原則どおりに書いています。</p>
+    <h3>原則2: 1ページ1テーマで見出しを論理的に組む</h3>
+    <p>AIは見出し(H2・H3)を手がかりにページの構造を把握します。1ページに複数テーマを詰め込むと、AIはそのページが「何の専門ページか」を判定しにくくなります。1ページ1テーマ、H2は疑問に答える形で立てる。この地味な設計がAIの理解精度を高めます。</p>
+    <h3>原則3: 引用しやすい「部品」を用意する</h3>
+    <p>AIの回答は短文の寄せ集めです。40〜60字で言い切るFAQ、比較表、番号付き手順など、そのまま回答に転用できる「部品」が多いページほど引用されやすい傾向があります。長い段落の中に結論を埋め込むのではなく、抜き出せる形に整えてください。</p>
+    <h3>原則4: 一次情報で独自性を担保する</h3>
+    <p>一般論の焼き直し記事は、AIにとって引用する理由がありません。自社の実データ・実践手順・料金・失敗談など、そのサイトにしかない一次情報が引用価値を生みます。5原則の中で最も難易度が高く、最も差がつくのがこの原則です。</p>
+    <h3>原則5: 発信者と鮮度を明示する</h3>
+    <p>運営会社・所在地・執筆者・更新時点が明記されたページは、匿名ページより信頼性の評価で有利に働く傾向があります。Organization・Personの構造化データ、記事への執筆者表示、「2026年7月時点」のような時点表記をセットで実装してください。</p>
+    <div class="table-scroll"><table>
+      <tr><th>原則</th><th>要点</th><th>実装難易度</th></tr>
+      <tr><td>1. 冒頭断言</td><td>定義文+メインKWを冒頭200字に</td><td>低</td></tr>
+      <tr><td>2. 構造設計</td><td>1ページ1テーマ・論理的な見出し</td><td>中</td></tr>
+      <tr><td>3. 引用部品</td><td>FAQ・表・手順など転用しやすい形式</td><td>低</td></tr>
+      <tr><td>4. 一次情報</td><td>実データ・実践例・独自調査</td><td>高</td></tr>
+      <tr><td>5. 発信者明示</td><td>会社情報・執筆者・時点表記</td><td>低</td></tr>
+    </table></div>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> 自社の主力ページ1本を開き、5原則の○×を付けてみてください。×が3つ以上なら、次章のチェックリストから優先順に着手しましょう。</div>
+
+    <h2 id="checklist">LLMO対策の実装チェックリスト(12項目)</h2>
+    <p>5原則を実務に落とし込んだ12項目のチェックリストです。上から順に、工数が小さく効果が見えやすいものを並べています。</p>
+    <div class="table-scroll"><table>
+      <tr><th>#</th><th>項目</th><th>対象</th><th>目安工数</th></tr>
+      <tr><td>1</td><td>robots.txtでGPTBot・OAI-SearchBot・ClaudeBot・PerplexityBotを許可</td><td>サイト全体</td><td>30分</td></tr>
+      <tr><td>2</td><td>llms.txtをサイト直下に設置し主要ページを案内</td><td>サイト全体</td><td>1〜2時間</td></tr>
+      <tr><td>3</td><td>Organization構造化データで会社情報を宣言</td><td>サイト全体</td><td>1時間</td></tr>
+      <tr><td>4</td><td>会社概要ページに所在地・代表者・実績を明記</td><td>サイト全体</td><td>1〜2時間</td></tr>
+      <tr><td>5</td><td>記事冒頭200字を断言文に書き換え</td><td>各記事</td><td>1記事15分</td></tr>
+      <tr><td>6</td><td>Article構造化データ+執筆者表示を実装</td><td>各記事</td><td>2〜4時間</td></tr>
+      <tr><td>7</td><td>主要ページにFAQ(回答40〜60字)を2〜3問設置</td><td>各ページ</td><td>1ページ1時間</td></tr>
+      <tr><td>8</td><td>FAQPage構造化データをHTMLのFAQと完全一致で実装</td><td>各ページ</td><td>1ページ30分</td></tr>
+      <tr><td>9</td><td>比較表・手順表など「引用部品」を追加</td><td>各記事</td><td>1記事1時間</td></tr>
+      <tr><td>10</td><td>時点表記(「2026年7月時点」等)と更新日を表示</td><td>各記事</td><td>30分</td></tr>
+      <tr><td>11</td><td>一次情報(実数値・実践例)を1記事1つ以上追記</td><td>各記事</td><td>継続的</td></tr>
+      <tr><td>12</td><td>関連ページ同士の内部リンクを整理(ハブ&スポーク)</td><td>サイト全体</td><td>2〜3時間</td></tr>
+    </table></div>
+    <h3>優先順位の考え方</h3>
+    <p>12項目を一気にやる必要はありません。まず1〜4の「サイト全体の土台」を1日で終わらせ、次に5〜8を主力ページから順に適用していく進め方が現実的です。9〜12は記事を更新するたびに積み上げる継続施策と位置づけてください。</p>
+    <p>正直に言うと、この12項目をすべて実装しても、AIの回答に登場する保証はありません。AIの引用ロジックは公開されておらず、変化も速いためです。それでも「AIが読めない・理解できない」という失点を確実に消せるため、引用される可能性を高める合理的な投資だと当社は考えています。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> チェックリストの1〜4(サイト全体の土台)だけを今週の作業予定に入れてください。合計半日程度で、LLMO対策の土台が整います。</div>
+
+    <h2 id="sokutei">効果測定の方法——3つの指標を定点観測する</h2>
+    <p>LLMO対策は「やって終わり」ではなく、月1回の定点観測とセットで運用します。見るべき指標は3つです。</p>
+    <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/assets/img/analytics.webp" alt="AI経由の流入を確認するアクセス解析ダッシュボードの画面" width="1200" height="855" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+    <div class="table-scroll"><table>
+      <tr><th>指標</th><th>確認方法</th><th>頻度</th></tr>
+      <tr><td>AI経由の流入数</td><td>アクセス解析で参照元にchatgpt.com・perplexity.ai等が現れるか確認</td><td>月1回</td></tr>
+      <tr><td>AIへの質問テスト</td><td>自社の商圏・業種に関する同じ質問を毎月AIに投げ、言及の有無を記録</td><td>月1回</td></tr>
+      <tr><td>AIクローラーの巡回</td><td>サーバーログでGPTBot等のアクセス有無を確認</td><td>月1回</td></tr>
+    </table></div>
+    <h3>質問テストは「同じ質問・同じ条件」で記録する</h3>
+    <p>質問テストのコツは、質問文を固定してスプレッドシートに記録し続けることです。「大阪 AIO対策 会社 おすすめ」のような質問を5〜10本用意し、ChatGPT・Gemini・Perplexityそれぞれで毎月実行します。AIの回答は同じ質問でも揺らぐため、1回の結果で一喜一憂せず、3カ月単位の傾向で判断してください。</p>
+    <p>AI経由の流入は、現時点では検索経由より小さい数字になるのが普通です。ただし絞り込み済みのユーザーが来るため、流入数よりも「AI経由の問い合わせが発生したか」を重視することをおすすめします。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> 質問テスト用のスプレッドシートを今日作り、質問5本と今月の結果を記録してください。来月以降の変化を測る基準点になります。</div>
+
+    <h2 id="jissen">当社の実践例——このサイト自体がLLMOの実験場</h2>
+    <p>当社は、この記事が載っているサイト自体をLLMO実装の実験場にしています。具体的には次の施策をすべて実装済みです。</p>
+    <ul>
+      <li>robots.txtでGPTBot・OAI-SearchBot・ClaudeBot・PerplexityBot等のAIクローラーを許可</li>
+      <li>サイト直下にllms.txtを設置し、会社概要と主要ページをAIに案内</li>
+      <li>全記事にArticle・FAQPage・BreadcrumbList・Organizationの構造化データを実装</li>
+      <li>各記事の冒頭200字に「〜とは…です」の断言文とメインキーワードを配置</li>
+      <li>「2026年7月時点」の時点表記と対象読者の明示</li>
+      <li>IT導入補助金の申請支援50社+の実務経験など、一次情報の記事化</li>
+    </ul>
+    <p>このページで右クリックして「ページのソースを表示」を選べば、FAQPage構造化データや断言文の実装をそのまま確認できます。本記事のチェックリスト12項目は、机上の理論ではなく、当社サイトで実際に手を動かして整理したものです。</p>
+    <p>「自社サイトがAIに読まれる状態になっているか分からない」という方は、<a href="/?diag=audit#diagnosis">無料サイト診断</a>をご利用ください。robots.txt・構造化データ・断言文など本記事の項目をベースに現状を診断し、改善優先度つきでお返しします。より踏み込んだ伴走支援をお求めの方は<a href="/service/aio/">AIOコンサルティング</a>をご覧ください。</p>
+    <div class="action-box"><b>今すぐ試せるアクション:</b> このページのソースからld+jsonの記述を探し、自社サイトの実装との差分を確認してみてください。実装済みサイトの実物が最良の教材になります。</div>
+  </article>
+
+  <!-- FAQ(回答40〜60字・JSON-LDと完全一致させる) -->
+  <section class="faq-sec">
+    <h2 id="faq">よくある質問</h2>
+    <details><summary>LLMO対策とAIO対策は何が違うのですか?</summary><div class="a">呼び方の違いで、中身はほぼ同じです。どちらもAIに引用されやすいサイト構造と一次情報の整備を指します。</div></details>
+    <details><summary>LLMO対策はどのくらいの期間で効果が見えますか?</summary><div class="a">サイト状況によりますが、実装後1〜3カ月でAI経由の流入や言及に変化が見え始める傾向があります。</div></details>
+    <details><summary>小規模サイトでもLLMO対策の意味はありますか?</summary><div class="a">あります。AIの回答枠は少数のため、一次情報を持つ小規模サイトが大手より言及される例もあります。</div></details>
+  </section>
+
+  <div class="cta-box">
+    <p class="t">あなたのサイトは、AIに「引用される」設計ですか?</p>
+    <p class="d">本記事のチェックリスト12項目をベースに、robots.txt・構造化データ・断言文の実装状況を無料で診断します。診断結果は改善優先度つきでお返しします。</p>
+    <a href="/?diag=audit#diagnosis">無料サイト診断を受けてみる</a>
+    <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
+  </div>
+
+  <div class="author">
+    <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="56" height="56" loading="lazy" style="object-fit:cover;border-radius:50%">
+    <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
+    大阪・東成区のデジタルマーケティング&AI導入支援会社。IT導入補助金の申請支援50社+、MEO事業「G-ran」運営。補助金・AIO・MEO・システム開発の実務ノウハウを毎日発信しています。</div>
+  </div>
+
+  <div class="rel">
+    <p class="t">RELATED</p>
+    <ul><li><a href="/service/aio/">AIOコンサルティング|サービス案内</a></li>
+<li><a href="/blog/aio-taisaku-guide/">AIO対策とは?ChatGPTに引用されるサイトの作り方</a></li>
+<li><a href="/blog/chatgpt-jisha-hyoji/">ChatGPTに自社を表示させる方法|中小企業のAI検索対策</a></li>
+<li><a href="/blog/ai-overview-taisaku/">Google AI Overview対策|表示の仕組みと実装手順</a></li></ul>
+  </div>
+</main>
+<footer>
+  <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="/privacy/">プライバシーポリシー</a></nav>
+  <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
+</footer>
+</body>
+</html>
