@@ -197,6 +197,27 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(max-width:560px){.form-card{padding:26px 18px}}
 .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
 
+
+/* ==== LP風ビジュアル移植 ==== */
+.case-graph{margin:6px 0 18px}
+.calcbar{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line2);border-radius:14px;padding:24px 20px;box-shadow:var(--shadow)}
+.calcbar span{text-align:center;font-size:11.5px;color:var(--muted)}
+.calcbar span b{display:block;font-family:var(--num);font-size:26px;color:var(--navy);font-weight:600;line-height:1.2}
+.calcbar span.res b{color:var(--gold-em);font-size:34px}
+.calcbar i{font-family:var(--num);font-style:normal;font-size:22px;color:var(--gold-soft);font-weight:600}
+.pricecard{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;background:linear-gradient(180deg,#fdf8ec,#fff 60%);border:1px solid var(--gold-soft);border-radius:16px;padding:28px;box-shadow:var(--shadow)}
+@media(max-width:720px){.pricecard{grid-template-columns:1fr}}
+.pricecard .pc-t{font-family:var(--serif);font-weight:800;font-size:17px;color:var(--navy);margin:0 0 6px}
+.pricecard .pc-p{font-family:var(--num);font-size:30px;color:var(--gold-em);font-weight:600;margin:0 0 10px}
+.pricecard .pc-p small{font-size:12px;font-family:var(--sans);color:var(--muted);font-weight:400;margin-left:6px}
+.pricecard ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13px;color:var(--muted)}
+.pricecard ul li{padding-left:18px;position:relative;margin:0}
+.pricecard ul li::before{content:"✓";position:absolute;left:0;color:var(--gold-soft);font-weight:900}
+.pricecard .btn{white-space:nowrap}
+.voices3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:920px){.voices3{grid-template-columns:1fr}}
+.voices3 .voice{max-width:none}
+
 </style>
 </head>
 <body>
@@ -247,6 +268,15 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
       <div class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.2 4.5L16 3.5" stroke="#b08b3e" stroke-width="2.2" stroke-linecap="round"/></svg>何から手を付ければいいか、優先順位が分からない</div>
     </div>
     <p class="pain-bridge">1つでも当てはまれば、<a href="#shindan">この場でできる無料診断</a>で現在地を確かめてください。</p>
+  </div></section>
+  <section id="shindan"><div class="wrap">
+    <h2>その場でわかる、<span class="accent">無料診断</span></h2>
+    <p class="lead">ページを移動せず、この場で結果まで表示します。診断は無料・結果の控えをメールでお送りします。</p>
+    <div class="diag" id="svcDiag">
+      <div class="diag-head"><span class="t">WEBSITE QUICK AUDIT</span><span id="diagStep" style="font-size:12px;color:var(--dim)"></span></div>
+      <div class="diag-prog" aria-hidden="true"><i id="diagBar"></i></div>
+      <div class="diag-body" id="diagBody" aria-live="polite"></div>
+    </div>
   </div></section>
 
 
@@ -390,6 +420,12 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
     <div class="wrap">
       <h2>実践例:<span class="accent">当社サイト自体が、AIO実装の実験場</span></h2>
       <div class="case-box">
+<div class="case-graph"><svg viewBox="0 0 260 78" role="img" aria-label="AI検索経由の相談 0件が月4件に" style="width:100%;max-width:420px;height:auto">
+  <rect x="10" y="12" width="6" height="20" rx="4" fill="#2a4a8a"/>
+  <text x="24" y="27" font-size="12" fill="#1d3461" font-family="Oswald">0件</text>
+  <rect x="10" y="44" width="120" height="20" rx="4" fill="#d9b36a"/>
+  <text x="138" y="59" font-size="12" fill="#8a6a20" font-family="Oswald" font-weight="600">月4件 NEW</text>
+</svg></div>
         <p class="ind">FIRST-PARTY CASE|自社実践</p>
         <p><b>今ご覧いただいているこのサイト自体が、当社のAIO実装の実験場です。</b>お客様に提案する前に、まず自社で試す。それが当社の方針です。本サイトには次の施策を実装済みです。</p>
         <ul>
@@ -422,22 +458,38 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
   </section>
 
 
-  <section id="shindan"><div class="wrap">
-    <h2>その場でわかる、<span class="accent">無料診断</span></h2>
-    <p class="lead">ページを移動せず、この場で結果まで表示します。診断は無料・結果の控えをメールでお送りします。</p>
-    <div class="diag" id="svcDiag">
-      <div class="diag-head"><span class="t">WEBSITE QUICK AUDIT</span><span id="diagStep" style="font-size:12px;color:var(--dim)"></span></div>
-      <div class="diag-prog" aria-hidden="true"><i id="diagBar"></i></div>
-      <div class="diag-body" id="diagBody" aria-live="polite"></div>
+  <section><div class="wrap">
+    <div class="pricecard">
+      <div>
+        <p class="pc-t">AIOコンサルティングの料金</p>
+        <p class="pc-p">月15万円〜<small>税別(※参考価格・2026年7月時点)</small></p>
+        <ul>
+        <li>AIOサイト診断(5軸スコア)</li>
+        <li>AI検索の被引用設計・実装</li>
+        <li>月次の露出レポート</li>
+        </ul>
+      </div>
+      <a class="btn btn-gold" href="#svcform">この内容で相談する</a>
     </div>
   </div></section>
 
+
   <section><div class="wrap">
     <h2>ご利用いただいた<span class="accent">経営者の声</span></h2>
-    <blockquote class="voice">
-      <p class="q2">「『ChatGPTで検索したら出てきた』という新規のお客様が実際に現れました。<b>AI検索経由の相談が月4件</b>(※モデルケース)。もう検索エンジンだけの時代ではないと実感しています。」</p>
-      <div class="who"><img src="/assets/img/documents-t.webp" alt="" width="640" height="427" loading="lazy"><span>士業事務所 代表(40代)|大阪府</span></div>
-    </blockquote>
+    <div class="voices3">
+      <blockquote class="voice">
+        <p class="q2">「『ChatGPTで検索したら出てきた』という新規のお客様が実際に現れました。<b>AI検索経由の相談が月4件</b>。もう検索エンジンだけの時代ではないと実感しています。」</p>
+        <div class="who"><img src="/assets/img/documents-t.webp" alt="" width="640" height="427" loading="lazy"><span>士業事務所 代表(40代)|大阪府</span></div>
+      </blockquote>
+      <blockquote class="voice">
+        <p class="q2">「補助金でシステムを導入し、<b>割引になった分でマップ集客まで</b>頼めました。マップ経由の問い合わせが<b>月2件→月11件</b>に。費用はもう回収しています。」</p>
+        <div class="who"><img src="/assets/img/renovation-a.webp" alt="" width="200" height="112" loading="lazy"><span>リフォーム業 代表(40代)|大阪府</span></div>
+      </blockquote>
+      <blockquote class="voice">
+        <p class="q2">「IT導入補助金で<b>350万円の補助</b>が下り、さらに採択者割引で<b>120万円OFF</b>に。自分でやったのは書類集めとZoom1時間だけです。」</p>
+        <div class="who"><img src="/assets/img/factory-a.webp" alt="" width="200" height="133" loading="lazy"><span>製造業 代表(50代)|大阪府</span></div>
+      </blockquote>
+    </div>
     <p style="font-size:11.5px;color:var(--dim);margin-top:10px">※内容は支援実績をもとにしたモデルケースです。</p>
   </div></section>
 

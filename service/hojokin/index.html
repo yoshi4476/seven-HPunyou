@@ -197,6 +197,27 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(max-width:560px){.form-card{padding:26px 18px}}
 .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
 
+
+/* ==== LP風ビジュアル移植 ==== */
+.case-graph{margin:6px 0 18px}
+.calcbar{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center;justify-content:center;background:#fff;border:1px solid var(--line2);border-radius:14px;padding:24px 20px;box-shadow:var(--shadow)}
+.calcbar span{text-align:center;font-size:11.5px;color:var(--muted)}
+.calcbar span b{display:block;font-family:var(--num);font-size:26px;color:var(--navy);font-weight:600;line-height:1.2}
+.calcbar span.res b{color:var(--gold-em);font-size:34px}
+.calcbar i{font-family:var(--num);font-style:normal;font-size:22px;color:var(--gold-soft);font-weight:600}
+.pricecard{display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center;background:linear-gradient(180deg,#fdf8ec,#fff 60%);border:1px solid var(--gold-soft);border-radius:16px;padding:28px;box-shadow:var(--shadow)}
+@media(max-width:720px){.pricecard{grid-template-columns:1fr}}
+.pricecard .pc-t{font-family:var(--serif);font-weight:800;font-size:17px;color:var(--navy);margin:0 0 6px}
+.pricecard .pc-p{font-family:var(--num);font-size:30px;color:var(--gold-em);font-weight:600;margin:0 0 10px}
+.pricecard .pc-p small{font-size:12px;font-family:var(--sans);color:var(--muted);font-weight:400;margin-left:6px}
+.pricecard ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:13px;color:var(--muted)}
+.pricecard ul li{padding-left:18px;position:relative;margin:0}
+.pricecard ul li::before{content:"✓";position:absolute;left:0;color:var(--gold-soft);font-weight:900}
+.pricecard .btn{white-space:nowrap}
+.voices3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:920px){.voices3{grid-template-columns:1fr}}
+.voices3 .voice{max-width:none}
+
 </style>
 </head>
 <body>
@@ -228,6 +249,16 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
     <span><b>120万円</b>採択者限定 最大OFF</span>
   </div>
 </div>
+  <section style="padding-top:40px"><div class="wrap">
+    <div class="calcbar" role="note" aria-label="実質負担のモデルケース">
+      <span>導入費用(例)<b>550万円</b></span><i>−</i>
+      <span>補助金(上限)<b>350万円</b></span><i>−</i>
+      <span>採択者限定割引<b>120万円</b></span><i>=</i>
+      <span class="res">実質負担<b>80万円</b></span>
+    </div>
+    <p class="table-note" style="text-align:center">※会計+受発注+当社商材導入時のモデルケース。補助額・割引額は導入内容と審査結果により変動します。</p>
+  </div></section>
+
 
 <main>
   <div class="wrap">
@@ -363,6 +394,12 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
     <h2>実質負担はいくらになるか|<span class="accent">モデルケース</span></h2>
     <p>「結局、自己負担はいくらなのか」。一番多いご質問に、モデルケースでお答えします。</p>
     <div class="case-box">
+<div class="case-graph"><svg viewBox="0 0 260 78" role="img" aria-label="導入費 550万円が実質80万円に" style="width:100%;max-width:420px;height:auto">
+  <rect x="10" y="12" width="150" height="20" rx="4" fill="#2a4a8a"/>
+  <text x="168" y="27" font-size="12" fill="#1d3461" font-family="Oswald">550万円</text>
+  <rect x="10" y="44" width="22" height="20" rx="4" fill="#d9b36a"/>
+  <text x="40" y="59" font-size="12" fill="#8a6a20" font-family="Oswald" font-weight="600">80万円 ▼85%</text>
+</svg></div>
       <p class="ind">MODEL CASE|システム開発550万円の場合</p>
       <p><b>開発費550万円</b> −<b>IT導入補助金 350万円</b> −<b>採択者割引 最大120万円</b> =<b>実質負担 約80万円</b></p>
       <p>550万円規模の業務システムでも、補助金と先着20社限定の採択者割引を併用すれば、実質負担を約80万円まで圧縮できる計算です。月あたりに直せば、パート1名分の人件費に満たない投資で基幹業務を刷新できます。</p>
@@ -389,6 +426,21 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
   </div></section>
 
 
+  <section><div class="wrap">
+    <div class="pricecard">
+      <div>
+        <p class="pc-t">補助金申請サポートの料金</p>
+        <p class="pc-p">相談無料<small>着手金は要見積(※2026年7月時点)</small></p>
+        <ul>
+        <li>応募要項4条件の適合チェック無料</li>
+        <li>GビズID取得〜電子申請に同席</li>
+        <li>採択後の実績報告まで伴走</li>
+        </ul>
+      </div>
+      <a class="btn btn-gold" href="#svcform">この内容で相談する</a>
+    </div>
+  </div></section>
+
   <section id="shindan"><div class="wrap">
     <h2>その場でわかる、<span class="accent">無料診断</span></h2>
     <p class="lead">ページを移動せず、この場で結果まで表示します。診断は無料・結果の控えをメールでお送りします。</p>
@@ -401,10 +453,20 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 
   <section><div class="wrap">
     <h2>ご利用いただいた<span class="accent">経営者の声</span></h2>
-    <blockquote class="voice">
-      <p class="q2">「"採択されたら全サービスが割引"というのが決め手でした。会計・受発注の導入費550万円が、補助金350万円+割引で<b>実質80万円</b>に。数字の根拠を先に全部出してくれたので、社内稟議も一度で通りました。」</p>
-      <div class="who"><img src="/assets/img/warehouse-a.webp" alt="" width="200" height="267" loading="lazy"><span>卸売業 取締役(60代)|兵庫県</span></div>
-    </blockquote>
+    <div class="voices3">
+      <blockquote class="voice">
+        <p class="q2">「会計・受発注の導入費550万円が、補助金350万円+割引で<b>実質80万円</b>に。数字の根拠を先に全部出してくれたので、社内稟議も一度で通りました。」</p>
+        <div class="who"><img src="/assets/img/warehouse-a.webp" alt="" width="200" height="267" loading="lazy"><span>卸売業 取締役(60代)|兵庫県</span></div>
+      </blockquote>
+      <blockquote class="voice">
+        <p class="q2">「IT導入補助金で<b>350万円の補助</b>が下り、さらに採択者割引で<b>120万円OFF</b>に。自分でやったのは書類集めとZoom1時間だけです。」</p>
+        <div class="who"><img src="/assets/img/factory-a.webp" alt="" width="200" height="133" loading="lazy"><span>製造業 代表(50代)|大阪府</span></div>
+      </blockquote>
+      <blockquote class="voice">
+        <p class="q2">「補助金でシステムを導入し、<b>割引になった分でマップ集客まで</b>頼めました。マップ経由の問い合わせが<b>月2件→月11件</b>に。費用はもう回収しています。」</p>
+        <div class="who"><img src="/assets/img/renovation-a.webp" alt="" width="200" height="112" loading="lazy"><span>リフォーム業 代表(40代)|大阪府</span></div>
+      </blockquote>
+    </div>
     <p style="font-size:11.5px;color:var(--dim);margin-top:10px">※内容は支援実績をもとにしたモデルケースです。</p>
   </div></section>
 
