@@ -43,7 +43,9 @@ gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
 <script type="text/javascript"> (Clarityのスニペットをここへ) </script>
 ========================================================================== -->
 
-<!-- 構造化データ JSON-LD 5種(Organization / Person / Service+LocalBusiness / FAQPage / WebSite) -->
+<!-- 構造化データ JSON-LD 5種(Organization / Person / Service+LocalBusiness / FAQPage / WebSite)
+     TODO: SNS公式アカウント(X/Instagram等)のURL確定後、Organizationに "sameAs": ["https://..."] を追加(E-E-A-T強化)
+     TODO: geo座標(34.6721, 135.5555)は住所からの近似値。Googleマップの正確なピン座標に差し替え推奨 -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -61,6 +63,13 @@ gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
     { "@type": "ProfessionalService", "name": "AI導入補助金(IT導入補助金)申請サポート・システム開発・AIO/MEOコンサルティング",
       "provider": { "@id": "https://lp.7senses.co.jp/#org" },
       "areaServed": "JP",
+      "telephone": "+81-6-4305-7547",
+      "priceRange": "¥¥",
+      "address": { "@type": "PostalAddress", "postalCode": "537-0003", "addressRegion": "大阪府", "addressLocality": "大阪市東成区", "streetAddress": "神路1丁目7-4 コンフォートビル901・902", "addressCountry": "JP" },
+      "geo": { "@type": "GeoCoordinates", "latitude": 34.6721, "longitude": 135.5555 },
+      "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00", "closes": "20:00" }],
       "description": "令和8年度IT導入補助金(上限350万円)の申請伴走から、業務システム開発・AI導入、AIO(AI検索最適化)・MEO(Googleマップ最適化)による集客支援までを一気通貫で提供。" },
     { "@type": "FAQPage", "mainEntity": [
       { "@type": "Question", "name": "AI導入補助金とはどんな制度ですか?",
