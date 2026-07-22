@@ -138,19 +138,44 @@ jobs:
       - name: 検索エンジン通知
         run: node scripts/notify-search.mjs
 
+      # 各ディレクトリの記事件数と判定ログを出力 (失敗調査を1画面で完結させる)
+      - name: パイプライン状態サマリー
+        if: always()
+        run: |
+          for d in content/drafts content/publish-queue content/human-review content/posted; do
+            echo "== $d: $(ls "$d" 2>/dev/null | grep -cv '^\.gitkeep$' || true) 件 =="
+            ls "$d" 2>/dev/null | grep -v '^\.gitkeep$' || true
+          done
+          echo "== quality-log (末尾) =="; tail -c 3000 logs/quality-log.json 2>/dev/null || echo "(なし)"
+          echo "== safety-gate-log (末尾) =="; tail -c 3000 logs/safety-gate-log.json 2>/dev/null || echo "(なし)"
+
       # 記事md・画像・レンダリング済みHTML・一覧・sitemapをまとめてコミット
+      # ※途中のステップが失敗しても、生成済み記事とログは必ず保全する (if: always)
       - name: 生成コンテンツをコミット
+        if: always()
         working-directory: .
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add blog-system/content blog-system/data blog-system/logs blog-system/public blog images sitemap.xml 2>/dev/null || true
+          git add -A blog-system/content blog-system/data blog-system/logs blog-system/public blog images sitemap.xml
           if git diff --cached --quiet; then
             echo "コミット対象の変更なし"
           else
-            git commit -m "chore(blog): 自動生成記事の公開 ($(date -u +%Y-%m-%d))"
+            git commit -m "chore(blog): 自動生成コンテンツの保存 ($(date -u +%Y-%m-%d))"
             git push
           fi
+
+      # 失敗調査用に生成物一式をアーティファクトとしても保存 (7日間)
+      - name: 実行ログをアーティファクト保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: blog-run-${{ github.run_number }}
+          path: |
+            blog-system/logs/
+            blog-system/content/
+          retention-days: 7
+          if-no-files-found: ignore
 
       # 失敗時も必ず日次レポートを Slack へ送信する
       - name: Slack 日次レポート
