@@ -14,7 +14,8 @@ PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "
 PUBLIC_FILES = ["index.html", "404.html", "_headers", "robots.txt", "llms.txt", "sitemap.xml",
                 "favicon.png", "logo.png", "ogp.png"]
 # 公開ディレクトリ内でも除外するもの
-EXCLUDE_NAMES = {"_template.html"}
+# ※特典PDF2冊はZoom無料相談の参加特典のため公開配信しない(スタッフがZoom内で手渡し)
+EXCLUDE_NAMES = {"_template.html", "chatgpt-starter-kit.pdf", "hojokin-checklist.pdf"}
 EXCLUDE_SUFFIX = {".jpg"}  # assets/img の元jpgは配信不要(webpのみ配信)
 
 if DIST.exists():
