@@ -19,6 +19,13 @@
 | [blog-system/](blog-system/) | 毎日ブログ自動更新システム(プロンプトB。GitHub Actions+品質採点ループ+安全ゲート) |
 | [automation/](automation/) | リード自動化(プロンプトC。GAS完成コード+ステップメール)+計測改善90日運用(プロンプトD) |
 
+## 🚀 デプロイ(公開済み: https://lp.7senses.co.jp)
+
+- ホスティング: Cloudflare Pages(プロジェクト名 `seven-hpunyou` / 直接アップロード方式)
+- **更新手順**: ①変更をコミット ②`python tools/make_dist.py`(内部資料を除外した dist/ を生成) ③`npx wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true`
+  (要 `CLOUDFLARE_API_TOKEN`(Pages:Edit権限)+`CLOUDFLARE_ACCOUNT_ID` 環境変数。トークンは使用後に失効可)
+- DNS: お名前.com(GMOレンタルサーバーのDNS)に CNAME `lp` → `seven-hpunyou.pages.dev` 登録済み。ネームサーバーは変更していない(既存サイト・メール無影響)
+
 ## 公開前に必須の残作業
 
 1. ~~ドメイン確定~~ ✅ **`lp.7senses.co.jp` で確定・全ファイル反映済み**(残り: GitHubへpush→Cloudflare Pages接続→DNSにCNAME追加)

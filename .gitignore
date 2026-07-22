@@ -8,3 +8,5 @@ blog-system/logs/*.json
 blog-system/content/drafts/*.md
 blog-system/content/publish-queue/*.md
 blog-system/content/human-review/*.md
+
+dist/
