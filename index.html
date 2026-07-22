@@ -382,7 +382,7 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 @media(max-width:860px){.step::after{content:""}}
 
 /* ================= 13. 診断ウィジェット ================= */
-.diag{background:#fff;border:1px solid var(--line);border-radius:18px;max-width:720px;margin:44px auto 0;overflow:hidden;box-shadow:var(--shadow)}
+.diag{background:#fff;border:1px solid var(--line);border-radius:18px;max-width:880px;margin:44px auto 0;overflow:hidden;box-shadow:var(--shadow)}
 .diag-tabs{display:flex;border-bottom:1px solid var(--line);background:var(--panel2)}
 .diag-tab{flex:1;min-height:50px;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);font-size:12.5px;font-weight:700;cursor:pointer;padding:12px 4px;font-family:var(--sans);transition:color .15s;white-space:nowrap}
 @media(max-width:560px){.diag-tab span{display:none}}
@@ -398,12 +398,12 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 .diag-head .t{font-family:var(--num);font-size:12px;letter-spacing:.28em;color:var(--gold)}
 .diag-prog{height:5px;background:var(--bg2)}
 .diag-prog i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--gold-soft),#e8c988);transition:width .35s ease}
-.diag-body{padding:36px 32px 40px;min-height:340px}
+.diag-body{padding:42px 44px 46px;min-height:380px}
 @media(max-width:560px){.diag-body{padding:28px 20px 32px}}
 .diag .qnum{font-family:var(--num);font-size:12px;letter-spacing:.26em;color:var(--gold);margin-bottom:12px}
-.diag .qtext{font-family:var(--serif);font-size:clamp(17px,2.4vw,21px);font-weight:800;line-height:1.7;margin-bottom:26px;color:var(--navy)}
+.diag .qtext{font-family:var(--serif);font-size:clamp(18px,2.6vw,23px);font-weight:800;line-height:1.7;margin-bottom:28px;color:var(--navy)}
 .diag .opts{display:grid;gap:12px}
-.diag .opt{min-height:52px;text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;color:var(--text);font-size:14.5px;cursor:pointer;transition:border-color .15s,background .15s;font-family:var(--sans)}
+.diag .opt{min-height:58px;text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px 20px;color:var(--text);font-size:15.5px;cursor:pointer;transition:border-color .15s,background .15s;font-family:var(--sans)}
 .diag .opt:hover{border-color:var(--gold-soft);background:var(--gold-pale)}
 .diag .back{margin-top:22px;background:none;border:none;color:var(--dim);font-size:12.5px;cursor:pointer;padding:10px;font-family:var(--sans)}
 .diag .back:hover{color:var(--muted)}
@@ -462,28 +462,6 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 .perk.wide .pk-big{font-family:var(--serif);font-size:20px;font-weight:800;color:var(--navy);line-height:1.55;min-width:280px}
 .perk.wide .pk-big .sub{display:block;font-family:var(--sans);font-size:12.5px;font-weight:700;color:var(--gold);letter-spacing:.08em;margin-top:6px}
 @media(max-width:900px){.perk.wide{flex-direction:column;align-items:flex-start;gap:10px}.perk.wide .pk-big{min-width:0}}
-
-/* 補助金フル活用設計(ネイビー大型セクション) */
-.fk{background:radial-gradient(900px 520px at 85% -10%,rgba(217,179,106,.16),transparent 60%),linear-gradient(160deg,#132445,#1d3461 55%,#24427c);color:#fff}
-.fk h2{color:#fff}
-.fk .lead{color:#c9d2e4}
-.fk-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:36px}
-@media(max-width:1020px){.fk-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.fk-grid{grid-template-columns:1fr}}
-.fk-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-top:3px solid var(--gold-l,#d9b36a);border-radius:12px;padding:20px 18px}
-.fk-card .fk-tag{font-family:var(--num);font-size:11px;letter-spacing:.18em;color:#e8c988}
-.fk-card h3{font-family:var(--serif);font-size:15.5px;font-weight:800;color:#fff;margin:8px 0 6px;line-height:1.5}
-.fk-card p{font-size:12.5px;color:#c9d2e4;margin:0;line-height:1.75}
-.fk-card .cap{display:inline-block;margin-top:10px;font-size:11.5px;color:#e8c988;border:1px solid rgba(217,179,106,.45);border-radius:999px;padding:2px 10px}
-.fk-why{background:rgba(217,179,106,.1);border:1px solid rgba(217,179,106,.35);border-radius:14px;padding:22px 26px;margin-top:28px}
-.fk-why b{color:#e8c988}
-.fk-why p{color:#dbe3f2;font-size:14px;margin:6px 0 0}
-.fk-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}
-@media(max-width:900px){.fk-steps{grid-template-columns:1fr}}
-.fk-step{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:20px 18px;display:flex;gap:14px;align-items:flex-start}
-.fk-step .n{flex:none;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#c39a4e,#b08b3e);color:#fff;font-family:var(--num);font-weight:700;font-size:15px;display:flex;align-items:center;justify-content:center}
-.fk-step h3{font-family:var(--serif);font-size:14.5px;font-weight:800;color:#fff;margin:0 0 4px;line-height:1.5}
-.fk-step p{font-size:12.5px;color:#c9d2e4;margin:0;line-height:1.75}
 
 /* ================= 15. FAQ ================= */
 .faq{max-width:820px;margin:40px auto 0;display:grid;gap:12px}
@@ -635,7 +613,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
       <p class="fresh">本ページは<b>2026年7月時点</b>の情報です|このサービスは、AI導入を検討する<b>中小企業・個人事業主</b>向けです</p>
       <div class="badge-row">
         <span class="badge navy">令和8年度 IT導入補助金 対応</span>
-        <span class="badge navy">ご契約者様は会員価格で優待</span>
+        <span class="badge navy">ご契約者様は会員価格で大幅割引</span>
       </div>
       <h1>AI導入補助金で、<br>導入費を最大<span class="num">350</span>万円<br>圧縮する。</h1>
       <!-- AIO: 冒頭200字の断言文+キーワード(AI検索が最重要視するシグナル) -->
@@ -800,8 +778,8 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 
     <!-- 会員価格(契約者向け優待。採択・交付とは無関係/補助対象経費は対象外=適法設計) -->
     <div style="margin-top:28px;background:linear-gradient(135deg,#fdf8ec,#f8f0dc);border:1px solid #e9d8ac;border-radius:14px;padding:22px 26px">
-      <p style="font-family:var(--serif);font-weight:800;font-size:16.5px;color:var(--navy);margin:0 0 6px">ご契約者様は<span class="accent">「会員価格」</span>— 2つ目からのサービスを優待</p>
-      <p style="font-size:13.5px;color:var(--muted);margin:0;line-height:1.9">当社サービスをご契約中のお客様(補助金ご利用の有無は問いません)は、MEO運用・AIOコンサルティングなどの月額サービスを<b style="color:var(--navy)">会員価格</b>でご利用いただけます。具体的な価格は、無料相談・お見積りの際にご案内します。<br><span style="font-size:12px">※会員価格の対象は、補助金申請の対象経費に含まれないサービスに限ります(申請対象のシステム開発費・ツール導入費は通常価格です)。採択・交付の有無による価格の変更はありません。</span></p>
+      <p style="font-family:var(--serif);font-weight:800;font-size:16.5px;color:var(--navy);margin:0 0 6px">ご契約者様は会員価格 — 2つ目からのサービスを<span class="accent">大幅割引</span></p>
+      <p style="font-size:13.5px;color:var(--muted);margin:0;line-height:1.9">当社サービスをご契約中のお客様(補助金ご利用の有無は問いません)は、MEO運用・AIOコンサルティングなどの月額サービスを<b style="color:var(--navy)">会員価格(通常価格から大幅割引)</b>でご利用いただけます。具体的な割引率・価格は、無料相談・お見積りの際にご案内します。<br><span style="font-size:12px">※会員価格の対象は、補助金申請の対象経費に含まれないサービスに限ります(申請対象のシステム開発費・ツール導入費は通常価格です)。採択・交付の有無による価格の変更はありません。</span></p>
     </div>
 
     <!-- 対象条件テーブル(見やすさ強化) -->
@@ -821,61 +799,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
     </div>
     <p class="table-note">※条件の適合は無料相談(Zoom 30分)でその場で確認できます。</p>
 </details>
-  </div>
-</section>
-
-<!-- ========== 07. 補助金フル活用設計(採択非連動・情報提供による受取額最大化の訴求) ========== -->
-<section id="fullkatsu" class="fk">
-  <div class="wrap rev">
-    <p class="kicker" style="color:#e8c988">Maximize — 補助金フル活用設計</p>
-    <h2>IT導入補助金<span class="accent">「だけ」</span>で、<br class="sp">終わらせない。</h2>
-    <p class="lead">国と自治体の中小企業向け支援は、目的別にいくつも走っています。当社は補助金をお使いになるお客様に、<span class="em-marker" style="color:#fff;background:linear-gradient(transparent 62%,rgba(217,179,106,.45) 62%)">活用・併用を検討できる公的支援をまるごと洗い出し</span>、「どれを・どの順番で取りにいくか」の設計図を無料相談の場でご提案します。値引きではなく、<b style="color:#e8c988">受け取れる支援そのものの最大化</b>で応える——これが当社の優遇のかたちです。</p>
-    <div class="fk-grid">
-      <div class="fk-card">
-        <span class="fk-tag">01</span>
-        <h3>IT導入補助金</h3>
-        <p>ITツール・業務システム・生成AI活用の導入費用に。当社の主戦場です。</p>
-        <span class="cap">上限350万円(通常枠の例)</span>
-      </div>
-      <div class="fk-card">
-        <span class="fk-tag">02</span>
-        <h3>省力化投資補助金</h3>
-        <p>人手不足対応の設備・ロボット・省力化製品の導入に。</p>
-        <span class="cap">目的:省人化・自動化</span>
-      </div>
-      <div class="fk-card">
-        <span class="fk-tag">03</span>
-        <h3>小規模事業者<br>持続化補助金</h3>
-        <p>販路開拓・チラシ・EC構築・広告など、売るための取り組みに。</p>
-        <span class="cap">目的:販路開拓</span>
-      </div>
-      <div class="fk-card">
-        <span class="fk-tag">04</span>
-        <h3>ものづくり補助金</h3>
-        <p>新製品・新サービス開発のための設備投資・試作開発に。</p>
-        <span class="cap">目的:革新的な投資</span>
-      </div>
-      <div class="fk-card">
-        <span class="fk-tag">05</span>
-        <h3>自治体独自の助成金</h3>
-        <p>都道府県・市区町村のDX支援・上乗せ助成など。見落としの宝庫です。</p>
-        <span class="cap">目的:地域の上乗せ支援</span>
-      </div>
-    </div>
-    <div class="fk-why">
-      <b>なぜ「設計」が必要か —— 同じ経費に、2つの補助金は使えません。</b>
-      <p>重複受給は禁止されているからこそ、「どの投資を・どの制度に・どの順番で割り当てるか」で受け取れる支援の総額が変わります。制度ごとに締切も要件も違うため、個別に調べるより、投資計画全体を見て設計するのが最短です。</p>
-    </div>
-    <div class="fk-steps">
-      <div class="fk-step"><span class="n">1</span><div><h3>無料相談でヒアリング</h3><p>業種・規模・これからの投資計画(システム・設備・販促)をZoom 30分でお聞きします。</p></div></div>
-      <div class="fk-step"><span class="n">2</span><div><h3>制度スクリーニング</h3><p>国・自治体の公募中制度を横断チェックし、貴社が検討できる制度を洗い出します。</p></div></div>
-      <div class="fk-step"><span class="n">3</span><div><h3>フル活用ロードマップ</h3><p>優先順位・スケジュール・必要準備をまとめた「取りにいく順番」の設計図をご提案します。</p></div></div>
-    </div>
-    <div style="text-align:center;margin-top:36px">
-      <a class="btn btn-primary" href="#contact" data-cta="fullkatsu_cta">使える制度を洗い出してもらう(無料)</a>
-      <span class="micro" style="color:#9fb0cf">3営業日以内に返信します。営業電話はいたしません。</span>
-    </div>
-    <p class="table-note" style="color:#9fb0cf;margin-top:24px">※掲載の制度名は2026年7月時点の例示です。対象・補助上限・併用可否は各制度の公募要領・自治体の要綱によります。本提案は情報提供・申請支援であり、採択・交付を保証するものではありません。同一経費への重複受給はできません。</p>
   </div>
 </section>
 
