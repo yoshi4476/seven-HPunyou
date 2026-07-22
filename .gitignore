@@ -3,10 +3,8 @@ Thumbs.db
 Desktop.ini
 *.log
 # blog-system 実行時生成物
+# ※記事md(drafts/human-review/publish-queue)と判定ログは、CI実行後の
+#   調査・保全のためコミット対象とする(除外するとランナー終了時に消失する)
 blog-system/node_modules/
-blog-system/logs/*.json
-blog-system/content/drafts/*.md
-blog-system/content/publish-queue/*.md
-blog-system/content/human-review/*.md
 
 dist/
