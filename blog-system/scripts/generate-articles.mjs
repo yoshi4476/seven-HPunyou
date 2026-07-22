@@ -27,7 +27,7 @@ const MAIN_COUNT = 2;          // 朝の本流記事は2本
 const NEWS_COUNT = 1;          // 夕方のニュース記事は1本
 const MAX_TOKENS = 16000;      // 8000字ガイド記事でも収まる上限
 const API_RETRIES = 3;         // 429/5xx/529 のリトライ回数
-const LP_URL = "https://lp.7sensesplus.com/"; // ※仮ドメイン。本番ドメイン確定後に要確認・差し替え
+const LP_URL = "https://lp.7senses.co.jp/"; // ※仮ドメイン。本番ドメイン確定後に要確認・差し替え
 
 // 文字数要件 (safety-gate.mjs と揃えること)
 const MIN_CHARS = { main: 5000, guide: 8000, news: 2000 };

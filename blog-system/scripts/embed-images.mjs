@@ -48,7 +48,7 @@ const THUMB_H = 630;
 const MAX_WEBP_BYTES = 150 * 1024; // WebP は 150KB 以下
 const H2_PER_IMAGE = 2;            // マーカー無し記事: H2 2個ごとに1枚 (2〜3個ごとの要件)
 const MAX_SECTION_IMAGES = 5;      // 1記事あたりの本文画像上限 (API コスト暴走防止)
-const SITE_URL = (process.env.SITE_URL || "https://lp.7sensesplus.com").replace(/\/$/, ""); // ※仮ドメイン・要確認
+const SITE_URL = (process.env.SITE_URL || "https://lp.7senses.co.jp").replace(/\/$/, ""); // ※仮ドメイン・要確認
 
 const API_URL = "https://api.anthropic.com/v1/messages";
 const ANTHROPIC_VERSION = "2023-06-01";

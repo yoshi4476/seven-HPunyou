@@ -637,7 +637,7 @@ function runStepMails() {
 
 /** 文面: automation/docs/ステップメール3通.md と同趣旨(CTA: ①診断 ②事例ブログ ③無料相談) */
 function sendStepMail_(email, name, step) {
-  const site = getProp_('SITE_URL') || 'https://lp.7sensesplus.com';
+  const site = getProp_('SITE_URL') || 'https://lp.7senses.co.jp';
   const blog = getProp_('BLOG_URL') || (site + '/blog/');
   const calendly = getProp_('CALENDLY_URL') || (site + '/#contact');
   const to = name ? name + ' 様' : 'ご担当者様';

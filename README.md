@@ -21,7 +21,7 @@
 
 ## 公開前に必須の残作業
 
-1. **ドメイン確定** — 全ファイルの `lp.7sensesplus.com` を実ドメインに置換
+1. ~~ドメイン確定~~ ✅ **`lp.7senses.co.jp` で確定・全ファイル反映済み**(残り: GitHubへpush→Cloudflare Pages接続→DNSにCNAME追加)
 2. **「仮」コメント箇所の差し替え**(index.html内を `仮` で検索)— 代表者名・略歴・事例・お客様の声・価格・採択率98%等の算出根拠。**架空実績のままの公開は景表法リスク**
 3. **GAS デプロイ** — [automation/docs/リード対応自動化セットアップ.md](automation/docs/リード対応自動化セットアップ.md) の手順後、index.html の `GAS_ENDPOINT` にURLを設定(未設定でもLPは動作、送信はconsole出力のみ)。WHITEPAPER_URL には `/downloads/ai-hojokin-guide-2026.pdf` の絶対URLを設定
 4. **GA4 / Search Console** — index.html の G-XXXXXXXXXX を差し替えてコメント解除、GSC登録+sitemap送信

@@ -2,7 +2,7 @@
 
 セブンセンシズ株式会社(大阪市東成区)の LP 集客用ブログを、GitHub Actions + Anthropic API で毎日自動生成・品質担保・公開・通知するシステムです。
 
-- LP: https://lp.7sensesplus.com/ **(※仮ドメイン。本番ドメイン確定後に `SITE_URL` と各所コメントを要確認)**
+- LP: https://lp.7senses.co.jp/ **(※仮ドメイン。本番ドメイン確定後に `SITE_URL` と各所コメントを要確認)**
 - 戦略の前提: [`../戦略設計書.md`](../戦略設計書.md)(キーワード100本・ペルソナ・KPI)
 
 ## パイプライン全体像
@@ -63,7 +63,7 @@ gh repo create seven-senses-blog --private --source=. --push
 | 名前 | 内容 |
 |---|---|
 | `CLAUDE_MODEL` | 使用モデルID。**[docs.claude.com](https://docs.claude.com/) で Claude Opus 4.8 の正式IDを確認して設定すること**(スクリプトへのハードコード禁止) |
-| `SITE_URL` | 本番URL (例: `https://lp.7sensesplus.com`)。未設定時はスクリプト内の仮ドメインが使われる |
+| `SITE_URL` | 本番URL (例: `https://lp.7senses.co.jp`)。未設定時はスクリプト内の仮ドメインが使われる |
 
 ### 3. Astro プロジェクトへの組込み
 
@@ -196,7 +196,7 @@ FAQ 回答を 40〜60 字に制限しているのは、`FAQPage` のリッチリ
 
 - [ ] GitHub リポジトリ作成・push、Secrets/Variables 設定(上記手順 1〜2)
 - [ ] **`CLAUDE_MODEL` の設定**: docs.claude.com で Opus 4.8 の正式IDを確認して Variables に登録
-- [ ] **本番ドメインの確定**: `lp.7sensesplus.com` は仮。確定後 `SITE_URL` Variable を設定し、`generate-articles.mjs` / `embed-images.mjs` / `notify-search.mjs` / テンプレート内の仮ドメインコメントを確認
+- [ ] **本番ドメインの確定**: `lp.7senses.co.jp` は仮。確定後 `SITE_URL` Variable を設定し、`generate-articles.mjs` / `embed-images.mjs` / `notify-search.mjs` / テンプレート内の仮ドメインコメントを確認
 - [ ] Astro プロジェクトへの組込み(Content Collections・記事ページ・構造化データ)とワークフローのビルド/デプロイステップ有効化
 - [ ] Cloudflare Pages 等のデプロイ先設定
 - [ ] IndexNow キー生成とサイト直下への `{キー}.txt` 配置

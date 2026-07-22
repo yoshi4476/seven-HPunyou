@@ -15,4 +15,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://lp.7sensesplus.com/sitemap.xml
+Sitemap: https://lp.7senses.co.jp/sitemap.xml
