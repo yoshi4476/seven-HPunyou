@@ -450,8 +450,9 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 
 
 /* 特典グリッド */
-.perk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
-@media(max-width:900px){.perk-grid{grid-template-columns:1fr}}
+.perk-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+@media(max-width:1020px){.perk-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.perk-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.perk-grid{grid-template-columns:1fr}}
 .perk{background:#fff;border:1px solid #e9d8ac;border-radius:14px;padding:24px 22px;box-shadow:var(--shadow)}
 .perk .pk-no{display:inline-block;font-family:var(--num);font-size:12px;letter-spacing:.2em;color:#fff;background:linear-gradient(135deg,#c39a4e,#b08b3e);border-radius:999px;padding:4px 14px;margin-bottom:12px}
@@ -1106,6 +1107,11 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
         <span class="pk-no">特典 3</span>
         <h3>AIOサイト精密診断<br>レポート</h3>
         <p>自動の簡易診断より深く、担当者が貴社サイトを個別分析。改善の優先順位までレポートします。</p>
+      </div>
+      <div class="perk">
+        <span class="pk-no">特典 4</span>
+        <h3>Googleビジネスプロフィール<br>セルフ改善チェックシート</h3>
+        <p>マップ集客の土台30項目を採点式で自己点検できるシート(PDF・印刷対応)。直す順番までわかります。</p>
       </div>
     </div>
     <div style="text-align:center;margin-top:32px">
