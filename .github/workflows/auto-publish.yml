@@ -123,32 +123,45 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
         run: node scripts/generate-sns.mjs
 
+      # 公開確定Markdown → サイト記事HTML変換 + 一覧・カテゴリ・sitemap再生成
+      - name: 記事HTMLレンダリング・一覧再生成
+        working-directory: .
+        run: |
+          python3 -m pip install --quiet markdown
+          python3 tools/render_blog.py
+          python3 tools/gen_blog_pages.py
+
+      # Cloudflare Pages へ本番デプロイ (Secrets 未設定時は安全にスキップ)
+      - name: 本番デプロイ (Cloudflare Pages)
+        working-directory: .
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "CLOUDFLARE_API_TOKEN 未設定 → デプロイをスキップ (記事の生成・コミットまでは実施)"
+          else
+            python3 tools/make_dist.py
+            npx --yes wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true
+          fi
+
+      # sitemap ping + IndexNow + publish-queue → posted への移動 (デプロイ後に通知する)
+      - name: 検索エンジン通知
+        run: node scripts/notify-search.mjs
+
+      # 記事md・画像・レンダリング済みHTML・一覧・sitemapをまとめてコミット
       - name: 生成コンテンツをコミット
+        working-directory: .
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add content/ data/ logs/ public/
+          git add blog-system/content blog-system/data blog-system/logs blog-system/public blog images sitemap.xml 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "コミット対象の変更なし"
           else
-            git commit -m "chore(blog): 自動生成記事の追加 ($(date -u +%Y-%m-%d))"
+            git commit -m "chore(blog): 自動生成記事の公開 ($(date -u +%Y-%m-%d))"
             git push
           fi
-
-      # ---- ここは導入先の Astro プロジェクト構成に合わせて調整する ----
-      # 例1: このリポジトリ自体が Astro プロジェクトの場合
-      #   run: npm run build && npx wrangler pages deploy dist --project-name=7senses-lp
-      # 例2: Cloudflare Pages の Git 連携を使う場合、push した時点で自動デプロイされる
-      #       ため、このステップはビルド検証のみでよい
-      - name: ビルド & デプロイ
-        run: |
-          echo "TODO: Astro プロジェクトへの組込み後に有効化 (README.md 参照)"
-          # npm run build
-          # npx wrangler pages deploy dist --project-name=<PROJECT>
-
-      # sitemap.xml (差分のみ lastmod 更新) + 画像sitemap + IndexNow + GSC ping
-      - name: 検索エンジン通知
-        run: node scripts/notify-search.mjs
 
       # 失敗時も必ず日次レポートを Slack へ送信する
       - name: Slack 日次レポート

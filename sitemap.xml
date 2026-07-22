@@ -7,11 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/youkou/</loc>
-    <lastmod>2026-07-23</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.8</priority>
@@ -40,6 +35,11 @@
     <loc>https://lp.7senses.co.jp/about/</loc>
     <lastmod>2026-07-21</lastmod>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/youkou/</loc>
+    <lastmod>2026-07-23</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/privacy/</loc>

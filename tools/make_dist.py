@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 
 # 公開するもの(これ以外はデプロイされない)
-PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou"]
+PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images"]
 PUBLIC_FILES = ["index.html", "404.html", "_headers", "robots.txt", "llms.txt", "sitemap.xml",
                 "favicon.png", "logo.png", "ogp.png"]
 # 公開ディレクトリ内でも除外するもの
