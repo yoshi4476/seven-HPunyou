@@ -7,10 +7,8 @@
 # 必要な設定 (認証は CLAUDE_CODE_OAUTH_TOKEN > ANTHROPIC_API_KEY の優先順。どちらか一方でよい):
 #   Secrets: CLAUDE_CODE_OAUTH_TOKEN (推奨: Claude Pro/Max サブスク認証。`claude setup-token` で生成)
 #            または ANTHROPIC_API_KEY (従量課金),
-#            SLACK_WEBHOOK, (任意) INDEXNOW_KEY, (任意) UNSPLASH_ACCESS_KEY
-#   SNS自動投稿 (任意): X_API_KEY / X_API_SECRET / X_ACCESS_TOKEN / X_ACCESS_TOKEN_SECRET
-#            → 設定時はブログ更新と同時に X へ自動投稿。未設定でも
-#              Instagram/Facebook 用を含む最適化下書きが Slack に届く
+#            SLACK_WEBHOOK, (任意) INDEXNOW_KEY, (任意) UNSPLASH_ACCESS_KEY,
+#            (推奨) CLOUDFLARE_API_TOKEN / CLOUDFLARE_ACCOUNT_ID (本番自動デプロイ用)
 #   Variables: CLAUDE_MODEL (APIキー認証時は必須。サブスク認証時は任意 = CLI既定モデル),
 #              (任意) SITE_URL
 # =============================================================
@@ -111,17 +109,6 @@ jobs:
       # 執筆AIから独立した機械チェック。不合格は human-review/ へ隔離
       - name: 安全ゲート (機械チェック)
         run: node scripts/safety-gate.mjs
-
-      # 公開確定記事から各SNS向けの最適化投稿文を生成。
-      # X は API シークレット設定時のみ自動投稿、Instagram/Facebook は Slack へ下書き送信
-      - name: SNS投稿文生成・X自動投稿
-        env:
-          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          X_API_KEY: ${{ secrets.X_API_KEY }}
-          X_API_SECRET: ${{ secrets.X_API_SECRET }}
-          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
-          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
-        run: node scripts/generate-sns.mjs
 
       # 公開確定Markdown → サイト記事HTML変換 + 一覧・カテゴリ・sitemap再生成
       - name: 記事HTMLレンダリング・一覧再生成
