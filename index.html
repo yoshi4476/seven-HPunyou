@@ -450,18 +450,12 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 
 
 /* 特典グリッド */
-.perk-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
-@media(max-width:1020px){.perk-grid{grid-template-columns:1fr 1fr}}
+.perk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:880px;margin:36px auto 0}
 @media(max-width:640px){.perk-grid{grid-template-columns:1fr}}
-@media(max-width:600px){.perk-grid{grid-template-columns:1fr}}
 .perk{background:#fff;border:1px solid #e9d8ac;border-radius:14px;padding:24px 22px;box-shadow:var(--shadow)}
 .perk .pk-no{display:inline-block;font-family:var(--num);font-size:12px;letter-spacing:.2em;color:#fff;background:linear-gradient(135deg,#c39a4e,#b08b3e);border-radius:999px;padding:4px 14px;margin-bottom:12px}
 .perk h3{font-family:var(--serif);font-size:16.5px;font-weight:800;color:var(--navy);line-height:1.6;margin-bottom:8px}
 .perk p{font-size:13px;color:var(--muted);margin:0}
-.perk.wide{grid-column:1/-1;display:flex;gap:26px;align-items:center;border:2px solid var(--gold);background:linear-gradient(135deg,#fffdf7,#fdf6e6)}
-.perk.wide .pk-big{font-family:var(--serif);font-size:20px;font-weight:800;color:var(--navy);line-height:1.55;min-width:280px}
-.perk.wide .pk-big .sub{display:block;font-family:var(--sans);font-size:12.5px;font-weight:700;color:var(--gold);letter-spacing:.08em;margin-top:6px}
-@media(max-width:900px){.perk.wide{flex-direction:column;align-items:flex-start;gap:10px}.perk.wide .pk-big{min-width:0}}
 
 /* ================= 15. FAQ ================= */
 .faq{max-width:820px;margin:40px auto 0;display:grid;gap:12px}
@@ -649,8 +643,8 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 <!-- 実績ティッカー(マーキー。トラックは2周分でループ) -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%+※</span><span>使える公的支援 まるごと設計提案</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
-    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%+※</span><span>使える公的支援 まるごと設計提案</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
+    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%+※</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
+    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%+※</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
   </div>
 </div>
 <!-- 動画スロット: 実写・会社紹介動画(mp4)を assets/video/hero.mp4 に配置し、
@@ -1110,25 +1104,8 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
       </div>
       <div class="perk">
         <span class="pk-no">特典 2</span>
-        <h3>補助金申請 逆算スケジュール<br>&amp;書類チェックリスト</h3>
-        <p>申請→着金の全行程図、書き込み式の逆算表、差し戻しになる「よくある不備TOP10」まで(PDF・10ページ)。</p>
-      </div>
-      <div class="perk">
-        <span class="pk-no">特典 3</span>
-        <h3>AIOサイト精密診断<br>レポート</h3>
-        <p>自動の簡易診断より深く、担当者が貴社サイトを個別分析。改善の優先順位までレポートします。</p>
-      </div>
-      <div class="perk">
-        <span class="pk-no">特典 4</span>
         <h3>Googleビジネスプロフィール<br>セルフ改善チェックシート</h3>
         <p>マップ集客30項目の採点式シートに、星別の口コミ返信テンプレ・90日改善計画つき(PDF・12ページ)。</p>
-      </div>
-      <div class="perk wide">
-        <div class="pk-big">
-          <span class="pk-no">特典 5</span><br>
-          補助金<span class="accent">フル活用</span>設計<span class="sub">— 貴社が使える公的支援の「まるごと洗い出し」</span>
-        </div>
-        <p>IT導入補助金だけで終わらせません。省力化投資・小規模事業者持続化・ものづくり補助金、自治体独自の助成金まで、貴社の業種・規模・計画で活用や併用を検討できる公的支援を相談の場で洗い出し、<b>「どれを・どの順番で取りにいくか」の設計図</b>をその場でご提案します。<span style="display:block;font-size:11.5px;margin-top:6px;color:var(--muted)">※対象可否は各制度の公募要領によります。採択を保証するものではありません。</span></p>
       </div>
     </div>
     <div style="text-align:center;margin-top:32px">
