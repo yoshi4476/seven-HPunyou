@@ -62,7 +62,7 @@ const DIAG_KIND_LABELS = { hojokin: 'AI補助金診断', meo: 'MEO集客診断',
 
 // 診断グレード別の処方箋(自動返信メールに差し込む)
 const GRADE_ADVICE = {
-  S: '補助金活用の条件がほぼ整っています。今期の公募回での申請を強くおすすめします。採択者限定の割引(先着20社・最大120万円OFF)の対象になる可能性が高い状態です。',
+  S: '補助金活用の条件がほぼ整っています。今期の公募回での申請を強くおすすめします。公募締切から逆算した準備スケジュールを無料相談でご提案できます。',
   A: '補助金活用の適性が高い状態です。あと1〜2点の弱点(スコアが低い軸)を補強すれば、採択率をさらに高められます。',
   B: '基礎は合格ラインです。まずはスコアが低い軸(推進体制・デジタル基盤など)の整備から始めると、申請までの道のりが最短になります。',
   C: 'いまは準備段階です。現状業務の棚卸しとGビズIDの取得など、申請の前提づくりから伴走いたします。',
@@ -378,7 +378,7 @@ function honorific_(lead) {
 
 /** ① 無料相談 */
 function buildContactReply_(lead) {
-  const calendly = getProp_('CALENDLY_URL') || '{{CALENDLY_URL}}';
+  const calendly = getProp_('CALENDLY_URL') || 'https://lp.7senses.co.jp/#contact';
   return honorific_(lead) + '\n\n'
     + 'このたびは' + CONFIG.COMPANY_NAME + 'へお問い合わせいただき、誠にありがとうございます。\n'
     + '以下の内容でお申し込みを受け付けました。\n\n'
@@ -395,13 +395,13 @@ function buildContactReply_(lead) {
     + 'ご相談では、貴社の状況に合わせて\n'
     + '・IT導入補助金(上限350万円)の対象になるかどうか\n'
     + '・採択までのスケジュールと必要な準備\n'
-    + '・採択者限定の先着20社・最大120万円OFFの適用可否\n'
+    + '・補助金適用後の自己負担額の目安\n'
     + 'を、その場で率直にお伝えします。';
 }
 
 /** ② 診断結果 */
 function buildDiagnosisReply_(lead) {
-  const calendly = getProp_('CALENDLY_URL') || '{{CALENDLY_URL}}';
+  const calendly = getProp_('CALENDLY_URL') || 'https://lp.7senses.co.jp/#contact';
   const scoreLines = [];
   for (const key in SCORE_LABELS) {
     if (lead.scores[key] !== undefined) {
@@ -425,14 +425,13 @@ function buildDiagnosisReply_(lead) {
     + '営業のお電話はいたしません。日程は下記からご都合の良い枠をお選びください。\n\n'
     + '▼ 無料相談を予約する\n'
     + calendly + '\n\n'
-    + '(参考)IT導入補助金は上限350万円・当社支援の採択通過率は90%以上です。\n'
-    + '採択された方は先着20社限定で開発費が最大120万円OFFになります。';
+    + '(参考)IT導入補助金は上限350万円・当社支援の採択通過率は90%以上です(※当社支援実績)。';
 }
 
 /** ③ 資料DL */
 function buildDownloadReply_(lead) {
-  const whitepaper = getProp_('WHITEPAPER_URL') || '{{WHITEPAPER_URL}}';
-  const blog = getProp_('BLOG_URL') || '{{BLOG_URL}}';
+  const whitepaper = getProp_('WHITEPAPER_URL') || 'https://lp.7senses.co.jp/downloads/ai-hojokin-guide-2026.pdf';
+  const blog = getProp_('BLOG_URL') || 'https://lp.7senses.co.jp/blog/';
   return honorific_(lead) + '\n\n'
     + '資料のダウンロードをお申し込みいただき、ありがとうございます。\n'
     + '下記リンクからご覧いただけます。\n\n'
@@ -453,7 +452,7 @@ function buildDownloadReply_(lead) {
 
 /** ④ サイト無料診断(簡易版であることを明示し、精密診断=無料相談へ誘導) */
 function buildAuditReply_(lead) {
-  const calendly = getProp_('CALENDLY_URL') || '{{CALENDLY_URL}}';
+  const calendly = getProp_('CALENDLY_URL') || 'https://lp.7senses.co.jp/#contact';
   const a = lead.audit || { url: '', total: 0, grade: 'C', axes: {}, findings: [] };
   const axLines = [];
   for (const key in AUDIT_LABELS) {
@@ -491,7 +490,7 @@ function buildAuditReply_(lead) {
 
 /** 全メール共通フッター(特定電子メール法: 送信者表示 + 配信停止導線) */
 function mailFooter_() {
-  const unsubscribe = getProp_('UNSUBSCRIBE_URL') || '{{UNSUBSCRIBE_URL}}';
+  const unsubscribe = getProp_('UNSUBSCRIBE_URL') || 'https://lp.7senses.co.jp/unsubscribe/';
   return '\n\n'
     + '━━━━━━━━━━━━━━━━━━━━━━━━\n'
     + CONFIG.COMPANY_NAME + '\n'
@@ -650,16 +649,18 @@ function sendStepMail_(email, name, step) {
       + '結果はその場で表示され、貴社への処方箋も一緒にお届けします。\n\n'
       + '▼ 3分でできる無料診断\n' + site + '/#diagnosis\n';
   } else if (step === 2) {
-    subject = '導入費550万円が実質80万円になった計算の内訳|' + CONFIG.COMPANY_NAME;
+    subject = '導入費550万円のうち350万円が補助された計算の内訳|' + CONFIG.COMPANY_NAME;
     body = to + '\n\n' + CONFIG.COMPANY_NAME + 'です。\n\n'
-      + '「補助金は気になるが、実際いくら安くなるのか」というご質問を多くいただきます。\n'
-      + 'モデルケースでは、導入費550万円−補助金350万円−採択者割引120万円=実質80万円。\n'
+      + '「補助金は気になるが、実際いくら補助されるのか」というご質問を多くいただきます。\n'
+      + 'モデルケースでは、導入費550万円に対して補助金350万円が交付され、自己負担は200万円でした\n'
+      + '(※補助額は導入内容と審査により変動します)。\n'
       + 'この計算の内訳と、事務作業が月40時間→6時間になった事例の裏側をブログで公開しています。\n\n'
       + '▼ 事例・実務ノウハウ(毎日更新)\n' + blog + '\n';
   } else {
-    subject = '先着20社の割引枠・現在の空き状況について|' + CONFIG.COMPANY_NAME;
+    subject = '令和8年度の公募締切から逆算した準備スケジュールのご案内|' + CONFIG.COMPANY_NAME;
     body = to + '\n\n' + CONFIG.COMPANY_NAME + 'です。このメールがシリーズの最後です。\n\n'
-      + '採択者限定の全サービス最大120万円OFF(先着20社)は、採択が決まった方から枠が埋まります。\n'
+      + '補助金申請で最も多いつまずきは「締切に準備が間に合わない」ことです。\n'
+      + 'GビズIDの取得だけで最長2週間かかるため、公募締切から逆算した早めの着手をおすすめします。\n'
       + '「対象になるか」の確認だけなら、Zoom30分の無料相談で完結します。\n'
       + '相談したからといって、お申し込みいただく必要はありません。\n\n'
       + '▼ 無料相談を予約する(営業電話はいたしません)\n' + calendly + '\n';
