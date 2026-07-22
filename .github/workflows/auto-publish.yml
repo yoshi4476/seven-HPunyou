@@ -42,6 +42,9 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: blog-system # スクリプト・package.json は blog-system/ 配下にある
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }} # 従量課金モード用 (CLAUDE_CODE_OAUTH_TOKEN があればそちらを優先。両対応)
       CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL }} # モデルIDはハードコード禁止。Variables で管理する (サブスク認証時は未設定可 = CLI既定モデル)
@@ -61,6 +64,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+          cache-dependency-path: blog-system/package-lock.json
 
       - name: 依存関係インストール
         run: npm ci
