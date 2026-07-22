@@ -10,7 +10,9 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <style>
 :root{--bg:#fdfcf9;--bg2:#f4f1e9;--panel:#ffffff;--line:#e7e2d4;--line2:rgba(176,139,62,.45);
 --text:#212b3d;--muted:#5b6472;--dim:#6d7484;--navy:#1d3461;--gold:#8a6d2a;--gold-strong:#8a6a20;
@@ -31,7 +33,7 @@ table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff;borde
 th,td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top}
 thead th{background:var(--navy);color:#fff;font-weight:700;border-color:rgba(255,255,255,.15);white-space:nowrap}
 tbody th{background:#faf8f2;color:var(--navy);font-weight:700;white-space:nowrap}
-footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--dim);text-align:center;line-height:1.9}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
 footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 </style>
 </head>

@@ -18,7 +18,9 @@
 <link rel="icon" type="image/png" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -131,7 +133,7 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 @media(max-width:640px){.rel ul{grid-template-columns:1fr}}
 .rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
 .rel a:hover{border-color:var(--gold-soft)}
-footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--dim);text-align:center;line-height:1.9}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
 footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 /* 訴求LP化: 実績ストリップ+追従CTA */
 .stats-strip{background:#fff;border-bottom:1px solid var(--line)}

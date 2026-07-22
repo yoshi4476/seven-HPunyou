@@ -28,7 +28,9 @@
 <!-- フォント: Noto Sans JP(本文)+Shippori Mincho B1(見出し)+Oswald(数字) display=swap -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Shippori+Mincho+B1:wght@600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 
 <!-- ============ GA4(計測ID発行後にコメント解除) ============
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
@@ -453,7 +455,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 .foot-grid nav{display:flex;flex-wrap:wrap;gap:20px}
 .foot-grid nav a{color:var(--muted);text-decoration:none}
 .foot-grid nav a:hover{color:var(--navy)}
-.copyright{margin-top:30px;font-size:12px;color:var(--dim)}
+.copyright{margin-top:30px;font-size:12px;color:var(--muted)}
 
 /* ================= スマホ追従CTAバー ================= */
 .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(253,252,249,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
