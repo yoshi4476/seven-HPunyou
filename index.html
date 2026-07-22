@@ -94,7 +94,7 @@ gtag('js',new Date());gtag('config','G-XXXXXXXXXX');
   --serif:"Shippori Mincho B1",serif;
   --sans:"Noto Sans JP",sans-serif;
   --num:"Oswald","Noto Sans JP",sans-serif;
-  --maxw:1120px; --radius:14px;
+  --maxw:1240px; --radius:14px;
   --shadow:0 10px 34px rgba(29,52,97,.08);
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -492,6 +492,25 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
   .btn,.post{transition:none}
   .btn-primary::after,.cost-card,.hero::before,.ticker-track,.badge.hot i{animation:none}
 }
+
+/* ==== リードブースター ==== */
+.float-cta{position:fixed;right:26px;bottom:26px;z-index:65;display:none;align-items:center;gap:4px;
+  opacity:0;transform:translateY(14px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
+.float-cta.show{opacity:1;transform:none;pointer-events:auto}
+@media(min-width:861px){.float-cta{display:flex}}
+.float-cta a{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);
+  color:#2b1503;font-weight:700;font-size:14px;text-decoration:none;padding:15px 24px;border-radius:999px;
+  box-shadow:0 14px 36px rgba(234,88,12,.42);font-family:var(--sans)}
+.float-cta a:hover{transform:translateY(-2px)}
+.float-cta .fdot{width:9px;height:9px;border-radius:50%;background:#7c2d12;animation:beat2 1.6s ease-in-out infinite}
+@keyframes beat2{0%,100%{transform:scale(1)}50%{transform:scale(1.5);opacity:.6}}
+.float-cta button{background:rgba(33,43,61,.55);border:none;color:#fff;width:26px;height:26px;border-radius:50%;
+  cursor:pointer;font-size:13px;line-height:1;margin-left:2px}
+.trust-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.trust-chips span{font-size:12px;font-weight:700;color:#8a6a20;background:#f9f1dc;border:1px solid rgba(176,139,62,.35);
+  border-radius:999px;padding:5px 13px}
+@media(prefers-reduced-motion:reduce){.float-cta .fdot{animation:none}.float-cta{transition:none}}
+
 </style>
 </head>
 <body>
@@ -1016,6 +1035,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
           <!-- bot対策: ハニーポット(人間には見えない) -->
           <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
           <input type="hidden" name="ts" id="f-ts">
+          <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
           <button class="btn btn-primary btn-block" type="submit" id="submitBtn" data-cta="form_submit">無料で相談する</button>
           <span class="micro" style="text-align:center">送信後、3営業日以内にご返信します。営業電話はいたしません。</span>
         </form>
@@ -1462,6 +1482,28 @@ form.addEventListener("submit",e=>{
     document.getElementById("formDone").hidden=false;
   });
 });
+</script>
+
+<div class="float-cta" id="floatCta" role="complementary" aria-label="無料診断への案内">
+  <a href="#diagnosis"><span class="fdot" aria-hidden="true"></span>3分でわかる無料診断を試す</a>
+  <button type="button" id="floatClose" aria-label="この案内を閉じる">✕</button>
+</div>
+<script>
+(function(){
+  var fc=document.getElementById("floatCta");
+  if(!fc||sessionStorage.getItem("fcClosed")) return;
+  var shown=false;
+  addEventListener("scroll",function(){
+    var y=scrollY;
+    var nearForm=document.getElementById("contact");
+    var hide=nearForm&&y+innerHeight>nearForm.offsetTop+120;
+    if(y>innerHeight*0.9&&!hide){ if(!shown){fc.classList.add("show");shown=true;} }
+    else if(shown){ fc.classList.remove("show"); shown=false; }
+  },{passive:true});
+  document.getElementById("floatClose").addEventListener("click",function(){
+    fc.remove(); sessionStorage.setItem("fcClosed","1");
+  });
+})();
 </script>
 </body>
 </html>
