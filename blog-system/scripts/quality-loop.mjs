@@ -35,7 +35,7 @@ const RUBRIC = [
   { key: "aio_fit", label: "AIO適合 (断言文・FAQ・引用されやすさ)", max: 15 },
   { key: "eeat", label: "E-E-A-T・一次情報 (出典・実体験・専門性)", max: 15 },
   { key: "seo_tech", label: "SEO技術 (タイトル・見出し構造・内部リンク)", max: 15 },
-  { key: "readability", label: "可読性 (段落・表・箇条書き・平易さ)", max: 15 },
+  { key: "readability", label: "可読性と緩急 (1文60字以内・段落3〜4行・3〜4段落ごとの視覚要素(表/箇条書き/画像)・強調の適切な使用(太字1セクション1〜2回+em-marker2〜3箇所)・単調な見出しの回避。文字だけの画面が続く/極小文字・強調乱用は減点)", max: 15 },
   { key: "originality", label: "独自性 (自社知見・切り口)", max: 10 },
   { key: "density", label: "文字数と情報密度", max: 10 },
 ];
