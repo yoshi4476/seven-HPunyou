@@ -11,23 +11,23 @@
 //   4. 点数推移を logs/quality-log.json に記録する。
 //
 // 実行: node scripts/quality-loop.mjs
-// 環境変数: ANTHROPIC_API_KEY / CLAUDE_MODEL (未設定ならスキップ)
+// 環境変数: CLAUDE_CODE_OAUTH_TOKEN (サブスク認証。CLAUDE_MODEL は任意)
+//           または ANTHROPIC_API_KEY + CLAUDE_MODEL (従量課金)
+//           どちらも未設定なら明確なメッセージを出してスキップ (exit 0)
 //           MIN_SCORE (既定90) / MAX_REVISIONS (既定5)
 // =============================================================
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, renameSync, existsSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
+import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
 
 // ---------------- 設定定数 ----------------
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DRAFTS_DIR = join(ROOT, "content", "drafts");
 const REVIEW_DIR = join(ROOT, "content", "human-review");
 const LOG_PATH = join(ROOT, "logs", "quality-log.json");
-const API_URL = "https://api.anthropic.com/v1/messages";
-const ANTHROPIC_VERSION = "2023-06-01";
 const MIN_SCORE = Number(process.env.MIN_SCORE ?? 90);
 const MAX_REVISIONS = Number(process.env.MAX_REVISIONS ?? 5);
-const API_RETRIES = 3;
 
 // 100点ルーブリック (配点は safety-gate や README と揃えること)
 const RUBRIC = [
@@ -41,43 +41,18 @@ const RUBRIC = [
 ];
 
 // ---------------- 共通ユーティリティ ----------------
+// Claude 呼び出しの実体は claude-client.mjs (サブスク認証 / APIキーの両対応) に共通化した。
 function requireEnv() {
-  const missing = ["ANTHROPIC_API_KEY", "CLAUDE_MODEL"].filter((k) => !process.env[k]);
-  if (missing.length > 0) {
-    console.error(`[quality-loop] 環境変数 ${missing.join(", ")} が未設定のため品質ループをスキップします。`);
+  if (!hasClaudeAuth()) {
+    console.error("[quality-loop] 認証なし (CLAUDE_CODE_OAUTH_TOKEN / ANTHROPIC_API_KEY がどちらも未設定) のため品質ループをスキップします。");
+    console.error("  サブスク認証: CLAUDE_CODE_OAUTH_TOKEN を設定 (CLAUDE_MODEL は任意)。APIキー認証: ANTHROPIC_API_KEY + CLAUDE_MODEL。README.md 参照。");
     process.exit(0);
   }
-}
-
-async function callClaude(systemPrompt, userPrompt, maxTokens = 16000) {
-  let lastError;
-  for (let attempt = 1; attempt <= API_RETRIES; attempt++) {
-    const res = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": ANTHROPIC_VERSION,
-      },
-      body: JSON.stringify({
-        model: process.env.CLAUDE_MODEL, // env 経由。ハードコード禁止
-        max_tokens: maxTokens,
-        system: systemPrompt,
-        messages: [{ role: "user", content: userPrompt }],
-      }),
-    });
-    if (res.ok) {
-      const data = await res.json();
-      return data.content.filter((b) => b.type === "text").map((b) => b.text).join("\n");
-    }
-    if ([429, 529].includes(res.status) || res.status >= 500) {
-      lastError = new Error(`Anthropic API エラー: ${res.status}`);
-      await new Promise((r) => setTimeout(r, 2000 * 2 ** (attempt - 1)));
-      continue;
-    }
-    throw new Error(`Anthropic API エラー: ${res.status} ${await res.text()}`);
+  // APIキーモード (サブスクトークン無し) の場合のみ CLAUDE_MODEL が必須
+  if (!process.env.CLAUDE_CODE_OAUTH_TOKEN && !process.env.CLAUDE_MODEL) {
+    console.error("[quality-loop] APIキーモードでは CLAUDE_MODEL が必須のため品質ループをスキップします (README.md 参照)。");
+    process.exit(0);
   }
-  throw lastError;
 }
 
 // ---------------- 採点 (執筆AIと別セッション) ----------------
@@ -111,7 +86,7 @@ async function scoreArticle(md) {
   const raw = await callClaude(
     buildScoringSystemPrompt(),
     `次の記事を採点してください。\n\n<article>\n${md}\n</article>`,
-    4000
+    { maxTokens: 4000 }
   );
   return parseScore(raw);
 }
@@ -126,7 +101,7 @@ ${deductions.map((d, i) => `${i + 1}. ${d}`).join("\n")}
 
 # 現在の記事
 ${md}`;
-  let revised = await callClaude(system, user, 16000);
+  let revised = await callClaude(system, user, { maxTokens: 16000 });
   return revised.replace(/^```(?:markdown|md)?\n/, "").replace(/\n```\s*$/, "").trim();
 }
 

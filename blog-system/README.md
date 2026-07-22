@@ -1,6 +1,6 @@
 # セブンセンシズ 毎日ブログ自動更新システム
 
-セブンセンシズ株式会社(大阪市東成区)の LP 集客用ブログを、GitHub Actions + Anthropic API で毎日自動生成・品質担保・公開・通知するシステムです。
+セブンセンシズ株式会社(大阪市東成区)の LP 集客用ブログを、GitHub Actions + Claude(**Claude Pro/Max サブスク認証** または Anthropic API 従量課金)で毎日自動生成・品質担保・公開・通知するシステムです。認証方式は後述「[Maxプランで従量課金なしで動かす(推奨)](#maxプランで従量課金なしで動かす推奨)」参照。
 
 - LP: https://lp.7senses.co.jp/ **(※仮ドメイン。本番ドメイン確定後に `SITE_URL` と各所コメントを要確認)**
 - 戦略の前提: [`../戦略設計書.md`](../戦略設計書.md)(キーワード100本・ペルソナ・KPI)
@@ -53,7 +53,8 @@ gh repo create seven-senses-blog --private --source=. --push
 
 | 名前 | 内容 |
 |---|---|
-| `ANTHROPIC_API_KEY` | Anthropic API キー ([console.anthropic.com](https://console.anthropic.com/) で発行) |
+| `CLAUDE_CODE_OAUTH_TOKEN` | **推奨。** Claude Pro/Max サブスク認証トークン(`claude setup-token` で生成)。設定すると従量課金なしで動作(後述「Maxプランで従量課金なしで動かす」参照)。**このトークンがあれば `ANTHROPIC_API_KEY` は不要** |
+| `ANTHROPIC_API_KEY` | Anthropic API キー ([console.anthropic.com](https://console.anthropic.com/) で発行)。従量課金。`CLAUDE_CODE_OAUTH_TOKEN` 未設定時のフォールバックとして使用 |
 | `SLACK_WEBHOOK` | Slack Incoming Webhook URL (レポート送信先チャンネル用) |
 | `INDEXNOW_KEY` | (任意) IndexNow 用キー。任意の32桁英数字を生成し、サイト直下に `{キー}.txt`(中身はキー自身)を配置する |
 | `UNSPLASH_ACCESS_KEY` | (任意) 本文画像フォールバック②の写真API用。取得手順は後述「画像生成の3段フォールバック」参照 |
@@ -62,7 +63,7 @@ gh repo create seven-senses-blog --private --source=. --push
 
 | 名前 | 内容 |
 |---|---|
-| `CLAUDE_MODEL` | 使用モデルID。**[docs.claude.com](https://docs.claude.com/) で Claude Opus 4.8 の正式IDを確認して設定すること**(スクリプトへのハードコード禁止) |
+| `CLAUDE_MODEL` | 使用モデルID。**APIキー認証時は必須**([docs.claude.com](https://docs.claude.com/) で Claude Opus 4.8 の正式IDを確認して設定。スクリプトへのハードコード禁止)。**サブスク認証(`CLAUDE_CODE_OAUTH_TOKEN`)時は省略可**(CLI既定モデルを使用。指定する場合は `sonnet` / `opus` 等のエイリアス推奨) |
 | `SITE_URL` | 本番URL (例: `https://lp.7senses.co.jp`)。未設定時はスクリプト内の仮ドメインが使われる |
 
 ### 3. Astro プロジェクトへの組込み
@@ -104,7 +105,9 @@ gh repo create seven-senses-blog --private --source=. --push
 
 ```bash
 # ローカルで1本ずつ検証 (Node 20 必須)
-export ANTHROPIC_API_KEY=sk-ant-...
+# 認証はどちらか一方でよい (両方あればサブスク認証を優先)
+export CLAUDE_CODE_OAUTH_TOKEN=sk-ant-oat01-...   # A. サブスク認証 (claude setup-token で生成。CLAUDE_MODEL 任意)
+export ANTHROPIC_API_KEY=sk-ant-...               # B. 従量課金 (この場合 CLAUDE_MODEL 必須)
 export CLAUDE_MODEL=<docs.claude.com で確認した正式ID>
 export UNSPLASH_ACCESS_KEY=...   # 任意 (未設定なら写真APIをスキップ)
 npm install
@@ -118,13 +121,53 @@ npm run report        # レポート (SLACK_WEBHOOK 未設定なら標準出力)
 
 ---
 
+## Maxプランで従量課金なしで動かす(推奨)
+
+Anthropic API の従量課金の代わりに、**Claude Pro/Max プランのサブスクリプション認証(Claude Code のトークン)** で記事生成・品質採点・AI図解を動かせます。生成処理は `scripts/claude-client.mjs` が Claude Code CLI(`claude -p` の headless 実行)経由で行うため、API キーの発行・チャージは不要になります。
+
+### 手順
+
+1. **ローカルでトークンを生成する**
+
+   Claude Code をインストール済みのマシンで以下を実行します(Pro/Max プランでのログインが必要)。
+
+   ```bash
+   claude setup-token
+   ```
+
+   `sk-ant-oat01-...` 形式の長期有効トークンが表示されるので控えます(サブスク認証用の OAuth トークン。API キーとは別物)。
+
+2. **GitHub Secrets に登録する**
+
+   リポジトリの Settings → Secrets and variables → Actions → Secrets に、名前 `CLAUDE_CODE_OAUTH_TOKEN` として登録します。ワークフローはこの Secret を検出すると自動で Claude Code CLI をインストールし、サブスク認証モードで動作します。
+
+3. **`CLAUDE_MODEL` は省略可**
+
+   サブスク認証時は未設定なら CLI の既定モデルが使われます。指定したい場合は `sonnet` / `opus` などの**エイリアス指定を推奨**します(正式IDの調べ直しが不要になるため)。
+
+4. **`ANTHROPIC_API_KEY` は不要になる**
+
+   サブスク認証で運用する場合、`ANTHROPIC_API_KEY` Secret は削除して構いません(残しておいてもトークンが優先されるだけで害はありません)。
+
+### 認証の優先順
+
+`CLAUDE_CODE_OAUTH_TOKEN`(サブスク認証)**>** `ANTHROPIC_API_KEY`(従量課金)。両方設定されている場合はサブスク認証が使われます。どちらも無い場合、各スクリプトは「認証なしのためスキップ」と明示して正常終了(exit 0)します。
+
+### 注意事項
+
+- **利用量は Max プランの枠を消費します。** Claude のサブスクは「5時間ウィンドウ + 週次上限」のレート枠であり、この Actions の実行分も**手元の Claude Code 作業と同じ枠を共有**します。ブログ自動生成が多いと日中の開発作業に使える枠が減る点に注意してください。
+- **トークン失効時は Actions が失敗します。** その場合も Slack 日次レポート(失敗時も必ず送信)で検知できます。`claude setup-token` を再実行して Secret を更新してください。
+- **大量実行時は頻度を調整してください。** 枠の圧迫を感じたら、`auto-publish.yml` の cron を毎日1本(朝のみ)に減らす、`MAX_REVISIONS` を下げる、などで消費量を抑えられます。
+
+---
+
 ## 画像生成の3段フォールバック (embed-images.mjs)
 
 記事本文の画像は、`generate-articles.mjs` が入れる `<!--IMG: (図解内容の説明)-->` マーカー(H2の2〜3個ごと)を `embed-images.mjs` が次の優先順で解決して挿入します。マーカーが無い記事でも H2 2個ごとに自動挿入されます。**どの環境変数が無くても CI は止まりません**(その段をスキップして次へフォールバック)。
 
 | 優先 | 手段 | 条件 | 内容 |
 |---|---|---|---|
-| ① | AI生成SVG図解 | `ANTHROPIC_API_KEY` + `CLAUDE_MODEL` があり、セクションに数値・比較・手順が含まれる | Anthropic API に セクション内容を渡し、サイト配色(白 `#fdfcf9` / ネイビー `#1d3461` / ゴールド `#d9b36a`)・日本語ラベル・幅1200 の概念図/手順図/比較図SVGを生成。構文検証(script要素・外部参照なし)→ Sharp で PNG→WebP 変換(150KB以下) |
+| ① | AI生成SVG図解 | `CLAUDE_CODE_OAUTH_TOKEN`(サブスク認証)または `ANTHROPIC_API_KEY` + `CLAUDE_MODEL` があり、セクションに数値・比較・手順が含まれる | Claude (claude-client.mjs 経由) に セクション内容を渡し、サイト配色(白 `#fdfcf9` / ネイビー `#1d3461` / ゴールド `#d9b36a`)・日本語ラベル・幅1200 の概念図/手順図/比較図SVGを生成。構文検証(script要素・外部参照なし)→ Sharp で PNG→WebP 変換(150KB以下) |
 | ② | 写真API (Unsplash) | `UNSPLASH_ACCESS_KEY` がある | セクション内容から英語クエリを生成して `/search/photos` を検索し、regular サイズをDL→WebP化。クレジット(UTM付リンク)を figcaption に自動挿入(Unsplash License 上は任意だが API ガイドライン準拠のため実装) |
 | ③ | ローカル素材 | 常時 | LP同梱の `assets/img/`(documents / paperwork / calculator / handshake / meeting-jp / analytics / chip / code / osaka / building の .webp)からカテゴリ別に選択・圧縮。素材も無い場合は SVGバナーを生成(必ず成功) |
 
@@ -195,7 +238,8 @@ FAQ 回答を 40〜60 字に制限しているのは、`FAQPage` のリッチリ
 ## 人間が行う必要のある残作業
 
 - [ ] GitHub リポジトリ作成・push、Secrets/Variables 設定(上記手順 1〜2)
-- [ ] **`CLAUDE_MODEL` の設定**: docs.claude.com で Opus 4.8 の正式IDを確認して Variables に登録
+- [ ] **認証の設定(どちらか一方)**: 推奨は `claude setup-token` → Secrets `CLAUDE_CODE_OAUTH_TOKEN` 登録(「Maxプランで従量課金なしで動かす」参照)。従量課金なら `ANTHROPIC_API_KEY` を登録
+- [ ] **`CLAUDE_MODEL` の設定(APIキー認証時のみ必須)**: docs.claude.com で Opus 4.8 の正式IDを確認して Variables に登録。サブスク認証時は省略可(指定するなら `sonnet` 等のエイリアス推奨)
 - [ ] **本番ドメインの確定**: `lp.7senses.co.jp` は仮。確定後 `SITE_URL` Variable を設定し、`generate-articles.mjs` / `embed-images.mjs` / `notify-search.mjs` / テンプレート内の仮ドメインコメントを確認
 - [ ] Astro プロジェクトへの組込み(Content Collections・記事ページ・構造化データ)とワークフローのビルド/デプロイステップ有効化
 - [ ] Cloudflare Pages 等のデプロイ先設定

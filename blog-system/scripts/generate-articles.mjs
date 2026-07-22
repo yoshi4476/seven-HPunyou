@@ -4,29 +4,29 @@
 // 役割:
 //   1. data/keywords-queue.json から優先度順 (S > A > B → id昇順) に
 //      pending キーワードを取得 (通常: 2本 / --news: ニュース型1本)
-//   2. Anthropic Messages API (fetch直叩き) で記事を生成
+//   2. Claude (claude-client.mjs 経由) で記事を生成
+//      認証はサブスク (CLAUDE_CODE_OAUTH_TOKEN) > APIキー (ANTHROPIC_API_KEY) の順
 //   3. content/drafts/ に frontmatter 付き Markdown として保存
 //   4. キューを消し込み (status: pending → generated)
 //
 // 実行: node scripts/generate-articles.mjs [--news]
-// 必要な環境変数:
-//   ANTHROPIC_API_KEY … 未設定なら明確なメッセージを出してスキップ終了
-//   CLAUDE_MODEL      … モデルID (ハードコード禁止。README 参照)
+// 必要な環境変数 (どちらか一方でよい):
+//   CLAUDE_CODE_OAUTH_TOKEN … サブスク認証 (Claude Pro/Max)。CLAUDE_MODEL は任意
+//   ANTHROPIC_API_KEY       … 従量課金。CLAUDE_MODEL 必須 (ハードコード禁止。README 参照)
+//   どちらも未設定なら明確なメッセージを出してスキップ終了 (exit 0)
 // =============================================================
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
 
 // ---------------- 設定定数 ----------------
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE_PATH = join(ROOT, "data", "keywords-queue.json");
 const DRAFTS_DIR = join(ROOT, "content", "drafts");
-const API_URL = "https://api.anthropic.com/v1/messages";
-const ANTHROPIC_VERSION = "2023-06-01";
 const MAIN_COUNT = 2;          // 朝の本流記事は2本
 const NEWS_COUNT = 1;          // 夕方のニュース記事は1本
-const MAX_TOKENS = 16000;      // 8000字ガイド記事でも収まる上限
-const API_RETRIES = 3;         // 429/5xx/529 のリトライ回数
+const MAX_TOKENS = 16000;      // 8000字ガイド記事でも収まる上限 (APIキーモード時に適用)
 const LP_URL = "https://lp.7senses.co.jp/"; // ※仮ドメイン。本番ドメイン確定後に要確認・差し替え
 
 // 文字数要件 (safety-gate.mjs と揃えること)
@@ -60,58 +60,20 @@ const SERVICE_HUBS = {
 };
 
 // ---------------- 共通ユーティリティ ----------------
+// Claude 呼び出しの実体は claude-client.mjs (サブスク認証 / APIキーの両対応) に共通化した。
 function requireEnv() {
-  const missing = [];
-  if (!process.env.ANTHROPIC_API_KEY) missing.push("ANTHROPIC_API_KEY");
-  if (!process.env.CLAUDE_MODEL) missing.push("CLAUDE_MODEL");
-  if (missing.length > 0) {
+  if (!hasClaudeAuth()) {
     // 認証情報が無い環境 (ローカル検証など) では失敗させず、明確に伝えてスキップする
-    console.error(`[generate-articles] 環境変数 ${missing.join(", ")} が未設定のため記事生成をスキップします。`);
-    console.error("  GitHub の Secrets/Variables、またはローカルの環境変数を設定してください (README.md 参照)。");
+    console.error("[generate-articles] 認証なし (CLAUDE_CODE_OAUTH_TOKEN / ANTHROPIC_API_KEY がどちらも未設定) のため記事生成をスキップします。");
+    console.error("  サブスク認証: `claude setup-token` で生成したトークンを CLAUDE_CODE_OAUTH_TOKEN に設定 (CLAUDE_MODEL は任意)。");
+    console.error("  APIキー認証: ANTHROPIC_API_KEY と CLAUDE_MODEL を設定。詳細は README.md 参照。");
     process.exit(0);
   }
-}
-
-async function callClaude(systemPrompt, userPrompt) {
-  let lastError;
-  for (let attempt = 1; attempt <= API_RETRIES; attempt++) {
-    const res = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": ANTHROPIC_VERSION,
-      },
-      body: JSON.stringify({
-        model: process.env.CLAUDE_MODEL, // モデルIDは env 経由。ハードコード禁止
-        max_tokens: MAX_TOKENS,
-        system: systemPrompt,
-        messages: [{ role: "user", content: userPrompt }],
-      }),
-    });
-
-    if (res.ok) {
-      const data = await res.json();
-      if (data.stop_reason === "refusal") {
-        throw new Error("モデルが生成を拒否しました (stop_reason: refusal)。キーワード内容を確認してください。");
-      }
-      if (data.stop_reason === "max_tokens") {
-        console.warn("[generate-articles] 警告: max_tokens に到達。記事末尾が途切れている可能性があります。");
-      }
-      return data.content.filter((b) => b.type === "text").map((b) => b.text).join("\n");
-    }
-
-    // 429 / 5xx / 529 はリトライ対象
-    if ([429, 500, 529].includes(res.status) || res.status >= 500) {
-      lastError = new Error(`Anthropic API エラー: ${res.status} ${await res.text()}`);
-      const waitMs = 2000 * 2 ** (attempt - 1);
-      console.warn(`[generate-articles] APIエラー(${res.status})。${waitMs}ms 後にリトライ (${attempt}/${API_RETRIES})`);
-      await new Promise((r) => setTimeout(r, waitMs));
-      continue;
-    }
-    throw new Error(`Anthropic API エラー: ${res.status} ${await res.text()}`);
+  // APIキーモード (サブスクトークン無し) の場合のみ CLAUDE_MODEL が必須
+  if (!process.env.CLAUDE_CODE_OAUTH_TOKEN && !process.env.CLAUDE_MODEL) {
+    console.error("[generate-articles] APIキーモードでは CLAUDE_MODEL が必須のため記事生成をスキップします (README.md 参照)。");
+    process.exit(0);
   }
-  throw lastError;
 }
 
 // ---------------- プロンプト構築 ----------------
@@ -222,7 +184,7 @@ async function main() {
   for (const kw of targets) {
     console.log(`[generate-articles] 生成開始: #${kw.id} "${kw.keyword}" (${isNews ? "news" : "main"})`);
     try {
-      let md = await callClaude(systemPrompt, buildArticlePrompt(kw, isNews ? "news" : "main"));
+      let md = await callClaude(systemPrompt, buildArticlePrompt(kw, isNews ? "news" : "main"), { maxTokens: MAX_TOKENS });
       // モデルがコードフェンスで包んだ場合の除去
       md = md.replace(/^```(?:markdown|md)?\n/, "").replace(/\n```\s*$/, "").trim();
 

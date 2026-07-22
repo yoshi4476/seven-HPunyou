@@ -9,7 +9,8 @@
 //      <!--IMG: (図解内容の説明)--> マーカーを解決する (マーカーが無い記事は
 //      H2 2個ごとに自動挿入位置を決定 = 「H2の2〜3個ごとに1枚」の要件)。
 //   3. 各挿入位置の画像は次の3段フォールバックで決定する:
-//        ① AI生成SVG図解 …… Anthropic API (env CLAUDE_MODEL) にセクション内容を
+//        ① AI生成SVG図解 …… Claude (claude-client.mjs 経由。サブスク認証 /
+//           APIキーの両対応) にセクション内容を
 //           渡し、概念図/手順図/比較図の完結なSVGを生成。構文検証
 //           (script要素なし・外部参照なし・sharpでパース可能) を通過したものだけ
 //           PNG→WebP 変換して採用。数値・比較・手順を含むセクションに適用。
@@ -27,7 +28,8 @@
 //         対応でき、画像化による情報ロスを防ぐため。
 //
 // 必要な環境変数 (すべて無くても CI は止めない。無い段はスキップして次へ):
-//   ANTHROPIC_API_KEY / CLAUDE_MODEL … ①AI生成SVG に使用 (任意)
+//   CLAUDE_CODE_OAUTH_TOKEN … ①AI生成SVG に使用 (サブスク認証。CLAUDE_MODEL は任意)
+//   ANTHROPIC_API_KEY + CLAUDE_MODEL … ①AI生成SVG に使用 (従量課金。上記が無い場合)
 //   UNSPLASH_ACCESS_KEY              … ②写真API に使用 (任意)
 //
 // 実行: node scripts/embed-images.mjs
@@ -36,6 +38,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, statSync, existsSy
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
 
 // ---------------- 設定定数 ----------------
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -50,10 +53,11 @@ const H2_PER_IMAGE = 2;            // マーカー無し記事: H2 2個ごとに
 const MAX_SECTION_IMAGES = 5;      // 1記事あたりの本文画像上限 (API コスト暴走防止)
 const SITE_URL = (process.env.SITE_URL || "https://lp.7senses.co.jp").replace(/\/$/, ""); // ※仮ドメイン・要確認
 
-const API_URL = "https://api.anthropic.com/v1/messages";
-const ANTHROPIC_VERSION = "2023-06-01";
-const API_RETRIES = 2;
-const AI_ENABLED = Boolean(process.env.ANTHROPIC_API_KEY && process.env.CLAUDE_MODEL);
+// ①AI生成SVG が使えるか: サブスク認証 (CLAUDE_CODE_OAUTH_TOKEN。CLAUDE_MODEL 任意)
+// または APIキー (ANTHROPIC_API_KEY + CLAUDE_MODEL)。呼び出しは claude-client.mjs に共通化
+const AI_ENABLED =
+  hasClaudeAuth() &&
+  Boolean(process.env.CLAUDE_CODE_OAUTH_TOKEN || process.env.CLAUDE_MODEL);
 const UNSPLASH_KEY = process.env.UNSPLASH_ACCESS_KEY || "";
 const UNSPLASH_UTM = "utm_source=seven-senses-blog&utm_medium=referral"; // Unsplash API ガイドライン準拠の UTM
 
@@ -172,37 +176,7 @@ async function renderThumbnail(svg, outBase) {
 }
 
 // ---------------- ① AI生成SVG図解 ----------------
-async function callClaude(systemPrompt, userPrompt) {
-  let lastError;
-  for (let attempt = 1; attempt <= API_RETRIES; attempt++) {
-    const res = await fetch(API_URL, {
-      method: "POST",
-      headers: {
-        "content-type": "application/json",
-        "x-api-key": process.env.ANTHROPIC_API_KEY,
-        "anthropic-version": ANTHROPIC_VERSION,
-      },
-      body: JSON.stringify({
-        model: process.env.CLAUDE_MODEL, // モデルIDは env 経由。ハードコード禁止
-        max_tokens: 8000,
-        system: systemPrompt,
-        messages: [{ role: "user", content: userPrompt }],
-      }),
-    });
-    if (res.ok) {
-      const data = await res.json();
-      if (data.stop_reason === "refusal") throw new Error("モデルが生成を拒否しました");
-      return data.content.filter((b) => b.type === "text").map((b) => b.text).join("\n");
-    }
-    if ([429, 500, 529].includes(res.status) || res.status >= 500) {
-      lastError = new Error(`Anthropic API エラー: ${res.status}`);
-      await new Promise((r) => setTimeout(r, 2000 * attempt));
-      continue;
-    }
-    throw new Error(`Anthropic API エラー: ${res.status} ${await res.text()}`);
-  }
-  throw lastError;
-}
+// Claude 呼び出しは claude-client.mjs に共通化 (サブスク認証 / APIキーの両対応・リトライ込み)
 
 // 数値・比較・手順を含むセクションのみ図解化する (写真の方が適した内容を除外)
 function isDiagramWorthy(text) {
@@ -250,7 +224,8 @@ ${h2Text}
 ${markerDesc || "(見出しとセクション本文から最適な図解を選ぶ)"}
 
 # セクション本文 (抜粋)
-${sectionText.slice(0, 1500)}`
+${sectionText.slice(0, 1500)}`,
+      { maxTokens: 8000 }
     );
     // コードフェンスや前置きが混入した場合の除去
     const m = svg.match(/<svg[\s\S]*<\/svg>/);
@@ -402,7 +377,7 @@ async function main() {
   mkdirSync(dirname(SITEMAP_DATA_PATH), { recursive: true });
 
   if (!AI_ENABLED) {
-    console.log("[embed-images] ANTHROPIC_API_KEY / CLAUDE_MODEL が未設定のため ①AI生成SVG はスキップします (②③のフォールバックで続行)。");
+    console.log("[embed-images] 認証なし (CLAUDE_CODE_OAUTH_TOKEN、または ANTHROPIC_API_KEY + CLAUDE_MODEL が未設定) のため ①AI生成SVG はスキップします (②③のフォールバックで続行)。");
   }
   if (!UNSPLASH_KEY) {
     console.log("[embed-images] UNSPLASH_ACCESS_KEY が未設定のため ②写真API はスキップします (③ローカル素材で続行)。");
