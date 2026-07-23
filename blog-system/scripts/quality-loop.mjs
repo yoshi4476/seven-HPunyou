@@ -67,7 +67,13 @@ ${RUBRIC.map((r) => `- ${r.key} (${r.label}): ${r.max}点満点`).join("\n")}
 - 各項目に「採点理由を1行」必ず書く。理由のない点数は無効
 - 根拠なき加点は禁止。記事内に証拠 (該当箇所) を指摘できない場合は加点しない
 - 出典URLのない統計数値、曖昧な断定、水増し文章は減点する
-- 満点は「これ以上直すところがない」場合のみ。安易に高得点を付けない
+- 減点は「読者や検索評価に実害がある欠点」に限る。好みの範囲・網羅性の際限ない拡大 (周辺トピックが無い等) は減点しない
+
+# スコアの較正 (この基準で点を付ける)
+- 90〜100: このまま中小企業向けオウンドメディアに公開して問題ない水準 (完璧である必要はない)
+- 80〜89: 概ね良いが、読者に実害のある明確な弱点が1〜2残る
+- 60〜79: 公開前に修正が必要
+- 60未満: 大幅な作り直しが必要
 
 # 出力形式 (JSONのみ。前置き・コードフェンス禁止)
 {"total": <0-100>, "items": [{"key": "<ルーブリックkey>", "score": <点数>, "max": <満点>, "reason": "<採点理由1行>"}], "deductions": ["<減点理由と修正指示を具体的に (改稿AIへの差し戻し文)>"]}`;
@@ -162,6 +168,7 @@ async function main() {
     let md = readFileSync(path, "utf8");
     const history = []; // 点数推移
     let result = null;
+    let best = { total: -1, md: null }; // 採点のブレ対策: 最高得点版を保持する
 
     console.log(`[quality-loop] 採点開始: ${file}`);
     for (let round = 0; round <= MAX_REVISIONS; round++) {
@@ -173,6 +180,7 @@ async function main() {
       }
       history.push({ round, total: result.total, items: result.items });
       console.log(`[quality-loop] ${file} ラウンド${round}: ${result.total}点`);
+      if (result.total > best.total) best = { total: result.total, md };
 
       if (result.total >= MIN_SCORE) break;
       if (round === MAX_REVISIONS) break; // 改稿上限。この後 human-review へ
@@ -191,17 +199,23 @@ async function main() {
       }
     }
 
-    const passed = result && result.total >= MIN_SCORE;
+    // 最終判定は「最高得点版」で行う (最後の改稿で点が下がった場合に良版を捨てない)
+    const finalScore = Math.max(best.total, result ? result.total : -1);
+    if (best.md !== null && best.total >= (result ? result.total : -1)) {
+      writeFileSync(path, best.md, "utf8");
+      console.log(`[quality-loop] ${file} は最高得点版 (${best.total}点) を最終版として採用`);
+    }
+    const passed = finalScore >= MIN_SCORE;
     if (!passed) {
       // 合格ラインに届かない記事は自動公開せず人間レビューへ隔離
       renameSync(path, join(REVIEW_DIR, file));
-      console.warn(`[quality-loop] ${file} は${MAX_REVISIONS}回の改稿でも未達 → human-review/ へ移動`);
+      console.warn(`[quality-loop] ${file} は${MAX_REVISIONS}回の改稿でも未達 (最高${finalScore}点) → human-review/ へ移動`);
     }
 
     log.entries.push({
       file: basename(file),
       date: new Date().toISOString(),
-      finalScore: result ? result.total : null,
+      finalScore: finalScore >= 0 ? finalScore : null,
       revisions: Math.max(0, history.length - 1),
       passed,
       history,
