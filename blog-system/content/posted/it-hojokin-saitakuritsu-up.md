@@ -49,7 +49,8 @@ thumbnail: "/images/blog/it-hojokin-saitakuritsu-up/thumbnail.webp"
 
 加点項目も見逃せない。賃上げ計画や事業計画の一貫性は、審査で評価されるポイントとして公募要領に明記されている(出典: [IT導入補助金 公式サイト](https://it-shien.smrj.go.jp/))。
 
-<!--IMG: 採択率を左右する書類の見直しポイント比較図-->
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-1.webp" alt="採択率を左右する書類の見直しポイント比較図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 
 
 ▶ 今すぐ試せるアクション: 上表の「見直し前」の欄に、自社の申請理由を当てはめて書いてみよう。数値化できない部分が弱点になりやすい。
@@ -69,7 +70,8 @@ thumbnail: "/images/blog/it-hojokin-saitakuritsu-up/thumbnail.webp"
 
 書類の書き方に迷う場合は、上表の4項目を軸に自社の申請書案を見直すとよい。ツール選定と書類作成は別の審査観点だが、両方の精度が採択率に影響する。
 
-<!--IMG: 審査4項目のチェックポイント一覧図-->
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-2.webp" alt="審査4項目のチェックポイント一覧図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 
 
 ▶ 今すぐ試せるアクション: 上表の4項目を自社の申請書案と照らし合わせ、記載が薄い項目に印をつけよう。

@@ -100,8 +100,10 @@
       "keyword": "IT導入補助金 申請代行 費用 相場",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-23T15:42:36.735Z",
+      "slug": "it-hojokin-daiko-hiyo-souba"
     },
     {
       "id": 12,
