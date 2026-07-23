@@ -83,6 +83,12 @@ jobs:
             echo "CLAUDE_CODE_OAUTH_TOKEN 未設定 → CLI インストールをスキップ (ANTHROPIC_API_KEY の従量課金モードで動作)"
           fi
 
+      # キーワード残量が15本を切ったらClaudeが新キーワードを自動補充 (枯渇による空振り防止)
+      - name: キーワード自動補充
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: node scripts/replenish-keywords.mjs
+
       # SVG図解の日本語が豆腐化しないよう、画像化(librsvg/sharp)の前に日本語フォントを導入
       - name: 日本語フォント導入 (図解の文字化け防止)
         run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk >/dev/null && fc-cache -f >/dev/null
@@ -166,7 +172,12 @@ jobs:
             echo "コミット対象の変更なし"
           else
             git commit -m "chore(blog): 自動生成コンテンツの保存 ($(date -u +%Y-%m-%d))"
-            git push
+            # 実行中に別のpushがあっても成果を失わないよう、rebaseして最大3回まで再試行
+            for i in 1 2 3; do
+              git push && break
+              echo "push拒否 → rebaseして再試行 ($i/3)"
+              git pull --rebase origin master
+            done
           fi
 
       # 失敗調査用に生成物一式をアーティファクトとしても保存 (7日間)

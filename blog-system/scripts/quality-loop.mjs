@@ -120,7 +120,8 @@ const COMPANY_FACTS = `# 使用してよい当社の一次情報 (これ以外�
 - IT導入補助金: 補助上限350万円(通常枠の例)/申請から着金まで約2〜3ヶ月/お客様の事前準備は合計1.5〜3時間
 - 当社は大阪・東成区拠点。MEO事業「G-ran」を運営。申請サポート・システム開発・AIO・MEOを一気通貫で提供
 - 出典に使ってよい公式サイト: IT導入補助金事務局 https://it-shien.smrj.go.jp/ / 中小企業庁 https://www.chusho.meti.go.jp/
-- 禁止表現: 割引・キャッシュバック・実質無料・実質負担・採択の保証・「必ず」「100%」等の断定`;
+- 禁止表現: 割引・キャッシュバック・実質無料・実質負担・採択の保証・「必ず」「100%」等の断定
+${(() => { try { const d = JSON.parse(readFileSync(join(ROOT, "data", "case-studies.json"), "utf8")); return "- 使用してよい支援事例 (事実。社名非公開・誇張禁止。E-E-A-T強化に1〜2件を「※当社支援事例」付きで織り込んでよい):\n" + d.cases.map((c) => `  - ${c.industry} (${c.size}): ${c.summary}`).join("\n"); } catch { return ""; } })()}`;
 
 const REVISION_CHECKLIST = `# 改稿時の必須チェックリスト (採点で減点されやすい項目)
 - 公式サイトへの出典リンクを2本以上、本文の統計・制度数値の近くに置く
@@ -133,15 +134,24 @@ const REVISION_CHECKLIST = `# 改稿時の必須チェックリスト (採点で
 - タイトルは32字前後で、主要キーワードと年号を前半に置く
 - 「〜の傾向があります」等の弱い表現は、事実の範囲で言い切りに直す (引用されやすい断定文)`;
 
-async function reviseArticle(md, deductions) {
+async function reviseArticle(md, deductions, items) {
+  // 採点内訳から「得点率が最も低い2項目」を特定し、そこへ集中改稿させる
+  // (全減点を同時に直そうとして力が分散し、点が伸びない問題への対策)
+  let focus = "";
+  if (Array.isArray(items) && items.length > 0) {
+    const worst = [...items].sort((a, b) => a.score / a.max - b.score / b.max).slice(0, 2);
+    focus = `\n# 最優先で解消する2項目 (今回の改稿はここに集中する)\n${worst
+      .map((w) => `- ${w.key} (${w.score}/${w.max}点): ${w.reason}`)
+      .join("\n")}\n`;
+  }
   const system = `あなたはセブンセンシズ株式会社のオウンドメディア専属ライターです。編集者からの減点指摘に基づき記事を改稿します。frontmatter の構造 (title, slug, description, category, tags, date, author, thumbnail, type がある場合は type も) は必ず維持してください。ツールは一切使用せず、改稿後のMarkdown全文のみを出力してください。
 
 ${COMPANY_FACTS}
 
 ${REVISION_CHECKLIST}`;
-  const user = `以下の記事が品質審査で不合格になりました。減点理由をすべて解消するよう改稿し、改稿後の記事全文 (frontmatter付きMarkdown) のみを出力してください。前置き・後書き・質問は禁止です。
-
-# 減点理由 (すべて解消すること)
+  const user = `以下の記事が品質審査で不合格になりました。改稿後の記事全文 (frontmatter付きMarkdown) のみを出力してください。前置き・後書き・質問は禁止です。
+${focus}
+# その他の減点理由 (上の2項目を優先しつつ、悪化させないこと)
 ${deductions.map((d, i) => `${i + 1}. ${d}`).join("\n")}
 
 # 現在の記事
@@ -200,10 +210,10 @@ async function main() {
       }
 
       console.log(`[quality-loop] ${file} を改稿します (${round + 1}/${MAX_REVISIONS})`);
-      let revised = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"]);
+      let revised = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"], result.items);
       if (!isValidRevision(revised, md)) {
         console.warn(`[quality-loop] 改稿出力が不正 (frontmatter欠落 or 大幅な短文化) → 再改稿を1回試行`);
-        revised = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"]);
+        revised = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"], result.items);
       }
       if (isValidRevision(revised, md)) {
         md = revised;

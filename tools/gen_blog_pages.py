@@ -55,11 +55,19 @@ def thumb(a):
     w, h = THUMB_DIM[t]
     return t, w, h
 
-def card(a):
+def thumb_src(a):
+    """記事固有の生成サムネがあればそれを、無ければ在庫写真を返す"""
+    gen = ROOT / "images" / "blog" / a["slug"] / "thumbnail.webp"
+    if gen.is_file():
+        return f"/images/blog/{a['slug']}/thumbnail.webp", 1200, 630
     t, w, h = thumb(a)
+    return f"/assets/img/{t}.webp", w, h
+
+def card(a):
+    src, w, h = thumb_src(a)
     dj = a["date"].replace("-", ".")
     return f'''    <a class="post" href="/blog/{a["slug"]}/">
-      <div class="th"><img src="/assets/img/{t}.webp" alt="" width="{w}" height="{h}" loading="lazy"></div>
+      <div class="th"><img src="{src}" alt="" width="{w}" height="{h}" loading="lazy"></div>
       <div class="pb"><p class="cat">{a["cat"]}</p><h2>{a["title"]}</h2>
       <p>{a["desc"][:52]}…</p>
       <time datetime="{a["date"]}">{dj}</time></div>

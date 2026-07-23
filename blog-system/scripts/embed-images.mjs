@@ -393,13 +393,14 @@ async function main() {
     ? JSON.parse(readFileSync(SITEMAP_DATA_PATH, "utf8"))
     : { pages: [] };
 
-  for (const file of drafts) {
+  // 1記事分の処理 (記事内の本文画像は並列生成)
+  async function processFile(file) {
     const path = join(DRAFTS_DIR, file);
     const md = readFileSync(path, "utf8");
     const { fmRaw, body } = splitFrontmatter(md);
     if (!fmRaw) {
       console.warn(`[embed-images] ${file}: frontmatter が無いためスキップ`);
-      continue;
+      return null;
     }
     const title = getFmValue(fmRaw, "title");
     const slug = getFmValue(fmRaw, "slug") || file.replace(/\.md$/, "");
@@ -413,53 +414,60 @@ async function main() {
     const thumbUrl = `/images/blog/${slug}/thumbnail.webp`;
     console.log(`[embed-images] ${file}: サムネ生成 → ${thumbUrl}`);
 
-    // --- 2. 本文への画像挿入 (IMGマーカー解決 / 無ければ H2 2個ごと) ---
+    // --- 2. 本文画像の並列生成 (従来は1枚ずつ直列でここが遅かった) ---
     const pageImages = [{ loc: `${SITE_URL}${thumbUrl}`, title, alt: `${title}のアイキャッチ画像` }];
     const lines = body.split("\n");
     const { h2s, points } = analyzeBody(lines);
-    const pointByLine = new Map(points.map((p) => [p.line, p]));
 
+    const resolvedList = await Promise.all(points.map((pt, idx) => {
+      const { h2Text, sectionText } = sectionContext(lines, h2s, pt);
+      const imgName = `${slug}-section-${idx + 1}`; // 内容を表す英語スラッグ + 連番
+      const outBase = join(articleDir, imgName);
+      return resolveSectionImage({
+        h2Text, sectionText, markerDesc: pt.desc, category, title,
+        index: idx, outBase,
+      }).then((resolved) => ({ pt, idx, h2Text, imgName, resolved }));
+    }));
+    const byLine = new Map(resolvedList.map((r) => [r.pt.line, r]));
+
+    // --- 3. 出力の組み立て (行順は元のまま) ---
     const out = [];
-    let imgIndex = 0;
     for (let i = 0; i < lines.length; i++) {
-      const pt = pointByLine.get(i);
-      if (!pt) {
+      const r = byLine.get(i);
+      if (!r) {
         out.push(lines[i]);
         continue;
       }
-      const { h2Text, sectionText } = sectionContext(lines, h2s, pt);
-      const imgName = `${slug}-section-${imgIndex + 1}`; // 内容を表す英語スラッグ + 連番
-      const outBase = join(articleDir, imgName);
-      const resolved = await resolveSectionImage({
-        h2Text, sectionText, markerDesc: pt.desc, category, title,
-        index: imgIndex, outBase,
-      });
-      const imgUrl = `/images/blog/${slug}/${imgName}.webp`;
+      const imgUrl = `/images/blog/${slug}/${r.imgName}.webp`;
       // alt はマーカーの説明 or セクション見出しから日本語で自動生成
       // (説明が「〜図」「〜図解」「〜イメージ」で終わる場合は語尾を重ねない)
-      const desc = pt.desc.replace(/[。.]$/, "");
+      const desc = r.pt.desc.replace(/[。.]$/, "");
       const alt = desc
         ? (/(図|図解|イメージ)$/.test(desc) ? desc : `${desc}の図解`)
-        : `${h2Text}の解説イメージ`;
-      const figure = buildFigure({ url: imgUrl, alt, width: resolved.width, height: resolved.height, credit: resolved.credit });
+        : `${r.h2Text}の解説イメージ`;
+      const figure = buildFigure({ url: imgUrl, alt, width: r.resolved.width, height: r.resolved.height, credit: r.resolved.credit });
 
-      if (pt.replace) {
+      if (r.pt.replace) {
         out.push(figure, "");           // マーカー行を figure に置換
       } else {
         out.push(figure, "", lines[i]); // H2 の直前に挿入
       }
-      pageImages.push({ loc: `${SITE_URL}${imgUrl}`, title: h2Text, alt });
-      imgIndex++;
+      pageImages.push({ loc: `${SITE_URL}${imgUrl}`, title: r.h2Text, alt });
     }
 
-    // --- 3. frontmatter の thumbnail 更新 + 保存 ---
+    // --- 4. frontmatter の thumbnail 更新 + 保存 ---
     const newFm = setFmValue(fmRaw, "thumbnail", thumbUrl);
     writeFileSync(path, `---\n${newFm}\n---\n${out.join("\n")}`, "utf8");
-    console.log(`[embed-images] ${file}: 本文画像 ${imgIndex}枚を挿入`);
+    console.log(`[embed-images] ${file}: 本文画像 ${resolvedList.length}枚を挿入 (並列生成)`);
 
-    // --- 4. 画像sitemap 用データを蓄積 ---
-    sitemapData.pages = sitemapData.pages.filter((p) => p.slug !== slug);
-    sitemapData.pages.push({ slug, loc: `${SITE_URL}/blog/${slug}/`, images: pageImages });
+    return { slug, entry: { slug, loc: `${SITE_URL}/blog/${slug}/`, images: pageImages } };
+  }
+
+  // 記事間も並列処理 (sitemapデータの更新は競合しないよう集約後に行う)
+  const results = (await Promise.all(drafts.map(processFile))).filter(Boolean);
+  for (const r of results) {
+    sitemapData.pages = sitemapData.pages.filter((p) => p.slug !== r.slug);
+    sitemapData.pages.push(r.entry);
   }
 
   writeFileSync(SITEMAP_DATA_PATH, JSON.stringify(sitemapData, null, 2) + "\n", "utf8");

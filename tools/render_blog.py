@@ -169,6 +169,12 @@ def render_article(md_path):
     if leftover:
         raise ValueError(f"{slug}: 未置換プレースホルダ {leftover}")
 
+    # 生成済みサムネイルがあれば、OGP画像を記事固有のものに差し替える
+    if (IMG_SRC / slug / "thumbnail.png").is_file() or (ROOT / "images" / "blog" / slug / "thumbnail.png").is_file():
+        html = html.replace(
+            'content="https://lp.7senses.co.jp/ogp.png"',
+            f'content="https://lp.7senses.co.jp/images/blog/{slug}/thumbnail.png"')
+
     out = ROOT / "blog" / slug
     out.mkdir(parents=True, exist_ok=True)
     (out / "index.html").write_text(html, encoding="utf-8")
