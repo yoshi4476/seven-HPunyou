@@ -195,6 +195,11 @@ async function checkArticle(file, md, existingTitles, qualityLog) {
     reasons.push(`⑦品質スコア不足: ${entry.finalScore}点 (規定 ${MIN_SCORE}点以上)`);
   }
 
+  // ⑨ 文字化け検査 (Unicode置換文字 / CP932誤変換の典型連続パターン / 先頭BOM)
+  if (/�/.test(md) || /[縺繧繝蟄蜿]{2}/.test(md) || md.charCodeAt(0) === 0xFEFF) {
+    reasons.push("⑨文字化けの疑い: 置換文字・誤変換パターン・BOMのいずれかを検出しました");
+  }
+
   // ⑧ 画像不備
   const thumbFsPath = thumbnail ? join(ROOT, "public", thumbnail.replace(/^\//, "")) : "";
   if (!thumbnail || !existsSync(thumbFsPath)) {

@@ -1,4 +1,4 @@
-﻿---
+---
 type: "news"
 title: "2026年最新版：AI導入補助金は個人事業主も対象？"
 slug: "ai-hojokin-kojin-jigyounushi-2026"
