@@ -16,7 +16,7 @@ name: 毎日ブログ自動更新
 
 on:
   push:
-    paths: ['.github/workflows/auto-publish.yml'] # ※初回テスト用の一時トリガー(newsモード)。動作確認後に削除する
+    paths: ['.github/workflows/auto-publish.yml'] # ※初回テスト用の一時トリガー(newsモード)。動作確認後に削除する (test-run: 4)
   schedule:
     - cron: '0 22 * * *' # JST 朝7時 → 本流2本
     - cron: '0 8 * * *'  # JST 夕17時 → ニュース1本

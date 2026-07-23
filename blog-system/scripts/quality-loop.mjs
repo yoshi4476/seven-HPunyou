@@ -83,18 +83,48 @@ function parseScore(text) {
 }
 
 async function scoreArticle(md) {
-  const raw = await callClaude(
-    buildScoringSystemPrompt(),
-    `次の記事を採点してください。\n\n<article>\n${md}\n</article>`,
-    { maxTokens: 4000 }
-  );
-  return parseScore(raw);
+  // JSON崩れ・一時的な応答不良に備えて最大3回まで採点を試行する
+  let lastErr;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    try {
+      const raw = await callClaude(
+        buildScoringSystemPrompt(),
+        `次の記事を採点してください。ツールは使用せず、JSONのみを出力してください。\n\n<article>\n${md}\n</article>`,
+        { maxTokens: 4000 }
+      );
+      return parseScore(raw);
+    } catch (err) {
+      lastErr = err;
+      console.warn(`[quality-loop] 採点失敗 → リトライ (${attempt}/3): ${err.message}`);
+    }
+  }
+  throw lastErr;
 }
 
 // ---------------- 改稿 (減点理由を執筆AIへ差し戻し) ----------------
+// 採点ルーブリックで減点されやすい項目を、改稿AIが自力で埋められるように
+// 「使ってよい一次情報」と「頻出減点の解消チェックリスト」を明示的に渡す。
+const COMPANY_FACTS = `# 使用してよい当社の一次情報 (これ以外の実績数値の創作は禁止)
+- 補助金申請の支援実績50社+/採択通過率90%以上(※当社支援実績・2026年7月時点)
+- IT導入補助金: 補助上限350万円(通常枠の例)/申請から着金まで約2〜3ヶ月/お客様の事前準備は合計1.5〜3時間
+- 当社は大阪・東成区拠点。MEO事業「G-ran」を運営。申請サポート・システム開発・AIO・MEOを一気通貫で提供
+- 出典に使ってよい公式サイト: IT導入補助金事務局 https://it-shien.smrj.go.jp/ / 中小企業庁 https://www.chusho.meti.go.jp/
+- 禁止表現: 割引・キャッシュバック・実質無料・実質負担・採択の保証・「必ず」「100%」等の断定`;
+
+const REVISION_CHECKLIST = `# 改稿時の必須チェックリスト (採点で減点されやすい項目)
+- 公式サイトへの出典リンクを2本以上、本文の統計・制度数値の近くに置く
+- 当社の一次情報 (上記の許可された実績・運用知見) を1〜2箇所、自然な文脈で加える
+- <span class="em-marker">〜</span> の蛍光強調を記事全体で2〜3箇所に使う
+- 1文は60字以内に分割する。同一文言・同一CTAの繰り返しは統合する
+- 年度固有の金額・締切は「目安+最新の公募要領で要確認」の形にし、出典を添える`;
+
 async function reviseArticle(md, deductions) {
-  const system = `あなたはセブンセンシズ株式会社のオウンドメディア専属ライターです。編集者からの減点指摘に基づき記事を改稿します。frontmatter の構造 (title, slug, description, category, tags, date, author, thumbnail) は必ず維持してください。`;
-  const user = `以下の記事が品質審査で不合格になりました。減点理由をすべて解消するよう改稿し、改稿後の記事全文 (frontmatter付きMarkdown) のみを出力してください。前置きは不要です。
+  const system = `あなたはセブンセンシズ株式会社のオウンドメディア専属ライターです。編集者からの減点指摘に基づき記事を改稿します。frontmatter の構造 (title, slug, description, category, tags, date, author, thumbnail) は必ず維持してください。ツールは一切使用せず、改稿後のMarkdown全文のみを出力してください。
+
+${COMPANY_FACTS}
+
+${REVISION_CHECKLIST}`;
+  const user = `以下の記事が品質審査で不合格になりました。減点理由をすべて解消するよう改稿し、改稿後の記事全文 (frontmatter付きMarkdown) のみを出力してください。前置き・後書き・質問は禁止です。
 
 # 減点理由 (すべて解消すること)
 ${deductions.map((d, i) => `${i + 1}. ${d}`).join("\n")}
@@ -103,6 +133,14 @@ ${deductions.map((d, i) => `${i + 1}. ${d}`).join("\n")}
 ${md}`;
   let revised = await callClaude(system, user, { maxTokens: 16000 });
   return revised.replace(/^```(?:markdown|md)?\n/, "").replace(/\n```\s*$/, "").trim();
+}
+
+// 改稿出力の健全性チェック: CLIの許可要求文や途切れた出力を記事として
+// 採用してしまう事故 (59点→2点急落) を防ぐ
+function isValidRevision(text, prev) {
+  const hasFm = /^---\n[\s\S]*?\btitle:/.test(text);
+  const longEnough = text.length >= prev.length * 0.5;
+  return hasFm && longEnough;
 }
 
 // ---------------- メイン処理 ----------------
@@ -140,8 +178,17 @@ async function main() {
       if (round === MAX_REVISIONS) break; // 改稿上限。この後 human-review へ
 
       console.log(`[quality-loop] ${file} を改稿します (${round + 1}/${MAX_REVISIONS})`);
-      md = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"]);
-      writeFileSync(path, md, "utf8"); // 改稿版で上書き (最終判定前でも最新版を保持)
+      let revised = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"]);
+      if (!isValidRevision(revised, md)) {
+        console.warn(`[quality-loop] 改稿出力が不正 (frontmatter欠落 or 大幅な短文化) → 再改稿を1回試行`);
+        revised = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"]);
+      }
+      if (isValidRevision(revised, md)) {
+        md = revised;
+        writeFileSync(path, md, "utf8"); // 改稿版で上書き (最終判定前でも最新版を保持)
+      } else {
+        console.warn(`[quality-loop] 再改稿も不正 → このラウンドは前版を維持して再採点します`);
+      }
     }
 
     const passed = result && result.total >= MIN_SCORE;
