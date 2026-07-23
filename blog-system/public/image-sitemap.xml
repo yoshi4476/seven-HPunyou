@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
+    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-kojin-jigyounushi-2026/</loc>
+    <image:image>
+      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/thumbnail.webp</image:loc>
+      <image:title>2026年最新版：AI導入補助金は個人事業主も対象？</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-1.webp</image:loc>
+      <image:title>個人事業主に求められる要件</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-2.webp</image:loc>
+      <image:title>個人事業主が申請でつまずきやすいポイント</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/</loc>
     <image:image>
       <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/thumbnail.webp</image:loc>
@@ -16,18 +31,18 @@
     </image:image>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-kojin-jigyounushi-2026/</loc>
+    <loc>https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu-up/</loc>
     <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/thumbnail.webp</image:loc>
-      <image:title>2026年最新版：AI導入補助金は個人事業主も対象？</image:title>
+      <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/thumbnail.webp</image:loc>
+      <image:title>IT導入補助金の採択率を上げる方法｜見直すべき3つの視点</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-1.webp</image:loc>
-      <image:title>個人事業主に求められる要件</image:title>
+      <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-1.webp</image:loc>
+      <image:title>採択率を上げるにはどこを見直せばいい？ {#見直し}</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-2.webp</image:loc>
-      <image:title>個人事業主が申請でつまずきやすいポイント</image:title>
+      <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-2.webp</image:loc>
+      <image:title>審査で重視されるポイントを一覧で確認 {#審査ポイント}</image:title>
     </image:image>
   </url>
 </urlset>

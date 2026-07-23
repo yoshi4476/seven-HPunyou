@@ -1,27 +1,6 @@
 {
   "pages": [
     {
-      "slug": "ai-hojokin-taisho-tool-2026",
-      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/thumbnail.webp",
-          "title": "AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイド",
-          "alt": "AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイドのアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/ai-hojokin-taisho-tool-2026-section-1.webp",
-          "title": "具体的にどんなツールが対象になるのか？ {#具体例}",
-          "alt": "AI導入補助金の対象経費区分とツール例の対応図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/ai-hojokin-taisho-tool-2026-section-2.webp",
-          "title": "申請までの流れは？最新スケジュールを確認 {#流れ}",
-          "alt": "申請から着金までの流れを示す手順図"
-        }
-      ]
-    },
-    {
       "slug": "ai-hojokin-kojin-jigyounushi-2026",
       "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-kojin-jigyounushi-2026/",
       "images": [
@@ -39,6 +18,48 @@
           "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-2.webp",
           "title": "個人事業主が申請でつまずきやすいポイント",
           "alt": "個人事業主が申請でつまずきやすいポイントの解説イメージ"
+        }
+      ]
+    },
+    {
+      "slug": "ai-hojokin-taisho-tool-2026",
+      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/thumbnail.webp",
+          "title": "AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイド",
+          "alt": "AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイドのアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/ai-hojokin-taisho-tool-2026-section-1.webp",
+          "title": "具体的にどんなツールが対象になるのか？ {#具体例}",
+          "alt": "具体的にどんなツールが対象になるのか？ {#具体例}の解説イメージ"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/ai-hojokin-taisho-tool-2026-section-2.webp",
+          "title": "申請までの流れは？最新スケジュールを確認 {#流れ}",
+          "alt": "申請までの流れは？最新スケジュールを確認 {#流れ}の解説イメージ"
+        }
+      ]
+    },
+    {
+      "slug": "it-hojokin-saitakuritsu-up",
+      "loc": "https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu-up/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/thumbnail.webp",
+          "title": "IT導入補助金の採択率を上げる方法｜見直すべき3つの視点",
+          "alt": "IT導入補助金の採択率を上げる方法｜見直すべき3つの視点のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-1.webp",
+          "title": "採択率を上げるにはどこを見直せばいい？ {#見直し}",
+          "alt": "採択率を左右する書類の見直しポイント比較図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-2.webp",
+          "title": "審査で重視されるポイントを一覧で確認 {#審査ポイント}",
+          "alt": "審査4項目のチェックポイント一覧図"
         }
       ]
     }

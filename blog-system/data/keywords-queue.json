@@ -74,8 +74,10 @@
       "keyword": "IT導入補助金 採択率 上げる 方法",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-23T12:26:15.832Z",
+      "slug": "it-hojokin-saitakuritsu-up"
     },
     {
       "id": 9,
