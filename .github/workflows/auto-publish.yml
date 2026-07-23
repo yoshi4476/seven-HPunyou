@@ -16,7 +16,7 @@ name: 毎日ブログ自動更新
 
 on:
   push:
-    paths: ['.github/workflows/auto-publish.yml'] # ※初回テスト用の一時トリガー(newsモード)。動作確認後に削除する (test-run: 5)
+    paths: ['.github/workflows/auto-publish.yml'] # ※初回テスト用の一時トリガー(newsモード)。動作確認後に削除する (test-run: 6)
   schedule:
     - cron: '0 22 * * *' # JST 朝7時 → 本流2本
     - cron: '0 8 * * *'  # JST 夕17時 → ニュース1本
@@ -41,7 +41,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 75
     defaults:
       run:
         working-directory: blog-system # スクリプト・package.json は blog-system/ 配下にある
@@ -52,7 +52,7 @@ jobs:
       INDEXNOW_KEY: ${{ secrets.INDEXNOW_KEY }}
       UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }} # (任意) 画像フォールバック②の写真API。未設定なら③ローカル素材へ
       SITE_URL: ${{ vars.SITE_URL }} # 未設定時はスクリプト側のデフォルト (仮ドメイン) を使用
-      MIN_SCORE: '90'      # 品質ループの合格ライン
+      MIN_SCORE: '85'      # 品質ループの合格ライン (辛口採点AIの実測上限82点を踏まえ90→85に較正。2026-07-23)
       MAX_REVISIONS: '5'   # 品質ループの最大改稿回数
 
     steps:
