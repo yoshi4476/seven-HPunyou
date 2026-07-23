@@ -595,6 +595,15 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "article-4.md",
+      "date": "2026-07-23T10:11:50.176Z",
+      "finalScore": null,
+      "revisions": 0,
+      "passed": false,
+      "history": [],
+      "stage": "quality-loop"
     }
   ]
 }

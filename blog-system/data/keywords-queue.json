@@ -36,8 +36,10 @@
       "keyword": "AI導入補助金 いくら もらえる",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-23T10:11:03.791Z",
+      "slug": "article-4"
     },
     {
       "id": 5,
