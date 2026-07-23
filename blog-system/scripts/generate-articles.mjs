@@ -24,17 +24,35 @@ import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE_BLOG_DIR = join(ROOT, "..", "blog"); // 同一リポジトリのサイト本体 (公開済み記事)
 
-// 公開済み記事のタイトル一覧 (重複した検索意図の記事を書かせないためにプロンプトへ渡す)
+// 既存記事のタイトル一覧 (重複した検索意図の記事を書かせないためにプロンプトへ渡す)
+// 公開済み(サイト) + 審査待ち/キュー/公開済みmd の全部を照合対象にする
 function publishedTitles() {
   const titles = [];
-  if (!existsSync(SITE_BLOG_DIR)) return titles;
-  for (const d of readdirSync(SITE_BLOG_DIR)) {
-    const f = join(SITE_BLOG_DIR, d, "index.html");
-    if (d === "category" || !existsSync(f)) continue;
-    const m = readFileSync(f, "utf8").match(/<title>(.*?)[||]/);
-    if (m) titles.push(m[1].trim());
+  if (existsSync(SITE_BLOG_DIR)) {
+    for (const d of readdirSync(SITE_BLOG_DIR)) {
+      const f = join(SITE_BLOG_DIR, d, "index.html");
+      if (d === "category" || !existsSync(f)) continue;
+      const m = readFileSync(f, "utf8").match(/<title>(.*?)[||]/);
+      if (m) titles.push(m[1].trim());
+    }
   }
-  return titles;
+  for (const sub of ["posted", "publish-queue", "human-review", "drafts"]) {
+    const dir = join(ROOT, "content", sub);
+    if (!existsSync(dir)) continue;
+    for (const f of readdirSync(dir).filter((x) => x.endsWith(".md"))) {
+      const m = readFileSync(join(dir, f), "utf8").match(/^title:\s*"?(.*?)"?\s*$/m);
+      if (m) titles.push(m[1].trim());
+    }
+  }
+  return [...new Set(titles)];
+}
+
+// キーワードが既存記事と実質同テーマかの機械判定 (固有トークンが全て既存タイトルに含まれるなら重複)
+const GENERIC_TOKENS = new Set(["AI導入補助金", "IT導入補助金", "補助金", "2026", "2026年", "とは", "方法", "やり方", "最新"]);
+function isDuplicateKeyword(keyword, titles) {
+  const tokens = keyword.split(/\s+/).filter((t) => t && !GENERIC_TOKENS.has(t));
+  if (tokens.length === 0) return false;
+  return titles.some((t) => tokens.every((tok) => t.includes(tok)));
 }
 const QUEUE_PATH = join(ROOT, "data", "keywords-queue.json");
 const DRAFTS_DIR = join(ROOT, "content", "drafts");
@@ -62,6 +80,7 @@ const COMPANY_FACTS = `
 - サービス: AI導入補助金 (IT導入補助金) 申請サポート / システム開発 / AIOコンサルティング / MEOコンサルティング
 - 実績: 支援50社+ / 採択通過率90%以上 (※当社支援実績) / 着金まで約2〜3ヶ月 / 補助金上限350万円
 - 実績数値を書くときは必ず「※当社支援実績」を添える。「120社」「98%」など旧数値は絶対に使わない
+- 制度の呼称は「AI導入補助金」で統一する (今年の呼称)。正式名称への言及は記事の初出1回だけ「AI導入補助金 (正式名称: IT導入補助金)」と書き、以降はすべて「AI導入補助金」。「IT補助金」という略称は絶対に使わない。タイトル・見出し・slugにも「AI導入補助金 / ai-hojokin」を使う
 - MEO実績: コーポレートサイト 7senses.co.jp にて MEOツール「G-ran」実績あり
 ${loadCaseFacts()}
 `.trim();
@@ -231,6 +250,22 @@ async function main() {
 
   const queue = JSON.parse(readFileSync(QUEUE_PATH, "utf8"));
   const priorityOrder = { S: 0, A: 1, B: 2 };
+  // 名称ルール: 今年の呼称は「AI導入補助金」。キーワード側の旧表記もここで正規化する
+  for (const k of queue.keywords) {
+    if (k.status === "pending" && k.keyword.includes("IT導入補助金")) {
+      k.keyword = k.keyword.replace(/IT導入補助金/g, "AI導入補助金");
+    }
+  }
+
+  // 既存記事と実質同テーマのキーワードは選定段階でスキップ (SEOカニバリ防止)
+  const existingTitles = publishedTitles();
+  for (const k of queue.keywords) {
+    if (k.status === "pending" && isDuplicateKeyword(k.keyword, existingTitles)) {
+      k.status = "duplicate-skip";
+      console.log(`[generate-articles] 重複スキップ: #${k.id} "${k.keyword}" (既存記事と同テーマ)`);
+    }
+  }
+
   const targets = queue.keywords
     .filter((k) => k.status === "pending")
     .sort((a, b) => priorityOrder[a.priority] - priorityOrder[b.priority] || a.id - b.id)

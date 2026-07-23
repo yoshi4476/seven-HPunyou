@@ -195,6 +195,16 @@ async function checkArticle(file, md, existingTitles, qualityLog) {
     reasons.push(`⑦品質スコア不足: ${entry.finalScore}点 (規定 ${MIN_SCORE}点以上)`);
   }
 
+  // ⑩ 呼称ルール: 今年の呼称は「AI導入補助金」。
+  //    「IT補助金」は誤称のため全面禁止 / 「IT導入補助金」は正式名称の注記1回(+α)まで
+  if (/(?<!導入)IT補助金/.test(md)) {
+    reasons.push("⑩呼称違反: 「IT補助金」という略称が使われています (「AI導入補助金」に統一)");
+  }
+  const officialCount = (md.match(/IT導入補助金/g) || []).length;
+  if (officialCount > 2) {
+    reasons.push(`⑩呼称違反: 「IT導入補助金」が${officialCount}回使われています (正式名称の初出注記1回のみ。以降は「AI導入補助金」)`);
+  }
+
   // ⑨ 文字化け検査 (Unicode置換文字 / CP932誤変換の典型連続パターン / 先頭BOM)
   if (/�/.test(md) || /[縺繧繝蟄蜿]{2}/.test(md) || md.charCodeAt(0) === 0xFEFF) {
     reasons.push("⑨文字化けの疑い: 置換文字・誤変換パターン・BOMのいずれかを検出しました");

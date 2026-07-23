@@ -121,6 +121,7 @@ const COMPANY_FACTS = `# 使用してよい当社の一次情報 (これ以外�
 - 当社は大阪・東成区拠点。MEO事業「G-ran」を運営。申請サポート・システム開発・AIO・MEOを一気通貫で提供
 - 出典に使ってよい公式サイト: IT導入補助金事務局 https://it-shien.smrj.go.jp/ / 中小企業庁 https://www.chusho.meti.go.jp/
 - 禁止表現: 割引・キャッシュバック・実質無料・実質負担・採択の保証・「必ず」「100%」等の断定
+- 呼称ルール: 制度は「AI導入補助金」で統一。「IT導入補助金」は初出の「AI導入補助金 (正式名称: IT導入補助金)」1回のみ。「IT補助金」は絶対に使わない
 ${(() => { try { const d = JSON.parse(readFileSync(join(ROOT, "data", "case-studies.json"), "utf8")); return "- 使用してよい支援事例 (事実。社名非公開・誇張禁止。E-E-A-T強化に1〜2件を「※当社支援事例」付きで織り込んでよい):\n" + d.cases.map((c) => `  - ${c.industry} (${c.size}): ${c.summary}`).join("\n"); } catch { return ""; } })()}`;
 
 const REVISION_CHECKLIST = `# 改稿時の必須チェックリスト (採点で減点されやすい項目)
