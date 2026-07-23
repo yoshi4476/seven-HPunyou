@@ -56,8 +56,10 @@
       "keyword": "IT導入補助金 令和8年度 スケジュール",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-23T11:39:32.633Z",
+      "slug": "article-6"
     },
     {
       "id": 7,

@@ -1,0 +1,28 @@
+{
+  "entries": [
+    {
+      "file": "ai-hojokin-taisho-tool-2026.md",
+      "slug": "ai-hojokin-taisho-tool-2026",
+      "title": "AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイド",
+      "date": "2026-07-23T12:17:19.407Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "③文字数不足: 4462字 (規定 5000字以上)",
+        "④リンク切れ: https://www.chusho.meti.go.jp/"
+      ]
+    },
+    {
+      "file": "article-5.md",
+      "slug": "ai-hojokin-kojin-jigyounushi-2026",
+      "title": "2026年最新版：AI導入補助金は個人事業主も対象？",
+      "date": "2026-07-23T12:17:19.625Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "③文字数不足: 4763字 (規定 5000字以上)",
+        "④リンク切れ: https://www.chusho.meti.go.jp/"
+      ]
+    }
+  ]
+}

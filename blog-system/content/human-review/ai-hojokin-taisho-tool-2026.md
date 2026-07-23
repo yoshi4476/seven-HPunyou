@@ -6,7 +6,7 @@ category: "hojo"
 tags: ["AI導入補助金", "IT導入補助金", "対象ツール"]
 date: "2026-07-23"
 author: "原口 優(セブンセンシズ株式会社 代表取締役)"
-thumbnail: ""
+thumbnail: "/images/blog/ai-hojokin-taisho-tool-2026/thumbnail.webp"
 ---
 
 本記事は2026年7月時点の情報である。AI機能を持つツールの導入で補助金活用を検討している中小企業経営者向けに書いた。
@@ -55,7 +55,8 @@ AI機能を持つソフトウェアの導入を指す言葉として使われて
 
 自社に置き換えるなら、経理・総務・接客・在庫管理のうちどの業務でAIによる時短余地があるかを、まず洗い出すとよい。
 
-<!--IMG: AI導入補助金の対象経費区分とツール例の対応図-->
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-taisho-tool-2026/ai-hojokin-taisho-tool-2026-section-1.webp" alt="AI導入補助金の対象経費区分とツール例の対応図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 
 ## 対象ツール選びで失敗しないための3つの視点 {#選び方}
 
@@ -81,7 +82,8 @@ AI機能を持つソフトウェアの導入を指す言葉として使われて
 
 なお、当社の支援実績では、<span class="em-marker">採択通過率90%以上</span>という結果が出ている。これは同期間・同母数(50社以上)による自社集計値であり、申請ベースか採択ベースかを含む算出根拠は相談時に開示している。業種や申請枠によって結果は異なる(※2026年7月時点)。対象ツールの選定精度と申請書類の完成度が採択率を左右する。
 
-<!--IMG: 申請から着金までの流れを示す手順図-->
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-taisho-tool-2026/ai-hojokin-taisho-tool-2026-section-2.webp" alt="申請から着金までの流れを示す手順図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 
 申請時期を検討する際は、自社の繁忙期を避け、着金までの2〜3ヶ月を確保できる時期を選んでおくと準備が進めやすい。
 
