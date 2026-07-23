@@ -21,7 +21,7 @@
 //     opts.maxTokens … APIキーモードの max_tokens (既定 16000)。
 //                      サブスクモードでは CLI が出力長を管理するため未使用。
 // =============================================================
-import { execFileSync } from "node:child_process";
+import { execFile } from "node:child_process";
 
 // ---------------- 設定定数 ----------------
 const API_URL = "https://api.anthropic.com/v1/messages";
@@ -87,7 +87,27 @@ function buildCliPrompt(systemPrompt, userPrompt) {
   return `# System\n${systemPrompt}\n\n# Task\n${userPrompt}`;
 }
 
-function execClaudeCli(prompt) {
+// 1回分の CLI 実行を Promise 化 (非同期化により複数記事の並列処理を可能にする)
+function execCliOnce(cmd, args, prompt) {
+  return new Promise((resolve, reject) => {
+    const child = execFile(
+      cmd, args,
+      { encoding: "utf8", maxBuffer: CLI_MAX_BUFFER, env: { ...process.env } }, // CLAUDE_CODE_OAUTH_TOKEN を CLI に引き継ぐ
+      (err, stdout, stderr) => {
+        if (err) {
+          err.stderrText = (stderr || "").toString();
+          reject(err);
+        } else {
+          resolve(stdout);
+        }
+      }
+    );
+    child.stdin.write(prompt);
+    child.stdin.end();
+  });
+}
+
+async function execClaudeCli(prompt) {
   const args = [
     "-p",                       // print モード (対話なしの1回実行)
     "--output-format", "text",  // 生成テキストのみを標準出力へ
@@ -99,19 +119,14 @@ function execClaudeCli(prompt) {
   let lastEnoent;
   for (const cmd of commands) {
     try {
-      return execFileSync(cmd, args, {
-        input: prompt,
-        encoding: "utf8",
-        maxBuffer: CLI_MAX_BUFFER,
-        env: { ...process.env }, // CLAUDE_CODE_OAUTH_TOKEN を CLI に引き継ぐ
-      });
+      return await execCliOnce(cmd, args, prompt);
     } catch (err) {
       if (err.code === "ENOENT") {
         lastEnoent = err;
         continue; // 次の候補コマンドを試す
       }
       // CLI がエラー終了した場合は stderr を含めて投げ直す (呼び出し側でリトライ)
-      const stderr = (err.stderr || "").toString().trim().slice(0, 500);
+      const stderr = (err.stderrText || "").trim().slice(0, 500);
       throw new Error(`Claude Code CLI がエラー終了しました: ${err.message}${stderr ? `\n  stderr: ${stderr}` : ""}`);
     }
   }
@@ -134,7 +149,7 @@ async function callViaCli(systemPrompt, userPrompt) {
       await new Promise((r) => setTimeout(r, CLI_RETRY_WAIT_MS));
     }
     try {
-      const text = execClaudeCli(prompt).trim();
+      const text = (await execClaudeCli(prompt)).trim();
       if (!text) throw new Error("Claude Code CLI の出力が空でした。");
       return text;
     } catch (err) {

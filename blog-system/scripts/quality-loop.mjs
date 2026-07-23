@@ -172,12 +172,13 @@ async function main() {
 
   const log = existsSync(LOG_PATH) ? JSON.parse(readFileSync(LOG_PATH, "utf8")) : { entries: [] };
 
-  for (const file of drafts) {
+  async function processDraft(file) {
     const path = join(DRAFTS_DIR, file);
     let md = readFileSync(path, "utf8");
     const history = []; // 点数推移
     let result = null;
     let best = { total: -1, md: null }; // 採点のブレ対策: 最高得点版を保持する
+    let stale = 0; // ベスト未更新の連続ラウンド数 (2で早期終了して時間を節約)
 
     console.log(`[quality-loop] 採点開始: ${file}`);
     for (let round = 0; round <= MAX_REVISIONS; round++) {
@@ -189,10 +190,14 @@ async function main() {
       }
       history.push({ round, total: result.total, items: result.items });
       console.log(`[quality-loop] ${file} ラウンド${round}: ${result.total}点`);
-      if (result.total > best.total) best = { total: result.total, md };
+      if (result.total > best.total) { best = { total: result.total, md }; stale = 0; } else { stale++; }
 
       if (result.total >= MIN_SCORE) break;
       if (round === MAX_REVISIONS) break; // 改稿上限。この後 human-review へ
+      if (stale >= 2) {
+        console.log(`[quality-loop] ${file} は2ラウンド連続で改善なし → 早期終了 (ベスト${best.total}点)`);
+        break;
+      }
 
       console.log(`[quality-loop] ${file} を改稿します (${round + 1}/${MAX_REVISIONS})`);
       let revised = await reviseArticle(md, result.deductions ?? ["総合的に品質を高めてください"]);
@@ -221,7 +226,7 @@ async function main() {
       console.warn(`[quality-loop] ${file} は${MAX_REVISIONS}回の改稿でも未達 (最高${finalScore}点) → human-review/ へ移動`);
     }
 
-    log.entries.push({
+    return {
       file: basename(file),
       date: new Date().toISOString(),
       finalScore: finalScore >= 0 ? finalScore : null,
@@ -229,8 +234,12 @@ async function main() {
       passed,
       history,
       stage: "quality-loop",
-    });
+    };
   }
+
+  // 複数記事は並列で採点・改稿する (朝の2本ランの所要時間を約半分にする)
+  const entries = await Promise.all(drafts.map(processDraft));
+  log.entries.push(...entries);
 
   writeFileSync(LOG_PATH, JSON.stringify(log, null, 2) + "\n", "utf8");
   console.log(`[quality-loop] 完了。ログ: ${LOG_PATH}`);
