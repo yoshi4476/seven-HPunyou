@@ -134,7 +134,7 @@ const REVISION_CHECKLIST = `# 改稿時の必須チェックリスト (採点で
 - 「〜の傾向があります」等の弱い表現は、事実の範囲で言い切りに直す (引用されやすい断定文)`;
 
 async function reviseArticle(md, deductions) {
-  const system = `あなたはセブンセンシズ株式会社のオウンドメディア専属ライターです。編集者からの減点指摘に基づき記事を改稿します。frontmatter の構造 (title, slug, description, category, tags, date, author, thumbnail) は必ず維持してください。ツールは一切使用せず、改稿後のMarkdown全文のみを出力してください。
+  const system = `あなたはセブンセンシズ株式会社のオウンドメディア専属ライターです。編集者からの減点指摘に基づき記事を改稿します。frontmatter の構造 (title, slug, description, category, tags, date, author, thumbnail, type がある場合は type も) は必ず維持してください。ツールは一切使用せず、改稿後のMarkdown全文のみを出力してください。
 
 ${COMPANY_FACTS}
 

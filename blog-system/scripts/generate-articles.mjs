@@ -188,6 +188,10 @@ async function main() {
       let md = await callClaude(systemPrompt, buildArticlePrompt(kw, isNews ? "news" : "main"), { maxTokens: MAX_TOKENS });
       // モデルがコードフェンスで包んだ場合の除去
       md = md.replace(/^```(?:markdown|md)?\n/, "").replace(/\n```\s*$/, "").trim();
+      // 記事タイプをfrontmatterに記録 (safety-gateの文字数基準の判別に必要)
+      if (isNews && !/^type:\s*"?news"?/m.test(md)) {
+        md = md.replace(/^---\n/, '---\ntype: "news"\n');
+      }
 
       const fm = parseFrontmatter(md);
       const slug = (fm.slug || `article-${kw.id}`).replace(/[^a-z0-9-]/gi, "-").toLowerCase();

@@ -85,16 +85,19 @@ function similarity(a, b) {
 }
 
 async function headOk(url) {
+  // 政府系サイトはbot由来のHEAD/GETを403で弾くことがあるため、
+  // ブラウザ相当のUAを付け、「サーバが応答した」なら生存とみなす。
+  // リンク切れ扱いは 404/410 とネットワーク到達不能のみ。
+  const headers = { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36" };
   try {
     const ctrl = new AbortController();
     const timer = setTimeout(() => ctrl.abort(), LINK_CHECK_TIMEOUT_MS);
-    let res = await fetch(url, { method: "HEAD", redirect: "follow", signal: ctrl.signal });
-    // HEAD 非対応サーバ (405/403) は GET でフォールバック
-    if ([403, 405].includes(res.status)) {
-      res = await fetch(url, { method: "GET", redirect: "follow", signal: ctrl.signal });
+    let res = await fetch(url, { method: "HEAD", redirect: "follow", signal: ctrl.signal, headers });
+    if (!res.ok) {
+      res = await fetch(url, { method: "GET", redirect: "follow", signal: ctrl.signal, headers });
     }
     clearTimeout(timer);
-    return res.ok;
+    return ![404, 410].includes(res.status);
   } catch {
     return false; // タイムアウト・DNS失敗などはリンク切れ扱い
   }
@@ -117,8 +120,10 @@ async function checkArticle(file, md, existingTitles, qualityLog) {
   // ① 出典URL無しの統計数字 (段落単位)
   const paragraphs = body.split(/\n{2,}/);
   for (const p of paragraphs) {
-    const stats = (p.match(STAT_PATTERN) ?? []).filter(
-      (s) => !ALLOWED_FACTS.some((a) => s.includes(a.replace(/[〜~]/g, "")) || p.includes(a))
+    // HTMLタグ内の数値 (style="width:100%" 等) を統計と誤検知しないようタグを除去してから判定
+    const pText = p.replace(/<[^>]+>/g, "");
+    const stats = (pText.match(STAT_PATTERN) ?? []).filter(
+      (s) => !ALLOWED_FACTS.some((a) => s.includes(a.replace(/[〜~]/g, "")) || pText.includes(a))
     );
     const hasUrl = /https?:\/\//.test(p) || /出典|参考|引用元/.test(p);
     if (stats.length > 0 && !hasUrl && !ALLOWED_FACTS.some((a) => p.includes(a))) {
