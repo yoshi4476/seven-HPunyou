@@ -34,8 +34,10 @@
       "keyword": "AI導入補助金 いくら もらえる",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "news"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-23T22:50:02.027Z",
+      "slug": "ai-hojokin-ikura-moraeru-2026"
     },
     {
       "id": 5,
@@ -59,7 +61,7 @@
     },
     {
       "id": 7,
-      "keyword": "IT導入補助金 AI 活用 事例",
+      "keyword": "AI導入補助金 AI 活用 事例",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -77,7 +79,7 @@
     },
     {
       "id": 9,
-      "keyword": "IT導入補助金 不採択 理由",
+      "keyword": "AI導入補助金 不採択 理由",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -85,7 +87,7 @@
     },
     {
       "id": 10,
-      "keyword": "IT導入補助金 申請 失敗 よくある",
+      "keyword": "AI導入補助金 申請 失敗 よくある",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -103,23 +105,23 @@
     },
     {
       "id": 12,
-      "keyword": "IT導入補助金 ベンダー 選び方",
+      "keyword": "AI導入補助金 ベンダー 選び方",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
       "id": 13,
-      "keyword": "IT導入補助金 GビズID 取得 方法",
+      "keyword": "AI導入補助金 GビズID 取得 方法",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
       "id": 14,
-      "keyword": "IT導入補助金 セキュリティアクション 二つ星",
+      "keyword": "AI導入補助金 セキュリティアクション 二つ星",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -127,7 +129,7 @@
     },
     {
       "id": 15,
-      "keyword": "IT導入補助金 みらデジ 経営チェック",
+      "keyword": "AI導入補助金 みらデジ 経営チェック",
       "priority": "B",
       "category": "hojo",
       "status": "pending",
@@ -135,7 +137,7 @@
     },
     {
       "id": 16,
-      "keyword": "IT導入補助金 必要書類 法人",
+      "keyword": "AI導入補助金 必要書類 法人",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -143,7 +145,7 @@
     },
     {
       "id": 17,
-      "keyword": "IT導入補助金 必要書類 個人事業主",
+      "keyword": "AI導入補助金 必要書類 個人事業主",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -151,7 +153,7 @@
     },
     {
       "id": 18,
-      "keyword": "IT導入補助金 納税証明書 どれ",
+      "keyword": "AI導入補助金 納税証明書 どれ",
       "priority": "B",
       "category": "hojo",
       "status": "pending",
@@ -159,7 +161,7 @@
     },
     {
       "id": 19,
-      "keyword": "IT導入補助金 着金 いつ",
+      "keyword": "AI導入補助金 着金 いつ",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -167,7 +169,7 @@
     },
     {
       "id": 20,
-      "keyword": "IT導入補助金 実績報告 書き方",
+      "keyword": "AI導入補助金 実績報告 書き方",
       "priority": "B",
       "category": "hojo",
       "status": "pending",
@@ -175,7 +177,7 @@
     },
     {
       "id": 21,
-      "keyword": "IT導入補助金 会計ソフト 対象",
+      "keyword": "AI導入補助金 会計ソフト 対象",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -183,7 +185,7 @@
     },
     {
       "id": 22,
-      "keyword": "IT導入補助金 受発注ソフト とは",
+      "keyword": "AI導入補助金 受発注ソフト とは",
       "priority": "B",
       "category": "hojo",
       "status": "pending",
@@ -191,15 +193,17 @@
     },
     {
       "id": 23,
-      "keyword": "IT導入補助金 ホームページ制作 対象",
+      "keyword": "AI導入補助金 ホームページ制作 対象",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-23T22:53:50.833Z",
+      "slug": "ai-hojokin-homepage-taisho-2026"
     },
     {
       "id": 24,
-      "keyword": "IT導入補助金 LP制作 補助",
+      "keyword": "AI導入補助金 LP制作 補助",
       "priority": "A",
       "category": "hojo",
       "status": "pending",
@@ -274,7 +278,7 @@
       "keyword": "AIO対策 やり方",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -282,7 +286,7 @@
       "keyword": "LLMO とは",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -290,7 +294,7 @@
       "keyword": "LLMO対策 完全ガイド",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -314,7 +318,7 @@
       "keyword": "ChatGPT に 自社 を 表示 させる",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -330,7 +334,7 @@
       "keyword": "Google AI Overview 対策",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -354,7 +358,7 @@
       "keyword": "AIO対策 費用 相場",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -458,7 +462,7 @@
       "keyword": "MEO対策 大阪",
       "priority": "S",
       "category": "meo",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -466,7 +470,7 @@
       "keyword": "MEO対策 費用 相場",
       "priority": "S",
       "category": "meo",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -474,7 +478,7 @@
       "keyword": "MEO対策 自分で やり方",
       "priority": "S",
       "category": "meo",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -666,7 +670,7 @@
       "keyword": "業務システム 開発 費用 相場",
       "priority": "S",
       "category": "dev",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -690,7 +694,7 @@
       "keyword": "エクセル 脱却 業務システム",
       "priority": "S",
       "category": "dev",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {

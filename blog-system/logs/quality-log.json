@@ -2154,6 +2154,122 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-homepage-taisho-2026.md",
+      "date": "2026-07-23T22:54:14.790Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「ホームページ制作は対象か」に対し結論・境界線・条件・具体例・FAQと検索意図を広く網羅。ただし他社事例の相場や実際の申請書記載例など一段深い意図は薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に断言文、結論先出し、比較表、6問のFAQを備え引用されやすい構造。em-markerも要点に配置され良好"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者に代表者名を明示、当社支援事例(設備工事業12名・85%削減)や採択90%・50社の実績を提示し体験・専門性あり。ただし採択率・削減率の裏付けは自己申告のみで検証不能"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトル・description・h2構造・目次アンカー・内部リンク3本と概ね良好。ただしCTAリンクが『※仮ドメイン・要確認』のまま残り公開品質に難"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文短め、表2点・箇条書き・IMG指定・引用ブロックで緩急あり。太字とem-markerも適量。ただし各セクション末尾の『今すぐ試せるアクション』が定型で単調"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "『サイトかどうかでなく業務機能で判断』という切り口と自社支援事例・逆算スケジュール視点は独自性あり"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "条件・具体例・失敗回避・金額目安と情報密度は十分。ただし公式URLの反復や定型CTAでやや冗長"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-ikura-moraeru-2026.md",
+      "date": "2026-07-23T22:54:22.309Z",
+      "finalScore": 85,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 85,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「いくらもらえる」の金額意図を上限・補助率・自己負担・対象経費・後払い・着金期間・FAQまで一貫して網羅しており取りこぼしが少ない"
+            },
+            {
+              "key": "aio_fit",
+              "score": 13,
+              "max": 15,
+              "reason": "冒頭断言文・結論ボックス・em-marker・FAQが揃い引用されやすいが、断言の多くが「枠により異なる/要確認」に留まり抽出値としては弱め"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "代表取締役の署名・匿名化した複数事例・公式リンクありで信頼性は担保。ただし「採択通過率90%以上」等の自社数値は外部検証不能で加点は限定的"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにキーワードと数字、目次アンカー・見出し構造・関連内部リンク4本が適切に配置されている"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文おおむね60字以内・短段落・表・チェックリスト・IMG配置・太字とem-markerの緩急が効いており単調でない"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「自己負担の根拠を契約前に提示」という自社の切り口と業種別実体験事例があり差別化されている"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "計算式・例示表・ステップ・FAQで情報密度は十分だが、補助率が「例示」中心で確定情報の実密度はやや薄い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

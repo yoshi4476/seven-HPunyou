@@ -75,6 +75,29 @@
       "date": "2026-07-23T15:43:40.986Z",
       "passed": true,
       "reasons": []
+    },
+    {
+      "file": "ai-hojokin-homepage-taisho-2026.md",
+      "slug": "ai-hojokin-homepage-taisho-2026",
+      "title": "AI導入補助金2026 ホームページ制作は対象?対象になる条件を解説",
+      "date": "2026-07-23T22:54:51.413Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「12名, 85%」を含む段落に出典URLがありません",
+        "③H2不足: 1個 (規定 3個以上)",
+        "⑩呼称違反: 「IT導入補助金」が5回使われています (正式名称の初出注記1回のみ。以降は「AI導入補助金」)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-ikura-moraeru-2026.md",
+      "slug": "ai-hojokin-ikura-moraeru-2026",
+      "title": "AI導入補助金2026はいくらもらえる?上限350万円と対象を解説",
+      "date": "2026-07-23T22:54:51.594Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「12名, 85%」を含む段落に出典URLがありません",
+        "⑩呼称違反: 「IT導入補助金」が7回使われています (正式名称の初出注記1回のみ。以降は「AI導入補助金」)"
+      ]
     }
   ]
 }
