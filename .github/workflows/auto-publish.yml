@@ -15,8 +15,6 @@
 name: 毎日ブログ自動更新
 
 on:
-  push:
-    paths: ['.github/workflows/auto-publish.yml'] # ※初回テスト用の一時トリガー(newsモード)。動作確認後に削除する (test-run: 8)
   schedule:
     - cron: '0 22 * * *' # JST 朝7時 → 本流2本
     - cron: '0 8 * * *'  # JST 夕17時 → ニュース1本
@@ -89,7 +87,7 @@ jobs:
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
-          if [ "${{ github.event.schedule }}" = "0 8 * * *" ] || [ "${{ inputs.mode }}" = "news" ] || [ "${{ github.event_name }}" = "push" ]; then
+          if [ "${{ github.event.schedule }}" = "0 8 * * *" ] || [ "${{ inputs.mode }}" = "news" ]; then
             node scripts/generate-articles.mjs --news
           else
             node scripts/generate-articles.mjs
