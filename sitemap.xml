@@ -48,7 +48,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-07-24</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -65,6 +65,11 @@
     <loc>https://lp.7senses.co.jp/blog/category/dev/</loc>
     <lastmod>2026-07-16</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/</loc>
