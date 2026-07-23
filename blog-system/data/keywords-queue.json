@@ -6,17 +6,15 @@
       "keyword": "AI導入補助金 とは 2026",
       "priority": "S",
       "category": "hojo",
-      "status": "generated",
-      "type": "news",
-      "generatedAt": "2026-07-22T23:35:22.248Z",
-      "slug": "ai-hojokin-2026-basics"
+      "status": "duplicate-skip",
+      "type": "news"
     },
     {
       "id": 2,
       "keyword": "AI導入補助金 申請 やり方",
       "priority": "S",
       "category": "hojo",
-      "status": "generated",
+      "status": "duplicate-skip",
       "type": "news",
       "generatedAt": "2026-07-23T00:53:37.769Z",
       "slug": "ai-hojokin-shinsei-yarikata-2026"
@@ -36,17 +34,15 @@
       "keyword": "AI導入補助金 いくら もらえる",
       "priority": "S",
       "category": "hojo",
-      "status": "generated",
-      "type": "news",
-      "generatedAt": "2026-07-23T10:11:03.791Z",
-      "slug": "article-4"
+      "status": "pending",
+      "type": "news"
     },
     {
       "id": 5,
       "keyword": "AI導入補助金 個人事業主",
       "priority": "S",
       "category": "hojo",
-      "status": "generated",
+      "status": "duplicate-skip",
       "type": "news",
       "generatedAt": "2026-07-23T10:54:23.711Z",
       "slug": "article-5"
@@ -56,7 +52,7 @@
       "keyword": "IT導入補助金 令和8年度 スケジュール",
       "priority": "S",
       "category": "hojo",
-      "status": "generated",
+      "status": "duplicate-skip",
       "type": "news",
       "generatedAt": "2026-07-23T11:39:32.633Z",
       "slug": "article-6"
@@ -100,7 +96,7 @@
       "keyword": "IT導入補助金 申請代行 費用 相場",
       "priority": "S",
       "category": "hojo",
-      "status": "generated",
+      "status": "duplicate-skip",
       "type": "news",
       "generatedAt": "2026-07-23T15:42:36.735Z",
       "slug": "it-hojokin-daiko-hiyo-souba"
