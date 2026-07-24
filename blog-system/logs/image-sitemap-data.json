@@ -121,6 +121,32 @@
       ]
     },
     {
+      "slug": "ai-hojokin-homepage-taisho",
+      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho/thumbnail.webp",
+          "title": "2026年 AI導入補助金でホームページ制作は対象?対象範囲と注意点を解説",
+          "alt": "2026年 AI導入補助金でホームページ制作は対象?対象範囲と注意点を解説のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho/ai-hojokin-homepage-taisho-section-1.webp",
+          "title": "AI導入補助金でホームページ制作は対象になる?結論と前提",
+          "alt": "ホームページ制作が対象になりやすいケースと対象外になりやすいケースの比較概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho/ai-hojokin-homepage-taisho-section-2.webp",
+          "title": "対象費用の範囲と、申請前に確認すべき注意点",
+          "alt": "申請から交付決定・発注制作・着金までのタイムライン図解"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho/ai-hojokin-homepage-taisho-section-3.webp",
+          "title": "対象かどうか迷ったときの進め方と申請の流れ",
+          "alt": "業務機能の言語化から支援事業者確認・無料相談までの進め方の手順図"
+        }
+      ]
+    },
+    {
       "slug": "ai-hojokin-ikura-moraeru-2026",
       "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru-2026/",
       "images": [
@@ -131,28 +157,18 @@
         },
         {
           "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-1.webp",
-          "title": "AI導入補助金でいくらもらえる?上限額の結論",
-          "alt": "AI導入補助金の「上限額」と「実際にもらえる額」の違いを示す概念図"
+          "title": "もらえる金額の決まり方 — 補助率と自己負担の計算",
+          "alt": "もらえる金額の決まり方 — 補助率と自己負担の計算の解説イメージ"
         },
         {
           "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-2.webp",
-          "title": "もらえる金額の決まり方 — 補助率と自己負担の計算",
-          "alt": "補助対象経費×補助率で補助額と自己負担が決まる仕組みの計算図"
+          "title": "もらえる金額を左右する条件と、着金までの流れ",
+          "alt": "もらえる金額を左右する条件と、着金までの流れの解説イメージ"
         },
         {
           "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-3.webp",
-          "title": "何に使うといくらもらえる?対象になる経費と使い道",
-          "alt": "補助対象になりやすい経費と注意が必要な経費の比較図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-4.webp",
-          "title": "もらえる金額を左右する条件と、着金までの流れ",
-          "alt": "申請→採択→導入・支払い→着金の4ステップを示す流れ図(後払い・所要期間の目安つきの図解"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-5.webp",
-          "title": "金額を最大限もらうために確認したい3つのこと",
-          "alt": "もらえる金額を最大化するための3つのチェックポイントのチェックリスト図"
+          "title": "よくある質問(FAQ)",
+          "alt": "よくある質問(FAQ)の解説イメージ"
         }
       ]
     }

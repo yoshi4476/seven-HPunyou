@@ -196,8 +196,10 @@
       "keyword": "AI導入補助金 ホームページ制作 対象",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-24T10:09:02.323Z",
+      "slug": "ai-hojokin-homepage-taisho"
     },
     {
       "id": 24,

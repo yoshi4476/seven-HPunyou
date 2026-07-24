@@ -57,6 +57,8 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 ---
 
 <a id="h2-2"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-1.webp" alt="もらえる金額の決まり方 — 補助率と自己負担の計算の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## もらえる金額の決まり方 — 補助率と自己負担の計算
 
 では、実際にもらえる額はどう決まるのか。基本の式はとてもシンプルです。
@@ -123,6 +125,8 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 ---
 
 <a id="h2-4"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-2.webp" alt="もらえる金額を左右する条件と、着金までの流れの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## もらえる金額を左右する条件と、着金までの流れ
 
 ここで大切な前提があります。金額は「採択されて初めて」受け取れます。**申請=受給ではありません。** 申請しても採択されなければ、補助金は入金されません。
@@ -173,6 +177,8 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 ---
 
 <a id="faq"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-3.webp" alt="よくある質問(FAQ)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## よくある質問(FAQ)
 
 **Q1. AI導入補助金は最大いくらまでもらえますか?**

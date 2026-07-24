@@ -2270,6 +2270,126 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-homepage-taisho.md",
+      "date": "2026-07-24T10:09:31.223Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 87,
+          "aio": 89,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 17,
+              "max": 20,
+              "reason": "対象/対象外の見分け・対象費用・申請の流れ・FAQと主要検索意図を網羅するが、補助率や具体的な申請要件(gBizID等)の踏み込みが浅い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に結論断言、要点3行、各H2冒頭に太字断言文、FAQ断言形が揃い引用されやすい構造"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者明記・支援事例・実績値ありだが、統計数値(問い合わせ月2→11件・上限350万)に公式出典URLが紐づかず自社実績注記に依存"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW整合・H2/H3階層・アンカー付き目次・内部リンク複数と良好だが、title冒頭が「AI導入補助金」で正式名称IT導入補助金との表記揺れがKW整合をやや弱める"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表2つ・箇条書き・em-marker各セクション・IMG指示で緩急良好だが、画像が全てプレースホルダで実体がなく視覚要素が未挿入"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「見た目でなく業務効率化で判断」という切り口と自社支援事例(リフォーム業・製造業)で独自性を確保"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "情報密度は十分だが継続費用や枠の説明が概念止まりで数値的踏み込みが薄い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-ikura-moraeru-2026.md",
+      "date": "2026-07-24T10:09:29.639Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 87,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「いくらもらえる」の核心(上限・補助率・自己負担・後払い・着金までの流れ・対象経費)を網羅し、金額と自己負担をセットで扱っている点が検索意図に合致。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義の断言文、3行結論ボックス、FAQ5問の断言形、引用しやすい単文が揃い、AI引用適合度が高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "代表者署名・支援事例(卸売業・設備工事業・製造業)・支援50社/採択90%等の一次的知見と公式リンクがある一方、統計は自社実績のみで第三者出典が薄い。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・数値、目次アンカー、H2構造、内部リンク4本と整うが「正式名称IT導入補助金をAI導入補助金と表記」する独自呼称はKW整合上リスク。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・図・結論ボックス・em-marker・太字が節ごとに配置され緩急良好だが、一部文が60字超で単調さが残る。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「上限≠もらえる額」「自己負担の根拠を契約前に提示」という自社の切り口と具体事例で独自性が明確。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "計算例の表・4ステップ・事例数値など情報密度が高く水増しが少ない。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }
