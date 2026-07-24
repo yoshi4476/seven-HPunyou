@@ -573,7 +573,7 @@ const GAS_ENDPOINT="";
 const SVC_LABEL="AIOコンサルティング";
 const QUIZ=null;
 const TS=Date.now(); let lastSubmit=0;
-function track(ev,p){ if(typeof gtag==="function") gtag("event",ev,p||{}); }
+function track(ev,p){ if(typeof gtag!=="function") return; gtag("event",ev,p||{}); if(ev==="cta_click"&&p&&p.cta_id) gtag("event","cta_"+p.cta_id); if(ev==="lead_capture"&&p&&p.source) gtag("event","lead_"+p.source); }
 function sendPayload(d){
   const payload=Object.assign({website:"",ts:TS},d);
   if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定:",payload); return Promise.resolve(); }
