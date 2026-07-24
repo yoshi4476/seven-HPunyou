@@ -821,7 +821,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 <section id="cases" style="background:var(--bg2)">
   <div class="wrap rev">
     <p class="kicker">Case Study</p>
-    <h2>課題 → 施策 → <span class="accent">成果。</span><br class="sp">導入支援のモデルケース</h2>
+    <h2>事務作業<span class="accent">▲85%</span>・マップ予約<span class="accent">3.2倍</span>。<br class="sp">導入支援のモデルケース</h2>
     <div class="cases">
       <article class="case">
         <div class="visual">
@@ -1446,7 +1446,7 @@ function renderResult(s,grade){
       <div><p class="grade">${grade}<small>${gradeLabel}(5段階)</small></p></div>
     </div>
     <div class="rx"><b>あなたへの処方箋:</b> ${quiz.rx[grade]}</div>
-    <a class="btn btn-primary btn-block" href="#contact" data-cta="diag_result">無料相談で詳しく聞いてみる</a>
+    <a class="btn btn-primary btn-block" href="#contact" data-cta="diag_result">この結果を持って、30分だけ無料相談する</a>
     <span class="micro" style="text-align:center">診断結果の控えを、ご入力のメールアドレスへお送りしました。</span>`;
   body.querySelector("[data-cta]").addEventListener("click",()=>track("cta_click",{cta_id:"diag_result"}));
 }
