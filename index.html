@@ -602,7 +602,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 <main id="top">
 
 <!-- ========== 02. ヒーロー(心理:「自分に関係ある?」/ 仕事: 3秒で「ある」と確信させる) ========== -->
-<section class="hero">
+<section class="hero" id="hero">
   <div class="wrap hero-grid">
     <div>
       <p class="fresh">本ページは<b>2026年7月時点</b>の情報です|このサービスは、AI導入を検討する<b>中小企業・個人事業主</b>向けです</p>
@@ -666,7 +666,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 </div>
 
 <!-- ========== 04. クイックスタート(3択で迷いを解消) ========== -->
-<section class="chooser" style="padding:64px 0 56px">
+<section class="chooser" id="chooser" style="padding:64px 0 56px">
   <div class="wrap rev">
     <p class="kicker">Quick Start</p>
     <h2>今日は、<span class="accent">どちら</span>をお探しですか?</h2>
@@ -1226,7 +1226,23 @@ const GAS_ENDPOINT = ""; // 例: "https://script.google.com/macros/s/XXXX/exec"
 const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ---------- 計測ヘルパー(GA4未設置でも動作) ---------- */
-function track(ev, params){ if(typeof gtag === "function") gtag("event", ev, params || {}); }
+function track(ev, params){
+  if(typeof gtag !== "function") return;
+  gtag("event", ev, params || {});
+  // 月次レポートで内訳集計しやすいよう、イベント名にIDを埋め込んだ別名も送る
+  if(ev === "cta_click" && params && params.cta_id) gtag("event", "cta_" + params.cta_id);
+  if(ev === "lead_capture" && params && params.source) gtag("event", "lead_" + params.source);
+}
+
+/* セクション到達計測: どのエリアまで読まれたかを記録 (ヒートマップ分析・文言改善の土台) */
+const seenSec = new Set();
+const secIO = new IntersectionObserver(es => es.forEach(e => {
+  if(e.isIntersecting && e.target.id && !seenSec.has(e.target.id)){
+    seenSec.add(e.target.id);
+    track("section_view_" + e.target.id.replace(/-/g, "_"));
+  }
+}), {threshold: .4});
+document.querySelectorAll("section[id]").forEach(s => secIO.observe(s));
 
 /* ---------- CTAクリック計測 ---------- */
 document.querySelectorAll("[data-cta]").forEach(el=>{

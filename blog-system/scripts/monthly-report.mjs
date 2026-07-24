@@ -70,31 +70,97 @@ function rowsToObjects(report) {
   });
 }
 
-async function collectGa4(range, prevRange) {
+async function collectGa4(range, prevRange, sixMonthRange) {
   const propertyId = process.env.GA4_PROPERTY_ID;
   const credsJson = process.env.GA4_CREDENTIALS_JSON;
   if (!propertyId || !credsJson) return { connected: false, note: "GA4未接続 (GA4_PROPERTY_ID / GA4_CREDENTIALS_JSON 未設定)" };
   try {
     const creds = JSON.parse(credsJson);
     const token = await ga4Token(creds);
-    const [summary, prevSummary, pages, sources, events] = await Promise.all([
+    // 6ヶ月トレンド (トラフィック / リードイベント)
+    const [trendTraffic, trendLeads] = await Promise.all([
+      ga4Report(token, propertyId, { dateRanges: [sixMonthRange], dimensions: [{ name: "yearMonth" }], metrics: [{ name: "sessions" }, { name: "totalUsers" }, { name: "screenPageViews" }], orderBys: [{ dimension: { dimensionName: "yearMonth" } }] }),
+      ga4Report(token, propertyId, { dateRanges: [sixMonthRange], dimensions: [{ name: "yearMonth" }], metrics: [{ name: "eventCount" }], dimensionFilter: { filter: { fieldName: "eventName", stringFilter: { matchType: "BEGINS_WITH", value: "lead_" } } }, orderBys: [{ dimension: { dimensionName: "yearMonth" } }] }),
+    ]);
+    const [summary, prevSummary, pages, sources, events, refs] = await Promise.all([
       ga4Report(token, propertyId, { dateRanges: [range], metrics: [{ name: "sessions" }, { name: "totalUsers" }, { name: "screenPageViews" }, { name: "averageSessionDuration" }] }),
       ga4Report(token, propertyId, { dateRanges: [prevRange], metrics: [{ name: "sessions" }, { name: "totalUsers" }, { name: "screenPageViews" }, { name: "averageSessionDuration" }] }),
-      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }, { name: "sessions" }], orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 20 }),
+      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }, { name: "sessions" }], orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }], limit: 25 }),
       ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "sessionDefaultChannelGroup" }], metrics: [{ name: "sessions" }] }),
-      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "eventName" }], metrics: [{ name: "eventCount" }], limit: 30 }),
+      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "eventName" }], metrics: [{ name: "eventCount" }], limit: 250 }),
+      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "sessionSource" }], metrics: [{ name: "sessions" }], orderBys: [{ metric: { metricName: "sessions" }, desc: true }], limit: 50 }),
     ]);
+    const allEvents = rowsToObjects(events);
+    // AI検索経由の流入 (AIO成果の直接指標)
+    const AI_SOURCES = /chatgpt|openai|perplexity|copilot|gemini|bard|claude|you\.com|phind|poe\.com|felo|genspark/i;
+    const refRows = rowsToObjects(refs);
     return {
       connected: true,
       summary: rowsToObjects(summary)[0] || {},
       prevSummary: rowsToObjects(prevSummary)[0] || {},
       topPages: rowsToObjects(pages),
       channels: rowsToObjects(sources),
-      events: rowsToObjects(events).filter((e) => /cta|form|lead|diagnosis|tel|download|audit/i.test(e.eventName)),
+      // リード・CV系イベント
+      cvEvents: allEvents.filter((e) => /^(cta_|lead_|form_submit|diagnosis|site_audit|download)/.test(e.eventName)),
+      // セクション到達イベント (LPヒートマップ分析用)
+      sectionViews: allEvents.filter((e) => e.eventName.startsWith("section_view_")),
+      aiReferrals: refRows.filter((r) => AI_SOURCES.test(r.sessionSource)),
+      topSources: refRows.slice(0, 15),
+      trend6m: { traffic: rowsToObjects(trendTraffic), leads: rowsToObjects(trendLeads) },
     };
   } catch (e) {
     return { connected: false, note: `GA4接続エラー: ${e.message}` };
   }
+}
+
+// ---------------- LPセクション文言インベントリ ----------------
+// 到達率データと突き合わせて「どのエリアのどの文言を変えるか」を提案させるため、
+// LPの各セクションの見出しを順番つきで収集する
+function collectSectionCopy() {
+  try {
+    const html = readFileSync(join(REPO, "index.html"), "utf8");
+    const out = [];
+    const re = /<section[^>]*id="([^"]+)"[\s\S]*?(?=<section[^>]*id="|<footer)/g;
+    let m;
+    while ((m = re.exec(html)) !== null) {
+      const block = m[0];
+      const h = (block.match(/<h[12][^>]*>([\s\S]*?)<\/h[12]>/) || [])[1] || "";
+      const cta = (block.match(/data-cta="([^"]+)"/) || [])[1] || "";
+      out.push({
+        order: out.length + 1,
+        sectionId: m[1],
+        headline: h.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim().slice(0, 60),
+        primaryCta: cta,
+      });
+    }
+    return out;
+  } catch {
+    return [];
+  }
+}
+
+// ---------------- AIO自動監査 (自サイトの実装状態を機械チェック) ----------------
+async function aioAudit() {
+  const audit = {};
+  const get = async (path) => {
+    try {
+      const res = await fetch(`${SITE_URL}${path}`, { redirect: "follow" });
+      return { status: res.status, text: res.ok ? await res.text() : "" };
+    } catch (e) {
+      return { status: 0, text: "", error: e.message };
+    }
+  };
+  const [llms, robots, home, sitemap] = await Promise.all([get("/llms.txt"), get("/robots.txt"), get("/"), get("/sitemap.xml")]);
+  audit.llmsTxt = llms.status === 200 ? "実装済み" : `未検出 (${llms.status})`;
+  audit.robotsAiBots = robots.status === 200
+    ? (/GPTBot|CCBot|anthropic|PerplexityBot/i.test(robots.text) && /disallow\s*:\s*\//i.test(robots.text) ? "AIボットの一部をブロックしている可能性 (要確認)" : "AIボットのクロールを許可")
+    : "robots.txt未検出";
+  audit.jsonLdBlocks = (home.text.match(/application\/ld\+json/g) || []).length;
+  audit.jsonLdTypes = [...new Set([...home.text.matchAll(/"@type":\s*"([A-Za-z]+)"/g)].map((x) => x[1]))].slice(0, 12);
+  const lastmods = [...sitemap.text.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})<\/lastmod>/g)].map((x) => x[1]).sort();
+  audit.sitemapUrls = (sitemap.text.match(/<loc>/g) || []).length;
+  audit.sitemapNewest = lastmods[lastmods.length - 1] || "不明";
+  return audit;
 }
 
 // ---------------- 内部データ収集 ----------------
@@ -135,21 +201,31 @@ function collectInternal(ym) {
 }
 
 // ---------------- レポート生成 ----------------
-const CONSULT_SYSTEM = `あなたはセブンセンシズ株式会社のWebサイト (${SITE_URL} — AI導入補助金申請サポート/システム開発/AIO/MEOのリード獲得サイト) を担当するシニアWebコンサルタントです。
-月次報告書を、経営者が読んで「何をすべきか」まで分かる濃さで書きます。
+const CONSULT_SYSTEM = `あなたは世界トップクラスのグロースコンサルタントとして、セブンセンシズ株式会社のWebサイト (${SITE_URL} — AI導入補助金申請サポート/システム開発/AIO/MEOのリード獲得サイト) の月次報告書を書きます。
+読者は経営者。数字の羅列ではなく「どこで何が起き、どこを・どの文言を・なぜ直すか」まで断定的に書きます。
 
-# 報告書の構成 (Markdown。この順で)
-1. エグゼクティブサマリー (3行で今月の総括)
-2. 伸びたポイント (データの根拠つきで具体的に)
-3. 直すべきポイント (優先度 高/中/低 を付け、「なぜ・どう直すか」まで)
-4. コンテンツ運用実績 (公開本数・品質スコア・改善余地)
-5. リード獲得の評価 (計測が無い場合は「計測整備が最優先」と明確に指摘)
-6. 来月のアクションプラン (実行順の番号つき。担当が動ける粒度で)
+# 報告書の構成 (Markdown。この順・この見出しで)
+1. エグゼクティブサマリー — 3行総括+今月の最重要判断1つ
+2. KPIダッシュボード — 流入数/リード数(問い合わせ・診断・DL・電話の内訳)/転換率を表に。各行に前月比を ▲+12% ▼-8% → 形式で付す
+3. 6ヶ月トレンド — 月×セッション・リードの推移表。数値の横に █ を比例本数で並べたバーを付けて可視化 (例: 320 ████████)
+4. 流入分析 — チャネル別・参照元別。伸び/減の要因を特定
+5. ページ・エリア分析 (ヒートマップ) — section_view_* イベントとセクション順序から「到達率ファネル表」を作る (上から順に何%が到達したか+バー可視化)。到達率が大きく落ちる境目 = 離脱ポイントを特定する
+6. 文言・クリエイティブ改善提案 — 離脱ポイントとCTAクリック率から、「対象エリア/現行の文言/改善案の文言/根拠/期待効果」の対比表で最低3件提案する (sectionCopyの実際の見出しを引用すること)
+7. AIO分析 — AI検索経由の流入 (aiReferrals)、実装監査 (llms.txt/構造化データ/robots/sitemap鮮度)、被引用を増やす次の一手 (定義記事・FAQ拡充・断言文強化など具体タイトル案まで)
+8. コンテンツ運用実績 — 公開本数・平均品質スコア・不合格と理由・カテゴリバランス
+9. 優先施策マトリクス — 提案施策を「インパクト×工数」で 高効果×低工数 から順に番号付け
+10. 来月の数値目標とアクションプラン — 目標KPI (現実的な数値を根拠つきで提案) と、実行順のタスクリスト (担当・所要目安つき)
+
+# 可視化ルール
+- すべての主要数値に前月比を付ける。改善=▲、悪化=▼、横ばい=→
+- 推移・比率は必ず表+バー (█ の繰り返し) で表現し、文章だけで説明しない
+- 表は5列以内。1つの表に詰め込みすぎない
 
 # 心得
-- データに無いことを推測で断定しない。データ不足はそれ自体を課題として指摘する
+- データに無いことを推測で断定しない。データ不足 (未計測・接続前) はそれ自体を最優先課題として指摘する
 - 呼称は「AI導入補助金」で統一
-- 割引・採択保証などコンプライアンスに反する施策は提案しない`;
+- 割引・採択保証などコンプライアンスに反する施策は提案しない
+- 業界平均等に言及する場合は「一般的な目安」と明示する`;
 
 async function main() {
   // 対象月 = 前月 (毎月1日実行のため)
@@ -163,10 +239,15 @@ async function main() {
   const prevLast = new Date(prev.getFullYear(), prev.getMonth() + 1, 0).getDate();
   const prevRange = { startDate: `${prevYm}-01`, endDate: `${prevYm}-${prevLast}` };
 
+  // 6ヶ月トレンドの起点 (対象月を含む過去6ヶ月)
+  const six = new Date(target.getFullYear(), target.getMonth() - 5, 1);
+  const sixMonthRange = { startDate: `${six.getFullYear()}-${String(six.getMonth() + 1).padStart(2, "0")}-01`, endDate: range.endDate };
+
   console.log(`[monthly-report] 対象月: ${ym}`);
-  const ga4 = await collectGa4(range, prevRange);
+  const [ga4, aio] = await Promise.all([collectGa4(range, prevRange, sixMonthRange), aioAudit()]);
   const internal = collectInternal(ym);
-  const payload = { targetMonth: ym, ga4, internal, site: SITE_URL };
+  const sectionCopy = collectSectionCopy();
+  const payload = { targetMonth: ym, ga4, aio, internal, sectionCopy, site: SITE_URL };
 
   let report;
   if (hasClaudeAuth()) {
