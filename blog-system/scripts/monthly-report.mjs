@@ -83,6 +83,12 @@ async function collectGa4(range, prevRange, sixMonthRange) {
       ga4Report(token, propertyId, { dateRanges: [sixMonthRange], dimensions: [{ name: "yearMonth" }], metrics: [{ name: "sessions" }, { name: "totalUsers" }, { name: "screenPageViews" }], orderBys: [{ dimension: { dimensionName: "yearMonth" } }] }),
       ga4Report(token, propertyId, { dateRanges: [sixMonthRange], dimensions: [{ name: "yearMonth" }], metrics: [{ name: "eventCount" }], dimensionFilter: { filter: { fieldName: "eventName", stringFilter: { matchType: "BEGINS_WITH", value: "lead_" } } }, orderBys: [{ dimension: { dimensionName: "yearMonth" } }] }),
     ]);
+    const [devices, newVsRet, landings, weekdays] = await Promise.all([
+      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "deviceCategory" }], metrics: [{ name: "sessions" }, { name: "conversions" }] }),
+      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "newVsReturning" }], metrics: [{ name: "sessions" }] }),
+      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "landingPage" }], metrics: [{ name: "sessions" }, { name: "conversions" }], orderBys: [{ metric: { metricName: "sessions" }, desc: true }], limit: 15 }),
+      ga4Report(token, propertyId, { dateRanges: [range], dimensions: [{ name: "dayOfWeekName" }], metrics: [{ name: "sessions" }] }),
+    ]);
     const [summary, prevSummary, pages, sources, events, refs] = await Promise.all([
       ga4Report(token, propertyId, { dateRanges: [range], metrics: [{ name: "sessions" }, { name: "totalUsers" }, { name: "screenPageViews" }, { name: "averageSessionDuration" }] }),
       ga4Report(token, propertyId, { dateRanges: [prevRange], metrics: [{ name: "sessions" }, { name: "totalUsers" }, { name: "screenPageViews" }, { name: "averageSessionDuration" }] }),
@@ -108,6 +114,10 @@ async function collectGa4(range, prevRange, sixMonthRange) {
       aiReferrals: refRows.filter((r) => AI_SOURCES.test(r.sessionSource)),
       topSources: refRows.slice(0, 15),
       trend6m: { traffic: rowsToObjects(trendTraffic), leads: rowsToObjects(trendLeads) },
+      devices: rowsToObjects(devices),
+      newVsReturning: rowsToObjects(newVsRet),
+      landingPages: rowsToObjects(landings),
+      weekdays: rowsToObjects(weekdays),
     };
   } catch (e) {
     return { connected: false, note: `GA4接続エラー: ${e.message}` };
@@ -231,7 +241,16 @@ function collectInternal(ym) {
   } catch { /* ログ未生成月はスキップ */ }
   try {
     const q = JSON.parse(readFileSync(join(ROOT, "data", "keywords-queue.json"), "utf8"));
-    data.queue = { pending: q.keywords.filter((k) => k.status === "pending").length, total: q.keywords.length };
+    const pending = q.keywords.filter((k) => k.status === "pending");
+    data.queue = {
+      pending: pending.length,
+      total: q.keywords.length,
+      // キーワード戦略章の材料 (優先度順の待機リスト上位20)
+      upcoming: pending
+        .sort((a, b) => ({ S: 0, A: 1, B: 2 }[a.priority] ?? 3) - ({ S: 0, A: 1, B: 2 }[b.priority] ?? 3))
+        .slice(0, 20)
+        .map((k) => ({ keyword: k.keyword, priority: k.priority, category: k.category })),
+    };
   } catch { /* なし */ }
   const reviewDir = join(ROOT, "content", "human-review");
   if (existsSync(reviewDir)) data.review = readdirSync(reviewDir).filter((f) => f.endsWith(".md"));
@@ -242,17 +261,21 @@ function collectInternal(ym) {
 const CONSULT_SYSTEM = `あなたは世界トップクラスのグロースコンサルタントとして、セブンセンシズ株式会社のWebサイト (${SITE_URL} — AI導入補助金申請サポート/システム開発/AIO/MEOのリード獲得サイト) の月次報告書を書きます。
 読者は経営者。数字の羅列ではなく「どこで何が起き、どこを・どの文言を・なぜ直すか」まで断定的に書きます。
 
-# 報告書の構成 (Markdown。この順・この見出しで)
+# 報告書の構成 (Markdown。この順・この見出しで。全14章を必ず書く)
 1. エグゼクティブサマリー — 3行総括+今月の最重要判断1つ
-2. KPIダッシュボード — 流入数/リード数(問い合わせ・診断・DL・電話の内訳)/転換率を表に。各行に前月比を ▲+12% ▼-8% → 形式で付す
-3. 6ヶ月トレンド — 月×セッション・リードの推移表。数値の横に █ を比例本数で並べたバーを付けて可視化 (例: 320 ████████)
-4. 流入・検索パフォーマンス分析 — チャネル別・参照元別の増減要因に加え、GSCデータから「クエリ別の表示回数/クリック/CTR/掲載順位」の表を作る。**表示回数が多いのにCTRが低いクエリ**と**掲載順位11〜20位(2ページ目)のクエリ**を「伸びしろリスト」として特定する
-5. ページ・エリア分析 (ヒートマップ) — section_view_* イベントとセクション順序から「到達率ファネル表」を作る (上から順に何%が到達したか+バー可視化)。到達率が大きく落ちる境目 = 離脱ポイントを特定する
-6. 文言・クリエイティブ改善提案 — 離脱ポイントとCTAクリック率から、「対象エリア/現行の文言/改善案の文言/根拠/期待効果」の対比表で最低3件提案する (sectionCopyの実際の見出しを引用すること)。GSCで「表示多い×CTR低い」だった記事があれば、そのタイトルの書き換え案もここに含める
-7. AIO分析 — AI検索経由の流入 (aiReferrals)、実装監査 (llms.txt/構造化データ/robots/sitemap鮮度)、被引用を増やす次の一手 (定義記事・FAQ拡充・断言文強化など具体タイトル案まで)
-8. コンテンツ運用実績 — 公開本数・平均品質スコア・不合格と理由・カテゴリバランス
-9. 優先施策マトリクス — 提案施策を「インパクト×工数」で 高効果×低工数 から順に番号付け
-10. 来月の数値目標とアクションプラン — 目標KPI (現実的な数値を根拠つきで提案) と、実行順のタスクリスト (担当・所要目安つき)
+2. KPIダッシュボード総括 — 主要KPI (セッション/ユーザー/PV/滞在時間/リード総数と内訳[問い合わせ・診断・DL・電話]/転換率) を表に。**列は必ず「指標|当月|前月|前月比|6ヶ月前|6ヶ月前比」の6列**にする
+3. 6ヶ月トレンド — 月×セッション・リードの推移表。数値の横に █ を比例本数で並べたバーを付けて可視化 (例: 320 ████████)。最下行に月平均成長率を書く
+4. 流入分析 — (a)チャネル別 (b)参照元Top (c)デバイス別 (d)新規/リピーター (e)曜日別、の5つの表。それぞれ構成比バーつき。増減の要因を各表の直後に1〜2文で断定する
+5. 検索パフォーマンス (GSC) — クエリ別Top20の表 (表示回数/クリック/CTR/掲載順位)。続けて**伸びしろリスト2種**: ①表示回数が多いのにCTRが低いクエリ (タイトル改善候補) ②掲載順位11〜20位のクエリ (あと一歩で1ページ目)
+6. ランディングページ・記事別パフォーマンス — 入口ページ別のセッション→CVの表+伸びた記事/落ちた記事の特定
+7. LPエリア分析 (ヒートマップ) — section_view_* とセクション順序から「到達率ファネル表」(上から順に何%が到達+バー+直前からの落差)。最大の離脱点を断定する。CTA別クリック数の表も添える
+8. 文言・クリエイティブ改善提案 — 「対象エリア/現行の文言/改善案の文言/根拠/期待効果」の対比表で最低3件 (sectionCopyの実際の見出しを引用)。GSCで「表示多い×CTR低い」の記事タイトル書き換え案も含める
+9. AIO分析 — AI検索経由の流入 (参照元別)、実装監査 (llms.txt/構造化データ/robots/sitemap鮮度)、被引用を増やす次の一手 (具体タイトル案まで)
+10. キーワード戦略 — GSCの伸びしろ・未カバーの検索意図・キュー残 (internal.queue.upcoming) を突き合わせ、**来月狙うべき推奨キーワード10本**を「キーワード/狙う理由/記事タイプ/優先度」の表で提案する。キューの優先順に反映すべき変更も指示する
+11. コンテンツ運用実績 — 公開本数・平均品質スコア (総合/SEO/AIOの三軸)・不合格と理由・カテゴリバランス・リライト実施状況
+12. 運営者向け改善KPI指標 — 「毎週見るべき指標/現在値/目標値/どこで見るか/悪化時のアクション」の5列表。運営者がこの表だけで自走できる粒度にする
+13. 優先施策マトリクス — 全提案施策を「インパクト×工数」で高効果×低工数から順に番号付け
+14. 来月の数値目標とアクションプラン — 目標KPI (根拠つき) と実行順タスクリスト (担当・所要目安つき)
 
 # 可視化ルール
 - すべての主要数値に前月比を付ける。改善=▲、悪化=▼、横ばい=→
