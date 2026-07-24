@@ -292,6 +292,26 @@ for name, (slug, _, _) in CATS.items():
 for a in arts:
     pr = "0.9" if a["slug"] == "ai-hojokin-guide-2026" else "0.7"
     urls.append(f"  <url>\n    <loc>{DOMAIN}/blog/{a['slug']}/</loc>\n    <lastmod>{a['date']}</lastmod>\n    <priority>{pr}</priority>\n  </url>")
+# ---- llms.txt の記事セクション自動更新 (AIO: AIクローラーに全記事を提示) ----
+llms_path = ROOT / "llms.txt"
+if llms_path.is_file():
+    llms = llms_path.read_text(encoding="utf-8")
+    cut = llms.find("\n## ブログ記事")
+    if cut != -1:
+        llms = llms[:cut]
+    lines = ["", "## ブログ記事(全記事・新しい順)", ""]
+    for a in arts:
+        lines.append(f"- [{a['title']}]({DOMAIN}/blog/{a['slug']}/): {a['desc'][:70]}")
+    lines += ["",
+              "## 記事カテゴリ",
+              "",
+              f"- [補助金の記事一覧]({DOMAIN}/blog/category/hojokin/)",
+              f"- [AIO(AI検索対策)の記事一覧]({DOMAIN}/blog/category/aio/)",
+              f"- [MEOの記事一覧]({DOMAIN}/blog/category/meo/)",
+              f"- [システム開発の記事一覧]({DOMAIN}/blog/category/dev/)", ""]
+    llms_path.write_text(llms.rstrip() + "\n" + "\n".join(lines), encoding="utf-8")
+    print(f"生成: llms.txt (記事{len(arts)}本を反映)")
+
 (ROOT / "sitemap.xml").write_text(
     '<?xml version="1.0" encoding="UTF-8"?>\n'
     "<!-- 自動生成: gen_blog_pages.py。lastmodは記事の公開/更新日のみ変更 -->\n"

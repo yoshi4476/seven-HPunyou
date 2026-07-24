@@ -30,3 +30,36 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - フォーム: https://lp.7senses.co.jp/#contact (3営業日以内に返信・営業電話なし)
 - 電話: 06-4305-7547(9:00〜20:00 土日祝休)
 - 所在地: 〒537-0003 大阪府大阪市東成区神路1丁目7-4 コンフォートビル901・902
+
+## ブログ記事(全記事・新しい順)
+
+- [AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】](https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/): AI導入補助金とは、IT導入補助金の2026年(令和8年)における通称です。両者は同じ制度で、補助上限350万円・補助率1/2〜3/4。名前
+- [AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/): AI導入補助金の対象ツールを解説する記事。対象となる経費区分やツール例、選定時の注意点、申請の流れを中小企業経営者向けに整理した。
+- [IT導入補助金の採択率を上げる方法｜見直すべき3つの視点](https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu-up/): IT導入補助金の採択率を上げる方法を解説。審査で見られる書類のポイントと、申請前に見直すべき3つの視点を中小企業経営者向けに整理した。
+- [AI導入補助金とは?令和8年度の完全ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-guide-2026/): AI導入補助金とは、AIツール導入費用の一部を国が補助する制度の総称です。令和8年度の補助上限350万円・対象条件・準備8ステップ・必要書類
+- [IT導入補助金の採択率を上げる5つの実務ポイント](https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu/): IT導入補助金の採択率を上げる方法とは、事前準備・加点項目・数値計画・書類精度・伴走体制の5点を固める実務です。採択通過率90%以上(※当社
+- [AIO対策とは?ChatGPTに引用されるサイトの作り方](https://lp.7senses.co.jp/blog/aio-taisaku-guide/): AIO(AI検索最適化)とは、ChatGPTなどのAI検索に自社サイトを引用させるための最適化施策です。AIに引用される7条件と、robot
+- [MEO対策・大阪版:Googleマップ上位表示の実践手順](https://lp.7senses.co.jp/blog/meo-osaka-guide/): MEO対策とは、Googleマップの検索結果で自店舗を上位に表示させるための施策です。大阪の商圏特性(キタ・ミナミ・東大阪)とインバウンド対
+- [GビズIDプライムの取得方法(最短2週間の逆算スケジュール)](https://lp.7senses.co.jp/blog/gbizid-shutoku/): GビズIDプライムとは、補助金申請に必須の行政サービス共通アカウントです。取得は最長2週間・印鑑証明書が必要。必要書類・逆算スケジュール・つ
+- [エクセル脱却の業務システム、費用と進め方](https://lp.7senses.co.jp/blog/excel-dakkyaku/): エクセル脱却とは、見積・請求・受発注などの業務を専用システムへ移行することです。費用相場と進め方5ステップ、IT導入補助金(上限350万円)
+- [IT導入補助金の申請代行・サポート費用の相場](https://lp.7senses.co.jp/blog/it-hojokin-daiko-hiyou/): IT導入補助金の申請代行費用の相場は着手金+成功報酬10〜20%が一般的(※当社調べ・2026年7月時点)。完全成功報酬型・定額型など料金体
+- [MEO対策の費用相場](https://lp.7senses.co.jp/blog/meo-hiyou-souba/): MEO対策の費用相場は月額3〜10万円が一般的です(※当社調べ)。月額固定型・成果報酬型・一括型の料金体系の違いと注意点、失敗しない選び方の
+- [IT導入補助金のベンダー(支援事業者)の選び方](https://lp.7senses.co.jp/blog/it-hojokin-vendor/): IT導入補助金のベンダー(IT導入支援事業者)の選び方を解説。役割と仕組み、実績・料金の透明性など5つの基準、良いベンダー・避けるべきベンダ
+- [LLMO対策 完全ガイド](https://lp.7senses.co.jp/blog/llmo-taisaku/): LLMO対策とは、ChatGPTなどの大規模言語モデルに自社サイトを引用・言及させるための最適化施策です。AIが引用元を選ぶ仕組みから、ll
+- [MEO対策を自分でやる方法](https://lp.7senses.co.jp/blog/meo-jibunde/): MEO対策は自分で、しかも無料で始められます。Googleビジネスプロフィールの登録から口コミ運用・分析まで、費用ゼロで実践できる7ステップ
+- [ChatGPTに自社を表示させる方法](https://lp.7senses.co.jp/blog/chatgpt-jisha-hyoji/): ChatGPTに自社を表示させる方法は、AIクローラーの許可・会社情報の機械可読化・一次情報の発信・第三者言及の獲得の4つに整理できます。中
+- [IT導入補助金の対象ツールと選び方(令和8年度)](https://lp.7senses.co.jp/blog/it-hojokin-taisho-tool/): IT導入補助金の対象ツールは、事前登録されたITツールのみです。会計・受発注・EC・AIチャットボット等のカテゴリ別対象例、対象外になりやす
+- [MEO業者の選び方](https://lp.7senses.co.jp/blog/meo-gyousha-erabikata/): MEO業者選びで失敗しないコツは、契約前に「見分けるための質問」をぶつけることです。悪質業者に共通する手口と、商談で使える5つの質問、契約書
+- [個人事業主もAI導入補助金は使える?条件と手順](https://lp.7senses.co.jp/blog/ai-hojokin-kojin/): AI導入補助金は個人事業主も活用できます。実務はIT導入補助金等の活用が中心で、令和8年度の補助上限は350万円。対象条件・法人との違い・必
+- [Google AI Overview対策](https://lp.7senses.co.jp/blog/ai-overview-taisaku/): Google AI Overview対策とは、Google検索結果の最上部に表示されるAIによる概要に、自社サイトを引用元として掲載させるた
+- [業務システム開発の費用相場](https://lp.7senses.co.jp/blog/gyomu-system-hiyou/): 業務システム開発の費用相場は、小規模なもので80万〜300万円程度が目安です(※当社調べ)。費用の内訳と金額が変わる要因、IT導入補助金(上
+- [AIO対策の費用相場](https://lp.7senses.co.jp/blog/aio-hiyou-souba/): AIO対策の費用相場は、初期実装で10万〜50万円程度、コンサルティング型の継続支援で月10万〜30万円程度が目安です(2026年7月時点)
+- [IT導入補助金 令和8年度のスケジュールと逆算準備](https://lp.7senses.co.jp/blog/it-hojokin-schedule/): IT導入補助金のスケジュールは通年で複数回の締切が設定される傾向があります。申請から着金まで約2〜3ヶ月のタイムライン、GビズID最長2週間
+- [ChatGPTの業務活用事例](https://lp.7senses.co.jp/blog/chatgpt-katsuyou-jirei/): ChatGPTの業務活用は、文書作成・問い合わせ対応・データ整理・社内ナレッジ検索・システム開発補助の5パターンに整理できます。中小企業のモ
+
+## 記事カテゴリ
+
+- [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [AIO(AI検索対策)の記事一覧](https://lp.7senses.co.jp/blog/category/aio/)
+- [MEOの記事一覧](https://lp.7senses.co.jp/blog/category/meo/)
+- [システム開発の記事一覧](https://lp.7senses.co.jp/blog/category/dev/)
