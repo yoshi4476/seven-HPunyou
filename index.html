@@ -1241,7 +1241,7 @@ const secIO = new IntersectionObserver(es => es.forEach(e => {
     seenSec.add(e.target.id);
     track("section_view_" + e.target.id.replace(/-/g, "_"));
   }
-}), {threshold: .4});
+}), {threshold: .25});
 document.querySelectorAll("section[id]").forEach(s => secIO.observe(s));
 
 /* ---------- CTAクリック計測 ---------- */

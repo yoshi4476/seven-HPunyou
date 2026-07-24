@@ -155,7 +155,7 @@ async function checkArticle(file, md, existingTitles, qualityLog) {
   }
   // ④-2 内部リンクの実在検証 (仮スラッグによる404リンクを公開前に排除)
   const SITE_DIR = join(ROOT, "..");
-  const VALID_PREFIX = /^\/(service\/(hojokin|dev|aio|meo)\/|youkou\/|about\/|blog\/|#|\?)/;
+  const VALID_PREFIX = /^\/(service\/(hojokin|dev|aio|meo)\/|youkou\/|about\/|blog\/|downloads\/|privacy\/|unsubscribe\/|#|\?)/;
   for (const l of internalLinks) {
     const path = l.slice(2, -1).split("#")[0].split("?")[0];
     if (path === "/" || !path.startsWith("/")) continue;
