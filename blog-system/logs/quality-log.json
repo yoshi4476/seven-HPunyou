@@ -2390,6 +2390,126 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-osaka-chusho.md",
+      "date": "2026-07-24T23:03:30.275Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "制度基本・大阪の適性・申請〜着金の流れ・サポート選び・補助金後集客・FAQと主要意図を網羅。個人事業主可否や後払い資金繰りも拾えている"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行・em-markerの定義断言文・FAQの短文断言・引用しやすい単文が揃い、AI引用適性が高い"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "代表者実名・肩書、公式一次情報URL、匿名化した複数支援事例、税務は税理士誘導と守秘対応が適切"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "地域+キーワードのタイトル、目次・アンカー付き見出し構造、関連記事への内部リンクが豊富で整合的"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文が概ね短く段落3〜4行、表・箇条書き・アクション囲みで緩急あり、太字とem-markerも適量で乱用なし"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "補助金後のMEO/AIO・llms.txt・自社G-ran実績など他社に無い切り口が独自性を出している"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "事例の数値(月40→6時間、550万円中350万円補助等)が具体的で水増しが少なく情報密度が高い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "aio-marketing-toha-2026.md",
+      "date": "2026-07-24T23:03:24.627Z",
+      "finalScore": 91,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 92,
+          "aio": 93,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "定義・SEO/MEOとの違い・重要性・5ステップ・費用と補助金・FAQと『AIOとは/マーケティング』検索者の主要意図を網羅、比較表と具体手順で深さもある"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に太字定義断言文と要点3行、FAQ6問が全て断言形、em-markerによる単文抜き出しがあり引用されやすい構造"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者に代表取締役の実名・肩書、士業事務所(0→月4件)や卸売業(550万→350万)の具体事例、Google/llmstxt.org等の公式一次情報リンクあり(自社統計は※注記で守秘対応済み)"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW『AIOとは/マーケティング/2026』、H2構造とid・目次アンカー、内部リンク多数、descriptionも整合しているが内部リンク先が実在するかは記事内で検証不可"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文がほぼ60字以内、比較表2つ・箇条書き・IMG指定・em-markerで緩急あり、太字強調も適量。ただし『取り組むメリット』見出しの重複ラベルがやや単調"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "検索の3世代論、SEO/MEO/AIO一体設計の切り口、G-ranやAIO×MEO一体提供という自社知見が具体的で独自性が高い"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "約4500字相当で水増しが少なく、5項目チェックや実績表など情報密度が高い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

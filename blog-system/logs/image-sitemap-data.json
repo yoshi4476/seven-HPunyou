@@ -171,6 +171,63 @@
           "alt": "よくある質問(FAQ)の解説イメージ"
         }
       ]
+    },
+    {
+      "slug": "ai-hojokin-osaka-chusho",
+      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-osaka-chusho/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-osaka-chusho/thumbnail.webp",
+          "title": "【2026年版】中小企業のAI導入補助金｜大阪の申請サポートと採択の進め方",
+          "alt": "【2026年版】中小企業のAI導入補助金｜大阪の申請サポートと採択の進め方のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-1.webp",
+          "title": "AI導入補助金とは？中小企業が使える制度の基本",
+          "alt": "AI導入補助金の制度概要(対象・補助上限350万円・着金までの目安期間)を整理した概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-2.webp",
+          "title": "申請から着金までの流れと必要書類",
+          "alt": "相談から着金までの6ステップ(相談→要件確認→書類準備→申請→採択・導入→着金)を横並びで示した手順フロー図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-3.webp",
+          "title": "AI導入だけで終わらせない：補助金後の集客・AI検索対策",
+          "alt": "補助金でのシステム導入と、MEO・AI検索対策による集客改善を組み合わせた投資回収の概念図"
+        }
+      ]
+    },
+    {
+      "slug": "aio-marketing-toha-2026",
+      "loc": "https://lp.7senses.co.jp/blog/aio-marketing-toha-2026/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/thumbnail.webp",
+          "title": "AIOとは?2026年版マーケティング完全ガイド|AI検索で選ばれる会社",
+          "alt": "AIOとは?2026年版マーケティング完全ガイド|AI検索で選ばれる会社のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-1.webp",
+          "title": "AI検索で選ばれる会社づくりを、大阪から",
+          "alt": "検索の3世代(検索エンジン→SEO→AIO)へと評価軸が「順位」から「被引用」へ変化する流れを示した概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-2.webp",
+          "title": "AI検索で選ばれる会社づくりを、大阪から",
+          "alt": "SEO・MEO・AIOの目的と評価対象・施策・成果指標を並べた比較図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-3.webp",
+          "title": "AI検索で選ばれる会社づくりを、大阪から",
+          "alt": "紹介依存の集客からAI検索経由の新規接点へ広がる中小企業の変化を示した概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-4.webp",
+          "title": "AI検索で選ばれる会社づくりを、大阪から",
+          "alt": "一次情報の整備からE-E-A-T明示まで、AIO対策5ステップの手順図"
+        }
+      ]
     }
   ]
 }

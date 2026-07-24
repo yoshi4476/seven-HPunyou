@@ -222,8 +222,10 @@
       "keyword": "中小企業 AI導入 補助金 大阪",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-24T22:56:29.146Z",
+      "slug": "ai-hojokin-osaka-chusho"
     },
     {
       "id": 27,
@@ -262,8 +264,10 @@
       "keyword": "AIO とは マーケティング",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-24T23:02:54.589Z",
+      "slug": "aio-marketing-toha-2026"
     },
     {
       "id": 32,

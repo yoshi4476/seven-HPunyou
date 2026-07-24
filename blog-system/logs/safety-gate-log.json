@@ -117,6 +117,27 @@
         "④内部リンク先の記事が存在しない (404になる): /blog/ai-hojokin-2026-guide/",
         "④内部リンク先の記事が存在しない (404になる): /blog/gbizid-prime-shutoku/"
       ]
+    },
+    {
+      "file": "ai-hojokin-osaka-chusho.md",
+      "slug": "ai-hojokin-osaka-chusho",
+      "title": "【2026年版】中小企業のAI導入補助金｜大阪の申請サポートと採択の進め方",
+      "date": "2026-07-24T23:04:15.807Z",
+      "passed": false,
+      "reasons": [
+        "④内部リンク先の記事が存在しない (404になる): /blog/ai-hojokin-ikura-moraeru-2026/"
+      ]
+    },
+    {
+      "file": "aio-marketing-toha-2026.md",
+      "slug": "aio-marketing-toha-2026",
+      "title": "AIOとは?2026年版マーケティング完全ガイド|AI検索で選ばれる会社",
+      "date": "2026-07-24T23:04:17.831Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「10件」を含む段落に出典URLがありません",
+        "③H2不足: 1個 (規定 3個以上)"
+      ]
     }
   ]
 }
