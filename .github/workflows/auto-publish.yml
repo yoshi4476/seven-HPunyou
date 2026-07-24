@@ -18,6 +18,7 @@ on:
   schedule:
     - cron: '0 22 * * *' # JST 朝7時 → 本流2本
     - cron: '0 8 * * *'  # JST 夕17時 → ニュース1本
+    - cron: '30 22 * * 0' # JST 日曜朝7時半 → 既存記事1本を最新化リライト (コンテンツ・ディケイ対策)
   workflow_dispatch:
     inputs:
       mode:
@@ -92,12 +93,15 @@ jobs:
         run: sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk >/dev/null && fc-cache -f >/dev/null
 
       # 夕方スケジュール or 手動 news 指定時は --news でニュース1本モード
+      # 日曜朝はリライトモード (新規生成せず、最古の公開記事を最新化して再審査へ)
       # 認証はサブスク (CLAUDE_CODE_OAUTH_TOKEN) > APIキー (ANTHROPIC_API_KEY) の優先順
       - name: 記事生成 (Claude)
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
         run: |
-          if [ "${{ github.event.schedule }}" = "0 8 * * *" ] || [ "${{ inputs.mode }}" = "news" ]; then
+          if [ "${{ github.event.schedule }}" = "30 22 * * 0" ]; then
+            node scripts/refresh-article.mjs
+          elif [ "${{ github.event.schedule }}" = "0 8 * * *" ] || [ "${{ inputs.mode }}" = "news" ]; then
             node scripts/generate-articles.mjs --news
           else
             node scripts/generate-articles.mjs
