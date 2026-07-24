@@ -80,8 +80,13 @@ ${RUBRIC.map((r) => `- ${r.key} (${r.label}): ${r.max}点満点`).join("\n")}
 - 60〜79: 公開前に修正が必要
 - 60未満: 大幅な作り直しが必要
 
+# 二軸評価 (総合点に加えて必ず出力する)
+- seoScore (0-100): 検索エンジン最適化の観点での総合評価。検索意図の網羅・タイトルとキーワードの整合・見出し構造・内部リンク・E-E-A-T・情報密度を重視
+- aioScore (0-100): AI検索 (ChatGPT・AI Overview等) に引用される観点での総合評価。冒頭の要点3行・定義断言文・FAQの断言形・引用しやすい単文・構造の明確さを重視
+- どちらの軸もスコア較正 (90〜100=公開して問題ない水準) は総合点と同じ基準で付ける
+
 # 出力形式 (JSONのみ。前置き・コードフェンス禁止)
-{"total": <0-100>, "items": [{"key": "<ルーブリックkey>", "score": <点数>, "max": <満点>, "reason": "<採点理由1行>"}], "deductions": ["<減点理由と修正指示を具体的に (改稿AIへの差し戻し文)>"]}`;
+{"total": <0-100>, "seoScore": <0-100>, "aioScore": <0-100>, "items": [{"key": "<ルーブリックkey>", "score": <点数>, "max": <満点>, "reason": "<採点理由1行>"}], "deductions": ["<減点理由と修正指示。SEO軸・AIO軸それぞれの弱点を必ず含める>"]}`;
 }
 
 function parseScore(text) {
@@ -90,7 +95,13 @@ function parseScore(text) {
   const start = cleaned.indexOf("{");
   const end = cleaned.lastIndexOf("}");
   if (start === -1 || end === -1) throw new Error("採点結果のJSONが見つかりません");
-  return JSON.parse(cleaned.slice(start, end + 1));
+  const r = JSON.parse(cleaned.slice(start, end + 1));
+  // 二軸スコアが欠けた場合は総合点で代用 (旧形式への後方互換)
+  if (typeof r.seoScore !== "number") r.seoScore = r.total;
+  if (typeof r.aioScore !== "number") r.aioScore = r.total;
+  // 合否判定は「総合・SEO・AIOの全てが合格ライン以上」= 最も低い軸で代表させる
+  r.gateScore = Math.min(r.total, r.seoScore, r.aioScore);
+  return r;
 }
 
 async function scoreArticle(md) {
@@ -201,11 +212,11 @@ async function main() {
         console.error(`[quality-loop] ${file} の採点に失敗: ${err.message}`);
         break;
       }
-      history.push({ round, total: result.total, items: result.items });
-      console.log(`[quality-loop] ${file} ラウンド${round}: ${result.total}点`);
-      if (result.total > best.total) { best = { total: result.total, md }; stale = 0; } else { stale++; }
+      history.push({ round, total: result.total, seo: result.seoScore, aio: result.aioScore, items: result.items });
+      console.log(`[quality-loop] ${file} ラウンド${round}: 総合${result.total} / SEO${result.seoScore} / AIO${result.aioScore} (判定=${result.gateScore})`);
+      if (result.gateScore > best.total) { best = { total: result.gateScore, md }; stale = 0; } else { stale++; }
 
-      if (result.total >= MIN_SCORE) break;
+      if (result.gateScore >= MIN_SCORE) break; // 総合・SEO・AIOの全軸が合格ラインを超えた場合のみ通過
       if (round === MAX_REVISIONS) break; // 改稿上限。この後 human-review へ
       if (stale >= 2) {
         console.log(`[quality-loop] ${file} は2ラウンド連続で改善なし → 早期終了 (ベスト${best.total}点)`);
@@ -227,7 +238,8 @@ async function main() {
     }
 
     // 最終判定は「最高得点版」で行う (最後の改稿で点が下がった場合に良版を捨てない)
-    const finalScore = Math.max(best.total, result ? result.total : -1);
+    // ※判定スコア = min(総合, SEO, AIO)。両面で85点以上が公開条件
+    const finalScore = Math.max(best.total, result ? result.gateScore : -1);
     if (best.md !== null && best.total >= (result ? result.total : -1)) {
       writeFileSync(path, best.md, "utf8");
       console.log(`[quality-loop] ${file} は最高得点版 (${best.total}点) を最終版として採用`);

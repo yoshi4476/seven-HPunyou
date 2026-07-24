@@ -24,27 +24,33 @@ import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const SITE_BLOG_DIR = join(ROOT, "..", "blog"); // 同一リポジトリのサイト本体 (公開済み記事)
 
-// 既存記事のタイトル一覧 (重複した検索意図の記事を書かせないためにプロンプトへ渡す)
+// 既存記事の一覧 (重複防止と「実在するURLへの内部リンク」の両方に使う)
 // 公開済み(サイト) + 審査待ち/キュー/公開済みmd の全部を照合対象にする
-function publishedTitles() {
-  const titles = [];
+function publishedIndex() {
+  const items = [];
   if (existsSync(SITE_BLOG_DIR)) {
     for (const d of readdirSync(SITE_BLOG_DIR)) {
       const f = join(SITE_BLOG_DIR, d, "index.html");
       if (d === "category" || !existsSync(f)) continue;
       const m = readFileSync(f, "utf8").match(/<title>(.*?)[||]/);
-      if (m) titles.push(m[1].trim());
+      if (m) items.push({ title: m[1].trim(), url: `/blog/${d}/` });
     }
   }
   for (const sub of ["posted", "publish-queue", "human-review", "drafts"]) {
     const dir = join(ROOT, "content", sub);
     if (!existsSync(dir)) continue;
     for (const f of readdirSync(dir).filter((x) => x.endsWith(".md"))) {
-      const m = readFileSync(join(dir, f), "utf8").match(/^title:\s*"?(.*?)"?\s*$/m);
-      if (m) titles.push(m[1].trim());
+      const md = readFileSync(join(dir, f), "utf8");
+      const t = md.match(/^title:\s*"?(.*?)"?\s*$/m);
+      const s = md.match(/^slug:\s*"?(.*?)"?\s*$/m);
+      if (t) items.push({ title: t[1].trim(), url: s ? `/blog/${s[1].trim()}/` : null });
     }
   }
-  return [...new Set(titles)];
+  const seen = new Set();
+  return items.filter((i) => !seen.has(i.title) && seen.add(i.title));
+}
+function publishedTitles() {
+  return publishedIndex().map((i) => i.title);
 }
 
 // キーワードが既存記事と実質同テーマかの機械判定 (固有トークンが全て既存タイトルに含まれるなら重複)
@@ -181,10 +187,9 @@ ${kw.keyword} (カテゴリ: ${kw.category} / 記事タイプ: ${type})
 ${outline ? `# 確定済みの構成案 (この構成に忠実に執筆する。見出し・要素配置を勝手に変えない)
 ${outline}
 
-` : ""}# 既存記事との重複禁止 (SEOカニバリ防止)
-以下は当サイトの既存記事タイトルです。これらと「同じ検索意図」の記事は書かないでください。
+` : ""}# 既存記事リスト (2つの用途: ①同じ検索意図の記事は書かない=重複禁止 ②内部リンクはこのリストの実在URLから選ぶ)
 テーマが近い場合は、対象読者・業種・切り口を明確に変えて差別化してください。
-${publishedTitles().map((t) => `- ${t}`).join("\n")}
+${publishedIndex().map((i) => `- ${i.title}${i.url ? ` (${i.url})` : ""}`).join("\n")}
 
 # 記事要件 (すべて必須)
 1. タイトルは32字前後。キーワードを自然に含める
@@ -201,7 +206,7 @@ ${publishedTitles().map((t) => `- ${t}`).join("\n")}
 10. 記事末尾にセブンセンシズのLP (${LP_URL}) への自然なCTAを入れる
 11. ${lengthNote}
 12. 比較・料金の情報は Markdown の表 (HTML表としてレンダリングされる) で書く。画像化はしない
-13. 同一サイト内の関連記事への内部リンクを2本以上入れる (URLは /blog/{英語スラッグ}/ 形式で、関連しそうな仮スラッグでよい)。加えて、このカテゴリのサービスハブページ ${SERVICE_HUBS[kw.category] || SERVICE_HUBS.hojo} への内部リンクを本文中に1本、自然な文脈で入れる (アンカーテキストはサービス内容を表すキーワードにする)
+13. 内部リンクは、下の「既存記事リスト」に実在するURLから関連性の高いものを2本以上選んで入れる (実在しない仮スラッグへのリンクは絶対に作らない=404防止)。加えて、このカテゴリのサービスハブページ ${SERVICE_HUBS[kw.category] || SERVICE_HUBS.hojo} への内部リンクを本文中に1本、自然な文脈で入れる (アンカーテキストはサービス内容を表すキーワードにする)
 14. H2見出しの2〜3個ごとに、画像挿入位置マーカー「<!--IMG: (そのセクションの図解内容の説明)-->」を単独行で入れる (後工程の embed-images がこのマーカーを図解画像に置換する。説明は「〜の手順図」「〜の比較図」「〜の概念図」のように具体的に書く)
 
 # 可読性・緩急の要件 (読者を飽きさせない。すべて必須)

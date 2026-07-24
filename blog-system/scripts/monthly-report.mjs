@@ -31,7 +31,8 @@ async function ga4Token(creds) {
   const header = Buffer.from(JSON.stringify({ alg: "RS256", typ: "JWT" })).toString("base64url");
   const claim = Buffer.from(JSON.stringify({
     iss: creds.client_email,
-    scope: "https://www.googleapis.com/auth/analytics.readonly",
+    // GA4 と Search Console の両方を1つのトークンで読む
+    scope: "https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/webmasters.readonly",
     aud: "https://oauth2.googleapis.com/token",
     iat: now, exp: now + 3600,
   })).toString("base64url");
@@ -110,6 +111,43 @@ async function collectGa4(range, prevRange, sixMonthRange) {
     };
   } catch (e) {
     return { connected: false, note: `GA4接続エラー: ${e.message}` };
+  }
+}
+
+// ---------------- Search Console (検索クエリ・CTR・掲載順位) ----------------
+// 同じサービスアカウントを GSC プロパティに「閲覧者」で追加すれば自動で有効化。
+// プロパティは env GSC_SITE_URL (未設定時は SITE_URL/) を使用。
+async function collectGsc(range, prevRange) {
+  const credsJson = process.env.GA4_CREDENTIALS_JSON;
+  if (!credsJson) return { connected: false, note: "GSC未接続 (GA4_CREDENTIALS_JSON 未設定)" };
+  const siteUrl = process.env.GSC_SITE_URL || `${SITE_URL}/`;
+  try {
+    const token = await ga4Token(JSON.parse(credsJson));
+    const q = async (body) => {
+      const res = await fetch(
+        `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(siteUrl)}/searchAnalytics/query`,
+        { method: "POST", headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" }, body: JSON.stringify(body) });
+      const j = await res.json();
+      if (j.error) throw new Error(`GSC API: ${j.error.message}`);
+      return j.rows || [];
+    };
+    const base = { startDate: range.startDate, endDate: range.endDate };
+    const [totals, prevTotals, topQueries, topPages] = await Promise.all([
+      q({ ...base }),
+      q({ startDate: prevRange.startDate, endDate: prevRange.endDate }),
+      q({ ...base, dimensions: ["query"], rowLimit: 20 }),
+      q({ ...base, dimensions: ["page"], rowLimit: 20 }),
+    ]);
+    return {
+      connected: true,
+      siteUrl,
+      totals: totals[0] || {},
+      prevTotals: prevTotals[0] || {},
+      topQueries: topQueries.map((r) => ({ query: r.keys[0], clicks: r.clicks, impressions: r.impressions, ctr: +(r.ctr * 100).toFixed(1), position: +r.position.toFixed(1) })),
+      topPages: topPages.map((r) => ({ page: r.keys[0], clicks: r.clicks, impressions: r.impressions, ctr: +(r.ctr * 100).toFixed(1), position: +r.position.toFixed(1) })),
+    };
+  } catch (e) {
+    return { connected: false, note: `GSC接続エラー: ${e.message}` };
   }
 }
 
@@ -208,9 +246,9 @@ const CONSULT_SYSTEM = `あなたは世界トップクラスのグロースコ�
 1. エグゼクティブサマリー — 3行総括+今月の最重要判断1つ
 2. KPIダッシュボード — 流入数/リード数(問い合わせ・診断・DL・電話の内訳)/転換率を表に。各行に前月比を ▲+12% ▼-8% → 形式で付す
 3. 6ヶ月トレンド — 月×セッション・リードの推移表。数値の横に █ を比例本数で並べたバーを付けて可視化 (例: 320 ████████)
-4. 流入分析 — チャネル別・参照元別。伸び/減の要因を特定
+4. 流入・検索パフォーマンス分析 — チャネル別・参照元別の増減要因に加え、GSCデータから「クエリ別の表示回数/クリック/CTR/掲載順位」の表を作る。**表示回数が多いのにCTRが低いクエリ**と**掲載順位11〜20位(2ページ目)のクエリ**を「伸びしろリスト」として特定する
 5. ページ・エリア分析 (ヒートマップ) — section_view_* イベントとセクション順序から「到達率ファネル表」を作る (上から順に何%が到達したか+バー可視化)。到達率が大きく落ちる境目 = 離脱ポイントを特定する
-6. 文言・クリエイティブ改善提案 — 離脱ポイントとCTAクリック率から、「対象エリア/現行の文言/改善案の文言/根拠/期待効果」の対比表で最低3件提案する (sectionCopyの実際の見出しを引用すること)
+6. 文言・クリエイティブ改善提案 — 離脱ポイントとCTAクリック率から、「対象エリア/現行の文言/改善案の文言/根拠/期待効果」の対比表で最低3件提案する (sectionCopyの実際の見出しを引用すること)。GSCで「表示多い×CTR低い」だった記事があれば、そのタイトルの書き換え案もここに含める
 7. AIO分析 — AI検索経由の流入 (aiReferrals)、実装監査 (llms.txt/構造化データ/robots/sitemap鮮度)、被引用を増やす次の一手 (定義記事・FAQ拡充・断言文強化など具体タイトル案まで)
 8. コンテンツ運用実績 — 公開本数・平均品質スコア・不合格と理由・カテゴリバランス
 9. 優先施策マトリクス — 提案施策を「インパクト×工数」で 高効果×低工数 から順に番号付け
@@ -244,10 +282,14 @@ async function main() {
   const sixMonthRange = { startDate: `${six.getFullYear()}-${String(six.getMonth() + 1).padStart(2, "0")}-01`, endDate: range.endDate };
 
   console.log(`[monthly-report] 対象月: ${ym}`);
-  const [ga4, aio] = await Promise.all([collectGa4(range, prevRange, sixMonthRange), aioAudit()]);
+  const [ga4, gsc, aio] = await Promise.all([
+    collectGa4(range, prevRange, sixMonthRange),
+    collectGsc(range, prevRange),
+    aioAudit(),
+  ]);
   const internal = collectInternal(ym);
   const sectionCopy = collectSectionCopy();
-  const payload = { targetMonth: ym, ga4, aio, internal, sectionCopy, site: SITE_URL };
+  const payload = { targetMonth: ym, ga4, gsc, aio, internal, sectionCopy, site: SITE_URL };
 
   let report;
   if (hasClaudeAuth()) {

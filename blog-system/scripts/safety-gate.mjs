@@ -152,11 +152,38 @@ async function checkArticle(file, md, existingTitles, qualityLog) {
   if (internalLinks.length < MIN_INTERNAL_LINKS) {
     reasons.push(`④内部リンク不足: ${internalLinks.length}本 (規定 ${MIN_INTERNAL_LINKS}本以上)`);
   }
+  // ④-2 内部リンクの実在検証 (仮スラッグによる404リンクを公開前に排除)
+  const SITE_DIR = join(ROOT, "..");
+  const VALID_PREFIX = /^\/(service\/(hojokin|dev|aio|meo)\/|youkou\/|about\/|blog\/|#|\?)/;
+  for (const l of internalLinks) {
+    const path = l.slice(2, -1).split("#")[0].split("?")[0];
+    if (path === "/" || !path.startsWith("/")) continue;
+    if (!VALID_PREFIX.test(path)) {
+      reasons.push(`④内部リンク先が不正: ${path}`);
+      continue;
+    }
+    const bm = path.match(/^\/blog\/([^/]+)\/?$/);
+    if (bm && bm[1] !== "category") {
+      const exists = existsSync(join(SITE_DIR, "blog", bm[1], "index.html")) ||
+        ["posted", "publish-queue", "drafts"].some((sub) => existsSync(join(ROOT, "content", sub, `${bm[1]}.md`)));
+      if (!exists) reasons.push(`④内部リンク先の記事が存在しない (404になる): ${path}`);
+    }
+  }
   const externalUrls = [...new Set(body.match(/https?:\/\/[^\s)"'<>\]]+/g) ?? [])].slice(0, 10); // 検証は10件まで
   for (const url of externalUrls) {
     if (!(await headOk(url))) {
       reasons.push(`④リンク切れ: ${url}`);
     }
+  }
+
+  // ⑪ SEOメタ検査 (タイトル長・メタディスクリプション)
+  const seoTitle = getFm(fmRaw, "title");
+  const seoDesc = getFm(fmRaw, "description");
+  if (seoTitle.length < 15 || seoTitle.length > 45) {
+    reasons.push(`⑪タイトル長が不適切: ${seoTitle.length}字 (15〜45字。検索結果での欠けを防ぐ)`);
+  }
+  if (seoDesc.length < 60 || seoDesc.length > 160) {
+    reasons.push(`⑪メタディスクリプション長が不適切: ${seoDesc.length}字 (60〜160字)`);
   }
 
   // ⑤ NGワード (景表法)
