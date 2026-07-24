@@ -87,7 +87,11 @@ ${target.md}`;
     return;
   }
 
-  writeFileSync(join(DRAFTS, target.f), out, "utf8");
+  // 呼称の機械正規化 (初出1回のみIT導入補助金を許可)
+  let officialSeen = 0;
+  const normalized = out.replace(/IT導入補助金/g, (m) => (++officialSeen <= 1 ? m : "AI導入補助金"));
+
+  writeFileSync(join(DRAFTS, target.f), normalized, "utf8");
   unlinkSync(join(POSTED, target.f));
   console.log(`[refresh] drafts/ へ投入完了 → この後の品質審査・安全ゲートを通過すれば再公開されます`);
 }

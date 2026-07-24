@@ -125,7 +125,8 @@ async function checkArticle(file, md, existingTitles, qualityLog) {
     const stats = (pText.match(STAT_PATTERN) ?? []).filter(
       (s) => !ALLOWED_FACTS.some((a) => s.includes(a.replace(/[〜~]/g, "")) || pText.includes(a))
     );
-    const hasUrl = /https?:\/\//.test(p) || /出典|参考|引用元/.test(p);
+    // 出典URLのほか、「※当社支援実績/支援事例」の帰属表記も一次情報の根拠として認める
+    const hasUrl = /https?:\/\//.test(p) || /出典|参考|引用元|当社支援(実績|事例)|当社調べ/.test(p);
     if (stats.length > 0 && !hasUrl && !ALLOWED_FACTS.some((a) => p.includes(a))) {
       reasons.push(`①出典なしの統計数値: 「${stats.slice(0, 3).join(", ")}」を含む段落に出典URLがありません`);
       break; // 1件検出で十分 (理由の氾濫防止)

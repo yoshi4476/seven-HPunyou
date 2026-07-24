@@ -333,6 +333,12 @@ async function main() {
         console.warn(`[generate-articles] 推敲パス失敗 → 初稿のまま提出: ${e.message}`);
       }
 
+      // 呼称の機械正規化: 「IT導入補助金」は初出1回だけ残し、以降はAI導入補助金へ
+      // (プロンプト任せにせず決定的に処理。安全ゲート⑩の差し戻しを防ぐ)
+      let officialSeen = 0;
+      md = md.replace(/IT導入補助金/g, (m) => (++officialSeen <= 1 ? m : "AI導入補助金"));
+      md = md.replace(/AI導入補助金\s*\(正式名称:\s*AI導入補助金\)/g, "AI導入補助金");
+
       const fm = parseFrontmatter(md);
       const slug = (fm.slug || `article-${kw.id}`).replace(/[^a-z0-9-]/gi, "-").toLowerCase();
       let outPath = join(DRAFTS_DIR, `${slug}.md`);
