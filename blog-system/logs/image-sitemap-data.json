@@ -249,6 +249,58 @@
           "alt": "AIO施策の一覧と自社対応の難易度を示した比較図"
         }
       ]
+    },
+    {
+      "slug": "aio-site-shindan-muryou",
+      "loc": "https://lp.7senses.co.jp/blog/aio-site-shindan-muryou/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/thumbnail.webp",
+          "title": "AIOサイト診断を無料で実施|AI検索に強いか2026年最新チェック",
+          "alt": "AIOサイト診断を無料で実施|AI検索に強いか2026年最新チェックのアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/aio-site-shindan-muryou-section-1.webp",
+          "title": "無料でできる診断の7項目",
+          "alt": "無料でできる診断の7項目の解説イメージ"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/aio-site-shindan-muryou-section-2.webp",
+          "title": "自力対応と専門支援の使い分け",
+          "alt": "自力対応と専門支援の使い分けの解説イメージ"
+        }
+      ]
+    },
+    {
+      "slug": "chatgpt-kensaku-joui-hyoji-houhou",
+      "loc": "https://lp.7senses.co.jp/blog/chatgpt-kensaku-joui-hyoji-houhou/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/thumbnail.webp",
+          "title": "ChatGPT検索で上位表示する方法【2026年版】中小企業の実践5手順",
+          "alt": "ChatGPT検索で上位表示する方法【2026年版】中小企業の実践5手順のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-1.webp",
+          "title": "ChatGPT検索の「上位表示」とは？ 従来のSEOと何が違うのか",
+          "alt": "従来のGoogle SEOとChatGPT検索の評価軸・表示形式の違いを示した比較図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-2.webp",
+          "title": "ChatGPTに引用されるサイトの共通点とは？",
+          "alt": "ChatGPTに引用されるサイトが満たす10条件を示したチェックリストの概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-3.webp",
+          "title": "ChatGPT検索で上位表示する具体的な方法【5ステップ】",
+          "alt": "想定質問の洗い出しから被引用モニタリングまでの5ステップを示した手順フロー図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-4.webp",
+          "title": "ChatGPT検索対策とあわせてやるべきこと",
+          "alt": "ChatGPT検索・Google検索・MEOの役割分担と連携を示した関係図"
+        }
+      ]
     }
   ]
 }
