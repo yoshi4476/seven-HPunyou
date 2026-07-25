@@ -2510,6 +2510,66 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "aio-consulting-toha-2026.md",
+      "date": "2026-07-25T09:29:43.666Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "とは・意味・費用・SEOとの違い・会社選び・始め方・FAQと主要意図を網羅し、目次で導線も明確。補助金への言及もあり抜けが少ない"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に太字の定義断言文、要点3行、FAQ5問が断言形で並び、AIに引用されやすい単文構造。比較表もあり引用適合度が高い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者=代表取締役の実名・肩書、士業事務所の支援事例(0→月4件)、支援50社/採択90%と実績記載。ただし数値は自社実績のみで第三者検証可能な一次データは薄い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "titleにキーワードと年、H2階層・目次アンカー・内部リンク4本(関連記事/サービス)・descriptionも適切に整備されている"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表2つ・箇条書き・em-marker各所・チェックリスト・画像プレースホルダで緩急良好。太字はやや多用気味だが1文は概ね短く読みやすい"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "AIO/SEO/MEOの接点整理、llms.txt・難易度表、自社事例・会社選び5項目など実務視点の切り口が独自"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "各見出しに具体施策・表・アクションがあり密度は十分。ただし文字数は中程度で深掘り余地あり"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

@@ -53,7 +53,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/aio/</loc>
-    <lastmod>2026-07-19</lastmod>
+    <lastmod>2026-07-25</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -65,6 +65,11 @@
     <loc>https://lp.7senses.co.jp/blog/category/dev/</loc>
     <lastmod>2026-07-16</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/aio-consulting-toha-2026/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho/</loc>

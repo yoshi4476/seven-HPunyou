@@ -274,8 +274,10 @@
       "keyword": "AIOコンサルティング とは",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-25T09:29:14.518Z",
+      "slug": "aio-consulting-toha-2026"
     },
     {
       "id": 33,
