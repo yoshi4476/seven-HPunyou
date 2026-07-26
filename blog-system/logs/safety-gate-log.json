@@ -177,6 +177,24 @@
         "③H2不足: 1個 (規定 3個以上)",
         "④内部リンク先の記事が存在しない (404になる): /blog/ai-hojokin-osaka-chusho/"
       ]
+    },
+    {
+      "file": "aio-taisaku-osaka.md",
+      "slug": "aio-taisaku-osaka",
+      "title": "AIO対策とは?大阪の中小企業がAI検索で選ばれる方法【2026年版】",
+      "date": "2026-07-26T23:00:31.497Z",
+      "passed": false,
+      "reasons": [
+        "④内部リンク先の記事が存在しない (404になる): /blog/aio-site-shindan-muryou/"
+      ]
+    },
+    {
+      "file": "meo-taisaku-gyousha-erabikata.md",
+      "slug": "meo-taisaku-gyousha-erabikata",
+      "title": "MEO対策 業者の選び方2026|失敗しない7つの比較基準と相場",
+      "date": "2026-07-26T23:00:35.085Z",
+      "passed": true,
+      "reasons": []
     }
   ]
 }

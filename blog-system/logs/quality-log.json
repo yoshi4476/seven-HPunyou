@@ -2800,6 +2800,126 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "aio-taisaku-osaka.md",
+      "date": "2026-07-26T22:59:54.932Z",
+      "finalScore": 86,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 87,
+          "seo": 86,
+          "aio": 88,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "定義・必要性・7ステップ・外注選び・費用/補助金・FAQと大阪×AIOの主要意図を網羅、実践アクションも各節に配置"
+            },
+            {
+              "key": "aio_fit",
+              "score": 13,
+              "max": 15,
+              "reason": "冒頭要点3行超・太字の定義断言文・FAQの断言形・引用しやすい単文が揃うが、統計の断言に一次出典直結が弱い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者実名/肩書・支援事例・公式リンク明示は良いが、数値実績が全て自社申告で第三者検証性が乏しい"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW+地域+年、目次・アンカー・見出し構造・内部/サービスリンクが整備される"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文短め・段落3〜4行・表/箇条書き/画像挿入指示が周期的、em-marker3箇所と太字も適量"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "大阪の先行者優位・AIO/SEO/MEO/システム一貫設計という自社切り口と具体事例あり"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "表4点・7ステップ・チェックリスト等で情報密度が高く水増しが少ない"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "meo-taisaku-gyousha-erabikata.md",
+      "date": "2026-07-26T22:59:49.202Z",
+      "finalScore": 91,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 92,
+          "seo": 91,
+          "aio": 93,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "業者の選び方・7基準・料金相場・契約形態・悪徳業者見分け方・チェックリスト・相見積り・FAQと検索意図を網羅している。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義断言文・要点3行・各H2冒頭の太字断言・FAQ3問の単文回答があり引用されやすい構造。"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者肩書明記・複数の当社支援事例(数値付・匿名化)・Google公式出典URL提示。統計の外部一次データは自社実績中心で分野横断の裏付けはやや薄い。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "title/description・キーワード整合・目次アンカー・H2構造・内部リンク多数(費用相場/自分で/大阪版/サービス)が整備されている。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・引用・アクション・画像プレースホルダで緩急あり、太字とem-markerも適度。1文60字超の文がやや散見。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "G-ran・llms.txt整備によるAI被引用獲得・SEO/AIO/MEO導線設計など自社知見の切り口が明確。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "作業範囲・レポート・解約条件など具体項目と数値事例で情報密度が高い。相場の具体金額レンジは非提示。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

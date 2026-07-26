@@ -442,8 +442,10 @@
       "keyword": "AIO対策 大阪",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-26T22:52:24.711Z",
+      "slug": "aio-taisaku-osaka"
     },
     {
       "id": 53,
@@ -498,8 +500,10 @@
       "keyword": "MEO対策 業者 選び方",
       "priority": "S",
       "category": "meo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-26T22:59:19.256Z",
+      "slug": "meo-taisaku-gyousha-erabikata"
     },
     {
       "id": 60,

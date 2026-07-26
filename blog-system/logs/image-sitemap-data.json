@@ -322,6 +322,63 @@
           "alt": "月額顧問・スポット・成果連動の料金体系タイプ別特徴の比較図"
         }
       ]
+    },
+    {
+      "slug": "aio-taisaku-osaka",
+      "loc": "https://lp.7senses.co.jp/blog/aio-taisaku-osaka/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/thumbnail.webp",
+          "title": "AIO対策とは?大阪の中小企業がAI検索で選ばれる方法【2026年版】",
+          "alt": "AIO対策とは?大阪の中小企業がAI検索で選ばれる方法【2026年版】のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-1.webp",
+          "title": "AIO対策とは?SEO・MEOとの違いを大阪の経営者向けに解説",
+          "alt": "AIO・SEO・MEOの3つの対策の目的・対象・指標を並べた役割分担の比較概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-2.webp",
+          "title": "なぜ今、大阪の中小企業にAIO対策が必要なのか",
+          "alt": "大阪の中小企業が紹介・ポータル依存からAI検索経由の新規流入へ広げる先行者優位の概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-3.webp",
+          "title": "AIO対策の具体的な進め方(自社でできる7ステップ)",
+          "alt": "AIに引用されるページ構造の手順図(見出し→結論先出し→根拠→出典の流れの図解"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-4.webp",
+          "title": "大阪でAIO対策を外注するときの会社の選び方・費用の考え方",
+          "alt": "大阪でAIO対策の外注先を見極める5つのチェック項目の比較図"
+        }
+      ]
+    },
+    {
+      "slug": "meo-taisaku-gyousha-erabikata",
+      "loc": "https://lp.7senses.co.jp/blog/meo-taisaku-gyousha-erabikata/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/thumbnail.webp",
+          "title": "MEO対策 業者の選び方2026|失敗しない7つの比較基準と相場",
+          "alt": "MEO対策 業者の選び方2026|失敗しない7つの比較基準と相場のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-1.webp",
+          "title": "MEO対策の業者選びで失敗する典型パターンとは?",
+          "alt": "MEO業者選びでよくある5つの失敗パターン(順位保証・口コミ操作・作って終わり・作業内容不透明・順位だけ報告)を並べた注意点チェックリストの概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-2.webp",
+          "title": "MEO対策の料金相場と契約形態の違いは?",
+          "alt": "MEO対策の3つの契約形態(月額固定型・成果報酬型・初期費用型)の特徴・向く企業・注意点を並べた料金比較図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-3.webp",
+          "title": "MEOとあわせて検討したい集客施策(SEO/AIO/口コミ運用)",
+          "alt": "検索(SEO)→AI検索(AIO)→Googleマップ(MEO)→来店へとつながる集客施策の全体像を示した導線概念図"
+        }
+      ]
     }
   ]
 }
