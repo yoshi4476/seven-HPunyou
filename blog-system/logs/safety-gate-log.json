@@ -166,6 +166,17 @@
       "reasons": [
         "④内部リンク先の記事が存在しない (404になる): /blog/aio-marketing-toha-2026/"
       ]
+    },
+    {
+      "file": "aio-taisaku-company-osusume.md",
+      "slug": "aio-taisaku-company-osusume",
+      "title": "AIO対策 会社 おすすめ2026｜失敗しない選び方と比較の要点",
+      "date": "2026-07-26T09:54:10.438Z",
+      "passed": false,
+      "reasons": [
+        "③H2不足: 1個 (規定 3個以上)",
+        "④内部リンク先の記事が存在しない (404になる): /blog/ai-hojokin-osaka-chusho/"
+      ]
     }
   ]
 }

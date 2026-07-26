@@ -432,8 +432,10 @@
       "keyword": "AIO対策 会社 おすすめ",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-26T09:53:15.247Z",
+      "slug": "aio-taisaku-company-osusume"
     },
     {
       "id": 52,
