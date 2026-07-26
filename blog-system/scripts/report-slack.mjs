@@ -14,6 +14,7 @@
 // 実行: node scripts/report-slack.mjs
 // =============================================================
 import { readFileSync, existsSync } from "node:fs";
+import { CLIENT } from "./client-config.mjs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -21,7 +22,7 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUALITY_LOG = join(ROOT, "logs", "quality-log.json");
 const GATE_LOG = join(ROOT, "logs", "safety-gate-log.json");
-const REPORT_TITLE = "セブンセンシズ ブログ自動更新 日次レポート";
+const REPORT_TITLE = `${CLIENT.companyShort || CLIENT.companyName} ブログ自動更新 日次レポート`;
 
 // ---------------- 集計 ----------------
 function loadJson(path, fallback) {

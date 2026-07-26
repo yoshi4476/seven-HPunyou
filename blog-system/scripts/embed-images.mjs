@@ -39,6 +39,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
+import { CLIENT } from "./client-config.mjs";
 
 // ---------------- 設定定数 ----------------
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -51,7 +52,7 @@ const THUMB_H = 630;
 const MAX_WEBP_BYTES = 150 * 1024; // WebP は 150KB 以下
 const H2_PER_IMAGE = 2;            // マーカー無し記事: H2 2個ごとに1枚 (2〜3個ごとの要件)
 const MAX_SECTION_IMAGES = 5;      // 1記事あたりの本文画像上限 (API コスト暴走防止)
-const SITE_URL = (process.env.SITE_URL || "https://lp.7senses.co.jp").replace(/\/$/, ""); // ※仮ドメイン・要確認
+const SITE_URL = (process.env.SITE_URL || CLIENT.siteUrl).replace(/\/$/, "");
 
 // ①AI生成SVG が使えるか: サブスク認証 (CLAUDE_CODE_OAUTH_TOKEN。CLAUDE_MODEL 任意)
 // または APIキー (ANTHROPIC_API_KEY + CLAUDE_MODEL)。呼び出しは claude-client.mjs に共通化
@@ -410,7 +411,7 @@ async function main() {
 
     // --- 1. サムネイル生成 (1200×630, SVGテンプレ→PNG/WebP。従来機能を維持) ---
     const thumbBase = join(articleDir, "thumbnail");
-    await renderThumbnail(buildSvg(title, "セブンセンシズ株式会社"), thumbBase);
+    await renderThumbnail(buildSvg(title, CLIENT.companyName), thumbBase);
     const thumbUrl = `/images/blog/${slug}/thumbnail.webp`;
     console.log(`[embed-images] ${file}: サムネ生成 → ${thumbUrl}`);
 

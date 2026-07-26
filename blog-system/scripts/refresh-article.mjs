@@ -17,6 +17,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, unlinkSync } from
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
+import { CLIENT } from "./client-config.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const POSTED = join(ROOT, "content", "posted");
@@ -57,12 +58,13 @@ async function main() {
   }
 
   console.log(`[refresh] リライト対象: ${target.f} (公開日 ${target.date})`);
-  const system = `あなたはセブンセンシズ株式会社のオウンドメディア専属ライター兼SEO編集者です。既存記事を「最新化リライト」します。
+  const system = `あなたは${CLIENT.companyName}のオウンドメディア専属ライター兼SEO編集者です。既存記事を「最新化リライト」します。
 # 厳守
 - frontmatter の全キー (title, slug, description, category, tags, date, author, thumbnail, type) をそのまま維持する (slugとdateは絶対に変えない)
 - 既存の内部リンク・出典URL・画像タグ (<figure>〜</figure>) は削除しない
-- 制度の呼称は「AI導入補助金」で統一。「必ず」「100%」等の断定や割引系表現は禁止
-- 実績数値は「支援50社+・採択通過率90%以上 (※当社支援実績)」のみ使用可。事例・数値の創作は禁止`;
+- 制度の呼称は「${CLIENT.naming.preferred}」で統一。「必ず」「100%」等の断定や割引系表現は禁止
+- 実績数値は次の許可リストのみ使用可。事例・数値の創作は禁止:
+${CLIENT.factsText}`;
   const user = `以下の公開済み記事を、検索・AI検索の評価が上がるように最新化リライトしてください。改善後の記事全文 (frontmatter付きMarkdown) のみを出力。前置き禁止。
 
 # リライトの観点
@@ -87,9 +89,10 @@ ${target.md}`;
     return;
   }
 
-  // 呼称の機械正規化 (初出1回のみIT導入補助金を許可)
+  // 呼称の機械正規化 (初出1回のみ正式名称を許可)
   let officialSeen = 0;
-  const normalized = out.replace(/IT導入補助金/g, (m) => (++officialSeen <= 1 ? m : "AI導入補助金"));
+  const OFFICIAL_RE = new RegExp(CLIENT.naming.official.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
+  const normalized = out.replace(OFFICIAL_RE, (m) => (++officialSeen <= 1 ? m : CLIENT.naming.preferred));
 
   writeFileSync(join(DRAFTS, target.f), normalized, "utf8");
   unlinkSync(join(POSTED, target.f));

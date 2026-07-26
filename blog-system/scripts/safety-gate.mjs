@@ -22,6 +22,7 @@
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, renameSync, existsSync, statSync } from "node:fs";
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
+import { CLIENT } from "./client-config.mjs";
 
 // ---------------- 設定定数 ----------------
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -51,9 +52,8 @@ const CLAIM_WORDS = /No\.?1|日本一|業界一|世界一/;
 
 // 統計・実績とみなす数値パターン (①の判定に使用)
 const STAT_PATTERN = /\d{1,3}(?:,\d{3})*(?:\.\d+)?\s*(%|％|万円|億円|社|件|倍|名)/g;
-// 会社の一次情報として許可する数値 (LP由来。出典なしでも許容)
-// ※実績数値は「支援50社+・採択通過率90%以上(※当社支援実績)」に統一 (旧: 120社/98% は許可しない)
-const ALLOWED_FACTS = ["90%", "90％", "50社", "350万円", "2〜3ヶ月", "2~3ヶ月"]; // 割引系数値(120万円/20社)は補助金規程上の禁止類型のため許可しない
+// 会社の一次情報として許可する数値 (client-config.json の allowedFacts から取得)
+const ALLOWED_FACTS = CLIENT.allowedFacts;
 
 // ---------------- ヘルパー ----------------
 function splitFrontmatter(md) {
@@ -223,14 +223,16 @@ async function checkArticle(file, md, existingTitles, qualityLog) {
     reasons.push(`⑦品質スコア不足: ${entry.finalScore}点 (規定 ${MIN_SCORE}点以上)`);
   }
 
-  // ⑩ 呼称ルール: 今年の呼称は「AI導入補助金」。
-  //    「IT補助金」は誤称のため全面禁止 / 「IT導入補助金」は正式名称の注記1回(+α)まで
-  if (/(?<!導入)IT補助金/.test(md)) {
-    reasons.push("⑩呼称違反: 「IT補助金」という略称が使われています (「AI導入補助金」に統一)");
+  // ⑩ 呼称ルール (client-config.json の naming に従う)
+  for (const f of CLIENT.naming.forbidden || []) {
+    const re = new RegExp(`(?<!導入)${f.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}`);
+    if (re.test(md)) {
+      reasons.push(`⑩呼称違反: 「${f}」という略称が使われています (「${CLIENT.naming.preferred}」に統一)`);
+    }
   }
-  const officialCount = (md.match(/IT導入補助金/g) || []).length;
+  const officialCount = (md.match(new RegExp(CLIENT.naming.official.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g")) || []).length;
   if (officialCount > 2) {
-    reasons.push(`⑩呼称違反: 「IT導入補助金」が${officialCount}回使われています (正式名称の初出注記1回のみ。以降は「AI導入補助金」)`);
+    reasons.push(`⑩呼称違反: 「${CLIENT.naming.official}」が${officialCount}回使われています (正式名称の初出注記1回のみ。以降は「${CLIENT.naming.preferred}」)`);
   }
 
   // ⑨ 文字化け検査 (Unicode置換文字 / CP932誤変換の典型連続パターン / 先頭BOM)

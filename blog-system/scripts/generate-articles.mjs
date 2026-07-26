@@ -19,6 +19,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
+import { CLIENT } from "./client-config.mjs";
 
 // ---------------- 設定定数 ----------------
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -54,7 +55,7 @@ function publishedTitles() {
 }
 
 // キーワードが既存記事と実質同テーマかの機械判定 (固有トークンが全て既存タイトルに含まれるなら重複)
-const GENERIC_TOKENS = new Set(["AI導入補助金", "IT導入補助金", "補助金", "2026", "2026年", "とは", "方法", "やり方", "最新"]);
+const GENERIC_TOKENS = new Set([CLIENT.naming.preferred, CLIENT.naming.official, "補助金", "2026", "2026年", "とは", "方法", "やり方", "最新"]);
 function isDuplicateKeyword(keyword, titles) {
   const tokens = keyword.split(/\s+/).filter((t) => t && !GENERIC_TOKENS.has(t));
   if (tokens.length === 0) return false;
@@ -65,7 +66,7 @@ const DRAFTS_DIR = join(ROOT, "content", "drafts");
 const MAIN_COUNT = 2;          // 朝の本流記事は2本
 const NEWS_COUNT = 1;          // 夕方のニュース記事は1本
 const MAX_TOKENS = 16000;      // 8000字ガイド記事でも収まる上限 (APIキーモード時に適用)
-const LP_URL = "https://lp.7senses.co.jp/"; // ※仮ドメイン。本番ドメイン確定後に要確認・差し替え
+const LP_URL = `${CLIENT.siteUrl}/`; // client-config.json から取得
 
 // 文字数要件 (safety-gate.mjs と揃えること)
 const MIN_CHARS = { main: 5000, guide: 8000, news: 2000 };
@@ -80,14 +81,9 @@ const NG_WORDS = [
 // 会社の一次情報 (LP・提供資料由来)。数値はこのリスト以外を勝手に作らないよう指示する
 // 実績数値は「支援50社+・採択通過率90%以上(※当社支援実績)」に統一 (旧: 120社/98% は使用禁止)
 const COMPANY_FACTS = `
-- 会社: セブンセンシズ株式会社 (大阪市東成区)
-- 代表: 原口 優 (代表取締役)
-- LP: ${LP_URL} (※仮ドメイン・要確認)
-- サービス: AI導入補助金 (IT導入補助金) 申請サポート / システム開発 / AIOコンサルティング / MEOコンサルティング
-- 実績: 支援50社+ / 採択通過率90%以上 (※当社支援実績) / 着金まで約2〜3ヶ月 / 補助金上限350万円
-- 実績数値を書くときは必ず「※当社支援実績」を添える。「120社」「98%」など旧数値は絶対に使わない
-- 制度の呼称は「AI導入補助金」で統一する (今年の呼称)。正式名称への言及は記事の初出1回だけ「AI導入補助金 (正式名称: IT導入補助金)」と書き、以降はすべて「AI導入補助金」。「IT補助金」という略称は絶対に使わない。タイトル・見出し・slugにも「AI導入補助金 / ai-hojokin」を使う
-- MEO実績: コーポレートサイト 7senses.co.jp にて MEOツール「G-ran」実績あり
+${CLIENT.factsText}
+- LP: ${LP_URL}
+${CLIENT.namingRuleText}。タイトル・見出しにも「${CLIENT.naming.preferred}」を使う
 ${loadCaseFacts()}
 `.trim();
 
@@ -103,8 +99,8 @@ function loadCaseFacts() {
   }
 }
 
-// カテゴリ別サービスハブページ (内部リンク先。トピッククラスターのハブとして必ず言及させる)
-const SERVICE_HUBS = {
+// カテゴリ別サービスハブページ (client-config.json の serviceHubs を優先)
+const SERVICE_HUBS = CLIENT.serviceHubs || {
   hojo: "/service/hojokin/",
   aio: "/service/aio/",
   meo: "/service/meo/",
@@ -130,7 +126,7 @@ function requireEnv() {
 
 // ---------------- プロンプト構築 ----------------
 function buildSystemPrompt() {
-  return `あなたはセブンセンシズ株式会社のオウンドメディア専属ライターです。中小企業経営者 (ITが得意でない50代を含む) に向けて、検索エンジンとAI検索 (ChatGPT/Perplexity/AI Overview) の両方で評価される日本語記事を書きます。
+  return `あなたは${CLIENT.companyName}のオウンドメディア専属ライターです。${CLIENT.writerAudience || "中小企業経営者"}に向けて、検索エンジンとAI検索 (ChatGPT/Perplexity/AI Overview) の両方で評価される日本語記事を書きます。
 
 # 会社の一次情報 (これ以外の実績数値を創作してはならない)
 ${COMPANY_FACTS}
@@ -204,7 +200,7 @@ ${publishedIndex().map((i) => `- ${i.title}${i.url ? ` (${i.url})` : ""}`).join(
 8-2. 上記COMPANY_FACTSの実績・運用知見を1〜2箇所、自然な文脈で織り込む (品質審査のE-E-A-T評価対策。事実の創作は禁止)
 8-3. FAQには周辺トピック (不採択時の再申請方法/入金時の会計処理は税理士へ相談 等) を1問含める
 9. 各H2セクションの末尾に「▶ 今すぐ試せるアクション」を1つ入れる
-10. 記事末尾にセブンセンシズのLP (${LP_URL}) への自然なCTAを入れる
+10. 記事末尾に当社LP (${LP_URL}) への自然なCTAを入れる
 11. ${lengthNote}
 12. 比較・料金の情報は Markdown の表 (HTML表としてレンダリングされる) で書く。画像化はしない
 13. 内部リンクは、下の「既存記事リスト」に実在するURLから関連性の高いものを2本以上選んで入れる (実在しない仮スラッグへのリンクは絶対に作らない=404防止)。加えて、このカテゴリのサービスハブページ ${SERVICE_HUBS[kw.category] || SERVICE_HUBS.hojo} への内部リンクを本文中に1本、自然な文脈で入れる (アンカーテキストはサービス内容を表すキーワードにする)
@@ -233,7 +229,7 @@ description: "120字前後のメタディスクリプション"
 category: "${kw.category}"
 tags: ["タグ1", "タグ2", "タグ3"]
 date: "${now.toISOString().slice(0, 10)}"
-author: "原口 優(セブンセンシズ株式会社 代表取締役)"
+author: "${CLIENT.authorName}(${CLIENT.companyName} ${CLIENT.authorTitle || ""})"
 thumbnail: ""
 ---
 
@@ -262,10 +258,10 @@ async function main() {
 
   const queue = JSON.parse(readFileSync(QUEUE_PATH, "utf8"));
   const priorityOrder = { S: 0, A: 1, B: 2 };
-  // 名称ルール: 今年の呼称は「AI導入補助金」。キーワード側の旧表記もここで正規化する
+  // 名称ルール: キーワード側の旧表記も推奨呼称へ正規化する
   for (const k of queue.keywords) {
-    if (k.status === "pending" && k.keyword.includes("IT導入補助金")) {
-      k.keyword = k.keyword.replace(/IT導入補助金/g, "AI導入補助金");
+    if (k.status === "pending" && k.keyword.includes(CLIENT.naming.official)) {
+      k.keyword = k.keyword.split(CLIENT.naming.official).join(CLIENT.naming.preferred);
     }
   }
 
@@ -333,11 +329,13 @@ async function main() {
         console.warn(`[generate-articles] 推敲パス失敗 → 初稿のまま提出: ${e.message}`);
       }
 
-      // 呼称の機械正規化: 「IT導入補助金」は初出1回だけ残し、以降はAI導入補助金へ
+      // 呼称の機械正規化: 正式名称は初出1回だけ残し、以降は推奨呼称へ
       // (プロンプト任せにせず決定的に処理。安全ゲート⑩の差し戻しを防ぐ)
       let officialSeen = 0;
-      md = md.replace(/IT導入補助金/g, (m) => (++officialSeen <= 1 ? m : "AI導入補助金"));
-      md = md.replace(/AI導入補助金\s*\(正式名称:\s*AI導入補助金\)/g, "AI導入補助金");
+      const OFFICIAL_RE = new RegExp(CLIENT.naming.official.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "g");
+      md = md.replace(OFFICIAL_RE, (m) => (++officialSeen <= 1 ? m : CLIENT.naming.preferred));
+      md = md.split(`${CLIENT.naming.preferred} (正式名称: ${CLIENT.naming.preferred})`).join(CLIENT.naming.preferred);
+      md = md.split(`${CLIENT.naming.preferred}(正式名称: ${CLIENT.naming.preferred})`).join(CLIENT.naming.preferred);
 
       const fm = parseFrontmatter(md);
       const slug = (fm.slug || `article-${kw.id}`).replace(/[^a-z0-9-]/gi, "-").toLowerCase();

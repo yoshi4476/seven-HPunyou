@@ -8,6 +8,7 @@ import { readFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
+import { CLIENT } from "./client-config.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const REPO = join(ROOT, "..");
@@ -54,7 +55,7 @@ async function main() {
     if (!m) continue;
     const title = m[1].trim();
     mkdirSync(outDir, { recursive: true });
-    const png = await sharp(Buffer.from(buildSvg(title, "セブンセンシズ株式会社")), { density: 150 })
+    const png = await sharp(Buffer.from(buildSvg(title, CLIENT.companyName)), { density: 150 })
       .resize(W, H).png().toBuffer();
     await sharp(png).toFile(join(outDir, "thumbnail.png"));
     await sharp(png).webp({ quality: 82 }).toFile(join(outDir, "thumbnail.webp"));

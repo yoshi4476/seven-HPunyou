@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, renameSync, exists
 import { join, dirname, basename } from "node:path";
 import { fileURLToPath } from "node:url";
 import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
+import { CLIENT } from "./client-config.mjs";
 
 // ---------------- 設定定数 ----------------
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -127,12 +128,8 @@ async function scoreArticle(md) {
 // 採点ルーブリックで減点されやすい項目を、改稿AIが自力で埋められるように
 // 「使ってよい一次情報」と「頻出減点の解消チェックリスト」を明示的に渡す。
 const COMPANY_FACTS = `# 使用してよい当社の一次情報 (これ以外の実績数値の創作は禁止)
-- 補助金申請の支援実績50社+/採択通過率90%以上(※当社支援実績・2026年7月時点)
-- IT導入補助金: 補助上限350万円(通常枠の例)/申請から着金まで約2〜3ヶ月/お客様の事前準備は合計1.5〜3時間
-- 当社は大阪・東成区拠点。MEO事業「G-ran」を運営。申請サポート・システム開発・AIO・MEOを一気通貫で提供
-- 出典に使ってよい公式サイト: IT導入補助金事務局 https://it-shien.smrj.go.jp/ / 中小企業庁 https://www.chusho.meti.go.jp/
-- 禁止表現: 割引・キャッシュバック・実質無料・実質負担・採択の保証・「必ず」「100%」等の断定
-- 呼称ルール: 制度は「AI導入補助金」で統一。「IT導入補助金」は初出の「AI導入補助金 (正式名称: IT導入補助金)」1回のみ。「IT補助金」は絶対に使わない
+${CLIENT.factsText}
+${CLIENT.namingRuleText}
 ${(() => { try { const d = JSON.parse(readFileSync(join(ROOT, "data", "case-studies.json"), "utf8")); return "- 使用してよい支援事例 (事実。社名非公開・誇張禁止。E-E-A-T強化に1〜2件を「※当社支援事例」付きで織り込んでよい):\n" + d.cases.map((c) => `  - ${c.industry} (${c.size}): ${c.summary}`).join("\n"); } catch { return ""; } })()}`;
 
 const REVISION_CHECKLIST = `# 改稿時の必須チェックリスト (採点で減点されやすい項目)
@@ -158,7 +155,7 @@ async function reviseArticle(md, deductions, items) {
       .map((w) => `- ${w.key} (${w.score}/${w.max}点): ${w.reason}`)
       .join("\n")}\n`;
   }
-  const system = `あなたはセブンセンシズ株式会社のオウンドメディア専属ライターです。編集者からの減点指摘に基づき記事を改稿します。frontmatter の構造 (title, slug, description, category, tags, date, author, thumbnail, type がある場合は type も) は必ず維持してください。ツールは一切使用せず、改稿後のMarkdown全文のみを出力してください。
+  const system = `あなたは${CLIENT.companyName}のオウンドメディア専属ライターです。編集者からの減点指摘に基づき記事を改稿します。frontmatter の構造 (title, slug, description, category, tags, date, author, thumbnail, type がある場合は type も) は必ず維持してください。ツールは一切使用せず、改稿後のMarkdown全文のみを出力してください。
 
 ${COMPANY_FACTS}
 

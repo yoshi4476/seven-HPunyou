@@ -15,6 +15,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
+import { CLIENT } from "./client-config.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE_PATH = join(ROOT, "data", "keywords-queue.json");
@@ -51,7 +52,7 @@ async function main() {
     ...publishedTitles(),
   ];
   const system = `あなたは日本の中小企業向けB2B SEOのキーワード戦略担当です。
-セブンセンシズ株式会社 (IT導入補助金申請サポート / システム開発・AI導入 / AIO / MEO。大阪拠点・全国対応) の
+${CLIENT.companyName} (${CLIENT.siteDescription || ""}) の
 オウンドメディア用に、検索流入と商談につながるロングテールキーワードを提案します。`;
   const user = `新しい記事キーワードを${BATCH}本、JSON配列のみで出力してください (前置き禁止)。
 

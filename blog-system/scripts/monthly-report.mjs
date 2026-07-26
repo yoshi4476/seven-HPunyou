@@ -19,10 +19,11 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createSign } from "node:crypto";
 import { hasClaudeAuth, callClaude } from "./claude-client.mjs";
+import { CLIENT } from "./client-config.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const REPO = join(ROOT, "..");
-const SITE_URL = (process.env.SITE_URL || "https://lp.7senses.co.jp").replace(/\/$/, "");
+const SITE_URL = (process.env.SITE_URL || CLIENT.siteUrl).replace(/\/$/, "");
 const REPORTS_DIR = join(REPO, "reports");
 
 // ---------------- GA4 (Data API) ----------------
@@ -258,7 +259,7 @@ function collectInternal(ym) {
 }
 
 // ---------------- レポート生成 ----------------
-const CONSULT_SYSTEM = `あなたは世界トップクラスのグロースコンサルタントとして、セブンセンシズ株式会社のWebサイト (${SITE_URL} — AI導入補助金申請サポート/システム開発/AIO/MEOのリード獲得サイト) の月次報告書を書きます。
+const CONSULT_SYSTEM = `あなたは世界トップクラスのグロースコンサルタントとして、${CLIENT.companyName}のWebサイト (${SITE_URL} — ${CLIENT.siteDescription || ""}) の月次報告書を書きます。
 読者は経営者。数字の羅列ではなく「どこで何が起き、どこを・どの文言を・なぜ直すか」まで断定的に書きます。
 
 # 報告書の構成 (Markdown。この順・この見出しで。全13章を必ず書く)
@@ -284,7 +285,7 @@ const CONSULT_SYSTEM = `あなたは世界トップクラスのグロースコ�
 
 # 心得
 - データに無いことを推測で断定しない。データ不足 (未計測・接続前) はそれ自体を最優先課題として指摘する
-- 呼称は「AI導入補助金」で統一
+- 呼称は「${CLIENT.naming.preferred}」で統一
 - 割引・採択保証などコンプライアンスに反する施策は提案しない
 - 業界平均等に言及する場合は「一般的な目安」と明示する`;
 

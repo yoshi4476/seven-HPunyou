@@ -20,6 +20,7 @@
 // 環境変数: SITE_URL (未設定時は仮ドメイン) / INDEXNOW_KEY (任意)
 // =============================================================
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, renameSync, existsSync } from "node:fs";
+import { CLIENT } from "./client-config.mjs";
 import { createHash as cryptoHash } from "node:crypto";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -33,7 +34,7 @@ const SITEMAP_PATH = join(PUBLIC_DIR, "sitemap.xml");
 const IMAGE_SITEMAP_PATH = join(PUBLIC_DIR, "image-sitemap.xml");
 const IMAGE_DATA_PATH = join(ROOT, "logs", "image-sitemap-data.json");
 const STATE_PATH = join(ROOT, "logs", "sitemap-state.json"); // slug → {hash, lastmod} 差分検出用
-const SITE_URL = (process.env.SITE_URL || "https://lp.7senses.co.jp").replace(/\/$/, ""); // ※仮ドメイン・要確認
+const SITE_URL = (process.env.SITE_URL || CLIENT.siteUrl).replace(/\/$/, "");
 const INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow";
 
 // ---------------- ヘルパー ----------------
