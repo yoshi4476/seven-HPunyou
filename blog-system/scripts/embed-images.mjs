@@ -179,7 +179,9 @@ async function renderThumbnail(svg, outBase) {
 // ---------------- ① AI生成SVG図解 ----------------
 // Claude 呼び出しは claude-client.mjs に共通化 (サブスク認証 / APIキーの両対応・リトライ込み)
 
-// 数値・比較・手順を含むセクションのみ図解化する (写真の方が適した内容を除外)
+// 記事内容との整合性を最優先するため、AI図解は全セクションで第一候補とする。
+// (セクション本文から生成する図解は、汎用写真より必ず内容に一致する)
+// 本関数は「図の型」の推奨判定にのみ使用する。
 function isDiagramWorthy(text) {
   return /\d|手順|ステップ|フロー|流れ|比較|違い|メリット|デメリット|vs|万円|%|％|要件|条件/.test(text);
 }
@@ -205,6 +207,8 @@ const SVG_SYSTEM_PROMPT = `あなたはWebメディア用のSVG図解デザイ�
 - ラベル・見出しは日本語。font-family="'Noto Sans CJK JP','Hiragino Sans',sans-serif"
 - 文字サイズは最小 24px 以上 (スマホ縮小表示でも読めること)
 - 情報は詰め込みすぎない (要素 3〜6個)。角丸矩形・矢印・番号を活用
+- **図中のラベル・数値・項目名は、渡されたセクション本文の実際の語句・数値をそのまま使う** (「ステップ1」「項目A」のような一般論プレースホルダーは禁止。本文に無い数値の創作も禁止)
+- 図はそのセクションを読まなくても要点が伝わる「本文の視覚要約」にする
 - 自己完結SVGのみ: script / 外部URL / image / use / foreignObject は禁止
 
 # 出力形式
@@ -212,7 +216,7 @@ SVGコード「のみ」を出力する (前置き・コードフェンス・説
 
 async function tryAiSvg({ h2Text, sectionText, markerDesc, outBase }) {
   if (!AI_ENABLED) return null;
-  if (!isDiagramWorthy(`${markerDesc} ${h2Text} ${sectionText}`)) return null;
+  // 整合性優先: 全セクションでAI図解を試みる (数値・手順が無い内容は概念図として描かせる)
   try {
     let svg = await callClaude(
       SVG_SYSTEM_PROMPT,
