@@ -432,8 +432,10 @@
       "keyword": "AIO対策 会社 おすすめ",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
-      "type": "news"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-27T22:54:16.482Z",
+      "slug": "aio-taisaku-kaisha-osusume-2026"
     },
     {
       "id": 52,
@@ -516,8 +518,10 @@
       "keyword": "Googleビジネスプロフィール 上位表示 コツ",
       "priority": "S",
       "category": "meo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-27T22:58:29.236Z",
+      "slug": "google-business-profile-joui-hyoji-kotsu"
     },
     {
       "id": 62,

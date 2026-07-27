@@ -1,5 +1,5 @@
 ---
-retry_count: 1
+retry_count: 2
 title: "AI導入補助金2026はいくらもらえる?上限350万円と対象を解説"
 slug: "ai-hojokin-ikura-moraeru-2026"
 description: "AI導入補助金はいくらもらえるのか。上限額350万円(目安/公式の最新公募要領で要確認)と補助率、自己負担の計算、対象経費、後払いの仕組み、着金までの流れを、ITが苦手な経営者にもわかりやすく2026年最新版で解説します。"
@@ -55,7 +55,7 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 金額の根拠となる制度の詳細や最新の上限額は、以下の一次情報で確認できます。上限・補助率の正確な数値は、必ず最新の公募要領でご確認ください。
 
 - 中小企業庁:https://www.chusho.meti.go.jp/
-- IT導入補助金事務局(公式):https://it-shien.smrj.go.jp/
+- AI導入補助金事務局(公式):https://it-shien.smrj.go.jp/
 
 制度内容(補助金額・スケジュール等)は年度で更新されます。**金額は必ず公式サイトの最新情報で確認してください。**
 
@@ -66,6 +66,8 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 ---
 
 <a id="h2-2"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-1.webp" alt="もらえる金額の決まり方 — 補助率と自己負担の計算の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-1.webp" alt="もらえる金額の決まり方 — 補助率と自己負担の計算の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## もらえる金額の決まり方 — 補助率と自己負担の計算
@@ -85,13 +87,13 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 | 500万円 | 1/2 | 250万円 | 250万円 |
 | 700万円 | 1/2 | 350万円(上限) | 350万円 |
 
-※上記は補助率2分の1と仮定した計算例です。実額は補助率・上限・対象経費の要件で変わります。最新の補助率は[IT導入補助金事務局(公式)](https://it-shien.smrj.go.jp/)でご確認ください。
+※上記は補助率2分の1と仮定した計算例です。実額は補助率・上限・対象経費の要件で変わります。最新の補助率は[AI導入補助金事務局(公式)](https://it-shien.smrj.go.jp/)でご確認ください。
 
 <span class="em-marker">上限額と自己負担額はセットで確認する — 金額の見え方が変わる最重要ポイント。</span> 「350万円もらえる」ではなく「自己負担がいくら残るか」まで見て初めて、資金計画が立てられます。
 
 実際に、卸売業(兵庫県)のお客様では、会計・受発注システムの導入費550万円に対し補助350万円が対象となりました。ポイントは、**自己負担額の根拠を契約前にすべて提示したこと**です。その結果、社内の稟議が一度で通過しました(※当社支援事例)。
 
-自己負担の金額を先に把握しておくと、社内での意思決定がスムーズになります。金額の全体像は、当サイトの[AI導入補助金の完全ガイド](/blog/ai-hojokin-kanzen-guide-2026/)もあわせてご覧ください。
+自己負担の金額を先に把握しておくと、社内での意思決定がスムーズになります。金額の全体像は、当サイトのAI導入補助金の完全ガイドもあわせてご覧ください。
 
 ▶ **今すぐ試せるアクション**:導入したいシステムのざっくりした見積額を、上の表に当てはめて「補助額」と「自己負担」を仮計算してみましょう。
 
@@ -119,7 +121,7 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 - 補助対象として登録されていないツール
 - 導入計画と関係のない費用
 
-対象になる経費は、公式に登録された「ITツール」から選ぶのが基本です。制度の定義は[中小企業庁](https://www.chusho.meti.go.jp/)と[IT導入補助金事務局](https://it-shien.smrj.go.jp/)で確認できます。
+対象になる経費は、公式に登録された「ITツール」から選ぶのが基本です。制度の定義は[中小企業庁](https://www.chusho.meti.go.jp/)と[AI導入補助金事務局](https://it-shien.smrj.go.jp/)で確認できます。
 
 具体的な効果のイメージもお伝えします。設備工事業(従業員12名)のお客様は、見積・請求・原価管理がすべてエクセルでした。経営者が毎晩2時間の事務作業に追われていました。補助金で受発注・会計システムを導入し、見積テンプレとAI下書きを整備した結果、事務作業が月40時間から月6時間へ(約85%削減)という実績につながりました(※当社支援事例)。
 
@@ -132,6 +134,8 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 ---
 
 <a id="h2-4"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-2.webp" alt="もらえる金額を左右する条件と、着金までの流れの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-2.webp" alt="もらえる金額を左右する条件と、着金までの流れの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## もらえる金額を左右する条件と、着金までの流れ
@@ -150,9 +154,9 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 
 申請から着金までは約2〜3ヶ月が目安です(※当社支援実績)。製造業(大阪府)のお客様では、AI導入補助金で350万円の補助が採択・着金しました。お客様の作業は書類集めとZoom約1時間のみで、申請から約3ヶ月で着金まで完了しました(※当社支援事例)。
 
-金額・補助率・スケジュールは年度で変わります。最新情報は必ず公式サイトで確認してください。スケジュールは公募回によって前後します。申請の前提となるGビズIDの準備は、[GビズIDプライムの取得方法](/blog/gbizid-prime-shutoku-houhou/)を参考に早めに進めておくと安心です。
+金額・補助率・スケジュールは年度で変わります。最新情報は必ず公式サイトで確認してください。スケジュールは公募回によって前後します。申請の前提となるGビズIDの準備は、GビズIDプライムの取得方法を参考に早めに進めておくと安心です。
 
-なお、スケジュールの詳細は[IT導入補助金事務局](https://it-shien.smrj.go.jp/)の公募情報で必ずご確認ください。
+なお、スケジュールの詳細は[AI導入補助金事務局](https://it-shien.smrj.go.jp/)の公募情報で必ずご確認ください。
 
 ▶ **今すぐ試せるアクション**:GビズIDプライムをまだ取得していなければ、今日中に申請手続きの入口だけでも確認しておきましょう(取得に時間がかかるため)。
 
@@ -184,10 +188,12 @@ thumbnail: "/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp"
 <a id="faq"></a>
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-3.webp" alt="よくある質問(FAQ)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/ai-hojokin-ikura-moraeru-2026-section-3.webp" alt="よくある質問(FAQ)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## よくある質問(FAQ)
 
-**Q1. AI導入補助金(正式名称: IT導入補助金)は最大いくらまでもらえますか?**
-A. 補助の上限は最大350万円が目安です。実額は「対象経費 × 補助率」で決まり、導入費が小さければ補助額も小さくなります。枠・年度で異なるため、最新額は[IT導入補助金事務局(公式)](https://it-shien.smrj.go.jp/)で要確認です。
+**Q1. AI導入補助金(正式名称: AI導入補助金)は最大いくらまでもらえますか?**
+A. 補助の上限は最大350万円が目安です。実額は「対象経費 × 補助率」で決まり、導入費が小さければ補助額も小さくなります。枠・年度で異なるため、最新額は[AI導入補助金事務局(公式)](https://it-shien.smrj.go.jp/)で要確認です。
 
 **Q2. 補助金は申請すれば必ずもらえますか?**
 A. いいえ。審査で採択されて初めて受給できます。申請=受給ではないため、採択されやすい計画準備が重要です。
@@ -196,7 +202,7 @@ A. いいえ。審査で採択されて初めて受給できます。申請=受�
 A. 補助金は「後払い(精算払い)」が基本です。導入費用は先に自社で支払い、実績報告の後に補助分が入金されます。着金の目安は申請から約2〜3ヶ月です(※当社支援実績)。立て替え分の資金を用意しておくと安心です。
 
 **Q4. 個人事業主や小規模な会社でも対象になりますか?**
-A. 対象要件は業種・規模ごとに定められています。個人事業主や小規模事業者が対象となる場合もありますが、細かい条件は年度で変わります。[IT導入補助金事務局](https://it-shien.smrj.go.jp/)でご確認ください。
+A. 対象要件は業種・規模ごとに定められています。個人事業主や小規模事業者が対象となる場合もありますが、細かい条件は年度で変わります。[AI導入補助金事務局](https://it-shien.smrj.go.jp/)でご確認ください。
 
 **Q5. 不採択だった場合、再申請はできますか?また入金時の会計処理は?**
 A. 次回公募での再申請は一般に可能です。補助金入金時の会計・税務処理は、顧問税理士へご相談ください。年度をまたぐ場合の収益計上時期に注意が必要です。
@@ -213,4 +219,4 @@ A. 次回公募での再申請は一般に可能です。補助金入金時の�
 
 👉 **無料相談・サービス詳細はこちら:[セブンセンシズ株式会社 公式LP](https://lp.7senses.co.jp/)**
 
-※本記事は2026年7月時点の情報です。補助金の金額・補助率・スケジュールは年度で変わります。最新情報は必ず[中小企業庁](https://www.chusho.meti.go.jp/)および[IT導入補助金事務局](https://it-shien.smrj.go.jp/)の公式サイトでご確認ください。
+※本記事は2026年7月時点の情報です。補助金の金額・補助率・スケジュールは年度で変わります。最新情報は必ず[中小企業庁](https://www.chusho.meti.go.jp/)および[AI導入補助金事務局](https://it-shien.smrj.go.jp/)の公式サイトでご確認ください。

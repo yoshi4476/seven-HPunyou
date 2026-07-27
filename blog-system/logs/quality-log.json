@@ -3680,6 +3680,416 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "aio-taisaku-kaisha-osusume-2026.md",
+      "date": "2026-07-27T22:59:00.728Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 87,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "選び方7項目・避けたい会社・費用相場・比較軸・補助金・FAQと『会社おすすめ選び方』検索意図を広く網羅。ただし具体的な会社名の比較一覧が無く『おすすめ』を求める読者の一部意図は未充足で-2。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に要点3行、各H2冒頭に定義断言文、FAQは断言形で引用されやすい単文構造。em-marker断言も明確で引用適性が高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書・支援50社・具体事例(士業0→月4件、製造業350万円着金)を明示。ただし数値は全て『当社実績』の自己申告で第三者検証可能な一次出典が薄く-3。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "title/description最適化、目次アンカー、H2構造、内部リンク5本(関連記事・サービス)が整備。H2をカスタムHTMLで記述しmarkdown見出し階層が崩れる懸念で-2。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像プレースホルダ・em-marker・太字を各セクションで適切配置、1文も概ね簡潔。▶アクションの繰り返しがやや定型的で単調さが残り-2。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "『被引用を数字でレポートできるか』を軸にした選定基準、一気通貫体制、地域密着の自社知見と具体事例が独自性を担保。"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "水増しが少なく、費用内訳・補助金フロー・比較表など情報密度が高く実用的。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "google-business-profile-joui-hyoji-kotsu.md",
+      "date": "2026-07-27T22:58:55.524Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "順位の仕組み・3施策・NG対策・自社/外注判断・FAQ(期間/無料範囲/複数店舗/SEO比較)まで検索意図を広く網羅している。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭の太字定義断言・要点3行超・表・FAQの断言形が揃い引用されやすいが、FAQ回答がやや説明的で単文化の余地あり。"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者に代表者名と肩書、Google公式ヘルプ複数出典、当社支援事例(匿名・守秘は許容)とG-ran実績を明示しており専門性・実体験が担保。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW含みメタ・見出しID・目次アンカー・内部リンク複数が適切。ただしh1がなくh2から始まる構造上の軽微な難あり。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表3点・箇条書き・IMGマーカー・em-marker3箇所・太字が適度で緩急良好。一部の文が60字超で単調化しかけている。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "当社事例(月18→58件)・自社ツールG-ran・自社/外注判断表など独自の切り口があるが、施策自体は一般論の範囲。"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "3施策+NG+外注判断+FAQを表・チェックリスト・時間目安付きで具体化し、水増しなく情報密度が高い。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-ikura-moraeru-2026.md",
+      "date": "2026-07-27T23:08:46.048Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "「いくらもらえる」の核心(上限・補助率・自己負担・後払い・着金までの流れ・対象経費)を網羅し、FAQで個人事業主・再申請・会計処理まで補完している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義の断言文・結論ボックス3行・各H2冒頭の太字断言・FAQ断言形が揃い引用されやすいが、正式名称の混同表記が1点減"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者肩書・当社支援事例(卸売業/設備工事業/製造業)・採択率等の実体験があり公式2出典も明示。ただし数値は自社実績に依存し公的統計の裏付けは薄い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW・上限額を含み、目次アンカー・H2構造・内部リンク(対象ツール/サービス)が整備。画像altも適切"
+            },
+            {
+              "key": "readability",
+              "score": 12,
+              "max": 15,
+              "reason": "結論ボックス・表・箇条書き・em-marker・チェックリストで緩急良好だが、同一画像(section-1/section-2/section-3)の使い回しが複数箇所あり視覚要素の実質が水増し気味"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「自己負担の根拠を契約前に提示」「上限と自己負担をセットで見る」という独自の切り口と具体事例で差別化できている"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "約4,000字相当で計算表・事例・FAQと情報密度は高いが、後払いの説明が複数箇所で重複しやや冗長"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-osaka-chusho.md",
+      "date": "2026-07-27T23:11:16.121Z",
+      "finalScore": 87,
+      "revisions": 1,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 78,
+          "seo": 80,
+          "aio": 83,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 16,
+              "max": 20,
+              "reason": "対象・上限・流れ・必要書類・サポート選び・大阪地域性・補助金後の集客まで主要意図を網羅し、FAQで個人事業主・後払い・再申請も補足している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 13,
+              "max": 15,
+              "reason": "冒頭の要点3〜4行・定義断言文・em-markerによる断言・FAQの断言形が揃い引用されやすい構造だが、数値の出典が公式トップに留まる"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "公式サイト出典・執筆者肩書き・複数の当社支援事例(数値付き)があり実体験が具体的で信頼性は高い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 11,
+              "max": 15,
+              "reason": "タイトルとキーワード整合・目次・見出し構造・内部リンクは充実だが、H2見出し直後に重複画像が挟まり見出し構造が乱れている"
+            },
+            {
+              "key": "readability",
+              "score": 8,
+              "max": 15,
+              "reason": "1文短め・表/箇条書き/em-markerは適切だが、同一画像が各セクションで2〜3枚連続重複挿入されており冗長で視覚品質を大きく損なう"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "大阪地域密着・補助金後のMEO/AIO集客まで設計する独自の切り口とG-ran実績など自社知見が明確"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "文字数・情報密度は十分で表・事例で具体性もあるが、重複画像や定型フレーズの繰り返しで密度がやや薄まる"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "total": 88,
+          "seo": 87,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象・上限・流れ・書類・サポート選び・補助金後の集客まで大阪中小企業の主要疑問を網羅し、FAQで個人事業主・再申請・会計処理も補足しているため高評価"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行・定義断言文(em-marker)・FAQ断言形・引用しやすい単文が揃い、AI検索に引用されやすい構造が明確"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書・拠点の明記と公式一次情報リンクあり。守秘配慮の匿名事例は妥当だが採択通過率90%以上の自社集計は外部検証不能で断定色が残る"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにキーワード整合・H2構造とアンカー・内部リンク豊富で良好。ただし「AI導入補助金(正式名称:IT導入補助金)」という呼称の混在が検索意図とやや不整合"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像・CTAが適度に配置され1文も短め。em-markerが3箇所程度で強調バランス良好だが一部段落がやや説明的で単調"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "補助金後のMEO・AIO集客まで設計する切り口とG-ran・自社支援事例など独自知見が明確"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "文字数十分で具体事例・数値・手順が詰まっており情報密度は高い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "aio-taisaku-kaisha-osusume-2026.md",
+      "date": "2026-07-27T23:08:43.477Z",
+      "finalScore": 89,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 89,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "選び方7項目・避けたい会社・費用相場・比較軸・補助金・FAQと「会社おすすめ」検索意図をほぼ網羅。ただし具体的な他社比較・料金の目安レンジがなく完全ではない"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言・要点3行、各節冒頭に断言文、FAQ断言形が揃い引用されやすい構造。表も明快"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "支援50社・事例(士業0→月4件/製造業350万着金)・著者肩書と実体験が明確で公式出典リンクあり。ただし数値の多くが自社実績注記に依存"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・目次アンカー・H2構造・内部リンク複数・alt付き画像と技術面は良好。内部リンク先の実在は本文外で確認不可"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像・em-marker・アクション枠で緩急十分、1文も短め。太字がやや多用気味だがセクション内1〜2回で許容範囲"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「被引用を数字でレポートできるか」を選定軸に据えた切り口と一気通貫の自社知見が独自性を担保"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "各節に表・リスト・事例が入り情報密度は高いが、費用相場に具体的な金額レンジがなく密度をやや欠く"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "google-business-profile-joui-hyoji-kotsu.md",
+      "date": "2026-07-27T23:08:41.939Z",
+      "finalScore": 91,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 92,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "順位の仕組み・3つの評価基準・具体施策(情報整備/口コミ/投稿)・NG対策・自社vs外注・FAQまで「上位表示のコツ」の主要意図をほぼ網羅。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に太字定義断言文と要点3〜4行、FAQ4問が断言形で引用しやすく、各見出しも結論先出しで構成が明確。"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "Google公式ヘルプ4本を出典明記、著者は代表取締役の実名、当社支援事例(匿名化)と自社サービス提示でE-E-A-T良好。統計的数値の外部出典は最小限。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW整合、id付きH2構造・目次・内部リンク5本(サービス/関連記事)完備。見出しがやや定型的。"
+            },
+            {
+              "key": "readability",
+              "score": 14,
+              "max": 15,
+              "reason": "表3点・チェックリスト・図4枚・箇条書きで視覚要素が豊富、段落短め、太字とem-markerも節度ある使用で緩急良好。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "症状→原因→対処の切り分けリスト、週30分ルーティン表、自社ツールG-ran実績など独自の切り口あり。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "手順・頻度・時間目安まで具体的で情報密度が高く水増しが少ない。定量データはやや限定的。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

@@ -301,6 +301,66 @@
       "date": "2026-07-27T11:16:48.479Z",
       "passed": true,
       "reasons": []
+    },
+    {
+      "file": "aio-taisaku-kaisha-osusume-2026.md",
+      "slug": "aio-taisaku-kaisha-osusume-2026",
+      "title": "AIO対策会社おすすめ2026|失敗しない選び方と費用相場",
+      "date": "2026-07-27T23:00:41.747Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "③H2不足: 1個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "google-business-profile-joui-hyoji-kotsu.md",
+      "slug": "google-business-profile-joui-hyoji-kotsu",
+      "title": "Googleビジネスプロフィール上位表示のコツ2026|MEOで集客を増やす7つの基本",
+      "date": "2026-07-27T23:00:42.952Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "③H2不足: 1個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-ikura-moraeru-2026.md",
+      "slug": "ai-hojokin-ikura-moraeru-2026",
+      "title": "AI導入補助金2026はいくらもらえる?上限350万円と対象を解説",
+      "date": "2026-07-27T23:11:54.190Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-osaka-chusho.md",
+      "slug": "ai-hojokin-osaka-chusho",
+      "title": "【2026年版】中小企業のAI導入補助金｜大阪の申請サポートと採択の進め方",
+      "date": "2026-07-27T23:11:54.619Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "aio-taisaku-kaisha-osusume-2026.md",
+      "slug": "aio-taisaku-kaisha-osusume-2026",
+      "title": "AIO対策会社おすすめ2026|失敗しない選び方と費用相場",
+      "date": "2026-07-27T23:11:54.886Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "③H2不足: 1個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "google-business-profile-joui-hyoji-kotsu.md",
+      "slug": "google-business-profile-joui-hyoji-kotsu",
+      "title": "Googleビジネスプロフィール上位表示のコツ2026|MEOで集客を増やす7つの基本",
+      "date": "2026-07-27T23:11:56.043Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "③H2不足: 1個 (規定 3個以上)"
+      ]
     }
   ]
 }
