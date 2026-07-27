@@ -34,6 +34,8 @@ AIO対策とは、検索順位を上げることではなく、ChatGPTやAI Over
 
 <a id="h2-1"></a>
 
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-1.webp" alt="AIO対策とは?SEO・MEOとの違いを大阪の経営者向けに解説の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## AIO対策とは?SEO・MEOとの違いを大阪の経営者向けに解説
 
 **AIO対策(AI Optimization)とは、ChatGPT・Perplexity・AI Overview(Googleの生成AI回答)などのAI検索に、自社の情報を引用・要約してもらうための最適化のことです。** 一言でいえば「AIが答えを作るときの“情報源”に自社を選んでもらう対策」です。
@@ -84,6 +86,8 @@ AIO未対応のまま放置すると、次のような機会を失いやすく�
 
 
 <a id="h2-3"></a>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-2.webp" alt="AIO対策の具体的な進め方(自社でできる7ステップ)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## AIO対策の具体的な進め方(自社でできる7ステップ)
 
@@ -155,6 +159,8 @@ AIO対策は、AIが読みやすく信頼できるページ構造を整えるこ
 **▶ 今すぐ試せるアクション**:候補の会社に「先月の運用レポートのサンプルを見せてください」と依頼し、数字の出し方を比べましょう。
 
 <a id="h2-5"></a>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-3.webp" alt="大阪でAIO対策を始めるための最初の一歩とよくある失敗の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## 大阪でAIO対策を始めるための最初の一歩とよくある失敗
 

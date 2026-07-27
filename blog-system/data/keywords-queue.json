@@ -382,8 +382,10 @@
       "keyword": "AIOサイト診断 無料",
       "priority": "S",
       "category": "aio",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-27T11:04:21.303Z",
+      "slug": "aio-site-shindan-muryo"
     },
     {
       "id": 46,

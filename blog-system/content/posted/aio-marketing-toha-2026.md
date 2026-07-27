@@ -1,4 +1,5 @@
 ---
+retry_count: 1
 title: "AIOとは?2026年版マーケティング完全ガイド|AI検索で選ばれる会社"
 slug: "aio-marketing-toha-2026"
 description: "AIOとはAI検索に自社を引用・推薦させるマーケティング施策です。SEO・MEOとの違い、中小企業が今日から始める5ステップ、費用と補助金活用まで2026年最新でわかりやすく解説します。"
@@ -33,7 +34,9 @@ thumbnail: "/images/blog/aio-marketing-toha-2026/thumbnail.webp"
 
 ---
 
-<h2 id="h2-1">AIOとは?マーケティングにおける意味をわかりやすく解説</h2>
+<a id="h2-1"></a>
+
+## AIOとは?マーケティングにおける意味をわかりやすく解説
 
 AIOとは「AI Optimization(AI最適化)」の略で、ChatGPTやPerplexity、Google AI OverviewなどのAI検索に、自社の情報を引用・推薦させる取り組みを指します。読み方は「エーアイオー」です。
 
@@ -62,7 +65,9 @@ ITが得意でない方向けに、比喩で説明します。AIが答えとい�
 
 ---
 
-<h2 id="h2-2">AIOとSEO・MEOの違い|一覧表で比較</h2>
+<a id="h2-2"></a>
+
+## AIOとSEO・MEOの違い|一覧表で比較
 
 AIOとSEO・MEOの違いは、成果の測り方にあります。SEO・MEOが「順位」を競うのに対し、AIOは「AIの回答にどれだけ引用されたか(被引用)」を評価します。
 
@@ -93,7 +98,11 @@ AIOとSEO・MEOの違いは、成果の測り方にあります。SEO・MEOが�
 
 ---
 
-<h2 id="h2-3">なぜ今マーケティングでAIOが重要なのか(中小企業の視点)</h2>
+<a id="h2-3"></a>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-1.webp" alt="なぜ今マーケティングでAIOが重要なのか(中小企業の視点)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+## なぜ今マーケティングでAIOが重要なのか(中小企業の視点)
 
 AIOが重要になっている理由は、ユーザーがAIに直接質問し、その回答内で意思決定を完結させる行動が増えている傾向にあるためです。
 
@@ -117,11 +126,13 @@ AIOに取り組む場合と取り組まない場合を、対比で整理しま�
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-3.webp" alt="紹介依存の集客からAI検索経由の新規接点へ広がる中小企業の変化を示した概念図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 
-**▶ 今すぐ試せるアクション:** 直近10件の新規問い合わせの「きっかけ」を書き出し、紹介・検索・AI検索の比率を把握してみましょう。
+**▶ 今すぐ試せるアクション:** 直近の新規問い合わせの「きっかけ」を書き出し、紹介・検索・AI検索の比率を把握してみましょう。
 
 ---
 
-<h2 id="h2-4">AIO対策の具体的なやり方|今日から始める5ステップ</h2>
+<a id="h2-4"></a>
+
+## AIO対策の具体的なやり方|今日から始める5ステップ
 
 AIO対策のやり方は、特別なツールから始める必要はありません。まず「自社の一次情報を、AIが読みやすい形で正確に整える」ことが出発点です。
 
@@ -150,7 +161,11 @@ AIは、根拠が明確で信頼できる情報源を引用する傾向があり
 
 ---
 
-<h2 id="h2-5">AIOにかかる費用と外注の選び方|補助金の活用も</h2>
+<a id="h2-5"></a>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-2.webp" alt="AIOにかかる費用と外注の選び方|補助金の活用もの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+## AIOにかかる費用と外注の選び方|補助金の活用も
 
 AIOの費用は、内製と外注のどちらを選ぶかで大きく変わります。断定はできませんが、一次情報の整備を内製し、構造化データやサイト改修を外注する形が現実的な傾向です。
 
@@ -181,7 +196,9 @@ AIOの費用は、内製と外注のどちらを選ぶかで大きく変わり�
 
 ---
 
-<h2 id="faq">よくある質問(FAQ)</h2>
+<a id="faq"></a>
+
+## よくある質問(FAQ)
 
 **Q1. AIOとSEOはどちらを優先すべきですか?**
 
@@ -208,6 +225,8 @@ AI検索経由の指名検索や問い合わせが基本の指標です。ChatGP
 多くの場合、次回公募での再申請が可能です。なお着金時の会計処理は、税理士など専門家への相談をおすすめします。
 
 ---
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-3.webp" alt="AI検索で選ばれる会社づくりを、大阪からの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## AI検索で選ばれる会社づくりを、大阪から
 

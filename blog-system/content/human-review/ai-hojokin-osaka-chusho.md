@@ -1,4 +1,5 @@
 ---
+retry_count: 1
 title: "【2026年版】中小企業のAI導入補助金｜大阪の申請サポートと採択の進め方"
 slug: "ai-hojokin-osaka-chusho"
 description: "大阪の中小企業向けにAI導入補助金の対象・上限350万円・着金までの流れをやさしく解説。申請サポートの選び方と、補助金後の集客・AI検索対策まで2026年7月時点でまとめました。"
@@ -58,6 +59,10 @@ AI導入補助金とは、中小企業・小規模事業者がITツールを導�
 
 
 <a id="h2-2"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-1.webp" alt="大阪の中小企業が使うメリットと向いているケースの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-1.webp" alt="大阪の中小企業が使うメリットと向いているケースの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## 大阪の中小企業が使うメリットと向いているケース
 
 結論から言うと、**エクセルや手作業の事務が多い企業ほど、AI導入補助金の効果が出やすい傾向**があります。作業時間の削減という成果が数字で見えやすいからです。
@@ -112,6 +117,10 @@ AI導入補助金とは、中小企業・小規模事業者がITツールを導�
 
 
 <a id="h2-4"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-2.webp" alt="大阪で申請サポートを選ぶときの比較ポイントの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-2.webp" alt="大阪で申請サポートを選ぶときの比較ポイントの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## 大阪で申請サポートを選ぶときの比較ポイント
 
 サポート会社を選ぶ基準は、**対応範囲・費用の事前提示・採択後のフォロー・地域性**の4点です。ここを比較すれば、依頼後のミスマッチを防げます。
@@ -157,6 +166,10 @@ AI検索対策の考え方は[AIO対策とは?ChatGPTに引用されるサイト
 
 
 <a id="faq"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-3.webp" alt="よくある質問(FAQ)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-3.webp" alt="よくある質問(FAQ)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## よくある質問(FAQ)
 
 **Q1. 大阪の中小企業ですが、AI導入補助金はうちの規模でも申請できますか？**

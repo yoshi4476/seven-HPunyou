@@ -2920,6 +2920,766 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-ikura-moraeru-2026.md",
+      "date": "2026-07-27T11:04:53.809Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 87,
+          "seo": 88,
+          "aio": 89,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「いくらもらえる」の中核意図(上限・補助率・自己負担・後払い・着金までの期間・対象経費)を網羅し、FAQで再申請や会計処理まで拾えている"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭の定義断言文・結論3行ボックス・FAQの断言形・em-markerの単文引用が揃い、AIが抜き出しやすい構造"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "支援事例(業種・地域・数値)や採択率・支援社数を提示し公式一次情報にリンクするが、数値がすべて「当社支援実績」の自己申告で第三者検証性が弱い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKWと数値・見出し階層・目次アンカー・内部リンク4本が適切。ただし「AI導入補助金(正式名称IT導入補助金)」の呼称すり替えは検索整合上のリスク"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "短文・結論ボックス・表・箇条書き・強調が緩急よく配置。ただしセクション冒頭に同一画像(section-1/2/3)を使い回す重複figureが冗長で減点"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「自己負担の根拠を契約前に提示」「事務作業85%削減」など自社の切り口・具体事例があり独自性が出ている"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "文字数十分で情報密度が高く水増しも少ないが、公式値を避けた結果「枠により異なる/要確認」の留保が多く具体数値の密度はやや薄い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-osaka-chusho.md",
+      "date": "2026-07-27T11:04:51.378Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象・上限・流れ・書類・サポート選び・補助金後の集客まで主要意図を網羅。ただし『不採択理由』や具体的な補助率の考え方は薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に要点3行、定義断言文(『AI導入補助金とは〜制度です』)、em-marker断言、FAQ6問が断言形で引用されやすい"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "執筆者=代表取締役の実名・拠点明示、公式サイト出典2件、複数の当社支援事例(効率化85%・着金350万等)を明示。ただし統計は自社実績のみで第三者データがない"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "地域+キーワードのタイトル、H2見出し6本のアンカー付き目次、内部リンク8本と構造が整備されている"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表3・箇条書き・図3枚・アクション枠で緩急良好、太字とem-markerも適量。一部『理由はシンプルです』等の定型文がやや単調"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "『補助金+MEO・AI検索対策まで設計』という自社独自の切り口とG-ran・llms.txt整備事例が具体的で差別化されている"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "約4,000字相当で情報密度高く水増しは少ない。事例に具体数値があり密度を担保"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "aio-marketing-toha-2026.md",
+      "date": "2026-07-27T11:04:48.693Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 90,
+          "aio": 93,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "AIOの定義・SEO/MEOとの違い・重要性・やり方5ステップ・費用/補助金・FAQ6問と検索意図を網羅し、比較表と具体行動まで揃う"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文、要点3行、em-markerの単文、FAQが断言形で並び、引用されやすい構造が徹底されている"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "実名著者・肩書、支援事例(士業0→月4件)、出典が政府/公式(検索セントラル・llmstxt.org・IT導入補助金事務局)と一次情報へ適切に誘導。ただし採択率90%等の自社数値は外部検証不可"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "title/description/見出しh2構造・目次アンカー・内部リンク多数・alt付き画像と整うが、内部リンク先が実在するかは記事内で担保できず"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文が概ね短く段落3〜4行、表・箇条書き・画像を各セクションに配置、太字とem-markerも節度あり。ただし「今すぐ試せるアクション」など定型の繰り返しでやや単調"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "検索3世代論・SEO/MEO/AIO一体設計・G-ran運用など自社知見と独自の切り口が明確"
+            },
+            {
+              "key": "density",
+              "score": 11,
+              "max": 10,
+              "reason": "水増しが少なく、表2点・5ステップ・チェック項目で情報密度が高い(満点上限で計上)"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "aio-site-shindan-muryo.md",
+      "date": "2026-07-27T11:04:52.251Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「無料でできること/できないこと」「3つの方法と手順」「5項目の読み解き」「診断後の改善」「FAQ」で無料診断の意図を網羅。競合比較ツールの具体名など細部は薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭の定義断言文・要点3行・各H2直下の一文要約・FAQの断言形が揃い、引用されやすい単文構造になっている"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者に代表者名・肩書、支援事例(士業月4件・飲食店月58件)、公式出典URL明示。ただし50社・採択率90%・上限350万円等の数値に出典がなく自社主張止まり"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "キーワード整合したタイトル・H2の階層・目次アンカー・内部リンク4本・FAQ構造が適切に整備されている"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表3点・箇条書き・画像プレースホルダ・em-marker2箇所・太字が各セクションに配置され緩急良好。1文がやや長い箇所が散見される"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「無料でできること/できないこと」の切り分け表やコスト低い順の着手判断など自社視点の切り口あり。ただし手法自体は一般的"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "具体ツール名・手順・目安が詰まり水増しは少ないが、方法Cの説明が簡素で密度に偏りがある"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "aio-taisaku-osaka.md",
+      "date": "2026-07-27T11:04:50.622Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「AIO対策とは」「SEO/MEOとの違い」「7ステップ」「外注先選び」「費用・補助金」「最初の一歩」とAIO×大阪の検索意図を網羅。FAQも意図を補完しており欠落は軽微。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文、要点3行、太字の定義文、FAQが断言形の単文で構成され引用されやすい。AIO適合は非常に高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者・監修者の実名と肩書、支援事例(士業0→月4件、リフォーム月2→11件)を明示。ただし公式出典は補助金2件のみで、統計的一次情報の外部出典は乏しい。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW+地域+年、H2構造が明確、目次アンカー・内部リンク5本以上を適切配置。見出しがやや冗長だが構造は良好。"
+            },
+            {
+              "key": "readability",
+              "score": 14,
+              "max": 15,
+              "reason": "1文短め、表・箇条書き・図・アクションが3〜4段落ごとに配置、em-marker3箇所と太字も適量で単調さを回避。ほぼ理想的。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「大阪の先行者優位」「AIO単体でなくSEO/MEO/システム一貫設計」という自社の切り口と具体事例が独自性を担保。"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "6章+FAQ+複数の表で情報密度が高く、水増しが少なく実務手順まで踏み込んでいる。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "chatgpt-kensaku-joui-hyoji-houhou.md",
+      "date": "2026-07-27T11:07:20.971Z",
+      "finalScore": 90,
+      "revisions": 1,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 84,
+          "seo": 83,
+          "aio": 86,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "定義・従来SEOとの違い・引用条件・5ステップ・自力/外注判断・費用期間・FAQと、検索意図を広く網羅している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 13,
+              "max": 15,
+              "reason": "冒頭要点3行超・定義断言文・FAQの短い断言形・引用しやすい単文(em-marker)があり引用適性は高い"
+            },
+            {
+              "key": "eeat",
+              "score": 10,
+              "max": 15,
+              "reason": "著者/会社/所在地・匿名化事例・公式出典URLは良いが『AI導入補助金(正式名称: IT導入補助金)』と『(正式名称: AI導入補助金)』が矛盾し正確性を損なう"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW含み・H2/FAQの見出し構造・内部リンク・アンカー付き目次が整備されている"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・図・太字・em-markerがバランスよく配置され1文も短め、視覚的緩急がある"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "士業/飲食の自社事例数値・自社ツールG-ran・両取り論など独自の切り口がある"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "水増しが少なく実務手順と数値が詰まっているが、費用感が『幅がある』止まりで具体性はやや薄い"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "total": 90,
+          "seo": 91,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "上位表示の定義・従来SEOとの違い・引用条件・5手順・自力/外注判断・費用期間・補助金・FAQまで検索意図を広く網羅している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行・定義断言文・FAQ断言形・FAQ構造化データ例・引用しやすい単文が揃いAIO適合が高い"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者実名/肩書/所在地・支援事例(匿名化)・出典公式URL・G-ran実績を明記。統計は自社集計注記あり実害なし"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW整合・目次アンカー・H2構造・内部リンク複数・descriptionあり。見出し構造は適切"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文短め・表/箇条書き/画像を各所配置・em-marker3箇所・太字使用。視覚要素は十分だが一部セクションで太字がやや多い"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "llms.txt実例・自社支援事例の被引用0→月4件・G-ranなど独自知見と切り口がある"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "文字数十分で情報密度高く水増しは少ない。費用目安・期間も具体的"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-ikura-moraeru-2026.md",
+      "date": "2026-07-27T11:15:49.554Z",
+      "finalScore": 91,
+      "revisions": 1,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 72,
+          "seo": 74,
+          "aio": 78,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 16,
+              "max": 20,
+              "reason": "「いくらもらえるか」の核心(上限・補助率・自己負担・後払い・着金までの流れ)を網羅し検索意図を的確に満たすが、正式名称IT導入補助金を「AI導入補助金」と言い換える設計で実際の枠名・公募回情報が薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 12,
+              "max": 15,
+              "reason": "冒頭定義断言文・3行結論ボックス・FAQ断言形・em-markerの単文が揃い引用されやすいが、金額の断言に「※当社支援実績」の限定が多く一次情報としての引用強度はやや弱い"
+            },
+            {
+              "key": "eeat",
+              "score": 11,
+              "max": 15,
+              "reason": "代表者署名・支援事例(卸売業550万円/設備工事業85%削減/製造業3ヶ月着金)・実績数値があり実体験は濃いが、350万円・補助率等の制度数値に公式深部URLでの裏付けがなくトップページ提示に留まる"
+            },
+            {
+              "key": "seo_tech",
+              "score": 9,
+              "max": 15,
+              "reason": "タイトル・見出し階層・目次アンカー・内部リンクは適切だが、h2-2/h2-4/faq冒頭に同一画像を2枚重複配置し、section-1画像を複数箇所で使い回すなど画像実装に明確な破綻がある"
+            },
+            {
+              "key": "readability",
+              "score": 10,
+              "max": 15,
+              "reason": "結論ボックス・表・箇条書き・CTA・強調が緩急を作り可読性は高いが、同一画像の重複挿入(section-1×3、section-2/3重複)で視覚要素が水増しに見え、alt閉じ括弧欠落(section-4)もある"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「自己負担額の根拠を契約前に提示」「上限≠もらえる額」という自社の一貫した切り口と具体事例があり独自性は高い"
+            },
+            {
+              "key": "density",
+              "score": 6,
+              "max": 10,
+              "reason": "本文の情報密度は十分だが、正式名称の言い換えによる制度数値の曖昧化と、画像重複による水増し感で密度評価を抑制"
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "total": 92,
+          "seo": 91,
+          "aio": 93,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "「いくらもらえる」の核心(上限・補助率・自己負担・後払い・着金期間・対象経費)を網羅し、FAQで再申請や会計処理まで補足しており検索意図をほぼ充足。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行・各H2冒頭の太字断言文・定義文・FAQ断言形が揃い、引用単文が明確でAIO適合度が高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者役職明記・公式一次情報リンク・支援実績(匿名化事例)を提示。ただし採択率90%等の自社数値に第三者検証は不能で減点余地。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW+数値、目次アンカー、内部リンク4本、見出し構造が整合。thumbnail等問題なし。"
+            },
+            {
+              "key": "readability",
+              "score": 14,
+              "max": 15,
+              "reason": "1文短め・段落3〜4行・表/箇条書き/画像/結論ボックスの緩急・em-marker各セクション適量で可読性高い。強調はやや多いが許容範囲。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「自己負担の根拠を契約前に提示」という自社独自の切り口と複数業種の実体験事例があり独自性を確保。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "計算表・具体的数値・削減実績(月40→6時間)など情報密度が高く水増しが少ない。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-osaka-chusho.md",
+      "date": "2026-07-27T11:13:05.235Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象・上限・流れ・書類・サポート選び・補助後の集客まで大阪中小企業の主要意図を網羅。ただし『いくらもらえる』具体的な補助率の数値目安は外部リンク送りで本記事内は薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行、定義断言文(em-marker)、FAQ6問の断言形、単文の引用しやすさが揃い引用適性が高い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "執筆者実名・肩書、公式サイト出典、当社支援事例が複数と実体験明記。一方で採択通過率90%以上・支援50社+は自社数値で第三者検証不能な点が弱い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・地域含み、H2構造・目次アンカー・内部リンク豊富。ただし各H2直下に前セクション画像を重複挿入し(section-1/2/3が2回)構造的に冗長"
+            },
+            {
+              "key": "readability",
+              "score": 12,
+              "max": 15,
+              "reason": "1文短め・表と箇条書き・em-marker適切、アクション囲みで緩急あり。ただし同一画像の連続重複配置で視覚的な違和感と冗長さが残る"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "事務85%削減・稟議一度通過・AI検索相談0→月4件など具体的な自社知見と切り口が明確"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "文字数・情報密度とも十分で表・事例・FAQで密度が高い。水増し的な冗長文は少ない"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "aio-marketing-toha-2026.md",
+      "date": "2026-07-27T11:12:57.293Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "「AIOとは」の定義・SEO/MEOとの違い・やり方5ステップ・費用・補助金・FAQまで検索意図を網羅。冒頭要点と目次で導線も明確。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に太字の定義断言文、要点3行、FAQの断言形、em-markerの単文があり引用適性が高い。比較表も抽出しやすい。"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者の実名・肩書・実績を明記し、Google検索セントラル・llmstxt.org・補助金事務局等の一次情報にリンク。支援事例に(※当社支援事例)と注記があり誠実。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW配置、H2構造とアンカーリンク・目次・内部リンク多数で良好。ただし内部リンク先が実在するか記事内では検証不能。"
+            },
+            {
+              "key": "readability",
+              "score": 14,
+              "max": 15,
+              "reason": "1文60字前後・段落3〜4行・表・箇条書き・画像・em-marker2〜3箇所・太字を各セクションで適切配置。単調な見出しも回避。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "検索3世代論・SEO/MEO一体設計・「参考文献に選ばれる」比喩・自社G-ran運用など独自の切り口がある。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "情報密度は高く水増しが少ない。数値には出典または(※当社実績)注記があり手堅い。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "aio-site-shindan-muryo.md",
+      "date": "2026-07-27T11:13:03.592Z",
+      "finalScore": 89,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 89,
+          "seo": 89,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「無料でできること/できないこと・3つの方法・5項目・診断後」と『無料診断』意図を段階網羅、比較表も的確。具体的な無料ツール名の手順まで踏み込むが料金相場等の周辺は薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義断言・要点3行・各H2冒頭の単文結論・FAQ4問が断言形で引用しやすく、AI検索適合が高い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書・当社事例(士業月4件/飲食月58件)・公式出典URL(IT導入補助金・中小企業庁)を明示。ただし採択率90%以上・50社以上等の自社実績数値に検証手段がなく信頼はやや限定"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・年号・ベネフィット、H2構造とアンカー目次、内部リンク4本が適切。descriptionが「無料」連呼でやや冗長"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文60字前後・表3点・箇条書き・画像3点・em-marker2箇所・太字も過不足なく緩急良好。「今すぐ試せるアクション」の反復がやや定型的"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「無料でできること/難しいこと」の切り分け表とコスト低い順の着手基準は実務的な独自切り口。ただし核となる診断5項目は一般論寄り"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "ツール名・確認手順・OK/NG目安まで具体で密度は高いが、総文字数は中規模で網羅の厚みは中程度"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "chatgpt-kensaku-joui-hyoji-houhou.md",
+      "date": "2026-07-27T11:13:10.055Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「上位表示の方法」の主意図に加え、従来SEOとの違い・引用条件・5手順・自力/外注・費用期間・FAQまで網羅。費用の具体レンジも提示され検索意図を広くカバー"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に要点3行、定義断言文、FAQ7問が断言形、引用しやすい単文が多くAIO適合は高水準。FAQ構造化データの実例も掲載"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者実名・肩書・所在地明記、公式出典URL複数、当社支援事例3件を匿名化して開示。ただし『採択通過率90%以上』『月4件』等は自社集計で第三者検証は不可（守秘配慮として許容範囲）"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・年号・数字、H2構造とアンカー目次、内部リンク5本、表・JSON等構造明快。ただしsection-4画像がファイル存在不明でalt依存、H2見出しに軽微な冗長"
+            },
+            {
+              "key": "readability",
+              "score": 12,
+              "max": 15,
+              "reason": "1文短め・段落3〜4行・表/箇条書き/画像/アクションで緩急良好。ただしsection-1画像とsection-2/3画像が複数箇所で重複使用され視覚要素の実質価値が低下"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "llms.txt実例・G-ran運用・3検索の役割分担・自社事例の具体数値など独自の切り口あり。ただし一般論の骨格部分も相応にある"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "約4500字相当で情報密度高く、表3点・チェックリスト・コード例・費用目安まで具体。水増し文はほぼ無し"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

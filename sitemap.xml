@@ -53,7 +53,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/aio/</loc>
-    <lastmod>2026-07-25</lastmod>
+    <lastmod>2026-07-27</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -67,6 +67,16 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/aio-site-shindan-muryo/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/aio-taisaku-osaka/</loc>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/meo-taisaku-gyousha-erabikata/</loc>
     <lastmod>2026-07-26</lastmod>
     <priority>0.7</priority>
@@ -77,12 +87,22 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/chatgpt-kensaku-joui-hyoji-houhou/</loc>
+    <lastmod>2026-07-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho/</loc>
     <lastmod>2026-07-24</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/</loc>
+    <lastmod>2026-07-24</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/aio-marketing-toha-2026/</loc>
     <lastmod>2026-07-24</lastmod>
     <priority>0.7</priority>
   </url>
