@@ -37,14 +37,16 @@ function publishedIndex() {
       if (m) items.push({ title: m[1].trim(), url: `/blog/${d}/` });
     }
   }
+  // 未公開の記事 (審査待ち・キュー・下書き) は「重複防止の照合」には使うが、
+  // 内部リンク先としては渡さない (url: null)。
+  // → 兄弟記事が隔離された時にリンク元まで404連鎖で隔離されるバグの根治
   for (const sub of ["posted", "publish-queue", "human-review", "drafts"]) {
     const dir = join(ROOT, "content", sub);
     if (!existsSync(dir)) continue;
     for (const f of readdirSync(dir).filter((x) => x.endsWith(".md"))) {
       const md = readFileSync(join(dir, f), "utf8");
       const t = md.match(/^title:\s*"?(.*?)"?\s*$/m);
-      const s = md.match(/^slug:\s*"?(.*?)"?\s*$/m);
-      if (t) items.push({ title: t[1].trim(), url: s ? `/blog/${s[1].trim()}/` : null });
+      if (t) items.push({ title: t[1].trim(), url: null });
     }
   }
   const seen = new Set();
@@ -319,11 +321,16 @@ async function main() {
         const polishUser = `以下はあなたが書いた記事の下書きです。審査ルーブリック (検索意図の網羅20点 / AI検索適性15点 / E-E-A-T15点 / 技術SEO15点 / 可読性15点 / 独自性10点 / 情報密度10点) の観点で自己点検し、弱点を修正した完成版のみを frontmatter付きMarkdown で出力してください。前置き・後書きは禁止。frontmatter の全キー (type がある場合は type も) を維持してください。\n\n${md}`;
         const polished = (await callClaude(systemPrompt, polishUser, { maxTokens: MAX_TOKENS }))
           .replace(/^```(?:markdown|md)?\n/, "").replace(/\n```\s*$/, "").trim();
-        if (/^---\n[\s\S]*?\btitle:/.test(polished) && polished.length >= md.length * 0.6) {
+        // 推敲後の健全性検証: frontmatter・長さに加えて見出し構造の破壊を検出
+        // (H2が減る・消える事故 → 安全ゲート③で隔離される問題の提出前ブロック)
+        const h2Of = (t) => (t.match(/^## /gm) || []).length;
+        if (/^---\n[\s\S]*?\btitle:/.test(polished)
+            && polished.length >= md.length * 0.6
+            && h2Of(polished) >= Math.min(3, h2Of(md))) {
           md = polished;
-          console.log(`[generate-articles] 推敲パス適用 (${md.length}字)`);
+          console.log(`[generate-articles] 推敲パス適用 (${md.length}字 / H2 ${h2Of(md)}本)`);
         } else {
-          console.warn("[generate-articles] 推敲出力が不正 → 初稿のまま提出");
+          console.warn("[generate-articles] 推敲出力が不正 (構造破壊/短縮) → 初稿のまま提出");
         }
       } catch (e) {
         console.warn(`[generate-articles] 推敲パス失敗 → 初稿のまま提出: ${e.message}`);

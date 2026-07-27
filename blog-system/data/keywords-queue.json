@@ -382,10 +382,8 @@
       "keyword": "AIOサイト診断 無料",
       "priority": "S",
       "category": "aio",
-      "status": "generated",
-      "type": "main",
-      "generatedAt": "2026-07-25T22:52:51.024Z",
-      "slug": "article-45"
+      "status": "pending",
+      "type": "main"
     },
     {
       "id": 46,
@@ -432,10 +430,8 @@
       "keyword": "AIO対策 会社 おすすめ",
       "priority": "S",
       "category": "aio",
-      "status": "generated",
-      "type": "news",
-      "generatedAt": "2026-07-26T09:53:15.247Z",
-      "slug": "aio-taisaku-company-osusume"
+      "status": "pending",
+      "type": "news"
     },
     {
       "id": 52,
