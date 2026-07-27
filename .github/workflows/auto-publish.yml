@@ -124,6 +124,25 @@ jobs:
       - name: 安全ゲート (機械チェック)
         run: node scripts/safety-gate.mjs
 
+      # ---- 同日再挑戦 (2周目): 不合格記事を自動修正し、審査をもう一巡 ----
+      - name: 不合格記事の自動修正・再投入
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: node scripts/retry-rejected.mjs
+
+      - name: 品質ループ (再挑戦分)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: node scripts/quality-loop.mjs
+
+      - name: 画像生成・埋め込み (再挑戦分)
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: node scripts/embed-images.mjs
+
+      - name: 安全ゲート (再挑戦分)
+        run: node scripts/safety-gate.mjs
+
       # 公開確定Markdown → サイト記事HTML変換 + 一覧・カテゴリ・sitemap再生成
       - name: 記事HTMLレンダリング・一覧再生成
         working-directory: .
