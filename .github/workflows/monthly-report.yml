@@ -76,7 +76,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "変更なし"
           else
-            git commit -m "docs(report): 月次コンサルレポート ($(date -u +%Y-%m))"
+            git commit -m "docs(report): 月次コンサルレポート ($(TZ='Asia/Tokyo' date +%Y-%m))"
             for i in 1 2 3; do
               git push && break
               git pull --rebase origin master

@@ -192,7 +192,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "コミット対象の変更なし"
           else
-            git commit -m "chore(blog): 自動生成コンテンツの保存 ($(date -u +%Y-%m-%d))"
+            git commit -m "chore(blog): 自動生成コンテンツの保存 ($(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST'))"
             # 実行中に別のpushがあっても成果を失わないよう、rebaseして最大3回まで再試行
             for i in 1 2 3; do
               git push && break
