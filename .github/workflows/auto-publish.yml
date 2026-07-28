@@ -194,10 +194,18 @@ jobs:
           else
             git commit -m "chore(blog): 自動生成コンテンツの保存 ($(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST'))"
             # 実行中に別のpushがあっても成果を失わないよう、rebaseして最大3回まで再試行
+            # conflict時の自動解決ルール:
+            #   - リモート側で削除されたファイル (DU) → 削除を優先 (手動整理を尊重し復活させない)
+            #   - 内容の衝突 (UU) → このランの生成結果 (theirs) を採用
             for i in 1 2 3; do
               git push && break
               echo "push拒否 → rebaseして再試行 ($i/3)"
-              git pull --rebase origin master
+              if ! git pull --rebase origin master; then
+                git status --porcelain | awk '$1 == "DU" {print $2}' | xargs -r git rm -f --
+                git status --porcelain | awk '$1 == "UU" {print $2}' | xargs -r git checkout --theirs --
+                git add -A
+                GIT_EDITOR=true git rebase --continue || git rebase --abort
+              fi
             done
           fi
 
