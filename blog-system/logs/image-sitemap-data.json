@@ -1,27 +1,6 @@
 {
   "pages": [
     {
-      "slug": "ai-hojokin-kojin-jigyounushi-2026",
-      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-kojin-jigyounushi-2026/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/thumbnail.webp",
-          "title": "2026年最新版：AI導入補助金は個人事業主も対象？",
-          "alt": "2026年最新版：AI導入補助金は個人事業主も対象？のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-1.webp",
-          "title": "個人事業主に求められる要件",
-          "alt": "個人事業主に求められる要件の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-2.webp",
-          "title": "個人事業主が申請でつまずきやすいポイント",
-          "alt": "個人事業主が申請でつまずきやすいポイントの解説イメージ"
-        }
-      ]
-    },
-    {
       "slug": "ai-hojokin-taisho-tool-2026",
       "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/",
       "images": [
@@ -53,27 +32,6 @@
       ]
     },
     {
-      "slug": "it-hojokin-daiko-hiyo-souba",
-      "loc": "https://lp.7senses.co.jp/blog/it-hojokin-daiko-hiyo-souba/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/it-hojokin-daiko-hiyo-souba/thumbnail.webp",
-          "title": "IT導入補助金の申請代行 費用相場【2026年】着手金・成功報酬の内訳と選び方",
-          "alt": "IT導入補助金の申請代行 費用相場【2026年】着手金・成功報酬の内訳と選び方のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/it-hojokin-daiko-hiyo-souba/it-hojokin-daiko-hiyo-souba-section-1.webp",
-          "title": "IT導入補助金の申請代行にかかる費用相場【2026年版】",
-          "alt": "申請代行の料金体系（成功報酬型・着手金＋成功報酬型・定額型）の比較図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/it-hojokin-daiko-hiyo-souba/it-hojokin-daiko-hiyo-souba-section-2.webp",
-          "title": "申請代行に頼むべきか？自力申請との比較",
-          "alt": "自力申請と申請代行の作業工数・経営者の負担の比較図"
-        }
-      ]
-    },
-    {
       "slug": "it-hojokin-saitakuritsu-up",
       "loc": "https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu-up/",
       "images": [
@@ -91,32 +49,6 @@
           "loc": "https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-2.webp",
           "title": "審査で重視されるポイントを一覧で確認 {#審査ポイント}",
           "alt": "審査4項目のチェックポイント一覧図"
-        }
-      ]
-    },
-    {
-      "slug": "ai-hojokin-homepage-taisho-2026",
-      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho-2026/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/thumbnail.webp",
-          "title": "AI導入補助金2026 ホームページ制作は対象?対象になる条件を解説",
-          "alt": "AI導入補助金2026 ホームページ制作は対象?対象になる条件を解説のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/ai-hojokin-homepage-taisho-2026-section-1.webp",
-          "title": "目次",
-          "alt": "ホームページ制作が補助金の対象になる場合とならない場合の判断フローの概念図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/ai-hojokin-homepage-taisho-2026-section-2.webp",
-          "title": "目次",
-          "alt": "申請→交付決定→発注→導入→実績報告の手続きの時系列フロー図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/ai-hojokin-homepage-taisho-2026-section-3.webp",
-          "title": "目次",
-          "alt": "対象かどうかを見た目でなく業務機能で判断する3ステップの概念図"
         }
       ]
     },
@@ -143,194 +75,6 @@
           "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho/ai-hojokin-homepage-taisho-section-3.webp",
           "title": "対象かどうか迷ったときの進め方と申請の流れ",
           "alt": "業務機能の言語化から支援事業者確認・無料相談までの進め方の手順図"
-        }
-      ]
-    },
-    {
-      "slug": "aio-consulting-toha-2026",
-      "loc": "https://lp.7senses.co.jp/blog/aio-consulting-toha-2026/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-consulting-toha-2026/thumbnail.webp",
-          "title": "AIOコンサルティングとは?2026年最新の意味・費用・SEOとの違い",
-          "alt": "AIOコンサルティングとは?2026年最新の意味・費用・SEOとの違いのアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-consulting-toha-2026/aio-consulting-toha-2026-section-1.webp",
-          "title": "AIOコンサルティングとは?意味と基礎知識",
-          "alt": "AIO・SEO・MEOの対象とゴールを対比した概念図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-consulting-toha-2026/aio-consulting-toha-2026-section-2.webp",
-          "title": "サービス内容・費用の考え方",
-          "alt": "AIO施策の一覧と自社対応の難易度を示した比較図"
-        }
-      ]
-    },
-    {
-      "slug": "aio-site-shindan-muryou",
-      "loc": "https://lp.7senses.co.jp/blog/aio-site-shindan-muryou/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/thumbnail.webp",
-          "title": "AIOサイト診断を無料で実施|AI検索に強いか2026年最新チェック",
-          "alt": "AIOサイト診断を無料で実施|AI検索に強いか2026年最新チェックのアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/aio-site-shindan-muryou-section-1.webp",
-          "title": "無料でできる診断の7項目",
-          "alt": "無料でできる診断の7項目の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/aio-site-shindan-muryou-section-2.webp",
-          "title": "自力対応と専門支援の使い分け",
-          "alt": "自力対応と専門支援の使い分けの解説イメージ"
-        }
-      ]
-    },
-    {
-      "slug": "aio-taisaku-company-osusume",
-      "loc": "https://lp.7senses.co.jp/blog/aio-taisaku-company-osusume/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-company-osusume/thumbnail.webp",
-          "title": "AIO対策 会社 おすすめ2026｜失敗しない選び方と比較の要点",
-          "alt": "AIO対策 会社 おすすめ2026｜失敗しない選び方と比較の要点のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-company-osusume/aio-taisaku-company-osusume-section-1.webp",
-          "title": "目次",
-          "alt": "従来SEOとAIO対策の目的・施策・指標の違いを示す比較概念図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-company-osusume/aio-taisaku-company-osusume-section-2.webp",
-          "title": "目次",
-          "alt": "月額顧問・スポット・成果連動の料金体系タイプ別特徴の比較図"
-        }
-      ]
-    },
-    {
-      "slug": "meo-taisaku-gyousha-erabikata",
-      "loc": "https://lp.7senses.co.jp/blog/meo-taisaku-gyousha-erabikata/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/thumbnail.webp",
-          "title": "MEO対策 業者の選び方2026|失敗しない7つの比較基準と相場",
-          "alt": "MEO対策 業者の選び方2026|失敗しない7つの比較基準と相場のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-1.webp",
-          "title": "MEO対策の業者選びで失敗する典型パターンとは?",
-          "alt": "MEO業者選びでよくある5つの失敗パターン(順位保証・口コミ操作・作って終わり・作業内容不透明・順位だけ報告)を並べた注意点チェックリストの概念図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-2.webp",
-          "title": "MEO対策の料金相場と契約形態の違いは?",
-          "alt": "MEO対策の3つの契約形態(月額固定型・成果報酬型・初期費用型)の特徴・向く企業・注意点を並べた料金比較図"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-3.webp",
-          "title": "MEOとあわせて検討したい集客施策(SEO/AIO/口コミ運用)",
-          "alt": "検索(SEO)→AI検索(AIO)→Googleマップ(MEO)→来店へとつながる集客施策の全体像を示した導線概念図"
-        }
-      ]
-    },
-    {
-      "slug": "aio-taisaku-osaka",
-      "loc": "https://lp.7senses.co.jp/blog/aio-taisaku-osaka/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/thumbnail.webp",
-          "title": "AIO対策とは?大阪の中小企業がAI検索で選ばれる方法【2026年版】",
-          "alt": "AIO対策とは?大阪の中小企業がAI検索で選ばれる方法【2026年版】のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-1.webp",
-          "title": "AIO対策とは?SEO・MEOとの違いを大阪の経営者向けに解説",
-          "alt": "AIO対策とは?SEO・MEOとの違いを大阪の経営者向けに解説の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-2.webp",
-          "title": "AIO対策の具体的な進め方(自社でできる7ステップ)",
-          "alt": "AIO対策の具体的な進め方(自社でできる7ステップ)の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-3.webp",
-          "title": "大阪でAIO対策を始めるための最初の一歩とよくある失敗",
-          "alt": "大阪でAIO対策を始めるための最初の一歩とよくある失敗の解説イメージ"
-        }
-      ]
-    },
-    {
-      "slug": "aio-marketing-toha-2026",
-      "loc": "https://lp.7senses.co.jp/blog/aio-marketing-toha-2026/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/thumbnail.webp",
-          "title": "AIOとは?2026年版マーケティング完全ガイド|AI検索で選ばれる会社",
-          "alt": "AIOとは?2026年版マーケティング完全ガイド|AI検索で選ばれる会社のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-1.webp",
-          "title": "なぜ今マーケティングでAIOが重要なのか(中小企業の視点)",
-          "alt": "なぜ今マーケティングでAIOが重要なのか(中小企業の視点)の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-2.webp",
-          "title": "AIOにかかる費用と外注の選び方|補助金の活用も",
-          "alt": "AIOにかかる費用と外注の選び方|補助金の活用もの解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-3.webp",
-          "title": "AI検索で選ばれる会社づくりを、大阪から",
-          "alt": "AI検索で選ばれる会社づくりを、大阪からの解説イメージ"
-        }
-      ]
-    },
-    {
-      "slug": "aio-site-shindan-muryo",
-      "loc": "https://lp.7senses.co.jp/blog/aio-site-shindan-muryo/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryo/thumbnail.webp",
-          "title": "【2026年最新】AIOサイト診断を無料で行う方法｜AI検索で選ばれる会社",
-          "alt": "【2026年最新】AIOサイト診断を無料で行う方法｜AI検索で選ばれる会社のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryo/aio-site-shindan-muryo-section-1.webp",
-          "title": "無料診断でチェックすべき5項目と、結果の読み解き方",
-          "alt": "無料診断でチェックすべき5項目と、結果の読み解き方の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryo/aio-site-shindan-muryo-section-2.webp",
-          "title": "よくある質問(FAQ)",
-          "alt": "よくある質問(FAQ)の解説イメージ"
-        }
-      ]
-    },
-    {
-      "slug": "chatgpt-kensaku-joui-hyoji-houhou",
-      "loc": "https://lp.7senses.co.jp/blog/chatgpt-kensaku-joui-hyoji-houhou/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/thumbnail.webp",
-          "title": "ChatGPT検索で上位表示する方法【2026年版】中小企業の実践5手順",
-          "alt": "ChatGPT検索で上位表示する方法【2026年版】中小企業の実践5手順のアイキャッチ画像"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-1.webp",
-          "title": "ChatGPTに引用されるサイトの共通点とは？",
-          "alt": "ChatGPTに引用されるサイトの共通点とは？の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-2.webp",
-          "title": "自力でやる注意点と、外注・専門家に頼む判断基準",
-          "alt": "自力でやる注意点と、外注・専門家に頼む判断基準の解説イメージ"
-        },
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-3.webp",
-          "title": "よくある質問（FAQ）",
-          "alt": "よくある質問（FAQ）の解説イメージ"
         }
       ]
     },
@@ -383,28 +127,6 @@
           "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-3.webp",
           "title": "よくある質問(FAQ)",
           "alt": "よくある質問(FAQ)の解説イメージ"
-        }
-      ]
-    },
-    {
-      "slug": "aio-taisaku-kaisha-osusume-2026",
-      "loc": "https://lp.7senses.co.jp/blog/aio-taisaku-kaisha-osusume-2026/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/aio-taisaku-kaisha-osusume-2026/thumbnail.webp",
-          "title": "AIO対策会社おすすめ2026|失敗しない選び方と費用相場",
-          "alt": "AIO対策会社おすすめ2026|失敗しない選び方と費用相場のアイキャッチ画像"
-        }
-      ]
-    },
-    {
-      "slug": "google-business-profile-joui-hyoji-kotsu",
-      "loc": "https://lp.7senses.co.jp/blog/google-business-profile-joui-hyoji-kotsu/",
-      "images": [
-        {
-          "loc": "https://lp.7senses.co.jp/images/blog/google-business-profile-joui-hyoji-kotsu/thumbnail.webp",
-          "title": "Googleビジネスプロフィール上位表示のコツ2026|MEOで集客を増やす7つの基本",
-          "alt": "Googleビジネスプロフィール上位表示のコツ2026|MEOで集客を増やす7つの基本のアイキャッチ画像"
         }
       ]
     }

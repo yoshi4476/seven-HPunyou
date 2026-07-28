@@ -11,7 +11,7 @@ DIST = ROOT / "dist"
 
 # 公開するもの(これ以外はデプロイされない)
 PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images"]
-PUBLIC_FILES = ["index.html", "404.html", "_headers", "robots.txt", "llms.txt", "sitemap.xml",
+PUBLIC_FILES = ["index.html", "404.html", "_headers", "_redirects", "robots.txt", "llms.txt", "sitemap.xml",
                 "favicon.png", "logo.png", "ogp.png"]
 # 公開ディレクトリ内でも除外するもの
 # ※特典PDF2冊はZoom無料相談の参加特典のため公開配信しない(スタッフがZoom内で手渡し)

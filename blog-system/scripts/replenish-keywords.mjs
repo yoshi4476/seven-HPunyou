@@ -60,11 +60,12 @@ ${CLIENT.companyName} (${CLIENT.siteDescription || ""}) の
 - 補助金の呼称は「AI導入補助金」を使う (「IT導入補助金」「IT補助金」はキーワードに使わない)
 - 下の「既存リスト」と同じ・または検索意図が実質同じキーワードは禁止 (言い換えの重複も禁止)
 - 各キーワードは2〜4語のロングテール (例: "IT導入補助金 飲食店 事例")
-- category は hojo / aio / meo / dev のいずれか。補助金系を5割、残りを他カテゴリに配分
+- category は必ず "hojo" (このブログは補助金カテゴリ専門。AIO・MEO・システム開発のキーワードは出さない)
+- 補助金×業種・補助金×地域・補助金×用途 (例: "AI導入補助金 飲食店"、"AI導入補助金 大阪 申請代行") など補助金軸で切り口を広げる
 - priority は S (商談直結) / A (比較検討) / B (情報収集) で付ける
 
 # 出力形式
-[{"keyword": "...", "priority": "S", "category": "hojo"}, ...]
+[{"keyword": "...", "priority": "S", "category": "hojo"}, ...] (category はすべて "hojo")
 
 # 既存リスト (これらと検索意図が重複するものは出さない)
 ${existing.map((t) => `- ${t}`).join("\n")}`;
@@ -85,7 +86,8 @@ ${existing.map((t) => `- ${t}`).join("\n")}`;
       id: String(nextId++),
       keyword: it.keyword,
       priority: ["S", "A", "B"].includes(it.priority) ? it.priority : "B",
-      category: ["hojo", "aio", "meo", "dev"].includes(it.category) ? it.category : "hojo",
+      category: "hojo", // ブログは補助金カテゴリ専門
+
       status: "pending",
       addedBy: "auto-replenish",
       addedAt: new Date().toISOString().slice(0, 10),

@@ -52,46 +52,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/category/aio/</loc>
-    <lastmod>2026-07-27</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/category/meo/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/category/dev/</loc>
-    <lastmod>2026-07-16</lastmod>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-site-shindan-muryo/</loc>
-    <lastmod>2026-07-27</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-taisaku-osaka/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/meo-taisaku-gyousha-erabikata/</loc>
-    <lastmod>2026-07-26</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-consulting-toha-2026/</loc>
-    <lastmod>2026-07-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/chatgpt-kensaku-joui-hyoji-houhou/</loc>
-    <lastmod>2026-07-25</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho/</loc>
     <lastmod>2026-07-24</lastmod>
     <priority>0.7</priority>
@@ -103,11 +63,6 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-osaka-chusho/</loc>
-    <lastmod>2026-07-24</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-marketing-toha-2026/</loc>
     <lastmod>2026-07-24</lastmod>
     <priority>0.7</priority>
   </url>
@@ -137,32 +92,12 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-taisaku-guide/</loc>
-    <lastmod>2026-07-19</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/meo-osaka-guide/</loc>
-    <lastmod>2026-07-18</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/gbizid-shutoku/</loc>
     <lastmod>2026-07-17</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/excel-dakkyaku/</loc>
-    <lastmod>2026-07-16</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-daiko-hiyou/</loc>
-    <lastmod>2026-07-15</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/meo-hiyou-souba/</loc>
     <lastmod>2026-07-15</lastmod>
     <priority>0.7</priority>
   </url>
@@ -172,27 +107,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/llmo-taisaku/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/meo-jibunde/</loc>
-    <lastmod>2026-07-14</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/chatgpt-jisha-hyoji/</loc>
-    <lastmod>2026-07-13</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-taisho-tool/</loc>
-    <lastmod>2026-07-13</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/meo-gyousha-erabikata/</loc>
     <lastmod>2026-07-13</lastmod>
     <priority>0.7</priority>
   </url>
@@ -202,28 +117,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/ai-overview-taisaku/</loc>
-    <lastmod>2026-07-12</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/gyomu-system-hiyou/</loc>
-    <lastmod>2026-07-12</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-hiyou-souba/</loc>
-    <lastmod>2026-07-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/chatgpt-katsuyou-jirei/</loc>
-    <lastmod>2026-07-10</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

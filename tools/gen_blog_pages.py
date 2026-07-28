@@ -8,22 +8,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://lp.7senses.co.jp"
 
-CATS = {  # 表示名 → (slug, ハブページ, 説明)
+CATS = {  # 表示名 → (slug, ハブページ, 説明) ※ブログは補助金カテゴリのみ
     "補助金": ("hojokin", "/service/hojokin/", "IT導入補助金(AI導入補助金)の申請実務・採択のコツ"),
-    "AIO": ("aio", "/service/aio/", "AI検索(ChatGPT・Perplexity・AI Overview)に引用されるサイト作り"),
-    "MEO": ("meo", "/service/meo/", "Googleマップ・ビジネスプロフィールの集客最適化"),
-    "システム開発": ("dev", "/service/dev/", "業務システム開発・生成AIの業務活用"),
 }
 THUMB_DIM = {"calculator-t": (640, 427), "documents-t": (640, 427), "chip-t": (640, 427),
              "osaka-t": (640, 960), "paperwork-t": (640, 367), "analytics-t": (640, 456)}
-SLUG_THUMB = {  # 既存6本は従来どおり
+SLUG_THUMB = {  # 既存分は従来どおり
     "ai-hojokin-guide-2026": "calculator-t", "it-hojokin-saitakuritsu": "documents-t",
-    "aio-taisaku-guide": "chip-t", "meo-osaka-guide": "osaka-t",
-    "gbizid-shutoku": "paperwork-t", "excel-dakkyaku": "analytics-t",
+    "gbizid-shutoku": "paperwork-t",
 }
-CAT_THUMBS = {"補助金": ["documents-t", "calculator-t", "paperwork-t"],
-              "AIO": ["chip-t", "analytics-t"], "MEO": ["osaka-t"],
-              "システム開発": ["analytics-t", "chip-t"]}
+CAT_THUMBS = {"補助金": ["documents-t", "calculator-t", "paperwork-t"]}
 
 # ---- 記事メタ収集 ----
 arts = []
@@ -147,9 +141,6 @@ SIDEBAR = '''<aside class="side">
     <p class="t">CATEGORY</p>
     <ul>
       <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
-      <li><a href="/blog/category/aio/">AIO(AI検索対策)の記事一覧</a></li>
-      <li><a href="/blog/category/meo/">MEOの記事一覧</a></li>
-      <li><a href="/blog/category/dev/">システム開発の記事一覧</a></li>
     </ul>
   </div>
   <div class="sbox">
@@ -255,10 +246,10 @@ def page(url_path, title, desc, h1, lead, cards, current_cat, crumb_leaf, hub_ht
 # ---- ブログ一覧 ----
 all_cards = "\n".join(card(a) for a in arts)
 (ROOT / "blog" / "index.html").write_text(page(
-    "/blog/", "ブログ|補助金・AIO・MEO・システム開発の実務ノウハウ|セブンセンシズ株式会社",
-    f"AI導入補助金の申請実務、AIO、MEO、業務システム開発のノウハウを支援現場の一次情報で毎日発信。全{len(arts)}記事をカテゴリ別に読めます。",
-    "補助金・AI・集客の<br>実務ノウハウを毎日発信",
-    "AI導入補助金(IT導入補助金)の申請実務から、AIO(AI検索最適化)・MEO・業務システム開発まで。支援の現場で得た一次情報だけを書いています。",
+    "/blog/", "ブログ|AI導入補助金の実務ノウハウ|セブンセンシズ株式会社",
+    f"AI導入補助金(IT導入補助金)の申請実務・採択のコツを支援現場の一次情報で毎日発信。全{len(arts)}記事。",
+    "AI導入補助金の<br>実務ノウハウを毎日発信",
+    "AI導入補助金(IT導入補助金)の申請実務・必要書類・採択のコツまで。支援の現場で得た一次情報だけを書いています。",
     all_cards, "all", "ブログ"), encoding="utf-8")
 print("生成: blog/index.html")
 
@@ -310,10 +301,7 @@ if llms_path.is_file():
     lines += ["",
               "## 記事カテゴリ",
               "",
-              f"- [補助金の記事一覧]({DOMAIN}/blog/category/hojokin/)",
-              f"- [AIO(AI検索対策)の記事一覧]({DOMAIN}/blog/category/aio/)",
-              f"- [MEOの記事一覧]({DOMAIN}/blog/category/meo/)",
-              f"- [システム開発の記事一覧]({DOMAIN}/blog/category/dev/)", ""]
+              f"- [補助金の記事一覧]({DOMAIN}/blog/category/hojokin/)", ""]
     llms_path.write_text(llms.rstrip() + "\n" + "\n".join(lines), encoding="utf-8")
     print(f"生成: llms.txt (記事{len(arts)}本を反映)")
 

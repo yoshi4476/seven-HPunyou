@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-kojin-jigyounushi-2026/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/thumbnail.webp</image:loc>
-      <image:title>2026年最新版：AI導入補助金は個人事業主も対象？</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-1.webp</image:loc>
-      <image:title>個人事業主に求められる要件</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-kojin-jigyounushi-2026/ai-hojokin-kojin-jigyounushi-2026-section-2.webp</image:loc>
-      <image:title>個人事業主が申請でつまずきやすいポイント</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/</loc>
     <image:image>
       <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool-2026/thumbnail.webp</image:loc>
@@ -39,21 +24,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/it-hojokin-daiko-hiyo-souba/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-daiko-hiyo-souba/thumbnail.webp</image:loc>
-      <image:title>IT導入補助金の申請代行 費用相場【2026年】着手金・成功報酬の内訳と選び方</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-daiko-hiyo-souba/it-hojokin-daiko-hiyo-souba-section-1.webp</image:loc>
-      <image:title>IT導入補助金の申請代行にかかる費用相場【2026年版】</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-daiko-hiyo-souba/it-hojokin-daiko-hiyo-souba-section-2.webp</image:loc>
-      <image:title>申請代行に頼むべきか？自力申請との比較</image:title>
-    </image:image>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu-up/</loc>
     <image:image>
       <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/thumbnail.webp</image:loc>
@@ -66,25 +36,6 @@
     <image:image>
       <image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-saitakuritsu-up/it-hojokin-saitakuritsu-up-section-2.webp</image:loc>
       <image:title>審査で重視されるポイントを一覧で確認 {#審査ポイント}</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho-2026/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/thumbnail.webp</image:loc>
-      <image:title>AI導入補助金2026 ホームページ制作は対象?対象になる条件を解説</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/ai-hojokin-homepage-taisho-2026-section-1.webp</image:loc>
-      <image:title>目次</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/ai-hojokin-homepage-taisho-2026-section-2.webp</image:loc>
-      <image:title>目次</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho-2026/ai-hojokin-homepage-taisho-2026-section-3.webp</image:loc>
-      <image:title>目次</image:title>
     </image:image>
   </url>
   <url>
@@ -104,142 +55,6 @@
     <image:image>
       <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-homepage-taisho/ai-hojokin-homepage-taisho-section-3.webp</image:loc>
       <image:title>対象かどうか迷ったときの進め方と申請の流れ</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-consulting-toha-2026/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-consulting-toha-2026/thumbnail.webp</image:loc>
-      <image:title>AIOコンサルティングとは?2026年最新の意味・費用・SEOとの違い</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-consulting-toha-2026/aio-consulting-toha-2026-section-1.webp</image:loc>
-      <image:title>AIOコンサルティングとは?意味と基礎知識</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-consulting-toha-2026/aio-consulting-toha-2026-section-2.webp</image:loc>
-      <image:title>サービス内容・費用の考え方</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-site-shindan-muryou/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/thumbnail.webp</image:loc>
-      <image:title>AIOサイト診断を無料で実施|AI検索に強いか2026年最新チェック</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/aio-site-shindan-muryou-section-1.webp</image:loc>
-      <image:title>無料でできる診断の7項目</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryou/aio-site-shindan-muryou-section-2.webp</image:loc>
-      <image:title>自力対応と専門支援の使い分け</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-taisaku-company-osusume/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-company-osusume/thumbnail.webp</image:loc>
-      <image:title>AIO対策 会社 おすすめ2026｜失敗しない選び方と比較の要点</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-company-osusume/aio-taisaku-company-osusume-section-1.webp</image:loc>
-      <image:title>目次</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-company-osusume/aio-taisaku-company-osusume-section-2.webp</image:loc>
-      <image:title>目次</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/meo-taisaku-gyousha-erabikata/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/thumbnail.webp</image:loc>
-      <image:title>MEO対策 業者の選び方2026|失敗しない7つの比較基準と相場</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-1.webp</image:loc>
-      <image:title>MEO対策の業者選びで失敗する典型パターンとは?</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-2.webp</image:loc>
-      <image:title>MEO対策の料金相場と契約形態の違いは?</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/meo-taisaku-gyousha-erabikata/meo-taisaku-gyousha-erabikata-section-3.webp</image:loc>
-      <image:title>MEOとあわせて検討したい集客施策(SEO/AIO/口コミ運用)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-taisaku-osaka/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/thumbnail.webp</image:loc>
-      <image:title>AIO対策とは?大阪の中小企業がAI検索で選ばれる方法【2026年版】</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-1.webp</image:loc>
-      <image:title>AIO対策とは?SEO・MEOとの違いを大阪の経営者向けに解説</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-2.webp</image:loc>
-      <image:title>AIO対策の具体的な進め方(自社でできる7ステップ)</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-osaka/aio-taisaku-osaka-section-3.webp</image:loc>
-      <image:title>大阪でAIO対策を始めるための最初の一歩とよくある失敗</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-marketing-toha-2026/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/thumbnail.webp</image:loc>
-      <image:title>AIOとは?2026年版マーケティング完全ガイド|AI検索で選ばれる会社</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-1.webp</image:loc>
-      <image:title>なぜ今マーケティングでAIOが重要なのか(中小企業の視点)</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-2.webp</image:loc>
-      <image:title>AIOにかかる費用と外注の選び方|補助金の活用も</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-marketing-toha-2026/aio-marketing-toha-2026-section-3.webp</image:loc>
-      <image:title>AI検索で選ばれる会社づくりを、大阪から</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-site-shindan-muryo/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryo/thumbnail.webp</image:loc>
-      <image:title>【2026年最新】AIOサイト診断を無料で行う方法｜AI検索で選ばれる会社</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryo/aio-site-shindan-muryo-section-1.webp</image:loc>
-      <image:title>無料診断でチェックすべき5項目と、結果の読み解き方</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-site-shindan-muryo/aio-site-shindan-muryo-section-2.webp</image:loc>
-      <image:title>よくある質問(FAQ)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/chatgpt-kensaku-joui-hyoji-houhou/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/thumbnail.webp</image:loc>
-      <image:title>ChatGPT検索で上位表示する方法【2026年版】中小企業の実践5手順</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-1.webp</image:loc>
-      <image:title>ChatGPTに引用されるサイトの共通点とは？</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-2.webp</image:loc>
-      <image:title>自力でやる注意点と、外注・専門家に頼む判断基準</image:title>
-    </image:image>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/chatgpt-kensaku-joui-hyoji-houhou/chatgpt-kensaku-joui-hyoji-houhou-section-3.webp</image:loc>
-      <image:title>よくある質問（FAQ）</image:title>
     </image:image>
   </url>
   <url>
@@ -278,20 +93,6 @@
     <image:image>
       <image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-osaka-chusho/ai-hojokin-osaka-chusho-section-3.webp</image:loc>
       <image:title>よくある質問(FAQ)</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/aio-taisaku-kaisha-osusume-2026/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/aio-taisaku-kaisha-osusume-2026/thumbnail.webp</image:loc>
-      <image:title>AIO対策会社おすすめ2026|失敗しない選び方と費用相場</image:title>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/google-business-profile-joui-hyoji-kotsu/</loc>
-    <image:image>
-      <image:loc>https://lp.7senses.co.jp/images/blog/google-business-profile-joui-hyoji-kotsu/thumbnail.webp</image:loc>
-      <image:title>Googleビジネスプロフィール上位表示のコツ2026|MEOで集客を増やす7つの基本</image:title>
     </image:image>
   </url>
 </urlset>

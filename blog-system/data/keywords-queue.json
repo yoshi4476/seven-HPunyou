@@ -304,14 +304,6 @@
       "type": "main"
     },
     {
-      "id": 36,
-      "keyword": "GEO 生成エンジン最適化 とは",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
       "id": 37,
       "keyword": "ChatGPT 検索 上位表示 方法",
       "priority": "S",
@@ -330,35 +322,11 @@
       "type": "main"
     },
     {
-      "id": 39,
-      "keyword": "Perplexity 引用 され る 方法",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
       "id": 40,
       "keyword": "Google AI Overview 対策",
       "priority": "S",
       "category": "aio",
       "status": "duplicate-skip",
-      "type": "main"
-    },
-    {
-      "id": 41,
-      "keyword": "AI検索 SEO 違い",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 42,
-      "keyword": "llms.txt とは 書き方",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
       "type": "main"
     },
     {
@@ -370,14 +338,6 @@
       "type": "main"
     },
     {
-      "id": 44,
-      "keyword": "AIO SEO どっち",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
       "id": 45,
       "keyword": "AIOサイト診断 無料",
       "priority": "S",
@@ -386,46 +346,6 @@
       "type": "news",
       "generatedAt": "2026-07-27T11:04:21.303Z",
       "slug": "aio-site-shindan-muryo"
-    },
-    {
-      "id": 46,
-      "keyword": "AI検索 集客 事例",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 47,
-      "keyword": "構造化データ FAQ 書き方",
-      "priority": "B",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 48,
-      "keyword": "E-E-A-T 対策 方法",
-      "priority": "B",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 49,
-      "keyword": "AI時代 SEO オワコン",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 50,
-      "keyword": "ゼロクリック検索 対策",
-      "priority": "B",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
     },
     {
       "id": 51,
@@ -446,30 +366,6 @@
       "type": "main",
       "generatedAt": "2026-07-26T22:52:24.711Z",
       "slug": "aio-taisaku-osaka"
-    },
-    {
-      "id": 53,
-      "keyword": "生成AI 検索 シェア 推移",
-      "priority": "B",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 54,
-      "keyword": "AI Overview 表示 されない",
-      "priority": "B",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 55,
-      "keyword": "ブランド名 ChatGPT 出てこない",
-      "priority": "A",
-      "category": "aio",
-      "status": "pending",
-      "type": "main"
     },
     {
       "id": 56,
@@ -506,14 +402,6 @@
       "slug": "meo-taisaku-gyousha-erabikata"
     },
     {
-      "id": 60,
-      "keyword": "MEO対策 効果 期間",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
       "id": 61,
       "keyword": "Googleビジネスプロフィール 上位表示 コツ",
       "priority": "S",
@@ -524,166 +412,6 @@
       "slug": "google-business-profile-joui-hyoji-kotsu"
     },
     {
-      "id": 62,
-      "keyword": "Googleマップ 順位 上げる",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 63,
-      "keyword": "MEO 口コミ 増やし方",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 64,
-      "keyword": "MEO 口コミ 返信 例文",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 65,
-      "keyword": "MEO対策 飲食店 事例",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 66,
-      "keyword": "MEO対策 美容室 事例",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 67,
-      "keyword": "MEO対策 歯科 クリニック",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 68,
-      "keyword": "MEO対策 整骨院",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 69,
-      "keyword": "MEO対策 工務店",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 70,
-      "keyword": "MEO対策 失敗 原因",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 71,
-      "keyword": "MEO業者 悪質 見分け方",
-      "priority": "S",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 72,
-      "keyword": "MEO SEO 違い",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 73,
-      "keyword": "MEO ローカルSEO とは",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 74,
-      "keyword": "Googleビジネスプロフィール 停止 解除",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 75,
-      "keyword": "MEO対策 東大阪",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 76,
-      "keyword": "MEO対策 堺",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 77,
-      "keyword": "MEO対策 京都",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 78,
-      "keyword": "MEO対策 神戸",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 79,
-      "keyword": "MEO インバウンド 対策",
-      "priority": "B",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 80,
-      "keyword": "MEO AI 活用",
-      "priority": "A",
-      "category": "meo",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 81,
-      "keyword": "システム開発 補助金 使える",
-      "priority": "S",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
       "id": 82,
       "keyword": "業務システム 開発 費用 相場",
       "priority": "S",
@@ -692,147 +420,11 @@
       "type": "main"
     },
     {
-      "id": 83,
-      "keyword": "受発注システム 開発 中小企業",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 84,
-      "keyword": "請求書 システム クラウド 比較",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
       "id": 85,
       "keyword": "エクセル 脱却 業務システム",
       "priority": "S",
       "category": "dev",
       "status": "duplicate-skip",
-      "type": "main"
-    },
-    {
-      "id": 86,
-      "keyword": "業務効率化 システム 事例",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 87,
-      "keyword": "システム開発 会社 大阪 中小",
-      "priority": "S",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 88,
-      "keyword": "システム開発 失敗 原因",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 89,
-      "keyword": "小規模 システム開発 依頼",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 90,
-      "keyword": "LP制作 補助金",
-      "priority": "S",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 91,
-      "keyword": "ホームページ制作 大阪 補助金",
-      "priority": "S",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 92,
-      "keyword": "LP制作 費用 相場",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 93,
-      "keyword": "ホームページ リニューアル 補助金",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 94,
-      "keyword": "AI チャットボット 開発 費用",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 95,
-      "keyword": "ChatGPT 業務活用 事例 中小企業",
-      "priority": "S",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 96,
-      "keyword": "AI 業務効率化 ツール おすすめ",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 97,
-      "keyword": "DX 中小企業 何から",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 98,
-      "keyword": "社内 AI導入 進め方",
-      "priority": "S",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 99,
-      "keyword": "生成AI 導入 コンサル 費用",
-      "priority": "A",
-      "category": "dev",
-      "status": "pending",
-      "type": "main"
-    },
-    {
-      "id": 100,
-      "keyword": "AI導入 支援 会社 大阪",
-      "priority": "S",
-      "category": "dev",
-      "status": "pending",
       "type": "main"
     }
   ]

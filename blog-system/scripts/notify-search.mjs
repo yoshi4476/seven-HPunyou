@@ -94,6 +94,15 @@ async function main() {
     // 変更がなければ lastmod は据え置き (前回の値をそのまま出力)
   }
 
+  // --- 削除済み記事を状態から除去 (blog/<slug>/ が存在しないものは sitemap に載せない) ---
+  const BLOG_DIR = join(ROOT, "..", "blog");
+  for (const slug of Object.keys(state.pages)) {
+    if (!existsSync(join(BLOG_DIR, slug, "index.html"))) {
+      delete state.pages[slug];
+      console.log(`[notify-search] 削除済み記事を除去: ${slug}`);
+    }
+  }
+
   // --- sitemap.xml 生成 ---
   const staticPages = [
     { url: `${SITE_URL}/`, lastmod: state.lpLastmod ?? today }, // LP本体。LP更新時に state.lpLastmod を手動更新
@@ -117,6 +126,11 @@ async function main() {
   // --- 画像sitemap 生成 (embed-images.mjs の出力データを利用) ---
   if (existsSync(IMAGE_DATA_PATH)) {
     const imageData = JSON.parse(readFileSync(IMAGE_DATA_PATH, "utf8"));
+    imageData.pages = (imageData.pages ?? []).filter((p) => {
+      const m = p.loc.match(/\/blog\/([a-z0-9-]+)\/$/);
+      return !m || existsSync(join(BLOG_DIR, m[1], "index.html"));
+    });
+    writeFileSync(IMAGE_DATA_PATH, JSON.stringify(imageData, null, 2), "utf8");
     const imgEntries = (imageData.pages ?? [])
       .map((p) => {
         const imgs = p.images
