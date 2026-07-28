@@ -36,10 +36,16 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [【2026年最新】AIOサイト診断を無料で行う方法｜AI検索で選ばれる会社](https://lp.7senses.co.jp/blog/aio-site-shindan-muryo/): AIOサイト診断を無料で行う方法を2026年版で解説。ChatGPTやAI Overviewに引用される会社の見つけ方、無料で使えるツール、
+- [AIO対策とは?大阪の中小企業がAI検索で選ばれる方法【2026年版】](https://lp.7senses.co.jp/blog/aio-taisaku-osaka/): AIO対策とはAI検索に引用される情報源になること。大阪の中小企業がChatGPT・AI Overviewで選ばれる7ステップ、外注先の選び
 - [MEO対策 業者の選び方2026](https://lp.7senses.co.jp/blog/meo-taisaku-gyousha-erabikata/): MEO対策の業者選びで失敗しないための7つの比較基準と料金相場、契約前チェックリストを2026年最新で解説。順位保証の罠や悪徳業者の見分け方
 - [AIOコンサルティングとは?2026年最新の意味・費用・SEOとの違い](https://lp.7senses.co.jp/blog/aio-consulting-toha-2026/): AIOコンサルティングとは何かを2026年最新情報で解説。AI検索に引用される仕組み、SEO・MEOとの違い、サービス内容と費用の考え方、失
+- [ChatGPT検索で上位表示する方法【2026年版】中小企業の実践5手順](https://lp.7senses.co.jp/blog/chatgpt-kensaku-joui-hyoji-houhou/): ChatGPT検索で上位表示（引用）される方法を中小企業向けに解説。従来SEOとの違い、引用される10条件、今日から始める5ステップ、自力と
 - [2026年 AI導入補助金でホームページ制作は対象?対象範囲と注意点を解説](https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho/): AI導入補助金でホームページ制作は対象になるのか。単独のサイト制作は対象外になりやすく、業務効率化機能の有無が判断軸です。対象範囲・対象外費
 - [AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】](https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/): AI導入補助金とは、IT導入補助金の2026年(令和8年)における通称です。両者は同じ制度で、補助上限350万円・補助率1/2〜3/4。名前
+- [【2026年版】中小企業のAI導入補助金｜大阪の申請サポートと採択の進め方](https://lp.7senses.co.jp/blog/ai-hojokin-osaka-chusho/): 大阪の中小企業向けにAI導入補助金の対象・上限350万円・着金までの流れをやさしく解説。申請サポートの選び方と、補助金後の集客・AI検索対策
+- [AIOとは?2026年版マーケティング完全ガイド](https://lp.7senses.co.jp/blog/aio-marketing-toha-2026/): AIOとはAI検索に自社を引用・推薦させるマーケティング施策です。SEO・MEOとの違い、中小企業が今日から始める5ステップ、費用と補助金活
+- [AI導入補助金2026はいくらもらえる?上限350万円と対象を解説](https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru-2026/): AI導入補助金はいくらもらえるのか。上限額350万円(目安/公式の最新公募要領で要確認)と補助率、自己負担の計算、対象経費、後払いの仕組み、
 - [AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/): AI導入補助金の対象ツールを解説する記事。対象となる経費区分やツール例、選定時の注意点、申請の流れを中小企業経営者向けに整理した。
 - [IT導入補助金の採択率を上げる方法｜見直すべき3つの視点](https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu-up/): IT導入補助金の採択率を上げる方法を解説。審査で見られる書類のポイントと、申請前に見直すべき3つの視点を中小企業経営者向けに整理した。
 - [AI導入補助金とは?令和8年度の完全ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-guide-2026/): AI導入補助金とは、AIツール導入費用の一部を国が補助する制度の総称です。令和8年度の補助上限350万円・対象条件・準備8ステップ・必要書類
