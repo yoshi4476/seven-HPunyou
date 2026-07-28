@@ -34,6 +34,8 @@ const CONFIG = {
   COMPANY_NAME: 'セブンセンシズ株式会社',
   COMPANY_ADDRESS: '〒537-0013 大阪市東成区神路1-7-4 コンフォートビル901・902',
   COMPANY_TEL: '06-4305-7547',
+  COMPANY_EMAIL: 'info.ai@7senses.co.jp',       // お問い合わせ窓口(通知先の既定・返信先)
+  ADMIN_EMAIL_DEFAULT: 'info.ai@7senses.co.jp', // ADMIN_EMAILプロパティ未設定時の通知先
   MAIL_SENDER_NAME: 'セブンセンシズ株式会社',
   SLA_TEXT: '3営業日以内'
 };
@@ -334,8 +336,7 @@ function notifySlack_(lead, isDuplicate) {
 }
 
 function notifyAdminEmail_(lead, isDuplicate) {
-  const admin = getProp_('ADMIN_EMAIL');
-  if (!admin) throw new Error('ADMIN_EMAIL 未設定');
+  const admin = getProp_('ADMIN_EMAIL') || CONFIG.ADMIN_EMAIL_DEFAULT;
   const subject = '【LPリード/' + lead.temp + '】' + lead.typeLabel + ' - '
     + (lead.name || lead.email) + (isDuplicate ? '(再送信)' : '');
   const body = 'LPから新しい送信がありました。\n\n'
@@ -368,7 +369,8 @@ function sendAutoReply_(lead) {
     to: lead.email,
     subject: subject,
     body: body + mailFooter_(),
-    name: CONFIG.MAIL_SENDER_NAME
+    name: CONFIG.MAIL_SENDER_NAME,
+    replyTo: CONFIG.COMPANY_EMAIL
   });
 }
 
@@ -500,6 +502,7 @@ function mailFooter_() {
     + CONFIG.COMPANY_NAME + '\n'
     + CONFIG.COMPANY_ADDRESS + '\n'
     + 'TEL: ' + CONFIG.COMPANY_TEL + '\n'
+    + 'Mail: ' + CONFIG.COMPANY_EMAIL + '\n'
     + '━━━━━━━━━━━━━━━━━━━━━━━━\n'
     + '本メールは、当社Webサイトのフォームよりご送信いただいた方へ\n'
     + '自動でお送りしています。\n'
@@ -532,7 +535,7 @@ function handleUnsubscribe_(email) {
   sendUnsubscribeConfirm_(email);
   // 管理者への軽い通知(失敗しても停止処理自体は完了扱い)
   try {
-    const admin = getProp_('ADMIN_EMAIL');
+    const admin = getProp_('ADMIN_EMAIL') || CONFIG.ADMIN_EMAIL_DEFAULT;
     if (admin) MailApp.sendEmail({ to: admin, subject: '【配信停止】' + email, body: '配信停止の登録がありました: ' + email, name: CONFIG.MAIL_SENDER_NAME });
   } catch (err) {}
 }
@@ -669,7 +672,7 @@ function sendStepMail_(email, name, step) {
       + '相談したからといって、お申し込みいただく必要はありません。\n\n'
       + '▼ 無料相談を予約する(営業電話はいたしません)\n' + calendly + '\n';
   }
-  MailApp.sendEmail({ to: email, subject: subject, body: body + mailFooter_(), name: CONFIG.MAIL_SENDER_NAME });
+  MailApp.sendEmail({ to: email, subject: subject, body: body + mailFooter_(), name: CONFIG.MAIL_SENDER_NAME, replyTo: CONFIG.COMPANY_EMAIL });
 }
 
 // =========================================================================
