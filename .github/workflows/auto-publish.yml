@@ -193,11 +193,24 @@ jobs:
             echo "コミット対象の変更なし"
           else
             git commit -m "chore(blog): 自動生成コンテンツの保存 ($(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST'))"
-            # 実行中に別のpushがあっても成果を失わないよう、rebaseして最大3回まで再試行
+            # 実行中に別のpushがあっても成果を失わないよう、最大3回まで再試行。
+            # rebaseがコンフリクトした場合は自動解決する:
+            #   - リモートで削除されたファイル → 削除を維持 (編集方針の転換を上書きしない)
+            #   - 双方で変更されたファイル (キュー・sitemap等) → リモート版を採用 (共有状態の破壊防止)
+            #   - この実行で新規生成したファイル → コンフリクトにならず、そのまま保全される
             for i in 1 2 3; do
               git push && break
-              echo "push拒否 → rebaseして再試行 ($i/3)"
-              git pull --rebase origin master
+              echo "push拒否 → リモートと統合して再試行 ($i/3)"
+              if ! git pull --rebase -X ours origin master; then
+                git diff --name-only --diff-filter=U | while IFS= read -r f; do
+                  if git cat-file -e "origin/master:$f" 2>/dev/null; then
+                    git checkout --ours -- "$f" 2>/dev/null && git add -- "$f" || git rm -f --ignore-unmatch -- "$f"
+                  else
+                    git rm -f --ignore-unmatch -- "$f"
+                  fi
+                done
+                GIT_EDITOR=true git rebase --continue || git rebase --skip || git rebase --abort
+              fi
             done
           fi
 
