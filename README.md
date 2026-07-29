@@ -1,51 +1,60 @@
-# セブンセンシズ株式会社 AI導入補助金LP プロジェクト
+# セブンセンシズ株式会社 AI導入補助金LP
 
-> 一点突破キーワード:「AI導入補助金」/ 詳細は [戦略設計書.md](戦略設計書.md)
+> 公開サイト: https://lp.7senses.co.jp — AI導入補助金(IT導入補助金)の申請サポートを軸にしたリード獲得サイト。
+> フレームワーク非依存の静的HTMLと、記事を毎日自動生成・自動公開するパイプラインで構成しています。
 
 ## 構成
 
 | パス | 内容 |
 |---|---|
-| [index.html](index.html) | LP本体(16セクション・完結HTML1枚。適性診断8問+**Webサイト簡易診断(URL入力・100点満点)**・フォーム・JSON-LD 5種・計測イベント内蔵) |
-| [robots.txt](robots.txt) | AIクローラー(GPTBot/ClaudeBot/PerplexityBot/Google-Extended)許可 |
-| [llms.txt](llms.txt) | LLMO用サイト要約 |
-| [sitemap.xml](sitemap.xml) | lastmodは更新時のみ変更 |
-| [blog/](blog/) | ブログ一覧+記事6本(静的版。blog-system稼働後は自動生成へ移行)+[_template.html](blog/_template.html) |
-| [privacy/](privacy/) | プライバシーポリシー(フォーム運用の前提) |
-| [downloads/ai-hojokin-guide-2026.pdf](downloads/ai-hojokin-guide-2026.pdf) | ホワイトペーパー『AI導入補助金 完全ガイド 令和8年度版』(A4×8p。GASの WHITEPAPER_URL に設定) |
-| ogp.png / logo.png / favicon.png | OGP画像(1200×630)・ロゴ(512×512)・favicon |
-| [assets/img/](assets/img/) | 写真素材(Unsplash License=商用利用可・クレジット不要)。WebP変換済み・全て150KB以下。元jpgも同梱 |
-| [戦略設計書.md](戦略設計書.md) | プロンプト0成果物(キーワード選定・LT100本・ペルソナ・数値目標) |
-| [blog-system/](blog-system/) | 毎日ブログ自動更新システム(プロンプトB。GitHub Actions+品質採点ループ+安全ゲート) |
-| [automation/](automation/) | リード自動化(プロンプトC。GAS完成コード+ステップメール)+計測改善90日運用(プロンプトD) |
+| [index.html](index.html) | LP本体(完結HTML1枚。無料診断4種・フォーム・JSON-LD・計測イベント内蔵) |
+| [service/](service/) | サービス別ページ(補助金申請サポート/システム開発/AIO/MEO) |
+| [youkou/](youkou/) | AI導入補助金の要項・必要書類まとめ |
+| [about/](about/) | 会社案内・代表挨拶 |
+| [blog/](blog/) | ブログ一覧・記事(補助金カテゴリ専門)+[_template.html](blog/_template.html) |
+| [blog-system/](blog-system/) | ブログ自動生成システム(生成→品質採点ループ→安全ゲート→公開)。詳細は [blog-system/README.md](blog-system/README.md) |
+| [automation/](automation/) | リード受付の Google Apps Script + 運用ドキュメント |
+| [tools/](tools/) | 記事HTML変換・一覧生成・配布物生成・PDF出力のPythonスクリプト |
+| [client-config.json](client-config.json) | 会社情報・呼称ルール・実績表記の中央設定(自動生成系はすべてここを参照) |
+| [robots.txt](robots.txt) / [llms.txt](llms.txt) / [sitemap.xml](sitemap.xml) | AIクローラー許可・LLM向けサイト要約・サイトマップ |
+| [_redirects](_redirects) | 廃止ページの301(Cloudflare Pages) |
 
-## 🚀 デプロイ(公開済み: https://lp.7senses.co.jp)
+## デプロイ
 
-- ホスティング: Cloudflare Pages(プロジェクト名 `seven-hpunyou` / 直接アップロード方式)
-- **更新手順**: ①変更をコミット ②`python tools/make_dist.py`(内部資料を除外した dist/ を生成) ③`npx wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true`
-  (要 `CLOUDFLARE_API_TOKEN`(Pages:Edit権限)+`CLOUDFLARE_ACCOUNT_ID` 環境変数。トークンは使用後に失効可)
-- DNS: お名前.com(GMOレンタルサーバーのDNS)に CNAME `lp` → `seven-hpunyou.pages.dev` 登録済み。ネームサーバーは変更していない(既存サイト・メール無影響)
+Cloudflare Pages(プロジェクト `seven-hpunyou` / 直接アップロード方式)。
 
-## 公開前に必須の残作業
+```bash
+python tools/make_dist.py   # 内部資料を除外した dist/ を生成
+npx wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true
+```
 
-1. ~~ドメイン確定~~ ✅ **`lp.7senses.co.jp` で確定・全ファイル反映済み**(残り: GitHubへpush→Cloudflare Pages接続→DNSにCNAME追加)
-2. **「仮」コメント箇所の差し替え**(index.html内を `仮` で検索)— 代表者名・略歴・事例・お客様の声・価格・採択率98%等の算出根拠。**架空実績のままの公開は景表法リスク**
-3. **GAS デプロイ** — [automation/docs/リード対応自動化セットアップ.md](automation/docs/リード対応自動化セットアップ.md) の手順後、index.html の `GAS_ENDPOINT` にURLを設定(未設定でもLPは動作、送信はconsole出力のみ)。WHITEPAPER_URL には `/downloads/ai-hojokin-guide-2026.pdf` の絶対URLを設定
-4. **GA4 / Search Console** — index.html の G-XXXXXXXXXX を差し替えてコメント解除、GSC登録+sitemap送信
-5. **ブログ記事の事実確認** — blog/ 配下6本の制度記述・数値を最新の公募要領と突合(静的版。以降の新規記事は blog-system で自動生成)
-6. **ブログ自動化の稼働** — [blog-system/README.md](blog-system/README.md) 参照(リポジトリ作成・Secrets設定・Astro組込み)
+`CLOUDFLARE_API_TOKEN`(Pages:Edit)と `CLOUDFLARE_ACCOUNT_ID` を環境変数で渡します。
+DNSはお名前.comで CNAME `lp` → `seven-hpunyou.pages.dev`。
 
-## Webサイト簡易診断(URL入力)の仕組み
+## ブログ自動化
 
-- 採点エンジンは [automation/gas/form-endpoint.gs](automation/gas/form-endpoint.gs) の `runSiteAudit_()`(`GET ?action=audit&url=...`)。**GAS無料枠(UrlFetchApp 2万回/日)内で動作し追加費用ゼロ**
-- 15項目チェック → 100点満点+5軸(AIO対応30/SEO基礎25/構造化データ20/モバイル15/信頼性10)+S〜D判定+減点理由
-- リード動線: URL入力 → 裏で解析しつつ連絡先ゲート → 結果表示(温度=HOTでSlack/メール通知、控えを自動返信)
-- **簡易版の注記を入力画面・結果画面・自動返信メールの3箇所に明示**し、「順位・AI被引用の実測・競合比較は精密診断(無料相談)で」の誘導を組み込み済み
-- `GAS_ENDPOINT` 未設定時はモック結果(console.warnで警告)。**本番前に必ずGASをデプロイしてURLを設定すること**
+[.github/workflows/auto-publish.yml](.github/workflows/auto-publish.yml) が毎日実行します。
 
-## 検証済み
+| タイミング | 内容 |
+|---|---|
+| JST 7:00 | 本流記事2本を生成・公開 |
+| JST 17:00 | ニュース型記事1本 |
+| 日曜 JST 7:30 | 既存記事1本を最新化リライト |
 
-- Playwright実機テスト合格: H1唯一性/診断8問→リードゲート→レーダー表示/URL診断フロー/フォームバリデーション→送信→サンクス/モバイル375pxで横スクロールなし/コンソールエラーゼロ
-- 全10ページ(LP・ブログ7・privacy・unsubscribe)で内部リンク切れゼロ・JSON-LD構文正常・プレースホルダ残存ゼロを機械検証済み
-- bot対策動作: ハニーポット+3秒ルール+連投制限30秒
-- GASコード(リード受付+サイト診断+配信停止)構文チェック合格
+パイプラインは 構成生成 → 執筆 → 推敲 → **品質採点ループ(SEO・AIOの二軸で85点以上が公開条件)** → 図解生成 → 安全ゲート(景表法・出典・リンク実在性など12項目)→ HTML化 → デプロイ → 検索エンジン通知。
+不合格記事は同日中に自動修正して再審査します(2周目パイプライン)。
+
+生成時の実績表記・呼称は [client-config.json](client-config.json) で一元管理し、機械チェックで逸脱を検出します。
+
+## 未接続の外部サービス
+
+以下は設定待ちで、未設定でもサイト自体は動作します。
+
+- **Google Apps Script**: フォーム送信先。`GAS_ENDPOINT` 未設定の間はモック動作(送信内容はconsole出力のみ)
+- **GA4 / Search Console**: 計測タグと月次レポート([.github/workflows/monthly-report.yml](.github/workflows/monthly-report.yml))のデータ源
+
+## 検証
+
+- Playwright実機テスト: H1唯一性 / 診断フロー / フォームバリデーション / モバイル375pxで横スクロールなし / コンソールエラーゼロ
+- 全ページで内部リンク切れゼロ・JSON-LD構文正常を機械検証
+- bot対策: ハニーポット + 3秒ルール + 連投制限30秒

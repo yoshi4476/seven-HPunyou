@@ -10,3 +10,12 @@ blog-system/node_modules/
 dist/
 
 .wrangler/
+
+# 非公開の事業資料 (publicリポジトリのため commit 禁止)
+# 実体は D:\Projects\system-dev\clients\7senses\非公開資料\ に保管
+資料/
+戦略設計書.md
+downloads/chatgpt-starter-kit.pdf
+downloads/gbp-checksheet.pdf
+downloads/hojokin-checklist.pdf
+.filter-paths.txt
