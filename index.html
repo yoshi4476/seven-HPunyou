@@ -1227,7 +1227,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
    設定: フォーム/診断の送信先(GAS Webアプリ)。
    automation/gas/form-endpoint.gs をデプロイしたURLに差し替える。
 ============================================================ */
-const GAS_ENDPOINT = ""; // 例: "https://script.google.com/macros/s/XXXX/exec"
+const GAS_ENDPOINT = "https://script.google.com/macros/s/AKfycbw9RRmWMJnR6lc9n4OmqOGECx4ZHKjdOpfPHFU88-2tQKxkoejbPvCLjr9Edc0Na1nu2w/exec"; // 例: "https://script.google.com/macros/s/XXXX/exec"
 const REDUCED = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 /* ---------- 計測ヘルパー(GA4未設置でも動作) ---------- */
@@ -1494,7 +1494,7 @@ function fetchAudit(url){
     return new Promise(r=>setTimeout(()=>r(mockAudit(url)),1000));
   }
   return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url))
-    .then(r=>r.json()).catch(()=>({ok:false,error:"通信エラーが発生しました。時間をおいてお試しください"}));
+    .then(r=>r.json()).catch(()=>({ok:false,error:"ただいま自動診断を調整中です。お手数ですが、下のお問い合わせから「サイト診断希望」とお送りください(担当が精密診断してご返信します)"}));
 }
 
 function renderAuditStart(){

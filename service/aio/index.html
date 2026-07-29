@@ -568,7 +568,7 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 
 <script>
 /* 訴求LP装備: 埋め込み診断+フォーム(GAS_ENDPOINT はLP本体と同じURLを設定) */
-const GAS_ENDPOINT="";
+const GAS_ENDPOINT="https://script.google.com/macros/s/AKfycbw9RRmWMJnR6lc9n4OmqOGECx4ZHKjdOpfPHFU88-2tQKxkoejbPvCLjr9Edc0Na1nu2w/exec";
 const SVC_LABEL="AIOコンサルティング";
 const QUIZ=null;
 const TS=Date.now(); let lastSubmit=0;
@@ -663,7 +663,7 @@ function mockAudit(url){
 function fetchAudit(url){
   if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定: モック診断"); return new Promise(r=>setTimeout(()=>r(mockAudit(url)),900)); }
   return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url)).then(r=>r.json())
-    .catch(()=>({ok:false,error:"通信エラーが発生しました"}));
+    .catch(()=>({ok:false,error:"ただいま自動診断を調整中です。お手数ですが、お問い合わせから「サイト診断希望」とお送りください"}));
 }
 const AUDIT_AXES=[["aio","AIO対応"],["seo","SEO基礎"],["schema","構造化データ"],["mobile","モバイル"],["trust","信頼性"]];
 function renderAuditStart(){

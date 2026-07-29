@@ -544,7 +544,7 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 
 <script>
 /* 訴求LP装備: 埋め込み診断+フォーム(GAS_ENDPOINT はLP本体と同じURLを設定) */
-const GAS_ENDPOINT="";
+const GAS_ENDPOINT="https://script.google.com/macros/s/AKfycbw9RRmWMJnR6lc9n4OmqOGECx4ZHKjdOpfPHFU88-2tQKxkoejbPvCLjr9Edc0Na1nu2w/exec";
 const SVC_LABEL="補助金申請サポート";
 const QUIZ={"kind": "hojokin", "title": "補助金適性 無料診断(8問)", "weight": {"yoken": 2}, "axes": [["yoken", "要件適合"], ["junbi", "申請準備"], ["keikaku", "導入計画"], ["kouka", "効果の言語化"], ["kigen", "スケジュール"]], "questions": [{"ax": "yoken", "q": "直近の年間売上高はどのくらいですか?", "o": [["〜3,000万円", 1], ["3,000万〜5,000万円", 2], ["5,000万〜1億円", 3], ["1億円以上", 3]]}, {"ax": "yoken", "q": "決算(または確定申告)は何期分終えていますか?", "o": [["まだ1期未満", 0], ["1期", 1], ["2期以上", 3], ["わからない", 1]]}, {"ax": "yoken", "q": "IT導入補助金を過去4年以内に利用しましたか?", "o": [["利用した(採択済み)", 0], ["申請したが不採択", 3], ["利用していない", 3], ["わからない", 2]]}, {"ax": "yoken", "q": "法人税・消費税に未納・滞納はありますか?", "o": [["ない", 3], ["分納中・相談中", 1], ["ある", 0], ["わからない", 1]]}, {"ax": "junbi", "q": "GビズIDプライム(国の電子申請に使う会社のID)は?", "o": [["取得済み", 3], ["申請中", 2], ["未取得だが知っている", 1], ["初めて聞いた", 1]]}, {"ax": "keikaku", "q": "補助金で導入したいITツール・システムは決まっていますか?", "o": [["具体的に決まっている", 3], ["候補がいくつかある", 2], ["課題はあるがツールは未定", 2], ["まだ漠然としている", 1]]}, {"ax": "kouka", "q": "導入で解決したい課題を、数字で説明できますか?(例: 請求業務に週10時間)", "o": [["数字で説明できる", 3], ["だいたい説明できる", 2], ["感覚的にはわかる", 1], ["まだ整理できていない", 1]]}, {"ax": "kigen", "q": "いつまでに導入したいですか?", "o": [["3ヶ月以内", 3], ["半年以内", 3], ["1年以内", 2], ["時期は未定", 1]]}], "rx": {"S": "補助金適合度が非常に高い状態です。<b>公募スケジュールから逆算して、下のフォームから申請時期の相談</b>をおすすめします。", "A": "適性が高い状態です。<b>応募要項の最終確認と対象ツールの選定</b>から始めましょう。下のフォームから30分の無料相談を。", "B": "活用の余地は十分ですが確認事項があります。<b>決算期・売上要件の個別確認</b>をご案内します。", "C": "確認すべき条件が複数あります。<b>下位プランの可否</b>を含めて個別に確認しますので、まずはご相談ください。", "D": "今すぐの申請はハードルがある可能性があります。ただし<b>準備を始める時期としては最適</b>です。逆算スケジュールをご提案します。"}};
 const TS=Date.now(); let lastSubmit=0;
@@ -639,7 +639,7 @@ function mockAudit(url){
 function fetchAudit(url){
   if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定: モック診断"); return new Promise(r=>setTimeout(()=>r(mockAudit(url)),900)); }
   return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url)).then(r=>r.json())
-    .catch(()=>({ok:false,error:"通信エラーが発生しました"}));
+    .catch(()=>({ok:false,error:"ただいま自動診断を調整中です。お手数ですが、お問い合わせから「サイト診断希望」とお送りください"}));
 }
 const AUDIT_AXES=[["aio","AIO対応"],["seo","SEO基礎"],["schema","構造化データ"],["mobile","モバイル"],["trust","信頼性"]];
 function renderAuditStart(){

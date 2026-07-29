@@ -572,7 +572,7 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 
 <script>
 /* 訴求LP装備: 埋め込み診断+フォーム(GAS_ENDPOINT はLP本体と同じURLを設定) */
-const GAS_ENDPOINT="";
+const GAS_ENDPOINT="https://script.google.com/macros/s/AKfycbw9RRmWMJnR6lc9n4OmqOGECx4ZHKjdOpfPHFU88-2tQKxkoejbPvCLjr9Edc0Na1nu2w/exec";
 const SVC_LABEL="MEOコンサルティング";
 const QUIZ={"kind": "meo", "title": "MEO集客 無料診断(6問)", "weight": {}, "axes": [["profile", "プロフィール整備"], ["kuchikomi", "口コミ力"], ["post", "投稿・写真"], ["nap", "情報の一致"], ["kyoso", "競合優位"]], "questions": [{"ax": "profile", "q": "Googleビジネスプロフィールの状態は?", "o": [["登録して毎週更新している", 1], ["登録したが放置気味", 3], ["未登録・わからない", 3], ["他社に任せているが効果不明", 2]]}, {"ax": "profile", "q": "来店・訪問・地域密着型のビジネスですか?", "o": [["はい(店舗・拠点に集客したい)", 3], ["一部そうした業態がある", 2], ["いいえ(全国向けのみ)", 1], ["わからない", 2]]}, {"ax": "kuchikomi", "q": "Googleの口コミは何件ありますか?", "o": [["50件以上あり返信もしている", 1], ["10〜50件", 2], ["10件未満", 3], ["返信をしたことがない", 3]]}, {"ax": "post", "q": "写真・最新情報の投稿頻度は?", "o": [["週1回以上", 1], ["月1回程度", 2], ["ほとんど投稿していない", 3], ["投稿機能を知らなかった", 3]]}, {"ax": "nap", "q": "住所・電話・営業時間は、HP/SNS/ポータルで一致していますか?", "o": [["すべて一致している", 1], ["一部ばらばらかもしれない", 3], ["確認したことがない", 3], ["変更後、未反映の媒体がある", 3]]}, {"ax": "kyoso", "q": "地域名+業種で検索したとき、自社は競合より上に出ますか?", "o": [["上位3位以内に出る", 1], ["出るが下位", 2], ["ほぼ出てこない", 3], ["調べたことがない", 3]]}], "rx": {"S": "マップ集客の<b>伸びしろが非常に大きい状態</b>です。プロフィール整備と口コミ運用だけでも効果が見込めます。下のフォームから改善優先度をご相談ください。", "A": "MEO対策の効果が出やすい状態です。<b>スコアが高い軸(=手つかずの領域)から着手</b>が近道です。", "B": "基礎はできていますが競合に埋もれやすい状態です。<b>口コミ獲得と投稿の運用設計</b>で差がつきます。", "C": "一定の運用ができています。<b>競合比較とキーワードの見直し</b>で上位を狙いましょう。", "D": "良い運用状態です。<b>AI検索(AIO)対応</b>など次の一手をご提案できます。"}};
 const TS=Date.now(); let lastSubmit=0;
@@ -667,7 +667,7 @@ function mockAudit(url){
 function fetchAudit(url){
   if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定: モック診断"); return new Promise(r=>setTimeout(()=>r(mockAudit(url)),900)); }
   return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url)).then(r=>r.json())
-    .catch(()=>({ok:false,error:"通信エラーが発生しました"}));
+    .catch(()=>({ok:false,error:"ただいま自動診断を調整中です。お手数ですが、お問い合わせから「サイト診断希望」とお送りください"}));
 }
 const AUDIT_AXES=[["aio","AIO対応"],["seo","SEO基礎"],["schema","構造化データ"],["mobile","モバイル"],["trust","信頼性"]];
 function renderAuditStart(){
