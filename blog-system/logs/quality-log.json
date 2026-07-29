@@ -4450,6 +4450,186 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-hitsuyo-shorui-hojin.md",
+      "date": "2026-07-29T22:59:02.286Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "法人の必要書類一覧・取得日数・準備順・不備対策・FAQまで検索意図を広くカバー。個人事業主との違いも明示している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に要点3行、各見出し直下の定義断言文、FAQの断言形が揃い引用されやすい構造"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者に代表取締役の肩書、支援事例・50社/採択90%等の一次的知見あり。ただし数値の出典は自社実績のみで政府統計等の裏付けは薄い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにキーワード・年度、目次アンカー、内部リンク多数、H2構造が整合。冒頭説明が公式URLの重複でやや冗長"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表3点・箇条書き・番号手順・em-marker4箇所・太字適切で緩急良好。ただしem-markerが規定2〜3箇所を超える"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "gBizID起点の逆算着手・書類集めのみで着金という自社知見と役割分担比較表に独自の切り口あり"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "取得先・期限・日数をセット化した表など情報密度が高く水増しが少ない"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-security-action-2star.md",
+      "date": "2026-07-29T22:59:01.272Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 87,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "二つ星の意味・一つ星との違い・宣言手順・つまずき・費用・FAQと申請者の主要疑問を網羅している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行・定義断言文・FAQの断言形・em-markerによる引用単位化があり引用適性が高い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書・公式出典リンク・当社実績や事例(製造業/卸売業)で実体験を提示。ただし星数の正確な要件を公式任せにする箇所が多く一次情報の踏み込みは限定的"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・見出しにアンカー・関連記事への内部リンク複数あり。ただし末尾CTAが内部リンクでなく外部LP(lp.7senses.co.jp)で導線が分断"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・IMG指示・em-marker2〜3箇所・太字が適切に配置され緩急がある。ごく一部に60字超の文がある"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「二つ星は策定+外部公開まで」の切り分けや逆算着手・実質無料表現への注意など自社知見の切り口がある"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "重複の水増しがなく、手順・比較表・事例・費用感まで情報密度が高い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-shinsei-shippai-yokuaru.md",
+      "date": "2026-07-29T23:02:14.025Z",
+      "finalScore": 85,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 85,
+          "seo": 85,
+          "aio": 87,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "失敗7選・不採択/差戻/交付取消の3段階・後払い立替・自力vsサポートまで申請者の検索意図を段階網羅している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 13,
+              "max": 15,
+              "reason": "冒頭に定義断言文・要点3行・FAQの断言形・単文が揃い引用されやすいが、数値目標例以外に断言型定義がやや少ない"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者実名/肩書・支援事例・公式出典(事務局・中小企業庁)ありだが、90%通過率や350万円が自社一次情報のみで外部裏付けが弱い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・年号、h2見出し構造・目次・アンカー・関連内部リンク多数で技術面は良好"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文短め・段落3〜4行・各節に表/箇条書き/画像・em-marker3箇所と緩急良好だが、❌→✅箇条書きが長めで密になる箇所あり"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "設備工事業85%削減・卸売業550万→350万など自社支援事例と現場切り口があり独自性が高い"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "具体数値・表・事例で情報密度は十分だが、制度の補助額根拠が『当社一次情報』依存で公的裏付けの厚みが不足"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

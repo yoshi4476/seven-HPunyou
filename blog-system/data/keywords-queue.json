@@ -130,8 +130,10 @@
       "keyword": "AI導入補助金 セキュリティアクション 二つ星",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-29T22:52:25.540Z",
+      "slug": "ai-hojokin-security-action-2star"
     },
     {
       "id": 15,
@@ -146,8 +148,10 @@
       "keyword": "AI導入補助金 必要書類 法人",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-29T22:58:36.425Z",
+      "slug": "ai-hojokin-hitsuyo-shorui-hojin"
     },
     {
       "id": 17,

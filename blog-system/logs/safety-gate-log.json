@@ -419,6 +419,33 @@
         "①出典なしの統計数値: 「1社」を含む段落に出典URLがありません",
         "③H2不足: 0個 (規定 3個以上)"
       ]
+    },
+    {
+      "file": "ai-hojokin-hitsuyo-shorui-hojin.md",
+      "slug": "ai-hojokin-hitsuyo-shorui-hojin",
+      "title": "AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番",
+      "date": "2026-07-29T22:59:57.677Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-security-action-2star.md",
+      "slug": "ai-hojokin-security-action-2star",
+      "title": "AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点",
+      "date": "2026-07-29T22:59:58.244Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-shinsei-shippai-yokuaru.md",
+      "slug": "ai-hojokin-shinsei-shippai-yokuaru",
+      "title": "AI導入補助金の申請でよくある失敗7選｜2026年最新の対策と回避法",
+      "date": "2026-07-29T23:02:15.049Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「1社」を含む段落に出典URLがありません",
+        "③H2不足: 0個 (規定 3個以上)"
+      ]
     }
   ]
 }

@@ -181,6 +181,68 @@
           "alt": "AI導入補助金の活用を始める手順と相談先の解説イメージ"
         }
       ]
+    },
+    {
+      "slug": "ai-hojokin-hitsuyo-shorui-hojin",
+      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-hojin/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-hitsuyo-shorui-hojin/thumbnail.webp",
+          "title": "AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番",
+          "alt": "AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-hitsuyo-shorui-hojin/ai-hojokin-hitsuyo-shorui-hojin-section-1.webp",
+          "title": "AI導入補助金の必要書類とは?法人が最初に押さえる全体像",
+          "alt": "AI導入補助金の必要書類を「事業者証明書類」「申請システム上の準備」「加点・実績報告用」の3カテゴリに分類した概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-hitsuyo-shorui-hojin/ai-hojokin-hitsuyo-shorui-hojin-section-2.webp",
+          "title": "【法人版】AI導入補助金の必要書類 一覧チェックリスト",
+          "alt": "法人の必要書類チェックリストを一覧化した表の図解(書類名・取得先・有効期限・取得日数の図解"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-hitsuyo-shorui-hojin/ai-hojokin-hitsuyo-shorui-hojin-section-3.webp",
+          "title": "取得に時間がかかる書類の準備手順と所要日数(gBizID・SECURITY ACTION・納税証明書)",
+          "alt": "gBizID・SECURITY ACTION・納税証明書の準備順序を示すタイムライン形式の手順図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-hitsuyo-shorui-hojin/ai-hojokin-hitsuyo-shorui-hojin-section-4.webp",
+          "title": "書類不備でよくある失敗と、法人が採択率を下げないための注意点",
+          "alt": "書類不備の「よくある失敗・原因・対策」を整理した比較表の図解"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-hitsuyo-shorui-hojin/ai-hojokin-hitsuyo-shorui-hojin-section-5.webp",
+          "title": "書類準備を効率化するには?自社準備と申請サポート活用の比較",
+          "alt": "自社準備と申請サポート活用の工数・チェック体制・スケジュール管理を比較した図"
+        }
+      ]
+    },
+    {
+      "slug": "ai-hojokin-security-action-2star",
+      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-security-action-2star/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-security-action-2star/thumbnail.webp",
+          "title": "AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点",
+          "alt": "AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-security-action-2star/ai-hojokin-security-action-2star-section-1.webp",
+          "title": "SECURITY ACTION(二つ星)とは？AI導入補助金でなぜ必要か {#とは}",
+          "alt": "SECURITY ACTION一つ星と二つ星の取り組み範囲を比較する概念図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-security-action-2star/ai-hojokin-security-action-2star-section-2.webp",
+          "title": "二つ星の宣言手順(申請前の準備) {#手順}",
+          "alt": "現状確認→基本方針策定→宣言→ロゴ取得→交付申請のステップフロー手順図"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-security-action-2star/ai-hojokin-security-action-2star-section-3.webp",
+          "title": "宣言後にAI導入補助金でできること・費用の考え方 {#費用}",
+          "alt": "宣言後の交付申請から着金までの全体フローと費用の考え方の概念図"
+        }
+      ]
     }
   ]
 }

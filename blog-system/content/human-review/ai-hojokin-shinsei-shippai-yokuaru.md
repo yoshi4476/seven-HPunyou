@@ -1,5 +1,5 @@
 ---
-retry_count: 1
+retry_count: 2
 type: "news"
 title: "AI導入補助金の申請でよくある失敗7選｜2026年最新の対策と回避法"
 slug: "ai-hojokin-shinsei-shippai-yokuaru"
