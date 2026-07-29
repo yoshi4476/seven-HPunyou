@@ -4090,6 +4090,366 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-fusaitaku-riyu.md",
+      "date": "2026-07-28T23:00:53.050Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 88,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "不採択理由・審査視点・再申請手順・チェックリスト・専門家活用・FAQと、検索意図の主要導線を網羅している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に要点3行、各節冒頭に定義断言文、FAQが断言形で引用されやすく構造化されている"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書明記・支援事例(大阪府製造業/兵庫県卸売業)・出典リンク有り。ただし採択率90%等の実績は自社注記のみで第三者検証不可"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルとキーワード整合・目次アンカー・見出し階層・内部リンク7本以上と良好。ただしslugとtitleでAI導入補助金/IT導入補助金の名称揺れが軽微に残る"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表2・箇条書き・番号手順・em-marker2箇所・アクション枠で緩急良好。太字はやや多用気味だが1文60字以内で読みやすい"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "3系統分類・因果と数値の言語化という自社の切り口、Zoom約1時間などの実務描写に独自性がある"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "水増しが少なく、表・手順・具体数値(月40→6時間、350万円等)で情報密度が高い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-katsuyou-jirei-2026.md",
+      "date": "2026-07-28T23:00:51.490Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 87,
+          "seo": 88,
+          "aio": 89,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 17,
+              "max": 20,
+              "reason": "業種別事例・集客事例・採択共通点・手順・FAQと検索意図を広くカバー。ただし補助率の具体%や申請要件など『活用事例』検索者の周辺疑問が概要止まりで満点に届かない。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 13,
+              "max": 15,
+              "reason": "冒頭に定義断言文・要点3行・FAQ断言形が揃い引用されやすい構造。数値もBefore→Afterで単文化されている。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "支援50社以上・採択率90%等の一次的実績と具体事例、著者肩書、政府公式出典を明示。一方で数値が全て『当社支援事例』の自己申告で第三者検証可能な出典がなく満点は不可。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "title・description・見出し階層・アンカー付き目次・内部リンク5本が整備。見出しがやや説明的で一部冗長。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・STEP・画像プレースホルダ・em-marker・太字が適度に配置され緩急良好。em-markerがやや多め、一部文が60字を超える箇所あり。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "llms.txt整備でAI検索被引用獲得、G-ran・MEO連携など自社知見の切り口が独自で具体的。"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "具体数値と事例が密度高いが、『書類集めとZoom約1時間』等の同一フレーズが複数箇所で反復し情報密度をやや希釈。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-katsuyou-jirei-2026.md",
+      "date": "2026-07-28T23:04:46.038Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "業種別事例・集客事例・採択共通点・手順・FAQと検索意図を広く網羅。金額や着金など主要疑問に回答済みだが補助率の具体値が空欄止まりで-2。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文・要点3行、FAQが断言形、単文で引用しやすい構造で高評価。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書・支援実績・具体的Before/After数値と公式出典あり。ただし当社事例数値は自己申告で第三者検証不可のため-3。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトル・H2階層・目次アンカー・内部リンク5本と構造は良好。H2見出しがやや長め・キーワード重複気味で-2。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像・em-marker・太字・アクション欄で緩急良好。em-markerが計5箇所とやや多め・強調頻度過多気味で-2。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "支援50社・採択率90%・G-ran/llms.txt等の自社知見と独自切り口が明確。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "具体的KPI数値と表で情報密度は高い。補助率など一部が『公募回で異なる』の抽象記述に留まり-1。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-shinsei-shippai-yokuaru.md",
+      "date": "2026-07-29T10:32:19.388Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 87,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "失敗7選・回避法・自力vsサポート・不採択後まで検索意図を広く網羅し要点3行とFAQも完備"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義の断言文・要点3行・各見出し直下の結論文・FAQ断言形が揃い引用されやすい"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "代表者実名・支援50社・具体事例で実体験は強いが、統計値(上限350万・2〜3ヶ月)が自社目安のみで公的出典に紐づかない"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・年度、h2見出し・目次・内部リンク多数と構造良好だが正式名称IT導入補助金をタイトルKWと乖離させている点が惜しい"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・比較・アクション枠・em-marker適量で緩急良好。ただしem-markerが各セクション定型化しやや単調"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "設備工事業・卸売業・製造業の自社事例と数値効果、採択率90%等の独自知見が豊富"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "情報密度は高く水増しは少ないが、要点・見出しで同一メッセージの反復がやや多い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-katsuyou-jirei-2026.md",
+      "date": "2026-07-29T10:37:00.821Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "業種別事例・集客事例・採択共通点・手順・FAQと『活用事例』検索意図をほぼ網羅。補助率の具体%が曖昧な点のみ弱い。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に太字定義断言文、要点3行、FAQが断言形、業種別に単文で数値提示され引用適性が高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書・支援実績・自社事例の一次情報が明記。ただし統計数値は全て『当社支援事例』で第三者検証不能、公式出典はトップページのみ。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・年号、H2見出し構造・目次・内部リンク5本が適切。h2-5のアンカーがfigure先行で見出し直前にない微細な難あり。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文短め・表/箇条書き/Before-After・em-marker3箇所と緩急良好。ただしsection-1〜3画像が重複使用で視覚的水増し感がある。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "支援50社・採択率90%以上・G-ran等の自社知見と課題→AI→数値の独自フレームが明確。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "業種6例+FAQ+チェックリストで情報密度高。数値豊富だが出典が自社に集中し密度の質はやや偏る。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-shinsei-shippai-yokuaru.md",
+      "date": "2026-07-29T10:37:04.854Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 88,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "失敗7選・不採択理由・後払い立替・実績報告・自力vsサポートまで申請失敗の主要検索意図を網羅。再申請可否や具体的締切の一次数値がやや薄い分だけ減点"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義断言・要点3行・FAQ断言形・単文が揃い引用されやすい構造。ほぼ満点だがFAQ回答の一部が一般論"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "代表者署名・支援50社/採択率90%・複数の匿名化事例・当社一次情報の明示があり実体験は強い。ただし補助上限350万等の一部数値は自社目安のみで公式出典リンクの深部裏付けは無し"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW+年+数字、id付きh2見出し・目次・内部リンク多数・alt整備。ただしh2見出しの疑問形/体言止めがやや混在し内部リンクがサービス誘導に偏る"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・❌✅対比・図・em-marker・アクション行で緩急良好。1文がやや長い箇所と太字が冒頭以外で薄い点が軽微な弱点"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "設備工事業85%削減・卸売業稟議一発通過・製造業Zoom1時間など自社事例と段階別失敗分類の切り口が独自"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "情報密度は高く水増しは少ないが、文字数は中量級で公募回数値・要件詳細など踏み込み余地あり"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

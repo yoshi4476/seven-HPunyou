@@ -64,8 +64,10 @@
       "keyword": "AI導入補助金 AI 活用 事例",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-28T22:54:44.490Z",
+      "slug": "ai-hojokin-katsuyou-jirei-2026"
     },
     {
       "id": 8,
@@ -82,16 +84,20 @@
       "keyword": "AI導入補助金 不採択 理由",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-28T23:00:25.556Z",
+      "slug": "ai-hojokin-fusaitaku-riyu"
     },
     {
       "id": 10,
       "keyword": "AI導入補助金 申請 失敗 よくある",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-07-29T10:31:54.421Z",
+      "slug": "ai-hojokin-shinsei-shippai-yokuaru"
     },
     {
       "id": 11,

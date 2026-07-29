@@ -361,6 +361,64 @@
         "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
         "③H2不足: 1個 (規定 3個以上)"
       ]
+    },
+    {
+      "file": "ai-hojokin-fusaitaku-riyu.md",
+      "slug": "ai-hojokin-fusaitaku-riyu",
+      "title": "AI導入補助金 不採択の理由7選【2026年最新】再申請で採択されるコツ",
+      "date": "2026-07-28T23:02:16.516Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-katsuyou-jirei-2026.md",
+      "slug": "ai-hojokin-katsuyou-jirei-2026",
+      "title": "AI導入補助金の活用事例2026|中小企業のAI導入を採択事例で解説",
+      "date": "2026-07-28T23:02:16.665Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「12名」を含む段落に出典URLがありません"
+      ]
+    },
+    {
+      "file": "ai-hojokin-katsuyou-jirei-2026.md",
+      "slug": "ai-hojokin-katsuyou-jirei-2026",
+      "title": "AI導入補助金の活用事例2026|中小企業のAI導入を採択事例で解説",
+      "date": "2026-07-28T23:05:19.504Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「5名」を含む段落に出典URLがありません"
+      ]
+    },
+    {
+      "file": "ai-hojokin-shinsei-shippai-yokuaru.md",
+      "slug": "ai-hojokin-shinsei-shippai-yokuaru",
+      "title": "AI導入補助金の申請でよくある失敗7選｜2026年最新の対策と回避法",
+      "date": "2026-07-29T10:32:55.008Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「1社」を含む段落に出典URLがありません",
+        "③H2不足: 0個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-katsuyou-jirei-2026.md",
+      "slug": "ai-hojokin-katsuyou-jirei-2026",
+      "title": "AI導入補助金の活用事例2026|中小企業のAI導入を採択事例で解説",
+      "date": "2026-07-29T10:37:45.027Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-shinsei-shippai-yokuaru.md",
+      "slug": "ai-hojokin-shinsei-shippai-yokuaru",
+      "title": "AI導入補助金の申請でよくある失敗7選｜2026年最新の対策と回避法",
+      "date": "2026-07-29T10:37:45.285Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「1社」を含む段落に出典URLがありません",
+        "③H2不足: 0個 (規定 3個以上)"
+      ]
     }
   ]
 }
