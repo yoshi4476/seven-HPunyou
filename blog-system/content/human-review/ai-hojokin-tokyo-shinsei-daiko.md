@@ -1,5 +1,5 @@
 ---
-retry_count: 1
+retry_count: 2
 type: "news"
 title: "AI導入補助金の申請代行を東京で選ぶ2026年版・失敗しない依頼先の見極め方"
 slug: "ai-hojokin-tokyo-shinsei-daiko"
@@ -63,6 +63,8 @@ AI導入補助金(正式名称: IT導入補助金)とは、中小企業がAIやI
 <a id="h2-2"></a>
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-tokyo-shinsei-daiko/ai-hojokin-tokyo-shinsei-daiko-section-1.webp" alt="申請代行の費用相場と料金体系の見方の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-tokyo-shinsei-daiko/ai-hojokin-tokyo-shinsei-daiko-section-1.webp" alt="申請代行の費用相場と料金体系の見方の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## 申請代行の費用相場と料金体系の見方
 
 料金体系は大きく3つに分かれ、着手金・成功報酬・その併用が一般的である。相場は業者や年度で変わるため、必ず見積で確認する。
@@ -101,6 +103,8 @@ AI導入補助金(正式名称: IT導入補助金)とは、中小企業がAIやI
 ▶ 今すぐ試せるアクション:問い合わせ時に「不採択の場合の費用」と「着金までの流れ」を口頭で質問し、明確に答えるか確かめましょう。
 
 <a id="h2-4"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-tokyo-shinsei-daiko/ai-hojokin-tokyo-shinsei-daiko-section-2.webp" alt="東京の事業者が申請代行を依頼する流れと準備物の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-tokyo-shinsei-daiko/ai-hojokin-tokyo-shinsei-daiko-section-2.webp" alt="東京の事業者が申請代行を依頼する流れと準備物の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## 東京の事業者が申請代行を依頼する流れと準備物

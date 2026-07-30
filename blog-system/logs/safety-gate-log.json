@@ -466,6 +466,58 @@
       "reasons": [
         "⑤NGワード検出: 「必ず採択」"
       ]
+    },
+    {
+      "file": "ai-hojokin-fukuoka-soudan.md",
+      "slug": "ai-hojokin-fukuoka-soudan",
+      "title": "AI導入補助金 福岡の相談窓口2026｜採択率を上げる無料相談の使い方",
+      "date": "2026-07-30T23:09:50.526Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「3件」を含む段落に出典URLがありません",
+        "④リンク切れ: https://www.fukuoka-cci.or.jp/",
+        "④リンク切れ: https://www.kkcci.or.jp/",
+        "⑤NGワード検出: 「必ず採択」",
+        "⑤NGワード検出: 「100%成功」",
+        "⑩呼称違反: 「IT導入補助金」が5回使われています (正式名称の初出注記1回のみ。以降は「AI導入補助金」)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-nagoya-support.md",
+      "slug": "ai-hojokin-nagoya-support",
+      "title": "AI導入補助金 名古屋のサポート先の選び方【2026年版】採択率・費用・流れを解説",
+      "date": "2026-07-30T23:09:50.777Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "⑤NGワード検出: 「必ず採択」"
+      ]
+    },
+    {
+      "file": "ai-hojokin-fukuoka-soudan.md",
+      "slug": "ai-hojokin-fukuoka-soudan",
+      "title": "AI導入補助金 福岡の相談窓口2026｜採択率を上げる無料相談の使い方",
+      "date": "2026-07-30T23:16:15.217Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-nagoya-support.md",
+      "slug": "ai-hojokin-nagoya-support",
+      "title": "AI導入補助金 名古屋のサポート先の選び方【2026年版】採択率・費用・流れを解説",
+      "date": "2026-07-30T23:16:15.510Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-tokyo-shinsei-daiko.md",
+      "slug": "ai-hojokin-tokyo-shinsei-daiko",
+      "title": "AI導入補助金の申請代行を東京で選ぶ2026年版・失敗しない依頼先の見極め方",
+      "date": "2026-07-30T23:16:15.658Z",
+      "passed": false,
+      "reasons": [
+        "⑤NGワード検出: 「必ず採択」"
+      ]
     }
   ]
 }

@@ -544,18 +544,22 @@
       "keyword": "AI導入補助金 名古屋 サポート",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
+      "status": "generated",
       "addedBy": "auto-replenish",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-07-30T23:00:06.612Z",
+      "slug": "ai-hojokin-nagoya-support"
     },
     {
       "id": "98",
       "keyword": "AI導入補助金 福岡 相談",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
+      "status": "generated",
       "addedBy": "auto-replenish",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-07-30T23:05:51.737Z",
+      "slug": "ai-hojokin-fukuoka-soudan"
     },
     {
       "id": "99",
