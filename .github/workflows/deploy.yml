@@ -1,0 +1,47 @@
+# =============================================================
+# 手動デプロイ (記事生成なし)
+# - リポジトリの現在の内容をそのまま Cloudflare Pages へ公開する
+# - 記事の自動生成・品質ループは実行しないため数十秒で完了する
+# - 用途: 文言修正・タグ設置・所有権確認ファイルなど、記事と無関係な変更の即時反映
+# - 使い方: Actions タブ → 「手動デプロイ」 → Run workflow
+# =============================================================
+name: 手動デプロイ
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-manual
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: リポジトリ取得
+        uses: actions/checkout@v4
+
+      - name: 配信物を生成 (内部資料を除外)
+        run: python3 tools/make_dist.py
+
+      - name: Cloudflare Pages へ公開
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "::error::CLOUDFLARE_API_TOKEN が未設定です (Settings → Secrets → Actions)"
+            exit 1
+          fi
+          npx --yes wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true
+
+      - name: 公開結果を確認
+        run: |
+          for p in / /blog/ /google2f81a606f08abb5f.html; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' "https://lp.7senses.co.jp$p")
+            echo "$p → HTTP $code"
+          done

@@ -212,6 +212,12 @@ def page(url_path, title, desc, h1, lead, cards, current_cat, crumb_leaf, hub_ht
 }}
 </script>
 <style>{STYLE}</style>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
+gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+</script>
 </head>
 <body>
 <header>
