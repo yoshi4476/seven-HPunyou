@@ -1,24 +1,35 @@
 # =============================================================
-# 手動デプロイ (記事生成なし)
-# - リポジトリの現在の内容をそのまま Cloudflare Pages へ公開する
-# - 記事の自動生成・品質ループは実行しないため数十秒で完了する
-# - 用途: 文言修正・タグ設置・所有権確認ファイルなど、記事と無関係な変更の即時反映
-# - 使い方: Actions タブ → 「手動デプロイ」 → Run workflow
+# 自動デプロイ (記事生成なし)
+# - master への push で、リポジトリの内容をそのまま Cloudflare Pages へ公開する
+# - 記事の自動生成・品質ループは実行しないため1分程度で完了する
+# - bot の自動生成コミットは「毎日ブログ自動更新」側で既に公開済みのためスキップする
+# - Actions タブから手動実行 (Run workflow) もできる
 # =============================================================
-name: 手動デプロイ
+name: 自動デプロイ
 
 on:
+  push:
+    branches: [master]
+    paths-ignore:            # サイトの配信物に影響しない変更ではデプロイしない
+      - 'blog-system/**'
+      - 'automation/**'
+      - 'reports/**'
+      - '**/*.md'
+      - '.github/workflows/auto-publish.yml'
+      - '.github/workflows/monthly-report.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
 
 concurrency:
-  group: deploy-manual
-  cancel-in-progress: true
+  group: cloudflare-deploy   # 同時デプロイによるAPIレート制限を避けるため直列化
+  cancel-in-progress: false
 
 jobs:
   deploy:
+    # 自動生成コミットは auto-publish が既にデプロイしているので二重実行しない
+    if: github.event_name == 'workflow_dispatch' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -34,14 +45,18 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "::error::CLOUDFLARE_API_TOKEN が未設定です (Settings → Secrets → Actions)"
+            echo "::error::CLOUDFLARE_API_TOKEN が未設定です (Settings → Secrets and variables → Actions)"
             exit 1
           fi
           npx --yes wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true
 
       - name: 公開結果を確認
         run: |
+          sleep 5
+          fail=0
           for p in / /blog/ /google2f81a606f08abb5f.html; do
             code=$(curl -s -o /dev/null -w '%{http_code}' "https://lp.7senses.co.jp$p")
             echo "$p → HTTP $code"
+            [ "$code" = "200" ] || fail=1
           done
+          [ "$fail" = "0" ] || echo "::warning::一部URLが200ではありません (CDN反映待ちの可能性)"
