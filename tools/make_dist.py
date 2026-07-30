@@ -23,6 +23,9 @@ if DIST.exists():
 DIST.mkdir()
 
 copied = 0
+# Search Console の所有権確認ファイル (google*.html) はルート直下に置けば自動で配信対象にする
+PUBLIC_FILES += [f.name for f in ROOT.glob("google*.html")]
+
 for name in PUBLIC_FILES:
     src = ROOT / name
     if src.is_file():
