@@ -32,6 +32,8 @@ jobs:
       SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
       GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID }}
       GA4_CREDENTIALS_JSON: ${{ secrets.GA4_CREDENTIALS_JSON }}
+      # URLプレフィックス プロパティのため末尾スラッシュ必須。未設定時は SITE_URL から組み立てる
+      GSC_SITE_URL: ${{ secrets.GSC_SITE_URL }}
     steps:
       - name: リポジトリ取得
         uses: actions/checkout@v4
