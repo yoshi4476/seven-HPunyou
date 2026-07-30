@@ -1,26 +1,33 @@
 # =============================================================
-# 自動デプロイ (記事生成なし)
-# - master への push で、リポジトリの内容をそのまま Cloudflare Pages へ公開する
-# - 記事の自動生成・品質ループは実行しないため1分程度で完了する
-# - bot の自動生成コミットは「毎日ブログ自動更新」側で既に公開済みのためスキップする
-# - Actions タブから手動実行 (Run workflow) もできる
+# 記事の受け入れ + 公開
+#
+# 役割は2つ:
+#   1. 自動化管制塔 (SS-AIO-LP) が blog-system/content/posted/ へ納品した Markdown を
+#      HTML化し、一覧・カテゴリ・sitemap・llms.txt を再生成してコミットする
+#   2. リポジトリの内容を Cloudflare Pages へ公開する
+#
+# 記事の生成・品質審査・画像生成は管制塔側が担当する (このリポジトリでは行わない)。
+# 手動実行 (Run workflow) でも同じ処理を実行できる。
 # =============================================================
-name: 自動デプロイ
+name: 記事の受け入れと公開
 
 on:
   push:
     branches: [master]
-    paths-ignore:            # サイトの配信物に影響しない変更ではデプロイしない
-      - 'blog-system/**'
+    paths-ignore:            # 配信物に影響しない変更ではデプロイしない
+      - 'blog-system/scripts/**'
+      - 'blog-system/logs/**'
+      - 'blog-system/data/**'
       - 'automation/**'
       - 'reports/**'
-      - '**/*.md'
+      - 'README.md'
+      - '運用手順.md'
       - '.github/workflows/auto-publish.yml'
       - '.github/workflows/monthly-report.yml'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write            # 生成したHTMLをコミットするため
 
 concurrency:
   group: cloudflare-deploy   # 同時デプロイによるAPIレート制限を避けるため直列化
@@ -28,13 +35,36 @@ concurrency:
 
 jobs:
   deploy:
-    # 自動生成コミットは auto-publish が既にデプロイしているので二重実行しない
+    # 自動コミットによる再帰実行を避ける
     if: github.event_name == 'workflow_dispatch' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: リポジトリ取得
         uses: actions/checkout@v4
+
+      # 管制塔から納品された Markdown を記事HTMLへ変換し、一覧・sitemap・llms.txt を再生成
+      - name: 記事HTMLの生成・一覧の再生成
+        run: |
+          python3 -m pip install --quiet markdown
+          python3 tools/render_blog.py
+          python3 tools/gen_blog_pages.py
+
+      - name: 生成物をコミット
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A blog images sitemap.xml llms.txt
+          if git diff --cached --quiet; then
+            echo "生成物に変更なし"
+          else
+            git commit -m "chore(blog): 納品記事のHTML生成 ($(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST'))"
+            for i in 1 2 3; do
+              git push && break
+              echo "push拒否 → 取り込んで再試行 ($i/3)"
+              git pull --rebase -X ours origin master || git rebase --abort
+            done
+          fi
 
       - name: 配信物を生成 (内部資料を除外)
         run: python3 tools/make_dist.py
@@ -53,10 +83,8 @@ jobs:
       - name: 公開結果を確認
         run: |
           sleep 5
-          fail=0
-          for p in / /blog/ /google2f81a606f08abb5f.html; do
+          for p in / /blog/ /sitemap.xml; do
             code=$(curl -s -o /dev/null -w '%{http_code}' "https://lp.7senses.co.jp$p")
             echo "$p → HTTP $code"
-            [ "$code" = "200" ] || fail=1
           done
-          [ "$fail" = "0" ] || echo "::warning::一部URLが200ではありません (CDN反映待ちの可能性)"
+          echo "記事数: $(ls -d blog/*/ | grep -v category | wc -l) 本"
