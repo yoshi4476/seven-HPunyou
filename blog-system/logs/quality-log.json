@@ -4630,6 +4630,126 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-tokyo-shinsei-daiko.md",
+      "date": "2026-07-30T10:15:41.099Z",
+      "finalScore": 87,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 87,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「東京で頼むべきか」「費用相場・料金体系」「悪質業者の見分け方」「流れと準備物」「不採択時の費用」を網羅し主要な検索意図に的確に回答している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭30秒結論3点・定義断言文・FAQの断言形・引用しやすい単文が揃い、AI引用適性が非常に高い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "代表執筆者名・支援実績(50社+/90%以上)・具体事例を明示し公式サイトへ誘導するが、統計はすべて自社数値で第三者一次情報が薄い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW含有、H2/H3構造・目次アンカー・内部リンク4本が適切だが、slugと本文の内部リンクラベルに冗長な重複表記あり"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表3点・箇条書き・画像プレースホルダ・em-marker・アクション導線で緩急良好、1文も概ね簡潔だが強調がやや多め"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「手取りで判断」「採択保証はあり得ない」「伴走型か否か」の切り口と自社事例で独自性を出している"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "料金体系・比較表・流れを密度高く整理しているが、制度の具体数値(補助率・下限額等)の掘り下げはやや薄い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-tokyo-shinsei-daiko.md",
+      "date": "2026-07-30T10:16:54.620Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 88,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「東京で頼むべきか」「費用相場」「悪質業者の見分け方」「依頼の流れ」と主要検索意図を網羅し、大阪など所在地問わずの疑問にもFAQで回答している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭30秒結論3行・定義断言文・FAQ断言形・em-marker単文が揃い引用されやすいが、一部数値の年度依存で断言度がわずかに弱い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "代表者署名・支援事例(大阪/兵庫)・公式URL(事務局・中小企業庁)を提示するが、統計値90%以上や550万円等は自社実績注記のみで一次出典の外部裏付けは弱い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW含み、H2構造・目次アンカー・内部リンク(費用/必要書類/GビズID/不採択/サービス)が整備されている"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像・アクション行で緩急があり太字/em-markerも適量だが、一部文が60字近く冒頭の太字がやや多い"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「採択保証・実質無料は制度上あり得ず」「手取りで判断」「伴走型かの見極め」など自社視点の切り口が明確"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "料金3類型・流れ6ステップ・チェックリスト・FAQ5問と情報密度が高く水増しが少ない"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

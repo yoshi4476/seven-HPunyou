@@ -436,6 +436,279 @@
       "category": "dev",
       "status": "duplicate-skip",
       "type": "main"
+    },
+    {
+      "id": "86",
+      "keyword": "AI導入補助金 製造業 事例",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "87",
+      "keyword": "AI導入補助金 小売業 活用",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "88",
+      "keyword": "AI導入補助金 美容室 対象",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "89",
+      "keyword": "AI導入補助金 歯科医院",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "90",
+      "keyword": "AI導入補助金 士業 事務所",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "91",
+      "keyword": "AI導入補助金 不動産会社",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "92",
+      "keyword": "AI導入補助金 運送業 物流",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "93",
+      "keyword": "AI導入補助金 介護事業所",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "94",
+      "keyword": "AI導入補助金 学習塾 対象",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "95",
+      "keyword": "AI導入補助金 宿泊業 ホテル",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "96",
+      "keyword": "AI導入補助金 東京 申請代行",
+      "priority": "S",
+      "category": "hojo",
+      "status": "generated",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-07-30T10:15:13.480Z",
+      "slug": "ai-hojokin-tokyo-shinsei-daiko",
+      "type": "news"
+    },
+    {
+      "id": "97",
+      "keyword": "AI導入補助金 名古屋 サポート",
+      "priority": "S",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "98",
+      "keyword": "AI導入補助金 福岡 相談",
+      "priority": "S",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "99",
+      "keyword": "AI導入補助金 神戸 申請サポート",
+      "priority": "S",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "100",
+      "keyword": "AI導入補助金 京都 申請代行",
+      "priority": "S",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "101",
+      "keyword": "AI導入補助金 相談 無料",
+      "priority": "S",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "102",
+      "keyword": "AI導入補助金 予約システム 対象",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "103",
+      "keyword": "AI導入補助金 在庫管理システム",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "104",
+      "keyword": "AI導入補助金 顧客管理 CRM",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "105",
+      "keyword": "AI導入補助金 RPA 対象",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "106",
+      "keyword": "AI導入補助金 POSレジ 補助",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "107",
+      "keyword": "AI導入補助金 ECサイト 構築",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "108",
+      "keyword": "AI導入補助金 勤怠管理システム",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "109",
+      "keyword": "AI導入補助金 事業計画書 書き方",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "110",
+      "keyword": "AI導入補助金 加点 項目",
+      "priority": "A",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "111",
+      "keyword": "AI導入補助金 補助対象経費 一覧",
+      "priority": "B",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "112",
+      "keyword": "AI導入補助金 補助率 上限",
+      "priority": "B",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "113",
+      "keyword": "AI導入補助金 締切 いつ",
+      "priority": "B",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "114",
+      "keyword": "AI導入補助金 交付申請 流れ",
+      "priority": "B",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
+    },
+    {
+      "id": "115",
+      "keyword": "AI導入補助金 賃上げ 要件",
+      "priority": "B",
+      "category": "hojo",
+      "status": "pending",
+      "addedBy": "auto-replenish",
+      "addedAt": "2026-07-30"
     }
   ]
 }

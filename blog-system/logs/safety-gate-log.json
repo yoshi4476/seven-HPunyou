@@ -446,6 +446,26 @@
         "①出典なしの統計数値: 「1社」を含む段落に出典URLがありません",
         "③H2不足: 0個 (規定 3個以上)"
       ]
+    },
+    {
+      "file": "ai-hojokin-tokyo-shinsei-daiko.md",
+      "slug": "ai-hojokin-tokyo-shinsei-daiko",
+      "title": "AI導入補助金の申請代行を東京で選ぶ2026年版・失敗しない依頼先の見極め方",
+      "date": "2026-07-30T10:16:27.846Z",
+      "passed": false,
+      "reasons": [
+        "⑤NGワード検出: 「必ず採択」"
+      ]
+    },
+    {
+      "file": "ai-hojokin-tokyo-shinsei-daiko.md",
+      "slug": "ai-hojokin-tokyo-shinsei-daiko",
+      "title": "AI導入補助金の申請代行を東京で選ぶ2026年版・失敗しない依頼先の見極め方",
+      "date": "2026-07-30T10:17:24.359Z",
+      "passed": false,
+      "reasons": [
+        "⑤NGワード検出: 「必ず採択」"
+      ]
     }
   ]
 }
