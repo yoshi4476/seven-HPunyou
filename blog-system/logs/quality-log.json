@@ -5100,6 +5100,126 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kobe-shinsei-support.md",
+      "date": "2026-07-31T10:32:40.063Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「神戸+申請サポート」の意図(理由・対象/補助額・流れ・業者選び・費用・集客・FAQ)をほぼ網羅。神戸固有の情報が薄く事例が大阪中心の点で減点。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文と要点3行、FAQは全問断言形で引用しやすく、AIO適合は高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書明示、公式出典リンクあり、複数の支援事例で実体験を提示。ただし採択率90%等は自社集計で第三者検証不可。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW+年+便益、H2構造・目次・アンカー・内部リンク豊富。H1が明示されずメタとの一貫性は中程度。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・em-marker・CTA・画像プレースホルダで緩急良好。一部em-markerが1文60字超で長め。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "補助金+MEO/AIO一体設計、G-ran実績、自己負担根拠提示という独自の切り口が明確。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "具体数値・事例・比較表で情報密度は高いが水増しはなく良好。神戸ローカル情報の量が惜しい。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kobe-shinsei-support.md",
+      "date": "2026-07-31T10:37:02.856Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "神戸での申請サポート・対象/補助額/流れ・業者選び・補助金後集客・FAQまで主要意図を網羅。ただし神戸固有の要素(地域窓口・兵庫県独自制度)への言及は薄い。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文・要点3行、FAQが断言形の単文で構成され引用適性が高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書・複数の自社事例・公式一次情報リンクあり。ただし採択率90%等の自社集計は第三者検証不能で、外部統計出典はゼロ。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW+地域+年、H2階層・目次アンカー・内部リンク多数で構造良好。内部リンク先の妥当性は本文だけでは確認不可。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像・em-marker・アクションボックスで緩急良好、1文も概ね簡潔。一部em-markerが1セクション2回超で強調やや多め。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "補助金+MEO/AIO一体設計、G-ran実績、着金までの伴走という自社独自の切り口が明確。"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "各見出しに事例・数値・表があり情報密度は十分。ただし数値の多くが自社事例の反復で外部裏付けが少ない。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

@@ -566,9 +566,12 @@
       "keyword": "AI導入補助金 神戸 申請サポート",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
+      "status": "generated",
       "addedBy": "auto-replenish",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-07-31T10:32:14.790Z",
+      "slug": "ai-hojokin-kobe-shinsei-support",
+      "type": "news"
     },
     {
       "id": "100",
@@ -584,7 +587,7 @@
       "keyword": "AI導入補助金 相談 無料",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
+      "status": "duplicate-skip",
       "addedBy": "auto-replenish",
       "addedAt": "2026-07-30"
     },
