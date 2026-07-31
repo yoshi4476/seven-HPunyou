@@ -5220,6 +5220,306 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-hitsuyo-shorui-kojin.md",
+      "date": "2026-07-31T22:58:22.057Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 89,
+          "seo": 88,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "必要書類一覧・取得手順・不備チェック・法人との違い・開業直後の扱いまで検索意図を広くカバー(一覧表とFAQで裏取り)。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文と要点3行、FAQが断言形、em-markerの単文引用が各セクションに配置され引用適性が高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者実名・肩書き明記、公式出典URL複数、支援実績や事例を注記付きで提示。ただし補助上限350万円等は出典が事務局トップ止まりで数値の一次特定は弱い。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW・年・対象を含み、id付き見出し構造と目次、内部リンク5本が適切に配置されている。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表2つ・箇条書き・チェックボックス・画像プレースホルダ・STEP構成で緩急良好。太字とem-markerも節度あり。一部段落がやや詰まる箇所あり。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「登記簿謄本の代わりに確定申告書」という切り口、着金2〜3ヶ月・採択90%等の自社知見が独自性を補強。"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "書類ごとの取得先・注意点・法人との違いを表と本文で高密度に整理し、水増しが少ない。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kyoto-shinsei-daiko.md",
+      "date": "2026-07-31T22:58:22.920Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "費用相場・料金体系・選び方・流れ・相談窓口・FAQと『京都×申請代行』の主要意図を網羅。ただし京都府/市の独自制度の具体名は挙げず概念止まり。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文と要点3行、FAQは断言形で引用しやすい単文構成。表も明快で抽出容易。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書明示、公式出典URL提示、当社支援事例(業種・地域・金額)を複数提示。ただし採択通過率90%・支援50社+の算出根拠や母数は非開示。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・年・地名を含み、h2構造・目次アンカー・内部リンク5本と良好。一部内部リンクslug(it-hojokin系)とテーマ整合はあるが検証不可。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・em-marker・アクション枠で緩急あり、1文は概ね60字内。太字はやや多用気味だがセクション単位では過剰でない。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "『自己負担額の根拠を契約前提示』『禁止類型(採択条件割引)回避』という実務切り口と自社事例が独自性を担保。"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "各見出しに表・事例・数値があり密度は十分。ただし費用の具体的な金額レンジ(円)が一切なく『相場』の核心情報が薄い。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-hitsuyo-shorui-kojin.md",
+      "date": "2026-07-31T23:06:33.101Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "個人事業主の必要書類一覧・取得手順・チェックリスト・開業直後や白色申告のケースまでFAQで網羅し検索意図をほぼカバー"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義の断言文・要点3行・FAQの断言形・em-marker単文が引用しやすく整備されている"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書・公式出典URL(事務局/中小企業庁/GビズID/e-Tax)明示、支援実績も注記付きだが一次データは自社実績中心"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW含みh2構造・目次アンカー・内部リンク5本と整うが、内部リンク先の実在は記事内で検証不可"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表2つ・箇条書き・画像3枚・チェックリスト・STEP構成で緩急良好、太字とem-markerも適量"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「登記簿謄本の代わりに確定申告書」の切り口や採択率90%・着金2〜3ヶ月など自社知見で差別化"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "水増しなく手順・注意点・比較表まで密度高いが極端に長文ではなく標準的な情報量"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kobe-shinsei-support.md",
+      "date": "2026-07-31T23:06:32.788Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "神戸の申請サポートという主意図に加え対象・補助額・流れ・業者選び・着金・集客まで網羅。地域固有情報(兵庫の窓口・自治体上乗せ等)は薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行以上・定義断言文・FAQ6問の断言形・単文で引用しやすく構造明確"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "代表者実名・自社事例・採択率提示で経験と専門性は明確だが、統計は自社集計のみで第三者出典の数値なし"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW整合・H2/H3・目次アンカー・内部リンク多数。ただし同一画像の使い回し(section-1/section-2を2回)と重複figureが軽微な難点"
+            },
+            {
+              "key": "readability",
+              "score": 12,
+              "max": 15,
+              "reason": "1文短め・表・箇条書き・em-marker・アクションボックスで緩急良好。ただしem-markerが多用気味(1セクション複数)でやや強調過多"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "補助金+MEO/AIO一体設計、G-ran実績、自己負担根拠提示など自社独自の切り口が明確"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "具体数値・事例・比較表で水増しなく情報密度が高い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kyoto-shinsei-daiko.md",
+      "date": "2026-07-31T23:06:37.705Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 88,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "費用相場・料金体系・選び方・流れ・京都府外可否・FAQまで京都×申請代行の検索意図を広く網羅。ただし具体的な費用金額レンジの提示がなく相場の実数を知りたい意図は一部未充足。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文・要点3行、各見出し冒頭が結論断言、FAQが断言形で引用されやすい構造。減点はほぼなし。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書き明記、当社支援事例(業種・地域・削減率)や採択率90%等の一次情報、公式出典URLあり。ただし支援実績数値の裏付けは自己申告のみで第三者検証性は弱い。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW・年・地域を含み、H2構造・アンカー目次・内部リンク6本以上が適切に配置。内部リンクのアンカー多様性も良好。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表3点・箇条書き・画像3点・em-marker適量・1文短め・アクション囲みで緩急良好。太字がやや多く一部で強調過多気味なのが軽微な難点。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「相場を聞くより自己負担額の根拠提示を重視」「禁止類型(採択条件の割引回避)」など自社視点の切り口が明確。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "各セクションが結論+根拠+具体例で情報密度が高く水増しが少ない。費用の実数レンジ欠如で満点は不可。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

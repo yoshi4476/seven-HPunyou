@@ -538,6 +538,55 @@
       "reasons": [
         "③文字数不足: 7622字 (規定 8000字以上)"
       ]
+    },
+    {
+      "file": "ai-hojokin-hitsuyo-shorui-kojin.md",
+      "slug": "ai-hojokin-hitsuyo-shorui-kojin",
+      "title": "AI導入補助金 個人事業主の必要書類｜2026年最新の準備チェックリスト",
+      "date": "2026-07-31T22:59:05.804Z",
+      "passed": false,
+      "reasons": [
+        "③H2不足: 2個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-kyoto-shinsei-daiko.md",
+      "slug": "ai-hojokin-kyoto-shinsei-daiko",
+      "title": "AI導入補助金の申請代行を京都で頼む前に｜2026年最新・費用と選び方",
+      "date": "2026-07-31T22:59:06.381Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「100%」を含む段落に出典URLがありません",
+        "③H2不足: 2個 (規定 3個以上)",
+        "⑤NGワード検出: 「必ず採択」",
+        "⑤NGワード検出: 「100%成功」"
+      ]
+    },
+    {
+      "file": "ai-hojokin-hitsuyo-shorui-kojin.md",
+      "slug": "ai-hojokin-hitsuyo-shorui-kojin",
+      "title": "AI導入補助金 個人事業主の必要書類｜2026年最新の準備チェックリスト",
+      "date": "2026-07-31T23:07:16.654Z",
+      "passed": false,
+      "reasons": [
+        "③H2不足: 2個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-kobe-shinsei-support.md",
+      "slug": "ai-hojokin-kobe-shinsei-support",
+      "title": "AI導入補助金 神戸の申請サポート完全ガイド【2026年最新】採択率と流れ",
+      "date": "2026-07-31T23:07:16.981Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-kyoto-shinsei-daiko.md",
+      "slug": "ai-hojokin-kyoto-shinsei-daiko",
+      "title": "AI導入補助金の申請代行を京都で頼む前に｜2026年最新・費用と選び方",
+      "date": "2026-07-31T23:07:17.423Z",
+      "passed": true,
+      "reasons": []
     }
   ]
 }

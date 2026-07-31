@@ -1,5 +1,5 @@
 ---
-retry_count: 1
+retry_count: 2
 title: "AI導入補助金 神戸の申請サポート完全ガイド【2026年最新】採択率と流れ"
 slug: "ai-hojokin-kobe-shinsei-support"
 description: "神戸・兵庫の中小企業向けにAI導入補助金の申請サポートを解説。対象・上限350万円・着金までの流れ、失敗しない業者の選び方、補助金後の集客まで2026年7月時点でまとめました。"
@@ -60,6 +60,8 @@ AI導入補助金(正式名称: IT導入補助金)とは、中小企業がITツ�
 <a id="h2-2"></a>
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-kobe-shinsei-support/ai-hojokin-kobe-shinsei-support-section-1.webp" alt="対象・補助額・申請から着金までの流れは？の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-kobe-shinsei-support/ai-hojokin-kobe-shinsei-support-section-1.webp" alt="対象・補助額・申請から着金までの流れは？の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## 対象・補助額・申請から着金までの流れは？
 
 AI導入補助金の補助上限は350万円が目安で、申請から着金までは約2〜3ヶ月が目安です(補助率・枠・上限は公募回で異なるため最新の公募要領で要確認)。まずこの数字を押さえてください。
@@ -114,6 +116,8 @@ AI導入補助金の補助上限は350万円が目安で、申請から着金ま
 > ▶ 今すぐ試せるアクション：候補の業者に「自己負担の根拠を契約前に書面で出せますか」と1問だけ質問し、回答の具体性を比べてみましょう。
 
 <a id="h2-4"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-kobe-shinsei-support/ai-hojokin-kobe-shinsei-support-section-2.webp" alt="申請と同時に集客も伸ばす(補助金＋MEO/AIO活用)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-kobe-shinsei-support/ai-hojokin-kobe-shinsei-support-section-2.webp" alt="申請と同時に集客も伸ばす(補助金＋MEO/AIO活用)の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## 申請と同時に集客も伸ばす(補助金＋MEO/AIO活用)

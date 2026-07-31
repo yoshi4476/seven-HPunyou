@@ -158,8 +158,10 @@
       "keyword": "AI導入補助金 必要書類 個人事業主",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-07-31T22:57:55.369Z",
+      "slug": "ai-hojokin-hitsuyo-shorui-kojin"
     },
     {
       "id": 18,
@@ -578,9 +580,11 @@
       "keyword": "AI導入補助金 京都 申請代行",
       "priority": "S",
       "category": "hojo",
-      "status": "pending",
+      "status": "generated",
       "addedBy": "auto-replenish",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-07-31T22:54:08.376Z",
+      "slug": "ai-hojokin-kyoto-shinsei-daiko"
     },
     {
       "id": "101",
