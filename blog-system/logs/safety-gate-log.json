@@ -603,6 +603,45 @@
       "date": "2026-08-01T09:55:37.105Z",
       "passed": true,
       "reasons": []
+    },
+    {
+      "file": "ai-hojokin-kaikei-soft-taisho.md",
+      "slug": "ai-hojokin-kaikei-soft-taisho",
+      "title": "AI導入補助金の会計ソフト対象条件｜2026年版 選び方と申請手順",
+      "date": "2026-08-01T22:54:50.395Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「12名, 85%」を含む段落に出典URLがありません",
+        "③H2不足: 1個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-lp-seisaku-hojo.md",
+      "slug": "ai-hojokin-lp-seisaku-hojo",
+      "title": "AI導入補助金でLP制作は補助対象？2026年最新の条件と流れ",
+      "date": "2026-08-01T22:54:50.531Z",
+      "passed": false,
+      "reasons": [
+        "③H2不足: 2個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-kaikei-soft-taisho.md",
+      "slug": "ai-hojokin-kaikei-soft-taisho",
+      "title": "AI導入補助金の会計ソフト対象条件｜2026年版 選び方と申請手順",
+      "date": "2026-08-01T23:00:37.033Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-lp-seisaku-hojo.md",
+      "slug": "ai-hojokin-lp-seisaku-hojo",
+      "title": "AI導入補助金でLP制作は補助対象？2026年最新の条件と流れ",
+      "date": "2026-08-01T23:00:37.343Z",
+      "passed": false,
+      "reasons": [
+        "③H2不足: 2個 (規定 3個以上)"
+      ]
     }
   ]
 }

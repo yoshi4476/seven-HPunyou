@@ -194,8 +194,10 @@
       "keyword": "AI導入補助金 会計ソフト 対象",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-08-01T22:48:42.534Z",
+      "slug": "ai-hojokin-kaikei-soft-taisho"
     },
     {
       "id": 22,
@@ -220,8 +222,10 @@
       "keyword": "AI導入補助金 LP制作 補助",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "main",
+      "generatedAt": "2026-08-01T22:53:41.770Z",
+      "slug": "ai-hojokin-lp-seisaku-hojo"
     },
     {
       "id": 25,

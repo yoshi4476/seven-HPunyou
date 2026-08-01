@@ -5640,6 +5640,246 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kaikei-soft-taisho.md",
+      "date": "2026-08-01T22:54:07.172Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 91,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象可否・見分け方・補助額と自己負担・申請手順・選び方・事例・FAQと検索意図を網羅し、更新のみ/無料ソフト/個人事業主等の派生疑問もFAQで回収している。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文、要点3行、FAQが断言形の単文で構成され引用されやすいが、統計値の断言はやや少ない。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書・所在地明記、公式一次情報URL(事務局・中小企業庁)を明示し、匿名化した具体的支援事例(業種・地域・金額)を提示。政府統計の一次数値引用は無い。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW含み、H2にID付き見出し構造・目次・内部リンク4本(関連記事/サービス)が適切に配置されている。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "各セクションに表・箇条書き・画像プレースホルダ・em-marker・太字を配置し1文が短く緩急がある。em-markerが各1回で下限寄りの箇所あり。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "支援50社+・採択90%・上限350万円・着金2〜3ヶ月・稟議一度で通過など自社知見と具体事例で切り口が独自。"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "見分け表・内訳・ステップ・チェックリスト・成果表(月40→6時間)など情報密度は高いが、水増し気味の反復表現もある。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-lp-seisaku-hojo.md",
+      "date": "2026-08-01T22:54:06.346Z",
+      "finalScore": 89,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 89,
+          "seo": 90,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象可否の線引き・補助額・申請フロー・注意点・FAQと主要意図を網羅しているが、LP制作の相場感や登録ITツール名など補完情報はやや薄い"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義の太字断言・要点3行・FAQの断言形・◯×表があり引用されやすい構造が徹底されている"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書き明記・卸売業/製造業の具体事例・公式出典URL提示は良いが、統計値は自社実績表記が中心で一次統計の裏付けは限定的"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "title/description/見出しID・目次・内部リンク5本・キーワード整合ともに良好、見出し構造も自然"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・チェックリスト・IMGプレースホルダで緩急があり、em-marker各節1〜2回、太字も適切。ただし画像は未挿入コメントのみで視覚要素が実体化していない"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "「単体か業務システムの一部か」の線引き軸と自己負担根拠の稟議通過視点、支援事例は独自の切り口"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "約3,500字相当で冗長さが少なく、目安表・事例・数値と情報密度が高い"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kaikei-soft-taisho.md",
+      "date": "2026-08-01T22:59:50.140Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象可否・見分け方・補助額・申請手順・選び方・事例・FAQと会計ソフト検索者の主要意図をほぼ網羅している。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義の断言文・要点3行・FAQ6問が全て断言形で、引用しやすい単文構造になっている。"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者実名・肩書・支援事例(業種/地域/金額)と公式出典URLがあるが、統計はすべて自社実績で第三者一次データが乏しい。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW整合・H2階層・アンカー目次・関連内部リンク4本と構造は良好だが、見出し語尾が単調気味。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・図・em-marker各2〜3・太字が適度で1文も短い。図の連続配置がやや定型的。"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "会計→受発注→請求の一連統合視点や稟議通過の切り口など自社知見が反映されている。"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "情報密度は十分だが金額の多くが「当社目安」で制度上限の一次数値が薄く水増し感が一部残る。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-lp-seisaku-hojo.md",
+      "date": "2026-08-01T22:59:41.703Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象可否・線引き・補助額・申請フロー・注意点・FAQと検索意図を網羅、内部リンクで周辺疑問も補完している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義の断言文・要点3行・FAQの断言形・◯×判定表があり引用されやすいが、統計的な単文はやや少ない"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名と肩書、支援事例(兵庫県卸売業550万円/大阪府製造業350万円)、公式一次情報リンクありだが数値の多くが当社実績由来で公的統計出典は薄い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルとキーワード整合、id付きh2構造・目次・内部リンク4本と構造は良好、見出しがやや長め"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像・チェックリスト・em-markerが適度に配置され緩急良好、太字冒頭乱用気味だが許容範囲"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「単体か業務システムの一部か」の線引き軸と当社事例・稟議通過の切り口に独自性がある"
+            },
+            {
+              "key": "density",
+              "score": 11,
+              "max": 10,
+              "reason": "目安表2点・具体事例・費用シミュレーション・7ステップと情報密度が高い(満点上限)"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }
