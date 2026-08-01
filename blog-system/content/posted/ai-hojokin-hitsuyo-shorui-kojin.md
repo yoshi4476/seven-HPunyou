@@ -1,5 +1,5 @@
 ---
-retry_count: 1
+retry_count: 2
 title: "AI導入補助金 個人事業主の必要書類｜2026年最新の準備チェックリスト"
 slug: "ai-hojokin-hitsuyo-shorui-kojin"
 description: "個人事業主がAI導入補助金を申請するときの必要書類を2026年最新版で解説。確定申告書・gBizIDプライム・本人確認書類の取得手順と、書類不備で不採択にならないチェックリストをまとめました。"
@@ -171,6 +171,19 @@ A. 郵送審査を経る場合は発行まで2週間程度かかることがあ�
 A. 当社支援実績では申請から着金まで約2〜3ヶ月が目安です。入金時の会計処理は税理士へご相談ください。
 
 ---
+
+## 個人事業主の必要書類に関する関連記事
+
+書類準備をさらに深掘りしたい方は、あわせて次の記事もご覧ください。
+
+- [個人事業主もAI導入補助金は使える?条件と手順](/blog/ai-hojokin-kojin/)
+- [AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)
+- [GビズIDプライムの取得方法(最短2週間の逆算スケジュール)](/blog/gbizid-shutoku/)
+- [AI導入補助金 不採択の理由7選【2026年最新】再申請で採択されるコツ](/blog/ai-hojokin-fusaitaku-riyu/)
+
+---
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-hitsuyo-shorui-kojin/ai-hojokin-hitsuyo-shorui-kojin-section-1.webp" alt="書類準備の不安は、早めの相談で解決できますの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 ## 書類準備の不安は、早めの相談で解決できます
 

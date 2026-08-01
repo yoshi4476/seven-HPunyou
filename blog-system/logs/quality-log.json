@@ -5520,6 +5520,126 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-chakkin-itsu.md",
+      "date": "2026-08-01T09:52:01.044Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "「着金はいつ」の核心（期間・後払い・5ステップ・遅延原因・資金繰り・会計処理FAQ）を網羅し検索意図を的確にカバー"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文＋要点3行、各H2冒頭に太字断言、FAQ5問が断言形で引用されやすい構造"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "代表者署名・当社支援事例（大阪製造業3ヶ月350万等）・通過率90%と一次情報誘導があり実体験が明確、ただし数値は自社実績で公的統計の裏付けは薄い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルとslug整合・目次アンカー・内部リンク複数・見出し構造は良好だが「AI導入補助金（正式名称IT導入補助金）」の名称混在は検索整合上やや不安定"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表3つ・箇条書き・em-marker2箇所・IMGプレースホルダ・短文主体で緩急良好、太字がやや多用気味だが実害は限定的"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「作業はZoom1時間＋書類集め」「稟議一度で通過」など自社知見の切り口が具体的で独自性が高い"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "期間・金額・原因・対処が具体で密度は十分だが、事例数値の反復（350万円）がやや冗長で情報の新規追加は限定的"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-hitsuyo-shorui-kojin.md",
+      "date": "2026-08-01T09:55:12.667Z",
+      "finalScore": 91,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 92,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "個人事業主の必要書類・取得手順・不備防止・FAQ・法人との違いを網羅し、開業直後の代替書類まで検索意図を的確にカバー。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義の断言文と要点3行、FAQは断言形、em-markerで引用しやすい単文を配置しAI引用適性が高い。"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "事務局・GビズID・e-Tax等の公式出典を明記し、当社支援実績(通過率90%以上・50社以上)や大阪・兵庫の事例で実体験を提示。ただし統計値は自社実績中心。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW整合、h2のid付き見出し構造・目次アンカー・関連内部リンク多数で技術面は良好。"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表2つ・箇条書き・画像3点・チェックリスト・STEP構成で緩急良好。太字とem-markerも適切だが一部セクションで太字がやや多め。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「登記簿謄本の代わりに確定申告書」という個人事業主特有の切り口と自社支援フロー(Zoom1時間・逆算スケジュール)が独自性を担保。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "書類ごとの取得先・注意点・法人比較を表で密度高く整理。水増しは少ないが具体的な補助率数値は目安止まり。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

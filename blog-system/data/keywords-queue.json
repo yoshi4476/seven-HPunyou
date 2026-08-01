@@ -176,8 +176,10 @@
       "keyword": "AI導入補助金 着金 いつ",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-08-01T09:51:38.138Z",
+      "slug": "ai-hojokin-chakkin-itsu"
     },
     {
       "id": 20,
