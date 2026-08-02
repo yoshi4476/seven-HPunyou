@@ -670,6 +670,53 @@
       "date": "2026-08-02T09:58:17.807Z",
       "passed": true,
       "reasons": []
+    },
+    {
+      "file": "ai-hojokin-kourigyou-katsuyou.md",
+      "slug": "ai-hojokin-kourigyou-katsuyou",
+      "title": "AI導入補助金を小売業で活用する方法｜2026年版・事例と申請の流れ",
+      "date": "2026-08-02T22:56:37.427Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「1社」を含む段落に出典URLがありません",
+        "③H2不足: 2個 (規定 3個以上)"
+      ]
+    },
+    {
+      "file": "ai-hojokin-seizougyou-jirei-2026.md",
+      "slug": "ai-hojokin-seizougyou-jirei-2026",
+      "title": "AI導入補助金 製造業の事例2026｜採択の進め方と着金まで",
+      "date": "2026-08-02T22:56:37.720Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「1社」を含む段落に出典URLがありません"
+      ]
+    },
+    {
+      "file": "ai-donyu-hiyou-chusho-souba.md",
+      "slug": "ai-donyu-hiyou-chusho-souba",
+      "title": "AI導入 費用の相場【2026年最新】中小企業の内訳と補助金活用術",
+      "date": "2026-08-02T23:04:00.449Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「50万円, 3万円, 108万円」を含む段落に出典URLがありません"
+      ]
+    },
+    {
+      "file": "ai-hojokin-kourigyou-katsuyou.md",
+      "slug": "ai-hojokin-kourigyou-katsuyou",
+      "title": "AI導入補助金を小売業で活用する方法｜2026年版・事例と申請の流れ",
+      "date": "2026-08-02T23:04:00.692Z",
+      "passed": true,
+      "reasons": []
+    },
+    {
+      "file": "ai-hojokin-seizougyou-jirei-2026.md",
+      "slug": "ai-hojokin-seizougyou-jirei-2026",
+      "title": "AI導入補助金 製造業の事例2026｜採択の進め方と着金まで",
+      "date": "2026-08-02T23:04:00.819Z",
+      "passed": true,
+      "reasons": []
     }
   ]
 }

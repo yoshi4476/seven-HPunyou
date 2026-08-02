@@ -6060,6 +6060,306 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kourigyou-katsuyou.md",
+      "date": "2026-08-02T22:55:36.704Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象可否・活用シーン5選・費用/自己負担・申請の流れ・採択ポイント・集客・FAQと小売業の検索意図を網羅。ただし小売業固有の具体費用相場や店舗数別の目安が薄く満点は付かない"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文、要点3行、FAQが全て断言形で引用しやすく、目次も明確。AIO適合は高水準"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "公式一次情報(中小企業庁・事務局)を明示し、支援事例に数値と※注記あり。ただし提示事例が小売業そのものでなく隣接業種中心で、記事タイトルの小売業への直接一次経験がやや弱い"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・年版・要素を含み見出し階層と内部リンクが豊富。ただしtagsに「AI導入補助金」が重複しており雑さが残る"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・アクション枠・em-markerが各セクションに配置され緩急良好。1文も概ね短い。太字がやや多用気味で満点は不可"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "隣接業種の具体数値事例、G-ran・llms.txt・AI検索経由相談など自社知見の切り口が明確"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "各節に事例・表・数値があり情報密度は高い。ただし制度数値は「公式で要確認」に寄せた箇所が多く具体薄の面も"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-seizougyou-jirei-2026.md",
+      "date": "2026-08-02T22:55:31.404Z",
+      "finalScore": 91,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 92,
+          "seo": 93,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "「製造業の事例」「補助額」「申請から着金までの流れ」「採択のコツ」「サポート選び」「FAQ」と検索意図を広く網羅し、内部リンクで周辺意図も補完している。"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に要点3行、各見出し直下に定義断言文、FAQが断言形で引用しやすいが、統計の一次出典は自社実績中心で外部引用性はやや弱い。"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "著者名・会社名・所在地を明示し当社支援事例を具体数値で提示、公式サイトへ誘導し税務は税理士誘導と適切だが、事例数値は全て自社実績で第三者検証性は限定的。"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW包含、H2構造とアンカーリンク・目次・内部リンクが整備され、slug/descriptionも整合的で技術面はほぼ良好。"
+            },
+            {
+              "key": "readability",
+              "score": 14,
+              "max": 15,
+              "reason": "1文が概ね60字前後、表・箇条書き・チェックリスト・IMG指定が3〜4段落ごとに入り、em-marker2箇所と太字が適切で緩急がある。"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "「自己負担額の根拠を契約前提示で稟議一発通過」「作業は書類集めとZoom1時間」など自社知見の切り口が具体的で独自性が高い。"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "事例2〜3件・数値・表4点・タイムライン・FAQ5問と情報密度が高く水増しも少ないが、対象経費の具体的線引きは公式参照に委ねられ薄い。"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-donyu-hiyou-chusho-souba.md",
+      "date": "2026-08-02T23:03:13.361Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "相場・内訳・追加費用・TCO・抑える方法・補助金・FAQと費用の検索意図をほぼ網羅、用途別レンジも提示"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭定義断言・要点3行・FAQ断言形・em-markerの単文が揃い引用されやすいが数値の公的裏付けは弱い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者名・肩書明示、支援事例(業種・地域・工数削減率)や公式出典(中小企業庁・IT導入補助金)ありだが数値は自社実績中心で一次統計が乏しい"
+            },
+            {
+              "key": "seo_tech",
+              "score": 13,
+              "max": 15,
+              "reason": "タイトルにKW・目次アンカー・H2構造・内部/サービスリンクありだが同一画像の使い回しとKW『AI導入 費用』の見出し反復がやや冗長"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・画像・em-marker・要点が適切に配置され緩急良好、ただしsection-1/section-2画像の重複掲載で視覚要素の質が低下"
+            },
+            {
+              "key": "originality",
+              "score": 8,
+              "max": 10,
+              "reason": "支援50社+のTCO試算例・採択率90%・着金2〜3ヶ月・具体事例など自社知見の切り口が明確"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "金額レンジ・TCO表・事例・手順・FAQと情報密度が高く水増しが少ない"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-kourigyou-katsuyou.md",
+      "date": "2026-08-02T23:03:22.872Z",
+      "finalScore": 88,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 88,
+          "seo": 89,
+          "aio": 90,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "小売業×補助金の対象・活用シーン・費用・申請の流れ・採択ポイント・集客まで主要意図を網羅。EC言及もありFAQで補完されている"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭要点3行・各H2冒頭の断言文・定義文・FAQ断言形が揃い引用されやすい構造。数値の多くが自社実績注記で外部引用時の裏付けはやや弱い"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "中小企業庁・事務局の公式URLを提示し、当社事例に社名匿名化・出典注記あり。ただし350万円等の制度数値に公式深部の裏付けがなく実体験は自社事例中心"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW・年・事例含み、id付きH2構造・目次・内部リンク多数と良好。tags配列に「AI導入補助金」が重複しており軽微な不整合"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "1文短め・表/箇条書き/画像/em-marker/アクション枠で緩急十分。太字がセクションによりやや多用気味だが読みやすさは高い"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "隣接業種の具体的支援事例(数値付き)・G-ran・llms.txt整備など自社知見の切り口が明確"
+            },
+            {
+              "key": "density",
+              "score": 8,
+              "max": 10,
+              "reason": "情報密度は高く冗長は少ないが、制度数値の解説が『公式で要確認』に寄り具体の踏み込みは控えめで水増しではないが密度上限には未達"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-seizougyou-jirei-2026.md",
+      "date": "2026-08-02T23:03:14.592Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 90,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "事例・補助額・対象経費・申請〜着金の流れ・採択のコツ・サポート選びまで「製造業×事例」の検索意図をほぼ網羅している"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に要点3行、各見出し直下に定義断言文、FAQ5問が断言形で並び引用しやすい構造になっている"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "実名著者・自社支援事例(大阪府350万円・設備工事業85%削減等)・公式一次情報リンクがあり実体験が具体的。ただし公的統計の出典URLはトップページ止まりで数値の裏付けは自社実績中心"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルにKW前寄せ、H2階層とアンカー・目次・関連内部リンク4本が整備され構造は良好"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・図・em-marker・太字が緩急よく配置され1文も短い。ただしem-markerが2箇所とやや少なめ"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "自社支援事例の具体数値・作業をZoom約1時間に圧縮という切り口・一気通貫サービスの独自視点がある"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "冗長さが少なく事例・数字・手順が高密度。制度の具体数値(補助率等)は公式誘導で薄い部分がある"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

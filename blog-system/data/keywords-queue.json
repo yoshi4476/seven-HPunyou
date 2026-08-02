@@ -452,18 +452,22 @@
       "keyword": "AI導入補助金 製造業 事例",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
+      "status": "generated",
       "addedBy": "auto-replenish",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-08-02T22:48:17.359Z",
+      "slug": "ai-hojokin-seizougyou-jirei-2026"
     },
     {
       "id": "87",
       "keyword": "AI導入補助金 小売業 活用",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
+      "status": "generated",
       "addedBy": "auto-replenish",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-08-02T22:55:08.025Z",
+      "slug": "ai-hojokin-kourigyou-katsuyou"
     },
     {
       "id": "88",

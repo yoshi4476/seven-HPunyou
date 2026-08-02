@@ -1,5 +1,5 @@
 ---
-retry_count: 1
+retry_count: 2
 type: "news"
 title: "AI導入 費用の相場【2026年最新】中小企業の内訳と補助金活用術"
 slug: "ai-donyu-hiyou-chusho-souba"
@@ -43,9 +43,9 @@ AI導入 費用の相場は、用途別でおおむね初期数万〜数百万�
 
 | 用途 | 初期費用の目安 | 月額費用の目安 | 主なコスト要因 |
 | --- | --- | --- | --- |
-| チャットボット・問い合わせ対応 | 5万〜50万円 | 数千〜3万円 | 学習データ量・応答シナリオ数 |
-| 業務自動化(文書作成・入力支援) | 20万〜100万円 | 1万〜5万円 | 既存フォーマット連携・利用人数 |
-| 受発注・会計連携システム | 100万〜数百万円 | 3万〜15万円 | カスタマイズ・データ移行の範囲 |
+| チャットボット・問い合わせ対応 | 数万〜数十万円 | 数千〜数万円 | 学習データ量・応答シナリオ数 |
+| 業務自動化(文書作成・入力支援) | 数十万〜百万円規模 | 数万円程度 | 既存フォーマット連携・利用人数 |
+| 受発注・会計連携システム | 百万〜数百万円 | 数万〜十数万円 | カスタマイズ・データ移行の範囲 |
 
 なお、上表の金額はいずれも当社支援実績に基づく独自の目安であり、公的な統計値ではありません(※当社支援実績)。金額は幅があり、最新の制度・補助上限は公式サイトで要確認です(中小企業庁 https://www.chusho.meti.go.jp/ )。「安いツールが正解」ではなく、**減らしたい業務にどれだけ効くか**で選ぶのが失敗しないポイントです。
 
@@ -86,6 +86,8 @@ AI導入 費用の内訳は、初期設定・カスタマイズ・データ移�
 ▶ 今すぐ試せるアクション:見積書に「従量課金」「改修費」の記載があるか確認し、3年分の総額を概算してみましょう。
 
 <a id="osaeru"></a>
+
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-donyu-hiyou-chusho-souba/ai-donyu-hiyou-chusho-souba-section-1.webp" alt="相場より費用を抑える3つの方法の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-donyu-hiyou-chusho-souba/ai-donyu-hiyou-chusho-souba-section-1.webp" alt="相場より費用を抑える3つの方法の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
@@ -133,10 +135,12 @@ AI導入補助金は、補助上限350万円で導入費用の一部を補助す
 
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-donyu-hiyou-chusho-souba/ai-donyu-hiyou-chusho-souba-section-2.webp" alt="よくある質問(FAQ)の解説イメージ" width="1200" height="700" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-donyu-hiyou-chusho-souba/ai-donyu-hiyou-chusho-souba-section-2.webp" alt="よくある質問(FAQ)の解説イメージ" width="1200" height="760" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
 ## よくある質問(FAQ)
 
 **Q. AI導入の費用は中小企業だと最低いくらから始められますか？**
-A. 定型のチャットボットなら初期5万円前後、月額数千円から始められる場合があります。まず1業務に絞ったスモールスタートが、初期費用を抑える現実的な進め方です。
+A. 定型のチャットボットなら初期数万円前後、月額数千円から始められる場合があります。まず1業務に絞ったスモールスタートが、初期費用を抑える現実的な進め方です。
 
 **Q. AI導入補助金を使うと費用はどのくらい抑えられ、いつ着金しますか？**
 A. 補助上限は350万円で、当社支援では着金まで約2〜3ヶ月が目安です(※当社支援実績)。ただし採択を保証するものではなく、補助額・対象は年度で変わるため公式サイトでの確認が必要です。
