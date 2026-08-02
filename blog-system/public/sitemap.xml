@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lp.7senses.co.jp/</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/</loc>
-    <lastmod>2026-08-01</lastmod>
+    <lastmod>2026-08-02</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/</loc>
@@ -75,5 +75,9 @@
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-kaikei-soft-taisho/</loc>
     <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-lp-seisaku-hojo/</loc>
+    <lastmod>2026-08-02</lastmod>
   </url>
 </urlset>

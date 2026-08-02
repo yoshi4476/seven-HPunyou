@@ -250,8 +250,10 @@
       "keyword": "AI導入 費用 中小企業 相場",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
-      "type": "main"
+      "status": "generated",
+      "type": "news",
+      "generatedAt": "2026-08-02T09:51:11.664Z",
+      "slug": "ai-donyu-hiyou-chusho-souba"
     },
     {
       "id": 28,

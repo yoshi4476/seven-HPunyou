@@ -1,5 +1,5 @@
 ---
-retry_count: 1
+retry_count: 2
 title: "AI導入補助金でLP制作は補助対象？2026年最新の条件と流れ"
 slug: "ai-hojokin-lp-seisaku-hojo"
 description: "AI導入補助金でLP制作費は補助対象になるのか、2026年8月時点の条件を解説。単体制作は原則対象外だが、業務システムの一部なら対象になり得る線引き・補助額・申請の流れ・注意点を中小企業向けにまとめました。"
@@ -31,7 +31,10 @@ thumbnail: "/images/blog/ai-hojokin-lp-seisaku-hojo/thumbnail.webp"
 - [LP制作を補助金で進めるときの注意点と相談先](#h2-5)
 - [よくある質問（FAQ）](#faq)
 
-<h2 id="h2-1">AI導入補助金でLP制作は補助対象になるのか（結論と条件）</h2>
+<a id="h2-1"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-lp-seisaku-hojo/ai-hojokin-lp-seisaku-hojo-section-1.webp" alt="AI導入補助金でLP制作は補助対象になるのか（結論と条件）の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+## AI導入補助金でLP制作は補助対象になるのか（結論と条件）
 
 **結論、LP制作単体は原則として対象外ですが、受発注や予約などの業務システムの一部として組み込む場合は補助対象になり得ます。** ここを取り違えると申請でつまずくため、最初に線引きを押さえましょう。
 
@@ -56,7 +59,8 @@ AI導入補助金は、事務局に登録されたITツールの導入費を補�
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-lp-seisaku-hojo/ai-hojokin-lp-seisaku-hojo-section-1.webp" alt="LP制作が補助対象になる場合と対象外になる場合を◯×で分けた判定の概念図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 
-<h2 id="h2-2">補助の対象になる「LP制作」と対象外になるケースの違い</h2>
+<a id="h2-2"></a>
+## 補助の対象になる「LP制作」と対象外になるケースの違い
 
 **対象になりやすいのは業務システムに付随するLP、対象外になりやすいのはデザイン刷新や広告費です。** 違いは「登録ITツールの機能に組み込まれているか」で判断します。
 
@@ -78,7 +82,10 @@ AI導入補助金は、事務局に登録されたITツールの導入費を補�
 
 ▶ 今すぐ試せるアクション：見積書の項目を「システム機能」と「デザインのみ」に色分けし、対象になりそうな費用を洗い出してみましょう。
 
-<h2 id="h2-3">補助額・自己負担の目安とLP制作を含めた費用シミュレーション</h2>
+<a id="h2-3"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-lp-seisaku-hojo/ai-hojokin-lp-seisaku-hojo-section-2.webp" alt="補助額・自己負担の目安とLP制作を含めた費用シミュレーションの解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+## 補助額・自己負担の目安とLP制作を含めた費用シミュレーション
 
 **補助上限は350万円が目安で、自己負担は導入費から補助額を引いた残りになります（※当社支援実績）。** 割引や実質無料ではなく、あくまで費用の一部が補助される制度です。
 
@@ -102,7 +109,8 @@ AI導入補助金は、事務局に登録されたITツールの導入費を補�
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-lp-seisaku-hojo/ai-hojokin-lp-seisaku-hojo-section-2.webp" alt="導入費・補助額・自己負担の関係を段階的に示した費用シミュレーションの概念図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 
-<h2 id="h2-4">申請から着金までの流れとスケジュール（2026年版）</h2>
+<a id="h2-4"></a>
+## 申請から着金までの流れとスケジュール（2026年版）
 
 **申請は「相談→ツール選定→書類準備→交付申請→採択→導入・実績報告→着金」の7ステップで進みます。** 経営者の作業は、支援を受ければ書類集めと打ち合わせ程度に抑えられるケースがあります。
 
@@ -125,7 +133,10 @@ AI導入補助金は、事務局に登録されたITツールの導入費を補�
 <figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-lp-seisaku-hojo/ai-hojokin-lp-seisaku-hojo-section-3.webp" alt="相談から着金までの7ステップを横並びで示した申請フローの手順図" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
 
 
-<h2 id="h2-5">LP制作を補助金で進めるときの注意点と相談先</h2>
+<a id="h2-5"></a>
+<figure style="margin:28px 0;border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(29,52,97,.1)"><img src="/images/blog/ai-hojokin-lp-seisaku-hojo/ai-hojokin-lp-seisaku-hojo-section-3.webp" alt="LP制作を補助金で進めるときの注意点と相談先の解説イメージ" width="1200" height="630" loading="lazy" style="width:100%;height:auto;display:block"></figure>
+
+## LP制作を補助金で進めるときの注意点と相談先
 
 **採択は保証されず、要件を外すとLP部分が対象外になるリスクがあります。** だからこそ、登録ITツール・登録支援事業者を通し、対象範囲を事前に確認することが大切です。
 
@@ -143,7 +154,8 @@ AI導入補助金は、事務局に登録されたITツールの導入費を補�
 
 ▶ 今すぐ試せるアクション：作りたいLPの目的と連動させたい業務システムをメモにまとめ、無料相談で対象可否を確認してもらいましょう。
 
-<h2 id="faq">よくある質問（FAQ）</h2>
+<a id="faq"></a>
+## よくある質問（FAQ）
 
 **Q. LP制作だけを依頼したいのですが、AI導入補助金の対象になりますか？**
 A. LP制作単体は原則対象外です。予約や受発注など業務システムの一部なら対象になり得ます。

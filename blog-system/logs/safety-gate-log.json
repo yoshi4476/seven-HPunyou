@@ -642,6 +642,34 @@
       "reasons": [
         "③H2不足: 2個 (規定 3個以上)"
       ]
+    },
+    {
+      "file": "ai-donyu-hiyou-chusho-souba.md",
+      "slug": "ai-donyu-hiyou-chusho-souba",
+      "title": "AI導入 費用の相場【2026年最新】中小企業の内訳と補助金活用術",
+      "date": "2026-08-02T09:52:09.767Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「50万円, 3万円, 100万円」を含む段落に出典URLがありません"
+      ]
+    },
+    {
+      "file": "ai-donyu-hiyou-chusho-souba.md",
+      "slug": "ai-donyu-hiyou-chusho-souba",
+      "title": "AI導入 費用の相場【2026年最新】中小企業の内訳と補助金活用術",
+      "date": "2026-08-02T09:58:17.039Z",
+      "passed": false,
+      "reasons": [
+        "①出典なしの統計数値: 「50万円, 3万円, 100万円」を含む段落に出典URLがありません"
+      ]
+    },
+    {
+      "file": "ai-hojokin-lp-seisaku-hojo.md",
+      "slug": "ai-hojokin-lp-seisaku-hojo",
+      "title": "AI導入補助金でLP制作は補助対象？2026年最新の条件と流れ",
+      "date": "2026-08-02T09:58:17.807Z",
+      "passed": true,
+      "reasons": []
     }
   ]
 }
