@@ -36,6 +36,19 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/): AI導入の費用相場は月額0円〜15万円、初期費用0円〜100万円が中小企業の目安です。業務別の費用感、補助金を使った実質費用、費用を抑える3
+- [AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/): AI導入補助金の納税証明書は「その1」「その2」のどちらでも申請できます。法人は法人税、個人事業主は所得税の証明書が必要です。2026年8月
+- [AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/): AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年
+- [AI導入補助金を小売業で活用する方法｜2026年版・事例と申請の流れ](https://lp.7senses.co.jp/blog/ai-hojokin-kourigyou-katsuyou/): 小売業でAI導入補助金(正式名称:IT導入補助金)を活用する方法を2026年版で解説。レジ・在庫・受発注・集客に使える活用シーン、補助上限3
+- [AI導入補助金 製造業の事例2026｜採択の進め方と着金まで](https://lp.7senses.co.jp/blog/ai-hojokin-seizougyou-jirei-2026/): AI導入補助金の製造業向け活用事例を2026年最新で解説。350万円採択の実例、対象経費、申請から着金まで約2〜3ヶ月の流れ、採択されやすい
+- [AI導入補助金の着金はいつ？2026年 申請から入金までの期間と流れ](https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/): AI導入補助金の着金はいつ？申請から入金まで約2〜3ヶ月が目安です。後払い（精算払い）の仕組み、着金までの5ステップ、遅れる原因と資金繰り・
+- [AI導入補助金の会計ソフト対象条件｜2026年版 選び方と申請手順](https://lp.7senses.co.jp/blog/ai-hojokin-kaikei-soft-taisho/): AI導入補助金で会計ソフトは対象になるのか。2026年最新の対象・非対象の見分け方、補助額と自己負担、申請の流れ、失敗しない選び方を中小企業
+- [AI導入補助金でLP制作は補助対象？2026年最新の条件と流れ](https://lp.7senses.co.jp/blog/ai-hojokin-lp-seisaku-hojo/): AI導入補助金でLP制作費は補助対象になるのか、2026年8月時点の条件を解説。単体制作は原則対象外だが、業務システムの一部なら対象になり得
+- [AI導入補助金 個人事業主の必要書類｜2026年最新の準備チェックリスト](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-kojin/): 個人事業主がAI導入補助金を申請するときの必要書類を2026年最新版で解説。確定申告書・gBizIDプライム・本人確認書類の取得手順と、書類
+- [AI導入補助金 神戸の申請サポート完全ガイド【2026年最新】採択率と流れ](https://lp.7senses.co.jp/blog/ai-hojokin-kobe-shinsei-support/): 神戸・兵庫の中小企業向けにAI導入補助金の申請サポートを解説。対象・上限350万円・着金までの流れ、失敗しない業者の選び方、補助金後の集客ま
+- [AI導入補助金の申請代行を京都で頼む前に｜2026年最新・費用と選び方](https://lp.7senses.co.jp/blog/ai-hojokin-kyoto-shinsei-daiko/): 京都でAI導入補助金の申請代行を検討する中小企業向けに、費用相場・料金体系・失敗しない業者の選び方・着金までの流れを2026年最新情報で解説
+- [AI導入補助金 福岡の相談窓口2026｜採択率を上げる無料相談の使い方](https://lp.7senses.co.jp/blog/ai-hojokin-fukuoka-soudan/): AI導入補助金を福岡で相談したい経営者向け。福岡商工会議所・福岡県よろず支援拠点・民間サポート会社の使い分けから、オンライン相談、相談先の選
+- [AI導入補助金 名古屋のサポート先の選び方【2026年版】採択率・費用・流れを解説](https://lp.7senses.co.jp/blog/ai-hojokin-nagoya-support/): AI導入補助金を名古屋で申請するときのサポート先の選び方を2026年最新で解説。採択実績・費用相場・着金までの流れ・必要書類・避けるべき業者
 - [AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-hojin/): AI導入補助金(正式名称:IT導入補助金)の法人の必要書類を2026年最新版で解説。履歴事項全部証明書・gBizID・SECURITY AC
 - [AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-2star/): AI導入補助金の申請に必要なSECURITY ACTION二つ星を解説。一つ星との違い、宣言の手順、よくあるつまずきと対策を中小企業経営者向
 - [AI導入補助金 不採択の理由7選【2026年最新】再申請で採択されるコツ](https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/): AI導入補助金(正式名称:IT導入補助金)で不採択になる理由を7つ解説。審査の視点、再申請の進め方、申請前セルフチェックリストまで、2026
@@ -58,7 +71,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/): AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年の最新データをもとに対策を解説します。
-- [AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/): AI導入補助金の納税証明書は「その1」「その2」のどちらでも申請できます。法人は法人税、個人事業主は所得税の証明書が必要です。2026年8月時点の取得方法と注意点を解説します。
-- [AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/): AI導入の費用相場は月額0円〜15万円、初期費用0円〜100万円が中小企業の目安です。業務別の費用感、補助金を使った実質費用、費用を抑える3つの方法を2026年8月時点のデータで解説します。
-- [AI導入補助金のみらデジ経営チェックは終了｜代わりの手順3つ](https://lp.7senses.co.jp/blog/ai-hojokin-miradigi-keieicheck/): AI導入補助金のみらデジ経営チェックは2025年3月に終了しました。後継の「デジwith」「IT戦略ナビwith」の位置づけと、2026年の交付申請で実際に必要な手続きを解説します。

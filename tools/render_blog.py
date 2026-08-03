@@ -132,7 +132,11 @@ def render_article(md_path):
     # 図解・写真が1枚も無い記事 (管制塔からの納品分など) には、
     # セクションの内容に合う在庫写真を選んで差し込む。文章と無関係な写真が入らないよう、
     # 見出しがキーワードに当たったセクションだけを対象にし、同じ写真は使い回さない。
-    has_image = bool(re.search(r"!\[|<img", body))
+    # 画像の有無は「実際に記事へ残る部分」で判定する。
+    # 目次セクションなど描画時に落とす箇所に画像が置かれている記事があり、
+    # 元のMarkdown全体で判定すると「画像あり」と誤認して1枚も入らなくなる。
+    retained = lead_md + "".join(c for _, c in body_sections)
+    has_image = bool(re.search(r"!\[|<img", retained))
     photo_for = {}
     if not has_image:
         used = set(photo_match.BODY_EXCLUDE)
@@ -199,10 +203,14 @@ def render_article(md_path):
         raise ValueError(f"{slug}: 未置換プレースホルダ {leftover}")
 
     # 生成済みサムネイルがあれば、OGP画像を記事固有のものに差し替える
-    if (IMG_SRC / slug / "thumbnail.png").is_file() or (ROOT / "images" / "blog" / slug / "thumbnail.png").is_file():
-        html = html.replace(
-            'content="https://lp.7senses.co.jp/ogp.png"',
-            f'content="https://lp.7senses.co.jp/images/blog/{slug}/thumbnail.png"')
+    # 管制塔(SS-AIO-LP)は webp で納品し、旧パイプラインは png を作るため両方を見る
+    for ext in ("webp", "png"):
+        if (IMG_SRC / slug / f"thumbnail.{ext}").is_file() \
+                or (ROOT / "images" / "blog" / slug / f"thumbnail.{ext}").is_file():
+            html = html.replace(
+                'content="https://lp.7senses.co.jp/ogp.png"',
+                f'content="https://lp.7senses.co.jp/images/blog/{slug}/thumbnail.{ext}"')
+            break
 
     out = ROOT / "blog" / slug
     out.mkdir(parents=True, exist_ok=True)
@@ -218,6 +226,64 @@ def render_article(md_path):
     return slug
 
 
+def _bigrams(s):
+    s = re.sub(r"[\s|｜【】\[\]()()、。・:：\-—]", "", s or "")
+    return {s[i:i + 2] for i in range(len(s) - 1)}
+
+
+def title_similarity(a, b):
+    """文字2-gramのDice係数。日本語タイトルの言い換え重複を検出する"""
+    x, y = _bigrams(a), _bigrams(b)
+    if not x or not y:
+        return 0.0
+    return 2 * len(x & y) / (len(x) + len(y))
+
+
+def existing_titles():
+    out = []
+    for d in (ROOT / "blog").iterdir():
+        f = d / "index.html"
+        if not d.is_dir() or not f.is_file() or d.name == "category":
+            continue
+        m = re.search(r"<title>(.*?)[|｜]", f.read_text(encoding="utf-8"))
+        if m:
+            out.append((d.name, m.group(1).strip()))
+    return out
+
+
+# タイトルがほぼ言い換えの場合だけを機械的に弾く。
+# 実測では「名古屋 vs 大阪」のような正当な地域別記事が42%、逆に本当の重複が36%になり、
+# 統計的な類似度だけでは判別できなかったため、閾値は明白な水準に置き、
+# 判断が要るものは SKIP_LIST で明示的に管理する。
+DUP_THRESHOLD = 0.65
+
+# 公開しない記事 (slug: 理由)。管制塔が納品しても、ここにあるものは公開されない
+SKIP_LIST = {
+    "ai-hojokin-gbizid-shutoku": "既存の gbizid-shutoku と同一テーマ(GビズID取得手順)",
+    "ai-hojokin-futaitaku-riyu": "既存の ai-hojokin-fusaitaku-riyu と同一テーマ(不採択の理由)",
+    "ai-donyu-hojokin-jirei": "既存の ai-hojokin-katsuyou-jirei-2026 と同一テーマ(活用事例)",
+}
+
+
+def is_duplicate(md_path):
+    """既存記事と実質同じテーマなら (True, 相手slug, 類似度) を返す
+
+    管制塔は自分の記事台帳を基準に重複を判定するため、このサイトに元からある記事
+    (旧パイプラインが作ったもの) とは重複しうる。公開前にこちら側でも確かめる。
+    """
+    fm, _ = parse_frontmatter(md_path.read_text(encoding="utf-8"))
+    title = fm.get("title", "")
+    slug = fm.get("slug") or md_path.stem
+    best = (0.0, "")
+    for other_slug, other_title in existing_titles():
+        if other_slug == slug:
+            continue
+        s = title_similarity(title, other_title)
+        if s > best[0]:
+            best = (s, other_slug)
+    return (best[0] >= DUP_THRESHOLD, best[1], best[0])
+
+
 def collect_targets(force_all=False):
     """レンダリング対象のMarkdownを集める
 
@@ -230,8 +296,20 @@ def collect_targets(force_all=False):
     if POSTED.is_dir():
         for f in sorted(POSTED.glob("*.md")):
             slug = f.stem
-            if force_all or not (ROOT / "blog" / slug / "index.html").is_file():
-                targets.append(f)
+            if (ROOT / "blog" / slug / "index.html").is_file():
+                if force_all:
+                    targets.append(f)       # 既存記事の作り直し
+                continue
+            # 未公開の納品記事。既存記事と実質同じテーマなら公開しない(検索順位の共食い防止)
+            if slug in SKIP_LIST:
+                print(f"[render] 公開対象外: {slug} ({SKIP_LIST[slug]})")
+                continue
+            dup, other, sim = is_duplicate(f)
+            if dup:
+                print(f"[render] 重複のため公開を見送り: {slug} "
+                      f"(既存 {other} と {sim:.0%} 一致)")
+                continue
+            targets.append(f)
     return targets
 
 
