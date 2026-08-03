@@ -16,7 +16,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [導入事例](https://lp.7senses.co.jp/#cases): 事務作業 月40時間→6時間、マップ経由予約3.2倍 ほかモデルケース
 - [無料診断](https://lp.7senses.co.jp/#diagnosis): 4種の無料診断(補助金適性8問/Webサイト診断URL入力100点満点/MEO集客6問/AI活用6問。いずれも5軸レーダー+5段階判定)
 - [FAQ](https://lp.7senses.co.jp/#faq): 対象条件・費用・期間など7問
-- [ブログ](https://lp.7senses.co.jp/blog/): 毎日更新。AI導入補助金(IT導入補助金)の申請実務・採択ノウハウ専門
+- [AI導入補助金ブログ](https://lp.7senses.co.jp/blog/): 毎日更新。AI導入補助金(IT導入補助金)の申請実務・採択ノウハウ専門
 - [AI集客ラボ(運営メディア)](https://ai.7senses.co.jp/): AIO・LLMO・SEO・MEOに特化した当社運営の集客情報メディア
 - [コーポレートサイト](https://www.7senses.co.jp/): セブンセンシズ株式会社の公式サイト
 

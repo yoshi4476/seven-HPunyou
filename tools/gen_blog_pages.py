@@ -249,11 +249,11 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 # ---- ブログ一覧 ----
 all_cards = "\n".join(card(a) for a in arts)
 (ROOT / "blog" / "index.html").write_text(page(
-    "/blog/", "ブログ|AI導入補助金の実務ノウハウ|セブンセンシズ株式会社",
+    "/blog/", "AI導入補助金ブログ|申請実務と採択のノウハウ|セブンセンシズ株式会社",
     f"AI導入補助金(IT導入補助金)の申請実務・採択のコツを支援現場の一次情報で毎日発信。全{len(arts)}記事。",
     "AI導入補助金の<br>実務ノウハウを毎日発信",
     "AI導入補助金(IT導入補助金)の申請実務・必要書類・採択のコツまで。支援の現場で得た一次情報だけを書いています。",
-    all_cards, "all", "ブログ"), encoding="utf-8")
+    all_cards, "all", "AI導入補助金ブログ"), encoding="utf-8")
 print("生成: blog/index.html")
 
 # ---- カテゴリ別 ----
@@ -271,7 +271,7 @@ for name, (slug, hub, catdesc) in CATS.items():
         f"{name}の記事一覧({len(cat_arts)}本)|セブンセンシズ株式会社ブログ",
         f"{catdesc}。全{len(cat_arts)}記事。",
         f"カテゴリ: <span style='color:#8a6a20'>{name}</span>の記事一覧",
-        catdesc + "。", cards, name, f'<a href="/blog/">ブログ</a> › {name}',
+        catdesc + "。", cards, name, f'<a href="/blog/">AI導入補助金ブログ</a> › {name}',
         hub_html, jsonld_extra), encoding="utf-8")
     print(f"生成: blog/category/{slug}/index.html ({len(cat_arts)}本)")
 
