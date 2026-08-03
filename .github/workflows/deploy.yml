@@ -22,7 +22,6 @@ on:
       - 'reports/**'
       - 'README.md'
       - '運用手順.md'
-      - '.github/workflows/auto-publish.yml'
       - '.github/workflows/monthly-report.yml'
   # 取りこぼしの保険。pushをきっかけにした実行が失敗・スキップされても、
   # 2時間ごとの点検で未公開の納品記事を拾って公開する

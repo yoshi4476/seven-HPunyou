@@ -182,6 +182,11 @@ function normalize_(data) {
     name: String(data.name || '').slice(0, 100),
     email: String(data.email).trim().toLowerCase().slice(0, 200),
     company: String(data.company || '').slice(0, 100),
+    contactPerson: String(data.contactPerson || '').slice(0, 100),
+    tel: String(data.tel || '').slice(0, 40),
+    topic: String(data.topic || '').slice(0, 100),
+    // 特典コードは詳細欄への記入で申告してもらう運用。念のため本文からも拾う
+    perkCode: String(data.perkCode || (/\b3010\b/.test(String(data.message || '')) ? '3010' : '')).slice(0, 20),
     message: String(data.message || '').slice(0, 2000),
     grade: d.grade || (data.audit ? data.audit.grade : '') || '',
     scores: scores,
@@ -211,7 +216,12 @@ function scoreLead_(data) {
 // スプレッドシート
 // =========================================================================
 
-const HEADER = ['日時', 'type', '名前', 'メール', '会社', '内容', '診断grade', 'スコア', 'リード温度', 'メモ'];
+const HEADER = ['日時', 'type', '名前', 'メール', '会社・店舗', 'ご担当者', '電話', 'ご相談内容',
+                '特典コード', '詳細', '診断grade', 'スコア', 'リード温度', 'メモ'];
+
+// 列番号(1始まり)。項目を増減したときに位置を取り違えないよう名前で参照する
+const COL = {};
+HEADER.forEach(function (h, i) { COL[h] = i + 1; });
 
 function getSheet_() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
@@ -241,7 +251,7 @@ function saveToSheet_(lead) {
     const values = sheet.getRange(startRow, 1, lastRow - startRow + 1, HEADER.length).getValues();
     for (let i = values.length - 1; i >= 0; i--) {
       const rowDate = values[i][0];
-      const rowEmail = String(values[i][3] || '').trim().toLowerCase();
+      const rowEmail = String(values[i][COL['メール'] - 1] || '').trim().toLowerCase();
       if (rowEmail !== lead.email) continue;
       if (!(rowDate instanceof Date)) continue;
       if (lead.now.getTime() - rowDate.getTime() > CONFIG.DUPLICATE_WINDOW_MS) continue;
@@ -252,18 +262,22 @@ function saveToSheet_(lead) {
       const addMemo = '[' + stamp + ' 再送信: ' + lead.typeLabel + ']'
         + (lead.message ? ' ' + lead.message.slice(0, 200) : '')
         + (lead.grade ? ' grade=' + lead.grade : '');
-      const oldMemo = String(values[i][9] || '');
-      sheet.getRange(rowIndex, 10).setValue(oldMemo ? oldMemo + '\n' + addMemo : addMemo);
+      const oldMemo = String(values[i][COL['メモ'] - 1] || '');
+      sheet.getRange(rowIndex, COL['メモ']).setValue(oldMemo ? oldMemo + '\n' + addMemo : addMemo);
 
       // 温度は高い方へ更新
-      const oldTemp = String(values[i][8] || 'COOL');
+      const oldTemp = String(values[i][COL['リード温度'] - 1] || 'COOL');
       if ((TEMP_RANK[lead.temp] || 0) > (TEMP_RANK[oldTemp] || 0)) {
-        sheet.getRange(rowIndex, 9).setValue(lead.temp);
+        sheet.getRange(rowIndex, COL['リード温度']).setValue(lead.temp);
       }
       // 診断結果が新たに得られた場合は反映
-      if (lead.grade && !values[i][6]) {
-        sheet.getRange(rowIndex, 7).setValue(lead.grade);
-        sheet.getRange(rowIndex, 8).setValue(scoreText);
+      if (lead.grade && !values[i][COL['診断grade'] - 1]) {
+        sheet.getRange(rowIndex, COL['診断grade']).setValue(lead.grade);
+        sheet.getRange(rowIndex, COL['スコア']).setValue(scoreText);
+      }
+      // 後から特典コードの申告があった場合も取りこぼさない
+      if (lead.perkCode && !values[i][COL['特典コード'] - 1]) {
+        sheet.getRange(rowIndex, COL['特典コード']).setValue(lead.perkCode);
       }
       return true;
     }
@@ -272,6 +286,7 @@ function saveToSheet_(lead) {
   // === 新規行 ===
   sheet.appendRow([
     lead.now, lead.type, lead.name, lead.email, lead.company,
+    lead.contactPerson, lead.tel, lead.topic, lead.perkCode,
     lead.message, lead.grade, scoreText, lead.temp, lead.memo
   ]);
   return false;
@@ -296,8 +311,13 @@ function buildSummary_(lead) {
   lines.push('種別: ' + lead.typeLabel + (lead.grade ? '(判定 ' + lead.grade + ')' : ''));
   lines.push('名前: ' + (lead.name || '(未入力)'));
   lines.push('メール: ' + lead.email);
-  if (lead.company) lines.push('会社: ' + lead.company);
-  if (lead.message) lines.push('内容: ' + lead.message);
+  if (lead.company) lines.push('会社・店舗: ' + lead.company);
+  if (lead.contactPerson) lines.push('ご担当者: ' + lead.contactPerson);
+  if (lead.tel) lines.push('電話: ' + lead.tel);
+  if (lead.topic) lines.push('ご相談内容: ' + lead.topic);
+  // 特典希望は対応時に見落とすと不満につながるため目立たせる
+  if (lead.perkCode) lines.push('★特典希望: コード ' + lead.perkCode + '(MEOスタンダード無料付帯)');
+  if (lead.message) lines.push('詳細: ' + lead.message);
   const scoreText = formatScoresInline_(lead.scores);
   if (scoreText) lines.push('スコア: ' + scoreText);
   if (lead.audit) {

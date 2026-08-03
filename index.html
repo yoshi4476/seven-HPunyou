@@ -415,8 +415,21 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 .field textarea{min-height:130px;resize:vertical}
 .field input:focus,.field textarea:focus{outline:none;border-color:var(--navy2)}
 .field .err{display:none;color:#b3261e;font-size:12px;margin-top:5px}
-.field.invalid input,.field.invalid textarea{border-color:#c9564d}
+.field.invalid input,.field.invalid textarea,.field.invalid select{border-color:#c9564d}
 .field.invalid .err{display:block}
+.field select{width:100%;background:#fff;border:1px solid #cfd4de;border-radius:10px;padding:13px 16px;color:var(--text);font-size:15px;font-family:var(--sans);min-height:48px;appearance:none;
+  background-image:linear-gradient(45deg,transparent 50%,#8a93a6 50%),linear-gradient(135deg,#8a93a6 50%,transparent 50%);
+  background-position:calc(100% - 20px) 21px,calc(100% - 14px) 21px;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+.field select:focus{outline:none;border-color:var(--navy2)}
+/* 特典コードの案内 (親の .contact-copy p より詳細度を上げないと白系の文字色に負ける) */
+.form-card .perk-note{background:#fffaf0;border:1px solid #e6d3a3;border-radius:12px;padding:14px 16px;margin-bottom:22px;font-size:13px;line-height:1.85;color:#4a3b16}
+.form-card .perk-note b{display:inline-block;background:var(--navy);color:#fff;border-radius:6px;padding:2px 10px;font-size:15px;letter-spacing:.08em;margin:0 4px}
+.form-card .perk-note .cond{display:block;margin-top:8px;font-size:11.5px;color:#6b5c33}
+/* 同意チェック */
+.agree{display:flex;gap:10px;align-items:flex-start;margin:4px 0 18px;font-size:13px;color:var(--muted);line-height:1.7}
+.agree input{width:18px;height:18px;min-height:0;flex:none;margin-top:2px;accent-color:var(--navy)}
+.agree a{color:var(--navy2);text-decoration:underline}
+.agree.invalid{color:#b3261e}
 .radar-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
 @media(max-width:620px){.radar-wrap{grid-template-columns:1fr}}
 .grade{font-family:var(--num);font-size:64px;font-weight:600;color:var(--gold-em);line-height:1;text-align:center}
@@ -1164,16 +1177,31 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
       </div>
       <div class="form-card">
         <form id="contactForm" novalidate>
+          <p class="perk-note">🎁 <b>特典</b>(MEOスタンダード無料付帯)をご希望の方は、特典コード<b>3010</b>を、下の「詳細(任意)」欄に詳細とあわせてご記入ください。
+            <span class="cond">※本特典の対象は、補助金の対象経費に含まれないサービス(MEO)に限ります。採択・交付の有無によって提供条件が変わることはありません。</span></p>
           <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
+          <div class="field"><label for="f-company">会社名・店舗名</label><input id="f-company" name="company" type="text" autocomplete="organization" required><p class="err">会社名・店舗名を入力してください</p></div>
+          <div class="field"><label for="f-contact">ご担当者様</label><input id="f-contact" name="contactPerson" type="text" autocomplete="off" required><p class="err">ご担当者様のお名前を入力してください</p></div>
           <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
-          <div class="field"><label for="f-company">会社名<b>任意</b></label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
-          <div class="field"><label for="f-message">ご相談内容</label><textarea id="f-message" name="message" required placeholder="例)AI導入補助金の対象になるか知りたい/見積・請求業務をシステム化したい など"></textarea><p class="err">ご相談内容を入力してください</p></div>
+          <div class="field"><label for="f-tel">電話番号<b>任意</b></label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
+          <div class="field"><label for="f-topic">ご相談内容</label>
+            <select id="f-topic" name="topic" required>
+              <option value="">選択してください</option>
+              <option>AI導入補助金の申請について</option>
+              <option>補助金が使えるか知りたい(対象診断)</option>
+              <option>システム開発・AI導入について</option>
+              <option>MEO(Googleマップ)集客について</option>
+              <option>AIO(AI検索対策)について</option>
+              <option>その他</option>
+            </select><p class="err">ご相談内容を選択してください</p></div>
+          <div class="field"><label for="f-message">詳細<b>任意</b></label><textarea id="f-message" name="message" placeholder="現在の集客状況やお困りごとをご記入ください"></textarea></div>
           <!-- bot対策: ハニーポット(人間には見えない) -->
           <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
           <input type="hidden" name="ts" id="f-ts">
+          <label class="agree" id="agreeWrap"><input type="checkbox" id="f-agree" name="agree" required><span><a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span></label>
           <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
-          <button class="btn btn-primary btn-block" type="submit" id="submitBtn" data-cta="form_submit">無料で相談する</button>
-          <span class="micro" style="text-align:center">送信後、3営業日以内にご返信します。営業電話はいたしません。</span>
+          <button class="btn btn-primary btn-block" type="submit" id="submitBtn" data-cta="form_submit">無料相談を申し込む(現状分析レポート付き)</button>
+          <span class="micro" style="text-align:center">いただいた情報は相談対応の目的以外には使用しません。</span>
         </form>
         <div id="formDone" hidden style="text-align:center;padding:30px 0">
           <p style="font-family:var(--serif);font-size:22px;font-weight:800;margin-bottom:12px;color:var(--navy)">送信ありがとうございました。</p>
@@ -1635,15 +1663,25 @@ function validate(el,test,on){
   return ok;
 }
 const vName=()=>validate(document.getElementById("f-name"),v=>!!v.trim(),true);
+const vComp=()=>validate(document.getElementById("f-company"),v=>!!v.trim(),true);
+const vPerson=()=>validate(document.getElementById("f-contact"),v=>!!v.trim(),true);
 const vMail=()=>validate(document.getElementById("f-email"),v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),true);
-const vMsg=()=>validate(document.getElementById("f-message"),v=>v.trim().length>=5,true);
-const validators={"f-name":vName,"f-email":vMail,"f-message":vMsg};
+const vTopic=()=>validate(document.getElementById("f-topic"),v=>!!v,true);
+// 同意チェックは .field ではないため個別に扱う
+function vAgree(){
+  const ok=document.getElementById("f-agree").checked;
+  document.getElementById("agreeWrap").classList.toggle("invalid",!ok);
+  return ok;
+}
+const validators={"f-name":vName,"f-company":vComp,"f-contact":vPerson,"f-email":vMail,"f-topic":vTopic};
 Object.keys(validators).forEach(id=>{
   const el=document.getElementById(id);
   el.addEventListener("blur",()=>validators[id]());
   // 入力中にエラーを即時解消(エラー文の出没によるレイアウトずれ→誤クリックを防ぐ)
-  el.addEventListener("input",()=>{ if(el.closest(".field").classList.contains("invalid")) validators[id](); });
+  const ev=el.tagName==="SELECT"?"change":"input";
+  el.addEventListener(ev,()=>{ if(el.closest(".field").classList.contains("invalid")) validators[id](); });
 });
+document.getElementById("f-agree").addEventListener("change",vAgree);
 
 function sendPayload(data){
   const payload=Object.assign({website:form?form.website.value:"",ts:TS},data);
@@ -1658,15 +1696,22 @@ form.addEventListener("submit",e=>{
   if(form.website.value) return;                 // ハニーポット
   if(now-TS<3000) return;                        // 3秒未満の即時送信=bot
   if(now-lastSubmit<30000) return;               // 連投制限30秒
-  if(!(vName()&vMail()&vMsg())) return;
+  if(!(vName()&vComp()&vPerson()&vMail()&vTopic()&vAgree())) return;
   lastSubmit=now;
   const btn=document.getElementById("submitBtn");
   btn.disabled=true; btn.textContent="送信中…";
+  const detail=document.getElementById("f-message").value.trim();
   sendPayload({type:"contact",
     name:document.getElementById("f-name").value.trim(),
-    email:document.getElementById("f-email").value.trim(),
     company:document.getElementById("f-company").value.trim(),
-    message:document.getElementById("f-message").value.trim()})
+    contactPerson:document.getElementById("f-contact").value.trim(),
+    email:document.getElementById("f-email").value.trim(),
+    tel:document.getElementById("f-tel").value.trim(),
+    topic:document.getElementById("f-topic").value,
+    message:detail,
+    // 特典コードは詳細欄への記入で申告してもらう運用。集計しやすいよう抽出して送る
+    perkCode:(detail.match(/\b3010\b/)?"3010":""),
+    agreed:true})
   .finally(()=>{
     track("form_submit",{form_type:"contact"});
     track("lead_capture",{source:"form"});
