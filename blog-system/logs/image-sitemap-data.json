@@ -493,6 +493,27 @@
           "alt": "よくある質問(FAQ)の解説イメージ"
         }
       ]
+    },
+    {
+      "slug": "ai-hojokin-biyoushitsu-taisho",
+      "loc": "https://lp.7senses.co.jp/blog/ai-hojokin-biyoushitsu-taisho/",
+      "images": [
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-biyoushitsu-taisho/thumbnail.webp",
+          "title": "AI導入補助金2026｜美容室は対象？条件・使える設備を解説",
+          "alt": "AI導入補助金2026｜美容室は対象？条件・使える設備を解説のアイキャッチ画像"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-biyoushitsu-taisho/ai-hojokin-biyoushitsu-taisho-section-1.webp",
+          "title": "美容室が対象になる「導入ツール・使い道」の例",
+          "alt": "美容室が対象になる「導入ツール・使い道」の例の解説イメージ"
+        },
+        {
+          "loc": "https://lp.7senses.co.jp/images/blog/ai-hojokin-biyoushitsu-taisho/ai-hojokin-biyoushitsu-taisho-section-2.webp",
+          "title": "対象か不安なとき／つまずかないためのポイント",
+          "alt": "対象か不安なとき／つまずかないためのポイントの解説イメージ"
+        }
+      ]
     }
   ]
 }

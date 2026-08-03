@@ -6360,6 +6360,126 @@
         }
       ],
       "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-biyoushitsu-taisho.md",
+      "date": "2026-08-03T11:15:22.207Z",
+      "finalScore": 90,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 90,
+          "seo": 90,
+          "aio": 91,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 19,
+              "max": 20,
+              "reason": "対象可否・対象ツール・補助額/自己負担・申請の流れ・FAQと美容室検索意図を網羅。細かな採択率データ等はやや薄いが実害なし"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文＋要点3行、FAQが断言形の単文で構成され引用されやすい構造"
+            },
+            {
+              "key": "eeat",
+              "score": 12,
+              "max": 15,
+              "reason": "著者肩書・支援実績・複数事例で経験/専門性は明確だが、統計的一次情報は公式サイト誘導止まりで具体数値の出典は自社実績中心"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトルとキーワード整合、目次アンカー・見出し階層・内部リンク多数で構造良好"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・◯△×リスト・チェックリスト・アクション行・em-marker・太字で緩急あり。ただし事例段落がやや長め"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "自社支援事例（設備工事/卸売/製造/飲食）を用途別に転用した切り口で独自性が高い"
+            },
+            {
+              "key": "density",
+              "score": 9,
+              "max": 10,
+              "reason": "具体数値・手順・事例で密度十分。水増しはないが業界統計は限定的"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
+    },
+    {
+      "file": "ai-hojokin-biyoushitsu-taisho.md",
+      "date": "2026-08-03T11:17:42.787Z",
+      "finalScore": 91,
+      "revisions": 0,
+      "passed": true,
+      "history": [
+        {
+          "round": 0,
+          "total": 91,
+          "seo": 91,
+          "aio": 92,
+          "items": [
+            {
+              "key": "search_intent",
+              "score": 18,
+              "max": 20,
+              "reason": "対象可否・対象ツール・補助額/自己負担・申請の流れ・FAQと美容室検索意図を網羅。補助率の具体数値が公募依存で伏せられる分のみ軽減"
+            },
+            {
+              "key": "aio_fit",
+              "score": 14,
+              "max": 15,
+              "reason": "冒頭に定義断言文と要点3行、FAQが断言形の単文で構成され引用適性が高い"
+            },
+            {
+              "key": "eeat",
+              "score": 13,
+              "max": 15,
+              "reason": "代表者署名・所在地・支援50社/採択90%・具体事例を提示。事例は匿名化(守秘)で妥当だが第三者一次統計は自社実績中心"
+            },
+            {
+              "key": "seo_tech",
+              "score": 14,
+              "max": 15,
+              "reason": "タイトル/見出し階層/目次アンカー/内部リンク複数が整備。h2見出しがやや説明調な点のみ軽微"
+            },
+            {
+              "key": "readability",
+              "score": 13,
+              "max": 15,
+              "reason": "表・箇条書き・図・チェックリスト・em-marker・太字が適度に配置され緩急良好。一部段落が情報過多で長め"
+            },
+            {
+              "key": "originality",
+              "score": 9,
+              "max": 10,
+              "reason": "美容機器×IT区分の◯△×整理や自社支援事例(85%削減・MEO増)など独自知見が明確"
+            },
+            {
+              "key": "density",
+              "score": 10,
+              "max": 10,
+              "reason": "余分な水増しなく、対象要件から着金まで具体数値と手順で高密度にまとまる"
+            }
+          ]
+        }
+      ],
+      "stage": "quality-loop"
     }
   ]
 }

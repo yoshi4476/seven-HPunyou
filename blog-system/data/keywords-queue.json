@@ -168,7 +168,7 @@
       "keyword": "AI導入補助金 納税証明書 どれ",
       "priority": "B",
       "category": "hojo",
-      "status": "pending",
+      "status": "duplicate-skip",
       "type": "main"
     },
     {
@@ -474,9 +474,12 @@
       "keyword": "AI導入補助金 美容室 対象",
       "priority": "A",
       "category": "hojo",
-      "status": "pending",
+      "status": "generated",
       "addedBy": "auto-replenish",
-      "addedAt": "2026-07-30"
+      "addedAt": "2026-07-30",
+      "generatedAt": "2026-08-03T11:15:00.259Z",
+      "slug": "ai-hojokin-biyoushitsu-taisho",
+      "type": "news"
     },
     {
       "id": "89",
