@@ -24,6 +24,10 @@ on:
       - '運用手順.md'
       - '.github/workflows/auto-publish.yml'
       - '.github/workflows/monthly-report.yml'
+  # 取りこぼしの保険。pushをきっかけにした実行が失敗・スキップされても、
+  # 2時間ごとの点検で未公開の納品記事を拾って公開する
+  schedule:
+    - cron: '15 */2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -35,8 +39,8 @@ concurrency:
 
 jobs:
   deploy:
-    # 自動コミットによる再帰実行を避ける
-    if: github.event_name == 'workflow_dispatch' || github.actor != 'github-actions[bot]'
+    # 自動コミットによる再帰実行だけを避ける (定期点検・手動実行は常に走らせる)
+    if: github.event_name != 'push' || github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -78,7 +82,14 @@ jobs:
             echo "::error::CLOUDFLARE_API_TOKEN が未設定です (Settings → Secrets and variables → Actions)"
             exit 1
           fi
-          npx --yes wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true
+          # APIのレート制限(10502)は一時的なものなので、間隔を空けて再試行する
+          for i in 1 2 3; do
+            npx --yes wrangler pages deploy dist --project-name seven-hpunyou --branch master --commit-dirty=true && exit 0
+            echo "デプロイ失敗 → ${i}回目の再試行まで60秒待機"
+            sleep 60
+          done
+          echo "::error::Cloudflareへの公開に3回失敗しました。APIトークンの有効性を確認してください"
+          exit 1
 
       - name: 公開結果を確認
         run: |
