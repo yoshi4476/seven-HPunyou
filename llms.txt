@@ -60,3 +60,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
 - [AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/): AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年の最新データをもとに対策を解説します。
 - [AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/): AI導入補助金の納税証明書は「その1」「その2」のどちらでも申請できます。法人は法人税、個人事業主は所得税の証明書が必要です。2026年8月時点の取得方法と注意点を解説します。
+- [AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/): AI導入の費用相場は月額0円〜15万円、初期費用0円〜100万円が中小企業の目安です。業務別の費用感、補助金を使った実質費用、費用を抑える3つの方法を2026年8月時点のデータで解説します。
