@@ -17,6 +17,9 @@ from pathlib import Path
 
 import markdown as md_lib
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import photo_match  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 QUEUE = ROOT / "blog-system" / "content" / "publish-queue"
 POSTED = ROOT / "blog-system" / "content" / "posted"
@@ -126,12 +129,38 @@ def render_article(md_path):
                           % (esc_json(q), esc_json(a)))
 
     # ---- 本文HTML + 目次 ----
+    # 図解・写真が1枚も無い記事 (管制塔からの納品分など) には、
+    # セクションの内容に合う在庫写真を選んで差し込む。文章と無関係な写真が入らないよう、
+    # 見出しがキーワードに当たったセクションだけを対象にし、同じ写真は使い回さない。
+    has_image = bool(re.search(r"!\[|<img", body))
+    photo_for = {}
+    if not has_image:
+        used = set(photo_match.BODY_EXCLUDE)
+        scored = []
+        for i, (h, content) in enumerate(body_sections):
+            name = photo_match.pick(heads=[re.sub(r"<[^>]+>", "", h)], body=content[:400],
+                                    exclude=photo_match.BODY_EXCLUDE)
+            if name:
+                s = photo_match.score(re.sub(r"<[^>]+>", "", h) * 3 + content[:400], name)
+                scored.append((s, i, name))
+        # 一致度の高いセクションから最大3枚まで
+        for s, i, name in sorted(scored, reverse=True):
+            if len(photo_for) >= 3:
+                break
+            if name in used:
+                continue
+            used.add(name)
+            photo_for[i] = name
+
     toc_items, body_html = [], []
     for i, (h, content) in enumerate(body_sections, 1):
         sec_id = f"sec{i}"
         h_clean = re.sub(r"<[^>]+>", "", h)
         toc_items.append(f'<li><a href="#{sec_id}">{h_clean}</a></li>')
-        body_html.append(f'<h2 id="{sec_id}">{h_clean}</h2>\n' + md_to_html(content))
+        block = f'<h2 id="{sec_id}">{h_clean}</h2>\n' + md_to_html(content)
+        if (i - 1) in photo_for:
+            block += "\n" + photo_match.img_tag(photo_for[i - 1])
+        body_html.append(block)
     if not body_sections:
         raise ValueError(f"{slug}: H2セクションが見つからない")
 
@@ -189,10 +218,28 @@ def render_article(md_path):
     return slug
 
 
-def main():
+def collect_targets(force_all=False):
+    """レンダリング対象のMarkdownを集める
+
+    - publish-queue/ … 従来の公開確定記事
+    - posted/        … 自動化管制塔(SS-AIO-LP)がpushで納品する記事。
+                       HTMLが未生成のものだけを対象にする(既存記事の作り直しを避けるため)
+    --all を付けると posted 内の全記事を作り直す(テンプレート変更を全記事へ反映する用途)
+    """
     targets = sorted(QUEUE.glob("*.md")) if QUEUE.is_dir() else []
+    if POSTED.is_dir():
+        for f in sorted(POSTED.glob("*.md")):
+            slug = f.stem
+            if force_all or not (ROOT / "blog" / slug / "index.html").is_file():
+                targets.append(f)
+    return targets
+
+
+def main():
+    force_all = "--all" in sys.argv
+    targets = collect_targets(force_all)
     if not targets:
-        print("[render] publish-queue に記事なし → スキップ")
+        print("[render] 新しい記事なし → スキップ")
         return
     done = []
     for f in targets:

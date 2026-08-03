@@ -5,19 +5,20 @@ import sys, io, re
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import photo_match  # noqa: E402
+
 ROOT = Path(__file__).resolve().parent.parent
 DOMAIN = "https://lp.7senses.co.jp"
 
 CATS = {  # 表示名 → (slug, ハブページ, 説明) ※ブログは補助金カテゴリのみ
     "補助金": ("hojokin", "/service/hojokin/", "IT導入補助金(AI導入補助金)の申請実務・採択のコツ"),
 }
-THUMB_DIM = {"calculator-t": (640, 427), "documents-t": (640, 427), "chip-t": (640, 427),
-             "osaka-t": (640, 960), "paperwork-t": (640, 367), "analytics-t": (640, 456)}
-SLUG_THUMB = {  # 既存分は従来どおり
-    "ai-hojokin-guide-2026": "calculator-t", "it-hojokin-saitakuritsu": "documents-t",
-    "gbizid-shutoku": "paperwork-t",
+SLUG_THUMB = {  # 手動で固定したい記事だけここに書く (それ以外は本文から自動選定)
+    "ai-hojokin-guide-2026": "calculator", "it-hojokin-saitakuritsu": "documents",
+    "gbizid-shutoku": "paperwork",
 }
-CAT_THUMBS = {"補助金": ["documents-t", "calculator-t", "paperwork-t"]}
+DEFAULT_PHOTO = "documents"  # キーワードに当たらなかった場合
 
 # ---- 記事メタ収集 ----
 arts = []
@@ -33,29 +34,25 @@ for d in sorted((ROOT / "blog").iterdir()):
     if not (title and desc and date and cat):
         print(f"WARN meta不足: {d.name}")
         continue
+    heads = re.findall(r"<h2[^>]*>(.*?)</h2>", c, re.S)
     arts.append({"slug": d.name, "title": title.group(1).strip(), "desc": desc.group(1)[:80],
-                 "date": date.group(1), "cat": cat.group(1).strip()})
+                 "date": date.group(1), "cat": cat.group(1).strip(),
+                 "heads": [re.sub(r"<[^>]+>", "", h) for h in heads]})
 arts.sort(key=lambda a: a["date"], reverse=True)
 print(f"記事: {len(arts)}本")
 
-counters = {k: 0 for k in CAT_THUMBS}
 def thumb(a):
-    if a["slug"] in SLUG_THUMB:
-        t = SLUG_THUMB[a["slug"]]
-    else:
-        lst = CAT_THUMBS.get(a["cat"], ["documents-t"])
-        t = lst[counters[a["cat"]] % len(lst)]
-        counters[a["cat"]] += 1
-    w, h = THUMB_DIM[t]
-    return t, w, h
+    """記事の内容に合う在庫写真を選ぶ (見出し・タイトルとの一致度で判定)"""
+    name = SLUG_THUMB.get(a["slug"]) or photo_match.pick(
+        title=a["title"], desc=a["desc"], heads=a["heads"]) or DEFAULT_PHOTO
+    return photo_match.thumb_src(name)
 
 def thumb_src(a):
-    """記事固有の生成サムネがあればそれを、無ければ在庫写真を返す"""
+    """記事固有の生成サムネがあればそれを、無ければ内容に合う在庫写真を返す"""
     gen = ROOT / "images" / "blog" / a["slug"] / "thumbnail.webp"
     if gen.is_file():
         return f"/images/blog/{a['slug']}/thumbnail.webp", 1200, 630
-    t, w, h = thumb(a)
-    return f"/assets/img/{t}.webp", w, h
+    return thumb(a)
 
 def card(a):
     src, w, h = thumb_src(a)
@@ -262,7 +259,6 @@ print("生成: blog/index.html")
 # ---- カテゴリ別 ----
 for name, (slug, hub, catdesc) in CATS.items():
     cat_arts = [a for a in arts if a["cat"] == name]
-    counters = {k: 0 for k in CAT_THUMBS}  # サムネ回転をカテゴリごとにリセット
     cards = "\n".join(card(a) for a in cat_arts)
     hub_html = (f'  <div class="hub">このカテゴリを体系的に知りたい方は、サービス紹介ページ'
                 f'「<a href="{hub}">{name}のサービス詳細</a>」をご覧ください。個別のご相談は'
