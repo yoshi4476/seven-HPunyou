@@ -1179,9 +1179,8 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
         <form id="contactForm" novalidate>
           <p class="perk-note">🎁 <b>特典</b>(MEOスタンダード無料付帯)をご希望の方は、特典コード<b>3010</b>を、下の「詳細(任意)」欄に詳細とあわせてご記入ください。
             <span class="cond">※本特典の対象は、補助金の対象経費に含まれないサービス(MEO)に限ります。採択・交付の有無によって提供条件が変わることはありません。</span></p>
-          <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
           <div class="field"><label for="f-company">会社名・店舗名</label><input id="f-company" name="company" type="text" autocomplete="organization" required><p class="err">会社名・店舗名を入力してください</p></div>
-          <div class="field"><label for="f-contact">ご担当者様</label><input id="f-contact" name="contactPerson" type="text" autocomplete="off" required><p class="err">ご担当者様のお名前を入力してください</p></div>
+          <div class="field"><label for="f-name">ご担当者様</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">ご担当者様のお名前を入力してください</p></div>
           <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
           <div class="field"><label for="f-tel">電話番号<b>任意</b></label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
           <div class="field"><label for="f-topic">ご相談内容</label>
@@ -1662,9 +1661,8 @@ function validate(el,test,on){
   if(on) f.classList.toggle("invalid",!ok);
   return ok;
 }
-const vName=()=>validate(document.getElementById("f-name"),v=>!!v.trim(),true);
+const vName=()=>validate(document.getElementById("f-name"),v=>!!v.trim(),true);   // ご担当者様
 const vComp=()=>validate(document.getElementById("f-company"),v=>!!v.trim(),true);
-const vPerson=()=>validate(document.getElementById("f-contact"),v=>!!v.trim(),true);
 const vMail=()=>validate(document.getElementById("f-email"),v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),true);
 const vTopic=()=>validate(document.getElementById("f-topic"),v=>!!v,true);
 // 同意チェックは .field ではないため個別に扱う
@@ -1673,7 +1671,7 @@ function vAgree(){
   document.getElementById("agreeWrap").classList.toggle("invalid",!ok);
   return ok;
 }
-const validators={"f-name":vName,"f-company":vComp,"f-contact":vPerson,"f-email":vMail,"f-topic":vTopic};
+const validators={"f-company":vComp,"f-name":vName,"f-email":vMail,"f-topic":vTopic};
 Object.keys(validators).forEach(id=>{
   const el=document.getElementById(id);
   el.addEventListener("blur",()=>validators[id]());
@@ -1696,15 +1694,14 @@ form.addEventListener("submit",e=>{
   if(form.website.value) return;                 // ハニーポット
   if(now-TS<3000) return;                        // 3秒未満の即時送信=bot
   if(now-lastSubmit<30000) return;               // 連投制限30秒
-  if(!(vName()&vComp()&vPerson()&vMail()&vTopic()&vAgree())) return;
+  if(!(vComp()&vName()&vMail()&vTopic()&vAgree())) return;
   lastSubmit=now;
   const btn=document.getElementById("submitBtn");
   btn.disabled=true; btn.textContent="送信中…";
   const detail=document.getElementById("f-message").value.trim();
   sendPayload({type:"contact",
-    name:document.getElementById("f-name").value.trim(),
+    name:document.getElementById("f-name").value.trim(),   // ご担当者様
     company:document.getElementById("f-company").value.trim(),
-    contactPerson:document.getElementById("f-contact").value.trim(),
     email:document.getElementById("f-email").value.trim(),
     tel:document.getElementById("f-tel").value.trim(),
     topic:document.getElementById("f-topic").value,

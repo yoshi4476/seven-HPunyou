@@ -182,7 +182,6 @@ function normalize_(data) {
     name: String(data.name || '').slice(0, 100),
     email: String(data.email).trim().toLowerCase().slice(0, 200),
     company: String(data.company || '').slice(0, 100),
-    contactPerson: String(data.contactPerson || '').slice(0, 100),
     tel: String(data.tel || '').slice(0, 40),
     topic: String(data.topic || '').slice(0, 100),
     // 特典コードは詳細欄への記入で申告してもらう運用。念のため本文からも拾う
@@ -216,7 +215,8 @@ function scoreLead_(data) {
 // スプレッドシート
 // =========================================================================
 
-const HEADER = ['日時', 'type', '名前', 'メール', '会社・店舗', 'ご担当者', '電話', 'ご相談内容',
+// 「名前」はフォームの「ご担当者様」に対応する(会社名と担当者名の2項目構成)
+const HEADER = ['日時', 'type', 'ご担当者', 'メール', '会社・店舗', '電話', 'ご相談内容',
                 '特典コード', '詳細', '診断grade', 'スコア', 'リード温度', 'メモ'];
 
 // 列番号(1始まり)。項目を増減したときに位置を取り違えないよう名前で参照する
@@ -252,6 +252,7 @@ function saveToSheet_(lead) {
     for (let i = values.length - 1; i >= 0; i--) {
       const rowDate = values[i][0];
       const rowEmail = String(values[i][COL['メール'] - 1] || '').trim().toLowerCase();
+
       if (rowEmail !== lead.email) continue;
       if (!(rowDate instanceof Date)) continue;
       if (lead.now.getTime() - rowDate.getTime() > CONFIG.DUPLICATE_WINDOW_MS) continue;
@@ -286,7 +287,7 @@ function saveToSheet_(lead) {
   // === 新規行 ===
   sheet.appendRow([
     lead.now, lead.type, lead.name, lead.email, lead.company,
-    lead.contactPerson, lead.tel, lead.topic, lead.perkCode,
+    lead.tel, lead.topic, lead.perkCode,
     lead.message, lead.grade, scoreText, lead.temp, lead.memo
   ]);
   return false;
@@ -309,10 +310,9 @@ const TEMP_TAGS = { HOT: '🔥【HOT】', WARM: '🌤【WARM】', COOL: '❄️�
 function buildSummary_(lead) {
   const lines = [];
   lines.push('種別: ' + lead.typeLabel + (lead.grade ? '(判定 ' + lead.grade + ')' : ''));
-  lines.push('名前: ' + (lead.name || '(未入力)'));
-  lines.push('メール: ' + lead.email);
   if (lead.company) lines.push('会社・店舗: ' + lead.company);
-  if (lead.contactPerson) lines.push('ご担当者: ' + lead.contactPerson);
+  lines.push('ご担当者: ' + (lead.name || '(未入力)'));
+  lines.push('メール: ' + lead.email);
   if (lead.tel) lines.push('電話: ' + lead.tel);
   if (lead.topic) lines.push('ご相談内容: ' + lead.topic);
   // 特典希望は対応時に見落とすと不満につながるため目立たせる
