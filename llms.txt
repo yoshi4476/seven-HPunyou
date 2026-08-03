@@ -59,4 +59,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
 - [AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/): AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年の最新データをもとに対策を解説します。
-- [AI導入補助金の必要書類｜法人が準備する5点と取得期間](https://lp.7senses.co.jp/blog/ai-hojokin-hissho-shorui-hojin/): AI導入補助金の必要書類は、履歴事項全部証明書・法人税納税証明書・決算書類の3点に、GビズID取得とSECURITY ACTION宣言を加えた法人共通の5点です。2026年8月時点の情報で取得期間と注意点を解説します。
