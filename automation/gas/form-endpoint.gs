@@ -316,7 +316,8 @@ function buildSummary_(lead) {
   if (lead.tel) lines.push('電話: ' + lead.tel);
   if (lead.topic) lines.push('ご相談内容: ' + lead.topic);
   // 特典希望は対応時に見落とすと不満につながるため目立たせる
-  if (lead.perkCode) lines.push('★特典希望: コード ' + lead.perkCode + '(MEOスタンダード無料付帯)');
+  if (lead.perkCode) lines.push('★特典希望: コード ' + lead.perkCode
+    + '(MEOスタンダード無料付帯 / オウンドメディア運営のご契約者限定)');
   if (lead.message) lines.push('詳細: ' + lead.message);
   const scoreText = formatScoresInline_(lead.scores);
   if (scoreText) lines.push('スコア: ' + scoreText);
