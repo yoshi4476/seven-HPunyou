@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/): AI導入の費用相場は月額0円〜15万円、初期費用0円〜100万円が中小企業の目安です。業務別の費用感、補助金を使った実質費用、費用を抑える3
+- [AI導入補助金のみらデジ経営チェックは終了｜代わりの手順3つ](https://lp.7senses.co.jp/blog/ai-hojokin-miradigi-keieicheck/): AI導入補助金のみらデジ経営チェックは2025年3月に終了しました。後継の「デジwith」「IT戦略ナビwith」の位置づけと、2026年の
 - [AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/): AI導入補助金の納税証明書は「その1」「その2」のどちらでも申請できます。法人は法人税、個人事業主は所得税の証明書が必要です。2026年8月
 - [AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/): AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年
 - [AI導入補助金を小売業で活用する方法｜2026年版・事例と申請の流れ](https://lp.7senses.co.jp/blog/ai-hojokin-kourigyou-katsuyou/): 小売業でAI導入補助金(正式名称:IT導入補助金)を活用する方法を2026年版で解説。レジ・在庫・受発注・集客に使える活用シーン、補助上限3

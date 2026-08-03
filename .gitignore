@@ -19,3 +19,5 @@ downloads/chatgpt-starter-kit.pdf
 downloads/gbp-checksheet.pdf
 downloads/hojokin-checklist.pdf
 .filter-paths.txt
+
+__pycache__/
