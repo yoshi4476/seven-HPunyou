@@ -24,3 +24,6 @@
 /blog/category/aio/ /service/aio/ 301
 /blog/category/meo/ /service/meo/ 301
 /blog/category/dev/ /service/dev/ 301
+
+# 既存記事と同テーマの記事を作ってしまったため統合 (2026-08-03)
+/blog/security-action-futatsuboshi/ /blog/ai-hojokin-security-action-2star/ 301
