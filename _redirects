@@ -28,3 +28,5 @@
 # 既存記事と同テーマの記事を作ってしまったため統合 (2026-08-03)
 /blog/security-action-futatsuboshi/ /blog/ai-hojokin-security-action-2star/ 301
 /blog/ai-hojokin-hissho-shorui-hojin/ /blog/ai-hojokin-hitsuyo-shorui-hojin/ 301
+# 重複統合 (2026-08-04): 旧パイプラインが同一テーマを2本作っていた
+/blog/it-hojokin-saitakuritsu-up/ /blog/it-hojokin-saitakuritsu/ 301

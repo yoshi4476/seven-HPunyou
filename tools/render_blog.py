@@ -50,8 +50,42 @@ def parse_frontmatter(text):
     return fm, text[m.end():] if m else text
 
 
+def clean_heading(h):
+    """見出しからHTMLタグと Markdown のアンカー記法 {#id} を取り除く
+
+    管制塔の記事は目次リンク用に「## 見出し {#anchor}」と書いてくることがあり、
+    そのまま出すと画面に {#anchor} が見えてしまう。
+    """
+    h = re.sub(r"<[^>]+>", "", h)
+    h = re.sub(r"\s*\{#[^}]*\}", "", h)
+    return h.strip()
+
+
+def available_slugs():
+    """公開されている(または今回公開される)記事のslug一覧"""
+    s = {d.name for d in (ROOT / "blog").iterdir() if d.is_dir() and d.name != "category"}
+    if POSTED.is_dir():
+        s |= {f.stem for f in POSTED.glob("*.md")}
+    return s
+
+
+def drop_dead_links(html):
+    """存在しない記事への内部リンクを、文字だけ残して解除する
+
+    原稿には過去に削除・統合した記事へのリンクが残っていることがあり、
+    そのまま出すと404になる。再生成のたびに復活しないよう描画時に落とす。
+    """
+    exist = available_slugs()
+
+    def sub(m):
+        return m.group(2) if m.group(1) not in exist else m.group(0)
+    return re.sub(r'<a href="/blog/([a-z0-9-]+)/"[^>]*>(.*?)</a>', sub, html, flags=re.S)
+
+
 def md_to_html(text):
-    return md_lib.markdown(text, extensions=["tables"])
+    html = md_lib.markdown(text, extensions=["tables"])
+    # 本文中の小見出し(h3など)に残るアンカー記法も落とす
+    return re.sub(r"\s*\{#[^}]*\}", "", html)
 
 
 def esc_json(s):
@@ -159,7 +193,7 @@ def render_article(md_path):
     toc_items, body_html = [], []
     for i, (h, content) in enumerate(body_sections, 1):
         sec_id = f"sec{i}"
-        h_clean = re.sub(r"<[^>]+>", "", h)
+        h_clean = clean_heading(h)
         toc_items.append(f'<li><a href="#{sec_id}">{h_clean}</a></li>')
         block = f'<h2 id="{sec_id}">{h_clean}</h2>\n' + md_to_html(content)
         if (i - 1) in photo_for:
@@ -187,13 +221,14 @@ def render_article(md_path):
     related_html = "\n".join(f'<li><a href="/blog/{s}/">{t}</a></li>' for _, s, t in related[:3]) \
         or f'<li><a href="/blog/">ブログ記事一覧へ</a></li>'
 
+    body_joined = drop_dead_links("\n".join(body_html))
     html = TEMPLATE
     for k, v in {
         "TITLE": title, "TITLE_SHORT": title[:14] + ("…" if len(title) > 14 else ""),
         "SLUG": slug, "DESCRIPTION": desc, "CATEGORY": CAT_NAME.get(cat, "補助金"),
         "DATE_ISO": date_iso, "DATE_JP": date_jp, "DATE_YM": date_ym,
         "READ_MIN": str(read_min), "TARGET": target, "LEAD_DANGEN": lead_html,
-        "TOC_ITEMS": "".join(toc_items), "BODY": "\n".join(body_html),
+        "TOC_ITEMS": "".join(toc_items), "BODY": body_joined,
         "FAQ_HTML": faq_html, "FAQ_JSONLD": ",\n      ".join(faq_jsonld),
         "RELATED_LINKS": related_html, "CTA_TITLE": cta_t, "CTA_DESC": cta_d,
     }.items():
