@@ -18,6 +18,10 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+# Bing系はCopilotの参照元になるため明示的に許可する
+User-agent: Bingbot
+Allow: /
+
 User-agent: ChatGPT-User
 Allow: /
 
