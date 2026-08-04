@@ -215,8 +215,7 @@ function scoreLead_(data) {
 // スプレッドシート
 // =========================================================================
 
-// 「名前」はフォームの「ご担当者様」に対応する(会社名と担当者名の2項目構成)
-const HEADER = ['日時', 'type', 'ご担当者', 'メール', '会社・店舗', '電話', 'ご相談内容',
+const HEADER = ['日時', 'type', 'お名前', 'メール', '会社・店舗', '電話', 'ご相談内容',
                 '特典コード', '詳細', '診断grade', 'スコア', 'リード温度', 'メモ'];
 
 // 列番号(1始まり)。項目を増減したときに位置を取り違えないよう名前で参照する
@@ -310,8 +309,8 @@ const TEMP_TAGS = { HOT: '🔥【HOT】', WARM: '🌤【WARM】', COOL: '❄️�
 function buildSummary_(lead) {
   const lines = [];
   lines.push('種別: ' + lead.typeLabel + (lead.grade ? '(判定 ' + lead.grade + ')' : ''));
+  lines.push('お名前: ' + (lead.name || '(未入力)'));
   if (lead.company) lines.push('会社・店舗: ' + lead.company);
-  lines.push('ご担当者: ' + (lead.name || '(未入力)'));
   lines.push('メール: ' + lead.email);
   if (lead.tel) lines.push('電話: ' + lead.tel);
   if (lead.topic) lines.push('ご相談内容: ' + lead.topic);
