@@ -74,3 +74,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [AI導入補助金のAI活用事例5選｜対象ツールと申請のコツ](https://lp.7senses.co.jp/blog/ai-hojokin-ai-katsuyo-jirei/): AI導入補助金でAIツールを導入した中小企業の活用事例を5つ紹介します。経理・営業支援・チャットボットの分野別効果と、対象になる申請枠、事例を選ぶときの注意点を2026年8月時点の情報で解説します。
