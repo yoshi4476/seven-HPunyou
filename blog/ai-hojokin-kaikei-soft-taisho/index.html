@@ -53,8 +53,8 @@
 :root{
   --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
-  --text:#212b3d; --muted:#5b6472; --dim:#6d7484;
-  --gold:#8a6d2a; --gold-strong:#8a6a20; --gold-ink:#171104;
+  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
+  --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
   --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -74,7 +74,7 @@ main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-tem
 .side{position:sticky;top:84px;display:grid;gap:16px}
 @media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
 .side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
-.side .sbox p.t{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
 .side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .side .sbox li{margin:0}
 .side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
@@ -86,14 +86,14 @@ main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-tem
 .crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
 .crumb a{color:var(--dim);text-decoration:none}
 .crumb a:hover{color:var(--gold-strong)}
-.cat{display:inline-block;font-size:11.5px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+.cat{display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
 h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
 .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
 .fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
 .fresh-note b{color:var(--muted);font-weight:500}
 .summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
 .toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
-.toc p{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc p{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
 .toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
 .toc li{margin:7px 0}
 .toc a{text-decoration:none;color:var(--muted)}
@@ -124,7 +124,7 @@ article strong{color:var(--gold-strong)}
 .faq-sec details[open] summary::after{content:"−"}
 .faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
 .author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
-.author .sv-label{display:block;font-size:11px;letter-spacing:.14em;font-weight:700;color:#8a93a6;margin:0 0 14px}
+.author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:#5c6472;margin:0 0 14px}
 .author .sv-body{display:flex;gap:16px}
 .author .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
 .author b{color:var(--text);font-size:14.5px}
@@ -132,7 +132,7 @@ article strong{color:var(--gold-strong)}
 .author .sv-links a{font-size:12.5px;font-weight:700;color:#1b3a6b;text-decoration:none;border-bottom:1px solid #b9c6dd}
 .author .sv-links a:hover{border-bottom-color:#1b3a6b}
 .rel{margin-top:50px}
-.rel p.t{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
 .rel ul{list-style:none;margin:0;display:grid;gap:10px}
 .rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
 .rel a:hover{border-color:var(--line2)}
@@ -345,7 +345,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
       <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="64" height="64" loading="lazy" style="object-fit:cover;border-radius:50%">
       <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
       大阪・東成区のデジタルマーケティング&AI導入支援会社の代表。IT導入補助金(現・AI導入補助金)の申請支援50社+・採択通過率90%以上(※当社支援実績)。MEO事業「G-ran」運営。AI導入補助金の申請実務・採択ノウハウを毎日発信しています。
-      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://www.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">AI集客ラボ</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
+      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://www.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
       </div>
     </div>
   </div>
