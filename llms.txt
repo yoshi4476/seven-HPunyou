@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/): AI導入補助金の実績報告は、証憑の準備から申請マイページへの入力まで4ステップで進みます。必要書類・不備の防ぎ方・提出期限を2026年8月時
+- [AI導入補助金の受発注ソフトとは？対象3枠と補助額を解説](https://lp.7senses.co.jp/blog/ai-hojokin-juhatchu-soft-toha/): AI導入補助金における受発注ソフトとは、インボイス制度に対応した発注・受注・請求のやり取りができるソフトウェアです。対象になる3つの申請枠と
 - [AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/): AI導入の費用相場は月額0円〜15万円、初期費用0円〜100万円が中小企業の目安です。業務別の費用感、補助金を使った実質費用、費用を抑える3
 - [AI導入補助金のみらデジ経営チェックは終了｜代わりの手順3つ](https://lp.7senses.co.jp/blog/ai-hojokin-miradigi-keieicheck/): AI導入補助金のみらデジ経営チェックは2025年3月に終了しました。後継の「デジwith」「IT戦略ナビwith」の位置づけと、2026年の
 - [AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/): AI導入補助金の納税証明書は「その1」「その2」のどちらでも申請できます。法人は法人税、個人事業主は所得税の証明書が必要です。2026年8月
