@@ -77,3 +77,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [AI導入補助金はクリニックも対象？電子カルテ3分野の補助額](https://lp.7senses.co.jp/blog/ai-hojokin-clinic-katsuyou/): AI導入補助金はクリニックの電子カルテ・レセコン更新にも使えます。医療法人と個人クリニックの対象条件、対象ツール、補助率を2026年8月時点の情報で解説します。
