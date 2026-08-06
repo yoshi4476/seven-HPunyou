@@ -1,4 +1,32 @@
 # 通常の検索エンジン
+# Claude検索
+User-agent: Claude-SearchBot
+Allow: /
+
+# Appleの索引
+User-agent: Applebot
+Allow: /
+
+# Alexa・Rufus
+User-agent: Amazonbot
+Allow: /
+
+# Le Chat（Mistral）
+User-agent: MistralAI-User
+Allow: /
+
+# DuckDuckGo AI
+User-agent: DuckAssistBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
 User-agent: *
 Allow: /
 
