@@ -76,3 +76,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [AI導入補助金は建設業も対象？ツール3分野と2024年問題対策](https://lp.7senses.co.jp/blog/ai-hojokin-kensetsugyou-katsuyou/): AI導入補助金は建設業の施工管理・積算ソフト導入にも使えます。対象ツール3分野、ハードウェアの扱い、補助率を2026年8月時点の情報で解説します。
