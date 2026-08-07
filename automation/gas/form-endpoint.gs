@@ -32,7 +32,8 @@ const CONFIG = {
   // WARM→HOT昇格キーワード(相談フォーム本文に含まれていたら昇格)
   HOT_KEYWORDS: ['補助金', '見積', '見積もり', '見積り', '導入', '申請', '予算', '急ぎ', '至急', '締め切り', '締切'],
   COMPANY_NAME: 'セブンセンシズ株式会社',
-  COMPANY_ADDRESS: '〒537-0013 大阪市東成区神路1-7-4 コンフォートビル901・902',
+  // 表記はサイト・JSON-LD・各種登録先と完全に一致させること(外部言及の同一性判定に効く)
+  COMPANY_ADDRESS: '〒537-0003 大阪府大阪市東成区神路1丁目7-4 コンフォートビル901・902',
   COMPANY_TEL: '06-4305-7547',
   COMPANY_EMAIL: 'info.ai@7senses.co.jp',       // お問い合わせ窓口(通知先の既定・返信先)
   ADMIN_EMAIL_DEFAULT: 'info.ai@7senses.co.jp', // ADMIN_EMAILプロパティ未設定時の通知先
