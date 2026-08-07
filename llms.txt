@@ -79,3 +79,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/): AI導入補助金の申請のやり方を、GビズID準備から交付申請、交付決定後の発注、実績報告まで5ステップで解説。必要書類と期間の目安も2026年8月時点でまとめました。
