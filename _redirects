@@ -39,3 +39,5 @@
 
 # 重複統合 (2026-08-15): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
 /blog/ai-hojokin-inshokuten-katsuyou/  /blog/ai-hojokin-kensetsugyou-katsuyou/  301
+# 重複統合 (2026-08-08): 活用事例が2本になっていた
+/blog/ai-hojokin-katsuyou-jirei-2026/ /blog/ai-hojokin-ai-katsuyo-jirei/ 301

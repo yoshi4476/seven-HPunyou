@@ -53,6 +53,11 @@ jobs:
           python3 tools/render_blog.py
           python3 tools/gen_blog_pages.py
 
+      # 管制塔は記事HTMLを直接納品するため、Markdown描画時の重複ガードを通らない。
+      # 公開後に気づけるよう、ここで既存記事との重複を検査してログに出す。
+      - name: 記事の重複検査
+        run: python3 tools/check_duplicates.py
+
       - name: 生成物をコミット
         run: |
           git config user.name  "github-actions[bot]"
