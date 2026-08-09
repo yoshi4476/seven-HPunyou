@@ -83,3 +83,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [個人事業主のAI導入補助金｜開業1年未満は対象外？条件を解説](https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/): 個人事業主もAI導入補助金は申請できますが、開業1年未満は納税証明書等が用意できず対象外です。必要書類3点・補助上限額・GビズID取得の流れを2026年8月時点でまとめました。
