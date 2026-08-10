@@ -85,3 +85,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [美容室のIT導入補助金｜対象ツール3分野と対象外の注意点](https://lp.7senses.co.jp/blog/it-hojokin-biyoushitsu/): 美容室もIT導入補助金（デジタル化・AI導入補助金2026）の対象です。予約管理・POSレジ・電子カルテの対象3分野、広告掲載費が対象外になる注意点、補助率・上限額を2026年8月時点の情報で解説します。
