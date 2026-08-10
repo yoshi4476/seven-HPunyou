@@ -34,3 +34,5 @@
 /blog/ai-hojokin-toha-2026/ /blog/ai-hojokin-kourigyou-katsuyou/ 301
 # 重複統合 (2026-08-08): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
 /blog/ai-hojokin-kojinjigyonushi/ /blog/ai-hojokin-kojin/ 301
+# 重複統合 (2026-08-10): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
+/blog/kojin-jigyonushi-digitalka-kiban-pc/ /blog/ai-hojokin-kojin/ 301
