@@ -84,3 +84,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [デジタル化・AI導入補助金は個人事業主も対象｜PC購入の条件2つ](https://lp.7senses.co.jp/blog/kojin-jigyonushi-digitalka-kiban-pc/): デジタル化・AI導入補助金は個人事業主も対象です。会計・受発注ソフトと合わせてPC・タブレット・レジも補助対象になるデジタル化基盤導入類型の条件、通常枠との違い、ハードウェア購入時の注意点を2026年8月時点でまとめました。
