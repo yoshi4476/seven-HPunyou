@@ -86,3 +86,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [IT導入補助金の会計ソフト｜個人事業主が使える2つの枠と補助率](https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/): 個人事業主もIT導入補助金（デジタル化・AI導入補助金2026）の会計ソフトを、通常枠・インボイス対応類型で申請できます。機能要件・補助率・クラウド利用料の補助期間を2026年8月時点で解説します。
