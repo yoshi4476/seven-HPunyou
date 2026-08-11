@@ -48,8 +48,13 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-08-11</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/</loc>
+    <lastmod>2026-08-11</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-biyoushitsu/</loc>
@@ -280,9 +285,5 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/</loc>
-    <lastmod>2026-08-11</lastmod>
   </url>
 </urlset>
