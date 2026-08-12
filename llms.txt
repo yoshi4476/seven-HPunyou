@@ -89,3 +89,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [小規模事業者持続化補助金｜個人事業主の採択率47.2%と対策](https://lp.7senses.co.jp/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/): 小規模事業者持続化補助金＜一般型・通常枠＞の第19回採択率は47.2%でした。個人事業主が対象になる従業員要件、採択率が回ごとに変わる理由、書類作成で採択率を上げる3つのポイントを2026年8月時点のデータで整理します。
