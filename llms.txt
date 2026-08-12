@@ -88,3 +88,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [個人事業主の給付金・補助金｜申請方法と使える4つの制度](https://lp.7senses.co.jp/blog/kojinjigyonushi-kyufukin-shinsei/): 個人事業主が使える給付金は限られ、多くはIT導入補助金など審査を経て採択される補助金です。給付金と補助金の違い、対象になる制度、AI・IT導入補助金の申請5ステップを2026年8月時点でまとめました。
