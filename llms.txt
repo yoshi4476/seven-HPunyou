@@ -36,6 +36,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [小規模事業者持続化補助金｜個人事業主の採択率47.2%と対策](https://lp.7senses.co.jp/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/): 小規模事業者持続化補助金＜一般型・通常枠＞の第19回採択率は47.2%でした。個人事業主が対象になる従業員要件、採択率が回ごとに変わる理由、
 - [個人事業主の給付金・補助金｜申請方法と使える4つの制度](https://lp.7senses.co.jp/blog/kojinjigyonushi-kyufukin-shinsei/): 個人事業主が使える給付金は限られ、多くはIT導入補助金など審査を経て採択される補助金です。給付金と補助金の違い、対象になる制度、AI・IT導
 - [IT導入補助金の会計ソフト｜個人事業主が使える2つの枠と補助率](https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/): 個人事業主もIT導入補助金（デジタル化・AI導入補助金2026）の会計ソフトを、通常枠・インボイス対応類型で申請できます。機能要件・補助率・
 - [IT導入補助金のパソコン購入｜個人事業主の条件と上限10万円](https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-pc/): 個人事業主がIT導入補助金でパソコンを購入する条件を解説します。単体購入は対象外ですが、対象ソフトと同時導入すれば補助率1/2以内・上限10
@@ -89,4 +90,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [小規模事業者持続化補助金｜個人事業主の採択率47.2%と対策](https://lp.7senses.co.jp/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/): 小規模事業者持続化補助金＜一般型・通常枠＞の第19回採択率は47.2%でした。個人事業主が対象になる従業員要件、採択率が回ごとに変わる理由、書類作成で採択率を上げる3つのポイントを2026年8月時点のデータで整理します。
