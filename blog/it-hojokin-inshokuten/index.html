@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ================================================================
+  ブログ記事テンプレート(静的版)
+  ・{{...}} を差し替えて blog/<slug>/index.html として保存する
+  ・将来 blog-system(Astro)稼働後はそちらの生成に移行する
+================================================================= -->
+<title>飲食店のIT導入補助金｜名称変更後の3つの確認点|セブンセンシズ株式会社</title>
+<meta name="description" content="「IT導入補助金」で検索した飲食店オーナー向けに、現行のデジタル化・AI導入補助金2026でも対象は変わらないこと、中小企業の判定基準、対象ツールと補助率を2026年8月時点の情報で解説します。">
+<link rel="canonical" href="https://lp.7senses.co.jp/blog/it-hojokin-inshokuten/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="飲食店のIT導入補助金｜名称変更後の3つの確認点">
+<meta property="og:description" content="「IT導入補助金」で検索した飲食店オーナー向けに、現行のデジタル化・AI導入補助金2026でも対象は変わらないこと、中小企業の判定基準、対象ツールと補助率を2026年8月時点の情報で解説します。">
+<meta property="og:url" content="https://lp.7senses.co.jp/blog/it-hojokin-inshokuten/">
+<meta property="og:image" content="https://lp.7senses.co.jp/images/blog/it-hojokin-inshokuten/thumbnail.webp">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article",
+      "headline": "飲食店のIT導入補助金｜名称変更後の3つの確認点",
+      "description": "「IT導入補助金」で検索した飲食店オーナー向けに、現行のデジタル化・AI導入補助金2026でも対象は変わらないこと、中小企業の判定基準、対象ツールと補助率を2026年8月時点の情報で解説します。",
+      "datePublished": "2026-08-13",
+      "dateModified": "2026-08-13",
+      "inLanguage": "ja",
+      "mainEntityOfPage": "https://lp.7senses.co.jp/blog/it-hojokin-inshokuten/",
+      "author": { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author", "name": "原口 優", "jobTitle": "代表取締役" },
+      "publisher": { "@type": "Organization", "@id": "https://lp.7senses.co.jp/#org", "name": "セブンセンシズ株式会社" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".summary", ".faq-sec"] } },
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lp.7senses.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://lp.7senses.co.jp/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "飲食店のIT導入補助金｜名称変更後の3つの確認点" } ] },
+    { "@type": "FAQPage", "mainEntity": [
+            { "@type": "Question", "name": "「IT導入補助金」は今も使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "使えます。現在は「デジタル化・AI導入補助金2026」という名称で運用されています。" } },
+      { "@type": "Question", "name": "飲食店はIT導入補助金の対象になりますか？", "acceptedAnswer": { "@type": "Answer", "text": "なります。小売業区分に該当し、資本金5000万円以下または従業員50人以下が基準です。" } },
+      { "@type": "Question", "name": "飲食店の補助率・上限額はどのくらいですか？", "acceptedAnswer": { "@type": "Answer", "text": "通常枠は補助率1/2以内・上限450万円、インボイス対応類型は上限350万円です。" } },
+      { "@type": "Question", "name": "個人経営の飲食店でも申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "申請できます。法人と同じくGビズIDとSECURITY ACTIONの宣言が必要です。" } },
+      { "@type": "Question", "name": "以前IT導入補助金を使った店舗も再申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "できます。ただし2回目以降は3年間の事業計画と賃上げ計画の表明が必要です。" } },
+      { "@type": "Question", "name": "複数法人で店舗を運営していても申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "できます。みなし同一法人ルールが削除され、法人ごとに個別申請が可能になりました。" } },
+      { "@type": "Question", "name": "小規模事業者持続化補助金とどちらを使えばよいですか？", "acceptedAnswer": { "@type": "Answer", "text": "ITツール導入中心ならIT導入補助金、店舗改装や広告費中心なら持続化補助金が向いています。" } }
+    ] }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
+  --line:#e7e2d4; --line2:rgba(176,139,62,.45);
+  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
+  --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
+  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:2;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-strong)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{max-width:100%;height:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1240px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
+.logo b{color:var(--gold)}
+.logo img{height:38px;width:auto;display:block}
+.nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
+main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-template-columns:minmax(0,840px) 320px;gap:44px;justify-content:center;align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:84px;display:grid;gap:16px}
+@media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
+.side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
+.side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.side .sbox li{margin:0}
+.side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
+.side .sbox a:hover{border-color:var(--line2);color:var(--gold-strong)}
+.side .scta{background:linear-gradient(150deg,#132445,#1d3461 60%,#24427c);border-radius:12px;padding:22px;color:#fff;text-align:center}
+.side .scta p{font-family:var(--serif);font-weight:800;font-size:15px;line-height:1.8;margin:0 0 12px;color:#fff}
+.side .scta a{display:block;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.side .scta a.g{background:none;border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
+.crumb a{color:var(--dim);text-decoration:none}
+.crumb a:hover{color:var(--gold-strong)}
+.cat{display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
+.meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
+.fresh-note b{color:var(--muted);font-weight:500}
+.summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
+.toc p{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
+.toc li{margin:7px 0}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--gold-strong)}
+article h2{font-family:var(--serif);font-weight:800;font-size:clamp(20px,3.2vw,25px);line-height:1.6;margin:54px 0 18px;padding-top:14px;border-top:1px solid var(--line);color:#1d3461}
+article h3{font-family:var(--serif);font-weight:800;font-size:17.5px;margin:34px 0 12px;color:var(--gold-strong)}
+article p{margin:16px 0;color:var(--text)}
+article ul,article ol{margin:16px 0 16px 24px;color:var(--text)}
+article li{margin:8px 0}
+article img{display:block;width:100%;height:auto;border-radius:12px;margin:26px 0;border:1px solid var(--line)}
+article table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
+article strong{color:var(--gold-strong)}
+.em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
+.table-scroll{overflow-x:auto;margin:20px 0}
+.action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
+.action-box b{color:var(--gold-strong)}
+.cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
+.cta-box p.t{font-family:var(--serif);font-weight:800;font-size:19px;line-height:1.7;margin-bottom:8px}
+.cta-box p.d{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.cta-box a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 30px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:15px;text-decoration:none}
+.cta-box .micro{display:block;margin-top:10px;font-size:12px;color:var(--dim)}
+.faq-sec details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq-sec summary{list-style:none;cursor:pointer;padding:16px 46px 16px 20px;font-weight:700;font-size:14.5px;position:relative;line-height:1.7}
+.faq-sec summary::-webkit-details-marker{display:none}
+.faq-sec summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:20px;color:var(--gold)}
+.faq-sec details[open] summary::after{content:"−"}
+.faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
+.author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
+.author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:#5c6472;margin:0 0 14px}
+.author .sv-body{display:flex;gap:16px}
+.author .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
+.author b{color:var(--text);font-size:14.5px}
+.author .sv-links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.author .sv-links a{font-size:12.5px;font-weight:700;color:#1b3a6b;text-decoration:none;border-bottom:1px solid #b9c6dd}
+.author .sv-links a:hover{border-bottom-color:#1b3a6b}
+.rel{margin-top:50px}
+.rel p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel ul{list-style:none;margin:0;display:grid;gap:10px}
+.rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
+.rel a:hover{border-color:var(--line2)}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
+footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+</script>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="/"><img src="/assets/img/logo-h.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="372" height="148"></a>
+    <a class="cta" href="/#contact">無料で相談する</a>
+  </div>
+</header>
+<main>
+<div class="main-col">
+  <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">AI導入補助金ブログ</a> › 飲食店のIT導入補助金｜名称変更後の3つの確認点</nav>
+  <span class="cat">補助金</span>
+  <h1>飲食店のIT導入補助金｜名称変更後の3つの確認点</h1>
+  <div class="meta">
+    <span>公開: 2026年8月13日</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 8分</span>
+  </div>
+  <p class="fresh-note">本記事は<b>2026年8月時点</b>の情報です|この記事は<b>以前「IT導入補助金」という名称で情報を探していて、現行制度でも飲食店が対象になるか確認したい飲食店経営者</b>向けです</p>
+
+  <!-- 冒頭200字: 断言文+キーワード(AIO最重要シグナル) -->
+  <div class="summary">「IT導入補助金」という名称の制度は、2026年現在「デジタル化・AI導入補助金2026」として運用されており、飲食店も引き続き対象です。名称は変わりましたが、モバイルオーダーや会計ソフトなどITツール導入費用の一部を補助する仕組みは変わっていません。中小企業基本法上、飲食店は「小売業」に区分されるため、対象になるかどうかの基準は他業種と少し違います。本記事では、名称変更で何が変わったのか、飲食店が対象になる条件、補助率、申請の流れを整理します。</div>
+
+  <div class="toc">
+    <p>CONTENTS</p>
+    <ol><li><a href="#sec1">「IT導入補助金」はまだ使えるのか</a></li><li><a href="#sec2">飲食店は中小企業の基準に該当するのか</a></li><li><a href="#sec3">対象になるITツールをおさらいする</a></li><li><a href="#sec4">飲食店の補助率・上限額はいくらか</a></li><li><a href="#sec5">個人経営・小規模店舗でも申請できるのか</a></li><li><a href="#sec6">「IT導入補助金」時代に使った店舗が注意したい4つの実務ポイント</a></li><li><a href="#sec7">IT導入補助金と他の補助金との使い分け</a></li><li><a href="#sec8">飲食店がIT導入補助金を申請する流れ</a></li><li><a href="#sec9">まとめ: 名称変更よりも「小売業区分」の基準確認を優先する</a></li></ol>
+  </div>
+
+  <article>
+    <p><strong>「IT導入補助金」という名称の制度は、2026年現在「デジタル化・AI導入補助金2026」として運用されており、飲食店も引き続き対象です。</strong>名称は変わりましたが、モバイルオーダーや会計ソフトなどITツール導入費用の一部を補助する仕組みは変わっていません。中小企業基本法上、飲食店は「小売業」に区分されるため、対象になるかどうかの基準は他業種と少し違います。本記事では、名称変更で何が変わったのか、飲食店が対象になる条件、補助率、申請の流れを整理します。</p>
+<div class="target-reader">この記事は、以前「IT導入補助金」という名称で情報を探していて、現行制度でも飲食店が対象になるか確認したい飲食店経営者向けです。</div>
+
+<p class="freshness">※ 2026年8月時点の情報です。</p>
+
+<div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>IT導入補助金からデジタル化・AI導入補助金2026への変更点</li><li>飲食店が中小企業の基準に該当するかどうか</li><li>飲食店の補助率・上限額の目安</li><li>以前の制度を使った店舗が注意すべき点</li></ul></div>
+
+<h2 id="sec1">「IT導入補助金」はまだ使えるのか</h2>
+<p><strong>IT導入補助金は名称が変わっただけで、飲食店向けの支援内容は今も続いています。</strong>検索で使われる「IT導入補助金」という言葉自体が古い名称になっただけで、制度そのものが終了したわけではありません。</p>
+<div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
+
+<p><a href="https://www.asasimple.jp/it-hojyokin-2026/" target="_blank" rel="noopener">IT導入補助金の変更点を整理した解説記事</a>によると、<strong>2026年度から「IT導入補助金」は正式に「デジタル化・AI導入補助金」へ改称されました</strong>。最大450万円という補助上限額の骨格自体は変わっておらず、通常枠・インボイス対応類型・電子取引類型の3つに整理されています。</p>
+<figure><img src="/images/it-hojokin-inshokuten/name-change.png" alt="IT導入補助金の呼び方の変遷: 〜2025年度はIT導入補助金として運用、2026年度はデジタル化・AI導入補助金に改称、最大450万円の枠の骨格は継続" loading="lazy"><figcaption>IT導入補助金の呼び方の変遷</figcaption></figure>
+
+<p>私たちが飲食店から相談を受ける際も、<mark>「IT導入補助金はもう終わったのか」と聞かれる</mark>ことがよくあります。名称が変わったタイミングで制度自体がなくなったと誤解している経営者は少なくありません。</p>
+<p>呼び方が数年おきに整理されてきたのは事実ですが、<strong>ITツール導入費用の一部を国が補助するという骨格は開始当初から一貫しています。</strong>焦って古い情報を鵜呑みにするのではなく、まずは現行の枠組みの確認から。</p>
+<p>検索エンジンに「it導入補助金」と入力する人の多くは、以前この制度名を見聞きした経験がある層です。古い制度名で情報収集を始めても、現行の公募要領にたどり着けば内容自体は正しく理解できます。名称の違いに戸惑って手が止まってしまうことのほうが、実際の申請よりも大きなハードルになりがちです。</p>
+<h2 id="sec2">飲食店は中小企業の基準に該当するのか</h2>
+<p><strong>飲食店は中小企業基本法上「小売業」に区分され、資本金5000万円以下または従業員50人以下が基準です。</strong>製造業やサービス業とは基準が異なるため、自店の規模で確認しておく必要があります。</p>
+<p><a href="https://houseikyoku.sangiin.go.jp/column/column084.htm" target="_blank" rel="noopener">参議院法制局が整理した中小企業基本法の業種別基準</a>では、製造業その他は資本金3億円以下・従業員300人以下、卸売業は資本金1億円以下・従業員100人以下、サービス業は資本金5000万円以下・従業員100人以下、小売業は資本金5000万円以下・従業員50人以下と定められています。</p>
+<p><a href="https://studying.jp/shindanshi/examarchive/chusho_h20_14.html" target="_blank" rel="noopener">中小企業診断士試験の過去問解説サイト</a>では、飲食店の扱いについて<mark>「飲食店は小売業と同じ扱いとなります」</mark>と説明されています。統計上は「宿泊業、飲食サービス業」に分類される飲食店ですが、中小企業基本法上の類型では小売業として扱われる点に注意してください。</p>
+<figure><img src="/images/it-hojokin-inshokuten/retail-vs.png" alt="飲食店が中小企業と判定される基準: 対象外は資本金5000万円超かつ従業員50人超、対象は資本金5000万円以下 or 従業員50人以下" loading="lazy"><figcaption>飲食店が中小企業と判定される基準</figcaption></figure>
+
+<p><strong>多店舗展開で従業員数が増えてきた飲食店ほど、この基準を早めに確認しておく価値があります。</strong>資本金と従業員数はどちらか一方を満たせばよいため、法人化の際に資本金を抑えておくことで対象を維持しやすくなるケースもあります。詳しい業種区分の全体像は<a href="https://lp.7senses.co.jp/blog/it-hojokin-chusho-teigi/">IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数</a>で整理しています。</p>
+<h2 id="sec3">対象になるITツールをおさらいする</h2>
+<p><strong>対象ツールは受発注・モバイルオーダー・AI需要予測の3分野が中心で、この分類は名称変更前後で変わっていません。</strong>業務のどこがボトルネックかによって、優先して導入すべきツールが変わります。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">分野</th>
+<th style="text-align: left;">具体例</th>
+<th style="text-align: left;">主な効果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">受発注システム</td>
+<td style="text-align: left;">FAX・電話発注のアプリ化</td>
+<td style="text-align: left;">発注ミスと確認作業の削減</td>
+</tr>
+<tr>
+<td style="text-align: left;">モバイルオーダー・POSレジ</td>
+<td style="text-align: left;">卓上タブレット注文</td>
+<td style="text-align: left;">注文ミスと会計時間の削減</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI需要予測・自動シフト</td>
+<td style="text-align: left;">来客予測ツール</td>
+<td style="text-align: left;">食品ロスと過剰発注の削減</td>
+</tr>
+</tbody>
+</table></div>
+<p>レジや券売機などのハードウェアは、インボイス対応類型で対象ソフトと同時導入する場合に限り対象です。単体でハードウェアだけを申請することはできません。ツールごとの具体的な選び方や、ハードウェアの上限額まで含めた詳細は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-inshokuten-katsuyou/">AI導入補助金は飲食店でも使える？対象ツール3分野とハード対応</a>で解説しています。</p>
+<h2 id="sec4">飲食店の補助率・上限額はいくらか</h2>
+<p><strong>通常枠は補助率1/2以内・上限450万円、インボイス対応類型は上限350万円で、賃上げ要件を満たすと補助率が上がります。</strong>枠によって数字が変わるため、自店がどの枠に当てはまるかを先に確認してください。</p>
+<p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠の補助率・補助上限額のページ</a>によると、賃上げ要件を満たすと通常枠の補助率は1/2から2/3に引き上がり、導入するプロセス数に応じて上限額も段階的に上がります。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">申請枠</th>
+<th style="text-align: left;">補助率</th>
+<th style="text-align: left;">補助上限額</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">通常枠</td>
+<td style="text-align: left;">1/2以内（賃上げ要件達成で2/3以内）</td>
+<td style="text-align: left;">5万円〜450万円</td>
+</tr>
+<tr>
+<td style="text-align: left;">インボイス対応類型</td>
+<td style="text-align: left;">50万円以下は3/4〜4/5、超過分は2/3</td>
+<td style="text-align: left;">350万円以下</td>
+</tr>
+</tbody>
+</table></div>
+<p>例えば客単価3,000円・席数20席の居酒屋が、モバイルオーダーと会計ソフトを合わせて年間60万円で契約したとします。<strong>補助率1/2でも30万円、賃上げ要件を満たして2/3なら40万円が補助される</strong>計算です。</p>
+<p>小規模なカフェの場合も考え方は同じです。席数10席・客単価800円の店舗が、POSレジと予約システムを年間25万円で導入するとします。</p>
+<p>インボイス対応類型なら<strong>50万円以下の部分に3/4〜4/5の高い補助率が適用され、実質負担は5〜6万円程度</strong>に収まる試算になります。自店の契約額に補助率を掛け合わせるだけで、実質負担額を試算できます。契約額別の試算例は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/">AI導入補助金はいくらもらえる？3つの枠の上限額と計算例</a>で詳しく紹介しています。</p>
+<div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+
+<h2 id="sec5">個人経営・小規模店舗でも申請できるのか</h2>
+<p><strong>個人経営の飲食店でも、GビズIDとSECURITY ACTIONの宣言があれば法人と同じ条件で申請できます。</strong>開業したばかりで実績が浅い店舗でも、必要書類さえ揃えば申請自体は可能です。</p>
+<p><span class="big">経理・総務の専任担当がいない個人店ほど、書類作成を外部のIT導入支援事業者にどこまで任せられるかが申請のスムーズさを左右します。</span>契約前に相談範囲を確認しておくと、後の手戻りを防げます。</p>
+<p>当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。申請の全体フローを最初から知っておきたい場合は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方｜受給までの5ステップを解説</a>を先に読んでおくと迷いにくくなります。</p>
+<p>なお、飲食店を含む商業・サービス業は従業員5人以下で「小規模事業者」にも該当します。個人経営の飲食店の多くはこの基準を満たすため、インボイス対応類型の高い補助率をあわせて確認しておく価値があります。業種区分の詳しい基準は<a href="https://lp.7senses.co.jp/blog/it-hojokin-chusho-teigi/">IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数</a>で解説しています。</p>
+<h2 id="sec6">「IT導入補助金」時代に使った店舗が注意したい4つの実務ポイント</h2>
+<p><strong>過去にIT導入補助金を利用した店舗も再申請できますが、2026年度から追加された要件を確認しておく必要があります。</strong>制度自体は継続していますが、細部の手続きは更新されています。</p>
+<div class="caution-box"><span class="box-title">注意: 以前の資料をそのまま使い回さない</span><br>旧制度の案内資料や様式は、現行のインボイス対応類型・電子取引類型とは項目が異なります。必ず最新の公募要領を確認してから申請書類を準備してください。</div>
+
+<p>1点目は、2回目以降の申請で「3年間の事業計画の策定」と「賃上げ計画の表明」が必須になったことです。以前は求められなかった書類のため、初めて申請する店舗より準備に時間がかかります。</p>
+<p><strong>2点目は、「みなし同一法人ルール」が削除されたことです。</strong>以前は代表者が同じ複数法人は1社としてしか申請できませんでしたが、現行制度ではそれぞれの法人が個別に申請できます。多店舗をそれぞれ別法人で運営しているオーナーには追い風です。</p>
+<p>3点目は、交付決定前購入がNGという原則は変わっていないことです。以前の感覚で先に発注してしまうと、補助対象から外れます。</p>
+<p>4点目は、GビズIDやSECURITY ACTIONの宣言が失効していないかの確認です。しばらく利用していない店舗ほど見落としがちな盲点。再取得や更新の手間を早めに確認しておくと安心です。</p>
+<p>私も過去の相談事例で、<mark>以前の枠の記憶のまま申請書類を準備し、必要書類の増加に気づかず差し戻しになった</mark>というケースを確認しています。複数法人で店舗を運営している場合は、それぞれの法人で個別に要件を確認してください。よくある失敗パターン全般は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/">AI導入補助金の申請に失敗する5つの原因と対策</a>でも整理しているので、あわせて確認してください。</p>
+<h2 id="sec7">IT導入補助金と他の補助金との使い分け</h2>
+<p><strong>ITツール導入中心ならIT導入補助金、店舗改装や広告費中心なら小規模事業者持続化補助金が向いています。</strong>目的が異なるため、対象経費が重ならないよう切り分ける必要があります。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">IT導入補助金（通常枠）</th>
+<th style="text-align: left;">小規模事業者持続化補助金</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">主な目的</td>
+<td style="text-align: left;">ITツール導入による業務効率化</td>
+<td style="text-align: left;">販路開拓・店舗改装等の経費</td>
+</tr>
+<tr>
+<td style="text-align: left;">補助上限額</td>
+<td style="text-align: left;">最大450万円</td>
+<td style="text-align: left;">50万円〜200万円程度</td>
+</tr>
+<tr>
+<td style="text-align: left;">飲食店での使いどころ</td>
+<td style="text-align: left;">モバイルオーダー・受発注の刷新</td>
+<td style="text-align: left;">新メニューのチラシ・SNS広告</td>
+</tr>
+</tbody>
+</table></div>
+<p>対象経費が重複していなければ、同一年度に両方へ申請すること自体は可能です。ただし公募スケジュールと実績報告の期限は別管理になるため、申請枠ごとにチェックリストを分けて管理してください。</p>
+<h2 id="sec8">飲食店がIT導入補助金を申請する流れ</h2>
+<p><strong>申請から入金までは、要件準備→ツール選定→交付申請→実績報告の4ステップで進みます。</strong>採択はゴールではなく、実績報告を終えて初めて交付額が確定します。</p>
+<figure><img src="/images/it-hojokin-inshokuten/flow-steps.png" alt="飲食店がIT導入補助金を使うまでの4ステップ: GビズID・SECURITY ACTIONを準備、IT導入支援事業者とツール選定、交付申請から交付決定後に契約、実績報告を提出し交付額確定" loading="lazy"><figcaption>飲食店がIT導入補助金を使うまでの4ステップ</figcaption></figure>
+
+<p>繁忙期に導入を始めると、スタッフが操作に慣れないまま現場が混乱しやすくなります。<strong>閑散期に交付申請から導入・研修までを終わらせ、繁忙期には運用が安定した状態で臨む</strong>のが理想的な逆算です。実績報告の必要書類まで含めた手順は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/">AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ</a>で整理しています。</p>
+<div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+
+<h2 id="sec9">まとめ: 名称変更よりも「小売業区分」の基準確認を優先する</h2>
+<p>IT導入補助金は名称が変わっただけで、飲食店向けの支援内容は今も続いています。<strong>まずは自店が中小企業基本法上の小売業区分（資本金5000万円以下または従業員50人以下）に該当するかを確認してください。</strong></p>
+<p>以前この制度を使ったことがある店舗も再申請でき、対象ツールや補助率の骨格は大きく変わっていません。ただし枠の名称や様式は更新されているため、<strong>古い資料をそのまま使い回さず、最新の公募要領で確認する</strong>ことが手戻りを防ぐ近道です。</p>
+<p>制度の全体像や申請の細かい手順に不安がある場合は、登録支援事業者への早めの相談も選択肢のひとつ。一店舗で申請から実績報告までの流れをつかめれば、多店舗展開時にも同じ手順を横展開しやすくなります。</p>
+  </article>
+
+  <!-- FAQ(回答40〜60字・JSON-LDと完全一致させる) -->
+  <section class="faq-sec">
+    <h2 id="faq">よくある質問</h2>
+        <details>
+      <summary>「IT導入補助金」は今も使えますか？</summary>
+      <div class="a">使えます。現在は「デジタル化・AI導入補助金2026」という名称で運用されています。</div>
+    </details>
+    <details>
+      <summary>飲食店はIT導入補助金の対象になりますか？</summary>
+      <div class="a">なります。小売業区分に該当し、資本金5000万円以下または従業員50人以下が基準です。</div>
+    </details>
+    <details>
+      <summary>飲食店の補助率・上限額はどのくらいですか？</summary>
+      <div class="a">通常枠は補助率1/2以内・上限450万円、インボイス対応類型は上限350万円です。</div>
+    </details>
+    <details>
+      <summary>個人経営の飲食店でも申請できますか？</summary>
+      <div class="a">申請できます。法人と同じくGビズIDとSECURITY ACTIONの宣言が必要です。</div>
+    </details>
+    <details>
+      <summary>以前IT導入補助金を使った店舗も再申請できますか？</summary>
+      <div class="a">できます。ただし2回目以降は3年間の事業計画と賃上げ計画の表明が必要です。</div>
+    </details>
+    <details>
+      <summary>複数法人で店舗を運営していても申請できますか？</summary>
+      <div class="a">できます。みなし同一法人ルールが削除され、法人ごとに個別申請が可能になりました。</div>
+    </details>
+    <details>
+      <summary>小規模事業者持続化補助金とどちらを使えばよいですか？</summary>
+      <div class="a">ITツール導入中心ならIT導入補助金、店舗改装や広告費中心なら持続化補助金が向いています。</div>
+    </details>
+  </section>
+
+  <div class="cta-box">
+    <p class="t">補助金が使えるか、無料で確認しませんか</p>
+    <p class="d">要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p>
+    <a href="/#diagnosis">まず3分の無料診断で「うちの場合」を確認する</a>
+    <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
+  </div>
+
+  <div class="author">
+    <span class="sv-label">SUPERVISED BY|この記事の監修者</span>
+    <div class="sv-body">
+      <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="64" height="64" loading="lazy" style="object-fit:cover;border-radius:50%">
+      <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
+      大阪・東成区のデジタルマーケティング&AI導入支援会社の代表。IT導入補助金(現・AI導入補助金)の申請支援50社+・採択通過率90%以上(※当社支援実績)。MEO事業「G-ran」運営。AI導入補助金の申請実務・採択ノウハウを毎日発信しています。
+      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rel">
+    <p class="t">RELATED</p>
+    <ul><li><a href="/blog/it-hojokin-unsougyou/">IT導入補助金は運送業も対象？2024年問題に効く対象ツール3分野</a></li>
+<li><a href="/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/">小規模事業者持続化補助金｜個人事業主の採択率47.2%と対策</a></li>
+<li><a href="/blog/it-hojokin-vendor/">IT導入補助金のベンダー(支援事業者)の選び方</a></li></ul>
+  </div>
+</div>
+<aside class="side">
+  <div class="sbox">
+    <p class="t">CATEGORY</p>
+    <ul>
+      <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">SERVICE</p>
+    <ul>
+      <li><a href="/service/hojokin/">補助金申請サポート</a></li>
+      <li><a href="/service/dev/">システム開発・AI導入</a></li>
+      <li><a href="/service/aio/">AIOコンサルティング</a></li>
+      <li><a href="/service/meo/">MEOコンサルティング</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">MEMBER</p>
+    <ul>
+      <li><a href="/#member">会員価格について — ご契約者様は大幅割引</a></li>
+    </ul>
+  </div>
+  <div class="scta">
+    <p>補助金を活用できるか、<br>まずは無料診断でチェック。</p>
+    <a href="/#diagnosis">無料診断を試す</a>
+    <a class="g" href="/#contact">無料で相談する</a>
+  </div>
+</aside>
+</main>
+<footer>
+  <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="/privacy/">プライバシーポリシー</a></nav>
+  <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
+</footer>
+</body>
+</html>
