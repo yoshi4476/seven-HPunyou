@@ -94,3 +94,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [小規模事業者持続化補助金は中小企業も対象｜3制度の使い分け](https://lp.7senses.co.jp/blog/jizokuka-hojokin-chusho-kigyo-taisho/): 小規模事業者持続化補助金の対象は中小企業者ではなく「小規模事業者」です。基準の違いと、対象外の場合に使えるIT導入補助金・ものづくり補助金との使い分けを2026年8月時点の情報で整理します。
