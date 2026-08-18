@@ -36,6 +36,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [事業再構築補助金の確定申告｜個人事業主が守る3つの注意点](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/): 事業再構築補助金を受け取った個人事業主は、確定申告で雑収入として事業所得に計上します。収入計上の時期・総収入金額不算入・消費税という3つの注
 - [小規模事業者持続化補助金｜飲食店で対象になる4つの投資](https://lp.7senses.co.jp/blog/jizokuka-hojokin-inshokuten-jirei/): 飲食店が小規模事業者持続化補助金で対象にできるのは、販路開拓につながる店舗改装・ホームページ制作・厨房設備・POSレジ導入です。対象外になる
 - [ものづくり補助金2025年度｜個人事業主の申請ガイド決定版](https://lp.7senses.co.jp/blog/monozukuri-hojokin-2025-kojinjigyonushi/): ものづくり補助金2025年度（第23次公募以降）は、給与を支払う従業員が1人以上いる個人事業主なら申請できます。対象要件・必要書類・補助率と
 - [ものづくり補助金は飲食店で使える？採択事例3パターン](https://lp.7senses.co.jp/blog/monozukuri-hojokin-inshokuten-jirei/): ものづくり補助金は飲食店でも申請できますが、対象経費の中心は店舗改装費ではなく厨房設備や食品製造機械です。飲食店が採択されやすい3つの事例パ
@@ -100,4 +101,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [事業再構築補助金の確定申告｜個人事業主が守る3つの注意点](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/): 事業再構築補助金を受け取った個人事業主は、確定申告で雑収入として事業所得に計上します。収入計上の時期・総収入金額不算入・消費税という3つの注意点を2026年8月時点の情報で解説します。
