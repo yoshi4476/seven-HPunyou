@@ -48,8 +48,13 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/jizokuka-hojokin-inshokuten-jirei/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/monozukuri-hojokin-2025-kojinjigyonushi/</loc>
@@ -345,9 +350,5 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/jizokuka-hojokin-inshokuten-jirei/</loc>
-    <lastmod>2026-08-18</lastmod>
   </url>
 </urlset>
