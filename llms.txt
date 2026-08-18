@@ -100,3 +100,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [事業再構築補助金の確定申告｜個人事業主が守る3つの注意点](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/): 事業再構築補助金を受け取った個人事業主は、確定申告で雑収入として事業所得に計上します。収入計上の時期・総収入金額不算入・消費税という3つの注意点を2026年8月時点の情報で解説します。
