@@ -474,13 +474,6 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 .company-visual .cv-num span{font-size:12px;color:#8fa0c2;letter-spacing:.12em}
 
 
-/* 特典グリッド */
-.perk-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:880px;margin:36px auto 0}
-@media(max-width:640px){.perk-grid{grid-template-columns:1fr}}
-.perk{background:#fff;border:1px solid #e9d8ac;border-radius:14px;padding:24px 22px;box-shadow:var(--shadow)}
-.perk .pk-no{display:inline-block;font-family:var(--num);font-size:12px;letter-spacing:.2em;color:#fff;background:linear-gradient(135deg,#c39a4e,#b08b3e);border-radius:999px;padding:4px 14px;margin-bottom:12px}
-.perk h3{font-family:var(--serif);font-size:16.5px;font-weight:800;color:var(--navy);line-height:1.6;margin-bottom:8px}
-.perk p{font-size:13px;color:var(--muted);margin:0}
 
 /* ================= 15. FAQ ================= */
 .faq{max-width:820px;margin:40px auto 0;display:grid;gap:12px}
@@ -1117,31 +1110,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
   </div>
 </section>
 
-
-<!-- ========== 16. Zoom無料相談 参加特典(採択・契約と無関係の情報提供=適法な販促) ========== -->
-<section id="tokuten" style="background:linear-gradient(135deg,#fdf8ec,#f8f0dc);border-top:1px solid #e9d8ac;border-bottom:1px solid #e9d8ac">
-  <div class="wrap rev">
-    <p class="kicker">Present</p>
-    <h2>Zoom無料相談 <span class="accent">ご参加特典</span></h2>
-    <p class="lead">Zoom無料相談にご参加いただいた方<span class="em-marker">全員に、その場で進呈</span>します(採択・ご契約の有無は問いません)。</p>
-    <div class="perk-grid">
-      <div class="perk">
-        <span class="pk-no">特典 1</span>
-        <h3>ChatGPT業務活用<br>スターターキット</h3>
-        <p>コピペで使える業務プロンプト20本に出力例・社内AI利用ルール雛形・30日定着計画まで収録(PDF・15ページ)。</p>
-      </div>
-      <div class="perk">
-        <span class="pk-no">特典 2</span>
-        <h3>Googleビジネスプロフィール<br>セルフ改善チェックシート</h3>
-        <p>マップ集客30項目の採点式シートに、星別の口コミ返信テンプレ・90日改善計画つき(PDF・12ページ)。</p>
-      </div>
-    </div>
-    <div style="text-align:center;margin-top:32px">
-      <a class="btn btn-primary" href="#contact" data-cta="tokuten_cta">特典つきのZoom無料相談を申し込む</a>
-      <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
-    </div>
-  </div>
-</section>
 
 <!-- ========== 17. FAQ(心理:「最後の疑問」/ 仕事: 反論処理+ロングテールSEO) ========== -->
 <!-- 回答はJSON-LDのFAQPageと完全一致(40〜60字・AIO引用最適) -->
