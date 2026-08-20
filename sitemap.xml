@@ -52,6 +52,11 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/monozukuri-hojokin-kensetsugyou-jirei/</loc>
+    <lastmod>2026-08-20</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/monozukuri-hojokin-kourigyou/</loc>
     <lastmod>2026-08-20</lastmod>
     <priority>0.7</priority>
@@ -370,9 +375,5 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/monozukuri-hojokin-kensetsugyou-jirei/</loc>
-    <lastmod>2026-08-20</lastmod>
   </url>
 </urlset>
