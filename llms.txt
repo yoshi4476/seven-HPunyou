@@ -36,6 +36,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [ものづくり補助金は小売業に使えない？対象になる投資の見極め方](https://lp.7senses.co.jp/blog/monozukuri-hojokin-kourigyou/): ものづくり補助金は小売業も対象ですが、審査で評価されるのは内装や什器ではなく在庫管理・自動発注などのデータ活用投資です。業態別の対象経費、中
 - [事業再構築補助金の飲食店活用事例3選と今の申請方法](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-inshokuten-jirei/): 事業再構築補助金は飲食店でも業態転換やデリバリー進出などの事例で採択されてきましたが、2025年3月の第13回公募で新規受付を終了しました。
 - [事業再構築補助金は法人成り後も続く？承継に必要な4つの手続き](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/): 事業再構築補助金の後継制度は、交付決定後に個人事業主が法人成りしても、事務局へ事前相談し承認を得れば法人が事業を引き継げます。承継手続き・G
 - [事業再構築補助金の確定申告｜個人事業主が守る3つの注意点](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/): 事業再構築補助金を受け取った個人事業主は、確定申告で雑収入として事業所得に計上します。収入計上の時期・総収入金額不算入・消費税という3つの注
@@ -103,4 +104,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [ものづくり補助金は小売業に使えない？対象になる投資の見極め方](https://lp.7senses.co.jp/blog/monozukuri-hojokin-kourigyou/): ものづくり補助金は小売業も対象ですが、審査で評価されるのは内装や什器ではなく在庫管理・自動発注などのデータ活用投資です。業態別の対象経費、中小企業者基準、IT導入補助金との違いを2026年8月時点の情報で解説します。
