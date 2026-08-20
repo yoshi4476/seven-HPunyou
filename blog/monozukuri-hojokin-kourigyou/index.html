@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ================================================================
+  ブログ記事テンプレート(静的版)
+  ・{{...}} を差し替えて blog/<slug>/index.html として保存する
+  ・将来 blog-system(Astro)稼働後はそちらの生成に移行する
+================================================================= -->
+<title>ものづくり補助金は小売業に使えない？対象になる投資の見極め方|セブンセンシズ株式会社</title>
+<meta name="description" content="ものづくり補助金は小売業も対象ですが、審査で評価されるのは内装や什器ではなく在庫管理・自動発注などのデータ活用投資です。業態別の対象経費、中小企業者基準、IT導入補助金との違いを2026年8月時点の情報で解説します。">
+<link rel="canonical" href="https://lp.7senses.co.jp/blog/monozukuri-hojokin-kourigyou/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ものづくり補助金は小売業に使えない？対象になる投資の見極め方">
+<meta property="og:description" content="ものづくり補助金は小売業も対象ですが、審査で評価されるのは内装や什器ではなく在庫管理・自動発注などのデータ活用投資です。業態別の対象経費、中小企業者基準、IT導入補助金との違いを2026年8月時点の情報で解説します。">
+<meta property="og:url" content="https://lp.7senses.co.jp/blog/monozukuri-hojokin-kourigyou/">
+<meta property="og:image" content="https://lp.7senses.co.jp/images/blog/monozukuri-hojokin-kourigyou/thumbnail.webp">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article",
+      "headline": "ものづくり補助金は小売業に使えない？対象になる投資の見極め方",
+      "description": "ものづくり補助金は小売業も対象ですが、審査で評価されるのは内装や什器ではなく在庫管理・自動発注などのデータ活用投資です。業態別の対象経費、中小企業者基準、IT導入補助金との違いを2026年8月時点の情報で解説します。",
+      "datePublished": "2026-08-20",
+      "dateModified": "2026-08-20",
+      "inLanguage": "ja",
+      "mainEntityOfPage": "https://lp.7senses.co.jp/blog/monozukuri-hojokin-kourigyou/",
+      "author": { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author", "name": "原口 優", "jobTitle": "代表取締役" },
+      "publisher": { "@type": "Organization", "@id": "https://lp.7senses.co.jp/#org", "name": "セブンセンシズ株式会社" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".summary", ".faq-sec"] } },
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lp.7senses.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://lp.7senses.co.jp/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "ものづくり補助金は小売業に使えない？対象になる投資の見極め方" } ] },
+    { "@type": "FAQPage", "mainEntity": [
+            { "@type": "Question", "name": "ものづくり補助金は小売業でも申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "申請できます。ただし対象経費の中心は内装や什器ではなく在庫管理・自動発注システムなどの設備投資です。" } },
+      { "@type": "Question", "name": "POSレジを入れ替えるだけでも申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "単純な入れ替えは対象外です。需要予測や自動発注と連動したシステム構築費であれば対象になります。" } },
+      { "@type": "Question", "name": "小売業で対象になりやすい投資はどんな内容ですか？", "acceptedAnswer": { "@type": "Answer", "text": "自動発注システム化、セルフレジ導入、EC・物流の自動化が対象になりやすい傾向です。" } },
+      { "@type": "Question", "name": "小売業の中小企業者基準はどのくらいですか？", "acceptedAnswer": { "@type": "Answer", "text": "資本金5,000万円以下または従業員50人以下のどちらかを満たせば対象です。" } },
+      { "@type": "Question", "name": "IT導入補助金とどちらを使うべきですか？", "acceptedAnswer": { "@type": "Answer", "text": "自動発注システムなどハード込みの投資はものづくり補助金、ソフト単体導入はIT導入補助金が向きます。" } },
+      { "@type": "Question", "name": "補助上限額はいくらですか？", "acceptedAnswer": { "@type": "Answer", "text": "通常最大3,000万円で、大幅な賃上げ特例を適用すると最大4,000万円まで上がります。" } }
+    ] }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
+  --line:#e7e2d4; --line2:rgba(176,139,62,.45);
+  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
+  --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
+  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:2;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-strong)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{max-width:100%;height:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1240px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
+.logo b{color:var(--gold)}
+.logo img{height:38px;width:auto;display:block}
+.nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
+main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-template-columns:minmax(0,840px) 320px;gap:44px;justify-content:center;align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:84px;display:grid;gap:16px}
+@media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
+.side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
+.side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.side .sbox li{margin:0}
+.side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
+.side .sbox a:hover{border-color:var(--line2);color:var(--gold-strong)}
+.side .scta{background:linear-gradient(150deg,#132445,#1d3461 60%,#24427c);border-radius:12px;padding:22px;color:#fff;text-align:center}
+.side .scta p{font-family:var(--serif);font-weight:800;font-size:15px;line-height:1.8;margin:0 0 12px;color:#fff}
+.side .scta a{display:block;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.side .scta a.g{background:none;border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
+.crumb a{color:var(--dim);text-decoration:none}
+.crumb a:hover{color:var(--gold-strong)}
+.cat{display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
+.meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
+.fresh-note b{color:var(--muted);font-weight:500}
+.summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
+.toc p{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
+.toc li{margin:7px 0}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--gold-strong)}
+article h2{font-family:var(--serif);font-weight:800;font-size:clamp(20px,3.2vw,25px);line-height:1.6;margin:54px 0 18px;padding-top:14px;border-top:1px solid var(--line);color:#1d3461}
+article h3{font-family:var(--serif);font-weight:800;font-size:17.5px;margin:34px 0 12px;color:var(--gold-strong)}
+article p{margin:16px 0;color:var(--text)}
+article ul,article ol{margin:16px 0 16px 24px;color:var(--text)}
+article li{margin:8px 0}
+article img{display:block;width:100%;height:auto;border-radius:12px;margin:26px 0;border:1px solid var(--line)}
+article table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
+article strong{color:var(--gold-strong)}
+.em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
+.table-scroll{overflow-x:auto;margin:20px 0}
+.action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
+.action-box b{color:var(--gold-strong)}
+.cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
+.cta-box p.t{font-family:var(--serif);font-weight:800;font-size:19px;line-height:1.7;margin-bottom:8px}
+.cta-box p.d{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.cta-box a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 30px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:15px;text-decoration:none}
+.cta-box .micro{display:block;margin-top:10px;font-size:12px;color:var(--dim)}
+.faq-sec details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq-sec summary{list-style:none;cursor:pointer;padding:16px 46px 16px 20px;font-weight:700;font-size:14.5px;position:relative;line-height:1.7}
+.faq-sec summary::-webkit-details-marker{display:none}
+.faq-sec summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:20px;color:var(--gold)}
+.faq-sec details[open] summary::after{content:"−"}
+.faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
+.author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
+.author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:#5c6472;margin:0 0 14px}
+.author .sv-body{display:flex;gap:16px}
+.author .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
+.author b{color:var(--text);font-size:14.5px}
+.author .sv-links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.author .sv-links a{font-size:12.5px;font-weight:700;color:#1b3a6b;text-decoration:none;border-bottom:1px solid #b9c6dd}
+.author .sv-links a:hover{border-bottom-color:#1b3a6b}
+.rel{margin-top:50px}
+.rel p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel ul{list-style:none;margin:0;display:grid;gap:10px}
+.rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
+.rel a:hover{border-color:var(--line2)}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
+footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+</script>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="/"><img src="/assets/img/logo-h.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="372" height="148"></a>
+    <a class="cta" href="/#contact">無料で相談する</a>
+  </div>
+</header>
+<main>
+<div class="main-col">
+  <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">AI導入補助金ブログ</a> › ものづくり補助金は小売業に使えない？対象になる投資の見極</nav>
+  <span class="cat">補助金</span>
+  <h1>ものづくり補助金は小売業に使えない？対象になる投資の見極め方</h1>
+  <div class="meta">
+    <span>公開: 2026年8月20日</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 7分</span>
+  </div>
+  <p class="fresh-note">本記事は<b>2026年8月時点</b>の情報です|この記事は<b>在庫管理や発注業務のシステム投資でものづくり補助金の活用を検討している小売業経営者</b>向けです</p>
+
+  <!-- 冒頭200字: 断言文+キーワード(AIO最重要シグナル) -->
+  <div class="summary">ものづくり補助金は、小売業も申請できる補助金です。ただし審査で評価されるのは店舗の内装や什器ではなく、在庫管理や自動発注といったデータ活用への投資です。制度名の「ものづくり」という響きから、小売業には縁がないと考える経営者が少なくありません。本記事では、小売業が対象にできる投資の中身、業態別の経費区分、IT導入補助金との使い分けを2026年8月時点の情報で整理します。</div>
+
+  <div class="toc">
+    <p>CONTENTS</p>
+    <ol><li><a href="#sec1">小売業は「モノ」ではなく「データ活用」への投資で評価される</a></li><li><a href="#sec2">業態別に見る対象になる経費・ならない経費</a></li><li><a href="#sec3">小売業とサービス業・卸売業で異なる中小企業者基準</a></li><li><a href="#sec4">小売業がIT導入補助金と迷ったときの判断基準</a></li><li><a href="#sec5">補助額はいくらになるか｜投資額別シミュレーション</a></li><li><a href="#sec6">審査で評価される数値目標の作り方</a></li><li><a href="#sec7">申請の流れと交付決定前に発注してはいけない理由</a></li><li><a href="#sec8">まとめ: 「モノ」ではなくデータ活用の仕組みで投資を組み立てる</a></li></ol>
+  </div>
+
+  <article>
+    <p><strong>ものづくり補助金は、小売業も申請できる補助金です。</strong>ただし審査で評価されるのは店舗の内装や什器ではなく、在庫管理や自動発注といったデータ活用への投資です。制度名の「ものづくり」という響きから、小売業には縁がないと考える経営者が少なくありません。本記事では、小売業が対象にできる投資の中身、業態別の経費区分、IT導入補助金との使い分けを2026年8月時点の情報で整理します。</p>
+<div class="target-reader">この記事は、在庫管理や発注業務のシステム投資でものづくり補助金の活用を検討している小売業経営者向けです。</div>
+
+<p class="freshness">※ 2026年8月時点の情報です。第23次公募の情報を基準にしています。</p>
+
+<div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>小売業で評価される投資の考え方</li><li>業態別の対象経費・対象外経費</li><li>サービス業・卸売業との基準の違い</li><li>IT導入補助金との使い分け</li></ul></div>
+
+<h2 id="sec1">小売業は「モノ」ではなく「データ活用」への投資で評価される</h2>
+<p><strong>小売業の審査で評価されるのは、店舗の見た目ではなく在庫や発注をデータで管理する仕組みです。</strong>「ものづくり」という制度名から機械や工場を連想し、小売業には無関係だと考える経営者に何度も出会ってきました。</p>
+<div class="definition-box"><span class="term">ものづくり補助金とは</span>、中小企業が行う生産性向上のための設備投資を支援する国の補助金です。正式名称は「ものづくり・商業・サービス生産性向上促進補助金」で、小売業を含むサービス業も対象に含まれます。</div>
+
+<p><a href="https://portal.monodukuri-hojo.jp/" target="_blank" rel="noopener">ものづくり・商業・サービス生産性向上促進補助金の公式サイト</a>でも、対象は特定の業種に限定されていないと明記されています。制度が支援するのは工場の機械装置だけでなく、<mark>販売・在庫・発注の仕組みを数値化するシステム投資</mark>全般です。</p>
+<p>小売業にとっての「生産性向上」は、少ない人員と在庫でどれだけ機会損失を減らせるかという指標に置き換わります。この視点に立てないまま「うちは工場を持っていないから対象外」と判断してしまうと、応募自体を見送ってしまいます。</p>
+<p>私も相談の現場で、<mark>店舗改装の見積もりだけを持って相談に来られる</mark>小売業経営者に出会うことがあります。話を聞くと、実際には発注業務や在庫の把握に多くの時間を取られているケースが多いものです。投資の軸をシステム化に切り替えるだけで、対象経費が見えてくることは珍しくありません。</p>
+<h2 id="sec2">業態別に見る対象になる経費・ならない経費</h2>
+<p><strong>小売業で対象になる経費の中心は、在庫管理システムや自動発注システムの構築費です。</strong>内装改装費や陳列什器の単独購入は、生産性向上に直結しないため対象外になります。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">経費区分</th>
+<th style="text-align: left;">小売業での具体例</th>
+<th style="text-align: left;">備考</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">機械装置・システム構築費</td>
+<td style="text-align: left;">自動発注システム、在庫管理システム、セルフレジ・自動釣銭機</td>
+<td style="text-align: left;">全申請枠で計上が必須</td>
+</tr>
+<tr>
+<td style="text-align: left;">技術導入費・専門家経費</td>
+<td style="text-align: left;">需要予測モデルの構築を外部専門家に依頼する費用</td>
+<td style="text-align: left;">機械装置費と組み合わせて計上</td>
+</tr>
+<tr>
+<td style="text-align: left;">クラウド利用費</td>
+<td style="text-align: left;">在庫管理クラウドサービスの利用料</td>
+<td style="text-align: left;">単独では主経費にできない</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="/images/monozukuri-hojokin-kourigyou/jirei3.png" alt="小売業で対象になる投資の3タイプ: 需要予測・自動発注システム化は販売データに基づく自動発注で欠品と過剰在庫を防ぐ、省人化・非対面レジ化はセルフレジや自動釣銭機の導入で限られた人員での接客を維持する、EC・物流の自動化は自動梱包機やピッキングシステムで店舗と通販の在庫を一元管理する" loading="lazy"><figcaption>小売業で対象になる投資の3タイプ</figcaption></figure>
+
+<p>業態によって主軸になる投資は変わります。アパレルなら需要予測に基づく自動発注システム。食品小売なら鮮度管理と連動した在庫管理システムです。雑貨店やホームセンターなら、自動倉庫やピッキングシステムが候補になります。</p>
+<p><a href="https://hojyokin-portal.jp/columns/mono2025_summary" target="_blank" rel="noopener">補助金ポータルが整理した対象経費の一覧</a>でも、運搬費や知的財産権関連経費などが対象になると説明されています。ただしいずれも機械装置費やシステム構築費と組み合わせて申請する位置づけです。</p>
+<p>複数店舗を展開している事業者と、1店舗のみを経営する事業者とでは、選びやすい投資が変わります。多店舗であれば需要予測・自動発注で全店舗の発注業務を効率化しやすく、1店舗のみであればレジの省人化やEC連携のほうが投資規模に見合いやすい傾向があります。</p>
+<figure><img src="/images/monozukuri-hojokin-kourigyou/keihi-vs.png" alt="対象になる経費とならない経費: 対象になるのは在庫管理・自動発注システムの構築費とセルフレジ・自動釣銭機等の機械装置費、対象にならないのは内装改装費・陳列什器の単独購入とPOSレジの単純入替のみ" loading="lazy"><figcaption>対象になる経費とならない経費</figcaption></figure>
+
+<p><span class="txt-red">「店舗をリニューアルしたいから」という理由だけで申請すると、対象経費が組み立てられず審査以前の段階で行き詰まります。</span>POSレジの単純な入替も同様で、需要予測や自動発注と連動したシステム構築費に位置づけて初めて対象になります。</p>
+<div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+
+<h2 id="sec3">小売業とサービス業・卸売業で異なる中小企業者基準</h2>
+<p><strong>小売業の中小企業者基準は、資本金5,000万円以下または従業員50人以下のどちらかを満たすことです。</strong>同じ資本金5,000万円以下でも、業種によって従業員数の基準幅が異なる点に注意してください。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">業種区分</th>
+<th style="text-align: left;">資本金の額</th>
+<th style="text-align: left;">従業員数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">小売業</td>
+<td style="text-align: left;">5,000万円以下</td>
+<td style="text-align: left;">50人以下</td>
+</tr>
+<tr>
+<td style="text-align: left;">サービス業</td>
+<td style="text-align: left;">5,000万円以下</td>
+<td style="text-align: left;">100人以下</td>
+</tr>
+<tr>
+<td style="text-align: left;">卸売業</td>
+<td style="text-align: left;">1億円以下</td>
+<td style="text-align: left;">100人以下</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="https://www.chusho.meti.go.jp/soshiki/teigi.html" target="_blank" rel="noopener">中小企業庁が公開している業種別の定義</a>によると、小売業はサービス業や卸売業より従業員数の基準が狭く設定されています。飲食物の卸も手がける小売店など、複数業態を兼ねる事業者は主たる業種の判定を誤ると対象外と誤解しがちです。業種区分ごとの詳しい基準は<a href="/blog/monozukuri-hojokin-chusho-teigi/">ものづくり補助金は資本金オーバーでも対象？中小企業者7区分</a>でも解説しています。</p>
+<p>主たる業種は、売上高構成比が最も大きい事業で判定するのが基本です。小売と卸売を両方手がける事業者は、直近の決算書から業種別の売上比率を確認したうえで、どちらの基準に当てはまるかを整理しておくと申請時に迷いません。</p>
+<h2 id="sec4">小売業がIT導入補助金と迷ったときの判断基準</h2>
+<p><strong>在庫管理や自動発注のシステム投資は、ハード込みか否かでものづくり補助金とIT導入補助金のどちらが向くか変わります。</strong>どちらも小売業のシステム投資を支援する制度ですが、対象経費の考え方が異なります。</p>
+<p>自動発注システムや在庫管理システムを新規に構築し、機械装置と組み合わせて導入する場合はものづくり補助金が向きます。一方、会計ソフトやレジアプリなど既製のソフトウェアを単体で導入する場合は<a href="/blog/it-hojokin-chusho-teigi/">IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数</a>で扱うIT導入補助金のほうが手続きが軽くなります。</p>
+<p>私も相談の現場で、<mark>レジのソフトを入れ替えたいだけなのにものづくり補助金を検討していた</mark>小売業経営者に出会ったことがあります。投資の中身がハード込みのシステム構築かソフト単体導入かを先に切り分けると、制度選びで迷わずに済みます。</p>
+<p>補助率や手続きの重さだけで選ぶと、実際の投資内容と制度がずれてしまうことがあります。まずは「新しい機器やシステムを一から構築するのか」「既存のソフトを導入するだけなのか」を整理し、その結果に沿って制度を選ぶ順序が失敗を防ぎます。</p>
+<h2 id="sec5">補助額はいくらになるか｜投資額別シミュレーション</h2>
+<p><strong>補助上限額は通常最大3,000万円で、大幅な賃上げ特例を適用すると最大4,000万円まで上がります。</strong>補助率は申請枠や事業者規模によって2分の1または3分の2、補助下限額は100万円です。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">通常の上限</th>
+<th style="text-align: left;">大幅賃上げ特例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">補助上限額</td>
+<td style="text-align: left;">最大3,000万円</td>
+<td style="text-align: left;">最大4,000万円</td>
+</tr>
+<tr>
+<td style="text-align: left;">補助率</td>
+<td style="text-align: left;">1/2（小規模事業者は2/3）</td>
+<td style="text-align: left;">枠により2/3</td>
+</tr>
+<tr>
+<td style="text-align: left;">補助下限額</td>
+<td style="text-align: left;">100万円</td>
+<td style="text-align: left;">100万円</td>
+</tr>
+</tbody>
+</table></div>
+<p>例えば、自動発注システムと在庫管理システムの構築費用が1,200万円の投資を行う場合を考えます。<strong>補助率1/2なら600万円、賃上げ特例で2/3が適用されれば800万円が補助される</strong>計算です。自己負担額を早めに試算しておくと資金計画が立てやすくなります。</p>
+<h2 id="sec6">審査で評価される数値目標の作り方</h2>
+<p><strong>審査で最も重視されるのは、設備投資によって付加価値額がどれだけ伸びるかという数値の根拠です。</strong>システムの機能を並べるだけでは、審査側に生産性向上の実感が伝わりません。</p>
+<p>欠品率や在庫回転率、発注業務の作業時間がどう変わるかを、事業計画書に具体的に落とし込む必要があります。<strong>需要予測・自動発注システム化であれば、欠品による機会損失の削減分を、根拠となる過去の販売データとあわせて示せると説得力が増します。</strong></p>
+<p>数値目標は「導入前後で何が何倍になるか」という形で示すと伝わりやすくなります。例えば、月次の欠品率が5%だった店舗が、システム導入後に1%まで下がる見込みだったとします。その根拠となる過去の販売データや発注サイクルもあわせて記載してください。</p>
+<p>出発点は、現状の在庫回転率を実際に計測した数字です。感覚値ではなく実測値から積み上げると、根拠のブレが少なくなります。付加価値額の算出には、粗利改善だけでなく廃棄ロス削減による原価率の改善も加味できます。</p>
+<p>計測期間は最低でも直近3か月分のデータを使うと、季節変動によるブレを説明しやすくなります。繁忙期と閑散期を両方含めた数字であれば、審査側も投資効果を年間ベースで判断しやすくなるためです。単月の実績だけを根拠にすると、たまたま良かった時期の数字だと受け取られかねません。</p>
+<div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+
+<h2 id="sec7">申請の流れと交付決定前に発注してはいけない理由</h2>
+<p><strong>小売業がものづくり補助金を申請するには、GビズID取得から交付決定後の発注まで4ステップで進みます。</strong>交付決定前に発注してしまうと補助対象外になる点に注意が必要です。</p>
+<figure><img src="/images/monozukuri-hojokin-kourigyou/flow4.png" alt="小売業が申請するまでの4ステップ: GビズIDを取得する、事業計画書を作成する、電子申請で提出する、交付決定後に発注する" loading="lazy"><figcaption>小売業が申請するまでの4ステップ</figcaption></figure>
+
+<div class="caution-box"><span class="box-title">注意: 交付決定前の発注は対象外</span><br>採択されても、交付決定の通知を受け取る前にシステムを発注・契約してしまうと、その経費は補助の対象になりません。見積もりの取得までにとどめ、契約は交付決定後に進めてください。</div>
+
+<p>申請でつまずきやすい失敗は3つあります。1点目は、内装改装や陳列什器の更新を主目的にしたまま申請してしまうケース。2点目は、「効率化する」とだけ書いて欠品率や在庫回転率の目標値を示せていないケースです。3点目は、採択の連絡を受けてすぐに発注してしまい、対象経費から外れてしまうケースです。</p>
+<p>当社は登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。小売業特有の経費区分や、業態をまたぐ事業計画の書き方に迷う場合は、無料相談で投資内容を伝えてください。補助金全般に共通する失敗パターンは<a href="/blog/ai-hojokin-shinsei-shippai-yokuaru/">AI導入補助金の申請に失敗する5つの原因と対策</a>でも整理しています。</p>
+<h2 id="sec8">まとめ: 「モノ」ではなくデータ活用の仕組みで投資を組み立てる</h2>
+<p>ものづくり補助金は、小売業も申請できる制度ですが、<strong>評価されるのは店舗の内装や什器ではなく在庫管理・自動発注などのデータ活用への投資です。</strong>制度名の響きに惑わされず、需要予測・自動発注システム化、省人化レジ化、EC・物流の自動化という投資の切り口で計画を立てると、対象経費が組み立てやすくなります。</p>
+<p>小売業はサービス業や卸売業より中小企業者の従業員数基準が狭いため、<strong>兼業している事業者ほど主たる業種の確認を先に済ませておく</strong>必要があります。ハード込みのシステム構築かソフト単体導入かで、ものづくり補助金とIT導入補助金のどちらが向くかも変わります。</p>
+<p><span class="big">交付決定前の発注は補助対象外になるため、採択後のスケジュール管理も含めて早めに準備してください。</span>私たちは2020年3月の創業以来、大阪市東成区を拠点に登録支援事業者として申請支援に携わってきました。経費区分の切り分けに迷う場合は、無料相談で投資内容を伝えてください。</p>
+<div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+  </article>
+
+  <!-- FAQ(回答40〜60字・JSON-LDと完全一致させる) -->
+  <section class="faq-sec">
+    <h2 id="faq">よくある質問</h2>
+        <details>
+      <summary>ものづくり補助金は小売業でも申請できますか？</summary>
+      <div class="a">申請できます。ただし対象経費の中心は内装や什器ではなく在庫管理・自動発注システムなどの設備投資です。</div>
+    </details>
+    <details>
+      <summary>POSレジを入れ替えるだけでも申請できますか？</summary>
+      <div class="a">単純な入れ替えは対象外です。需要予測や自動発注と連動したシステム構築費であれば対象になります。</div>
+    </details>
+    <details>
+      <summary>小売業で対象になりやすい投資はどんな内容ですか？</summary>
+      <div class="a">自動発注システム化、セルフレジ導入、EC・物流の自動化が対象になりやすい傾向です。</div>
+    </details>
+    <details>
+      <summary>小売業の中小企業者基準はどのくらいですか？</summary>
+      <div class="a">資本金5,000万円以下または従業員50人以下のどちらかを満たせば対象です。</div>
+    </details>
+    <details>
+      <summary>IT導入補助金とどちらを使うべきですか？</summary>
+      <div class="a">自動発注システムなどハード込みの投資はものづくり補助金、ソフト単体導入はIT導入補助金が向きます。</div>
+    </details>
+    <details>
+      <summary>補助上限額はいくらですか？</summary>
+      <div class="a">通常最大3,000万円で、大幅な賃上げ特例を適用すると最大4,000万円まで上がります。</div>
+    </details>
+  </section>
+
+  <div class="cta-box">
+    <p class="t">補助金が使えるか、無料で確認しませんか</p>
+    <p class="d">要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p>
+    <a href="/#diagnosis">まず3分の無料診断で「うちの場合」を確認する</a>
+    <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
+  </div>
+
+  <div class="author">
+    <span class="sv-label">SUPERVISED BY|この記事の監修者</span>
+    <div class="sv-body">
+      <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="64" height="64" loading="lazy" style="object-fit:cover;border-radius:50%">
+      <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
+      大阪・東成区のデジタルマーケティング&AI導入支援会社の代表。IT導入補助金(現・AI導入補助金)の申請支援50社+・採択通過率90%以上(※当社支援実績)。MEO事業「G-ran」運営。AI導入補助金の申請実務・採択ノウハウを毎日発信しています。
+      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rel">
+    <p class="t">RELATED</p>
+    <ul><li><a href="/blog/jigyou-saikouchiku-kojinjigyonushi-itsumade/">事業再構築補助金は個人事業主もいつまで？後継3制度の使い方</a></li>
+<li><a href="/blog/kojin-jigyonushi-ai-hojokin/">個人事業主のAI導入補助金｜開業1年未満は対象外？条件を解説</a></li>
+<li><a href="/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/">小規模事業者持続化補助金｜個人事業主の採択率47.2%と対策</a></li></ul>
+  </div>
+</div>
+<aside class="side">
+  <div class="sbox">
+    <p class="t">CATEGORY</p>
+    <ul>
+      <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">SERVICE</p>
+    <ul>
+      <li><a href="/service/hojokin/">補助金申請サポート</a></li>
+      <li><a href="/service/dev/">システム開発・AI導入</a></li>
+      <li><a href="/service/aio/">AIOコンサルティング</a></li>
+      <li><a href="/service/meo/">MEOコンサルティング</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">MEMBER</p>
+    <ul>
+      <li><a href="/#member">会員価格について — ご契約者様は大幅割引</a></li>
+    </ul>
+  </div>
+  <div class="scta">
+    <p>補助金を活用できるか、<br>まずは無料診断でチェック。</p>
+    <a href="/#diagnosis">無料診断を試す</a>
+    <a class="g" href="/#contact">無料で相談する</a>
+  </div>
+</aside>
+</main>
+<footer>
+  <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="/privacy/">プライバシーポリシー</a></nav>
+  <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
+</footer>
+</body>
+</html>
