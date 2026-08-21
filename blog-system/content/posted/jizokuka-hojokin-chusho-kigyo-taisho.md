@@ -48,6 +48,12 @@ faq:
 
 **対象になるかどうかは、中小企業者かどうかではなく、業種ごとの従業員数基準を満たす小規模事業者かどうかで決まります。**「うちは中小企業だから対象のはず」という思い込みが、誤判定の一番多い原因です。
 
+対象になる範囲を先に押さえるなら、[小規模事業者持続化補助金2025｜建設業の対象条件と経費](/blog/jizokuka-hojokin-kensetsugyou/)が参考になります。
+
+対象になる範囲は[小規模事業者持続化補助金｜飲食店で対象になる4つの投資](/blog/jizokuka-hojokin-inshokuten-jirei/)で整理しています。
+
+関連する内容は[中小企業成長加速化補助金｜1次2次の実績とスケジュール](/blog/seicho-kasokuka-hojokin-schedule/)で整理しています。
+
 <div class="definition-box"><span class="term">小規模事業者とは</span>、中小企業者の中でもさらに従業員数が少ない事業者を指す区分です。商業・サービス業（宿泊業・娯楽業を除く）は5人以下、宿泊業・娯楽業と製造業その他は20人以下が基準になります。</div>
 
 <a href="https://hojyokin-portal.jp/columns/jizokuka2025_summary" target="_blank" rel="noopener">補助金ポータルの解説記事</a>によると、この基準は法人・個人事業主を問わず共通です。資本金の額は判定に使いません。
