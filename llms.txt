@@ -109,3 +109,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁](https://lp.7senses.co.jp/blog/unsougyou-jissekihoukokusho/): IT導入補助金・ものづくり補助金の実績報告書を運送業が提出する際は、傭車先への契約名義とデジタコの対象可否が壁になります。必要書類・軽貨物個人事業主の注意点を2026年8月時点でまとめました。
