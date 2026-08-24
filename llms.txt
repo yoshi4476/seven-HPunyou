@@ -36,6 +36,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [事業再構築補助金 美容室の脱毛転換3事例｜美容師法の注意点](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-biyoushitsu-jirei/): 美容室の脱毛サロン・エステ転換など事業再構築補助金の事例と、美容師法上の注意点、2025年3月の公募終了後に申請できる制度を2026年8月時
 - [小規模事業者持続化補助金｜美容室の書き方4ステップ](https://lp.7senses.co.jp/blog/jizokuka-hojokin-biyoushitsu-kakikata/): 小規模事業者持続化補助金の経営計画書は、企業概要・顧客ニーズ・自社の強み・経営方針の4項目と補助事業計画4項目、合計8項目で構成されます。美
 - [ものづくり補助金は美容室で使える？対象機器と上限750万円の目安](https://lp.7senses.co.jp/blog/monozukuri-hojokin-biyoushitsu/): ものづくり補助金は美容室も対象です。ただし評価されるのは内装ではなく専門機器やサービスの高付加価値化投資です。対象になる美容機器の例、IT導
 - [運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁](https://lp.7senses.co.jp/blog/unsougyou-jissekihoukokusho/): IT導入補助金・ものづくり補助金の実績報告書を運送業が提出する際は、傭車先への契約名義とデジタコの対象可否が壁になります。必要書類・軽貨物個
@@ -112,4 +113,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [事業再構築補助金 美容室の脱毛転換3事例｜美容師法の注意点](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-biyoushitsu-jirei/): 美容室の脱毛サロン・エステ転換など事業再構築補助金の事例と、美容師法上の注意点、2025年3月の公募終了後に申請できる制度を2026年8月時点で解説します。
