@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ================================================================
+  ブログ記事テンプレート(静的版)
+  ・{{...}} を差し替えて blog/<slug>/index.html として保存する
+  ・将来 blog-system(Astro)稼働後はそちらの生成に移行する
+================================================================= -->
+<title>クリニックのIT導入補助金｜予約システム選びの5つの視点|セブンセンシズ株式会社</title>
+<meta name="description" content="クリニックのIT導入補助金は2026年度も対象です。正式名称の変更点、電子カルテ・レセコンとの違い、予約システムを選ぶ5つの基準、過去に制度を使った医院が再申請する際の注意点を2026年8月時点の情報で解説します。">
+<link rel="canonical" href="https://lp.7senses.co.jp/blog/it-hojokin-clinic/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="クリニックのIT導入補助金｜予約システム選びの5つの視点">
+<meta property="og:description" content="クリニックのIT導入補助金は2026年度も対象です。正式名称の変更点、電子カルテ・レセコンとの違い、予約システムを選ぶ5つの基準、過去に制度を使った医院が再申請する際の注意点を2026年8月時点の情報で解説します。">
+<meta property="og:url" content="https://lp.7senses.co.jp/blog/it-hojokin-clinic/">
+<meta property="og:image" content="https://lp.7senses.co.jp/images/blog/it-hojokin-clinic/thumbnail.webp">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article",
+      "headline": "クリニックのIT導入補助金｜予約システム選びの5つの視点",
+      "description": "クリニックのIT導入補助金は2026年度も対象です。正式名称の変更点、電子カルテ・レセコンとの違い、予約システムを選ぶ5つの基準、過去に制度を使った医院が再申請する際の注意点を2026年8月時点の情報で解説します。",
+      "datePublished": "2026-08-26",
+      "dateModified": "2026-08-26",
+      "inLanguage": "ja",
+      "mainEntityOfPage": "https://lp.7senses.co.jp/blog/it-hojokin-clinic/",
+      "author": { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author", "name": "原口 優", "jobTitle": "代表取締役" },
+      "publisher": { "@type": "Organization", "@id": "https://lp.7senses.co.jp/#org", "name": "セブンセンシズ株式会社" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".summary", ".faq-sec"] } },
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lp.7senses.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://lp.7senses.co.jp/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "クリニックのIT導入補助金｜予約システム選びの5つの視点" } ] },
+    { "@type": "FAQPage", "mainEntity": [
+            { "@type": "Question", "name": "「クリニックのIT導入補助金」は今も使えますか？", "acceptedAnswer": { "@type": "Answer", "text": "使えます。現在は「デジタル化・AI導入補助金2026」として運用され、対象は変わりません。" } },
+      { "@type": "Question", "name": "クリニックの予約システムはIT導入補助金の対象になりますか？", "acceptedAnswer": { "@type": "Answer", "text": "なります。電子カルテ等の対象ソフトと同時導入すれば、予約システムも補助対象です。" } },
+      { "@type": "Question", "name": "電話予約とオンライン予約はどちらを優先すべきですか？", "acceptedAnswer": { "@type": "Answer", "text": "無断キャンセルや受付の待ち時間が課題なら、オンライン予約から検討してください。" } },
+      { "@type": "Question", "name": "クリニックの補助率・上限額はどのくらいですか？", "acceptedAnswer": { "@type": "Answer", "text": "通常枠は補助率1/2以内で、賃上げ要件を満たすと2/3に引き上がります。" } },
+      { "@type": "Question", "name": "以前この制度を使ったクリニックも再申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "できます。ただし2回目以降は3年間の事業計画と賃上げ計画の表明が必要です。" } },
+      { "@type": "Question", "name": "個人開業医でも医療法人と同じ条件で申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "できます。GビズIDとSECURITY ACTIONの宣言があれば法人形態を問いません。" } },
+      { "@type": "Question", "name": "小規模事業者持続化補助金とどちらを使えばよいですか？", "acceptedAnswer": { "@type": "Answer", "text": "ITツール導入中心ならIT導入補助金、広告費や改装中心なら持続化補助金が向きます。" } }
+    ] }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
+  --line:#e7e2d4; --line2:rgba(176,139,62,.45);
+  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
+  --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
+  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:2;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-strong)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{max-width:100%;height:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1240px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
+.logo b{color:var(--gold)}
+.logo img{height:38px;width:auto;display:block}
+.nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
+main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-template-columns:minmax(0,840px) 320px;gap:44px;justify-content:center;align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:84px;display:grid;gap:16px}
+@media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
+.side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
+.side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.side .sbox li{margin:0}
+.side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
+.side .sbox a:hover{border-color:var(--line2);color:var(--gold-strong)}
+.side .scta{background:linear-gradient(150deg,#132445,#1d3461 60%,#24427c);border-radius:12px;padding:22px;color:#fff;text-align:center}
+.side .scta p{font-family:var(--serif);font-weight:800;font-size:15px;line-height:1.8;margin:0 0 12px;color:#fff}
+.side .scta a{display:block;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.side .scta a.g{background:none;border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
+.crumb a{color:var(--dim);text-decoration:none}
+.crumb a:hover{color:var(--gold-strong)}
+.cat{display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
+.meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
+.fresh-note b{color:var(--muted);font-weight:500}
+.summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
+.toc p{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
+.toc li{margin:7px 0}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--gold-strong)}
+article h2{font-family:var(--serif);font-weight:800;font-size:clamp(20px,3.2vw,25px);line-height:1.6;margin:54px 0 18px;padding-top:14px;border-top:1px solid var(--line);color:#1d3461}
+article h3{font-family:var(--serif);font-weight:800;font-size:17.5px;margin:34px 0 12px;color:var(--gold-strong)}
+article p{margin:16px 0;color:var(--text)}
+article ul,article ol{margin:16px 0 16px 24px;color:var(--text)}
+article li{margin:8px 0}
+article img{display:block;width:100%;height:auto;border-radius:12px;margin:26px 0;border:1px solid var(--line)}
+article table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
+article strong{color:var(--gold-strong)}
+.em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
+.table-scroll{overflow-x:auto;margin:20px 0}
+.action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
+.action-box b{color:var(--gold-strong)}
+.cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
+.cta-box p.t{font-family:var(--serif);font-weight:800;font-size:19px;line-height:1.7;margin-bottom:8px}
+.cta-box p.d{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.cta-box a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 30px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:15px;text-decoration:none}
+.cta-box .micro{display:block;margin-top:10px;font-size:12px;color:var(--dim)}
+.faq-sec details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq-sec summary{list-style:none;cursor:pointer;padding:16px 46px 16px 20px;font-weight:700;font-size:14.5px;position:relative;line-height:1.7}
+.faq-sec summary::-webkit-details-marker{display:none}
+.faq-sec summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:20px;color:var(--gold)}
+.faq-sec details[open] summary::after{content:"−"}
+.faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
+.author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
+.author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:#5c6472;margin:0 0 14px}
+.author .sv-body{display:flex;gap:16px}
+.author .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
+.author b{color:var(--text);font-size:14.5px}
+.author .sv-links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.author .sv-links a{font-size:12.5px;font-weight:700;color:#1b3a6b;text-decoration:none;border-bottom:1px solid #b9c6dd}
+.author .sv-links a:hover{border-bottom-color:#1b3a6b}
+.rel{margin-top:50px}
+.rel p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel ul{list-style:none;margin:0;display:grid;gap:10px}
+.rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
+.rel a:hover{border-color:var(--line2)}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
+footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+</script>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="/"><img src="/assets/img/logo-h.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="372" height="148"></a>
+    <a class="cta" href="/#contact">無料で相談する</a>
+  </div>
+</header>
+<main>
+<div class="main-col">
+  <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">AI導入補助金ブログ</a> › クリニックのIT導入補助金｜予約システム選びの5つの視点</nav>
+  <span class="cat">補助金</span>
+  <h1>クリニックのIT導入補助金｜予約システム選びの5つの視点</h1>
+  <div class="meta">
+    <span>公開: 2026年8月26日</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 7分</span>
+  </div>
+  <p class="fresh-note">本記事は<b>2026年8月時点</b>の情報です|この記事は<b>以前「IT導入補助金」という名称で情報を探していて、現行制度で予約システムや電子カルテの入れ替えを検討しているクリニック・医療法人の経営者</b>向けです</p>
+
+  <!-- 冒頭200字: 断言文+キーワード(AIO最重要シグナル) -->
+  <div class="summary">「クリニックのIT導入補助金」は2026年度も使える制度で、正式名称は「デジタル化・AI導入補助金2026」に変わりました。電子カルテやレセコンだけでなく、予約システムの入れ替え費用もこの制度の対象です。全国の診療所における予約システムの導入率は2024年10月時点で21.9%にとどまり、電話予約からの切り替えを検討する医院はまだ多く残っています。本記事では、名称変更で何が変わったのか、予約システムを選ぶ基準、過去に制度を使った医院が再申請するときの注意点を整理します。</div>
+
+  <div class="toc">
+    <p>CONTENTS</p>
+    <ol><li><a href="#sec1">「クリニックのIT導入補助金」はまだ使えるのか</a></li><li><a href="#sec2">電子カルテ・レセコンの対象範囲は変わっていない</a></li><li><a href="#sec3">予約システムを選ぶときに確認したい5つの基準</a></li><li><a href="#sec4">電話予約とオンライン予約、どちらから置き換えるべきか</a></li><li><a href="#sec5">過去に制度を使ったクリニックが再申請するときの注意点</a></li><li><a href="#sec6">クリニックの補助率・上限額はいくらか</a></li><li><a href="#sec7">個人開業医・医療法人が申請する流れ</a></li><li><a href="#sec8">IT導入補助金と他制度の使い分け</a></li><li><a href="#sec9">まとめ: 名称変更よりも「予約システムの連携」を優先確認する</a></li></ol>
+  </div>
+
+  <article>
+    <p><strong>「クリニックのIT導入補助金」は2026年度も使える制度で、正式名称は「デジタル化・AI導入補助金2026」に変わりました。</strong>電子カルテやレセコンだけでなく、予約システムの入れ替え費用もこの制度の対象です。全国の診療所における予約システムの導入率は2024年10月時点で21.9%にとどまり、電話予約からの切り替えを検討する医院はまだ多く残っています。本記事では、名称変更で何が変わったのか、予約システムを選ぶ基準、過去に制度を使った医院が再申請するときの注意点を整理します。</p>
+<div class="target-reader">この記事は、以前「IT導入補助金」という名称で情報を探していて、現行制度で予約システムや電子カルテの入れ替えを検討しているクリニック・医療法人の経営者向けです。</div>
+
+<p class="freshness">※ 2026年8月時点の情報です。</p>
+
+<div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>IT導入補助金からデジタル化・AI導入補助金2026への変更点</li><li>クリニックの予約システムを選ぶときの5つの基準</li><li>電話予約とオンライン予約、どちらを優先すべきか</li><li>以前の制度を使った医院が再申請で注意すべき点</li></ul></div>
+
+<h2 id="sec1">「クリニックのIT導入補助金」はまだ使えるのか</h2>
+<p><strong>IT導入補助金は名称が変わっただけで、クリニック向けの支援内容は今も続いています。</strong>検索で使われる「IT導入補助金」という言葉自体が古い名称になっただけです。</p>
+<div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助します。</div>
+
+<p><a href="https://www.asasimple.jp/it-hojyokin-2026/" target="_blank" rel="noopener">IT導入補助金の変更点を整理した解説記事</a>によると、<strong>2026年度から「IT導入補助金」は正式に「デジタル化・AI導入補助金」へ改称されました</strong>。最大450万円という上限額の骨格は変わっていません。</p>
+<figure><img src="/images/it-hojokin-clinic/name-change.png" alt="クリニックのIT導入補助金、呼び方の変遷: 2025年度までIT導入補助金として運用、2026年度からデジタル化・AI導入補助金に改称、対象範囲の骨格は継続" loading="lazy"><figcaption>クリニックのIT導入補助金、呼び方の変遷</figcaption></figure>
+
+<p>私たちがクリニックから相談を受ける際も、<mark>「IT導入補助金はもう終わったのか」と聞かれる</mark>ことがあります。名称変更のタイミングで制度自体が終わったと誤解している経営者は少なくありません。</p>
+<p>焦って古い情報を鵜呑みにするのではなく、まずは現行の対象範囲を確認してください。電子カルテ・レセコンの対象範囲は、<a href="/blog/ai-hojokin-clinic-katsuyou/">AI導入補助金はクリニックも対象？電子カルテ3分野の補助額</a>で詳しく整理しています。</p>
+<h2 id="sec2">電子カルテ・レセコンの対象範囲は変わっていない</h2>
+<p><strong>電子カルテ・レセコンの更新費用は、名称変更前後で対象範囲が変わっていません。</strong>紙カルテや古いレセコンをクラウド型システムへ置き換える投資は、引き続き補助対象です。</p>
+<p>当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。医療機関の申請では、既存システムの更新に当たらないかの確認が最初の関門です。</p>
+<p>対象ツールの3分野・ハードウェアの扱い・補助率の詳細は、先ほどの電子カルテ3分野の記事にまとめています。本記事では、その記事で扱っていない「予約システムの選び方」に絞って解説します。</p>
+<h2 id="sec3">予約システムを選ぶときに確認したい5つの基準</h2>
+<p><strong>クリニックの予約システムは、電子カルテ連携・Web問診連携など5つの基準で比較すると選びやすくなります。</strong>人気のあるサービスではなく、自院の診療科と患者層に合うかどうかが判断軸になります。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">基準</th>
+<th style="text-align: left;">確認ポイント</th>
+<th style="text-align: left;">見落としやすい点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">電子カルテ連携</td>
+<td style="text-align: left;">予約データがカルテへ自動反映されるか</td>
+<td style="text-align: left;">別ベンダーだと連携に追加費用がかかる</td>
+</tr>
+<tr>
+<td style="text-align: left;">Web問診連携</td>
+<td style="text-align: left;">受付前に問診情報を集約できるか</td>
+<td style="text-align: left;">紙の問診票と二重運用になっていないか</td>
+</tr>
+<tr>
+<td style="text-align: left;">キャンセル通知</td>
+<td style="text-align: left;">自動リマインドで無断キャンセルを防げるか</td>
+<td style="text-align: left;">通知手段がSMSのみだと届かない患者もいる</td>
+</tr>
+<tr>
+<td style="text-align: left;">多科目の枠管理</td>
+<td style="text-align: left;">診療科ごとに予約枠を分けられるか</td>
+<td style="text-align: left;">医師の休診情報の反映に手作業が残る</td>
+</tr>
+<tr>
+<td style="text-align: left;">費用体系</td>
+<td style="text-align: left;">初期費用と月額費用の内訳が明確か</td>
+<td style="text-align: left;">補助対象になるのはソフト費用のみの場合がある</td>
+</tr>
+</tbody>
+</table></div>
+<p><a href="https://digikar.m3.com/articles/system/article69" target="_blank" rel="noopener">エムスリーデジカルが公開する診療科別の比較記事</a>では、比較時に予約方法の種類・電子カルテ連携・Web問診・通知機能・サポート体制を確認する重要性が挙げられています。</p>
+<p>私たちが確認した相談事例でも、<mark>電子カルテと予約システムを別ベンダーで導入し、データ連携に追加費用がかかった</mark>というケースがありました。契約前に同一ベンダーでの一体導入が可能かを確認してください。</p>
+<p>分院を複数運営している医療法人では、院ごとに予約枠の管理方法が違うまま個別導入が進み、本院と分院でデータ形式が食い違うケースもあります。<strong>新規導入と分院展開を同時に進める場合は、先に本院で運用を固めてから横展開する</strong>順番のほうが手戻りを防ぎやすくなります。</p>
+<h2 id="sec4">電話予約とオンライン予約、どちらから置き換えるべきか</h2>
+<p><strong>受付の電話対応に時間を取られているなら、オンライン予約システムの導入が優先候補になります。</strong>逆にキャンセル管理が課題なら、自動リマインド機能を先に検討したほうが効果を実感しやすいはずです。</p>
+<figure><img src="/images/it-hojokin-clinic/reservation-vs.png" alt="電話予約とオンライン予約システムの違い: 電話予約は受電に時間を取られ営業時間外は予約を逃す、オンライン予約は24時間受付でき電子カルテ連携と自動リマインドでキャンセルを抑制できる" loading="lazy"><figcaption>電話予約とオンライン予約システムの違い</figcaption></figure>
+
+<p><a href="https://medicaltech-news.com/analysis/mt/4932/" target="_blank" rel="noopener">ミーカンパニーが2025年1月に公表した調査</a>によると、<strong>2024年10月時点で全国の診療所6万6590施設のうち、予約システムの導入率は21.9%</strong>でした。前年より4,435件増えており、切り替えを検討する医院が増えています。</p>
+<p><span class="big">補助金は「新規開業の投資」ではなく「電話対応の負担を減らす投資」として使うと、費用対効果を評価しやすくなります。</span>受付スタッフが会計や案内に集中できる時間が増える点も、あわせて検討材料にしてください。</p>
+<p>私も過去の相談事例で、<mark>昼休みの電話が集中し、受付スタッフが会計対応を後回しにせざるを得なかった</mark>という声を聞いたことがあります。オンライン予約への切り替えは、来院患者への対応品質を落とさずに済む効果も期待できます。段階導入を考えるなら、まず一部の診療枠だけオンライン予約に開放し、患者の反応を見てから全枠へ広げる進め方も選択肢のひとつです。</p>
+<h2 id="sec5">過去に制度を使ったクリニックが再申請するときの注意点</h2>
+<p><strong>過去にIT導入補助金を使った医院も再申請できますが、2026年度から追加された要件があります。</strong>制度自体は継続していますが、細部の手続きは更新されています。</p>
+<div class="caution-box"><span class="box-title">注意: 以前の資料をそのまま使い回さない</span><br>旧制度の案内資料や様式は、現行のインボイス対応類型・電子取引類型とは項目が異なります。最新の公募要領を確認してから申請書類を準備してください。</div>
+
+<p>1点目は、2回目以降の申請で「3年間の事業計画」と「賃上げ計画の表明」が必須になったことです。以前は求められなかった書類のため、準備に時間がかかります。</p>
+<p><strong>2点目は、「みなし同一法人ルール」が削除されたことです。</strong>以前は代表者が同じ複数の医療法人は1法人としてしか申請できませんでしたが、現行制度では個別に申請できます。分院を複数展開する医療法人には追い風です。</p>
+<p>3点目は、交付決定前購入がNGという原則が変わっていないことです。先に発注してしまうと補助対象から外れます。よくある失敗パターンは<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/">AI導入補助金の申請に失敗する5つの原因と対策</a>でも整理しています。</p>
+<h2 id="sec6">クリニックの補助率・上限額はいくらか</h2>
+<p><strong>通常枠の補助率は1/2以内で、賃上げ要件を満たすと2/3に引き上がります。</strong>上限額は導入するツールの領域数に応じて段階的に上がる仕組みです。</p>
+<p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠の補助率・補助上限額のページ</a>によると、1プロセス以上の導入で5万円以上150万円未満、4プロセス以上で150万円以上450万円以下の補助額が設定されています。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">プロセス数</th>
+<th style="text-align: left;">補助額</th>
+<th style="text-align: left;">補助率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1プロセス以上</td>
+<td style="text-align: left;">5万円以上150万円未満</td>
+<td style="text-align: left;">1/2以内</td>
+</tr>
+<tr>
+<td style="text-align: left;">4プロセス以上</td>
+<td style="text-align: left;">150万円以上450万円以下</td>
+<td style="text-align: left;">1/2以内（賃上げ要件達成で2/3以内）</td>
+</tr>
+</tbody>
+</table></div>
+<p>例えば予約システムと電子カルテを合わせて年間50万円で契約した場合、<strong>補助率1/2でも25万円、賃上げ要件を満たして2/3なら約33万円が補助され、実質負担は17〜25万円程度</strong>に収まる計算です。契約額別の試算は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/">AI導入補助金はいくらもらえる？3つの枠の上限額と計算例</a>でも紹介しています。</p>
+<div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+
+<h2 id="sec7">個人開業医・医療法人が申請する流れ</h2>
+<p><strong>申請から入金までは、要件準備→ツール選定→交付申請→実績報告の4ステップで進みます。</strong>採択はゴールではなく、実績報告を終えて初めて交付額が確定します。</p>
+<figure><img src="/images/it-hojokin-clinic/flow-steps.png" alt="クリニックがIT導入補助金を使うまでの4ステップ: GビズID・SECURITY ACTIONを準備、IT導入支援事業者とツールを選定、交付申請から契約・導入、実績報告を提出し交付額が確定" loading="lazy"><figcaption>クリニックがIT導入補助金を使うまでの4ステップ</figcaption></figure>
+
+<p>個人開業医も医療法人と同じ要件で申請できます。資本金・従業員数の業種別基準は<a href="https://lp.7senses.co.jp/blog/it-hojokin-chusho-teigi/">IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数</a>で確認してください。</p>
+<p>診療時間中の一気切り替えは受付の混乱につながりやすい点にも注意が必要です。<strong>休診日にまとめて移行と研修を行う</strong>ほうが安全です。次回の締切など具体的なスケジュールは<a href="/blog/ai-hojokin-clinic-2026-schedule/">AI導入補助金2026｜クリニックの次の締切と今から動く3ステップ</a>で解説しています。</p>
+<p>経理・総務の専任担当がいないクリニックも多いはずです。申請書類の作成やIT導入支援事業者とのやり取りに時間を割きにくい場合は、外部の申請サポートへの相談も検討してください。</p>
+<h2 id="sec8">IT導入補助金と他制度の使い分け</h2>
+<p><strong>ITツール導入中心ならIT導入補助金、広告費や内装改修中心なら小規模事業者持続化補助金が向いています。</strong>目的が異なるため、対象経費が重ならないよう切り分ける必要があります。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">IT導入補助金（通常枠）</th>
+<th style="text-align: left;">小規模事業者持続化補助金</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">主な目的</td>
+<td style="text-align: left;">ITツール導入による業務効率化</td>
+<td style="text-align: left;">販路開拓・広告・改修等の経費</td>
+</tr>
+<tr>
+<td style="text-align: left;">補助上限額</td>
+<td style="text-align: left;">最大450万円</td>
+<td style="text-align: left;">50万円〜200万円程度</td>
+</tr>
+<tr>
+<td style="text-align: left;">クリニックでの使いどころ</td>
+<td style="text-align: left;">予約・カルテ・レセコンのシステム化</td>
+<td style="text-align: left;">内覧会のチラシ・看板の改修</td>
+</tr>
+</tbody>
+</table></div>
+<p>対象経費が重複していなければ、同一年度に両方へ申請すること自体は可能です。公募スケジュールと実績報告の期限は別管理になるため、申請枠ごとに確認してください。実績報告の必要書類は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/">AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ</a>で整理しています。</p>
+<div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+
+<h2 id="sec9">まとめ: 名称変更よりも「予約システムの連携」を優先確認する</h2>
+<p>IT導入補助金は名称が変わっただけで、クリニック向けの支援内容は今も続いています。<strong>まずは受付の負担が電話対応とキャンセル管理のどちらにあるかを見極め、対応する基準から予約システムを比較してください。</strong></p>
+<p>以前この制度を使ったことがある医院も再申請でき、対象ツールや補助率の骨格は大きく変わっていません。ただし2回目以降は事業計画の提出が必要になるため、<strong>古い資料をそのまま使い回さず、最新の公募要領で確認する</strong>ことが手戻りを防ぐ近道です。</p>
+<p>自院が対象要件を満たすか判断に迷う場合は、無料相談で申請要件から一緒に確認できます。<strong>1つのツールで効果を確認できたら、その運用実績を踏まえて次のツール導入を検討する</strong>進め方だと、失敗のリスクを抑えながら投資対効果を確かめられます。</p>
+  </article>
+
+  <!-- FAQ(回答40〜60字・JSON-LDと完全一致させる) -->
+  <section class="faq-sec">
+    <h2 id="faq">よくある質問</h2>
+        <details>
+      <summary>「クリニックのIT導入補助金」は今も使えますか？</summary>
+      <div class="a">使えます。現在は「デジタル化・AI導入補助金2026」として運用され、対象は変わりません。</div>
+    </details>
+    <details>
+      <summary>クリニックの予約システムはIT導入補助金の対象になりますか？</summary>
+      <div class="a">なります。電子カルテ等の対象ソフトと同時導入すれば、予約システムも補助対象です。</div>
+    </details>
+    <details>
+      <summary>電話予約とオンライン予約はどちらを優先すべきですか？</summary>
+      <div class="a">無断キャンセルや受付の待ち時間が課題なら、オンライン予約から検討してください。</div>
+    </details>
+    <details>
+      <summary>クリニックの補助率・上限額はどのくらいですか？</summary>
+      <div class="a">通常枠は補助率1/2以内で、賃上げ要件を満たすと2/3に引き上がります。</div>
+    </details>
+    <details>
+      <summary>以前この制度を使ったクリニックも再申請できますか？</summary>
+      <div class="a">できます。ただし2回目以降は3年間の事業計画と賃上げ計画の表明が必要です。</div>
+    </details>
+    <details>
+      <summary>個人開業医でも医療法人と同じ条件で申請できますか？</summary>
+      <div class="a">できます。GビズIDとSECURITY ACTIONの宣言があれば法人形態を問いません。</div>
+    </details>
+    <details>
+      <summary>小規模事業者持続化補助金とどちらを使えばよいですか？</summary>
+      <div class="a">ITツール導入中心ならIT導入補助金、広告費や改装中心なら持続化補助金が向きます。</div>
+    </details>
+  </section>
+
+  <div class="cta-box">
+    <p class="t">補助金が使えるか、無料で確認しませんか</p>
+    <p class="d">要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p>
+    <a href="/#diagnosis">まず3分の無料診断で「うちの場合」を確認する</a>
+    <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
+  </div>
+
+  <div class="author">
+    <span class="sv-label">SUPERVISED BY|この記事の監修者</span>
+    <div class="sv-body">
+      <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="64" height="64" loading="lazy" style="object-fit:cover;border-radius:50%">
+      <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
+      大阪・東成区のデジタルマーケティング&AI導入支援会社の代表。IT導入補助金(現・AI導入補助金)の申請支援50社+・採択通過率90%以上(※当社支援実績)。MEO事業「G-ran」運営。AI導入補助金の申請実務・採択ノウハウを毎日発信しています。
+      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rel">
+    <p class="t">RELATED</p>
+    <ul><li><a href="/blog/monozukuri-hojokin-kourigyou/">ものづくり補助金は小売業に使えない？対象になる投資の見極め方</a></li>
+<li><a href="/blog/unsougyou-jissekihoukokusho/">運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁</a></li>
+<li><a href="/blog/monozukuri-hojokin-unsougyou/">ものづくり補助金は運送業で使える？対象設備と車両の線引き</a></li></ul>
+  </div>
+</div>
+<aside class="side">
+  <div class="sbox">
+    <p class="t">CATEGORY</p>
+    <ul>
+      <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">SERVICE</p>
+    <ul>
+      <li><a href="/service/hojokin/">補助金申請サポート</a></li>
+      <li><a href="/service/dev/">システム開発・AI導入</a></li>
+      <li><a href="/service/aio/">AIOコンサルティング</a></li>
+      <li><a href="/service/meo/">MEOコンサルティング</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">MEMBER</p>
+    <ul>
+      <li><a href="/#member">会員価格について — ご契約者様は大幅割引</a></li>
+    </ul>
+  </div>
+  <div class="scta">
+    <p>補助金を活用できるか、<br>まずは無料診断でチェック。</p>
+    <a href="/#diagnosis">無料診断を試す</a>
+    <a class="g" href="/#contact">無料で相談する</a>
+  </div>
+</aside>
+</main>
+<footer>
+  <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="/privacy/">プライバシーポリシー</a></nav>
+  <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
+</footer>
+</body>
+</html>
