@@ -72,7 +72,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [IT導入補助金の会計ソフト｜個人事業主が使える2つの枠と補助率](https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/): 個人事業主もIT導入補助金（デジタル化・AI導入補助金2026）の会計ソフトを、通常枠・インボイス対応類型で申請できます。機能要件・補助率・
 - [IT導入補助金のパソコン購入｜個人事業主の条件と上限10万円](https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-pc/): 個人事業主がIT導入補助金でパソコンを購入する条件を解説します。単体購入は対象外ですが、対象ソフトと同時導入すれば補助率1/2以内・上限10
 - [美容室のIT導入補助金｜対象ツール3分野と対象外の注意点](https://lp.7senses.co.jp/blog/it-hojokin-biyoushitsu/): 美容室もIT導入補助金（デジタル化・AI導入補助金2026）の対象です。予約管理・POSレジ・電子カルテの対象3分野、広告掲載費が対象外にな
-- [IT導入補助金は運送業も対象？2024年問題に効く対象ツール3分野](https://lp.7senses.co.jp/blog/it-hojokin-unsougyou/): IT導入補助金（デジタル化・AI導入補助金2026）は運送業の運行管理・配送ルート最適化ソフトにも使えます。対象ツール3分野、ハードウェアの
+- [運送業のIT導入補助金｜デジタコ・運行管理の対象範囲](https://lp.7senses.co.jp/blog/it-hojokin-unsougyou/): IT導入補助金（デジタル化・AI導入補助金2026）は運送業の運行管理・配送ルート最適化ソフトにも使えます。対象ツール3分野、ハードウェアの
 - [個人事業主のAI導入補助金｜開業1年未満は対象外？条件を解説](https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/): 個人事業主もAI導入補助金は申請できますが、開業1年未満は納税証明書等が用意できず対象外です。必要書類3点・補助上限額・GビズID取得の流れ
 - [中小企業成長加速化補助金｜1次2次の実績とスケジュール](https://lp.7senses.co.jp/blog/seicho-kasokuka-hojokin-schedule/): 中小企業成長加速化補助金は1次公募が採択率約16.3%、2次公募は2026年8月4日に採択発表されました。3次公募の見通しと、GビズID取得
 - [AI導入補助金はいくらもらえる？3つの枠の上限額と計算例](https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/): AI導入補助金でいくらもらえるかを、通常枠・インボイス対応類型・電子取引類型の3つの枠ごとに解説します。補助率・上限額の一覧表と、契約金額か
