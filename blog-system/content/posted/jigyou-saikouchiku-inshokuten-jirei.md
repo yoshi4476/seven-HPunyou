@@ -50,6 +50,8 @@ faq:
 
 **結論として、事業再構築補助金は飲食店も対象で、業態転換や新分野展開の投資が数多く採択されてきました。**制度上、業種による除外はなく、居酒屋・カフェ・レストランなど幅広い業態が申請していました。
 
+実際の例については、[事業再構築補助金 クリニックは医療法人不可｜個人開業医の採択3事例](/blog/jigyou-saikouchiku-clinic-jirei/)にまとめています。
+
 実際の例は[事業再構築補助金 美容室の脱毛転換3事例｜美容師法の注意点](/blog/jigyou-saikouchiku-biyoushitsu-jirei/)でも扱っています。
 
 実際の例を先に押さえるなら、[事業再構築補助金は建設業も対象｜3つの事例と今の後継制度](/blog/jigyou-saikouchiku-kensetsugyou-jirei/)が参考になります。
@@ -153,7 +155,7 @@ GビズIDプライムは、行政手続きをオンラインで行うための�
 
 私も相談の現場で、==「事業再構築補助金で聞いた話のまま」準備を進め、制度名の変化に気づいていない==飲食店経営者を見てきました。申請直前には必ず最新の公募要領を確認してください。
 
-法人成りや確定申告に関するつまずきは[事業再構築補助金は法人成り後も続く？承継に必要な4つの手続き](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)や[事業再構築補助金の確定申告｜個人事業主が守る3つの注意点](/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/)でも整理しています。
+法人成りや確定申告に関するつまずきは[事業再構築補助金と個人事業主の法人成り](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)や[事業再構築補助金の確定申告｜個人事業主が守る3つの注意点](/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/)でも整理しています。
 
 ## よくある質問
 
