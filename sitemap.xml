@@ -48,8 +48,13 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-08-27</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/jigyou-saikouchiku-clinic-jirei/</loc>
+    <lastmod>2026-08-28</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/jizokuka-hojokin-clinic/</loc>
@@ -440,9 +445,5 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/jigyou-saikouchiku-clinic-jirei/</loc>
-    <lastmod>2026-08-28</lastmod>
   </url>
 </urlset>
