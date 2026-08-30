@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ================================================================
+  ブログ記事テンプレート(静的版)
+  ・{{...}} を差し替えて blog/<slug>/index.html として保存する
+  ・将来 blog-system(Astro)稼働後はそちらの生成に移行する
+================================================================= -->
+<title>学習塾はIT導入補助金の対象？入退室通知と課金の境界線|セブンセンシズ株式会社</title>
+<meta name="description" content="学習塾でもIT導入補助金は使えます。入退室管理での保護者通知や教材配信ツールが対象になる一方、生徒へのコンテンツ利用料請求は対象外です。個別指導と集団指導での優先順位、補助率・上限額を2026年8月時点の情報で解説します。">
+<link rel="canonical" href="https://lp.7senses.co.jp/blog/it-hojokin-gakushujuku/">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学習塾はIT導入補助金の対象？入退室通知と課金の境界線">
+<meta property="og:description" content="学習塾でもIT導入補助金は使えます。入退室管理での保護者通知や教材配信ツールが対象になる一方、生徒へのコンテンツ利用料請求は対象外です。個別指導と集団指導での優先順位、補助率・上限額を2026年8月時点の情報で解説します。">
+<meta property="og:url" content="https://lp.7senses.co.jp/blog/it-hojokin-gakushujuku/">
+<meta property="og:image" content="https://lp.7senses.co.jp/images/blog/it-hojokin-gakushujuku/thumbnail.webp">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Article",
+      "headline": "学習塾はIT導入補助金の対象？入退室通知と課金の境界線",
+      "description": "学習塾でもIT導入補助金は使えます。入退室管理での保護者通知や教材配信ツールが対象になる一方、生徒へのコンテンツ利用料請求は対象外です。個別指導と集団指導での優先順位、補助率・上限額を2026年8月時点の情報で解説します。",
+      "datePublished": "2026-08-30",
+      "dateModified": "2026-08-30",
+      "inLanguage": "ja",
+      "mainEntityOfPage": "https://lp.7senses.co.jp/blog/it-hojokin-gakushujuku/",
+      "author": { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author", "name": "原口 優", "jobTitle": "代表取締役" },
+      "publisher": { "@type": "Organization", "@id": "https://lp.7senses.co.jp/#org", "name": "セブンセンシズ株式会社" },
+      "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".summary", ".faq-sec"] } },
+    { "@type": "BreadcrumbList", "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ホーム", "item": "https://lp.7senses.co.jp/" },
+      { "@type": "ListItem", "position": 2, "name": "ブログ", "item": "https://lp.7senses.co.jp/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "学習塾はIT導入補助金の対象？入退室通知と課金の境界線" } ] },
+    { "@type": "FAQPage", "mainEntity": [
+            { "@type": "Question", "name": "学習塾はIT導入補助金の対象になりますか？", "acceptedAnswer": { "@type": "Answer", "text": "対象になります。入退室管理・教材配信・出欠連絡などの業務効率化ツールが対象です。" } },
+      { "@type": "Question", "name": "生徒に教材動画の視聴料を請求する場合も対象になりますか？", "acceptedAnswer": { "@type": "Answer", "text": "対象外です。生徒へ再請求するコンテンツ利用料はIT導入補助金の対象になりません。" } },
+      { "@type": "Question", "name": "個別指導塾と集団指導塾で対象ツールは変わりますか？", "acceptedAnswer": { "@type": "Answer", "text": "対象ツールの範囲は同じですが、優先して導入すべき機能は指導形態で異なります。" } },
+      { "@type": "Question", "name": "学習塾の補助率・補助上限額はどのくらいですか？", "acceptedAnswer": { "@type": "Answer", "text": "通常枠は補助率1/2〜2/3・上限450万円、インボイス類型は上限350万円です。" } },
+      { "@type": "Question", "name": "フランチャイズ塾でも申請できますか？", "acceptedAnswer": { "@type": "Answer", "text": "加盟店自身の資本金・従業員数で判定するため、要件を満たせば申請できます。" } },
+      { "@type": "Question", "name": "小規模事業者持続化補助金とどちらを使えばよいですか？", "acceptedAnswer": { "@type": "Answer", "text": "ITツール導入中心ならIT導入補助金、チラシ等の広告費中心なら持続化補助金が向いています。" } }
+    ] }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
+  --line:#e7e2d4; --line2:rgba(176,139,62,.45);
+  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
+  --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
+  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:2;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-strong)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+img{max-width:100%;height:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{max-width:1240px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
+.logo b{color:var(--gold)}
+.logo img{height:38px;width:auto;display:block}
+.nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
+main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-template-columns:minmax(0,840px) 320px;gap:44px;justify-content:center;align-items:start}
+.main-col{min-width:0}
+.side{position:sticky;top:84px;display:grid;gap:16px}
+@media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
+.side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
+.side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.side .sbox li{margin:0}
+.side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
+.side .sbox a:hover{border-color:var(--line2);color:var(--gold-strong)}
+.side .scta{background:linear-gradient(150deg,#132445,#1d3461 60%,#24427c);border-radius:12px;padding:22px;color:#fff;text-align:center}
+.side .scta p{font-family:var(--serif);font-weight:800;font-size:15px;line-height:1.8;margin:0 0 12px;color:#fff}
+.side .scta a{display:block;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.side .scta a.g{background:none;border:1.5px solid rgba(255,255,255,.5);color:#fff}
+.crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
+.crumb a{color:var(--dim);text-decoration:none}
+.crumb a:hover{color:var(--gold-strong)}
+.cat{display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
+.meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
+.fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
+.fresh-note b{color:var(--muted);font-weight:500}
+.summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
+.toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
+.toc p{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
+.toc li{margin:7px 0}
+.toc a{text-decoration:none;color:var(--muted)}
+.toc a:hover{color:var(--gold-strong)}
+article h2{font-family:var(--serif);font-weight:800;font-size:clamp(20px,3.2vw,25px);line-height:1.6;margin:54px 0 18px;padding-top:14px;border-top:1px solid var(--line);color:#1d3461}
+article h3{font-family:var(--serif);font-weight:800;font-size:17.5px;margin:34px 0 12px;color:var(--gold-strong)}
+article p{margin:16px 0;color:var(--text)}
+article ul,article ol{margin:16px 0 16px 24px;color:var(--text)}
+article li{margin:8px 0}
+article img{display:block;width:100%;height:auto;border-radius:12px;margin:26px 0;border:1px solid var(--line)}
+article table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}
+article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:left;vertical-align:top}
+article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
+article strong{color:var(--gold-strong)}
+.em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
+.table-scroll{overflow-x:auto;margin:20px 0}
+.action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
+.action-box b{color:var(--gold-strong)}
+.cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
+.cta-box p.t{font-family:var(--serif);font-weight:800;font-size:19px;line-height:1.7;margin-bottom:8px}
+.cta-box p.d{font-size:13.5px;color:var(--muted);margin-bottom:18px}
+.cta-box a{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:12px 30px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:15px;text-decoration:none}
+.cta-box .micro{display:block;margin-top:10px;font-size:12px;color:var(--dim)}
+.faq-sec details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:10px 0;overflow:hidden}
+.faq-sec summary{list-style:none;cursor:pointer;padding:16px 46px 16px 20px;font-weight:700;font-size:14.5px;position:relative;line-height:1.7}
+.faq-sec summary::-webkit-details-marker{display:none}
+.faq-sec summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:20px;color:var(--gold)}
+.faq-sec details[open] summary::after{content:"−"}
+.faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
+.author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
+.author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:#5c6472;margin:0 0 14px}
+.author .sv-body{display:flex;gap:16px}
+.author .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
+.author b{color:var(--text);font-size:14.5px}
+.author .sv-links{margin-top:10px;display:flex;gap:14px;flex-wrap:wrap}
+.author .sv-links a{font-size:12.5px;font-weight:700;color:#1b3a6b;text-decoration:none;border-bottom:1px solid #b9c6dd}
+.author .sv-links a:hover{border-bottom-color:#1b3a6b}
+.rel{margin-top:50px}
+.rel p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel ul{list-style:none;margin:0;display:grid;gap:10px}
+.rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
+.rel a:hover{border-color:var(--line2)}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
+footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+</script>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="logo" href="/"><img src="/assets/img/logo-h.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="372" height="148"></a>
+    <a class="cta" href="/#contact">無料で相談する</a>
+  </div>
+</header>
+<main>
+<div class="main-col">
+  <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/blog/">AI導入補助金ブログ</a> › 学習塾はIT導入補助金の対象？入退室通知と課金の境界線</nav>
+  <span class="cat">補助金</span>
+  <h1>学習塾はIT導入補助金の対象？入退室通知と課金の境界線</h1>
+  <div class="meta">
+    <span>公開: 2026年8月30日</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 8分</span>
+  </div>
+  <p class="fresh-note">本記事は<b>2026年8月時点</b>の情報です|この記事は<b>IT導入補助金（デジタル化・AI導入補助金2026）を使って入退室管理システムや教材配信ツールの導入を検討している学習塾・個人経営塾のオーナー</b>向けです</p>
+
+  <!-- 冒頭200字: 断言文+キーワード(AIO最重要シグナル) -->
+  <div class="summary">学習塾もIT導入補助金（デジタル化・AI導入補助金2026）の対象です。入退室管理システム・教材配信ツール・出欠保護者連絡アプリといった業務効率化ツールの導入費用が補助対象になります。本記事では、学習塾で対象になるツールの具体例、生徒への再請求分が対象外になる注意点、個別指導塾と集団指導塾での優先順位、補助率を2026年8月時点の情報で整理します。</div>
+
+  <div class="toc">
+    <p>CONTENTS</p>
+    <ol><li><a href="#sec1">学習塾の保護者対応・人手不足にどう効くのか</a></li><li><a href="#sec2">学習塾で対象になる3つのツール分野</a></li><li><a href="#sec3">生徒へのコンテンツ利用料請求は対象になるのか</a></li><li><a href="#sec4">個別指導塾と集団指導塾、優先すべきツールは変わるか</a></li><li><a href="#sec5">補助率と上限額はどのくらいか</a></li><li><a href="#sec6">教室規模別の費用シミュレーション</a></li><li><a href="#sec7">新学期・季節講習の繁忙期を外した導入スケジュール</a></li><li><a href="#sec8">小規模事業者持続化補助金との使い分け</a></li><li><a href="#sec9">まとめ: 学習塾は「生徒への再請求分」を切り分けて検討する</a></li></ol>
+  </div>
+
+  <article>
+    <p><strong>学習塾もIT導入補助金（デジタル化・AI導入補助金2026）の対象です。</strong>入退室管理システム・教材配信ツール・出欠保護者連絡アプリといった業務効率化ツールの導入費用が補助対象になります。本記事では、学習塾で対象になるツールの具体例、生徒への再請求分が対象外になる注意点、個別指導塾と集団指導塾での優先順位、補助率を2026年8月時点の情報で整理します。</p>
+<div class="target-reader">この記事は、IT導入補助金（デジタル化・AI導入補助金2026）を使って入退室管理システムや教材配信ツールの導入を検討している学習塾・個人経営塾のオーナー向けです。</div>
+
+<p class="freshness">※ 2026年8月時点の情報です。</p>
+
+<div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>学習塾で対象になるITツールの3分野</li><li>生徒へのコンテンツ利用料請求が対象外になる理由</li><li>個別指導塾と集団指導塾で優先すべきツールの違い</li><li>学習塾における補助率・補助上限額の目安</li></ul></div>
+
+<h2 id="sec1">学習塾の保護者対応・人手不足にどう効くのか</h2>
+<p><strong>IT導入補助金は、電話対応や紙の連絡帳をITツールに置き換える投資の後押しに使える制度です。</strong>保護者への連絡や教材準備に時間を取られ、授業そのものに集中しにくいという相談は少なくありません。</p>
+<p><a href="https://prtimes.jp/main/html/rd/p/000000019.000028977.html" target="_blank" rel="noopener">保護者300人と学習塾70教室を対象にした意識調査</a>によると、<strong>保護者の約5割がメールやLINEでの連絡を希望する一方、実際の連絡手段は7割以上が電話</strong>という乖離が明らかになっています。<mark>「相談連絡」「お知らせ・通知」のデジタル化を希望する保護者は約4割</mark>に上り、連絡手段のミスマッチが塾側の業務負担にもつながっています。</p>
+<p>私たちが学習塾の経営者から相談を受ける際も、「欠席連絡の電話対応で授業準備が中断される」「保護者への月謝請求を手作業で管理している」という声をよく聞きます。ITツールへの置き換えは、こうした日々の業務負担を軽くする手段のひとつになります。</p>
+<div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
+
+<p>当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。学習塾からの相談でも、まず入退室管理と保護者連絡のどちらを先に導入すべきかを一緒に整理するところから始めます。</p>
+<p><span class="big">補助金は「講師を増やす」ではなく「保護者対応にかかる時間を減らす」ための投資として使うと、費用対効果を評価しやすくなります。</span>電話対応や請求管理にかかっていた時間を授業準備に回せれば、増員なしでも対応できる生徒数を増やしやすくなります。狙うべきは増員ではなく、一人あたりの対応力向上。</p>
+<h2 id="sec2">学習塾で対象になる3つのツール分野</h2>
+<p><strong>対象ツールは、入退室管理・教材配信・出欠保護者連絡の3分野に整理でき、優先順位をつけやすくなります。</strong>どの業務がボトルネックかによって、優先して導入すべきツールが変わります。</p>
+<figure><img src="/images/it-hojokin-gakushujuku/tool-categories.png" alt="学習塾で対象になるITツール3分野: 入退室管理システム、教材配信・自動採点、出欠・保護者連絡" loading="lazy"><figcaption>学習塾で対象になるITツール3分野</figcaption></figure>
+
+<p><a href="https://g1info.jp/2024/04/08/it-hojokin-tutoring-school/" target="_blank" rel="noopener">学習塾向けIT導入補助金の活用事例を整理した解説記事</a>では、生徒管理・教材配信・出退勤管理・会計ソフトの4カテゴリが対象ツール例として紹介されています。<strong>入退室管理システムは、ICカードや指紋認証で生徒の来退室を検知し、保護者へ自動通知する仕組み</strong>が代表例です。</p>
+<p>教材配信・自動採点ツールは、動画授業やドリル教材を配信し、採点結果を講師と保護者が共有できる点が特徴です。出欠・保護者連絡ツールは、欠席連絡や月謝請求をアプリでまとめて管理でき、電話対応の件数削減が期待できます。</p>
+<p>どの分野も「電話・紙・手作業に頼っていた保護者対応をデータに置き換える」という共通点があります。<mark>授業のコマ数が多い塾ほど、入退室管理による通知の効果を実感しやすい</mark>傾向があります。周辺ツールとして講師のシフト管理や会計ソフトも対象になり得るため、自塾の課題に近いものから優先順位をつけてください。</p>
+<h2 id="sec3">生徒へのコンテンツ利用料請求は対象になるのか</h2>
+<p><strong>動画教材やドリルの視聴料を生徒から徴収する場合、その利用料分はIT導入補助金の対象になりません。</strong>対象になるのは、あくまで塾自身の業務効率化に使うソフトウェアです。</p>
+<figure><img src="/images/it-hojokin-gakushujuku/content-fee-vs.png" alt="対象になる費用・ならない費用: 対象外は生徒へのコンテンツ利用料請求、対象は入退室管理・教材配信システムの導入費" loading="lazy"><figcaption>対象になる費用・ならない費用</figcaption></figure>
+
+<div class="caution-box"><span class="box-title">注意: 生徒への再請求分は対象外</span><br>教材動画やドリルのコンテンツ利用料を、塾から生徒へ別途請求する場合、その費用はIT導入補助金の対象になりません。塾が自社の業務効率化のために導入するソフト利用料とは扱いが異なります。</div>
+
+<p>塾の運営効率化と生徒への課金は、別の投資として切り分けて考える必要があります。<mark>どこまでが塾の業務効率化で、どこからが生徒への再請求かを契約前に確認しておく</mark>と、交付申請の段階で対象経費を組み立てやすくなります。自塾の教材配信の課金方式を見直す際は、業務効率化ツールの導入と合わせて検討すると投資の優先順位をつけやすくなります。</p>
+<h2 id="sec4">個別指導塾と集団指導塾、優先すべきツールは変わるか</h2>
+<p><strong>個別指導塾は生徒ごとの学習履歴管理を、集団指導塾は一斉配信と出欠管理を優先すると効果を実感しやすくなります。</strong>指導形態によって、業務のボトルネックが異なるためです。</p>
+<p>個別指導塾では、生徒ごとに進度も課題も異なるため、教材配信・自動採点ツールで学習履歴を一人ずつ管理できる仕組みが優先候補になります。集団指導塾では、同じ時間帯に多くの生徒が出入りするため、入退室管理システムによる保護者への一斉通知の効果が大きくなります。</p>
+<p>私も過去の相談事例で、<mark>個別指導塾が集団指導塾向けの一斉通知型ツールを導入し、生徒ごとの進度管理に使いづらかった</mark>というケースを確認しています。結局、個別カルテ機能を持つ教材配信ツールに乗り換えたそうです。</p>
+<p>指導形態にかかわらず、出欠・保護者連絡ツールはどちらの塾にも共通して優先度が高い分野です。<strong>まず自塾の指導形態に合わせて、入退室管理か教材配信のどちらを先に入れるかを決める</strong>と、限られた予算の使い道を絞り込みやすくなります。</p>
+<h2 id="sec5">補助率と上限額はどのくらいか</h2>
+<p><strong>通常枠は補助率1/2〜2/3・上限450万円、インボイス類型は補助率1/2〜4/5・上限350万円です。</strong>枠によって対象ツールと補助率が変わるため、自塾がどちらに当てはまるかを先に確認してください。</p>
+<p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠の補助率・補助上限額のページ</a>によると、<strong>1プロセス以上の導入で5万円以上150万円未満、4プロセス以上の導入で150万円以上450万円以下</strong>の補助額が設定されています。教材配信ツールなどのクラウド利用料も、最大2年分がまとめて補助対象になります。</p>
+<p>例えば生徒数80名前後の学習塾が、教材配信ツールと入退室管理システムを合わせて年間50万円で契約したとします。<strong>要件を満たせば補助率1/2でも25万円、賃上げ等の要件を満たして2/3なら約33万円が補助され、実質負担は17〜25万円程度</strong>に収まる計算です。個人経営で生徒数40名前後の塾なら、出欠・保護者連絡ツールを年間12万円で導入し、補助率1/2で6万円前後の補助が見込めます。</p>
+<h2 id="sec6">教室規模別の費用シミュレーション</h2>
+<p><strong>教室数や生徒数が多いほど対象プロセス数を増やしやすく、補助額も比例して上がりやすくなります。</strong>自塾の生徒数に近いモデルケースで、実質負担額のイメージをつかんでください。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">教室規模</th>
+<th style="text-align: left;">導入ツール例</th>
+<th style="text-align: left;">年間契約額目安</th>
+<th style="text-align: left;">補助率1/2の補助額</th>
+<th style="text-align: left;">実質負担額目安</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">個人経営（生徒40名前後）</td>
+<td style="text-align: left;">出欠・保護者連絡ツールのみ</td>
+<td style="text-align: left;">12万円</td>
+<td style="text-align: left;">6万円</td>
+<td style="text-align: left;">6万円</td>
+</tr>
+<tr>
+<td style="text-align: left;">生徒80名前後</td>
+<td style="text-align: left;">教材配信+入退室管理</td>
+<td style="text-align: left;">50万円</td>
+<td style="text-align: left;">25万円</td>
+<td style="text-align: left;">25万円</td>
+</tr>
+<tr>
+<td style="text-align: left;">複数教室（生徒200名前後）</td>
+<td style="text-align: left;">教材配信+入退室管理+会計ソフト</td>
+<td style="text-align: left;">120万円</td>
+<td style="text-align: left;">60万円</td>
+<td style="text-align: left;">60万円</td>
+</tr>
+</tbody>
+</table></div>
+<p>契約額が小さい教室ほど、補助額よりも申請・実績報告にかける事務コストの比率が高くなりがちです。優先すべきは、事務負担を抑えられる範囲での段階導入。個人経営で経理担当を置いていない塾は、<a href="https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/">IT導入補助金の会計ソフト｜個人事業主が使える2つの枠と補助率</a>も参考にしてください。採択後に必要な書類の全体像は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/">AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ</a>で整理しています。</p>
+<h2 id="sec7">新学期・季節講習の繁忙期を外した導入スケジュール</h2>
+<p><strong>申請から入金までは、要件準備→ツール選定→交付申請→実績報告の4ステップで進みます。</strong>採択はゴールではなく、実績報告を終えて初めて交付額が確定します。<strong>何から着手すればよいか迷う場合は、まずGビズIDプライムの取得から始めてください。</strong></p>
+<figure><img src="/images/it-hojokin-gakushujuku/flow-steps.png" alt="学習塾がIT導入補助金を使うまでの4ステップ: GビズID・SECURITY ACTIONを準備、IT導入支援事業者とツールを選定、交付申請から契約・導入、実績報告を提出し交付額が確定" loading="lazy"><figcaption>学習塾がIT導入補助金を使うまでの4ステップ</figcaption></figure>
+
+<p><a href="https://it-shien.smrj.go.jp/applicant/flow/" target="_blank" rel="noopener">事務局が公開している申請手続きフロー</a>では、交付申請に「GビズIDプライム」と「SECURITY ACTION」の宣言が必須と案内されています。<strong>GビズIDプライムは郵送申請なら2〜3週間、マイナンバーカードによるオンライン申請なら最短即日〜1週間</strong>で発行されます。</p>
+<p>新学期や夏期・冬期講習の直前に導入を始めると、講師が操作に慣れないまま繁忙期を迎えることになります。<strong>閑散期に交付申請から導入・研修までを終わらせ、繁忙期には運用が安定した状態で臨む</strong>のが理想的な逆算です。<span class="txt-red">春期講習の直前にシステムを切り替え、保護者への通知が届かず問い合わせが集中した</span>という相談を受けたこともあります。</p>
+<h2 id="sec8">小規模事業者持続化補助金との使い分け</h2>
+<p><strong>ITツール導入中心ならIT導入補助金、チラシ等の広告費中心なら小規模事業者持続化補助金が向いています。</strong>目的が異なるため、両方の対象経費が重ならないよう切り分ける必要があります。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th style="text-align: left;">項目</th>
+<th style="text-align: left;">IT導入補助金（通常枠）</th>
+<th style="text-align: left;">小規模事業者持続化補助金</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">主な目的</td>
+<td style="text-align: left;">ITツール導入による業務効率化</td>
+<td style="text-align: left;">販路開拓・広告費等の経費</td>
+</tr>
+<tr>
+<td style="text-align: left;">補助上限額</td>
+<td style="text-align: left;">最大450万円</td>
+<td style="text-align: left;">50万円〜200万円程度</td>
+</tr>
+<tr>
+<td style="text-align: left;">対象経費の例</td>
+<td style="text-align: left;">入退室管理・教材配信・出欠連絡</td>
+<td style="text-align: left;">チラシ制作費・広告費・教室改装費</td>
+</tr>
+<tr>
+<td style="text-align: left;">学習塾での使いどころ</td>
+<td style="text-align: left;">保護者対応・教材配信のシステム化</td>
+<td style="text-align: left;">新規生徒募集のチラシや教室改装</td>
+</tr>
+</tbody>
+</table></div>
+<p>生徒募集のチラシやポスティング費用まで含めて検討したいなら、小規模事業者持続化補助金を選ぶと考えやすくなります。対象経費が重複していなければ、同一年度に両方の補助金へ申請すること自体は可能です。ただし公募スケジュールや実績報告の期限は別管理になるため、申請枠ごとにチェックリストを分けて管理してください。</p>
+<p>なお、学習塾は中小企業基本法上「サービス業」に区分されます。資本金5,000万円以下または従業員100人以下なら中小企業者です。<a href="https://www.chusho.meti.go.jp/soshiki/teigi.html" target="_blank" rel="noopener">中小企業庁が公表している中小企業者の定義</a>で確認できます。</p>
+<p>フランチャイズ加盟塾の判定基準や業種区分の詳細は<a href="https://lp.7senses.co.jp/blog/it-hojokin-chusho-teigi/">IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数</a>で整理しています。正式名称と旧IT導入補助金の関係は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/">AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】</a>で詳しく整理しています。</p>
+<h2 id="sec9">まとめ: 学習塾は「生徒への再請求分」を切り分けて検討する</h2>
+<p>IT導入補助金は、学習塾の入退室管理・教材配信・出欠保護者連絡ツール導入に使え、要件を満たせば通常枠で上限450万円まで補助されます。<strong>まずは自塾の指導形態が個別指導か集団指導かを見極め、優先すべきツール分野から検討してください。</strong></p>
+<p>生徒への教材コンテンツ利用料の再請求分は対象外のため、塾の業務効率化ツールと生徒への課金は別の投資として予算を分けておく必要があります。個人経営の塾でも法人と同じ要件で申請できるため、判断に迷う場合は無料相談で対象要件から一緒に確認できます。</p>
+<p>1教室で成果が出た運用は、複数教室への横展開もしやすくなります。<strong>複数教室を運営している場合は、まず1教室で試験導入し、運用が安定してから他教室へ広げる</strong>進め方だと、失敗のリスクを抑えながら投資対効果を確かめられます。</p>
+  </article>
+
+  <!-- FAQ(回答40〜60字・JSON-LDと完全一致させる) -->
+  <section class="faq-sec">
+    <h2 id="faq">よくある質問</h2>
+        <details>
+      <summary>学習塾はIT導入補助金の対象になりますか？</summary>
+      <div class="a">対象になります。入退室管理・教材配信・出欠連絡などの業務効率化ツールが対象です。</div>
+    </details>
+    <details>
+      <summary>生徒に教材動画の視聴料を請求する場合も対象になりますか？</summary>
+      <div class="a">対象外です。生徒へ再請求するコンテンツ利用料はIT導入補助金の対象になりません。</div>
+    </details>
+    <details>
+      <summary>個別指導塾と集団指導塾で対象ツールは変わりますか？</summary>
+      <div class="a">対象ツールの範囲は同じですが、優先して導入すべき機能は指導形態で異なります。</div>
+    </details>
+    <details>
+      <summary>学習塾の補助率・補助上限額はどのくらいですか？</summary>
+      <div class="a">通常枠は補助率1/2〜2/3・上限450万円、インボイス類型は上限350万円です。</div>
+    </details>
+    <details>
+      <summary>フランチャイズ塾でも申請できますか？</summary>
+      <div class="a">加盟店自身の資本金・従業員数で判定するため、要件を満たせば申請できます。</div>
+    </details>
+    <details>
+      <summary>小規模事業者持続化補助金とどちらを使えばよいですか？</summary>
+      <div class="a">ITツール導入中心ならIT導入補助金、チラシ等の広告費中心なら持続化補助金が向いています。</div>
+    </details>
+  </section>
+
+  <div class="cta-box">
+    <p class="t">補助金が使えるか、無料で確認しませんか</p>
+    <p class="d">要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p>
+    <a href="/#diagnosis">まず3分の無料診断で「うちの場合」を確認する</a>
+    <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
+  </div>
+
+  <div class="author">
+    <span class="sv-label">SUPERVISED BY|この記事の監修者</span>
+    <div class="sv-body">
+      <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="64" height="64" loading="lazy" style="object-fit:cover;border-radius:50%">
+      <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
+      大阪・東成区のデジタルマーケティング&AI導入支援会社の代表。IT導入補助金(現・AI導入補助金)の申請支援50社+・採択通過率90%以上(※当社支援実績)。MEO事業「G-ran」運営。AI導入補助金の申請実務・採択ノウハウを毎日発信しています。
+      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rel">
+    <p class="t">RELATED</p>
+    <ul><li><a href="/blog/unsougyou-jissekihoukokusho/">運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁</a></li>
+<li><a href="/blog/monozukuri-hojokin-unsougyou/">ものづくり補助金は運送業で使える？対象設備と車両の線引き</a></li>
+<li><a href="/blog/monozukuri-hojokin-seizougyou/">ものづくり補助金は製造業でどう使う？対象経費3つと上限4,000万円</a></li></ul>
+  </div>
+</div>
+<aside class="side">
+  <div class="sbox">
+    <p class="t">CATEGORY</p>
+    <ul>
+      <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">SERVICE</p>
+    <ul>
+      <li><a href="/service/hojokin/">補助金申請サポート</a></li>
+      <li><a href="/service/dev/">システム開発・AI導入</a></li>
+      <li><a href="/service/aio/">AIOコンサルティング</a></li>
+      <li><a href="/service/meo/">MEOコンサルティング</a></li>
+    </ul>
+  </div>
+  <div class="sbox">
+    <p class="t">MEMBER</p>
+    <ul>
+      <li><a href="/#member">会員価格について — ご契約者様は大幅割引</a></li>
+    </ul>
+  </div>
+  <div class="scta">
+    <p>補助金を活用できるか、<br>まずは無料診断でチェック。</p>
+    <a href="/#diagnosis">無料診断を試す</a>
+    <a class="g" href="/#contact">無料で相談する</a>
+  </div>
+</aside>
+</main>
+<footer>
+  <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="/privacy/">プライバシーポリシー</a></nav>
+  <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
+</footer>
+</body>
+</html>
