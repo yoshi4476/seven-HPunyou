@@ -6,6 +6,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## 主要ページ
 
+- [対象になるかの確認](https://lp.7senses.co.jp/#fit): 4条件(事業者区分・決算1期以上・税の未納なし・受給歴)で適否を確認
 - [サービス内容](https://lp.7senses.co.jp/#services): 補助金申請の完全伴走/システム開発・AI導入/AIO・MEOによる集客支援
 - [IT導入補助金 申請サポート](https://lp.7senses.co.jp/service/hojokin/): GビズID取得から実績報告まで伴走。支援50社+・採択通過率90%以上※
 - [システム開発・AI導入](https://lp.7senses.co.jp/service/dev/): 業務システム開発と生成AI活用を補助金で実現。80万円〜(税別・参考価格)

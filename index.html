@@ -574,6 +574,14 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
   border-radius:999px;padding:5px 13px}
 @media(prefers-reduced-motion:reduce){.float-cta .fdot{animation:none}.float-cta{transition:none}}
 
+
+/* 適合チェック */
+.fit-list{list-style:none;display:grid;gap:12px;margin:26px 0 18px;max-width:760px}
+.fit-list li{position:relative;padding:16px 18px 16px 52px;background:var(--panel);border:1px solid var(--line);border-radius:12px;font-size:15px;box-shadow:var(--shadow)}
+.fit-list li::before{content:"";position:absolute;left:20px;top:50%;width:9px;height:16px;margin-top:-10px;border:solid var(--gold-soft);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+.fit-note{font-size:14px;color:var(--muted);margin-bottom:24px}
+.fit-cta{display:flex;gap:14px;flex-wrap:wrap}
+@media(max-width:560px){.fit-cta .btn{width:100%}}
 </style>
 </head>
 <body>
@@ -628,11 +636,11 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
       <p class="hero-sub"><span class="em-big">AI導入補助金</span>とは、AI・ITツールの導入費用を国が補助する「IT導入補助金」の通称です。令和8年度は<span class="em-marker">補助上限350万円</span>、申請から開発・集客まで当社が一気通貫で伴走します。</p>
       <div class="hero-cta">
         <div>
-          <a class="btn btn-primary" href="#contact" data-cta="hero_main">無料相談で話を聞いてみる</a>
+          <a class="btn btn-primary" href="#fit" data-cta="hero_main">3分で対象か確認する</a>
           <span class="micro">営業電話はいたしません。3営業日以内にメールで返信します。</span>
         </div>
         <div>
-          <a class="btn btn-ghost" href="#diagnosis" data-cta="hero_diag">3分でできる無料診断を試す</a>
+          <a class="btn btn-ghost" href="#contact" data-cta="hero_diag">無料相談を予約する</a>
           <span class="micro">8つの質問に答えるだけ。結果はその場で表示されます。</span>
         </div>
       </div>
@@ -656,8 +664,8 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 <!-- 実績ティッカー(マーキー。トラックは2周分でループ) -->
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%+※</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
-    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%+※</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
+    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%※</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
+    <span>補助金上限 350万円</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>採択通過率 90%※</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
   </div>
 </div>
 <!-- 動画スロット: 実写・会社紹介動画(mp4)を assets/video/hero.mp4 に配置し、
@@ -674,39 +682,32 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
       <div class="stat"><div class="n">1.5〜3<small>時間</small></div><div class="l">事前準備の目安</div></div>
       <div class="stat"><div class="n">2〜3<small>ヶ月</small></div><div class="l">申請から着金まで</div></div>
     </div>
-    <p class="foot">※1 当社および提携支援チームによるIT導入補助金申請支援の実績値(2026年7月時点)。<!-- 仮: 一次データの算出根拠を確定し差し替えること --></p>
+    <p class="foot">※1 当社および提携支援チームによる申請支援50件のうち45件が採択(2026年7月時点)。採択を保証するものではありません。</p>
   </div>
 </div>
 
 <!-- ========== 04. クイックスタート(3択で迷いを解消) ========== -->
-<section class="chooser" id="chooser" style="padding:64px 0 56px">
+
+<!-- ========== 適合チェック: 対象かどうかを最初に確定させる ========== -->
+<section id="fit" style="padding:64px 0 56px">
   <div class="wrap rev">
-    <p class="kicker">Quick Start</p>
-    <h2>今日は、<span class="accent">どちら</span>をお探しですか?</h2>
-    <div class="choose-grid">
-      <a class="choice" href="#diagnosis" data-diag="hojokin">
-        <span class="ci" aria-hidden="true">💰</span>
-        <b>補助金が使えるか知りたい</b>
-        <span class="cd">8問・3分の適性診断へ →</span>
-      </a>
-      <a class="choice" href="#diagnosis" data-diag="audit">
-        <span class="ci" aria-hidden="true">🔍</span>
-        <b>サイト・集客を診断したい</b>
-        <span class="cd">URLを入れるだけのサイト診断へ →</span>
-      </a>
-      <a class="choice" href="#contact">
-        <span class="ci" aria-hidden="true">💬</span>
-        <b>まず話を聞いてみたい</b>
-        <span class="cd">無料相談(Zoom30分・営業電話なし)へ →</span>
-      </a>
+    <p class="kicker">Step 1</p>
+    <h2>まず、<span class="accent">対象になるか</span>を確認してください</h2>
+    <p class="lead">補助金は誰でも使えるわけではありません。次の4つに当てはまるかで、ほぼ決まります。</p>
+    <ul class="fit-list">
+      <li>中小企業・小規模事業者、または個人事業主である</li>
+      <li>直近の決算を1期以上終えている</li>
+      <li>税金の未納がない</li>
+      <li>同じ補助金を過去に受給していない(または受給から一定期間が経過している)</li>
+    </ul>
+    <p class="fit-note">4つとも当てはまれば、申請できる可能性が高い状態です。判断がつかない項目があれば、そこだけ確認します。</p>
+    <div class="fit-cta">
+      <a class="btn btn-primary" href="#contact" data-cta="fit_ok">4つとも当てはまる → 無料相談へ</a>
+      <a class="btn btn-ghost" href="#diagnosis" data-cta="fit_unsure" data-diag="hojokin">判断がつかない → 3分の適性診断へ</a>
     </div>
+    <p class="micro" style="text-align:center;margin-top:14px">※要件は公募回により変わります。最新の公募要領もあわせてご確認ください。</p>
   </div>
 </section>
-
-<!-- ========== (予備) 信頼ロゴ/メディア掲載帯 ==========
-     現時点で掲載可能なロゴ・メディア実績がないため仕様どおり省略。
-     掲載先が確保でき次第、ここに <div class="wrap logos">…</div> を追加する。 -->
-
 <!-- ========== 05. 課題提起(心理:「わかってくれてる」/ 仕事: 共感→解決ブリッジ) ========== -->
 <section id="problem" style="background:var(--bg2)">
   <div class="wrap rev">
@@ -736,100 +737,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
     </div>
   </div>
 </section>
-
-<!-- ========== 06. 解決策=サービス概要(心理:「どうやって?」/ 仕事: 解決メカニズムの納得) ========== -->
-<section id="services" style="padding-top:88px">
-  <div class="wrap rev">
-    <span id="pricing" style="position:relative;top:-70px"></span>
-    <p class="kicker">Service &amp; Price</p>
-    <h2>4つのサービスで、<br class="sp"><span class="accent">申請から集客まで。</span></h2>
-    <p class="lead">補助金申請だけの士業でも、開発だけのベンダーでもありません。<span class="em-marker">「補助金で導入して、成果が出るまで運用する」</span>を1本の線でつなぎます。カードをクリックすると各サービスの詳細へ。</p>
-    <div class="svc-grid">
-      <a class="svc-card" href="/service/hojokin/">
-        <div class="sc-photo"><img src="/assets/img/handshake.webp" alt="補助金申請サポート" width="1280" height="855" loading="lazy"><span class="sc-tag">01|補助金申請</span></div>
-        <div class="sc-body">
-          <h3>AI導入補助金 申請サポート</h3>
-          <p>GビズID取得から電子申請の同席、採択後の実績報告まで8ステップを完全伴走。</p>
-          <ul><li>採択通過率90%+※・支援50社+</li><li>事前準備は合計1.5〜3時間</li><li>申請から着金まで約2〜3ヶ月</li></ul>
-          <div class="sc-foot"><span class="sc-price">相談無料・着手金0円<small> 報酬は要見積</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-      <a class="svc-card" href="/service/dev/">
-        <div class="sc-photo"><img src="/assets/img/code.webp" alt="システム開発・AI導入" width="1200" height="801" loading="lazy"><span class="sc-tag">02|システム開発</span></div>
-        <div class="sc-body">
-          <h3>システム開発・AI導入</h3>
-          <p>見積・請求・受発注のエクセル脱却と、ChatGPT等の生成AI活用を補助金で実現。</p>
-          <ul><li>会計・受発注・業務システム</li><li>補助対象ツールとして設計</li><li>生成AIの業務組み込みに対応</li></ul>
-          <div class="sc-foot"><span class="sc-price">80万円〜<small> /プロジェクト・税別</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-      <a class="svc-card" href="/service/aio/">
-        <div class="sc-photo"><img src="/assets/img/chip.webp" alt="AIOコンサルティング" width="1200" height="800" loading="lazy"><span class="sc-tag">03|AIO(AI検索対策)</span></div>
-        <div class="sc-body">
-          <h3>AIOコンサルティング</h3>
-          <p>ChatGPT・Perplexity・AI Overviewに「引用される」サイトへ。当サイト自体が実験場。</p>
-          <ul><li>AIOサイト診断(5軸スコア)</li><li>llms.txt・構造化データ実装</li><li>月次の露出レポート</li></ul>
-          <div class="sc-foot"><span class="sc-price">月15万円〜<small> 税別</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-      <a class="svc-card" href="/service/meo/">
-        <div class="sc-photo"><img src="/assets/img/osaka.webp" alt="MEOコンサルティング" width="800" height="1200" loading="lazy"><span class="sc-tag">04|MEO(マップ集客)</span></div>
-        <div class="sc-body">
-          <h3>MEOコンサルティング</h3>
-          <p>Googleマップ「地域名+業種」で上位表示。大阪でMEO事業「G-ran」を運営する実働ノウハウ。</p>
-          <ul><li>ビジネスプロフィール最適化</li><li>口コミ獲得・返信の運用設計</li><li>来店・問合せの計測レポート</li></ul>
-          <div class="sc-foot"><span class="sc-price">月5万円〜<small> 税別</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-    </div>
-    <p class="table-note">※価格は2026年7月時点の参考価格です。正式なお見積りは無料相談でご提示します。/※採択通過率は当社支援実績(2026年7月時点)。</p>
-
-    <!-- 補助金要項ページへの導線(対象条件・必要書類は /youkou/ に集約) -->
-    <div style="margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;box-shadow:var(--shadow)">
-      <div>
-        <p style="font-family:var(--serif);font-weight:800;font-size:16.5px;color:var(--navy);margin:0 0 4px">AI導入補助金の<span class="accent">要項・必要書類</span>を確認する</p>
-        <p style="font-size:13px;color:var(--muted);margin:0">対象になる事業者(4つの条件)・補助額・必要書類・スケジュール・採択後の義務まで、1ページに整理しています。</p>
-      </div>
-      <a class="btn btn-ghost" href="/youkou/" data-cta="youkou_link" style="flex:none">補助金要項を見る →</a>
-    </div>
-  </div>
-</section>
-
-<!-- ========== 07. 会員価格バンド(契約者向け優待。採択・交付とは無関係/補助対象経費は対象外=適法設計) ========== -->
-<section id="member" style="background:linear-gradient(160deg,#132445,#1d3461 55%,#24427c);border-top:3px solid var(--gold-soft,#d9b36a);padding:76px 0">
-  <div class="wrap rev" style="text-align:center;max-width:920px">
-    <p class="kicker" style="color:#e8c988">Member Price</p>
-    <h2 style="color:#fff;font-size:clamp(26px,4vw,38px)">ご契約者様は<span style="color:#e8c988">会員価格</span>で<br class="sp">大幅割引</h2>
-    <p class="lead" style="color:#c9d2e4;margin-top:18px">当社サービスをご契約中のお客様(補助金ご利用の有無は問いません)は、MEO運用・AIOコンサルティングなどの月額サービスを、2つ目から<b style="color:#fff;background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%)">会員価格(通常価格から大幅割引)</b>でご利用いただけます。具体的な割引率・価格は、無料相談・お見積りの際にご案内します。</p>
-    <div style="margin-top:32px">
-      <a class="btn btn-primary" href="#contact" data-cta="member_cta">会員価格について無料相談で聞く</a>
-      <span class="micro" style="color:#9fb0cf">3営業日以内に返信します。営業電話はいたしません。</span>
-    </div>
-    <p style="font-size:12px;color:#9fb0cf;margin-top:28px;text-align:left;line-height:1.9">※会員価格の対象は、補助金申請の対象経費に含まれないサービスに限ります(申請対象のシステム開発費・ツール導入費は通常価格です)。採択・交付の有無による価格の変更はありません。</p>
-  </div>
-</section>
-
-<!-- ========== 08. 無料診断(心理:「試しに…」/ 仕事: 最強のリード獲得装置) ========== -->
-<section id="diagnosis" style="background:var(--bg2)">
-  <div class="wrap rev" style="text-align:center">
-    <p class="kicker" style="justify-content:center">Free Check</p>
-    <h2><span class="accent">3分</span>でわかる。<br class="sp">4つの無料診断</h2>
-    <p class="lead" style="max-width:880px;margin-left:auto;margin-right:auto">補助金・Webサイト・MEO・AI活用の<span class="em-marker">全サービスカテゴリを無料診断</span>。質問に答える(またはURLを入れる)だけで、5軸レーダーと判定・処方箋をその場で表示します。</p>
-    <div class="diag" id="diagWidget">
-      <div class="diag-tabs" role="tablist" aria-label="診断の種類">
-        <button type="button" class="diag-tab" role="tab" aria-selected="true" id="tabQuiz">補助金適性<span style="font-weight:400">(8問)</span></button>
-        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAudit">Webサイト<span style="font-weight:400">(URL)</span></button>
-        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabMeo">MEO集客<span style="font-weight:400">(6問)</span></button>
-        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAi">AI活用<span style="font-weight:400">(6問)</span></button>
-      </div>
-      <div class="diag-head"><span class="t" id="diagTitle">HOJOKIN FIT CHECK</span><span id="diagStep" style="font-size:12px;color:var(--dim)">Q1 / 8</span></div>
-      <div class="diag-prog" aria-hidden="true"><i id="diagBar"></i></div>
-      <div class="diag-body" id="diagBody" aria-live="polite"><!-- JSで描画 --></div>
-    </div>
-  </div>
-</section>
-
-<!-- ========== 09. 導入事例(心理:「本当に効く?」/ 仕事: 証拠の提示) ========== -->
 <!-- 支援事例(掲載許諾済み・2026年7月確認) -->
 <section id="cases" style="background:var(--bg2)">
   <div class="wrap rev">
@@ -909,12 +816,10 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
         </div>
       </article>
     </div>
-    <p class="case-note">※上記は当社の支援事例に基づきます(掲載許諾済み)。成果は業種・体制により変動します。<!-- 仮: 実事例確定後にこの注記を「実事例」表記へ更新 --></p>
+    <p class="case-note">※上記は当社の支援事例に基づきます(掲載許諾済み)。成果は業種・体制により変動します。</p>
   </div>
 </section>
-
 <!-- ========== 11. お客様の声(心理:「同じ立場の人は?」/ 仕事: 自分ごと化) ========== -->
-<!-- 【仮】掲載許諾済みの実声へ差し替えること -->
 <section id="voices" style="padding-top:0">
   <div class="wrap rev">
     <p class="kicker">Voice</p>
@@ -939,7 +844,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
     </div>
   </div>
 </section>
-
 <!-- ========== 12. 選ばれる理由 Why Us(心理:「なぜこの会社?」/ 仕事: 差別化の言語化) ========== -->
 <section id="why" style="background:var(--bg2)">
   <div class="wrap rev">
@@ -956,7 +860,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
             <circle cx="60" cy="60" r="50" fill="none" stroke="#e7e2d4" stroke-width="12"/>
             <circle cx="60" cy="60" r="50" fill="none" stroke="#d9b36a" stroke-width="12"
               stroke-dasharray="282.8 314.2" stroke-linecap="round" transform="rotate(-90 60 60)"/>
-            <text x="60" y="58" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="24" fill="#1d3461">90%+</text>
+            <text x="60" y="58" text-anchor="middle" font-family="Oswald" font-weight="600" font-size="24" fill="#1d3461">90%</text>
             <text x="60" y="78" text-anchor="middle" font-size="13" fill="#6d7484">採択通過率※</text>
           </svg>
           <p><b>申請支援50社+、通過率90%以上。</b><br>数字の裏側は「差し戻しの失敗を全部チェックリスト化した」地道な積み上げです。<br><span style="font-size:12px;color:var(--dim)">※当社支援実績(2026年7月時点)</span></p>
@@ -965,7 +869,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
           <div class="ph" style="aspect-ratio:2/3"><img src="/assets/img/ceo.webp" alt="セブンセンシズ株式会社 代表取締役 原口優" width="400" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:12px"><!-- 公式サイト(7senses.co.jp/company)掲載の代表写真 --></div>
           <h3>原口 優</h3>
           <p class="role">セブンセンシズ株式会社 代表取締役</p>
-          <p>大阪・東成区を拠点に、デジタルマーケティングとAI導入支援を展開。MEO事業「G-ran」で培った地域集客の知見と、50社以上の補助金申請支援の経験をもとに、「導入して終わり」にしない伴走支援を続けている。<!-- 仮: 経歴詳細の事実確認 --></p>
+          <p>大阪・東成区を拠点に、デジタルマーケティングとAI導入支援を展開。MEO事業「G-ran」で培った地域集客の知見と、50社以上の補助金申請支援の経験をもとに、「導入して終わり」にしない伴走支援を続けている。</p>
           <p style="margin-top:10px;font-size:12.5px;color:var(--dim)">正直に言うと、当社も最初の申請支援では書類の差し戻しを経験しました。その失敗をチェックリスト化した結果が、いまの通過率です。</p>
         </div>
       </div>
@@ -986,55 +890,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
     </div>
   </div>
 </section>
-
-
-<!-- ========== 13. ご利用の流れ(心理:「頼んだら何が起きる?」/ 仕事: 未知の不安の除去) ========== -->
-<section id="flow" style="padding-top:0">
-  <div class="wrap rev">
-    <p class="kicker">Flow</p>
-    <h2>お申し込みから着金まで、<br class="sp">4つのフェーズ</h2>
-    <div class="steps">
-      <div class="step"><p class="no">STEP 01</p><h3>無料相談・適合確認</h3><p>Zoomで30分。応募要項4条件(売上・納税・申請歴・決算期)への適合をその場で確認します。</p></div>
-      <div class="step"><p class="no">STEP 02</p><h3>準備・電子申請</h3><p>書類準備はチェックリストで並走。電子申請は当社スタッフが1時間のZoomで同席します。</p></div>
-      <div class="step"><p class="no">STEP 03</p><h3>採択・導入</h3><p>申請から約1ヶ月で合格発表。契約・お支払い後、システム納品と運用支援を開始します。</p></div>
-      <div class="step"><p class="no">STEP 04</p><h3>実績報告・着金</h3><p>実績報告書の提出まで当社が伴走。事務局承認後、補助金(最大350万円)が貴社口座へ着金します。</p></div>
-    </div>
-
-    <!-- お金の動きテーブル(見やすさ強化) -->
-    <details class="fold">
-<summary>お金の動き(お支払い→補助金の着金)を確認する</summary>
-<div class="table-scroll">
-      <table class="data">
-        <caption style="text-align:left;font-family:var(--serif);font-weight:800;font-size:17px;color:var(--navy);padding-bottom:12px">お金の動き(クライアント視点)</caption>
-        <thead><tr><th>タイミング</th><th>お金の流れ</th><th style="width:20%">金額(例)</th></tr></thead>
-        <tbody>
-          <tr><th>① 申請</th><td>貴社 → 国(GビズIDで電子申請・国が審査)</td><td class="ok">0円</td></tr>
-          <tr><th>② 採択後の支払い</th><td>貴社 → 当社(ツール代金の一括前払い・納品と運用開始)</td><td>550万円</td></tr>
-          <tr><th>③ 実績報告</th><td>貴社 → 国(利用実績・経費の証拠書類を提出し補助額確定)</td><td>—</td></tr>
-          <tr><th>④ 補助金の着金</th><td>国 → 貴社口座(精算払い・後払い)</td><td class="ok">最大350万円</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="table-note">※補助金は後払いです。お支払いから着金まで約2〜3ヶ月を見込んだ資金計画をおすすめします。</p>
-</details>
-  </div>
-</section>
-
-<!-- ========== 14. ブログ/発信(心理:「詳しい会社だな」/ 仕事: E-E-A-T・再訪の入口) ========== -->
-<section id="blog">
-  <div class="wrap rev">
-    <p class="kicker">Blog — 毎日更新</p>
-    <h2>AI導入補助金の<br class="sp">最新ノウハウを毎日発信</h2>
-    <p class="lead">申請の実務から採択のコツ・必要書類まで、支援の現場で得た一次情報を毎日更新しています。</p>
-    <div class="blog-grid">
-      <a class="post" href="/blog/ai-hojokin-guide-2026/"><div class="th"><img src="/assets/img/calculator-t.webp" alt="コインと新芽・補助金活用のイメージ" width="640" height="427" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>AI導入補助金とは?令和8年度の完全ガイド</h3><time datetime="2026-07-21">2026.07.21</time></div></a>
-      <a class="post" href="/blog/it-hojokin-saitakuritsu/"><div class="th"><img src="/assets/img/documents-t.webp" alt="申請書類に記入するイメージ" width="640" height="427" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>IT導入補助金の採択率を上げる5つの実務ポイント</h3><time datetime="2026-07-20">2026.07.20</time></div></a>
-      <a class="post" href="/blog/ai-hojokin-ikura-moraeru-2026/"><div class="th"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp" alt="AI導入補助金はいくらもらえるかの解説イメージ" width="1200" height="630" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>AI導入補助金2026はいくらもらえる?上限350万円と対象を解説</h3><time datetime="2026-07-28">2026.07.28</time></div></a>
-    </div>
-    <div style="text-align:center;margin-top:34px"><a class="btn btn-ghost" href="/blog/" data-cta="blog_more">ブログをもっと読む</a></div>
-  </div>
-</section>
-
 <!-- ========== 15. 会社概要 ========== -->
 <section id="company" style="padding-top:0">
   <div class="wrap rev">
@@ -1054,7 +909,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
             <tr><th>関連サイト</th><td><a href="https://corp.7senses.co.jp/" rel="noopener" style="color:var(--navy2)">コーポレートサイト(7senses.co.jp)</a></td></tr>
           </tbody>
         </table>
-        <p class="table-note"><!-- 仮: 設立年・資本金・従業員数は確定情報の入手後に行を追加 -->※設立年・資本金などの詳細はコーポレートサイトをご覧ください。</p>
+        <p class="table-note">※設立年・資本金などの詳細はコーポレートサイトをご覧ください。</p>
       </div>
       <div class="company-visual">
         <div class="cv-photo"><img src="/assets/img/building.webp" alt="オフィスビル群のイメージ" width="1280" height="853" loading="lazy"></div>
@@ -1062,16 +917,46 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
         <p>デジタルマーケティングとAI導入支援のスペシャリスト集団。MEO・AIO領域で培った知見を活かし、補助金申請から成果創出まで一気通貫で伴走します。</p>
         <div class="cv-nums">
           <div class="cv-num"><b>50社+</b><span>支援事業者数※</span></div>
-          <div class="cv-num"><b>90%+</b><span>採択通過率※</span></div>
+          <div class="cv-num"><b>90%</b><span>採択通過率※</span></div>
           <div class="cv-num"><b>大阪</b><span>拠点・全国対応</span></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+<!-- ========== 13. ご利用の流れ(心理:「頼んだら何が起きる?」/ 仕事: 未知の不安の除去) ========== -->
+<section id="flow" style="padding-top:0">
+  <div class="wrap rev">
+    <p class="kicker">Flow</p>
+    <h2>お申し込みから着金まで、<br class="sp">4つのフェーズ</h2>
+    <div class="steps">
+      <div class="step"><p class="no">STEP 01</p><h3>無料相談・適合確認</h3><p>Zoomで30分。応募要項4条件(売上・納税・申請歴・決算期)への適合をその場で確認します。</p></div>
+      <div class="step"><p class="no">STEP 02</p><h3>準備・電子申請</h3><p>書類準備はチェックリストで並走。電子申請は当社スタッフが1時間のZoomで同席します。</p></div>
+      <div class="step"><p class="no">STEP 03</p><h3>採択・導入</h3><p>申請から約1ヶ月で合格発表。契約・お支払い後、システム納品と運用支援を開始します。</p></div>
+      <div class="step"><p class="no">STEP 04</p><h3>実績報告・着金</h3><p>実績報告書の提出まで当社が伴走。事務局承認後、補助金(最大350万円)が貴社口座へ着金します。</p></div>
+    </div>
 
-
-<!-- ========== 17. FAQ(心理:「最後の疑問」/ 仕事: 反論処理+ロングテールSEO) ========== -->
+    <!-- お金の動きテーブル(見やすさ強化) -->
+    <div class="fold-open">
+<h3 style="font-family:var(--serif);font-size:19px;color:var(--navy);margin:6px 0 4px">お金は、先に出て、後から戻ります</h3>
+<p style="font-size:14.5px;color:var(--muted);margin-bottom:14px">補助金は後払いです。導入費用をいったん全額お支払いいただき、実績報告のあとに補助金が着金します。</p>
+<div class="table-scroll">
+      <table class="data">
+        <caption style="text-align:left;font-family:var(--serif);font-weight:800;font-size:17px;color:var(--navy);padding-bottom:12px">お金の動き(クライアント視点)</caption>
+        <thead><tr><th>タイミング</th><th>お金の流れ</th><th style="width:20%">金額(例)</th></tr></thead>
+        <tbody>
+          <tr><th>① 申請</th><td>貴社 → 国(GビズIDで電子申請・国が審査)</td><td class="ok">0円</td></tr>
+          <tr><th>② 採択後の支払い</th><td>貴社 → 当社(ツール代金の一括前払い・納品と運用開始)</td><td>550万円</td></tr>
+          <tr><th>③ 実績報告</th><td>貴社 → 国(利用実績・経費の証拠書類を提出し補助額確定)</td><td>—</td></tr>
+          <tr><th>④ 補助金の着金</th><td>国 → 貴社口座(精算払い・後払い)</td><td class="ok">最大350万円</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="table-note">※補助金は後払いです。お支払いから着金まで約2〜3ヶ月を見込んだ資金計画をおすすめします。</p>
+<p style="font-size:14px;color:var(--muted);margin-top:12px">お支払いから着金まで約2〜3ヶ月です。この期間の資金繰りを見込んでご計画ください。<br>資金繰りにご不安がある場合は、分割でのお支払いやつなぎ融資のご相談も承ります。</p>
+</div>
+  </div>
+</section>
 <!-- 回答はJSON-LDのFAQPageと完全一致(40〜60字・AIO引用最適) -->
 <section id="faq" style="background:var(--bg2)">
   <div class="wrap rev">
@@ -1088,7 +973,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
     </div>
   </div>
 </section>
-
 <!-- ========== 18. 大型フォーム→クロージング(心理:「よし、聞いてみよう」/ 仕事: 摩擦ゼロで送信させる) ========== -->
 <section id="contact" class="contact">
   <div class="wrap rev">
@@ -1097,7 +981,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
     <div class="contact-grid">
       <div class="contact-copy">
         <h3>まずは<span class="cg">「対象かどうか」</span>だけ、<br>無料で確かめませんか。</h3>
-        <p>相談したからといって申し込む必要はありません。応募要項に合わないと分かれば、その場で正直にお伝えします。</p>
+        <p>相談したからといって申し込む必要はありません。応募要項に合わないと分かれば、その場で正直にお伝えします。<br>ご相談内容が固まっていなくても構いません。「対象になるか知りたい」だけでもお受けしています。</p>
         <ul class="promise">
           <li>3営業日以内にメールで返信します</li>
           <li>営業電話はいたしません</li>
@@ -1153,6 +1037,132 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
         </div>
       </div>
     </div>
+  </div>
+</section>
+<!-- ========== 06. 解決策=サービス概要(心理:「どうやって?」/ 仕事: 解決メカニズムの納得) ========== -->
+<section class="chooser" id="chooser" style="padding:64px 0 56px">
+  <div class="wrap rev">
+    <p class="kicker">Quick Start</p>
+    <h2>今日は、<span class="accent">どちら</span>をお探しですか?</h2>
+    <div class="choose-grid">
+      <a class="choice" href="#diagnosis" data-diag="hojokin">
+        <span class="ci" aria-hidden="true">💰</span>
+        <b>補助金が使えるか知りたい</b>
+        <span class="cd">8問・3分の適性診断へ →</span>
+      </a>
+      <a class="choice" href="#diagnosis" data-diag="audit">
+        <span class="ci" aria-hidden="true">🔍</span>
+        <b>サイト・集客を診断したい</b>
+        <span class="cd">URLを入れるだけのサイト診断へ →</span>
+      </a>
+      <a class="choice" href="#contact">
+        <span class="ci" aria-hidden="true">💬</span>
+        <b>まず話を聞いてみたい</b>
+        <span class="cd">無料相談(Zoom30分・営業電話なし)へ →</span>
+      </a>
+    </div>
+  </div>
+</section>
+<section id="services" style="padding-top:88px">
+  <div class="wrap rev">
+    <span id="pricing" style="position:relative;top:-70px"></span>
+    <p class="kicker">Service &amp; Price</p>
+    <h2>4つのサービスで、<br class="sp"><span class="accent">申請から集客まで。</span></h2>
+    <p class="lead">補助金申請だけの士業でも、開発だけのベンダーでもありません。<span class="em-marker">「補助金で導入して、成果が出るまで運用する」</span>を1本の線でつなぎます。カードをクリックすると各サービスの詳細へ。</p>
+    <div class="svc-grid">
+      <a class="svc-card" href="/service/hojokin/">
+        <div class="sc-photo"><img src="/assets/img/handshake.webp" alt="補助金申請サポート" width="1280" height="855" loading="lazy"><span class="sc-tag">01|補助金申請</span></div>
+        <div class="sc-body">
+          <h3>AI導入補助金 申請サポート</h3>
+          <p>GビズID取得から電子申請の同席、採択後の実績報告まで8ステップを完全伴走。</p>
+          <ul><li>採択通過率90%※・支援50社+</li><li>事前準備は合計1.5〜3時間</li><li>申請から着金まで約2〜3ヶ月</li></ul>
+          <div class="sc-foot"><span class="sc-price">相談無料・着手金0円<small> 報酬は要見積</small></span><span class="sc-more">詳細を見る →</span></div>
+        </div>
+      </a>
+      <a class="svc-card" href="/service/dev/">
+        <div class="sc-photo"><img src="/assets/img/code.webp" alt="システム開発・AI導入" width="1200" height="801" loading="lazy"><span class="sc-tag">02|システム開発</span></div>
+        <div class="sc-body">
+          <h3>システム開発・AI導入</h3>
+          <p>見積・請求・受発注のエクセル脱却と、ChatGPT等の生成AI活用を補助金で実現。</p>
+          <ul><li>会計・受発注・業務システム</li><li>補助対象ツールとして設計</li><li>生成AIの業務組み込みに対応</li></ul>
+          <div class="sc-foot"><span class="sc-price">80万円〜<small> /プロジェクト・税別</small></span><span class="sc-more">詳細を見る →</span></div>
+        </div>
+      </a>
+      <a class="svc-card" href="/service/aio/">
+        <div class="sc-photo"><img src="/assets/img/chip.webp" alt="AIOコンサルティング" width="1200" height="800" loading="lazy"><span class="sc-tag">03|AIO(AI検索対策)</span></div>
+        <div class="sc-body">
+          <h3>AIOコンサルティング</h3>
+          <p>ChatGPT・Perplexity・AI Overviewに「引用される」サイトへ。当サイト自体が実験場。</p>
+          <ul><li>AIOサイト診断(5軸スコア)</li><li>llms.txt・構造化データ実装</li><li>月次の露出レポート</li></ul>
+          <div class="sc-foot"><span class="sc-price">月15万円〜<small> 税別</small></span><span class="sc-more">詳細を見る →</span></div>
+        </div>
+      </a>
+      <a class="svc-card" href="/service/meo/">
+        <div class="sc-photo"><img src="/assets/img/osaka.webp" alt="MEOコンサルティング" width="800" height="1200" loading="lazy"><span class="sc-tag">04|MEO(マップ集客)</span></div>
+        <div class="sc-body">
+          <h3>MEOコンサルティング</h3>
+          <p>Googleマップ「地域名+業種」で上位表示。大阪でMEO事業「G-ran」を運営する実働ノウハウ。</p>
+          <ul><li>ビジネスプロフィール最適化</li><li>口コミ獲得・返信の運用設計</li><li>来店・問合せの計測レポート</li></ul>
+          <div class="sc-foot"><span class="sc-price">月5万円〜<small> 税別</small></span><span class="sc-more">詳細を見る →</span></div>
+        </div>
+      </a>
+    </div>
+    <p class="table-note">※価格は2026年7月時点の参考価格です。正式なお見積りは無料相談でご提示します。/※採択通過率は当社支援実績(2026年7月時点)。</p>
+
+    <!-- 補助金要項ページへの導線(対象条件・必要書類は /youkou/ に集約) -->
+    <div style="margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;box-shadow:var(--shadow)">
+      <div>
+        <p style="font-family:var(--serif);font-weight:800;font-size:16.5px;color:var(--navy);margin:0 0 4px">AI導入補助金の<span class="accent">要項・必要書類</span>を確認する</p>
+        <p style="font-size:13px;color:var(--muted);margin:0">対象になる事業者(4つの条件)・補助額・必要書類・スケジュール・採択後の義務まで、1ページに整理しています。</p>
+      </div>
+      <a class="btn btn-ghost" href="/youkou/" data-cta="youkou_link" style="flex:none">補助金要項を見る →</a>
+    </div>
+  </div>
+</section>
+<!-- ========== 08. 無料診断(心理:「試しに…」/ 仕事: 最強のリード獲得装置) ========== -->
+<section id="diagnosis" style="background:var(--bg2)">
+  <div class="wrap rev" style="text-align:center">
+    <p class="kicker" style="justify-content:center">Free Check</p>
+    <h2><span class="accent">3分</span>でわかる。<br class="sp">4つの無料診断</h2>
+    <p class="lead" style="max-width:880px;margin-left:auto;margin-right:auto">補助金・Webサイト・MEO・AI活用の<span class="em-marker">全サービスカテゴリを無料診断</span>。質問に答える(またはURLを入れる)だけで、5軸レーダーと判定・処方箋をその場で表示します。</p>
+    <div class="diag" id="diagWidget">
+      <div class="diag-tabs" role="tablist" aria-label="診断の種類">
+        <button type="button" class="diag-tab" role="tab" aria-selected="true" id="tabQuiz">補助金適性<span style="font-weight:400">(8問)</span></button>
+        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAudit">Webサイト<span style="font-weight:400">(URL)</span></button>
+        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabMeo">MEO集客<span style="font-weight:400">(6問)</span></button>
+        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAi">AI活用<span style="font-weight:400">(6問)</span></button>
+      </div>
+      <div class="diag-head"><span class="t" id="diagTitle">HOJOKIN FIT CHECK</span><span id="diagStep" style="font-size:12px;color:var(--dim)">Q1 / 8</span></div>
+      <div class="diag-prog" aria-hidden="true"><i id="diagBar"></i></div>
+      <div class="diag-body" id="diagBody" aria-live="polite"><!-- JSで描画 --></div>
+    </div>
+  </div>
+</section>
+<!-- ========== 07. 会員価格バンド(契約者向け優待。採択・交付とは無関係/補助対象経費は対象外=適法設計) ========== -->
+<section id="member" style="background:linear-gradient(160deg,#132445,#1d3461 55%,#24427c);border-top:3px solid var(--gold-soft,#d9b36a);padding:76px 0">
+  <div class="wrap rev" style="text-align:center;max-width:920px">
+    <p class="kicker" style="color:#e8c988">Member Price</p>
+    <h2 style="color:#fff;font-size:clamp(26px,4vw,38px)">ご契約者様は<span style="color:#e8c988">会員価格</span>で<br class="sp">大幅割引</h2>
+    <p class="lead" style="color:#c9d2e4;margin-top:18px">当社サービスをご契約中のお客様(補助金ご利用の有無は問いません)は、MEO運用・AIOコンサルティングなどの月額サービスを、2つ目から<b style="color:#fff;background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%)">会員価格(通常価格から大幅割引)</b>でご利用いただけます。具体的な割引率・価格は、無料相談・お見積りの際にご案内します。</p>
+    <div style="margin-top:32px">
+      <a class="btn btn-primary" href="#contact" data-cta="member_cta">会員価格について無料相談で聞く</a>
+      <span class="micro" style="color:#9fb0cf">3営業日以内に返信します。営業電話はいたしません。</span>
+    </div>
+    <p style="font-size:12px;color:#9fb0cf;margin-top:28px;text-align:left;line-height:1.9">※会員価格の対象は、補助金申請の対象経費に含まれないサービスに限ります(申請対象のシステム開発費・ツール導入費は通常価格です)。採択・交付の有無による価格の変更はありません。</p>
+  </div>
+</section>
+<!-- ========== 14. ブログ/発信(心理:「詳しい会社だな」/ 仕事: E-E-A-T・再訪の入口) ========== -->
+<section id="blog">
+  <div class="wrap rev">
+    <p class="kicker">Blog — 毎日更新</p>
+    <h2>AI導入補助金の<br class="sp">最新ノウハウを毎日発信</h2>
+    <p class="lead">申請の実務から採択のコツ・必要書類まで、支援の現場で得た一次情報を毎日更新しています。</p>
+    <div class="blog-grid">
+      <a class="post" href="/blog/ai-hojokin-guide-2026/"><div class="th"><img src="/assets/img/calculator-t.webp" alt="コインと新芽・補助金活用のイメージ" width="640" height="427" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>AI導入補助金とは?令和8年度の完全ガイド</h3><time datetime="2026-07-21">2026.07.21</time></div></a>
+      <a class="post" href="/blog/it-hojokin-saitakuritsu/"><div class="th"><img src="/assets/img/documents-t.webp" alt="申請書類に記入するイメージ" width="640" height="427" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>IT導入補助金の採択率を上げる5つの実務ポイント</h3><time datetime="2026-07-20">2026.07.20</time></div></a>
+      <a class="post" href="/blog/ai-hojokin-ikura-moraeru-2026/"><div class="th"><img src="/images/blog/ai-hojokin-ikura-moraeru-2026/thumbnail.webp" alt="AI導入補助金はいくらもらえるかの解説イメージ" width="1200" height="630" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>AI導入補助金2026はいくらもらえる?上限350万円と対象を解説</h3><time datetime="2026-07-28">2026.07.28</time></div></a>
+    </div>
+    <div style="text-align:center;margin-top:34px"><a class="btn btn-ghost" href="/blog/" data-cta="blog_more">ブログをもっと読む</a></div>
   </div>
 </section>
 </main>
