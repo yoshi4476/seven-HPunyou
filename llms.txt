@@ -133,3 +133,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-hoshi2/): AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月時点の公式情報から解説します。
