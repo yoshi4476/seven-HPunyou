@@ -131,3 +131,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [補助金の電子申請はいつから義務化？中小企業が今やること](https://lp.7senses.co.jp/blog/hojokin-denshishinsei-gimuka-itsukara/): 補助金の電子申請は法律上の義務ではなく、ものづくり補助金など主要制度が2020年前後から電子申請のみに移行したことで中小企業に事実上必須となりました。2026年7月のGビズID仕様変更と、今から備える3ステップを解説します。
