@@ -582,6 +582,10 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 .fit-note{font-size:14px;color:var(--muted);margin-bottom:24px}
 .fit-cta{display:flex;gap:14px;flex-wrap:wrap}
 @media(max-width:560px){.fit-cta .btn{width:100%}}
+
+/* 運営会社(選ばれる理由に統合) */
+.company-block{margin-top:52px;padding-top:38px;border-top:1px solid var(--line)}
+.company-block .sub-h{font-family:var(--serif);font-size:19px;color:var(--navy);margin-bottom:18px}
 </style>
 </head>
 <body>
@@ -872,7 +876,7 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 <section id="why" style="background:var(--bg2)">
   <div class="wrap rev">
     <p class="kicker">Why Us</p>
-    <h2>セブンセンシズが<br class="sp">選ばれる<span class="accent">3つの理由</span></h2>
+    <h2>なぜ、<span class="accent">この会社</span>に頼むのか</h2>
     <figure class="photo banner-photo">
       <img src="/assets/img/meeting-jp.webp" alt="導入支援チームの打ち合わせ風景のイメージ" width="1280" height="853" loading="lazy">
       <figcaption>打ち合わせ風景(写真はイメージです)</figcaption>
@@ -912,13 +916,8 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- ========== 15. 会社概要 ========== -->
-<section id="company" style="padding-top:0">
-  <div class="wrap rev">
-    <p class="kicker">Company</p>
-    <h2>会社概要</h2>
+    <div id="company" class="company-block">
+      <h3 class="sub-h">運営会社</h3>
     <div class="company-grid">
       <div class="table-scroll" style="margin-top:0">
         <table class="data">
@@ -930,7 +929,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
             <tr><th>関連サイト</th><td><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a>/<a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">AI集客ラボ(運営メディア)</a></td></tr>
             <tr><th>事業内容</th><td>IT導入補助金 申請サポート/システム開発・AI導入支援/AIOコンサルティング/MEOコンサルティング(G-ran)/HP・LP制作</td></tr>
             <tr><th>対応エリア</th><td>全国(オンライン完結)/関西圏は訪問対応可</td></tr>
-            <tr><th>関連サイト</th><td><a href="https://corp.7senses.co.jp/" rel="noopener" style="color:var(--navy2)">コーポレートサイト(7senses.co.jp)</a></td></tr>
           </tbody>
         </table>
         <p class="table-note">※設立年・資本金などの詳細はコーポレートサイトをご覧ください。</p>
@@ -939,15 +937,13 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
         <div class="cv-photo"><img src="/assets/img/building.webp" alt="オフィスビル群のイメージ" width="1280" height="853" loading="lazy"></div>
         <img src="/assets/img/logo-w.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="700" height="348" loading="lazy" style="height:64px;width:auto;margin-bottom:16px;position:relative;z-index:1">
         <p>デジタルマーケティングとAI導入支援のスペシャリスト集団。MEO・AIO領域で培った知見を活かし、補助金申請から成果創出まで一気通貫で伴走します。</p>
-        <div class="cv-nums">
-          <div class="cv-num"><b>50社+</b><span>支援事業者数※</span></div>
-          <div class="cv-num"><b>90%</b><span>採択通過率※</span></div>
-          <div class="cv-num"><b>大阪</b><span>拠点・全国対応</span></div>
         </div>
       </div>
     </div>
+    </div>
   </div>
 </section>
+<!-- ========== 15. 会社概要 ========== -->
 <!-- ========== 13. ご利用の流れ(心理:「頼んだら何が起きる?」/ 仕事: 未知の不安の除去) ========== -->
 <section id="flow" style="background:var(--bg2);padding-top:0">
   <div class="wrap rev">
