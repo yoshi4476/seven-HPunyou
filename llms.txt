@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/): 開業届の電子申請は、マイナンバーカードがあればe-Taxで自宅から出せます。2026年の提出期限の変更点、青色申告承認申請書との違い、個人事
 - [AI導入補助金のGビズID取得方法｜プライム取得の5つの手順](https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/): AI導入補助金にはGビズIDプライムが必須です。取得の流れとオンライン・書類申請の違い、審査にかかる日数の目安を2026年9月時点の公式情報
 - [AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-hoshi2/): AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月
 - [介護事業所の電子申請・届出システムとは？義務化はいつからか](https://lp.7senses.co.jp/blog/kaigo-denshishinsei-todokede/): 介護事業所の電子申請・届出システムは、指定申請や加算届などをオンラインで提出できる厚生労働省の仕組みです。対象事業所とgBizIDの取得方法
@@ -136,4 +137,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/): 開業届の電子申請は、マイナンバーカードがあればe-Taxで自宅から出せます。2026年の提出期限の変更点、青色申告承認申請書との違い、個人事業主がAI導入補助金・IT導入補助金を使う際に開業届が前提になる理由まで、5つの手順で解説します。
