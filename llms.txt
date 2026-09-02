@@ -134,3 +134,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [社会保険の電子申請義務化｜中小企業が対象になる3つの条件](https://lp.7senses.co.jp/blog/shakaihoken-denshishinsei-gimuka-chusho/): 社会保険の電子申請義務化は、資本金1億円超の企業と、常時50人以上の一部労働安全衛生手続きが対象です。多くの中小企業は対象外ですが、対象になる条件と電子申請の始め方を2026年9月時点の公式情報から解説します。
