@@ -42,9 +42,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <script type="text/javascript"> (Clarityのスニペットをここへ) </script>
 ========================================================================== -->
 
-<!-- 構造化データ JSON-LD 5種(Organization / Person / Service+LocalBusiness / FAQPage / WebSite)
-     TODO: SNS公式アカウント(X/Instagram等)のURL確定後、Organizationに "sameAs": ["https://..."] を追加(E-E-A-T強化)
-     TODO: geo座標(34.6721, 135.5555)は住所からの近似値。Googleマップの正確なピン座標に差し替え推奨 -->
+<!-- 構造化データ JSON-LD 5種(Organization / Person / Service+LocalBusiness / FAQPage / WebSite) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -693,6 +691,29 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 <!-- ========== 04. クイックスタート(3択で迷いを解消) ========== -->
 
 <!-- ========== 適合チェック: 対象かどうかを最初に確定させる ========== -->
+<section class="chooser" id="chooser" style="padding:64px 0 56px">
+  <div class="wrap rev">
+    <p class="kicker">Quick Start</p>
+    <h2>今日は、<span class="accent">どちら</span>をお探しですか?</h2>
+    <div class="choose-grid">
+      <a class="choice" href="#diagnosis" data-diag="hojokin">
+        <span class="ci" aria-hidden="true">💰</span>
+        <b>補助金が使えるか知りたい</b>
+        <span class="cd">8問・3分の適性診断へ →</span>
+      </a>
+      <a class="choice" href="#diagnosis" data-diag="audit">
+        <span class="ci" aria-hidden="true">🔍</span>
+        <b>サイト・集客を診断したい</b>
+        <span class="cd">URLを入れるだけのサイト診断へ →</span>
+      </a>
+      <a class="choice" href="#contact">
+        <span class="ci" aria-hidden="true">💬</span>
+        <b>まず話を聞いてみたい</b>
+        <span class="cd">無料相談(Zoom30分・営業電話なし)へ →</span>
+      </a>
+    </div>
+  </div>
+</section>
 <section id="fit" style="padding:64px 0 56px">
   <div class="wrap rev">
     <p class="kicker">Step 1</p>
@@ -941,7 +962,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
       </div>
     </div>
     </div>
-  </div>
 </section>
 <!-- ========== 15. 会社概要 ========== -->
 <!-- ========== 13. ご利用の流れ(心理:「頼んだら何が起きる?」/ 仕事: 未知の不安の除去) ========== -->
@@ -961,111 +981,6 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
   </div>
 </section>
 <!-- 回答はJSON-LDのFAQPageと完全一致(40〜60字・AIO引用最適) -->
-<section id="faq">
-  <div class="wrap rev">
-    <p class="kicker">FAQ</p>
-    <h2>よくあるご質問</h2>
-    <div class="faq">
-      <details><summary>AI導入補助金とはどんな制度ですか?</summary><p class="a">AIツールやITシステムの導入費を国が補助する「IT導入補助金」の通称で、令和8年度の上限は350万円です。</p></details>
-      <details><summary>費用はいくらかかりますか?</summary><p class="a">相談・診断・申請可否の確認まで無料です。導入費用は補助金適用後の自己負担額をお見積りで事前にご提示します。</p></details>
-      <details><summary>申請から着金までどのくらいかかりますか?</summary><p class="a">お申し込みから補助金の着金まで約2〜3ヶ月が目安です。合格発表は申請後約1ヶ月です。</p></details>
-      <details><summary>どんな会社が対象になりますか?</summary><p class="a">売上が法人3,300万円・個人事業主3,900万円以上で、納税に滞納がなく、決算2期を終えた事業者が対象です。</p></details>
-      <details><summary>売上が基準に満たない場合は申請できませんか?</summary><p class="a">ご相談ください。今期の売上状況により、下位プランでご案内できるかを個別に確認いたします。</p></details>
-      <details><summary>過去にIT導入補助金を使ったことがあると対象外ですか?</summary><p class="a">直近4年以内に採択・交付を受けた事業者は対象外です。4年より前の利用や不採択のみの場合は対象になります。</p></details>
-      <details><summary>打ち合わせはオンラインでも可能ですか?</summary><p class="a">はい。初回打ち合わせから電子申請の同席までZoomで完結します。全国どこからでもご相談いただけます。</p></details>
-    </div>
-  </div>
-</section>
-<!-- ========== 18. 大型フォーム→クロージング(心理:「よし、聞いてみよう」/ 仕事: 摩擦ゼロで送信させる) ========== -->
-<section id="contact" class="contact">
-  <div class="wrap rev">
-    <p class="kicker">Contact</p>
-    <h2>無料相談・資料請求</h2>
-    <div class="contact-grid">
-      <div class="contact-copy">
-        <h3>まずは<span class="cg">「対象かどうか」</span>だけ、<br>無料で確かめませんか。</h3>
-        <p>相談したからといって申し込む必要はありません。応募要項に合わないと分かれば、その場で正直にお伝えします。<br>ご相談内容が固まっていなくても構いません。「対象になるか知りたい」だけでもお受けしています。</p>
-        <ul class="promise">
-          <li>3営業日以内にメールで返信します</li>
-          <li>営業電話はいたしません</li>
-          <li>相談・診断・適合確認まで完全無料</li>
-          <li>秘密保持:ご相談内容は社外に出しません</li>
-        </ul>
-        <div class="tel-box">
-          <p class="tb-t">お急ぎの方は、お電話でどうぞ</p>
-          <a class="tb-num" href="tel:0643057547" data-cta="tel_contact">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a13 13 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-            06-4305-7547
-          </a>
-          <p class="tb-h">受付 9:00〜20:00(土日祝休)</p>
-          <p class="tb-note">※お電話の際は<b>「AI導入補助金のページ(LP)を見た」</b>と、ご要件をお伝えいただくとご案内がスムーズです。</p>
-          <p class="tb-t" style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18)">メールでのお問い合わせ</p>
-          <a class="tb-num" href="mailto:info.ai@7senses.co.jp" data-cta="mail_contact" style="font-size:17px;letter-spacing:.02em">info.ai@7senses.co.jp</a>
-        </div><!-- /.tel-box -->
-      </div><!-- /.contact-copy -->
-      <div class="form-card">
-        <form id="contactForm" novalidate>
-          <p class="perk-note">🎁 <b>特典</b>(MEOスタンダード無料付帯)は、<b>オウンドメディア運営</b>をご契約いただいたお客様限定です。ご希望の方は、特典コード<b>3010</b>を、下の「詳細(任意)」欄に詳細とあわせてご記入ください。
-            <span class="cond">※本特典はオウンドメディア運営サービスのご契約特典です。補助金の申請・採択の可否とは関係ありません。</span></p>
-          <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
-          <div class="field"><label for="f-company">会社名・店舗名</label><input id="f-company" name="company" type="text" autocomplete="organization" required><p class="err">会社名・店舗名を入力してください</p></div>
-          <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
-          <div class="field"><label for="f-tel">電話番号<b>任意</b></label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
-          <div class="field"><label for="f-topic">ご相談内容</label>
-            <select id="f-topic" name="topic" required>
-              <option value="">選択してください</option>
-              <option>AI導入補助金の申請について</option>
-              <option>補助金が使えるか知りたい(対象診断)</option>
-              <option>システム開発・AI導入について</option>
-              <option>MEO(Googleマップ)集客について</option>
-              <option>AIO(AI検索対策)について</option>
-              <option>その他</option>
-            </select><p class="err">ご相談内容を選択してください</p></div>
-          <div class="field"><label for="f-message">詳細<b>任意</b></label><textarea id="f-message" name="message" placeholder="現在の集客状況やお困りごとをご記入ください"></textarea></div>
-          <!-- bot対策: ハニーポット(人間には見えない) -->
-          <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
-          <input type="hidden" name="ts" id="f-ts">
-          <label class="agree" id="agreeWrap"><input type="checkbox" id="f-agree" name="agree" required><span><a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span></label>
-          <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
-          <button class="btn btn-primary btn-block" type="submit" id="submitBtn" data-cta="form_submit">無料相談を申し込む(現状分析レポート付き)</button>
-          <span class="micro" style="text-align:center">いただいた情報は相談対応の目的以外には使用しません。</span>
-        </form>
-        <div id="formDone" hidden style="text-align:center;padding:30px 0">
-          <p style="font-family:var(--serif);font-size:22px;font-weight:800;margin-bottom:12px;color:var(--navy)">送信ありがとうございました。</p>
-          <p style="color:var(--muted);font-size:14px;margin-bottom:26px">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
-            <a class="btn btn-ghost" href="#diagnosis">無料診断を試す</a>
-            <a class="btn btn-ghost" href="/blog/">ブログを読む</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- ========== 06. 解決策=サービス概要(心理:「どうやって?」/ 仕事: 解決メカニズムの納得) ========== -->
-<section class="chooser" id="chooser" style="padding:64px 0 56px">
-  <div class="wrap rev">
-    <p class="kicker">Quick Start</p>
-    <h2>今日は、<span class="accent">どちら</span>をお探しですか?</h2>
-    <div class="choose-grid">
-      <a class="choice" href="#diagnosis" data-diag="hojokin">
-        <span class="ci" aria-hidden="true">💰</span>
-        <b>補助金が使えるか知りたい</b>
-        <span class="cd">8問・3分の適性診断へ →</span>
-      </a>
-      <a class="choice" href="#diagnosis" data-diag="audit">
-        <span class="ci" aria-hidden="true">🔍</span>
-        <b>サイト・集客を診断したい</b>
-        <span class="cd">URLを入れるだけのサイト診断へ →</span>
-      </a>
-      <a class="choice" href="#contact">
-        <span class="ci" aria-hidden="true">💬</span>
-        <b>まず話を聞いてみたい</b>
-        <span class="cd">無料相談(Zoom30分・営業電話なし)へ →</span>
-      </a>
-    </div>
-  </div>
-</section>
 <section id="services" style="background:var(--bg2);padding-top:88px">
   <div class="wrap rev">
     <span id="pricing" style="position:relative;top:-70px"></span>
@@ -1155,6 +1070,88 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
   </div>
 </section>
 <!-- ========== 14. ブログ/発信(心理:「詳しい会社だな」/ 仕事: E-E-A-T・再訪の入口) ========== -->
+<section id="faq">
+  <div class="wrap rev">
+    <p class="kicker">FAQ</p>
+    <h2>よくあるご質問</h2>
+    <div class="faq">
+      <details><summary>AI導入補助金とはどんな制度ですか?</summary><p class="a">AIツールやITシステムの導入費を国が補助する「IT導入補助金」の通称で、令和8年度の上限は350万円です。</p></details>
+      <details><summary>費用はいくらかかりますか?</summary><p class="a">相談・診断・申請可否の確認まで無料です。導入費用は補助金適用後の自己負担額をお見積りで事前にご提示します。</p></details>
+      <details><summary>申請から着金までどのくらいかかりますか?</summary><p class="a">お申し込みから補助金の着金まで約2〜3ヶ月が目安です。合格発表は申請後約1ヶ月です。</p></details>
+      <details><summary>どんな会社が対象になりますか?</summary><p class="a">売上が法人3,300万円・個人事業主3,900万円以上で、納税に滞納がなく、決算2期を終えた事業者が対象です。</p></details>
+      <details><summary>売上が基準に満たない場合は申請できませんか?</summary><p class="a">ご相談ください。今期の売上状況により、下位プランでご案内できるかを個別に確認いたします。</p></details>
+      <details><summary>過去にIT導入補助金を使ったことがあると対象外ですか?</summary><p class="a">直近4年以内に採択・交付を受けた事業者は対象外です。4年より前の利用や不採択のみの場合は対象になります。</p></details>
+      <details><summary>打ち合わせはオンラインでも可能ですか?</summary><p class="a">はい。初回打ち合わせから電子申請の同席までZoomで完結します。全国どこからでもご相談いただけます。</p></details>
+    </div>
+  </div>
+</section>
+<!-- ========== 18. 大型フォーム→クロージング(心理:「よし、聞いてみよう」/ 仕事: 摩擦ゼロで送信させる) ========== -->
+<section id="contact" class="contact">
+  <div class="wrap rev">
+    <p class="kicker">Contact</p>
+    <h2>無料相談・資料請求</h2>
+    <div class="contact-grid">
+      <div class="contact-copy">
+        <h3>まずは<span class="cg">「対象かどうか」</span>だけ、<br>無料で確かめませんか。</h3>
+        <p>相談したからといって申し込む必要はありません。応募要項に合わないと分かれば、その場で正直にお伝えします。<br>ご相談内容が固まっていなくても構いません。「対象になるか知りたい」だけでもお受けしています。</p>
+        <ul class="promise">
+          <li>3営業日以内にメールで返信します</li>
+          <li>営業電話はいたしません</li>
+          <li>相談・診断・適合確認まで完全無料</li>
+          <li>秘密保持:ご相談内容は社外に出しません</li>
+        </ul>
+        <div class="tel-box">
+          <p class="tb-t">お急ぎの方は、お電話でどうぞ</p>
+          <a class="tb-num" href="tel:0643057547" data-cta="tel_contact">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a13 13 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            06-4305-7547
+          </a>
+          <p class="tb-h">受付 9:00〜20:00(土日祝休)</p>
+          <p class="tb-note">※お電話の際は<b>「AI導入補助金のページ(LP)を見た」</b>と、ご要件をお伝えいただくとご案内がスムーズです。</p>
+          <p class="tb-t" style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18)">メールでのお問い合わせ</p>
+          <a class="tb-num" href="mailto:info.ai@7senses.co.jp" data-cta="mail_contact" style="font-size:17px;letter-spacing:.02em">info.ai@7senses.co.jp</a>
+        </div><!-- /.tel-box -->
+      </div><!-- /.contact-copy -->
+      <div class="form-card">
+        <form id="contactForm" novalidate>
+          <p class="perk-note">🎁 <b>特典</b>(MEOスタンダード無料付帯)は、<b>オウンドメディア運営</b>をご契約いただいたお客様限定です。ご希望の方は、特典コード<b>3010</b>を、下の「詳細(任意)」欄に詳細とあわせてご記入ください。
+            <span class="cond">※本特典はオウンドメディア運営サービスのご契約特典です。補助金の申請・採択の可否とは関係ありません。</span></p>
+          <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
+          <div class="field"><label for="f-company">会社名・店舗名</label><input id="f-company" name="company" type="text" autocomplete="organization" required><p class="err">会社名・店舗名を入力してください</p></div>
+          <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
+          <div class="field"><label for="f-tel">電話番号<b>任意</b></label><input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></div>
+          <div class="field"><label for="f-topic">ご相談内容</label>
+            <select id="f-topic" name="topic" required>
+              <option value="">選択してください</option>
+              <option>AI導入補助金の申請について</option>
+              <option>補助金が使えるか知りたい(対象診断)</option>
+              <option>システム開発・AI導入について</option>
+              <option>MEO(Googleマップ)集客について</option>
+              <option>AIO(AI検索対策)について</option>
+              <option>その他</option>
+            </select><p class="err">ご相談内容を選択してください</p></div>
+          <div class="field"><label for="f-message">詳細<b>任意</b></label><textarea id="f-message" name="message" placeholder="現在の集客状況やお困りごとをご記入ください"></textarea></div>
+          <!-- bot対策: ハニーポット(人間には見えない) -->
+          <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+          <input type="hidden" name="ts" id="f-ts">
+          <label class="agree" id="agreeWrap"><input type="checkbox" id="f-agree" name="agree" required><span><a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span></label>
+          <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
+          <button class="btn btn-primary btn-block" type="submit" id="submitBtn" data-cta="form_submit">無料相談を申し込む(現状分析レポート付き)</button>
+          <span class="micro" style="text-align:center">いただいた情報は相談対応の目的以外には使用しません。</span>
+        </form>
+        <div id="formDone" hidden style="text-align:center;padding:30px 0">
+          <p style="font-family:var(--serif);font-size:22px;font-weight:800;margin-bottom:12px;color:var(--navy)">送信ありがとうございました。</p>
+          <p style="color:var(--muted);font-size:14px;margin-bottom:26px">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+            <a class="btn btn-ghost" href="#diagnosis">無料診断を試す</a>
+            <a class="btn btn-ghost" href="/blog/">ブログを読む</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========== 06. 解決策=サービス概要(心理:「どうやって?」/ 仕事: 解決メカニズムの納得) ========== -->
 <section id="blog" style="background:var(--bg2)">
   <div class="wrap rev">
     <p class="kicker">Blog — 毎日更新</p>
