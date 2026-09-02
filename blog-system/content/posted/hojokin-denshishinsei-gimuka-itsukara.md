@@ -50,6 +50,8 @@ faq:
 
 **主要な補助金の電子申請は2020年前後から原則化が進み、現在は多くの制度が郵送申請を受け付けていません。**制度ごとに導入時期は異なりますが、流れとしては共通しています。
 
+前提となる考え方については、[介護事業所の電子申請・届出システムとは？義務化はいつからか](/blog/kaigo-denshishinsei-todokede/)にまとめています。
+
 <a href="https://portal.monodukuri-hojo.jp/" target="_blank" rel="noopener">ものづくり・商業・サービス生産性向上促進補助金の公式サイト</a>では、**申請方法は電子申請のみと明記されており、電子申請システムの利用には事前のGビズIDプライムアカウント取得が必須**とされています。この制度は2020年前後からJグランツでの電子申請への移行を進め、以降は郵送での受付を行っていません。
 
 <figure><img src="/images/hojokin-denshishinsei-gimuka-itsukara/seido3.png" alt="電子申請が原則になっている主要3制度: 新事業進出・ものづくり商業サービス補助金、デジタル化・AI導入補助金、小規模事業者持続化補助金" loading="lazy"><figcaption>電子申請が原則になっている主要3制度</figcaption></figure>
