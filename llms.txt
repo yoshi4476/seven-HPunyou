@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [自動車整備業のIT導入補助金2026｜スキャンツールは対象外になる理由](https://lp.7senses.co.jp/blog/it-hojokin-jidousha-seibi/): IT導入補助金（デジタル化・AI導入補助金2026）は自動車整備業の予約・見積・車検管理システムに使えますが、特定整備で義務化されたスキャン
 - [建設業の電子申請システムはIT導入補助金の対象になる？3つの誤解](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-system/): 建設業の電子申請システムには、経審用の行政ポータルJCIPとIT導入補助金の対象ツールの2種類があり、混同すると対象外の費用で申請してしまい
 - [e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/): e-Govは労働保険など省庁横断の行政手続きを電子申請できるポータルです。個人事業主が使う場面、e-Tax・Jグランツとの違い、GビズIDで
 - [開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/): 開業届の電子申請は、マイナンバーカードがあればe-Taxで自宅から出せます。2026年の提出期限の変更点、青色申告承認申請書との違い、個人事
@@ -140,4 +141,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [自動車整備業のIT導入補助金2026｜スキャンツールは対象外になる理由](https://lp.7senses.co.jp/blog/it-hojokin-jidousha-seibi/): IT導入補助金（デジタル化・AI導入補助金2026）は自動車整備業の予約・見積・車検管理システムに使えますが、特定整備で義務化されたスキャンツール本体は対象外です。線引きと対象ツール、補助率を2026年9月時点の情報で解説します。
