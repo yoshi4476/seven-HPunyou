@@ -11,10 +11,6 @@ score: 96
 score_breakdown: {design: 19, seo: 19, editorial: 19, expert: 19, persona: 19, aio: 20}
 eyecatch: /images/kensetsugyou-denshishinsei-system/eyecatch.png
 diagrams:
-  - name: two-types
-    type: list
-    title: 建設業の「電子申請システム」2つの意味
-    items: ["JCIP（経審・許可の電子申請）|国土交通省が運営する行政ポータル。利用無料でIT導入補助金の対象外", "電子契約・受発注クラウドツール|IT導入支援事業者が販売する民間サービス。要件を満たせば補助対象"]
   - name: jcip-vs-tool
     type: vs
     title: JCIPと電子契約ツールの違い
@@ -22,7 +18,7 @@ diagrams:
   - name: flow4
     type: flow
     title: 建設業がIT導入補助金で電子契約ツールを導入する4ステップ
-    items: ["GビズIDを取得しJCIPと補助金の違いを整理", "IT導入支援事業者とツールを選定", "交付申請→交付決定後に契約・導入", "実績報告を提出し交付額が確定"]
+    items: ["GビズIDを取得する", "IT導入支援事業者とツールを選定", "交付申請→交付決定後に契約・導入", "実績報告を提出し交付額が確定"]
 faq:
   - q: 建設業の電子申請システムはIT導入補助金の対象になりますか？
     a: 経審・許可用のJCIPは対象外ですが、民間の電子契約・受発注ツールは対象になりえます。
@@ -49,8 +45,6 @@ faq:
 ## 建設業の「電子申請システム」には2つの意味がある
 
 **「建設業 電子申請システム」という言葉には、経審・許可用の行政ポータルと、民間の業務ツールという別の意味が混ざっています。**どちらを指しているかで、補助金の使える・使えないが真逆になります。
-
-<figure><img src="/images/kensetsugyou-denshishinsei-system/two-types.png" alt="建設業の電子申請システム2つの意味: JCIPは国土交通省が運営する行政ポータルで利用無料・IT導入補助金の対象外、電子契約・受発注クラウドツールはIT導入支援事業者が販売する民間サービスで要件を満たせば補助対象" loading="lazy"><figcaption>建設業の「電子申請システム」2つの意味</figcaption></figure>
 
 私たちが登録支援事業者として相談を受ける中で、==「電子申請システムを補助金で導入したい」というご相談の中身が、実は経審のオンライン申請の操作方法だった==という場面に何度も出会っています。この2つを区別しないまま話を進めると、後の手続きでつまずきやすくなります。
 
@@ -112,7 +106,7 @@ IT導入補助金のツールは、事務局が定める業務プロセスの区
 
 **導入までは、GビズID取得→ツール選定→交付申請→実績報告の4ステップで進みます。**JCIP用のGビズIDと補助金用のGビズIDは同じアカウントを使い回せます。
 
-<figure><img src="/images/kensetsugyou-denshishinsei-system/flow4.png" alt="建設業がIT導入補助金で電子契約ツールを導入する4ステップ: GビズIDを取得しJCIPと補助金の違いを整理、IT導入支援事業者とツールを選定、交付申請から契約・導入、実績報告を提出し交付額が確定" loading="lazy"><figcaption>建設業がIT導入補助金で電子契約ツールを導入する4ステップ</figcaption></figure>
+<figure><img src="/images/kensetsugyou-denshishinsei-system/flow4.png" alt="建設業がIT導入補助金で電子契約ツールを導入する4ステップ: GビズIDを取得する、IT導入支援事業者とツールを選定、交付申請から契約・導入、実績報告を提出し交付額が確定" loading="lazy"><figcaption>建設業がIT導入補助金で電子契約ツールを導入する4ステップ</figcaption></figure>
 
 すでにJCIP用にGビズIDプライムを取得済みの会社なら、この手順はステップ2から始められます。GビズIDプライムの取得手順そのものは[AI導入補助金のGビズID取得方法｜プライム取得の5つの手順](/blog/ai-hojokin-gbizid-shutoku/)で解説しています。
 
