@@ -137,3 +137,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/): e-Govは労働保険など省庁横断の行政手続きを電子申請できるポータルです。個人事業主が使う場面、e-Tax・Jグランツとの違い、GビズIDでの始め方4ステップを2026年9月時点の公式情報で解説します。
