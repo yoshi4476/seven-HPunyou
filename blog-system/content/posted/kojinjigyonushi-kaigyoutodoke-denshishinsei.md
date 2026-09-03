@@ -68,6 +68,8 @@ faq:
 
 電子申請はマイナンバーカードを持ち手続きに慣れている人向き、郵送・窓口提出はその場で収受印付きの控えが欲しい人向きです。
 
+実際の進め方は、[e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](/blog/egov-denshishinsei-kojinjigyonushi/)で解説しています。
+
 <figure><img src="/images/kojinjigyonushi-kaigyoutodoke-denshishinsei/vs.png" alt="電子申請と紙提出の比較: e-Tax電子申請はマイナンバーカードがあれば自宅から24時間提出可能で控えに受付印は付かない、郵送・窓口提出は控えに収受印をその場で押してもらえるが来訪か郵送の往復が必要" loading="lazy"><figcaption>電子申請と紙提出、個人事業主はどちらを選ぶべきか</figcaption></figure>
 
 | 提出方法 | 必要な準備物 | こんな人におすすめ |
