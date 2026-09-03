@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/): e-Govは労働保険など省庁横断の行政手続きを電子申請できるポータルです。個人事業主が使う場面、e-Tax・Jグランツとの違い、GビズIDで
 - [開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/): 開業届の電子申請は、マイナンバーカードがあればe-Taxで自宅から出せます。2026年の提出期限の変更点、青色申告承認申請書との違い、個人事
 - [AI導入補助金のGビズID取得方法｜プライム取得の5つの手順](https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/): AI導入補助金にはGビズIDプライムが必須です。取得の流れとオンライン・書類申請の違い、審査にかかる日数の目安を2026年9月時点の公式情報
 - [AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-hoshi2/): AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月
@@ -137,4 +138,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/): e-Govは労働保険など省庁横断の行政手続きを電子申請できるポータルです。個人事業主が使う場面、e-Tax・Jグランツとの違い、GビズIDでの始め方4ステップを2026年9月時点の公式情報で解説します。
