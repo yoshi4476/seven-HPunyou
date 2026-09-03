@@ -138,3 +138,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [労働保険の年度更新は電子申請が任意｜個人事業主2026年版](https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/): 労働保険の年度更新を電子申請で行う手順を個人事業主向けに解説します。電子申請義務化の対象は資本金1億円超の法人などに限られ、個人事業主は対象外です。2026年度の申告期間や準備するものも紹介します。
