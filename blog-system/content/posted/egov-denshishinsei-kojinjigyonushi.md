@@ -94,6 +94,8 @@ e-Govという名称自体は、行政手続きのオンライン化が進み始
 
 **個人事業主がe-Govで労働保険の電子申請をする流れは、GビズID取得・保険関係成立届の提出・概算保険料の申告・受付番号の保存という4ステップです。**
 
+関連する内容を先に押さえるなら、[労働保険の年度更新は電子申請が任意｜個人事業主2026年版](/blog/roudouhoken-nendokoshin-denshishinsei/)が参考になります。
+
 <figure><img src="/images/egov-denshishinsei-kojinjigyonushi/steps4.png" alt="個人事業主がe-Govで電子申請する4つの手順: GビズIDを取得しプライムを申請、保険関係成立届を雇用後10日以内に提出、概算保険料を申告し保険料を試算、受付番号を保存し唯一の提出証拠にする" loading="lazy"><figcaption>個人事業主がe-Govで電子申請する4つの手順</figcaption></figure>
 
 ### ステップ1: GビズIDプライムを取得する
