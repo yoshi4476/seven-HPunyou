@@ -102,6 +102,8 @@ IT導入補助金（AI導入補助金2026）の通常枠は、補助上限額が
 
 **個人事業主がAI・IT導入補助金を申請する流れは、GビズID取得、支援事業者選定、交付申請、交付決定後の発注、実績報告の5ステップです。**法人と同じ流れで進められます。
 
+実際の進め方を先に押さえるなら、[e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](/blog/egov-denshishinsei-kojinjigyonushi/)が参考になります。
+
 実際の進め方を先に押さえるなら、[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)が参考になります。
 
 <figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/flow5.png" alt="AI・IT導入補助金の申請5ステップ: GビズID取得（プライムを申請）、支援事業者選定（ツールを決める）、交付申請（事業計画書提出）、交付決定後発注（決定前はNG）、実績報告（証拠書類提出）"><figcaption>AI・IT導入補助金の申請5ステップ</figcaption></figure>
