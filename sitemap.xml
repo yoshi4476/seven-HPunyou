@@ -62,6 +62,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/</loc>
+    <lastmod>2026-09-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/</loc>
     <lastmod>2026-09-02</lastmod>
     <priority>0.7</priority>
@@ -535,9 +540,5 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/</loc>
-    <lastmod>2026-09-03</lastmod>
   </url>
 </urlset>
