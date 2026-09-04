@@ -141,3 +141,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-etsuran/): 建設業許可・経営事項審査を電子申請したJCIPの記録は、2023年4月開始の電子閲覧システムとCIICの2つで無料検索できます。閲覧できる範囲と使い方の手順を2026年9月時点の情報で解説します。
