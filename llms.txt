@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [AI導入補助金の不採択理由｜審査で落ちる6つのパターン](https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/): AI導入補助金が不採択になる理由は、事業計画書の論理性不足・数値裏付けの欠如・加点不足・対象外経費・過去申請との重複・交付要件未達の6つに整
 - [自動車整備業のIT導入補助金2026｜スキャンツールは対象外になる理由](https://lp.7senses.co.jp/blog/it-hojokin-jidousha-seibi/): IT導入補助金（デジタル化・AI導入補助金2026）は自動車整備業の予約・見積・車検管理システムに使えますが、特定整備で義務化されたスキャン
 - [建設業の電子申請システムはIT導入補助金の対象になる？3つの誤解](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-system/): 建設業の電子申請システムには、経審用の行政ポータルJCIPとIT導入補助金の対象ツールの2種類があり、混同すると対象外の費用で申請してしまい
 - [e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/): e-Govは労働保険など省庁横断の行政手続きを電子申請できるポータルです。個人事業主が使う場面、e-Tax・Jグランツとの違い、GビズIDで
@@ -123,7 +124,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [AI導入補助金 名古屋のサポート先の選び方【2026年版】採択率・費用・流れを解説](https://lp.7senses.co.jp/blog/ai-hojokin-nagoya-support/): AI導入補助金を名古屋で申請するときのサポート先の選び方を2026年最新で解説。採択実績・費用相場・着金までの流れ・必要書類・避けるべき業者
 - [AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-hojin/): AI導入補助金(正式名称:IT導入補助金)の法人の必要書類を2026年最新版で解説。履歴事項全部証明書・gBizID・SECURITY AC
 - [AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-2star/): AI導入補助金の申請に必要なSECURITY ACTION二つ星を解説。一つ星との違い、宣言の手順、よくあるつまずきと対策を中小企業経営者向
-- [AI導入補助金 不採択の理由7選【2026年最新】再申請で採択されるコツ](https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/): AI導入補助金(正式名称:IT導入補助金)で不採択になる理由を7つ解説。審査の視点、再申請の進め方、申請前セルフチェックリストまで、2026
 - [2026年 AI導入補助金でホームページ制作は対象?対象範囲と注意点を解説](https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho/): AI導入補助金でホームページ制作は対象になるのか。単独のサイト制作は対象外になりやすく、業務効率化機能の有無が判断軸です。対象範囲・対象外費
 - [AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】](https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/): AI導入補助金とは、IT導入補助金の2026年(令和8年)における通称です。両者は同じ制度で、補助上限350万円・補助率1/2〜3/4。名前
 - [【2026年版】中小企業のAI導入補助金｜大阪の申請サポートと採択の進め方](https://lp.7senses.co.jp/blog/ai-hojokin-osaka-chusho/): 大阪の中小企業向けにAI導入補助金の対象・上限350万円・着金までの流れをやさしく解説。申請サポートの選び方と、補助金後の集客・AI検索対策
