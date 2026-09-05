@@ -143,3 +143,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](https://lp.7senses.co.jp/blog/fukuoka-kensetsugyou-denshishinsei/): 福岡県の建設業許可・経審の電子申請JCIPは2025年9月1日開始。収入証紙が使えない手数料の払い方、承継認可申請が非対応な点、本庁と県土整備事務所の窓口の使い分けを2026年9月時点の情報で解説します。
