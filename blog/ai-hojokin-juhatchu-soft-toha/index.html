@@ -58,8 +58,8 @@
 :root{
   --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
-  --text:#212b3d; --muted:#5b6472; --dim:#6d7484;
-  --gold:#8a6d2a; --gold-strong:#8a6a20; --gold-ink:#171104;
+  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
+  --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
   --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -79,7 +79,7 @@ main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-tem
 .side{position:sticky;top:84px;display:grid;gap:16px}
 @media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
 .side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
-.side .sbox p.t{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
 .side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .side .sbox li{margin:0}
 .side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
@@ -91,14 +91,14 @@ main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-tem
 .crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
 .crumb a{color:var(--dim);text-decoration:none}
 .crumb a:hover{color:var(--gold-strong)}
-.cat{display:inline-block;font-size:11.5px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+.cat{display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
 h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
 .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
 .fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
 .fresh-note b{color:var(--muted);font-weight:500}
 .summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
 .toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
-.toc p{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc p{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
 .toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
 .toc li{margin:7px 0}
 .toc a{text-decoration:none;color:var(--muted)}
@@ -129,7 +129,7 @@ article strong{color:var(--gold-strong)}
 .faq-sec details[open] summary::after{content:"−"}
 .faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
 .author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
-.author .sv-label{display:block;font-size:11px;letter-spacing:.14em;font-weight:700;color:#8a93a6;margin:0 0 14px}
+.author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:#5c6472;margin:0 0 14px}
 .author .sv-body{display:flex;gap:16px}
 .author .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
 .author b{color:var(--text);font-size:14.5px}
@@ -137,7 +137,7 @@ article strong{color:var(--gold-strong)}
 .author .sv-links a{font-size:12.5px;font-weight:700;color:#1b3a6b;text-decoration:none;border-bottom:1px solid #b9c6dd}
 .author .sv-links a:hover{border-bottom-color:#1b3a6b}
 .rel{margin-top:50px}
-.rel p.t{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
 .rel ul{list-style:none;margin:0;display:grid;gap:10px}
 .rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
 .rel a:hover{border-color:var(--line2)}
@@ -193,6 +193,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>私たちが申請支援の相談を受ける中でも、<mark>「受発注ソフトという専用の申請枠がある」と誤解している経営者が少なくありません</mark>。実際には枠の名前ではなく機能要件の話であるという前提を押さえておくと、以降の枠選びで迷いにくくなります。相談の初期段階でこの前提を共有しておくだけでも、その後のヒアリングがスムーズに進み、候補ソフトの絞り込みにかかる時間を短縮できます。</p>
 <h2 id="sec2">受発注ソフトが対象になる3つの申請枠</h2>
 <p><strong>受発注ソフトは通常枠・インボイス対応類型・電子取引類型という3つの枠で補助対象になります。</strong>枠によって対象範囲や補助率が大きく異なるため、自社の使い方に合う枠を見極める必要があります。</p>
+<p>当社は受発注ソフト・会計ソフトの導入を補助金で支援している登録支援事業者です。枠の選択を誤ると補助額が大きく変わるため、<strong>ツールを決める前に枠を確認してください</strong>。</p>
 <figure><img src="/images/ai-hojokin-juhatchu-soft-toha/waku3.png" alt="受発注ソフトが対象になる3つの申請枠: 通常枠、インボイス対応類型、電子取引類型" loading="lazy"><figcaption>受発注ソフトが対象になる3つの申請枠</figcaption></figure>
 
 <p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠のページ</a>によると、対象となる業務プロセスには顧客対応・販売支援や供給・在庫・物流など幅広い区分が含まれ、受発注に関わる機能もその一部として扱われます。一方、<a href="https://it-shien.smrj.go.jp/applicant/subsidy/digitalbased_invoice/" target="_blank" rel="noopener">電子取引類型のページ</a>では、<strong>「インボイス制度に対応した『受発注』の機能を有し、発注側の事業者が受注側の事業者に対してアカウントを無償で発行・利用させることのできる機能を有するクラウド型のソフトウェア」</strong>が対象と明記されています。</p>
@@ -258,6 +259,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 </table></div>
 <p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/digitalbase/" target="_blank" rel="noopener">インボイス対応類型のページ</a>が示す通り、50万円以下のソフトウェア導入は補助率が3/4〜4/5と非常に高く設定されています。受発注ソフトの導入費用が50万円以下に収まりそうな小規模事業者にとっては、インボイス対応類型が最も有利な選択肢になりやすい枠です。</p>
 <p>具体的な金額でイメージすると分かりやすくなります。<strong>受発注ソフトの年間利用料が40万円だった場合、インボイス対応類型なら中小企業は補助率3/4で30万円、小規模事業者は補助率4/5で32万円が補助され、自己負担は8万円〜10万円程度</strong>まで下がります。一方、電子取引類型で同じ40万円のソフトを導入した場合は、中小企業・小規模事業者の補助率2/3が適用され、補助額は約26.6万円となる計算です。同じ受発注ソフトでも、当てはまる枠によって自己負担額が数万円単位で変わるため、見積もりが固まった段階で複数の枠を比較検討する価値があります。</p>
+<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec5">受発注ソフトとあわせて使えるハードウェアの補助</h2>
 <p><strong>インボイス対応類型では、PC・タブレットは10万円、レジ・券売機等は20万円まで補助対象になります。</strong>受発注ソフトを使うための周辺機器も、条件を満たせば同時に申請できます。</p>
 <p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/digitalbase/" target="_blank" rel="noopener">同ページ</a>では、PC・タブレット等は補助額10万円以下・補助率1/2以内、レジ・券売機等は補助額20万円以下・補助率1/2以内と定められています。受発注ソフトをタブレットで運用したい店舗や、レジと連動させたい事業者にとっては見逃せない補助です。</p>
@@ -270,6 +272,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>1つ目は、気に入ったソフトが実際に補助対象ツールとして登録されているかを確認せずに契約してしまうケースです。2つ目は、「1機能あれば単体では申請できない」という思い込みで、必要以上に高機能なソフトを選んでしまうケースです。3つ目は、ハードウェアだけを単体で申請できると誤解し、ソフトウェアの選定を後回しにしてしまうケースです。</p>
 <p>私も相談の現場で、<mark>レジだけを先に買ってしまい、対象となるソフトウェアを後から探すことになった</mark>という事例を確認しています。受発注ソフトとハードウェアは必ずセットで検討し、先にソフトウェアの対象登録状況を確認してから機器選定に進んでください。</p>
 <p>もう1つ見落としやすいのが、<strong>申請時点でのITツール登録の有無</strong>です。デジタル化・AI導入補助金2026では、事務局に事前登録されたITツールでなければ補助対象になりません。気になる受発注ソフトが見つかったら、契約を急ぐ前に、そのソフトを扱うベンダーがIT導入支援事業者として登録済みか、ツール自体が対象ツール一覧に掲載されているかを必ず確認してください。登録手続きには一定の期間がかかるため、未登録のソフトを前提に導入スケジュールを組んでしまうと、公募回に間に合わなくなるおそれがあります。</p>
+<p>自社が補助金の対象になるかどうかは、<a href="/#diagnosis">3分の適性診断（無料・8問）</a>で確かめられます。登録は不要で、その場で点数が出ます。</p>
 <h2 id="sec7">受発注ソフト導入から補助金活用までの流れ</h2>
 <p><strong>受発注ソフトの導入は、選定・契約から交付申請・実績報告まで4つの段階で進みます。</strong>枠を決めた後の全体像を把握しておくと、途中でつまずきにくくなります。</p>
 <figure><img src="/images/ai-hojokin-juhatchu-soft-toha/nagare.png" alt="受発注ソフト導入から補助金活用までの流れ: ソフト選定・比較、IT導入支援事業者と契約、交付申請・交付決定、導入・実績報告" loading="lazy"><figcaption>受発注ソフト導入から補助金活用までの流れ</figcaption></figure>
@@ -324,16 +327,16 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
       <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="64" height="64" loading="lazy" style="object-fit:cover;border-radius:50%">
       <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
       大阪・東成区のデジタルマーケティング&AI導入支援会社の代表。IT導入補助金(現・AI導入補助金)の申請支援50社+・採択通過率90%以上(※当社支援実績)。MEO事業「G-ran」運営。AI導入補助金の申請実務・採択ノウハウを毎日発信しています。
-      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">AI集客ラボ</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
+      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
       </div>
     </div>
   </div>
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/it-hojokin-saitakuritsu/">IT導入補助金の採択率を上げる5つの実務ポイント</a></li>
-<li><a href="/blog/it-hojokin-vendor/">IT導入補助金のベンダー(支援事業者)の選び方</a></li>
-<li><a href="/blog/it-hojokin-schedule/">IT導入補助金 令和8年度のスケジュールと逆算準備</a></li></ul>
+    <ul><li><a href="/blog/ai-hojokin-clinic-2026-schedule/">AI導入補助金2026｜クリニックの次の締切と今から動く3ステップ</a></li>
+<li><a href="/blog/ai-hojokin-clinic-katsuyou/">AI導入補助金はクリニックも対象？電子カルテ3分野の補助額</a></li>
+<li><a href="/blog/ai-hojokin-chatbot-donyu/">補助金でAIチャットボット導入｜対象条件と申請の流れ</a></li></ul>
   </div>
 </div>
 <aside class="side">
