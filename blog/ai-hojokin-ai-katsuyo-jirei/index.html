@@ -57,8 +57,8 @@
 :root{
   --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff;
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
-  --text:#212b3d; --muted:#5b6472; --dim:#6d7484;
-  --gold:#8a6d2a; --gold-strong:#8a6a20; --gold-ink:#171104;
+  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
+  --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
   --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -78,7 +78,7 @@ main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-tem
 .side{position:sticky;top:84px;display:grid;gap:16px}
 @media(max-width:1023px){main{grid-template-columns:minmax(0,1fr)}.side{position:static;max-width:760px}}
 .side .sbox{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;box-shadow:0 6px 20px rgba(29,52,97,.05)}
-.side .sbox p.t{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
+.side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
 .side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .side .sbox li{margin:0}
 .side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
@@ -90,14 +90,14 @@ main{max-width:1240px;margin:0 auto;padding:44px 22px 80px;display:grid;grid-tem
 .crumb{font-size:12px;color:var(--dim);margin-bottom:26px}
 .crumb a{color:var(--dim);text-decoration:none}
 .crumb a:hover{color:var(--gold-strong)}
-.cat{display:inline-block;font-size:11.5px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
+.cat{display:inline-block;font-size:12px;letter-spacing:.22em;color:var(--gold);border:1px solid var(--line2);border-radius:999px;padding:4px 14px;margin-bottom:16px}
 h1{font-family:var(--serif);font-weight:800;font-size:clamp(24px,4.6vw,34px);line-height:1.55;margin-bottom:18px;color:#1d3461}
 .meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--dim);padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:10px}
 .fresh-note{font-size:12.5px;color:var(--dim);margin:18px 0 6px}
 .fresh-note b{color:var(--muted);font-weight:500}
 .summary{background:var(--panel);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:20px 22px;margin:24px 0;font-size:15.5px}
 .toc{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:22px 26px;margin:30px 0}
-.toc p{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
+.toc p{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:12px}
 .toc ol{margin:0;padding-left:20px;font-size:14px;color:var(--muted)}
 .toc li{margin:7px 0}
 .toc a{text-decoration:none;color:var(--muted)}
@@ -128,7 +128,7 @@ article strong{color:var(--gold-strong)}
 .faq-sec details[open] summary::after{content:"−"}
 .faq-sec .a{padding:0 20px 18px;color:var(--muted);font-size:14px}
 .author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:44px 0;font-size:13.5px;color:var(--muted)}
-.author .sv-label{display:block;font-size:11px;letter-spacing:.14em;font-weight:700;color:#8a93a6;margin:0 0 14px}
+.author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:#5c6472;margin:0 0 14px}
 .author .sv-body{display:flex;gap:16px}
 .author .av{width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line2);flex:none}
 .author b{color:var(--text);font-size:14.5px}
@@ -136,7 +136,7 @@ article strong{color:var(--gold-strong)}
 .author .sv-links a{font-size:12.5px;font-weight:700;color:#1b3a6b;text-decoration:none;border-bottom:1px solid #b9c6dd}
 .author .sv-links a:hover{border-bottom-color:#1b3a6b}
 .rel{margin-top:50px}
-.rel p.t{font-family:var(--num);font-size:11.5px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
+.rel p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin-bottom:14px}
 .rel ul{list-style:none;margin:0;display:grid;gap:10px}
 .rel a{display:block;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 18px;font-size:14px;text-decoration:none;color:var(--text)}
 .rel a:hover{border-color:var(--line2)}
@@ -192,6 +192,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>私たちが申請支援の相談を受ける中でも、<mark>「AI活用事例」と聞くと生成AIチャットのような専用ツールを想像する経営者が多い</mark>という印象があります。実際には普段使っている会計ソフトや営業支援ツールにAI機能が搭載されているケースが大半で、既存業務の延長線上で導入できる点が特徴です。</p>
 <h2 id="sec2">【経理・会計】AI活用事例｜自動仕訳で処理を効率化</h2>
 <p><strong>クラウド会計とAIを組み合わせると、仕訳入力にかかる時間を大幅に削減できます。</strong>建設業を中心に、経理担当者の負担軽減を目的とした導入が進んでいます。</p>
+<p>当社は登録支援事業者として申請に伴走しています。事例を読むときは、<strong>自社と業種が同じかより、業務の流れが似ているか</strong>を見てください。</p>
 <figure><img src="/images/ai-hojokin-ai-katsuyo-jirei/bunya.png" alt="AI活用事例で押さえたい3つの分野: 経理・会計、営業支援、顧客対応" loading="lazy"><figcaption>AI活用事例で押さえたい3つの分野</figcaption></figure>
 
 <p><a href="https://it-shien.smrj.go.jp/applicant/example/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の公式事例集</a>には、多数の導入企業インタビューが掲載されており、その中でAI活用を明示する事例の一つが、従業員11〜30名の建設業者です。クラウド会計とAIを組み合わせて導入し、AIによる自動仕訳で経理処理の効率化を実現しました。<strong>領収書や請求書のデータをAIが自動で読み取り、勘定科目を推定して仕訳を作成する仕組み</strong>が中心です。</p>
@@ -203,9 +204,11 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>見積もり作成は、過去の類似案件を探して単価を調べ、条件に合わせて金額を調整するという手間のかかる作業です。<strong>AIが過去データから近い条件の案件を提示してくれれば、ゼロから金額を組み立てる時間を省ける</strong>ようになります。鍵を握るのは、蓄積された過去データの量と質。小規模事業者にとっては、限られた人員で受注機会を逃さないための実務的な効果だといえます。</p>
 <h2 id="sec4">【顧客対応】AIチャットボット活用事例</h2>
 <p><strong>AIチャットボットを導入すると、人員を増やさずに問い合わせ対応を効率化できます。</strong>24時間365日の一次対応をAIが担い、担当者は複雑な問い合わせに集中できる体制を作れます。</p>
+<p>実際の進め方は<a href="/blog/ai-hojokin-chatbot-donyu/">補助金でAIチャットボット導入｜対象条件と申請の流れ</a>でも扱っています。</p>
 <p><a href="https://mirasapo-plus.go.jp/hint/32651/" target="_blank" rel="noopener">中小企業庁担当者へのインタビュー記事</a>でも、AIの活用範囲としてチャット対応が明示的に挙げられています。<strong>よくある質問への回答をAIが自動化することで、担当者は個別対応が必要な案件に時間を割けるようになる</strong>という構造です。</p>
 <p>補助対象になる経費の幅も広い点が特徴です。<strong>ソフトウェア購入費だけでなく、最大2年分のクラウド利用料・導入コンサルティング費・社内研修費まで含まれます。</strong></p>
 <p>AIチャットボットは、想定外の質問に誤った回答をしてしまう可能性もゼロではありません。「AIで回答できない場合は有人対応に切り替える」導線を用意しておくと、顧客満足度を落とさずに運用できます。重要なのは、AI任せにしない有人対応との併用。導入して終わりではなく、研修費まで補助対象になることで、社内での定着まで見据えた導入がしやすくなっています。</p>
+<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec5">中小企業のAI活用率と効果｜調査データで見る実態</h2>
 <p><strong>中小企業のAI導入率は20.4%で、活用企業の86.7%が業務に効果があったと回答しています。</strong>事例だけでなく、統計データからも中小企業のAI活用が着実に広がっている実態が見えます。</p>
 <p><a href="https://www.smrj.go.jp/research_case/questionnaire/fbrion0000002pjw-att/202603_AI_point.pdf" target="_blank" rel="noopener">中小企業基盤整備機構の実態調査（2026年3月）</a>によると、AIを導入済みの中小企業は20.4%、導入を検討中の企業は18.6%で、合計39.0%が前向きな姿勢を示しています。導入済み企業に限ると、利用しているAIサービスの82.6%が生成AIという結果でした。</p>
@@ -285,6 +288,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 
 <p>申請段階でつまずきたくない方は、<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/">AI導入補助金の申請に失敗する5つの原因と対策</a>もあわせて確認してください。導入したいツールが会計・受発注系であれば、<a href="https://lp.7senses.co.jp/blog/ai-hojokin-juhatchu-soft-toha/">AI導入補助金の受発注ソフトとは？対象3枠と補助額を解説</a>が参考になります。</p>
 <p>AI活用にかかる費用感を先につかんでおきたい場合は、<a href="https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/">AI導入の費用相場｜中小企業の内訳と抑える3つのコツ</a>を確認してください。交付決定後の手続きは、<a href="https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/">AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ</a>で解説しています。</p>
+<p>自社が補助金の対象になるかどうかは、<a href="/#diagnosis">3分の適性診断（無料・8問）</a>で確かめられます。登録は不要で、その場で点数が出ます。</p>
 <h2 id="sec8">まとめ: AI活用事例は分野別に自社との近さで選ぶ</h2>
 <p>AI導入補助金のAI活用事例は、経理の自動仕訳・営業の見積書作成支援・AIチャットボットによる顧客対応という3分野に集中しています。いずれも通常枠を中心とした既存の申請枠で対象になり、専用の「AI枠」を探す必要はありません。</p>
 <p>中小企業のAI導入率は20.4%、活用企業の86.7%が効果を実感しているというデータがあります。AI活用は一部の先進企業だけの取り組みではなくなりつつあります。事例を選ぶときは、業種・規模が近い事例を探し、契約前にデモで自社の業務フローに合うかを確認してください。</p>
@@ -329,16 +333,16 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
       <img class="av" src="/assets/img/ceo.webp" alt="原口優" width="64" height="64" loading="lazy" style="object-fit:cover;border-radius:50%">
       <div><b>原口 優|セブンセンシズ株式会社 代表取締役</b><br>
       大阪・東成区のデジタルマーケティング&AI導入支援会社の代表。IT導入補助金(現・AI導入補助金)の申請支援50社+・採択通過率90%以上(※当社支援実績)。MEO事業「G-ran」運営。AI導入補助金の申請実務・採択ノウハウを毎日発信しています。
-      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">AI集客ラボ</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
+      <div class="sv-links"><a href="/about/">プロフィール詳細</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">運営メディア「AI集客ラボ」</a><a href="/#contact">監修者に相談する</a></div>
       </div>
     </div>
   </div>
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/it-hojokin-vendor/">IT導入補助金のベンダー(支援事業者)の選び方</a></li>
-<li><a href="/blog/it-hojokin-saitakuritsu/">IT導入補助金の採択率を上げる5つの実務ポイント</a></li>
-<li><a href="/blog/it-hojokin-schedule/">IT導入補助金 令和8年度のスケジュールと逆算準備</a></li></ul>
+    <ul><li><a href="/blog/monozukuri-hojokin-chusho-teigi/">ものづくり補助金は資本金オーバーでも対象？中小企業者7区分</a></li>
+<li><a href="/blog/kensetsugyou-denshishinsei-system/">建設業の電子申請システムはIT導入補助金の対象になる？3つの誤解</a></li>
+<li><a href="/blog/kensetsugyou-denshishinsei-etsuran/">建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い</a></li></ul>
   </div>
 </div>
 <aside class="side">
