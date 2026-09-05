@@ -54,6 +54,8 @@ faq:
 
 通常枠の採択率は2026年7月公表分で43.59%と、半数近くが不採択になっています。思ったより狭き門だと感じる経営者も多いはずです。
 
+
+関連して、[AI導入補助金の不採択理由｜審査で落ちる6つのパターン](/blog/ai-hojokin-fusaitaku-riyu/)もあわせてご確認ください。
 実際の進め方は[AI導入補助金2026｜クリニックの次の締切と今から動く3ステップ](/blog/ai-hojokin-clinic-2026-schedule/)でも扱っています。
 
 当社はAI導入補助金の登録支援事業者として申請を支援していますが、不採択の連絡を受けてから相談に来られる方の多くは、**「何が足りなかったか」を通知書からは読み取れていません**。以下は、支援の現場で繰り返し見てきたつまずきです。
@@ -73,6 +75,8 @@ faq:
 
 GビズIDとSECURITY ACTIONの取得が遅れると、申請そのものに間に合いません。この2つは交付申請の前提条件であり、後回しにできない手続きです。
 
+
+関連して、[AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ](/blog/ai-hojokin-security-action-hoshi2/)もあわせてご確認ください。
 <a href="https://it-shien.smrj.go.jp/applicant/flow/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026事務局の申請手続きフロー</a>によると、**交付申請には「GビズIDプライム」と、IPA（情報処理推進機構）の「SECURITY ACTION」の宣言（★一つ星または★★二つ星）が必須**です。GビズIDプライムの発行には概ね2週間、SECURITY ACTIONの宣言済アカウントID発行には概ね2〜3日かかると案内されています。
 
 <div class="caution-box"><span class="box-title">注意: GビズIDは即日発行できない</span><br>締切の直前に気づいて申請しても、発行が間に合わず応募自体ができなくなります。締切から逆算して、遅くとも1か月前には取得手続きを始めてください。</div>
@@ -123,6 +127,8 @@ GビズIDとSECURITY ACTIONの取得が遅れると、申請そのものに間�
 
 ソフトウェア導入が中心ならデジタル化・AI導入補助金、設備投資が中心なら中小企業省力化投資補助金が向いています。目的に合わない制度を選ぶこと自体が失敗の入り口になります。
 
+
+関連して、[建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い](/blog/kensetsugyou-denshishinsei-etsuran/)もあわせてご確認ください。
 関連する内容は[補助金の電子申請はいつから義務化？中小企業が今やること](/blog/hojokin-denshishinsei-gimuka-itsukara/)でも扱っています。
 
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠の補助率・補助上限額のページ</a>と<a href="https://shoryokuka.smrj.go.jp/ippan/" target="_blank" rel="noopener">中小企業省力化投資補助金（一般型）公式サイト</a>の情報を整理すると、次のような違いがあります。
