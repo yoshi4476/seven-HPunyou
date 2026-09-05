@@ -46,6 +46,8 @@ faq:
 
 **「建設業 電子申請システム」という言葉には、経審・許可用の行政ポータルと、民間の業務ツールという別の意味が混ざっています。**どちらを指しているかで、補助金の使える・使えないが真逆になります。
 
+つまずきやすい点は[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)で整理しています。
+
 費用の目安は、[建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](/blog/kensetsugyou-denshishinsei-gyoseishoshi/)で解説しています。
 
 実際の進め方を先に押さえるなら、[建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い](/blog/kensetsugyou-denshishinsei-etsuran/)が参考になります。
