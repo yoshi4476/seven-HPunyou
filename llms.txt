@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-gyoseishoshi/): 建設業の電子申請（JCIP）を行政書士に依頼すべきか、費用相場（新規許可で法定手数料9万円+報酬15万円台〜）と自分で申請する場合の違い、G
 - [AI導入補助金の不採択理由｜審査で落ちる6つのパターン](https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/): AI導入補助金が不採択になる理由は、事業計画書の論理性不足・数値裏付けの欠如・加点不足・対象外経費・過去申請との重複・交付要件未達の6つに整
 - [自動車整備業のIT導入補助金2026｜スキャンツールは対象外になる理由](https://lp.7senses.co.jp/blog/it-hojokin-jidousha-seibi/): IT導入補助金（デジタル化・AI導入補助金2026）は自動車整備業の予約・見積・車検管理システムに使えますが、特定整備で義務化されたスキャン
 - [建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-etsuran/): 建設業許可・経営事項審査を電子申請したJCIPの記録は、2023年4月開始の電子閲覧システムとCIICの2つで無料検索できます。閲覧できる範
@@ -142,4 +143,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-gyoseishoshi/): 建設業の電子申請（JCIP）を行政書士に依頼すべきか、費用相場（新規許可で法定手数料9万円+報酬15万円台〜）と自分で申請する場合の違い、GビズIDでの代理申請の仕組みを2026年9月時点の情報で解説します。
