@@ -38,6 +38,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [歯科医院のIT導入補助金｜対象4分野と医療機器の落とし穴](https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/): 歯科医院のIT導入補助金は2026年度も使え、正式名称は「デジタル化・AI導入補助金2026」です。対象になる4つのツール、口腔内スキャナー
+- [ものづくり補助金は自動車整備業も対象｜設備投資750万円目安](https://lp.7senses.co.jp/blog/monozukuri-hojokin-jidousha-seibi/): ものづくり補助金は自動車整備業のリフト・タイヤチェンジャー・塗装ブースなど設備投資に使えます。対象になる5分野とスキャンツールの扱い、3つの
 - [福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](https://lp.7senses.co.jp/blog/fukuoka-kensetsugyou-denshishinsei/): 福岡県の建設業許可・経審の電子申請JCIPは2025年9月1日開始。収入証紙が使えない手数料の払い方、承継認可申請が非対応な点、本庁と県土整
 - [建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-gyoseishoshi/): 建設業の電子申請（JCIP）を行政書士に依頼すべきか、費用相場（新規許可で法定手数料9万円+報酬15万円台〜）と自分で申請する場合の違い、G
 - [AI導入補助金の不採択理由｜審査で落ちる6つのパターン](https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/): AI導入補助金が不採択になる理由は、事業計画書の論理性不足・数値裏付けの欠如・加点不足・対象外経費・過去申請との重複・交付要件未達の6つに整
@@ -145,4 +146,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [ものづくり補助金は自動車整備業も対象｜設備投資750万円目安](https://lp.7senses.co.jp/blog/monozukuri-hojokin-jidousha-seibi/): ものづくり補助金は自動車整備業のリフト・タイヤチェンジャー・塗装ブースなど設備投資に使えます。対象になる5分野とスキャンツールの扱い、3つの申請枠の補助率・上限額を2026年9月時点の情報で解説します。
