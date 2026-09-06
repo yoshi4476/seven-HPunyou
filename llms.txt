@@ -147,3 +147,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/): 神奈川県の建設業許可・経営事項審査の電子申請JCIPは2023年1月10日から利用可能です。手数料はペイジー払いのみで収入証紙は使えず、承継認可申請は対象外です。窓口の連絡先や通知書の受け取り方も2026年9月時点の情報で解説します。
