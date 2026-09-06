@@ -50,6 +50,8 @@ faq:
 
 **建設業の電子申請を閲覧する方法は、申請書類を見る「JCIP電子閲覧システム」と経審の点数を見る「CIIC」の2つです。**同じ「経審」を指していても、見たい情報によって使う窓口が変わります。
 
+つまずきやすい点は[大阪府のJCIP電子申請｜GビズID取得に2週間かかる注意点](/blog/osaka-kensetsugyou-denshishinsei/)で整理しています。
+
 選ぶときの基準を先に押さえるなら、[神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](/blog/kanagawa-kensetsugyou-denshishinsei/)が参考になります。
 
 つまずきやすい点は[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)でも扱っています。
