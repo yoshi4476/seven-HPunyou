@@ -48,8 +48,13 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-09-06</lastmod>
+    <lastmod>2026-09-07</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/</loc>
@@ -580,9 +585,5 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/</loc>
-    <lastmod>2026-09-07</lastmod>
   </url>
 </urlset>

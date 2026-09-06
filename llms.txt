@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/): 神奈川県の建設業許可・経営事項審査の電子申請JCIPは2023年1月10日から利用可能です。手数料はペイジー払いのみで収入証紙は使えず、承継
 - [歯科医院のIT導入補助金｜対象4分野と医療機器の落とし穴](https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/): 歯科医院のIT導入補助金は2026年度も使え、正式名称は「デジタル化・AI導入補助金2026」です。対象になる4つのツール、口腔内スキャナー
 - [小規模事業者持続化補助金｜自動車整備業の経費区分3つと注意点](https://lp.7senses.co.jp/blog/jizokuka-hojokin-jidousha-seibi/): 自動車整備業は小規模事業者持続化補助金の対象で、サービス業として従業員5人以下なら申請できます。看板・チラシ・HP制作等の対象経費、部品代・
 - [ものづくり補助金は自動車整備業も対象｜設備投資750万円目安](https://lp.7senses.co.jp/blog/monozukuri-hojokin-jidousha-seibi/): ものづくり補助金は自動車整備業のリフト・タイヤチェンジャー・塗装ブースなど設備投資に使えます。対象になる5分野とスキャンツールの扱い、3つの
@@ -147,4 +148,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/): 神奈川県の建設業許可・経営事項審査の電子申請JCIPは2023年1月10日から利用可能です。手数料はペイジー払いのみで収入証紙は使えず、承継認可申請は対象外です。窓口の連絡先や通知書の受け取り方も2026年9月時点の情報で解説します。
