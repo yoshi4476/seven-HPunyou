@@ -148,3 +148,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [大阪府のJCIP電子申請｜GビズID取得に2週間かかる注意点](https://lp.7senses.co.jp/blog/osaka-kensetsugyou-denshishinsei/): 大阪府の建設業許可・経営事項審査の電子申請JCIPは2025年6月2日開始です。GビズIDプライムの取得に約2週間かかる点、手数料はペイジーかPOS用紙郵送の2通りである点を2026年9月時点の情報で解説します。
