@@ -50,6 +50,8 @@ faq:
 
 **建設業の電子申請を閲覧する方法は、申請書類を見る「JCIP電子閲覧システム」と経審の点数を見る「CIIC」の2つです。**同じ「経審」を指していても、見たい情報によって使う窓口が変わります。
 
+選ぶときの基準を先に押さえるなら、[神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](/blog/kanagawa-kensetsugyou-denshishinsei/)が参考になります。
+
 つまずきやすい点は[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)でも扱っています。
 
 費用の目安は[建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](/blog/kensetsugyou-denshishinsei-gyoseishoshi/)でも扱っています。
@@ -161,6 +163,9 @@ JCIPとCIICのどちらを見るべきか迷ったときは、「これから申
 <details><summary>紙で提出した許可申請書はJCIPで閲覧できますか？</summary><p class="faq-a">できません。JCIPは電子申請分のみが対象で、紙提出分は地方整備局の窓口で確認します。</p></details>
 <details><summary>経営事項審査の結果はいつまで検索できますか？</summary><p class="faq-a">CIICでは審査基準日から1年7か月の有効期間内の結果が検索対象になります。</p></details>
 </div>
+
+
+自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
 ## まとめ: 見たい情報で窓口を使い分ける
 
