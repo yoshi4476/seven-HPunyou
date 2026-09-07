@@ -149,3 +149,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [東京都のJCIP電子申請｜楽天銀行が使えない支払いの注意点](https://lp.7senses.co.jp/blog/tokyo-kensetsugyou-denshishinsei/): 東京都の建設業許可・経営事項審査の電子申請JCIPは2023年10月23日開始。手数料はペイジー決済のみで収入証紙は不可、楽天銀行のオンライン方式は対象外です。2026年9月時点の情報で解説します。
