@@ -93,6 +93,8 @@ faq:
 
 **GビズID取得からオンライン決済まで、4つの手順で申請が完了します。**手順自体はシンプルですが、GビズIDの取得だけは事前に済ませておく必要があります。
 
+つまずきやすい点については、[東京都のJCIP電子申請｜楽天銀行が使えない支払いの注意点](/blog/tokyo-kensetsugyou-denshishinsei/)にまとめています。
+
 つまずきやすい点は、[大阪府のJCIP電子申請｜GビズID取得に2週間かかる注意点](/blog/osaka-kensetsugyou-denshishinsei/)で解説しています。
 
 選ぶときの基準は[神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](/blog/kanagawa-kensetsugyou-denshishinsei/)でも扱っています。
