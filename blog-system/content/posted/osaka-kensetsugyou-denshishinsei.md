@@ -96,6 +96,8 @@ POS用紙郵送方式は、システムから出力したPOS用紙を金融機�
 
 **GビズIDプライムの申請から手数料の決済まで、4つの手順で申請が完了します。**手順自体はシンプルですが、最初のGビズID申請だけは前倒しで動く必要があります。
 
+つまずきやすい点は、[東京都のJCIP電子申請｜楽天銀行が使えない支払いの注意点](/blog/tokyo-kensetsugyou-denshishinsei/)で解説しています。
+
 <figure><img src="/images/osaka-kensetsugyou-denshishinsei/junbi-flow.png" alt="大阪府で電子申請を準備する4つの手順: GビズIDプライムを申請、審査完了を待つ（約2週間）、JCIPにログインして入力、手数料を決済する" loading="lazy"><figcaption>大阪府で電子申請を準備する4つの手順</figcaption></figure>
 
 ### ステップ1: GビズIDプライムを申請する
