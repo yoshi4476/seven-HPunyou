@@ -40,6 +40,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [AI開発補助金とは？導入型との違いと使える3つの制度](https://lp.7senses.co.jp/blog/ai-kaihatsu-hojokin/): AI開発補助金という名前の単独制度はありません。既製ツールを入れる「デジタル化・AI導入補助金」とは別枠で、自社でAIを開発する場合に使える
 - [IT導入補助金を名古屋で使う｜国・県・市の3制度と相談窓口](https://lp.7senses.co.jp/blog/it-hojokin-nagoya/): 名古屋でIT導入補助金（現・デジタル化・AI導入補助金2026）を使いたい中小企業向けに、全国共通の国の制度と名古屋市・愛知県の独自補助金の
 - [IT導入補助金のおすすめの選び方｜5つの基準と4つの枠](https://lp.7senses.co.jp/blog/it-hojokin-osusume/): IT導入補助金（デジタル化・AI導入補助金2026）のおすすめは特定のツール名ではなく選び方の基準です。ランキングサイトに頼らずツール・事業
+- [ベンダー登録とは？IT導入補助金の確認方法と2つのリスク](https://lp.7senses.co.jp/blog/vendor-touroku-toha/): ベンダー登録とは、IT導入支援事業者が国の事業に事前登録している状態を指します。登録済みか確認する2つの方法、未登録ベンダーと契約するリスク
 - [神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/): 神奈川県の建設業許可・経営事項審査の電子申請JCIPは2023年1月10日から利用可能です。手数料はペイジー払いのみで収入証紙は使えず、承継
 - [大阪府のJCIP電子申請｜GビズID取得に2週間かかる注意点](https://lp.7senses.co.jp/blog/osaka-kensetsugyou-denshishinsei/): 大阪府の建設業許可・経営事項審査の電子申請JCIPは2025年6月2日開始です。GビズIDプライムの取得に約2週間かかる点、手数料はペイジー
 - [東京都のJCIP電子申請｜楽天銀行が使えない支払いの注意点](https://lp.7senses.co.jp/blog/tokyo-kensetsugyou-denshishinsei/): 東京都の建設業許可・経営事項審査の電子申請JCIPは2023年10月23日開始。手数料はペイジー決済のみで収入証紙は不可、楽天銀行のオンライ
@@ -153,4 +154,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [ベンダー登録とは？IT導入補助金の確認方法と2つのリスク](https://lp.7senses.co.jp/blog/vendor-touroku-toha/): ベンダー登録とは、IT導入支援事業者が国の事業に事前登録している状態を指します。登録済みか確認する2つの方法、未登録ベンダーと契約するリスク、登録済みでも確認すべき3つのポイントを2026年9月時点の情報で整理します。
