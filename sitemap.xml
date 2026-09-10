@@ -57,6 +57,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/nail-salon-gijutsu-check/</loc>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/nail-salon-hojokin-hikaku/</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.7</priority>
@@ -630,9 +635,5 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-schedule/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/nail-salon-gijutsu-check/</loc>
-    <lastmod>2026-09-10</lastmod>
   </url>
 </urlset>
