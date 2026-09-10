@@ -41,3 +41,5 @@
 /blog/ai-hojokin-inshokuten-katsuyou/  /blog/ai-hojokin-kensetsugyou-katsuyou/  301
 # 重複統合 (2026-08-08): 活用事例が2本になっていた
 /blog/ai-hojokin-katsuyou-jirei-2026/ /blog/ai-hojokin-ai-katsuyo-jirei/ 301
+# 重複統合 (2026-09-11): 既存の法人向け必要書類記事と重複していたため統合
+/blog/ai-hojokin-hitsuyoshorui-houjin/ /blog/ai-hojokin-hitsuyo-shorui-hojin/ 301
