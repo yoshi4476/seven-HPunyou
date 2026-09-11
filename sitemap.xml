@@ -48,8 +48,13 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-09-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/chusho-kigyo-joseikin/</loc>
@@ -519,11 +524,6 @@
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-seizougyou-jirei-2026/</loc>
     <lastmod>2026-08-02</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/</loc>
-    <lastmod>2026-08-01</lastmod>
     <priority>0.7</priority>
   </url>
   <url>

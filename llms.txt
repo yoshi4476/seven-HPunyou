@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [AI導入補助金の着金はいつ？実績報告後の日数目安](https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/): AI導入補助金の着金は事務局が日数を公表しておらず、確定検査を経て1〜2か月程度が目安です。実績報告から着金までの流れ、遅れる5つの原因、資
 - [中小企業の助成金とは？補助金との違いと探し方4ステップ](https://lp.7senses.co.jp/blog/chusho-kigyo-joseikin/): 中小企業が使える助成金は、審査で採択される「補助金」と要件を満たせば受給できる「助成金」の2種類に分かれます。違いの見分け方と、IT・AI導
 - [ネイルサロンの技術チェックAI化｜補助金の対象基準](https://lp.7senses.co.jp/blog/nail-salon-gijutsu-check/): ネイルサロンの技術チェック（採用試験・研修進捗・仕上がり検品）のAI化は、教育訓練プロセスに該当し登録済みならIT導入補助金の対象です。対象
 - [ネイルサロンの補助金3種を比較｜IT導入・ものづくり・持続化](https://lp.7senses.co.jp/blog/nail-salon-hojokin-hikaku/): ネイルサロンが使える補助金は、IT導入補助金・ものづくり補助金・小規模事業者持続化補助金の3種類です。対象範囲・補助上限額・向いているケース
@@ -131,7 +132,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/): AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年
 - [AI導入補助金を小売業で活用する方法｜2026年版・事例と申請の流れ](https://lp.7senses.co.jp/blog/ai-hojokin-kourigyou-katsuyou/): 小売業でAI導入補助金(正式名称:IT導入補助金)を活用する方法を2026年版で解説。レジ・在庫・受発注・集客に使える活用シーン、補助上限3
 - [AI導入補助金 製造業の事例2026｜採択の進め方と着金まで](https://lp.7senses.co.jp/blog/ai-hojokin-seizougyou-jirei-2026/): AI導入補助金の製造業向け活用事例を2026年最新で解説。350万円採択の実例、対象経費、申請から着金まで約2〜3ヶ月の流れ、採択されやすい
-- [AI導入補助金の着金はいつ？2026年 申請から入金までの期間と流れ](https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/): AI導入補助金の着金はいつ？申請から入金まで約2〜3ヶ月が目安です。後払い（精算払い）の仕組み、着金までの5ステップ、遅れる原因と資金繰り・
 - [AI導入補助金の会計ソフト対象条件｜2026年版 選び方と申請手順](https://lp.7senses.co.jp/blog/ai-hojokin-kaikei-soft-taisho/): AI導入補助金で会計ソフトは対象になるのか。2026年最新の対象・非対象の見分け方、補助額と自己負担、申請の流れ、失敗しない選び方を中小企業
 - [AI導入補助金でLP制作は補助対象？2026年最新の条件と流れ](https://lp.7senses.co.jp/blog/ai-hojokin-lp-seisaku-hojo/): AI導入補助金でLP制作費は補助対象になるのか、2026年8月時点の条件を解説。単体制作は原則対象外だが、業務システムの一部なら対象になり得
 - [AI導入補助金 個人事業主の必要書類｜2026年最新の準備チェックリスト](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-kojin/): 個人事業主がAI導入補助金を申請するときの必要書類を2026年最新版で解説。確定申告書・gBizIDプライム・本人確認書類の取得手順と、書類
