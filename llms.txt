@@ -160,3 +160,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [建設業許可の電子申請｜JCIPでできる3手続きと5ステップ](https://lp.7senses.co.jp/blog/kensetsugyou-kyoka-denshishinsei/): 建設業許可の電子申請（JCIP）は、新規・許可更新・決算報告等の変更届出に対応しています。準備するもの3つと申請までの5ステップ、DX化とAI導入補助金・IT導入補助金の関係を2026年9月時点の情報で解説します。
