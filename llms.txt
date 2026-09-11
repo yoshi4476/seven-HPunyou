@@ -158,3 +158,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [宿泊業の補助金は3つの入口｜目的別の選び方と優先順位](https://lp.7senses.co.jp/blog/shukuhakugyou-hojokin-erabikata/): 「宿泊業 補助金」で検索する旅館・ホテル経営者向けに、デジタル化・AI導入補助金、新事業進出等補助金、持続化補助金という3つの入口を比較し、目的別の選び方を2026年9月時点の情報で解説します。
