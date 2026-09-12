@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-hojin/): AI導入補助金の必要書類は、法人の場合GビズID・履歴事項全部証明書・納税証明書など8点です。取得の順番と有効期限の注意点を2026年9月時
 - [美容室の助成金とは｜歩合給でも使える5制度と金額の目安](https://lp.7senses.co.jp/blog/biyoushitsu-joseikin/): 美容室が使える助成金は業務改善助成金・キャリアアップ助成金など5制度が中心です。歩合給の美容師でも対象になるか、補助金との違い、支給額の目安
 - [建設業許可の電子申請｜JCIPでできる3手続きと5ステップ](https://lp.7senses.co.jp/blog/kensetsugyou-kyoka-denshishinsei/): 建設業許可の電子申請（JCIP）は、新規・許可更新・決算報告等の変更届出に対応しています。準備するもの3つと申請までの5ステップ、DX化とA
 - [AI導入補助金の着金はいつ？実績報告後の日数目安](https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/): AI導入補助金の着金は事務局が日数を公表しておらず、確定検査を経て1〜2か月程度が目安です。実績報告から着金までの流れ、遅れる5つの原因、資
@@ -143,7 +144,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [AI導入補助金の申請代行を京都で頼む前に｜2026年最新・費用と選び方](https://lp.7senses.co.jp/blog/ai-hojokin-kyoto-shinsei-daiko/): 京都でAI導入補助金の申請代行を検討する中小企業向けに、費用相場・料金体系・失敗しない業者の選び方・着金までの流れを2026年最新情報で解説
 - [AI導入補助金 福岡の相談窓口2026｜採択率を上げる無料相談の使い方](https://lp.7senses.co.jp/blog/ai-hojokin-fukuoka-soudan/): AI導入補助金を福岡で相談したい経営者向け。福岡商工会議所・福岡県よろず支援拠点・民間サポート会社の使い分けから、オンライン相談、相談先の選
 - [AI導入補助金 名古屋のサポート先の選び方【2026年版】採択率・費用・流れを解説](https://lp.7senses.co.jp/blog/ai-hojokin-nagoya-support/): AI導入補助金を名古屋で申請するときのサポート先の選び方を2026年最新で解説。採択実績・費用相場・着金までの流れ・必要書類・避けるべき業者
-- [AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-hojin/): AI導入補助金(正式名称:IT導入補助金)の法人の必要書類を2026年最新版で解説。履歴事項全部証明書・gBizID・SECURITY AC
 - [AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-2star/): AI導入補助金の申請に必要なSECURITY ACTION二つ星を解説。一つ星との違い、宣言の手順、よくあるつまずきと対策を中小企業経営者向
 - [2026年 AI導入補助金でホームページ制作は対象?対象範囲と注意点を解説](https://lp.7senses.co.jp/blog/ai-hojokin-homepage-taisho/): AI導入補助金でホームページ制作は対象になるのか。単独のサイト制作は対象外になりやすく、業務効率化機能の有無が判断軸です。対象範囲・対象外費
 - [AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】](https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/): AI導入補助金とは、IT導入補助金の2026年(令和8年)における通称です。両者は同じ制度で、補助上限350万円・補助率1/2〜3/4。名前
