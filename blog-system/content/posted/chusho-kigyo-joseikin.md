@@ -68,8 +68,6 @@ faq:
 
 **中小企業が使える公的資金は、国の補助金・国の助成金・自治体の補助金や助成金という3つに分類できます。**どこが窓口かによって、探し方も申請の進め方も変わります。
 
-
-関連して、[社会保険の電子申請義務化｜中小企業が対象になる3つの条件](/blog/shakaihoken-denshishinsei-gimuka-chusho/)もあわせてご確認ください。
 <figure><img src="/images/chusho-kigyo-joseikin/bunrui3.png" alt="中小企業が使える助成金・補助金の3分類: 国の補助金は経済産業省系で審査により採択、国の助成金は厚生労働省系で要件を満たせば受給、自治体の補助金・助成金は地域限定で内容も多様"><figcaption>中小企業が使える助成金・補助金の3分類</figcaption></figure>
 
 国の補助金は、IT導入やものづくり投資など、経済産業省・中小企業庁が所管する制度が中心です。<a href="https://mirasapo-plus.go.jp/" target="_blank" rel="noopener">中小企業庁が運営する「ミラサポplus」</a>では、実施中の補助金公募スケジュールをまとめて確認できます。
