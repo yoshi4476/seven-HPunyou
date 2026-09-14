@@ -468,5 +468,23 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
   <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="/privacy/">プライバシーポリシー</a></nav>
   <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
 </footer>
+<script>
+/* 記事本文のCTAクリックをGA4へ送る。
+   これが無いと、記事から診断・相談へ何人動いたかが分からない。
+   実際、記事ページには計測が無く、CTAが何度押されても記録が残っていなかった。 */
+document.addEventListener('click', function (e) {
+  var a = e.target && e.target.closest && e.target.closest('a');
+  if (!a || typeof gtag !== 'function') return;
+  var href = a.getAttribute('href') || '';
+  var isCta = (a.className || '').indexOf('cta') >= 0 ||
+              /#contact|#diagnosis|\/contact/.test(href);
+  if (!isCta) return;
+  gtag('event', 'cta_click', {
+    cta_id: (a.textContent || '').trim().slice(0, 40),
+    link_url: href,
+    page_path: location.pathname
+  });
+}, true);
+</script>
 </body>
 </html>
