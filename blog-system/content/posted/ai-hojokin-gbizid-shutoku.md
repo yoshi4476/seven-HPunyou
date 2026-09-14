@@ -107,6 +107,8 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 
 **書類申請では、印鑑証明書と登録申請書を用意し、運用センターへ郵送します。**マイナンバーカードがない場合の代替手段です。
 
+
+関連して、[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もあわせてご確認ください。
 登録申請書はGビズID公式サイトからダウンロードでき、法人であれば代表者印を押印します。印鑑証明書は発行から3か月以内など有効期限が定められているため、申請の直前に取得してください。書類一式がそろったら、公式サイトの案内に従って運用センター宛てに郵送します。
 
 <div class="definition-box"><span class="term">印鑑証明書とは</span>、法務局に登録した代表者印（実印）が本物であることを証明する公的書類です。法人の場合は登記所、個人事業主の場合は市区町村の窓口で取得します。</div>
@@ -133,6 +135,8 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 
 **GビズID取得のつまずきは、名義の誤りと本人確認書類の不備に集中しています。**制度自体は難しくなく、確認不足が遅延の主な原因です。
 
+
+関連して、[e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](/blog/egov-denshishinsei-kojinjigyonushi/)もあわせてご確認ください。
 <figure><img src="/images/ai-hojokin-gbizid-shutoku/ngok.png" alt="GビズID申請のNG・OK比較: NG例は代表者以外の名義・期限切れカード・SMS未対応番号、OK例は代表者本人名義・有効期限確認・SMS対応番号"><figcaption>GビズID申請のNG・OK</figcaption></figure>
 
 <div class="caution-box"><span class="box-title">注意: 名義の取り違えは<span class="txt-red">NG</span></span><br>GビズIDプライムは法人代表者または個人事業主本人の名義で取得する必要があります。<span class="big">経理担当者や役員名義での取得は認められません。</span></div>
