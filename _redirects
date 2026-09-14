@@ -43,3 +43,5 @@
 /blog/ai-hojokin-katsuyou-jirei-2026/ /blog/ai-hojokin-ai-katsuyo-jirei/ 301
 # 重複統合 (2026-09-11): 既存の法人向け必要書類記事と重複していたため統合
 /blog/ai-hojokin-hitsuyoshorui-houjin/ /blog/ai-hojokin-hitsuyo-shorui-hojin/ 301
+# 重複統合 (2026-09-15): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
+/blog/ai-hojokin-hitsuyo-shorui-hojin/ /blog/ai-hojokin-hitsuyo-shorui-kojin/ 301
