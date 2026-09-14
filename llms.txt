@@ -166,3 +166,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [飲食店のAI導入補助金｜落ちる理由と現場の6つの原因【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-ochiru-riyu/): 飲食店がAI導入補助金で不採択になる理由を、レジ刷新の説明不足からハードウェアの対象外まで、現場の相談で見えた6つの原因から2026年9月時点の情報で解説します。
