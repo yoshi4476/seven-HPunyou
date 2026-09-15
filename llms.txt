@@ -167,3 +167,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [エステサロンのAI導入補助金の補助額の目安｜規模別に3パターンで解説](https://lp.7senses.co.jp/blog/esute-ai-hojokin-hojogaku-mokuyasu/): エステサロンがAI導入補助金でいくら補助されるかを、1人サロン・スタッフ5名前後・複数店舗の3パターンで試算します。対象になるAIツール3分野と対象外になる経費も2026年9月時点の情報でまとめました。
