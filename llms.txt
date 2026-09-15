@@ -166,3 +166,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [飲食店のAI導入補助金｜申請の進め方5ステップと準備物【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-shinsei-susumekata/): 飲食店がAI導入補助金を申請する進め方を、ツール選定・事業者選び・閑散期の公募回選定・営業を止めない導入・実績報告まで5ステップで2026年9月時点の情報で解説します。
