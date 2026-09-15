@@ -37,6 +37,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 ## ブログ記事(全記事・新しい順)
 
+- [エステサロンのAI導入補助金の補助額の目安｜規模別に3パターンで解説](https://lp.7senses.co.jp/blog/esute-ai-hojokin-hojogaku-mokuyasu/): エステサロンがAI導入補助金でいくら補助されるかを、1人サロン・スタッフ5名前後・複数店舗の3パターンで試算します。対象になるAIツール3分
 - [飲食店のAI導入補助金｜落ちる理由と現場の6つの原因【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-ochiru-riyu/): 飲食店がAI導入補助金で不採択になる理由を、レジ刷新の説明不足からハードウェアの対象外まで、現場の相談で見えた6つの原因から2026年9月時
 - [飲食店のAI導入補助金｜申請の進め方5ステップと準備物【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-shinsei-susumekata/): 飲食店がAI導入補助金を申請する進め方を、ツール選定・事業者選び・閑散期の公募回選定・営業を止めない導入・実績報告まで5ステップで2026年
 - [飲食店のAI導入補助金 対象要件｜資本金・従業員数など5つの基準【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-taisho-youken/): 飲食店がAI導入補助金の対象要件を満たすかを、資本金・従業員数・個人事業主の基準から整理。対象外になる3つのケースも2026年9月時点の情報
@@ -167,4 +168,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [エステサロンのAI導入補助金の補助額の目安｜規模別に3パターンで解説](https://lp.7senses.co.jp/blog/esute-ai-hojokin-hojogaku-mokuyasu/): エステサロンがAI導入補助金でいくら補助されるかを、1人サロン・スタッフ5名前後・複数店舗の3パターンで試算します。対象になるAIツール3分野と対象外になる経費も2026年9月時点の情報でまとめました。
