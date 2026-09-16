@@ -168,3 +168,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [クリーニング店のAI導入補助金 対象要件｜取次店とフランチャイズの判定【2026年】](https://lp.7senses.co.jp/blog/kurininguten-ai-hojokin-taisho-youken/): クリーニング店の対象要件は、資本金5,000万円以下か従業員100人以下で判定します。取次店・フランチャイズ加盟店は契約主体の規模で見る点を、業界特有の注意点として解説します。
