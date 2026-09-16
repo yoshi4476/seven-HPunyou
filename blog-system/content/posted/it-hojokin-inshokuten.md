@@ -52,12 +52,15 @@ faq:
 **IT導入補助金は名称が変わっただけで、飲食店向けの支援内容は今も続いています。**検索で使われる「IT導入補助金」という言葉自体が古い名称になっただけで、制度そのものが終了したわけではありません。
 
 
-関連して、[製造業のIT導入補助金｜技能継承と人手不足への活かし方](/blog/it-hojokin-seizougyou/)もあわせてご確認ください。
-つまずきやすい点は、[美容室のIT導入補助金｜対象ツール3分野と対象外の注意点](/blog/it-hojokin-biyoushitsu/)で解説しています。
+つまずきやすい点を先に押さえるなら、[歯科医院のIT導入補助金](/hojokin/it-hojokin-shika-iin/)が参考になります。
+
+関連する内容については、[製造業のIT導入補助金](/blog/it-hojokin-seizougyou/)にまとめています。
+
+つまずきやすい点は、[美容室のIT導入補助金](/blog/it-hojokin-biyoushitsu/)で解説しています。
 
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
 
-<a href="https://www.asasimple.jp/it-hojyokin-2026/" target="_blank" rel="noopener">IT導入補助金の変更点を整理した解説記事</a>によると、**2026年度から「IT導入補助金」は正式に「デジタル化・AI導入補助金」へ改称されました**。最大450万円という補助上限額の骨格自体は変わっておらず、通常枠・インボイス対応類型・電子取引類型の3つに整理されています。
+<a href="https://www.asasimple.jp/it-hojyokin-2026/" target="_blank" rel="noopener">IT導入補助金の変更点を整理した解説記事</a>によると、<strong>2026年度から「IT導入補助金」は正式に「デジタル化・AI導入補助金」へ改称されました</strong>。最大450万円という補助上限額の骨格自体は変わっておらず、通常枠・インボイス対応類型・電子取引類型の3つに整理されています。
 
 <figure><img src="/images/it-hojokin-inshokuten/name-change.png" alt="IT導入補助金の呼び方の変遷: 〜2025年度はIT導入補助金として運用、2026年度はデジタル化・AI導入補助金に改称、最大450万円の枠の骨格は継続" loading="lazy"><figcaption>IT導入補助金の呼び方の変遷</figcaption></figure>
 
@@ -72,8 +75,9 @@ faq:
 **飲食店は中小企業基本法上「小売業」に区分され、資本金5000万円以下または従業員50人以下が基準です。**製造業やサービス業とは基準が異なるため、自店の規模で確認しておく必要があります。
 
 
-関連して、[宿泊業のIT導入補助金は有利？20人以下特例と対象ツール](/blog/it-hojokin-shukuhakugyou/)もあわせてご確認ください。
-<a href="https://houseikyoku.sangiin.go.jp/column/column084.htm" target="_blank" rel="noopener">参議院法制局が整理した中小企業基本法の業種別基準</a>では、製造業その他は資本金3億円以下・従業員300人以下、卸売業は資本金1億円以下・従業員100人以下、サービス業は資本金5000万円以下・従業員100人以下、小売業は資本金5000万円以下・従業員50人以下と定められています。
+あわせて[宿泊業のIT導入補助金は有利？](/blog/it-hojokin-shukuhakugyou/)もご覧ください。
+
+<a href="https://houseikyoku.sangiin.go.jp/column/column084.htm" target="_blank" rel="noopener">参議院法制局が整理した中小企業基本法の業種別基準</a>では、製造業その他は資本金3億円以下・従業員300人以下、卸売業は資本金1億円以下・従業員100人以下と定められています。サービス業は資本金5000万円以下・従業員100人以下、小売業は資本金5000万円以下・従業員50人以下です。
 
 <a href="https://studying.jp/shindanshi/examarchive/chusho_h20_14.html" target="_blank" rel="noopener">中小企業診断士試験の過去問解説サイト</a>では、飲食店の扱いについて==「飲食店は小売業と同じ扱いとなります」==と説明されています。統計上は「宿泊業、飲食サービス業」に分類される飲食店ですが、中小企業基本法上の類型では小売業として扱われる点に注意してください。
 
@@ -108,7 +112,9 @@ faq:
 
 小規模なカフェの場合も考え方は同じです。席数10席・客単価800円の店舗が、POSレジと予約システムを年間25万円で導入するとします。
 
-インボイス対応類型なら**50万円以下の部分に3/4〜4/5の高い補助率が適用され、実質負担は5〜6万円程度**に収まる試算になります。自店の契約額に補助率を掛け合わせるだけで、実質負担額を試算できます。契約額別の試算例は[AI導入補助金はいくらもらえる？3つの枠の上限額と計算例](https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/)で詳しく紹介しています。
+インボイス対応類型なら**50万円以下の部分に3/4〜4/5の高い補助率が適用され、実質負担は5〜6万円程度**に収まる試算になります。自店の契約額に補助率を掛け合わせるだけで、実質負担額を試算できます。
+
+契約額別の試算例は[AI導入補助金はいくらもらえる？3つの枠の上限額と計算例](https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/)で詳しく紹介しています。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
@@ -136,15 +142,16 @@ faq:
 
 4点目は、GビズIDやSECURITY ACTIONの宣言が失効していないかの確認です。しばらく利用していない店舗ほど見落としがちな盲点。再取得や更新の手間を早めに確認しておくと安心です。
 
-私も過去の相談事例で、==以前の枠の記憶のまま申請書類を準備し、必要書類の増加に気づかず差し戻しになった==というケースを確認しています。複数法人で店舗を運営している場合は、それぞれの法人で個別に要件を確認してください。よくある失敗パターン全般は[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)でも整理しているので、あわせて確認してください。
+私も過去の相談事例で、==以前の枠の記憶のまま申請書類を準備し、必要書類の増加に気づかず差し戻しになった==というケースを確認しています。複数法人で店舗を運営している場合は、それぞれの法人で個別に要件を確認してください。
+
+よくある失敗パターン全般は[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)でも整理しているので、あわせて確認してください。
 
 ## IT導入補助金と他の補助金との使い分け
 
 **ITツール導入中心ならIT導入補助金、店舗改装や広告費中心なら小規模事業者持続化補助金が向いています。**目的が異なるため、対象経費が重ならないよう切り分ける必要があります。
 
 
-関連して、[小規模事業者持続化補助金｜飲食店で対象になる4つの投資](/blog/jizokuka-hojokin-inshokuten-jirei/)もあわせてご確認ください。
-対象になる範囲は[運送業のIT導入補助金｜デジタコ・運行管理の対象範囲](/blog/it-hojokin-unsougyou/)でも扱っています。
+関連する内容として[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)も公開しています。
 
 | 項目 | IT導入補助金（通常枠） | 小規模事業者持続化補助金 |
 |:--|:--|:--|
@@ -160,7 +167,9 @@ faq:
 
 <figure><img src="/images/it-hojokin-inshokuten/flow-steps.png" alt="飲食店がIT導入補助金を使うまでの4ステップ: GビズID・SECURITY ACTIONを準備、IT導入支援事業者とツール選定、交付申請から交付決定後に契約、実績報告を提出し交付額確定" loading="lazy"><figcaption>飲食店がIT導入補助金を使うまでの4ステップ</figcaption></figure>
 
-繁忙期に導入を始めると、スタッフが操作に慣れないまま現場が混乱しやすくなります。**閑散期に交付申請から導入・研修までを終わらせ、繁忙期には運用が安定した状態で臨む**のが理想的な逆算です。実績報告の必要書類まで含めた手順は[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)で整理しています。
+繁忙期に導入を始めると、スタッフが操作に慣れないまま現場が混乱しやすくなります。**閑散期に交付申請から導入・研修までを終わらせ、繁忙期には運用が安定した状態で臨む**のが理想的な逆算です。
+
+実績報告の必要書類まで含めた手順は[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)で整理しています。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
