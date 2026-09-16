@@ -50,14 +50,15 @@ faq:
 **IT導入補助金の中小企業者とは、業種ごとに定められた資本金の額または従業員数のどちらか一方の基準を満たす事業者です。**両方を満たす必要はなく、どちらか一方で足ります。
 
 
-関連して、[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)もあわせてご確認ください。
-関連する内容は、[補助金の電子申請はいつから義務化？中小企業が今やること](/blog/hojokin-denshishinsei-gimuka-itsukara/)で解説しています。
+関連する内容として[ネイルサロンの補助金申請手順を8ステップで解説](/blog/nail-salon-hojokin-tejun/)も公開しています。
 
-関連する内容については、[IT導入補助金はネイルサロンも使える？材料費と面貸しの壁](/blog/it-hojokin-nail-salon/)にまとめています。
+あわせて[建設業のAI導入補助金｜必要書類10点と揃える順番](/blog/kanagawa-kensetsugyou-denshishinsei/)もご覧ください。
 
-対象になる範囲は、[学習塾はIT導入補助金の対象？入退室通知と課金の境界線](/blog/it-hojokin-gakushujuku/)で解説しています。
+関連する内容は、[AI導入補助金の着金はいつ？実績報告後の日数目安](/blog/ai-hojokin-chakkin-itsu/)で解説しています。
 
-関連する内容については、[中小企業成長加速化補助金｜1次2次の実績とスケジュール](/blog/seicho-kasokuka-hojokin-schedule/)にまとめています。
+関連する内容については、[IT導入補助金はネイルサロンも使える？](/blog/it-hojokin-nail-salon/)にまとめています。
+
+対象になる範囲は、[学習塾はIT導入補助金の対象？](/blog/it-hojokin-gakushujuku/)で解説しています。
 
 <div class="definition-box"><span class="term">中小企業者とは</span>、中小企業基本法に基づき業種ごとに定められた資本金・従業員数の基準以下の事業者を指します。IT導入補助金を含む多くの補助金制度が、この定義を対象者の基準として採用しています。</div>
 
@@ -70,7 +71,8 @@ faq:
 **中小企業者の基準は、製造業等・卸売業・サービス業・小売業の4区分で異なります。**資本金の額と従業員数のどちらか一方が基準以下であれば該当します。
 
 
-関連して、[東京都のJCIP電子申請｜楽天銀行が使えない支払いの注意点](/blog/tokyo-kensetsugyou-denshishinsei/)もあわせてご確認ください。
+近い論点を[東京都のJCIP電子申請](/blog/tokyo-kensetsugyou-denshishinsei/)で扱っています。
+
 <figure><img src="/images/it-hojokin-chusho-teigi/kijun4.png" alt="業種別の資本金・従業員数の基準: 製造業・建設業等は資本金3億円以下or従業員300人以下、卸売業は資本金1億円以下or従業員100人以下、サービス業は資本金5000万円以下or従業員100人以下、小売業は資本金5000万円以下or従業員50人以下"><figcaption>業種別の資本金・従業員数の基準</figcaption></figure>
 
 | 業種区分 | 資本金の額 | 従業員数 |
@@ -87,20 +89,22 @@ faq:
 **小規模事業者は中小企業者よりさらに厳しい従業員数基準で区分され、一部の申請枠で補助率が優遇されます。**製造業その他は20人以下、商業・サービス業は5人以下が目安です。
 
 
-関連して、[大阪府のJCIP電子申請｜GビズID取得に2週間かかる注意点](/blog/osaka-kensetsugyou-denshishinsei/)もあわせてご確認ください。
+あわせて[大阪府のJCIP電子申請](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
+
 | 業種区分 | 小規模事業者の従業員数 |
 |:--|:--|
 | 製造業・建設業・運輸業その他 | 20人以下 |
 | 商業（卸売業・小売業）・サービス業 | 5人以下 |
 
-<a href="https://hojyokin-portal.jp/columns/degital_ai_summary" target="_blank" rel="noopener">補助金ポータルが整理したデジタル化・AI導入補助金2026の概要</a>で説明されているとおり、インボイス対応類型の50万円以下部分では、小規模事業者は中小企業者より高い補助率が適用されます。自社が中小企業者の基準に加えて小規模事業者の基準まで満たすかどうかで、実際に受け取れる補助額が変わることを押さえておいてください。枠ごとの補助率の詳しい計算例は[AI導入補助金はいくらもらえる？3つの枠の上限額と計算例](https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/)にまとめています。
+<a href="https://hojyokin-portal.jp/columns/degital_ai_summary" target="_blank" rel="noopener">補助金ポータルが整理したデジタル化・AI導入補助金2026の概要</a>で説明されているとおり、インボイス対応類型の50万円以下部分では、小規模事業者は中小企業者より高い補助率が適用されます。自社が中小企業者の基準に加えて小規模事業者の基準まで満たすかどうかで、実際に受け取れる補助額が変わることを押さえておいてください。枠ごとの補助率の詳しい計算例は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/">AI導入補助金はいくらもらえる？3つの枠の上限額と計算例</a>にまとめています。
 
 ## 自社が対象になるかを確認する3ステップ
 
 **自社が対象になるかは、業種の確認・資本金と従業員数の確認・その他の対象要件の確認という3ステップで判断できます。**順番に確認すれば、判断に迷う場面は減ります。
 
 
-関連して、[e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](/blog/egov-denshishinsei-kojinjigyonushi/)もあわせてご確認ください。
+関連する内容として[e-Gov電子申請とは](/blog/egov-denshishinsei-kojinjigyonushi/)も公開しています。
+
 <figure><img src="/images/it-hojokin-chusho-teigi/kakunin3.png" alt="自社が対象になるかを確認する3ステップ: 自社の業種を確認する(4区分のどれか)、資本金と従業員数を確認する(どちらか一方で判定)、対象要件も確認する(税金滞納なし等)"><figcaption>自社が対象になるかを確認する3ステップ</figcaption></figure>
 
 1. 自社の業種を確認する: 製造業等・卸売業・サービス業・小売業のどの区分に当てはまるかを、主たる事業内容で判断します。
@@ -120,10 +124,13 @@ faq:
 **中小企業者の基準を満たしていても、税金の未納・滞納がないことや、直近の採択実績など、別の対象要件を満たす必要があります。**基準表だけで判断を終えないよう注意してください。
 
 
-関連して、[AI導入補助金の必要書類【2026年 法人版】一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)もあわせてご確認ください。
+近い論点を[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)で扱っています。
+
 <div class="caution-box"><span class="box-title">注意: 基準を満たしても対象外になることがある</span><br>資本金・従業員数の基準を満たしていても、法人税・消費税の未納がある場合や、直近の公募回で既に採択・交付を受けている場合は対象外になることがあります。基準表の確認だけで安心せず、その他の要件も併せて確認してください。</div>
 
-具体的な必要書類や納税証明書の準備については、[AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/)で解説しています。申請全体の流れを先に把握したい場合は、[AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)も参考にしてください。
+具体的な必要書類や納税証明書の準備については、[AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/)で解説しています。
+
+申請全体の流れを先に把握したい場合は、[AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)も参考にしてください。
 
 過去の採択実績についても注意が必要です。**直近の公募回で既に交付決定を受けている場合、次の公募回では申請できないことがあります。**何回目の公募まで間隔を空ければよいかは公募回ごとに案内されるため、事務局の最新情報を都度確認してください。
 
