@@ -49,10 +49,11 @@ faq:
 **AI導入補助金は、限られた人数で現場と事務を同時に回す仕組みづくりに使える制度です。**紙の図面や電話でのやり取りをITツールに置き換える投資の後押しとして設計されています。
 
 
-関連して、[中小企業成長加速化補助金｜1次2次の実績とスケジュール](/blog/seicho-kasokuka-hojokin-schedule/)もあわせてご確認ください。
+近い論点を[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)で扱っています。
+
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
 
-<a href="https://www.tdb.co.jp/report/economic/20260519-laborshortage202604/" target="_blank" rel="noopener">帝国データバンクが2026年4月に公表した調査</a>によると、**建設業の正社員における人手不足割合は65.7%で、全51業種中3位の高さ**でした。前年同月比では3.2ポイント低下したものの、依然として厳しい水準です。
+<a href="https://www.tdb.co.jp/report/economic/20260519-laborshortage202604/" target="_blank" rel="noopener">帝国データバンクが2026年4月に公表した調査</a>によると、<strong>建設業の正社員における人手不足割合は65.7%で、全51業種中3位の高さ</strong>でした。前年同月比では3.2ポイント低下したものの、依然として厳しい水準です。
 
 私たちが建設業から相談を受ける際も、==「若手が入っても定着しない」「積算担当が退職して見積が回らなくなった」==という声をよく聞きます。ITツールへの置き換えは、こうした慢性的な人手不足の緩和策のひとつになります。
 
@@ -65,7 +66,8 @@ faq:
 **対象ツールは、施工管理・積算/見積・電子契約の3分野に整理でき、優先順位をつけやすくなります。**現場と事務のどちらがボトルネックかによって、優先して導入すべきツールが変わります。
 
 
-関連して、[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)もあわせてご確認ください。
+あわせて[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)もご覧ください。
+
 <figure><img src="/images/ai-hojokin-kensetsugyou-katsuyou/tool-categories.png" alt="建設業で対象になるITツール3分野: 施工管理アプリ、積算・見積ソフト、電子契約・勤怠管理" loading="lazy"><figcaption>建設業で対象になるITツール3分野</figcaption></figure>
 
 <a href="https://www.photoruction.com/archives/contech/it-introduction-subsidy" target="_blank" rel="noopener">Photoructionが紹介する建設業の導入事例</a>では、ANDPADやPhotoruction、SPIDERPLUSなどの施工管理アプリで工程・写真・図面をクラウド共有する例、Gaia Cloudなどの積算ソフトで数量拾いと見積作成を自動化する例が紹介されています。
@@ -82,7 +84,7 @@ faq:
 
 近い論点を[AI開発補助金とは？導入型との違いと使える3つの制度](/blog/ai-kaihatsu-hojokin/)で扱っています。
 
-<a href="https://hojyokin-portal.jp/columns/degital_ai_invoice" target="_blank" rel="noopener">インボイス枠のハードウェア要件を整理した解説記事</a>によると、**パソコン・タブレット等は補助率1/2以内・上限10万円、レジ機能を持つ機器は補助率1/2以内・上限20万円**とされています。
+<a href="https://hojyokin-portal.jp/columns/degital_ai_invoice" target="_blank" rel="noopener">インボイス枠のハードウェア要件を整理した解説記事</a>によると、<strong>パソコン・タブレット等は補助率1/2以内・上限10万円、レジ機能を持つ機器は補助率1/2以内・上限20万円</strong>とされています。
 
 | 区分 | 対象ハードウェア | 補助率 | 上限額 |
 |:--|:--|:--|:--|
@@ -110,7 +112,9 @@ faq:
 
 <a href="https://it-shien.smrj.go.jp/applicant/flow/" target="_blank" rel="noopener">事務局が公開している申請手続きフロー</a>では、交付申請に「GビズIDプライム」と「SECURITY ACTION」の宣言が必須と案内されています。
 
-一人親方や小規模な工務店では、経理・総務の専任担当がいないケースも多いはずです。申請書類の作成やIT導入支援事業者とのやり取りに時間を割きにくい場合に検討したいのが、外部の申請サポートへの相談という選択肢。導入費用そのものの目安は[AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/)も参考にしてください。
+一人親方や小規模な工務店では、経理・総務の専任担当がいないケースも多いはずです。申請書類の作成やIT導入支援事業者とのやり取りに時間を割きにくい場合に検討したいのが、外部の申請サポートへの相談という選択肢。
+
+導入費用そのものの目安は[AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/)も参考にしてください。
 
 ## 現場と事務所でツールが分断される問題
 
@@ -130,15 +134,21 @@ faq:
 私たちセブンセンシズ株式会社（大阪市東成区・2020年3月創業）は、AI導入補助金の登録支援事業者として申請から実績報告まで伴走しています。建設業のご相談で最も多いのが、この元請・下請の線引きです。**「誰が導入して、誰が使うのか」を申請書で明確にできないケース**が目立ちます。
 
 
+近い論点を[建設業のAI導入補助金はいくら？](/blog/fukuoka-kensetsugyou-denshishinsei/)で扱っています。
+
+あわせて[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
+
 **つまずきやすいのは、2024年問題による繁忙期の逼迫と、下請け構造での契約名義の混乱の2点です。**制度自体の難しさより、現場運営との両立の難しさが原因になりがちです。
 
-<a href="https://www.mlit.go.jp/hakusyo/mlit/r06/hakusho/r07/html/n1111000.html" target="_blank" rel="noopener">国土交通白書が示す建設業の労働実態</a>によると、**2024年4月から時間外労働の上限が原則月45時間・年360時間に規制され、55歳以上の就業者割合は36.7%と全産業平均より4.3ポイント高い**状況です。若手確保が進まないまま規制対応を迫られている会社が少なくありません。
+<a href="https://www.mlit.go.jp/hakusyo/mlit/r06/hakusho/r07/html/n1111000.html" target="_blank" rel="noopener">国土交通白書が示す建設業の労働実態</a>によると、<strong>2024年4月から時間外労働の上限が原則月45時間・年360時間に規制され、55歳以上の就業者割合は36.7%と全産業平均より4.3ポイント高い</strong>状況です。若手確保が進まないまま規制対応を迫られている会社が少なくありません。
 
 私も過去の相談事例で、==繁忙期にツール移行を進めたことで現場が混乱し、稼働実績を示すデータが十分に残らなかった==というケースを確認しています。<span class="txt-red">繁忙期直前の切り替えは避け、閑散期に導入・定着期間を確保する</span>ほうが安全です。
 
 <figure><img src="/images/ai-hojokin-kensetsugyou-katsuyou/timing-vs.png" alt="建設業のツール導入タイミング比較: 繁忙期に切り替えると現場が混乱しやすく稼働データが残りにくい、閑散期に切り替えると定着期間を確保でき実績報告もスムーズ" loading="lazy"><figcaption>建設業のツール導入タイミング比較</figcaption></figure>
 
-元請け・下請けが混在する現場では、契約や実績報告の名義をどちらの会社にするか事前に整理しておく必要があります。名義の混乱は交付決定後のトラブルにつながりやすいポイントです。申請全体でよくある失敗パターンは[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)でも整理しているので、あわせて確認してください。
+元請け・下請けが混在する現場では、契約や実績報告の名義をどちらの会社にするか事前に整理しておく必要があります。名義の混乱は交付決定後のトラブルにつながりやすいポイントです。
+
+申請全体でよくある失敗パターンは[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)でも整理しているので、あわせて確認してください。
 
 ## 建設業向けの他制度（IT導入・ものづくり）との使い分け
 
@@ -146,9 +156,7 @@ faq:
 
 選ぶときの基準は[建設業の助成金4制度｜補助金との違いと使う順番](/blog/kensetsugyou-joseikin-hikaku/)でも扱っています。
 
-関連する内容として[建設業の実績報告書｜下請け構造でも迷わない3つの証憑ポイント](/blog/kensetsugyou-jissekihoukokusho/)も公開しています。
-
-<a href="https://hojyokin-portal.jp/columns/mono2025_summary" target="_blank" rel="noopener">補助金ポータルが解説する統合後の制度</a>によると、旧ものづくり補助金は2026年度に「新事業進出・ものづくり商業サービス補助金」へ統合され、**単価50万円以上の機械装置・システム構築費が必須の設備投資型補助金**として運用されています。
+<a href="https://hojyokin-portal.jp/columns/mono2025_summary" target="_blank" rel="noopener">補助金ポータルが解説する統合後の制度</a>によると、旧ものづくり補助金は2026年度に「新事業進出・ものづくり商業サービス補助金」へ統合され、<strong>単価50万円以上の機械装置・システム構築費が必須の設備投資型補助金</strong>として運用されています。
 
 | 項目 | AI導入補助金（通常枠） | 新事業進出・ものづくり商業サービス補助金 |
 |:--|:--|:--|
