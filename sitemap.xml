@@ -87,11 +87,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou/</loc>
-    <lastmod>2026-09-13</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/biyoushitsu-joseikin/</loc>
     <lastmod>2026-09-12</lastmod>
     <priority>0.7</priority>
@@ -108,6 +103,11 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/kensetsugyou-joseikin-hikaku/</loc>
+    <lastmod>2026-09-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou/</loc>
     <lastmod>2026-09-11</lastmod>
     <priority>0.7</priority>
   </url>
