@@ -49,11 +49,11 @@ faq:
 
 **落ちる理由は、AI活用の説明不足・飲食店特有の数字の欠如・対象外経費の思い込みという3系統に整理できます。**要件を満たしていても、このどこかに当てはまれば不採択になります。
 
-実際の進め方は、[飲食店のAI導入補助金｜申請の進め方5ステップと準備物【2026年】](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
+実際の進め方は、[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
 
-一般的な不採択理由は[AI導入補助金の不採択理由｜審査で落ちる6つのパターン](/blog/ai-hojokin-fusaitaku-riyu/)で解説しました。この記事では、飲食店の現場に絞って原因を掘り下げます。
+一般的な不採択理由は[AI導入補助金の不採択理由](/blog/ai-hojokin-fusaitaku-riyu/)で解説しました。この記事では、飲食店の現場に絞って原因を掘り下げます。
 
-対象要件を満たすかどうかは[飲食店のAI導入補助金 対象要件｜資本金・従業員数など5つの基準【2026年】](/blog/inshokuten-ai-hojokin-taisho-youken/)で確認できます。要件を満たしていても、ここで挙げる原因で不採択になる店舗は少なくありません。
+対象要件を満たすかどうかは[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で確認できます。要件を満たしていても、ここで挙げる原因で不採択になる店舗は少なくありません。
 
 <a href="https://hojyokin-portal.jp/columns/degital_ai_saitaku" target="_blank" rel="noopener">補助金ポータルが公表した集計</a>によると、通常枠の採択率は2026年9月公表の3次締切で42.19%と、半数以上が不採択になっています。飲食店に限った統計はありませんが、業種を問わず数字と根拠が求められる審査である点は変わりません。
 
@@ -102,7 +102,7 @@ faq:
 
 **「人を減らしたい」という目的で書くと、生産性向上の審査基準に合わず評価が下がります。**飲食店は人手不足が深刻な業界だけに、このずれが起きやすくなります。
 
-<a href="https://www.tdb.co.jp/report/economic/20260817-laborshortage202607/" target="_blank" rel="noopener">帝国データバンクが2026年7月に公表した調査</a>によると、**飲食店の非正社員不足割合は57.7%で、業種別トップ**でした。人手不足は飲食店にとって切実な課題だと分かります。
+<a href="https://www.tdb.co.jp/report/economic/20260817-laborshortage202607/" target="_blank" rel="noopener">帝国データバンクが2026年7月に公表した調査</a>によると、<strong>飲食店の非正社員不足割合は57.7%で、業種別トップ</strong>でした。人手不足は飲食店にとって切実な課題だと分かります。
 
 <div class="caution-box"><span class="box-title">注意: 人員削減の言葉は逆効果</span><br>「人を減らす」という表現は、雇用への配慮を欠くと受け取られることがあります。「限られた人数で生産性を上げる」という文脈に置き換えてください。</div>
 
@@ -112,7 +112,7 @@ faq:
 
 **POSレジやタブレットなどのハードウェアは、通常枠では対象外です。**飲食店の相談でも、この思い込みによる不採択が目立ちます。
 
-<a href="https://hojyokin-portal.jp/columns/degital_ai_invoice" target="_blank" rel="noopener">インボイス枠のハードウェア要件を整理した解説記事</a>によると、**PC・タブレット等は補助率1/2以内・上限10万円、POSレジ・券売機は補助率1/2以内・上限20万円で、対象ソフトウェアとあわせて購入する場合に限り対象**とされています。<a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">事務局の通常枠ページ</a>でも、対象経費はソフトウェア費用とクラウド利用料、導入関連費用が中心と案内されています。
+<a href="https://hojyokin-portal.jp/columns/degital_ai_invoice" target="_blank" rel="noopener">インボイス枠のハードウェア要件を整理した解説記事</a>によると、<strong>PC・タブレット等は補助率1/2以内・上限10万円、POSレジ・券売機は補助率1/2以内・上限20万円で、対象ソフトウェアとあわせて購入する場合に限り対象</strong>とされています。<a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">事務局の通常枠ページ</a>でも、対象経費はソフトウェア費用とクラウド利用料、導入関連費用が中心と案内されています。
 
 | 申請枠 | ハードウェア（POSレジ・タブレット・券売機等） |
 |:--|:--|
@@ -137,7 +137,7 @@ faq:
 
 <span class="big">繁忙期を避けて逆算したスケジュールを組むことが、実績報告での失敗を防ぐ最善策です。</span>採択後すぐに、繁忙期カレンダーと照らし合わせて日程を組んでください。
 
-実績報告の具体的な進め方は[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](/blog/ai-hojokin-jissekihoukoku-kakikata/)で解説しています。
+実績報告の具体的な進め方は[AI導入補助金の実績報告の書き方](/blog/ai-hojokin-jissekihoukoku-kakikata/)で解説しています。
 
 ## 理由6: 相見積もりを取らず1社に決め打ちする
 
@@ -163,7 +163,9 @@ faq:
 
 **この5項目を順に自己点検するだけでも、次回の計画書の説得力は大きく変わります。**通知書に書かれた理由だけを見て対策すると、飲食店特有のつまずきを見落としがちです。自分の店の言葉で、AI活用と数字を語れるようにしておくことが、次回の採択への近道になります。
 
-申請の流れ全体は[AI導入補助金の申請のやり方｜受給までの5ステップを解説](/blog/ai-hojokin-shinsei-yarikata/)、対象になるツールの分野は[AI導入補助金の対象ツール6分野｜対象外との見分け方](/blog/ai-hojokin-taisho-tool/)で確認できます。補助額の試算は[AI導入補助金はいくらもらえる？3つの枠の上限額と計算例](/blog/ai-hojokin-ikura-moraeru/)で行えます。
+申請の流れ全体は[AI導入補助金の申請のやり方](/blog/ai-hojokin-shinsei-yarikata/)、対象になるツールの分野は[AI導入補助金の対象ツール6分野｜対象外との見分け方](/blog/ai-hojokin-taisho-tool/)で確認できます。
+
+補助額の試算は[AI導入補助金はいくらもらえる？](/blog/ai-hojokin-ikura-moraeru/)で行えます。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
