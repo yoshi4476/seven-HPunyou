@@ -50,6 +50,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [建設業の助成金4制度｜補助金との違いと使う順番](https://lp.7senses.co.jp/blog/kensetsugyou-joseikin-hikaku/): 建設業が使える助成金は、人材開発支援助成金・業務改善助成金・キャリアアップ助成金・トライアル雇用助成金の4制度が中心です。対象者・助成額の目
 - [宿泊業の補助金は3つの入口｜目的別の選び方と優先順位](https://lp.7senses.co.jp/blog/shukuhakugyou-hojokin-erabikata/): 「宿泊業 補助金」で検索する旅館・ホテル経営者向けに、デジタル化・AI導入補助金、新事業進出等補助金、持続化補助金という3つの入口を比較し、
 - [中小企業の助成金とは？補助金との違いと探し方4ステップ](https://lp.7senses.co.jp/blog/chusho-kigyo-joseikin/): 中小企業が使える助成金は、審査で採択される「補助金」と要件を満たせば受給できる「助成金」の2種類に分かれます。違いの見分け方と、IT・AI導
+- [建設業のAI導入補助金はいくら？枠別の上限額と自己負担の試算](https://lp.7senses.co.jp/blog/fukuoka-kensetsugyou-denshishinsei/): 建設業がAI導入補助金でもらえる額は、選ぶ枠と導入するソフトの価格で決まります。枠ごとの補助率と上限額、補助の対象にならない費用、自己負担が
 - [ネイルサロンの技術チェックAI化｜補助金の対象基準](https://lp.7senses.co.jp/blog/nail-salon-gijutsu-check/): ネイルサロンの技術チェック（採用試験・研修進捗・仕上がり検品）のAI化は、教育訓練プロセスに該当し登録済みならIT導入補助金の対象です。対象
 - [建設業がAI導入補助金の対象になる条件｜5つの要件と確認の順番](https://lp.7senses.co.jp/blog/osaka-kensetsugyou-denshishinsei/): 建設業がAI導入補助金（中小企業デジタル化・AI導入支援事業）の対象になるかは、資本金・従業員数・導入するソフトの3点で決まります。対象外に
 - [個人事業主がパソコンを補助金で買う方法｜3制度を比較](https://lp.7senses.co.jp/blog/kojinjigyonushi-pc-hojokin-hikaku/): 個人事業主がパソコンを補助金で買う方法を3制度で比較します。使えるのは事実上IT導入補助金インボイス枠のみで、持続化補助金とものづくり補助金
@@ -64,7 +65,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [歯科医院のIT導入補助金｜対象4分野と医療機器の落とし穴](https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/): 歯科医院のIT導入補助金は2026年度も使え、正式名称は「デジタル化・AI導入補助金2026」です。対象になる4つのツール、口腔内スキャナー
 - [小規模事業者持続化補助金｜自動車整備業の経費区分3つと注意点](https://lp.7senses.co.jp/blog/jizokuka-hojokin-jidousha-seibi/): 自動車整備業は小規模事業者持続化補助金の対象で、サービス業として従業員5人以下なら申請できます。看板・チラシ・HP制作等の対象経費、部品代・
 - [ものづくり補助金は自動車整備業も対象｜設備投資750万円目安](https://lp.7senses.co.jp/blog/monozukuri-hojokin-jidousha-seibi/): ものづくり補助金は自動車整備業のリフト・タイヤチェンジャー・塗装ブースなど設備投資に使えます。対象になる5分野とスキャンツールの扱い、3つの
-- [福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](https://lp.7senses.co.jp/blog/fukuoka-kensetsugyou-denshishinsei/): 福岡県の建設業許可・経審の電子申請JCIPは2025年9月1日開始。収入証紙が使えない手数料の払い方、承継認可申請が非対応な点、本庁と県土整
 - [建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-gyoseishoshi/): 建設業の電子申請（JCIP）を行政書士に依頼すべきか、費用相場（新規許可で法定手数料9万円+報酬15万円台〜）と自分で申請する場合の違い、G
 - [AI導入補助金の不採択理由｜審査で落ちる6つのパターン](https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/): AI導入補助金が不採択になる理由は、事業計画書の論理性不足・数値裏付けの欠如・加点不足・対象外経費・過去申請との重複・交付要件未達の6つに整
 - [自動車整備業のIT導入補助金2026｜スキャンツールは対象外になる理由](https://lp.7senses.co.jp/blog/it-hojokin-jidousha-seibi/): IT導入補助金（デジタル化・AI導入補助金2026）は自動車整備業の予約・見積・車検管理システムに使えますが、特定整備で義務化されたスキャン
