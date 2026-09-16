@@ -47,7 +47,7 @@ faq:
 
 **AI導入補助金のAI活用事例とは、通常枠のITツールにAI機能が組み込まれた具体的な導入例です。**専用の「AI枠」が独立してあるわけではありません。
 
-対象になる範囲は、[飲食店のAI導入補助金 対象要件｜資本金・従業員数など5つの基準【2026年】](/blog/inshokuten-ai-hojokin-taisho-youken/)で解説しています。
+対象になる範囲は、[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で解説しています。
 
 <div class="definition-box"><span class="term">AI活用事例とは</span>、会計・営業支援・顧客対応などの既存ITツールにAI機能が搭載され、実際の業務で使われている導入例を指します。デジタル化・AI導入補助金2026では、ツール検索画面に「生成AI」「生成AI以外のAI」のタグが表示され、AI搭載ツールを見分けやすくなっています。</div>
 
@@ -63,7 +63,7 @@ faq:
 
 <figure><img src="/images/ai-hojokin-ai-katsuyo-jirei/bunya.png" alt="AI活用事例で押さえたい3つの分野: 経理・会計、営業支援、顧客対応" loading="lazy"><figcaption>AI活用事例で押さえたい3つの分野</figcaption></figure>
 
-<a href="https://it-shien.smrj.go.jp/applicant/example/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の公式事例集</a>には、多数の導入企業インタビューが掲載されており、その中でAI活用を明示する事例の一つが、従業員11〜30名の建設業者です。クラウド会計とAIを組み合わせて導入し、AIによる自動仕訳で経理処理の効率化を実現しました。**領収書や請求書のデータをAIが自動で読み取り、勘定科目を推定して仕訳を作成する仕組み**が中心です。
+<a href="https://it-shien.smrj.go.jp/applicant/example/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の公式事例集</a>には、多数の導入企業インタビューが掲載されており、その中でAI活用を明示する事例の一つが、従業員11〜30名の建設業者です。クラウド会計とAIを組み合わせて導入し、AIによる自動仕訳で経理処理の効率化を実現しました。<strong>領収書や請求書のデータをAIが自動で読み取り、勘定科目を推定して仕訳を作成する仕組み</strong>が中心です。
 
 経理担当者が手入力していた仕訳作業をAIが下書きし、担当者は内容を確認・修正するだけで済むようになります。**確認作業に置き換わることで、月次の締め作業にかかる時間そのものを短縮できる**のが導入効果です。人手不足に悩む中小企業にとっては、経理担当者を増やさずに業務量の増加へ対応できる点が評価されています。
 
@@ -83,7 +83,7 @@ faq:
 
 実際の進め方は[補助金でAIチャットボット導入｜対象条件と申請の流れ](/blog/ai-hojokin-chatbot-donyu/)でも扱っています。
 
-<a href="https://mirasapo-plus.go.jp/hint/32651/" target="_blank" rel="noopener">中小企業庁担当者へのインタビュー記事</a>でも、AIの活用範囲としてチャット対応が明示的に挙げられています。**よくある質問への回答をAIが自動化することで、担当者は個別対応が必要な案件に時間を割けるようになる**という構造です。
+<a href="https://mirasapo-plus.go.jp/hint/32651/" target="_blank" rel="noopener">中小企業庁担当者へのインタビュー記事</a>でも、AIの活用範囲としてチャット対応が明示的に挙げられています。<strong>よくある質問への回答をAIが自動化することで、担当者は個別対応が必要な案件に時間を割けるようになる</strong>という構造です。
 
 補助対象になる経費の幅も広い点が特徴です。**ソフトウェア購入費だけでなく、最大2年分のクラウド利用料・導入コンサルティング費・社内研修費まで含まれます。**
 
@@ -136,9 +136,13 @@ AIチャットボットは、想定外の質問に誤った回答をしてしま
 
 <figure><img src="/images/ai-hojokin-ai-katsuyo-jirei/nagare.png" alt="AI活用事例を参考にした導入までの流れ: 課題整理、ツール調査、事業者への相談、交付申請・導入、効果測定" loading="lazy"><figcaption>AI活用事例を参考にした導入までの流れ</figcaption></figure>
 
-申請段階でつまずきたくない方は、[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)もあわせて確認してください。導入したいツールが会計・受発注系であれば、[AI導入補助金の受発注ソフトとは？対象3枠と補助額を解説](https://lp.7senses.co.jp/blog/ai-hojokin-juhatchu-soft-toha/)が参考になります。
+申請段階でつまずきたくない方は、[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)もあわせて確認してください。
 
-AI活用にかかる費用感を先につかんでおきたい場合は、[AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/)を確認してください。交付決定後の手続きは、[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)で解説しています。
+導入したいツールが会計・受発注系であれば、[AI導入補助金の受発注ソフトとは？対象3枠と補助額を解説](https://lp.7senses.co.jp/blog/ai-hojokin-juhatchu-soft-toha/)が参考になります。
+
+AI活用にかかる費用感を先につかんでおきたい場合は、[AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/)を確認してください。
+
+交付決定後の手続きは、[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)で解説しています。
 
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
