@@ -53,6 +53,8 @@ faq:
 
 **法人と個人事業主で、揃えるものが変わります。**共通するのはGビズIDと見積書、事業計画書です。
 
+関連する内容を先に押さえるなら、[士業事務所のAI導入補助金](/blog/shigyou-ai-hojokin-teishutsu-shorui/)が参考になります。
+
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/" target="_blank" rel="noopener">事務局が公開している制度の案内</a>では、申請に必要な提出物が枠ごとに示されています。不動産会社の場合、通常枠での申請が中心になります。
 
 | 書類 | 法人 | 個人事業主 | 取得先 |
