@@ -38,6 +38,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [卸売業のAI導入補助金｜審査で落ちる3つの盲点と対処法](https://lp.7senses.co.jp/blog/oroshiurigyou-ai-hojokin-ochiru-riyu/): 卸売業がAI導入補助金の審査で落ちる理由を、中小企業者の要件誤認から受発注システムの説明不足、卸売業特有の数字不足まで、現場の相談で見えた3
+- [士業事務所のAI導入補助金｜提出書類の名義は3パターン](https://lp.7senses.co.jp/blog/shigyou-ai-hojokin-teishutsu-shorui/): 士業事務所がAI導入補助金で用意する提出書類は、士業法人で7点・個人開業で6点が目安です。社労士証票や税理士証票などの資格者証は提出不要で、
 - [動物病院はAI導入補助金の対象になるか｜医療法人になれない業種特有の2つの基準](https://lp.7senses.co.jp/blog/doubutsu-byouin-ai-hojokin-taisho-youken/): 動物病院がAI導入補助金を使えるかを、獣医業の日本標準産業分類上の位置づけと、医療法人になれず株式会社・個人事業主で開業する業種特性から解説
 - [介護事業所のAI導入補助金はいくら？2制度の上限を比較](https://lp.7senses.co.jp/blog/kaigo-ai-hojokin-hojogaku-meyasu/): 介護事業所のAI導入補助金の補助額の目安を、一般のAI導入補助金と介護テクノロジー導入支援事業（介護ICT補助金）の2制度で比較します。職員
 - [不動産会社のAI導入補助金｜提出書類7点、宅建業免許は不要](https://lp.7senses.co.jp/blog/fudousan-ai-hojokin-teishutsu-shorui/): 不動産会社がAI導入補助金で用意する提出書類は、法人で7点・個人事業主で6点が目安です。宅建業の免許証は対象外で、複数店舗がある場合は労働者
@@ -175,4 +176,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [士業事務所のAI導入補助金｜提出書類の名義は3パターン](https://lp.7senses.co.jp/blog/shigyou-ai-hojokin-teishutsu-shorui/): 士業事務所がAI導入補助金で用意する提出書類は、士業法人で7点・個人開業で6点が目安です。社労士証票や税理士証票などの資格者証は提出不要で、確定申告書・見積書・登記簿謄本は書類ごとに名義が変わります。差し戻されやすい注意点も2026年9月時点で解説します。
