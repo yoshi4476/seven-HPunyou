@@ -38,6 +38,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [学習塾はAI導入補助金の申請をどう進める？個人情報と繁忙期の壁【2026年】](https://lp.7senses.co.jp/blog/gakushujuku-ai-hojokin-shinsei-susumekata/): 学習塾がAI導入補助金を申請する進め方について、生徒・保護者の個人情報への配慮と、秋の閑散期を活かした導入計画の立て方を軸に2026年9月時
+- [宿泊業のAI導入補助金はいくら？契約額50万円が分かれ目](https://lp.7senses.co.jp/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/): 宿泊業のAI導入補助金の補助額を、個人経営の民宿・中規模ホテル・複数施設運営の3パターンで試算します。契約額50万円を境に変わる補助率と対象
 - [卸売業のAI導入補助金｜審査で落ちる3つの盲点と対処法](https://lp.7senses.co.jp/blog/oroshiurigyou-ai-hojokin-ochiru-riyu/): 卸売業がAI導入補助金の審査で落ちる理由を、中小企業者の要件誤認から受発注システムの説明不足、卸売業特有の数字不足まで、現場の相談で見えた3
 - [士業事務所のAI導入補助金｜提出書類の名義は3パターン](https://lp.7senses.co.jp/blog/shigyou-ai-hojokin-teishutsu-shorui/): 士業事務所がAI導入補助金で用意する提出書類は、士業法人で7点・個人開業で6点が目安です。社労士証票や税理士証票などの資格者証は提出不要で、
 - [動物病院はAI導入補助金の対象になるか｜医療法人になれない業種特有の2つの基準](https://lp.7senses.co.jp/blog/doubutsu-byouin-ai-hojokin-taisho-youken/): 動物病院がAI導入補助金を使えるかを、獣医業の日本標準産業分類上の位置づけと、医療法人になれず株式会社・個人事業主で開業する業種特性から解説
@@ -177,4 +178,3 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
-- [宿泊業のAI導入補助金はいくら？契約額50万円が分かれ目](https://lp.7senses.co.jp/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/): 宿泊業のAI導入補助金の補助額を、個人経営の民宿・中規模ホテル・複数施設運営の3パターンで試算します。契約額50万円を境に変わる補助率と対象ツール4分野、対象外になる経費も2026年9月時点の情報でまとめました。
