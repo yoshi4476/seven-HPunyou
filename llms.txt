@@ -177,3 +177,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [宿泊業のAI導入補助金はいくら？契約額50万円が分かれ目](https://lp.7senses.co.jp/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/): 宿泊業のAI導入補助金の補助額を、個人経営の民宿・中規模ホテル・複数施設運営の3パターンで試算します。契約額50万円を境に変わる補助率と対象ツール4分野、対象外になる経費も2026年9月時点の情報でまとめました。
