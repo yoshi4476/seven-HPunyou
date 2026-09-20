@@ -145,13 +145,13 @@ faq:
 
 **ITツール導入中心ならIT導入補助金、店舗改装や販路開拓の広告費中心なら小規模事業者持続化補助金が向いています。**目的が異なるため、両方の対象経費が重ならないよう切り分ける必要があります。
 
+選ぶときの基準は[IT導入補助金のおすすめの選び方](/hojokin/it-hojokin-osusume/)でも扱っています。
 
 つまずきやすい点を先に押さえるなら、[小規模事業者持続化補助金](/blog/jizokuka-hojokin-jidousha-seibi/)が参考になります。
 
 関連する内容として[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)も公開しています。
 
 つまずきやすい点については、[自動車整備業のIT導入補助金2026](/blog/it-hojokin-jidousha-seibi/)にまとめています。
-
 
 対象になる範囲は、[学習塾はIT導入補助金の対象？](/blog/it-hojokin-gakushujuku/)で解説しています。
 
@@ -180,7 +180,6 @@ faq:
 <details><summary>一人サロンの個人事業主でも申請できますか？</summary><p class="faq-a">申請できます。法人と同じくGビズIDとSECURITY ACTIONの宣言が必要です。</p></details>
 <details><summary>小規模事業者持続化補助金とどちらを使えばよいですか？</summary><p class="faq-a">ITツール導入中心ならIT導入補助金、店舗改装や広告費中心なら持続化補助金が向いています。</p></details>
 </div>
-
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
