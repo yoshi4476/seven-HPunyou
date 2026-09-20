@@ -49,6 +49,8 @@ faq:
 
 **申請の進め方は、ツール選定・事業者選び・準備と交付申請・交付決定待ち・導入と実績報告という5つの局面で進みます。**制度全体の手続きは[AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)で解説しましたが、この記事では飲食店の現場に絞って進め方を掘り下げます。
 
+関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)で整理しています。
+
 近い論点を[小規模事業者持続化補助金](/hojokin/jizokuka-hojokin-inshokuten-jirei/)で扱っています。
 
 対象要件を満たすかどうかは[飲食店のAI導入補助金 対象要件｜資本金・従業員数など5つの基準【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-taisho-youken/)で確認できます。要件を満たしたうえで、この記事の進め方に沿って手続きを進めてください。
