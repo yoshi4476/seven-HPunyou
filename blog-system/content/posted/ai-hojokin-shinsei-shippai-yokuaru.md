@@ -34,6 +34,8 @@ faq:
 
 申請の失敗は、準備不足・書類不備・期限管理ミスという3つの系統に大別できます。いずれも制度の難しさそのものより、時間配分のミスから生まれています。
 
+関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
+
 
 関連する内容は、[建設業がAI導入補助金で不採択になる6つの理由と直し方](/blog/tokyo-kensetsugyou-denshishinsei/)で解説しています。
 
