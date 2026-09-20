@@ -176,3 +176,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [学習塾はAI導入補助金の申請をどう進める？個人情報と繁忙期の壁【2026年】](https://lp.7senses.co.jp/blog/gakushujuku-ai-hojokin-shinsei-susumekata/): 学習塾がAI導入補助金を申請する進め方について、生徒・保護者の個人情報への配慮と、秋の閑散期を活かした導入計画の立て方を軸に2026年9月時点の情報で整理しました。
