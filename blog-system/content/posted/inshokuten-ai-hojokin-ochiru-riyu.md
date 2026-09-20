@@ -49,6 +49,8 @@ faq:
 
 **落ちる理由は、AI活用の説明不足・飲食店特有の数字の欠如・対象外経費の思い込みという3系統に整理できます。**要件を満たしていても、このどこかに当てはまれば不採択になります。
 
+近い論点を[小規模事業者持続化補助金](/hojokin/jizokuka-hojokin-inshokuten-jirei/)で扱っています。
+
 実際の進め方は、[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
 
 一般的な不採択理由は[AI導入補助金の不採択理由](/blog/ai-hojokin-fusaitaku-riyu/)で解説しました。この記事では、飲食店の現場に絞って原因を掘り下げます。
@@ -164,8 +166,6 @@ faq:
 **この5項目を順に自己点検するだけでも、次回の計画書の説得力は大きく変わります。**通知書に書かれた理由だけを見て対策すると、飲食店特有のつまずきを見落としがちです。自分の店の言葉で、AI活用と数字を語れるようにしておくことが、次回の採択への近道になります。
 
 申請の流れ全体は[AI導入補助金の申請のやり方](/blog/ai-hojokin-shinsei-yarikata/)、対象になるツールの分野は[AI導入補助金の対象ツール6分野｜対象外との見分け方](/blog/ai-hojokin-taisho-tool/)で確認できます。
-
-補助額の試算は[AI導入補助金はいくらもらえる？](/blog/ai-hojokin-ikura-moraeru/)で行えます。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
