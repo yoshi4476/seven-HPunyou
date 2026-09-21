@@ -49,9 +49,12 @@ faq:
 
 **AI導入補助金は、通常枠なら上限5万円〜450万円、インボイス対応類型・電子取引類型なら上限350万円まで補助されます。**補助率は枠ごとに1/2〜4/5の幅があり、契約金額と選ぶ枠の組み合わせで最終的な補助額が決まります。
 
-エステサロンの場合は、[エステサロン AI導入補助金の補助額の目安](/blog/esute-ai-hojokin-hojogaku-mokuyasu/)を1人サロン・5名前後・複数店舗の3パターンで試算しています。
 
-対象になる範囲は[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で整理しています。
+関連する内容については、[飲食店のAI導入補助金｜落ちる理由と現場の6つの原因](/blog/inshokuten-ai-hojokin-ochiru-riyu/)にまとめています。
+
+関連する内容については、[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)にまとめています。
+
+エステサロンの場合は、[エステサロン AI導入補助金の補助額の目安](/blog/esute-ai-hojokin-hojogaku-mokuyasu/)を1人サロン・5名前後・複数店舗の3パターンで試算しています。
 
 選ぶときの基準は[AI開発補助金とは？導入型との違いと使える3つの制度](/blog/ai-kaihatsu-hojokin/)で整理しています。
 
@@ -128,6 +131,9 @@ faq:
 ## 契約金額から自社の補助額を試算してみる
 
 **自社の補助額は「契約金額を確認する」「申請枠を選ぶ」「補助率を掛けて上限額と照らす」という3ステップで試算できます。**電卓があれば、契約額さえ分かればおおよその金額をその場で計算できます。
+
+
+あわせて[ネイルサロンがAI導入補助金に落ちる理由](/blog/nail-salon-ai-hojokin-ochiru-riyu/)もご覧ください。
 
 <figure><img src="/images/ai-hojokin-ikura-moraeru/shisan3.png" alt="自社の補助額を試算する3ステップ: 契約金額を確認する、申請枠を選ぶ、補助率を掛けて上限額と照らす"><figcaption>自社の補助額を試算する3ステップ</figcaption></figure>
 
