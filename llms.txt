@@ -178,3 +178,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
+- [小売業のAI導入補助金｜レジ・POSに使える経費は上限20万円](https://lp.7senses.co.jp/blog/kourigyou-ai-hojokin-keihi/): 小売業でレジやPOSを導入する場合、通常枠ではハードウェア単体が対象外になる点に注意が必要です。インボイス対応類型なら上限20万円まで補助され、在庫管理・EC構築の経費区分や複数店舗運営時の申請方法もまとめました。
