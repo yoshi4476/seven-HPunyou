@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -188,7 +181,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec1">学習塾のAI導入補助金、申請までにやることは5つあります</h2>
 <p><strong>申請の進め方は、ツール選定・事業者選び・準備と交付申請・交付決定待ち・導入と実績報告という5つの局面で進みます。</strong>制度全体の手続きは<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方｜受給までの5ステップを解説</a>で解説しましたが、この記事では学習塾の現場に絞って掘り下げます。</p>
 <p>同じ「学習塾」でも、<a href="https://lp.7senses.co.jp/blog/it-hojokin-gakushujuku/">IT導入補助金は入退室通知と課金の境界線</a>が論点でした。AI導入補助金では、学習データ分析や自動採点などAI機能を持つツールが対象になります。</p>
-<figure><img src="/images/gakushujuku-ai-hojokin-shinsei-susumekata/flow5.png" alt="学習塾の申請5つの局面: ツールを絞る、事業者を選ぶ、準備・交付申請、交付決定を待つ、導入・実績報告"><figcaption>学習塾の申請5つの局面</figcaption></figure>
+<figure><img src="/images/gakushujuku-ai-hojokin-shinsei-susumekata/flow5.png" alt="学習塾の申請5つの局面: ツールを絞る、事業者を選ぶ、準備・交付申請、交付決定を待つ、導入・実績報告" loading="lazy" decoding="async"><figcaption>学習塾の申請5つの局面</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -253,7 +246,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 
 <h2 id="sec4">生徒の個人情報を整理してから交付申請に進む</h2>
 <p><strong>交付申請には、GビズID・SECURITY ACTION宣言IDに加え、学習塾ならではの準備物が必要です。</strong>一般的な必要書類は前述の申請のやり方の記事で解説したため、ここでは学習塾特有の準備物に絞って説明します。</p>
-<figure><img src="/images/gakushujuku-ai-hojokin-shinsei-susumekata/junbi.png" alt="学習塾特有の準備物4つ: 生徒データの取扱い確認、保護者向け説明文の準備、校務・連絡システムの契約書、テスト・入試日程との照合"><figcaption>学習塾特有の準備物4つ</figcaption></figure>
+<figure><img src="/images/gakushujuku-ai-hojokin-shinsei-susumekata/junbi.png" alt="学習塾特有の準備物4つ: 生徒データの取扱い確認、保護者向け説明文の準備、校務・連絡システムの契約書、テスト・入試日程との照合" loading="lazy" decoding="async"><figcaption>学習塾特有の準備物4つ</figcaption></figure>
 
 <ol>
 <li>生徒の氏名・成績など個人データの取扱い範囲の確認（誰が何に使うか）</li>
@@ -273,7 +266,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><a href="https://hojyokin-portal.jp/columns/degital_ai_saitaku" target="_blank" rel="noopener">補助金ポータルが公表した集計</a>では、通常枠の採択率は2026年9月公表の3次締切で42.19%でした。全員が採択されるわけではないため、審査を待つ間も次回に備えて資料を見直しておくと安心です。</p>
 <h2 id="sec6">保護者と非常勤講師への周知が最後の関門</h2>
 <p><strong>交付決定後の導入作業は、冬期講習や入試シーズンに入る前に終えることが、学習塾で最も重要な進め方のコツです。</strong>繁忙期に入ってから切り替えると、講師も生徒も落ち着いて操作に慣れる時間が取れません。</p>
-<figure><img src="/images/gakushujuku-ai-hojokin-shinsei-susumekata/dounyu-vs.png" alt="導入タイミングのNG・OK比較: NG例は入試直前に切り替える・保護者へ無断で変更する・同意確認を省く、OK例は閑散期の秋に切り替える・事前に保護者へ周知する・同意手順を明文化する"><figcaption>導入タイミングのNG・OK</figcaption></figure>
+<figure><img src="/images/gakushujuku-ai-hojokin-shinsei-susumekata/dounyu-vs.png" alt="導入タイミングのNG・OK比較: NG例は入試直前に切り替える・保護者へ無断で変更する・同意確認を省く、OK例は閑散期の秋に切り替える・事前に保護者へ周知する・同意手順を明文化する" loading="lazy" decoding="async"><figcaption>導入タイミングのNG・OK</figcaption></figure>
 
 <p><em>当社</em>は、2020年3月の創業から2026年9月までにのべ50社以上のAI導入補助金の申請を支援してきました。<mark>生徒の個人情報が関わる導入では、保護者への周知を後回しにする塾ほど後からトラブルになりやすい</mark>というのが、支援の現場での実感です。学習塾の導入作業では、次の3点を意識してください。</p>
 <ul>

@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -199,7 +192,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>承認が得られるかどうかは、法人化後も採択時と同じ事業計画・同じ代表者で事業を続けられるかで判断されます。事業内容や実施体制を大きく変えてしまうと、承継ではなく実質的な別事業とみなされ、承認されない可能性があります。法人化にあわせて事業計画そのものを見直したい場合は、変更の範囲を事前に事務局へ相談してください。</p>
 <h2 id="sec3">交付決定後に法人成りする場合の手続きの流れ</h2>
 <p><strong>交付決定後に法人成りするときは、事務局への事前相談→承認→法人名義での事業継続という順で進めます。</strong>自己判断で先に法人化を済ませてしまう進め方は避けてください。</p>
-<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-houjinnari/shoukei-flow.png" alt="法人成り時の地位承継の流れ: 交付決定を受ける、法人成りを検討する、事務局へ事前相談、承認を得て法人化、法人名義で継続実施"><figcaption>法人成り時の地位承継の流れ</figcaption></figure>
+<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-houjinnari/shoukei-flow.png" alt="法人成り時の地位承継の流れ: 交付決定を受ける、法人成りを検討する、事務局へ事前相談、承認を得て法人化、法人名義で継続実施" loading="lazy" decoding="async"><figcaption>法人成り時の地位承継の流れ</figcaption></figure>
 
 <p>事業再構築補助金の公式サイトでは、この手続きを「承継承認申請」と呼び、「事後の申請、交付決定前の事業承継は認められません」と明記しています。<a href="https://jigyou-saikouchiku.go.jp/hojojigyou/" target="_blank" rel="noopener">事業再構築補助金事務局の公式サイト</a>によると、承継は交付決定後・実績報告前のタイミングで行う必要があります。</p>
 <p>申請には「事業承継される方用ファイル」「承継承認申請書別紙（様式第３－３）」「誓約書」の提出が必須です。<strong>書式は事業再構築補助金のものですが、事務局への事前相談を起点にする基本的な流れは後継制度でも変わりません。</strong>個人事業主時代に取得した設備も承継の対象財産に含まれるため、資産の管理番号や設置場所の記録を法人化前に整理しておくと手続きがスムーズです。</p>
@@ -246,11 +239,11 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>補助金を受け取った年の確定申告・法人税申告の考え方は、事業主体が個人か法人かで扱いが変わります。「補助額が確定した日」を基準に、その時点の事業主体で計上するという基本は共通です。詳しい税務処理は<a href="https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/">事業再構築補助金の確定申告｜個人事業主が守る3つの注意点</a>で解説しています。</p>
 <h2 id="sec8">法人成りで失敗しやすい注意点</h2>
 <p><strong>「相談すれば通る」と思い込んで承認前に法人化や名義変更を進めてしまうことが、最も起きやすい失敗です。</strong>事前相談と承認はワンセット。順番を飛ばすと取消のリスクが残ります。</p>
-<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-houjinnari/houjinnari-vs.png" alt="法人成りするときのNG・OK: NG例は事務局に相談せず法人化する・個人名義のまま契約を続ける・GビズIDを更新しない。OK例は法人化前に事務局へ相談する・資産と契約を法人名義に変更・法人用GビズIDを取得する"><figcaption>法人成りするときのNG・OK</figcaption></figure>
+<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-houjinnari/houjinnari-vs.png" alt="法人成りするときのNG・OK: NG例は事務局に相談せず法人化する・個人名義のまま契約を続ける・GビズIDを更新しない。OK例は法人化前に事務局へ相談する・資産と契約を法人名義に変更・法人用GビズIDを取得する" loading="lazy" decoding="async"><figcaption>法人成りするときのNG・OK</figcaption></figure>
 
 <p>もう一つの失敗は、法人化後の従業員体制を確認せずに申請準備だけを進めてしまうケースです。<strong>私たちが相談を受ける中でも、法人化した安心感から従業員要件の確認が後回しになっている事業者を見かけます。</strong>書類作成の前に、まず要件を満たす体制になっているかを確認してください。</p>
 <p>三つ目は、引き継ぐ資産の減価償却を法人側で再計算し忘れることです。<strong>個人事業主時代に取得した設備を法人へ引き継ぐと、耐用年数や償却方法の扱いが変わる場合があります。</strong>引き継ぐ資産の一覧を作り、法人の会計処理にそのまま反映できるかを、税理士に確認したうえで決算に進めてください。</p>
-<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-houjinnari/kakunin-list.png" alt="法人成り前に確認する項目: 事務局への事前相談、承継の承認可否、資産・契約の名義変更、法人用GビズIDの取得"><figcaption>法人成り前に確認する項目</figcaption></figure>
+<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-houjinnari/kakunin-list.png" alt="法人成り前に確認する項目: 事務局への事前相談、承継の承認可否、資産・契約の名義変更、法人用GビズIDの取得" loading="lazy" decoding="async"><figcaption>法人成り前に確認する項目</figcaption></figure>
 
 <p><a href="https://mirasapo-plus.go.jp/" target="_blank" rel="noopener">中小企業庁が運営するミラサポplus</a>では、法人成りに関する税務・法務の一般的な注意点も確認できます。補助金の手続きとあわせて、法人化そのものの準備状況も並行して整理しておくと安心です。</p>
 <h2 id="sec9">まとめ: 法人成りは「事前相談と承認」がすべての前提</h2>

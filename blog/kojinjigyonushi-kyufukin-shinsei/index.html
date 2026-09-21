@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -201,7 +194,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>近い論点を<a href="/hojokin/it-hojokin-osusume/">IT導入補助金のおすすめの選び方</a>で扱っています。</p>
 <p>あわせて<a href="/hojokin/monozukuri-hojokin-nougyou-souko/">農業の倉庫投資は建物費NG</a>もご覧ください。</p>
 <p>実際の進め方は、<a href="/hojokin/kojinjigyonushi-pc-hojokin-hikaku/">個人事業主がパソコンを補助金で買う方法｜3制度を比較</a>で解説しています。</p>
-<figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/seido3.png" alt="個人事業主が対象になる主な補助金: IT導入補助金、小規模事業者持続化補助金、ものづくり補助金、事業再構築補助金"><figcaption>個人事業主が対象になる主な補助金</figcaption></figure>
+<figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/seido3.png" alt="個人事業主が対象になる主な補助金: IT導入補助金、小規模事業者持続化補助金、ものづくり補助金、事業再構築補助金" loading="lazy" decoding="async"><figcaption>個人事業主が対象になる主な補助金</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -251,7 +244,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec4">AI・IT導入補助金の申請方法｜個人事業主が進める5ステップ</h2>
 <p><strong>個人事業主がAI・IT導入補助金を申請する流れは、GビズID取得、支援事業者選定、交付申請、交付決定後の発注、実績報告の5ステップです。</strong>法人と同じ流れで進められます。</p>
 <p>実際の進め方を先に押さえるなら、<a href="/blog/egov-denshishinsei-kojinjigyonushi/">e-Gov電子申請とは</a>が参考になります。</p>
-<figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/flow5.png" alt="AI・IT導入補助金の申請5ステップ: GビズID取得（プライムを申請）、支援事業者選定（ツールを決める）、交付申請（事業計画書提出）、交付決定後発注（決定前はNG）、実績報告（証拠書類提出）"><figcaption>AI・IT導入補助金の申請5ステップ</figcaption></figure>
+<figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/flow5.png" alt="AI・IT導入補助金の申請5ステップ: GビズID取得（プライムを申請）、支援事業者選定（ツールを決める）、交付申請（事業計画書提出）、交付決定後発注（決定前はNG）、実績報告（証拠書類提出）" loading="lazy" decoding="async"><figcaption>AI・IT導入補助金の申請5ステップ</figcaption></figure>
 
 <p>最初のGビズIDプライムは発行までに約2〜3週間かかります。<strong>給付金と違い、補助金は準備の段階から時間がかかる</strong>ため、早めの着手が全体スケジュールを左右します。</p>
 <p><a href="https://it-shien.smrj.go.jp/applicant/flow/" target="_blank" rel="noopener">事務局が公開している申請手続きフロー</a>では、SECURITY ACTIONの宣言も交付申請の必須条件とされています。ステップごとの詳しい期間の目安は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方｜受給までの5ステップを解説</a>にまとめています。</p>
@@ -263,7 +256,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec5">個人事業主の給付金・補助金申請でよくある失敗と対策</h2>
 <p><strong>個人事業主がつまずきやすいのは、対象外の給付金を探して時間を失うことと、交付決定前に発注してしまうことの2つです。</strong>制度の性質を理解していれば、どちらも避けられます。</p>
 <p>あわせて<a href="/blog/nougyou-shoki-hiyou/">農業はAI導入補助金の対象になるか</a>もご覧ください。</p>
-<figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/kyufuhojo.png" alt="給付金・補助金の探し方NG・OK: NG例は給付金だけで検索し続ける・審査なしの制度を待つ・対象外の制度で時間切れ。OK例は使える補助金を軸に探す・審査制の制度も検討する・対象になる制度から動く"><figcaption>給付金・補助金の探し方NG・OK</figcaption></figure>
+<figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/kyufuhojo.png" alt="給付金・補助金の探し方NG・OK: NG例は給付金だけで検索し続ける・審査なしの制度を待つ・対象外の制度で時間切れ。OK例は使える補助金を軸に探す・審査制の制度も検討する・対象になる制度から動く" loading="lazy" decoding="async"><figcaption>給付金・補助金の探し方NG・OK</figcaption></figure>
 
 <p>「給付金」という言葉のイメージから、審査なしですぐもらえる制度を探し続けてしまう相談は少なくありません。<strong>実際には個人事業主が使える給付金の選択肢は限られており、補助金のほうが現実的な選択肢</strong>になります。まず補助金を軸に検討することが、遠回りを避ける近道です。</p>
 <p>もう一つの失敗は、交付決定の通知を待たずにツールを契約してしまうことです。中小企業庁が公開する制度概要でも、交付決定前の発注は補助対象外になると明記されています。私も相談の現場で、決定を待てずに契約してしまい対象外になった個人事業主の方を見てきました。</p>

@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -229,7 +222,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>急いでいて手間をかけられない場合は一つ星でも申請自体は進められます。ただし、<strong>二つ星は基本方針を公開する分だけ準備に数日多くかかる</strong>ことを見込んでおくと、締切直前に慌てずに済みます。</p>
 <h2 id="sec3">SECURITY ACTION二つ星宣言までの5ステップ</h2>
 <p><strong>二つ星宣言は、GビズIDを準備する、自社診断25項目に回答する、基本方針を策定・公開する、自己宣言システムで申込む、ID発行を待つという5ステップで進みます。</strong>GビズIDの取得を除けば、ここから2〜3日程度で宣言まで完了します。</p>
-<figure><img src="/images/ai-hojokin-security-action-hoshi2/flow5.png" alt="SECURITY ACTION二つ星宣言までの5ステップ: GビズIDを準備、自社診断25項目に回答、基本方針を策定・公開、自己宣言システムで申込み、宣言済アカウントIDの発行を待つ"><figcaption>SECURITY ACTION二つ星宣言までの5ステップ</figcaption></figure>
+<figure><img src="/images/ai-hojokin-security-action-hoshi2/flow5.png" alt="SECURITY ACTION二つ星宣言までの5ステップ: GビズIDを準備、自社診断25項目に回答、基本方針を策定・公開、自己宣言システムで申込み、宣言済アカウントIDの発行を待つ" loading="lazy" decoding="async"><figcaption>SECURITY ACTION二つ星宣言までの5ステップ</figcaption></figure>
 
 <p>まず、補助金申請に使うGビズIDを用意します。<strong>2026年4月以降、SECURITY ACTIONの宣言には補助金申請と同じGビズIDが必須になっています。別のIDで宣言しても交付申請では使えません。</strong>GビズIDをまだ持っていない方は、先にプライムアカウントの取得を済ませてください。</p>
 <p>次に、情報セキュリティ自社診断の25項目に回答し、自社の対策状況を把握します。回答が終わったら、その結果をもとに情報セキュリティ基本方針を策定し、自社サイトなどで外部に公開します。最後に自己宣言システムの申込フォームへ事業者情報を入力すれば、完了メールと宣言済アカウントIDが届くのを待つだけです。</p>
@@ -248,7 +241,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>基本方針の文面はサンプルをそのまま使っても問題ありませんが、<strong>自社の業種や取扱う情報の種類に合わせて一部を書き換えておくと、実態に即した方針になります。</strong>方針を公開したら、そのURLや掲載箇所を控えておき、次の申込みステップに進んでください。</p>
 <h2 id="sec6">宣言でつまずきやすい失敗例・注意点</h2>
 <p><strong>二つ星宣言のつまずきは、GビズIDの不一致と基本方針の公開漏れに集中しています。</strong>手順自体は複雑ではなく、確認不足が遅延の主な原因です。</p>
-<figure><img src="/images/ai-hojokin-security-action-hoshi2/ngok.png" alt="SECURITY ACTION二つ星宣言のNG・OK比較: NG例は一つ星のまま加点を狙う・基本方針を作らず宣言だけ済ませる・別のGビズIDで宣言する、OK例は自社診断から基本方針・宣言の順で進める・基本方針を外部公開する・補助金申請と同じGビズIDで宣言する"><figcaption>SECURITY ACTION二つ星宣言のNG・OK</figcaption></figure>
+<figure><img src="/images/ai-hojokin-security-action-hoshi2/ngok.png" alt="SECURITY ACTION二つ星宣言のNG・OK比較: NG例は一つ星のまま加点を狙う・基本方針を作らず宣言だけ済ませる・別のGビズIDで宣言する、OK例は自社診断から基本方針・宣言の順で進める・基本方針を外部公開する・補助金申請と同じGビズIDで宣言する" loading="lazy" decoding="async"><figcaption>SECURITY ACTION二つ星宣言のNG・OK</figcaption></figure>
 
 <div class="caution-box"><span class="box-title">注意: GビズIDの不一致は<span class="txt-red">NG</span></span><br>SECURITY ACTIONの宣言に使うGビズIDと、補助金の交付申請に使うGビズIDが異なると、宣言済アカウントIDを交付申請で使えません。<span class="big">必ず同じGビズIDで両方の手続きを進めてください。</span></div>
 

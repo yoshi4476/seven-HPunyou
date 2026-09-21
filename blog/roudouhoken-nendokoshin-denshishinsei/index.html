@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -227,7 +220,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>期間中は年度更新コールセンター（0120-963-339）が開設され、書き方の相談に対応しています。申告書の項目で迷ったときは、自己判断で埋めずに問い合わせることをおすすめします。</p>
 <h2 id="sec4">個人事業主が年度更新を電子申請する5つの手順</h2>
 <p><strong>個人事業主が年度更新を電子申請するには、ログインから電子署名・送信までの5つの手順を踏みます。</strong>e-Gov電子申請アプリを使って進めます。</p>
-<figure><img src="/images/roudouhoken-nendokoshin-denshishinsei/flow5.png" alt="個人事業主が年度更新を電子申請する5つの手順: GビズIDでログイン、手続検索、番号入力、申告内容入力、電子署名して送信"><figcaption>個人事業主が年度更新を電子申請する5つの手順</figcaption></figure>
+<figure><img src="/images/roudouhoken-nendokoshin-denshishinsei/flow5.png" alt="個人事業主が年度更新を電子申請する5つの手順: GビズIDでログイン、手続検索、番号入力、申告内容入力、電子署名して送信" loading="lazy" decoding="async"><figcaption>個人事業主が年度更新を電子申請する5つの手順</figcaption></figure>
 
 <p>まずGビズIDプライムでe-Gov電子申請アプリにログインします。GビズIDの取得方法は<a href="/blog/ai-hojokin-gbizid-shutoku/">AI導入補助金のGビズID取得方法｜プライム取得の5つの手順</a>で個人事業主向けに解説しているとおりで、補助金の電子申請と同じIDを使い回せます。</p>
 <p>ログインしたら「年度更新」で手続を検索し、該当する申告手続を選びます。次に労働保険番号とアクセスコードを入力し、確定保険料・概算保険料の申告内容を入力します。最後に電子署名を付けて送信し、マイページで「到達」の状態になっていれば申告完了です。</p>
@@ -237,7 +230,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec5">電子申請前に準備するもの3点</h2>
 <p><strong>電子申請の前に、労働保険番号とアクセスコード、賃金総額の集計結果、GビズIDの3点を用意してください。</strong>この3つがそろえば、申請作業自体は短時間で終わります。</p>
-<figure><img src="/images/roudouhoken-nendokoshin-denshishinsei/youi3.png" alt="電子申請前に準備するもの3点: 労働保険番号とアクセスコード、前年度の賃金総額の集計結果、GビズIDプライムのアカウント"><figcaption>電子申請前に準備するもの3点</figcaption></figure>
+<figure><img src="/images/roudouhoken-nendokoshin-denshishinsei/youi3.png" alt="電子申請前に準備するもの3点: 労働保険番号とアクセスコード、前年度の賃金総額の集計結果、GビズIDプライムのアカウント" loading="lazy" decoding="async"><figcaption>電子申請前に準備するもの3点</figcaption></figure>
 
 <p>アクセスコードは、送付される申告書の右上に印字された8桁の英数字。大文字と小文字が区別されるため、入力時は表記どおりに打ち込んでください。紙の申告書がまだ手元にない場合は、管轄の労働基準監督署に問い合わせれば確認できます。</p>
 <p>賃金総額の集計は、前年4月から当年3月までに支払った給与・賞与などをすべて足し合わせます。集計を年度更新の直前に始めると、給与明細を探し直す手間で時間を取られがちです。月次で給与計算をしている場合は、月ごとの集計表をそのまま合算するだけで済みます。</p>
@@ -269,7 +262,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>労働保険料率は、労災保険と雇用保険で別々に定められており、さらに業種によっても異なります。<strong>建設業のように労災リスクが高い業種ほど、労災保険料率も高く設定される傾向があります。</strong>自分の業種区分がどこに当たるかは、加入時に受け取った労働保険番号の通知書類で確認できます。<a href="https://sharoushi-cloud.com/blog/column/nedosantei/nendokosin/" target="_blank" rel="noopener">社会保険労務士による年度更新の解説</a>でも、賃金総額の集計ミスがそのまま差額計算のずれにつながりやすいと指摘されています。</p>
 <h2 id="sec7">年度更新の電子申請でつまずきやすい注意点</h2>
 <p><strong>年度更新の電子申請のつまずきは、義務化の誤解とアクセスコード関連の手違いに集中しています。</strong>制度自体は複雑ではなく、事前の確認不足が主な原因です。</p>
-<figure><img src="/images/roudouhoken-nendokoshin-denshishinsei/ngok.png" alt="年度更新の電子申請でありがちなNG・OK比較: NG例は義務化と思い込む・コード放置・直前集計、OK例は任意と理解・早めの確認・4月中の集計"><figcaption>年度更新の電子申請でありがちなNG・OK</figcaption></figure>
+<figure><img src="/images/roudouhoken-nendokoshin-denshishinsei/ngok.png" alt="年度更新の電子申請でありがちなNG・OK比較: NG例は義務化と思い込む・コード放置・直前集計、OK例は任意と理解・早めの確認・4月中の集計" loading="lazy" decoding="async"><figcaption>年度更新の電子申請でありがちなNG・OK</figcaption></figure>
 
 <p>私も、「電子申請が義務だと思い込み、紙の申告に慣れているのに無理に電子申請へ切り替えようとする」という相談を受けたことがあります。義務化対象かどうかは、資本金の有無ではなく法人か個人事業主かで決まります。個人事業主であれば、慣れた方法をそのまま使ってかまいません。</p>
 <p>アクセスコードが届かないまま申告期限が近づき、慌てて連絡をもらうケースも少なくありません。<strong>コードが見当たらない時点で早めに労働基準監督署へ確認しておけば、期限直前の焦りを防げます。</strong>賃金総額の集計も同様に、期間の直前ではなく4月のうちに済ませておくと余裕が生まれます。</p>

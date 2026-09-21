@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -232,7 +225,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>従業員に手続きを任せたい場合は、プライムを取得した後にメンバーアカウントを発行する順番になります。メンバーアカウントは追加費用なしで、プライムの管理画面から人数分を発行できます。まずは代表者本人か個人事業主本人が、プライムの取得から始めてください。</p>
 <h2 id="sec3">GビズIDプライム取得までの5ステップ</h2>
 <p><strong>GビズIDプライムの取得は、申請方法を選ぶ、本人確認書類を準備する、申請フォームに入力する、認証を済ませる、審査結果を待つという5つのステップで進みます。</strong>オンライン申請と書類申請で、途中の手順が変わります。</p>
-<figure><img src="/images/ai-hojokin-gbizid-shutoku/flow5.png" alt="GビズIDプライム取得までの5ステップ: 申請方法を選ぶ、本人確認書類を準備、GビズIDアプリで申請、SMS認証コードを入力、審査結果を待つ"><figcaption>GビズIDプライム取得までの5ステップ</figcaption></figure>
+<figure><img src="/images/ai-hojokin-gbizid-shutoku/flow5.png" alt="GビズIDプライム取得までの5ステップ: 申請方法を選ぶ、本人確認書類を準備、GビズIDアプリで申請、SMS認証コードを入力、審査結果を待つ" loading="lazy" decoding="async"><figcaption>GビズIDプライム取得までの5ステップ</figcaption></figure>
 
 <p>まず申請方法を、オンライン申請か書類申請かで決めます。マイナンバーカードを代表者本人が持っているなら、オンライン申請のほうが速く進みます。次に、選んだ方法に合わせて本人確認書類を準備します。オンラインならマイナンバーカード、書類なら印鑑証明書と登録申請書です。</p>
 <p>準備ができたら、オンラインの場合はGビズIDアプリからマイナンバーカードを読み取り、申請フォームに必要事項を入力します。スマートフォンにSMSで届く認証コードを入力すると、本人確認が完了します。最後は審査結果を待つだけです。書類の不備がなければ、あとは通知を待つだけの状態。</p>
@@ -240,7 +233,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>申請フォームの入力段階では、法人名・代表者名を登記簿や印鑑証明書と1文字も違わない表記で入力する必要があります。<strong>旧字体や略称で入力してしまうと、審査で照合が取れず差し戻しになる</strong>ことがあります。入力前に、登記簿謄本の表記をそのままコピーする意識で臨んでください。</p>
 <h2 id="sec4">オンライン申請で用意するもの</h2>
 <p><strong>オンライン申請には、マイナンバーカード・SMS受信できるスマートフォン・GビズIDアプリの3つが必要です。</strong>この3つがそろえば、印鑑証明書の郵送なしで申請が完結します。</p>
-<figure><img src="/images/ai-hojokin-gbizid-shutoku/youi.png" alt="オンライン申請で用意するもの3点: マイナンバーカード、SMS受信できるスマートフォン、GビズIDアプリを入れた端末"><figcaption>オンライン申請で用意するもの3点</figcaption></figure>
+<figure><img src="/images/ai-hojokin-gbizid-shutoku/youi.png" alt="オンライン申請で用意するもの3点: マイナンバーカード、SMS受信できるスマートフォン、GビズIDアプリを入れた端末" loading="lazy" decoding="async"><figcaption>オンライン申請で用意するもの3点</figcaption></figure>
 
 <p><a href="https://gbiz-id.go.jp/top/apply/account_select.html" target="_blank" rel="noopener">GビズID公式サイト</a>によると、<strong>オンライン申請はマイナンバーカードとスマートフォンによる本人確認が完結すれば、最短即日でアカウントが発行される</strong>とされています。書類の郵送を待つ必要がありません。</p>
 <p>GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそれぞれダウンロードできます。マイナンバーカードの読み取りに対応したスマートフォンかどうかは、事前にアプリの対応機種一覧で確認しておくと二度手間になりません。</p>
@@ -263,7 +256,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>審査を待っている間も、手を止める必要はありません。<strong>事業計画書の草案づくりや、支援事業者との打ち合わせは、GビズIDの審査と並行して進められます。</strong>両方を同時に走らせることで、交付申請の全体日程を圧縮できます。締切間際になって一つずつ手続きを始めると、SECURITY ACTIONの宣言も含めて間に合わなくなる恐れがあります。</p>
 <h2 id="sec7">GビズID取得でつまずきやすい注意点</h2>
 <p><strong>GビズID取得のつまずきは、名義の誤りと本人確認書類の不備に集中しています。</strong>制度自体は難しくなく、確認不足が遅延の主な原因です。</p>
-<figure><img src="/images/ai-hojokin-gbizid-shutoku/ngok.png" alt="GビズID申請のNG・OK比較: NG例は代表者以外の名義・期限切れカード・SMS未対応番号、OK例は代表者本人名義・有効期限確認・SMS対応番号"><figcaption>GビズID申請のNG・OK</figcaption></figure>
+<figure><img src="/images/ai-hojokin-gbizid-shutoku/ngok.png" alt="GビズID申請のNG・OK比較: NG例は代表者以外の名義・期限切れカード・SMS未対応番号、OK例は代表者本人名義・有効期限確認・SMS対応番号" loading="lazy" decoding="async"><figcaption>GビズID申請のNG・OK</figcaption></figure>
 
 <div class="caution-box"><span class="box-title">注意: 名義の取り違えは<span class="txt-red">NG</span></span><br>GビズIDプライムは法人代表者または個人事業主本人の名義で取得する必要があります。<span class="big">経理担当者や役員名義での取得は認められません。</span></div>
 

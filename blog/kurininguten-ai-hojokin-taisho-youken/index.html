@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -234,7 +227,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 
 <p>一方で、フランチャイズ本部が実質的に加盟店の株式の過半数を保有しているなど、資本関係が強く結びついている場合は「みなし大企業」に該当することがあります。<mark>契約書だけでなく、実際の資本関係まで確認することが対象要件の判定では欠かせません。</mark></p>
 <p>資本関係の確認には、登記簿謄本や株主名簿の提出を求められることがあります。契約書の内容だけでは判断がつかない場合、契約前に本部へ資本構成を照会しておくと、審査段階での手戻りを防げます。</p>
-<figure><img src="/images/kurininguten-ai-hojokin-taisho-youken/taisho-vs.png" alt="対象要件を満たす取次店・満たさない取次店の比較: 満たさない例は資本金・従業員数の基準超過、税金滞納、本部の直営店扱いでみなし大企業。満たす例は資本金5,000万円以下または従業員100人以下、税金完納、独立した契約主体の加盟店"><figcaption>対象要件を満たす取次店・満たさない取次店</figcaption></figure>
+<figure><img src="/images/kurininguten-ai-hojokin-taisho-youken/taisho-vs.png" alt="対象要件を満たす取次店・満たさない取次店の比較: 満たさない例は資本金・従業員数の基準超過、税金滞納、本部の直営店扱いでみなし大企業。満たす例は資本金5,000万円以下または従業員100人以下、税金完納、独立した契約主体の加盟店" loading="lazy" decoding="async"><figcaption>対象要件を満たす取次店・満たさない取次店</figcaption></figure>
 
 <p>契約している本部が事務局の登録支援事業者と提携しているケースもあります。<a href="https://it-shien.smrj.go.jp/search/" target="_blank" rel="noopener">事務局のITツール検索</a>で、本部経由の支援スキームが登録済みかどうかも確認しておくと手戻りがありません。登録状況の確認方法は<a href="https://lp.7senses.co.jp/blog/vendor-touroku-toha/">ベンダー登録とは？IT導入補助金の確認方法と2つのリスク</a>で詳しく整理しています。</p>
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
@@ -263,10 +256,10 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec7">申請準備の3ステップ｜要件確認からGビズID取得まで</h2>
 <p><strong>申請準備は、契約形態を確認する、要件を確認する、GビズIDを取得するという3つのステップで進めます。</strong>この順番を守ると、契約後に要件を満たしていないと分かる手戻りを避けられます。</p>
 <p>最初のステップでは、取次店か直営店かという契約形態を確認します。<strong>次に、決算書と従業員名簿をもとに、前章までの基準に照らして自店が対象要件を満たすかを確認します。</strong>最後に、電子申請に必要なGビズIDプライムアカウントを取得します。</p>
-<figure><img src="/images/kurininguten-ai-hojokin-taisho-youken/junbi3step.png" alt="申請準備の3ステップ: 契約形態を確認する（取次店か直営店かを確認）、要件を確認する（資本金・従業員数を確認）、GビズIDを取得する（電子申請の準備を整える）"><figcaption>申請準備の3ステップ</figcaption></figure>
+<figure><img src="/images/kurininguten-ai-hojokin-taisho-youken/junbi3step.png" alt="申請準備の3ステップ: 契約形態を確認する（取次店か直営店かを確認）、要件を確認する（資本金・従業員数を確認）、GビズIDを取得する（電子申請の準備を整える）" loading="lazy" decoding="async"><figcaption>申請準備の3ステップ</figcaption></figure>
 
 <p>GビズIDの取得には数日かかることがあるため、早めの準備をおすすめします。取得手順は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/">AI導入補助金のGビズID取得方法｜プライム申請の流れ</a>にまとめています。</p>
-<figure><img src="/images/kurininguten-ai-hojokin-taisho-youken/kakunin4.png" alt="対象要件を満たすための4つの確認項目: 資本金5,000万円以下または従業員100人以下、取次店は契約主体の規模で判定、みなし大企業に該当しないこと、登録支援事業者と契約できること"><figcaption>対象要件を満たすための4つの確認項目</figcaption></figure>
+<figure><img src="/images/kurininguten-ai-hojokin-taisho-youken/kakunin4.png" alt="対象要件を満たすための4つの確認項目: 資本金5,000万円以下または従業員100人以下、取次店は契約主体の規模で判定、みなし大企業に該当しないこと、登録支援事業者と契約できること" loading="lazy" decoding="async"><figcaption>対象要件を満たすための4つの確認項目</figcaption></figure>
 
 <p><a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260310001.html" target="_blank" rel="noopener">中小企業庁が公開している公募要領</a>には、業種区分ごとの詳細な基準や、みなし大企業の定義が記載されています。判定に迷う項目があれば、この一次資料と支援事業者への確認をあわせて行ってください。</p>
 <p>対象になるかどうかを自分で確かめたい場合は、<a href="https://lp.7senses.co.jp/#diagnosis">3分の適性診断（無料・8問）</a>でも確認できます。登録不要でその場で結果が出ます。</p>

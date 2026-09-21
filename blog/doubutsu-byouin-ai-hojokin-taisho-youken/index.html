@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -244,7 +237,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec5">基準を満たしていても審査で弾かれる動物病院の共通点</h2>
 <p><strong>資本金・従業員数の基準を満たしていても、みなし大企業・税金滞納・重複申請のいずれかに該当すると対象外になります。</strong>要件を満たすことと、実際に審査を通過することは別の話です。</p>
-<figure><img src="/images/doubutsu-byouin-ai-hojokin-taisho-youken/taisho-vs.png" alt="対象要件を満たす動物病院・満たさない動物病院の比較: 満たさない例は専門・技術サービス業の基準超過、税金滞納、みなし大企業。満たす例は資本金5,000万円以下または従業員100人以下、税金完納、独立した中小企業者"><figcaption>対象要件を満たす動物病院・満たさない動物病院</figcaption></figure>
+<figure><img src="/images/doubutsu-byouin-ai-hojokin-taisho-youken/taisho-vs.png" alt="対象要件を満たす動物病院・満たさない動物病院の比較: 満たさない例は専門・技術サービス業の基準超過、税金滞納、みなし大企業。満たす例は資本金5,000万円以下または従業員100人以下、税金完納、独立した中小企業者" loading="lazy" decoding="async"><figcaption>対象要件を満たす動物病院・満たさない動物病院</figcaption></figure>
 
 <div class="caution-box"><span class="box-title">注意: <span class="txt-red">みなし大企業</span>に該当していないか</span><br>大学附属の動物病院や、独立行政法人・大企業のグループ会社が運営する動物病院は、実質的に大企業とみなされ対象外になる場合があります。開業の経緯を確認してください。</div>
 
@@ -264,12 +257,12 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>同じ院長が複数の屋号で動物病院を展開している場合も、資本関係でつながっていれば合算して判定される点に注意してください。別法人として登記していても、実質的に同一グループとみなされれば、従業員数を合算して判定されることがあります。</p>
 <h2 id="sec8">GビズID取得から交付決定までに動物病院がやることリスト</h2>
 <p><strong>対象要件の確認は、要件を確認する、支援事業者を選ぶ、GビズIDを取得するという3つのステップで進めます。</strong>この順番を守ると、契約後に要件を満たしていないと分かる手戻りを避けられます。</p>
-<figure><img src="/images/doubutsu-byouin-ai-hojokin-taisho-youken/shinsei3step.png" alt="対象要件を確認してから申請するまでの3ステップ: 要件を確認する（資本金・従業員数を確認）、支援事業者を選ぶ（事務局登録済みの事業者と契約）、GビズIDを取得する（電子申請の準備を整える）"><figcaption>対象要件を確認してから申請するまでの3ステップ</figcaption></figure>
+<figure><img src="/images/doubutsu-byouin-ai-hojokin-taisho-youken/shinsei3step.png" alt="対象要件を確認してから申請するまでの3ステップ: 要件を確認する（資本金・従業員数を確認）、支援事業者を選ぶ（事務局登録済みの事業者と契約）、GビズIDを取得する（電子申請の準備を整える）" loading="lazy" decoding="async"><figcaption>対象要件を確認してから申請するまでの3ステップ</figcaption></figure>
 
 <p>最初のステップでは、登記簿謄本や決算書、スタッフの勤務実態をもとに、前章までの基準に照らして自院が対象要件を満たすかを確認します。<strong>次に、登録済みの支援事業者を2〜3社ほど比較しながら選定します。</strong>最後に、電子申請に必要なGビズIDプライムアカウントを取得します。</p>
 <p>GビズIDの取得には数日かかることがあるため、早めに準備を進めてください。取得手順は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/">AI導入補助金のGビズID取得方法｜プライム申請の流れ</a>にまとめています。</p>
 <p>申請全体の流れは<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方｜受給までの5ステップ</a>で解説しています。</p>
-<figure><img src="/images/doubutsu-byouin-ai-hojokin-taisho-youken/kakunin4.png" alt="動物病院が対象要件を満たすための4つの確認ポイント: 専門・技術サービス業の基準内であること、みなし大企業に該当しないこと、税金を滞納していないこと、登録支援事業者と契約できること"><figcaption>動物病院が対象要件を満たすための4つの確認ポイント</figcaption></figure>
+<figure><img src="/images/doubutsu-byouin-ai-hojokin-taisho-youken/kakunin4.png" alt="動物病院が対象要件を満たすための4つの確認ポイント: 専門・技術サービス業の基準内であること、みなし大企業に該当しないこと、税金を滞納していないこと、登録支援事業者と契約できること" loading="lazy" decoding="async"><figcaption>動物病院が対象要件を満たすための4つの確認ポイント</figcaption></figure>
 
 <p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の公式サイト</a>と、<a href="https://www.chusho.meti.go.jp/soshiki/teigi.html" target="_blank" rel="noopener">中小企業庁が公開する中小企業者の定義</a>には、業種区分ごとの詳細な基準やみなし大企業の定義が記載されています。判定に迷う項目があれば、この一次資料と支援事業者への確認をあわせて行ってください。</p>
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>

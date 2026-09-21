@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,7 +54,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -145,11 +140,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -193,7 +186,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>対象ツール全体を先に把握したい場合は、<a href="https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/">AI導入補助金の対象ツール6分野｜対象外との見分け方</a>で6分野の考え方を解説しています。</p>
 <h2 id="sec2">会計ソフトが対象になる3つの条件</h2>
 <p><strong>対象になるには、ITツール検索への登録・対象経費区分への合致・交付決定後の発注という3つの条件が必要です。</strong>どれか1つでも欠けると、申請が受理されません。</p>
-<figure><img src="/images/ai-hojokin-kaikeisoft-taisho/joken3.png" alt="会計ソフトが対象になる3つの条件: ITツール検索への登録、対象経費区分（会計・請求書等）への合致、交付決定を受けてからの発注"><figcaption>会計ソフトが対象になる3つの条件</figcaption></figure>
+<figure><img src="/images/ai-hojokin-kaikeisoft-taisho/joken3.png" alt="会計ソフトが対象になる3つの条件: ITツール検索への登録、対象経費区分（会計・請求書等）への合致、交付決定を受けてからの発注" loading="lazy" decoding="async"><figcaption>会計ソフトが対象になる3つの条件</figcaption></figure>
 
 <p>1つ目は前章のとおり、ITツール検索への登録です。2つ目は「対象経費区分」で、業務プロセスの分類に登録されている必要があります。3つ目は交付決定後の発注で、これはツールの種類に限らず全ツール共通の条件です。</p>
 <div class="definition-box"><span class="term">対象経費区分とは</span>、事務局が定める業務プロセスの分類です。会計ソフトは主に該当区分に登録されますが、機能によっては複数の区分にまたがって登録されている場合もあります。</div>
@@ -241,7 +234,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>機能を比較する際は、価格だけでなく、自社の業務のどこに時間がかかっているかを先に整理してください。手入力の作業が多いなら自動化機能、書類発行の漏れが課題なら該当する発行機能というように、課題に応じて優先する機能が変わります。判断基準はコストではなく、業務の詰まりどころ。</p>
 <h2 id="sec4">対象外になる3つのケース</h2>
 <p><strong>対象外になるのは、未登録のツール・汎用パソコン単体・自社独自開発システムという3つのケースです。</strong>ここを見落とすと、契約後に対象外だったと判明する事態につながります。</p>
-<figure><img src="/images/ai-hojokin-kaikeisoft-taisho/taishogai-kaikei.png" alt="会計ソフトの対象・対象外の境界: 対象外はITツール検索未登録・汎用パソコン単体・自社独自開発システム、対象はITツール検索登録済み・記帳や請求書発行の機能・交付決定後に発注"><figcaption>会計ソフトの対象・対象外の境界</figcaption></figure>
+<figure><img src="/images/ai-hojokin-kaikeisoft-taisho/taishogai-kaikei.png" alt="会計ソフトの対象・対象外の境界: 対象外はITツール検索未登録・汎用パソコン単体・自社独自開発システム、対象はITツール検索登録済み・記帳や請求書発行の機能・交付決定後に発注" loading="lazy" decoding="async"><figcaption>会計ソフトの対象・対象外の境界</figcaption></figure>
 
 <p>パソコンやタブレットは、ツールを使うために購入する場合でも単体では対象外です。対象ソフトと同時導入する場合に限り、インボイス対応類型のハードウェア費として対象に含められます。</p>
 <p><a href="https://hojyokin-portal.jp/columns/degital_ai_invoice" target="_blank" rel="noopener">インボイス枠のハードウェア要件を整理した解説記事</a>によると、上限額はパソコン・タブレットが10万円、レジ・券売機等が20万円です。単体でハードウェアだけを申請することはできません。</p>
@@ -255,7 +248,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><strong>どの枠を選ぶかは、導入するツールがどの機能区分に登録されているかで決まります。</strong>記帳機能中心なら通常枠、請求書発行の機能があればインボイス対応類型が有利になりやすい傾向があります。個人事業主が申請する場合の枠の選び方は、次の次の章で改めて解説します。</p>
 <h2 id="sec6">会計ソフト導入の申請の流れ</h2>
 <p><strong>導入は、ツールを確認する、交付決定を待つ、発注・導入する、実績報告するという4つの手順で進めます。</strong>この順番を守らないと、補助対象外になる可能性があります。</p>
-<figure><img src="/images/ai-hojokin-kaikeisoft-taisho/shinsei-flow.png" alt="会計ソフト導入の申請の流れ: ツールを確認する（ITツール検索で登録を確認）、交付決定を待つ（申請し採択・交付決定を受ける）、発注・導入する（決定後に契約し導入する）、実績報告する（導入後に事務局へ報告する）"><figcaption>会計ソフト導入の申請の流れ</figcaption></figure>
+<figure><img src="/images/ai-hojokin-kaikeisoft-taisho/shinsei-flow.png" alt="会計ソフト導入の申請の流れ: ツールを確認する（ITツール検索で登録を確認）、交付決定を待つ（申請し採択・交付決定を受ける）、発注・導入する（決定後に契約し導入する）、実績報告する（導入後に事務局へ報告する）" loading="lazy" decoding="async"><figcaption>会計ソフト導入の申請の流れ</figcaption></figure>
 
 <p>最初の手順であるツール確認では、ITツール検索での登録状況に加えて、支援事業者に相談しながら自社に合う区分・枠を絞り込みます。<strong>私も相談の現場で、登録状況を確認しないまま契約を先に進めてしまい、慌てて仕切り直した事業者を何度か見てきました。</strong>契約前の確認こそ、後の失格を防ぐ最大のポイントです。</p>
 <p>申請から交付決定までの全体の流れは<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方｜受給までの5ステップを解説</a>でステップごとに解説しています。ツールの種類に限らず共通する手順のため、あわせて確認してください。</p>

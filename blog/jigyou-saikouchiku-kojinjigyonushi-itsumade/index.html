@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -212,7 +205,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><strong>2026年8月時点で個人事業主が使えるのは「新事業進出・ものづくり商業サービス補助金」です。</strong>中小企業新事業進出補助金とものづくり補助金を統合した制度で、事業再構築補助金からは2段階先にあたります。</p>
 <p>関連する内容は、<a href="/hojokin/monozukuri-hojokin-nougyou-souko/">農業の倉庫投資は建物費NG</a>で解説しています。</p>
 <p>近い論点を<a href="/hojokin/it-hojokin-clinic/">クリニックのIT導入補助金</a>で扱っています。</p>
-<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-itsumade/seido-flow.png" alt="事業再構築補助金から今の制度までの流れ: 事業再構築補助金は2025年3月終了、新事業進出補助金は2026年6月終了、新事業進出ものづくり補助金が現在申請可能"><figcaption>事業再構築補助金から今の制度までの流れ</figcaption></figure>
+<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-itsumade/seido-flow.png" alt="事業再構築補助金から今の制度までの流れ: 事業再構築補助金は2025年3月終了、新事業進出補助金は2026年6月終了、新事業進出ものづくり補助金が現在申請可能" loading="lazy" decoding="async"><figcaption>事業再構築補助金から今の制度までの流れ</figcaption></figure>
 
 <p>第1回の公募要領は2026年6月29日に公開されました。技術的革新性のある製品・サービスの開発、既存事業とは異なる新市場・高付加価値事業への進出、海外市場開拓に向けた設備投資などが対象です。</p>
 <p><a href="https://shinjigyou-monodukuri.smrj.go.jp/" target="_blank" rel="noopener">中小企業基盤整備機構の制度公式サイト</a>では、公募要領や電子申請システムへのリンクが公開されています。制度名が短期間で変わっているため、検索結果に出てくる記事の公開日を確認し、古い制度名のまま解説している情報を鵜呑みにしないことが大切です。</p>
@@ -221,7 +214,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><strong>個人事業主も対象になりますが、応募申請時点で従業員が0人の場合は補助対象外です。</strong>1人で事業を営むフリーランスがつまずきやすいポイントです。</p>
 <div class="caution-box"><span class="box-title">注意: <span class="txt-red">従業員0人は補助対象外</span></span><br>公募要領には「応募申請時点で常時使用する従業員数が0名の事業者は、補助対象外となる」と明記されています。一人で事業を行っている場合でも、応募申請までに従業員を雇用すれば申請可能になります。</div>
 
-<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-itsumade/taisho-list.png" alt="新事業進出・ものづくり補助金 対象の主な条件: 従業員1人以上を雇用、国内に事業拠点がある、医療法人は対象外、重複受給の制限に注意"><figcaption>新事業進出・ものづくり補助金 対象の主な条件</figcaption></figure>
+<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-itsumade/taisho-list.png" alt="新事業進出・ものづくり補助金 対象の主な条件: 従業員1人以上を雇用、国内に事業拠点がある、医療法人は対象外、重複受給の制限に注意" loading="lazy" decoding="async"><figcaption>新事業進出・ものづくり補助金 対象の主な条件</figcaption></figure>
 
 <p>このほか、日本国内に本社および事業実施場所があること、医療法人は対象外であることも要件に含まれます。応募申請日から過去3年間に、特定の補助金で2回以上の交付決定を受けている場合も対象から外れます。</p>
 <p><strong>「個人事業主だから」ではなく「従業員が0人だから」対象外になるケースがほとんど</strong>です。開業直後で1人で事業を回している方は、応募前に雇用計画を立てる必要があります。</p>
@@ -303,7 +296,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><a href="https://mirasapo-plus.go.jp/" target="_blank" rel="noopener">中小企業庁が運営するミラサポplus</a>では、現行の補助金・助成金を横断で検索できます。制度名で迷ったときは、まずここで最新の制度名を確認する習慣をつけてください。</p>
 <h2 id="sec9">個人事業主が今から準備すべきこと</h2>
 <p><strong>個人事業主がこの補助金を使うには、従業員の雇用状況の確認とGビズIDの取得が最優先です。</strong>締切から逆算した準備が欠かせません。</p>
-<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-itsumade/taisho-vs.png" alt="個人事業主の申請でNG・OK: NG例は事業再構築補助金の情報のまま準備・従業員0人のまま応募・旧制度の締切を待ち続ける。OK例は最新の後継制度を確認する・応募前に1人雇用する・今の公募回の締切から逆算する"><figcaption>個人事業主の申請でNG・OK</figcaption></figure>
+<figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-itsumade/taisho-vs.png" alt="個人事業主の申請でNG・OK: NG例は事業再構築補助金の情報のまま準備・従業員0人のまま応募・旧制度の締切を待ち続ける。OK例は最新の後継制度を確認する・応募前に1人雇用する・今の公募回の締切から逆算する" loading="lazy" decoding="async"><figcaption>個人事業主の申請でNG・OK</figcaption></figure>
 
 <p>まず確認すべきは、応募申請時点で従業員を1人以上雇用できるかどうかです。雇用の予定がない場合は、この制度の対象外になるため、他の制度（IT導入補助金や小規模事業者持続化補助金など）を検討したほうが早く進みます。</p>
 <p>制度選びに迷う場合は、投資内容が「新市場への進出」なのか「ツール導入」なのかで振り分けると判断しやすくなります。ツール導入が目的であれば、<a href="https://lp.7senses.co.jp/blog/jizokuka-hojokin-chusho-kigyo-taisho/">小規模事業者持続化補助金｜中小企業が使える条件</a>のような従業員数の縛りが緩い制度のほうが向いていることもあります。</p>

@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -190,7 +183,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>関連する内容は<a href="/blog/gakushujuku-ai-hojokin-shinsei-susumekata/">学習塾はAI導入補助金の申請をどう進める？</a>で整理しています。</p>
 <p>近い論点を<a href="/hojokin/jizokuka-hojokin-inshokuten-jirei/">小規模事業者持続化補助金</a>で扱っています。</p>
 <p>対象要件を満たすかどうかは<a href="https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-taisho-youken/">飲食店のAI導入補助金 対象要件｜資本金・従業員数など5つの基準【2026年】</a>で確認できます。要件を満たしたうえで、この記事の進め方に沿って手続きを進めてください。</p>
-<figure><img src="/images/inshokuten-ai-hojokin-shinsei-susumekata/flow5.png" alt="申請の進め方5つの局面: ツールを絞る、事業者を選ぶ、準備・交付申請、交付決定を待つ、導入・実績報告"><figcaption>申請の進め方5つの局面</figcaption></figure>
+<figure><img src="/images/inshokuten-ai-hojokin-shinsei-susumekata/flow5.png" alt="申請の進め方5つの局面: ツールを絞る、事業者を選ぶ、準備・交付申請、交付決定を待つ、導入・実績報告" loading="lazy" decoding="async"><figcaption>申請の進め方5つの局面</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -253,7 +246,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><span class="txt-blue">複数の事業者に相談し、対応の速さと業種理解の深さを比較する</span>ことが、後の局面をスムーズに進める近道になります。1社だけの提案で決めると、事業計画書の「選定理由」も薄くなりがちです。</p>
 <h2 id="sec4">局面3: 飲食店特有の準備物と営業データをそろえて交付申請する</h2>
 <p><strong>交付申請には、GビズID・SECURITY ACTION宣言IDに加え、飲食店ならではの準備物が必要です。</strong>一般的な必要書類は前述の申請のやり方の記事で解説したため、ここでは飲食店特有の準備物に絞って説明します。</p>
-<figure><img src="/images/inshokuten-ai-hojokin-shinsei-susumekata/junbi.png" alt="飲食店特有の準備物4つ: 保健所の営業許可証、POS・予約システムの契約書、客数・客単価の記録、重複導入がないかの確認"><figcaption>飲食店特有の準備物4つ</figcaption></figure>
+<figure><img src="/images/inshokuten-ai-hojokin-shinsei-susumekata/junbi.png" alt="飲食店特有の準備物4つ: 保健所の営業許可証、POS・予約システムの契約書、客数・客単価の記録、重複導入がないかの確認" loading="lazy" decoding="async"><figcaption>飲食店特有の準備物4つ</figcaption></figure>
 
 <ol>
 <li>保健所の営業許可証の控え(事業実態の確認に使われることがある)</li>
@@ -275,7 +268,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><a href="https://hojyokin-portal.jp/columns/degital_ai_saitaku" target="_blank" rel="noopener">補助金ポータルが公表した集計</a>では、通常枠の採択率は2026年9月公表の3次締切で42.19%でした。全員が採択されるわけではないため、審査を待つ間も次回に備えて資料を見直しておくと安心です。</p>
 <h2 id="sec6">局面5: 営業を止めずに導入し実績報告する</h2>
 <p><strong>交付決定後の導入作業は、営業時間を避けて行うことが、飲食店で最も重要な進め方のコツです。</strong>通常の会社と違い、飲食店は営業中にレジや予約システムを止められません。</p>
-<figure><img src="/images/inshokuten-ai-hojokin-shinsei-susumekata/dounyu-vs.png" alt="導入作業のNG・OK比較: NG例はスタッフへの説明なしに導入する・営業時間中に切り替える・マニュアルを用意しない、OK例は導入前にスタッフへ操作研修を行う・定休日や閉店後に切り替える・操作マニュアルを共有する"><figcaption>導入作業のNG・OK</figcaption></figure>
+<figure><img src="/images/inshokuten-ai-hojokin-shinsei-susumekata/dounyu-vs.png" alt="導入作業のNG・OK比較: NG例はスタッフへの説明なしに導入する・営業時間中に切り替える・マニュアルを用意しない、OK例は導入前にスタッフへ操作研修を行う・定休日や閉店後に切り替える・操作マニュアルを共有する" loading="lazy" decoding="async"><figcaption>導入作業のNG・OK</figcaption></figure>
 
 <p>私たちはMEO運用サービス「G-ran」で通算3,200店舗以上を運用してきた経験から、<mark>現場を止めずにツールを切り替える難しさ</mark>をよく理解しています。飲食店の導入作業では、次の3点を意識してください。</p>
 <ul>

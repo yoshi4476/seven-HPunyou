@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -196,7 +189,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><strong>小規模企業者の従業員基準は、通常の商業・サービス業なら5人以下ですが、宿泊業・娯楽業に限り20人以下まで緩和されています。</strong>この特例を知らないまま「うちは対象外」と思い込んでいる経営者が少なくありません。</p>
 <div class="definition-box"><span class="term">小規模企業者とは</span>、中小企業基本法で定められた区分で、業種ごとに従業員数の基準が異なります。小規模企業者に該当すると、契約額50万円以下の部分でより高い補助率が適用されます。</div>
 
-<figure><img src="/images/shukuhakugyou-ai-hojokin-hojogaku-meyasu/kibo-vs.png" alt="小規模企業者の従業員基準、宿泊業と一般サービス業の違い: 宿泊業は基準20人以下で多くの民宿・旅館が対象に含まれる、一般の商業・サービス業は基準5人以下で従業員が増えると対象から外れやすい"><figcaption>小規模企業者の従業員基準、宿泊業と一般サービス業の違い</figcaption></figure>
+<figure><img src="/images/shukuhakugyou-ai-hojokin-hojogaku-meyasu/kibo-vs.png" alt="小規模企業者の従業員基準、宿泊業と一般サービス業の違い: 宿泊業は基準20人以下で多くの民宿・旅館が対象に含まれる、一般の商業・サービス業は基準5人以下で従業員が増えると対象から外れやすい" loading="lazy" decoding="async"><figcaption>小規模企業者の従業員基準、宿泊業と一般サービス業の違い</figcaption></figure>
 
 <p><a href="https://www.chusho.meti.go.jp/soshiki/teigi.html" target="_blank" rel="noopener">中小企業庁の中小企業・小規模企業者の定義ページ</a>によると、小規模企業者の従業員数基準は宿泊業・娯楽業に限り20人以下です。他業種の5人以下より、対象になる範囲がはるかに広いことがわかります。</p>
 <p>客室10〜20室程度の旅館でも、従業員数が20人以下なら小規模企業者として扱われます。<strong>契約額50万円以下の部分は、補助率が中小企業者の3/4よりさらに高い4/5</strong>まで上がります。</p>
@@ -204,7 +197,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>詳しい業種比較は<a href="/blog/it-hojokin-shukuhakugyou/">宿泊業のIT導入補助金は有利？20人以下特例と対象ツール</a>で解説しています。</p>
 <h2 id="sec3">宿泊業で対象になるインバウンド対応ツール4分野</h2>
 <p><strong>宿泊業で対象になるAIツールは、予約・PMS、自動チェックイン、多言語対応、収益管理の4分野が中心です。</strong>インバウンド需要が伸びている施設ほど、多言語対応と収益管理の優先度が上がります。</p>
-<figure><img src="/images/shukuhakugyou-ai-hojokin-hojogaku-meyasu/tool4.png" alt="宿泊業のインバウンド対応ツール4分野: 予約・PMSはサイトコントローラーで予約を一元管理する、自動チェックインは無人チェックイン機でフロント対応を省人化する、多言語対応は多言語チャットでインバウンド対応の質を上げる、収益管理はレベニューマネジメントで稼働率と単価を最適化する"><figcaption>宿泊業のインバウンド対応ツール4分野</figcaption></figure>
+<figure><img src="/images/shukuhakugyou-ai-hojokin-hojogaku-meyasu/tool4.png" alt="宿泊業のインバウンド対応ツール4分野: 予約・PMSはサイトコントローラーで予約を一元管理する、自動チェックインは無人チェックイン機でフロント対応を省人化する、多言語対応は多言語チャットでインバウンド対応の質を上げる、収益管理はレベニューマネジメントで稼働率と単価を最適化する" loading="lazy" decoding="async"><figcaption>宿泊業のインバウンド対応ツール4分野</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -314,7 +307,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>従業員が15人程度でも、20人以下特例の対象です。契約額のうち50万円を超える部分は、通常枠の補助率が適用されます。</p>
 <h2 id="sec6">複数施設・グループ運営の補助額の目安</h2>
 <p><strong>3施設・従業員50名程度のホテルグループが、予約・チェックイン・多言語・収益管理の4分野に会計ソフトも加え、年間250万円で契約する場合、補助額の目安は約166.7万円です。</strong>4分野以上のツールを導入する場合、通常枠の上限額は150万〜450万円まで広がります。</p>
-<figure><img src="/images/shukuhakugyou-ai-hojokin-hojogaku-meyasu/shisan-flow.png" alt="補助額を試算する3ステップ: 導入したいツールを4分野から選ぶ、契約額と従業員数を確認する、枠と補助率を当てはめる"><figcaption>補助額を試算する3ステップ</figcaption></figure>
+<figure><img src="/images/shukuhakugyou-ai-hojokin-hojogaku-meyasu/shisan-flow.png" alt="補助額を試算する3ステップ: 導入したいツールを4分野から選ぶ、契約額と従業員数を確認する、枠と補助率を当てはめる" loading="lazy" decoding="async"><figcaption>補助額を試算する3ステップ</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>

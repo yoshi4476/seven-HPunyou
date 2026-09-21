@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,7 +54,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -145,11 +140,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -199,7 +192,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec2">個人事業主は対象になるのか｜従業員数の要件</h2>
 <p><strong>個人事業主も、業種ごとの従業員数の要件を満たせば小規模事業者持続化補助金の対象です。</strong>法人か個人かでは判断されません。</p>
 <p>関連して、<a href="/blog/unsougyou-jissekihoukokusho/">運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁</a>もあわせてご確認ください。</p>
-<figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/taisho.png" alt="個人事業主が対象になる主な要件: 商業・サービス業5人以下、宿泊業・娯楽業20人以下、製造業その他20人以下、法人・個人問わず対象"><figcaption>個人事業主が対象になる主な要件</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/taisho.png" alt="個人事業主が対象になる主な要件: 商業・サービス業5人以下、宿泊業・娯楽業20人以下、製造業その他20人以下、法人・個人問わず対象" loading="lazy" decoding="async"><figcaption>個人事業主が対象になる主な要件</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -255,7 +248,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec6">個人事業主が不採択になりやすい3つのパターン</h2>
 <p><strong>個人事業主が不採択になりやすいのは、書類不備・目標の抽象化・加点未活用の3パターンです。</strong>どれも事前の準備で防げます。</p>
-<figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/hikaku.png" alt="不採択・採択されやすい申請の違い: NG例は目標が数値なし・加点項目を未活用・書類に不備あり。OK例は数値目標を明記・加点を2種類活用・事前に商工会で確認"><figcaption>不採択・採択されやすい申請の違い</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/hikaku.png" alt="不採択・採択されやすい申請の違い: NG例は目標が数値なし・加点項目を未活用・書類に不備あり。OK例は数値目標を明記・加点を2種類活用・事前に商工会で確認" loading="lazy" decoding="async"><figcaption>不採択・採択されやすい申請の違い</figcaption></figure>
 
 <p><strong>具体的な数値がないまま提出された事業計画書は、計画審査で伸び悩みやすくなります。</strong>私たちは登録支援事業者として、こうした相談を何度も受けてきました。</p>
 <p>もう一つの落とし穴は、該当する加点項目があるのに選択し忘れることです。加点項目は自己申告制のため、事務局側から教えてもらえるわけではありません。申請前のチェックリストに加点項目を組み込んでおくと、選び忘れを防げます。</p>
@@ -272,7 +265,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 
 <h2 id="sec8">申請から採択発表までの流れとスケジュール</h2>
 <p><strong>申請から採択発表までは、公募開始から結果通知までおよそ4〜5か月かかります。</strong>逆算してスケジュールを組むと余裕を持てます。</p>
-<figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/nagare.png" alt="申請から採択発表までの流れ: 公募開始（要領を確認）、商工会に相談（事業計画書作成）、電子申請（jGrantsで提出）、審査（基礎・計画・加点）、採択発表（結果通知）"><figcaption>申請から採択発表までの流れ</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/nagare.png" alt="申請から採択発表までの流れ: 公募開始（要領を確認）、商工会に相談（事業計画書作成）、電子申請（jGrantsで提出）、審査（基礎・計画・加点）、採択発表（結果通知）" loading="lazy" decoding="async"><figcaption>申請から採択発表までの流れ</figcaption></figure>
 
 <p>第19回は2026年1月28日に公募要領が公開され、4月30日に締切、7月29日に採択発表という流れでした。<a href="https://r6.jizokukahojokin.info/" target="_blank" rel="noopener">小規模事業者持続化補助金の公式サイト</a>で、次回公募の最新スケジュールを確認できます。</p>
 <p>個人事業主がAI・IT導入補助金と迷う場合は、<a href="https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/">個人事業主のAI導入補助金｜開業1年未満は対象外？条件を解説</a>もあわせて確認してください。制度ごとの対象条件を比較すると、自分に合う制度が見つかりやすくなります。</p>

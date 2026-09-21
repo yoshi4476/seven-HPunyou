@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -194,7 +187,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>私たちは登録支援事業者として、エステサロンからの相談も数多く受けてきました。<strong>「うちの規模だと結局いくらになるのか」という質問</strong>が最も多く、業種共通の説明だけでは自分の店に当てはめにくいという声をよく聞きます。この記事では、規模別の3パターンに絞って試算します。</p>
 <h2 id="sec2">エステサロンで対象になるAIツール3分野</h2>
 <p><strong>エステサロンで対象になるAIツールは、予約管理システム・顧客管理（カルテ管理）システム・チャット/LINE予約対応の3分野が中心です。</strong>業務のどこがボトルネックかによって、優先して導入すべき分野が変わります。</p>
-<figure><img src="/images/esute-ai-hojokin-hojogaku-mokuyasu/tool3.png" alt="エステサロンで対象になるAIツール3分野: 予約管理システムはネット予約と当日キャンセルを一元管理する、顧客管理・カルテ管理は施術履歴や回数券の消化状況を記録する、チャット・LINE予約対応は予約受付や当日連絡を自動化する"><figcaption>エステサロンで対象になるAIツール3分野</figcaption></figure>
+<figure><img src="/images/esute-ai-hojokin-hojogaku-mokuyasu/tool3.png" alt="エステサロンで対象になるAIツール3分野: 予約管理システムはネット予約と当日キャンセルを一元管理する、顧客管理・カルテ管理は施術履歴や回数券の消化状況を記録する、チャット・LINE予約対応は予約受付や当日連絡を自動化する" loading="lazy" decoding="async"><figcaption>エステサロンで対象になるAIツール3分野</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -300,7 +293,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec5">複数店舗運営の補助額シミュレーション</h2>
 <p><strong>3店舗・スタッフ15名程度のエステサロンが予約管理・顧客管理・チャット予約対応の3分野に加え会計ソフトも導入し、年間220万円で契約する場合、補助額の目安は約146.7万円です。</strong>4分野以上のツールを導入する場合、通常枠の上限額は150万円〜450万円まで広がります。</p>
-<figure><img src="/images/esute-ai-hojokin-hojogaku-mokuyasu/flow3.png" alt="対象ツールを選び補助額を試算する3ステップ: ボトルネックを特定する、対象ツール分野を選ぶ、契約額に補助率を掛ける"><figcaption>対象ツールを選び補助額を試算する3ステップ</figcaption></figure>
+<figure><img src="/images/esute-ai-hojokin-hojogaku-mokuyasu/flow3.png" alt="対象ツールを選び補助額を試算する3ステップ: ボトルネックを特定する、対象ツール分野を選ぶ、契約額に補助率を掛ける" loading="lazy" decoding="async"><figcaption>対象ツールを選び補助額を試算する3ステップ</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -341,7 +334,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>賃上げ要件を満たせず補助率1/2のままだと、同じ220万円の契約でも補助額は110万円にとどまります。<strong>要件を満たすかどうかだけで、複数店舗の規模では30万円以上の差</strong>が出ることになります。契約前に賃上げ要件の対象人数を確認しておくと、この差を取りこぼしません。</p>
 <h2 id="sec6">対象外になりやすい経費</h2>
 <p><strong>エステサロンで対象外になりやすい経費は、施術ベッドや内装改装費、広告掲載費です。</strong>業務効率化ツールではなく設備投資や集客施策に当たるためです。</p>
-<figure><img src="/images/esute-ai-hojokin-hojogaku-mokuyasu/taigai-vs.png" alt="対象になる経費・対象外になる経費: 対象外は施術ベッド・内装改装費、ホットペッパー等の広告掲載費、対象は予約管理・顧客管理システムの導入費、チャットボット・LINE連携の導入費"><figcaption>対象になる経費・対象外になる経費</figcaption></figure>
+<figure><img src="/images/esute-ai-hojokin-hojogaku-mokuyasu/taigai-vs.png" alt="対象になる経費・対象外になる経費: 対象外は施術ベッド・内装改装費、ホットペッパー等の広告掲載費、対象は予約管理・顧客管理システムの導入費、チャットボット・LINE連携の導入費" loading="lazy" decoding="async"><figcaption>対象になる経費・対象外になる経費</figcaption></figure>
 
 <p>施術ベッドや脱毛機など美容機器の導入を検討している場合は、AI導入補助金ではなく別の制度が向きます。機器投資の規模によって使い分けが必要で、詳しくは<a href="/blog/monozukuri-hojokin-esute/">ものづくり補助金はエステサロン向け</a>で解説しています。</p>
 <p>パソコン・タブレット等のハードウェアは、対象ソフトウェアと同時導入する場合に限り、上限10万円・補助率1/2以内で補助対象になります。</p>

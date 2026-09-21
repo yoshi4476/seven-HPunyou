@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -191,7 +184,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>一般的な不採択理由は<a href="/blog/ai-hojokin-fusaitaku-riyu/">AI導入補助金の不採択理由</a>で解説しました。この記事では、卸売業の現場に絞って原因を掘り下げます。</p>
 <p>補助額の試算は<a href="/blog/ai-hojokin-ikura-moraeru/">AI導入補助金はいくらもらえる？</a>で行えます。</p>
 <p><a href="https://hojyokin-portal.jp/columns/degital_ai_saitaku" target="_blank" rel="noopener">補助金ポータルが公表した集計</a>によると、通常枠の採択率は2026年9月公表の3次締切で42.19%でした。半数以上が不採択になっています。卸売業に限った統計はありませんが、要件と数字の両方が求められる審査である点は業種を問わず変わりません。</p>
-<figure><img src="/images/oroshiurigyou-ai-hojokin-ochiru-riyu/riyu3.png" alt="卸売業特有の落とし穴3つ: 要件区分の誤認、受発注AIの説明不足、特有数字の欠如"><figcaption>卸売業特有の落とし穴3つ</figcaption></figure>
+<figure><img src="/images/oroshiurigyou-ai-hojokin-ochiru-riyu/riyu3.png" alt="卸売業特有の落とし穴3つ: 要件区分の誤認、受発注AIの説明不足、特有数字の欠如" loading="lazy" decoding="async"><figcaption>卸売業特有の落とし穴3つ</figcaption></figure>
 
 <div class="definition-box"><span class="term">AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助します。</div>
 
@@ -248,7 +241,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 </tbody>
 </table></div>
 <p>卸売業の相談では、検品用のハンディターミナルや倉庫内の搬送ロボットをまとめて通常枠で申請しようとして、後から対象外だと分かるケースが多く見られます。<strong>申請枠を選ぶ前に、導入したい機器が「ソフトなのかハードなのか」を切り分ける</strong>ことが、遠回りを避ける近道です。</p>
-<figure><img src="/images/oroshiurigyou-ai-hojokin-ochiru-riyu/hw-vs.png" alt="ハードウェア申請のNG・OK比較: NG例はハンディ端末を単体申請・検品ロボを通常枠で計画・ソフトと切り離し発注、OK例は対象ソフトと同時導入・インボイス枠で購入・在庫連携の機能を明記"><figcaption>ハードウェア申請 NG・OK</figcaption></figure>
+<figure><img src="/images/oroshiurigyou-ai-hojokin-ochiru-riyu/hw-vs.png" alt="ハードウェア申請のNG・OK比較: NG例はハンディ端末を単体申請・検品ロボを通常枠で計画・ソフトと切り離し発注、OK例は対象ソフトと同時導入・インボイス枠で購入・在庫連携の機能を明記" loading="lazy" decoding="async"><figcaption>ハードウェア申請 NG・OK</figcaption></figure>
 
 <p><span class="txt-red">倉庫内の自動搬送ロボットも同じ扱いです。</span>ハードウェア単体では申請できません。対象ソフトウェアとの同時導入が前提になる点を、申請枠を選ぶ前に確認してください。</p>
 <h2 id="sec6">理由5: 本社・複数倉庫・支店の経費区分を整理せず提出する</h2>
@@ -264,7 +257,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><span class="big">粗利率ではなく、受注1件あたり・出荷1件あたりのコスト削減額で効果を示すことが、卸売業の計画書を通す最善策です。</span>例えば「受注処理コストを1件あたり300円削減し、月間300件で月間9万円の削減効果」のように、金額ベースで示してください。</p>
 <h2 id="sec8">落ちた後に次の申請でやるべきこと</h2>
 <p><strong>不採択通知を受けたら、まず今回の原因をこの記事の6項目に当てはめて切り分けてください。</strong>同じ内容のまま出し直しても、結果は変わりにくいものです。</p>
-<figure><img src="/images/oroshiurigyou-ai-hojokin-ochiru-riyu/nextstep.png" alt="再申請までの3ステップ: 区分要件を再確認する、卸売業の数字を集める、次回公募へ再申請する"><figcaption>再申請までの3ステップ</figcaption></figure>
+<figure><img src="/images/oroshiurigyou-ai-hojokin-ochiru-riyu/nextstep.png" alt="再申請までの3ステップ: 区分要件を再確認する、卸売業の数字を集める、次回公募へ再申請する" loading="lazy" decoding="async"><figcaption>再申請までの3ステップ</figcaption></figure>
 
 <ol>
 <li>自社が卸売業の中小企業者区分に該当するか再確認する</li>

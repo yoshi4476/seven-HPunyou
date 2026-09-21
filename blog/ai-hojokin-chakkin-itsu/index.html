@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -193,7 +186,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>私たちは2020年3月の創業以来、大阪市東成区を拠点にMEO運用サービス「G-ran」で通算3,200店舗以上を運用してきました。この実績をもとに、登録支援事業者としてAI導入補助金の実績報告まで一貫して支援しています。<strong>「採択されたのに、いつお金が入るのか分からない」という相談は、着金直前の時期に集中して寄せられます。</strong>先に流れを知っておくかどうかが、資金計画の見通しを左右する分かれ道。</p>
 <h2 id="sec2">着金までの全体の流れ：交付決定から確定検査まで</h2>
 <p><strong>着金は交付決定、発注・支払い、実績報告、確定検査という4段階を順番に経て実行されます。</strong>どこか一段階でも止まると、着金全体が後ろにずれます。</p>
-<figure><img src="/images/ai-hojokin-chakkin-itsu/chakkin-flow.png" alt="着金までの4ステップ: 交付決定の通知を受け取る、発注・導入・支払いを自己負担でいったん立て替える、証憑をそろえて実績報告を提出する、事務局の確認後に確定検査・着金"><figcaption>着金までの4ステップ</figcaption></figure>
+<figure><img src="/images/ai-hojokin-chakkin-itsu/chakkin-flow.png" alt="着金までの4ステップ: 交付決定の通知を受け取る、発注・導入・支払いを自己負担でいったん立て替える、証憑をそろえて実績報告を提出する、事務局の確認後に確定検査・着金" loading="lazy" decoding="async"><figcaption>着金までの4ステップ</figcaption></figure>
 
 <p><a href="https://it-shien.smrj.go.jp/aftergrantdecision/measures/" target="_blank" rel="noopener">事務局の交付決定後の手続きページ</a>では、実績報告（STEP07）の提出後、事務局が確定検査を行い交付額を確認・承認する段階（STEP08）に進むと案内されています。<strong>このページにも、確定検査そのものにかかる具体的な日数は明記されていません。</strong>期間が事業者ごとに変わりやすいのは、制度の不備ではなく、証憑の状態が一件ごとに違うためです。</p>
 <p>見落とされがちなのがSTEP08の最終手続きです。同ページには<strong>「補助事業者は申請マイページから確定検査の結果・補助金交付決定額を確認し、内容に相違がなければ承認を行います。承認にはSMS認証が必要です」</strong>と明記されています。</p>

@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,7 +54,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -145,11 +140,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -188,7 +181,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><strong>小規模事業者持続化補助金は、飲食店の販路開拓・業務効率化につながる経費であれば幅広く対象になります。</strong>業種を問わず申請できる制度です。</p>
 <div class="definition-box"><span class="term">小規模事業者持続化補助金とは</span>、商工会議所・商工会の管轄地域で、小規模事業者が販路開拓や生産性向上に取り組む経費の一部を補助する制度です。</div>
 
-<figure><img src="/images/jizokuka-hojokin-inshokuten-jirei/jirei4.png" alt="飲食店で対象になりやすい4つの投資: 店舗改装、ホームページ・EC制作、厨房設備導入、POSレジ・受発注システム"><figcaption>飲食店で対象になりやすい4つの投資</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-inshokuten-jirei/jirei4.png" alt="飲食店で対象になりやすい4つの投資: 店舗改装、ホームページ・EC制作、厨房設備導入、POSレジ・受発注システム" loading="lazy" decoding="async"><figcaption>飲食店で対象になりやすい4つの投資</figcaption></figure>
 
 <p>対象になる経費は、店舗改装費、ウェブサイト関連費、機械装置等費、広報費、展示会等出展費など幅広いカテゴリーに分かれています。飲食店の場合、<strong>客席の改装や厨房設備の導入、ホームページ制作費</strong>として活用するケースが目立ちます。</p>
 <p>制度の基本的な対象条件や中小企業との使い分けは、<a href="/blog/jizokuka-hojokin-chusho-kigyo-taisho/">小規模事業者持続化補助金は中小企業も対象</a>で解説しています。まずは自店舗が対象になる従業員規模かどうかを確認してください。</p>
@@ -212,7 +205,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><strong>対象になるかどうかを分けるのは、経費が販路開拓という目的につながっているかどうかです。</strong>改装や設備投資そのものが目的化していると対象外になります。</p>
 <p>近い論点を<a href="/blog/monozukuri-hojokin-nail-salon/">ネイルサロンのものづくり補助金</a>で扱っています。</p>
 <p>関連する内容として<a href="/blog/nail-salon-hojokin-hikaku/">ネイルサロンの補助金3種を比較</a>も公開しています。</p>
-<figure><img src="/images/jizokuka-hojokin-inshokuten-jirei/keihi-vs.png" alt="対象になる経費とならない経費: 対象にならないのは改装・修繕だけが目的の工事とテーブル・椅子の単純な入替。対象になるのは販路開拓につながる店舗改装とHP制作・厨房設備・POS導入"><figcaption>対象になる経費とならない経費</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-inshokuten-jirei/keihi-vs.png" alt="対象になる経費とならない経費: 対象にならないのは改装・修繕だけが目的の工事とテーブル・椅子の単純な入替。対象になるのは販路開拓につながる店舗改装とHP制作・厨房設備・POS導入" loading="lazy" decoding="async"><figcaption>対象になる経費とならない経費</figcaption></figure>
 
 <div class="table-wrap"><table>
 <thead>
@@ -284,7 +277,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 
 <h2 id="sec7">飲食店が交付決定を待つ間に準備しておきたいこと</h2>
 <p><strong>交付決定を待つ間は、事業計画書の見直しと見積もりの再確認をしておくのが得策です。</strong>発注のタイミングを誤ると補助対象から外れてしまいます。</p>
-<figure><img src="/images/jizokuka-hojokin-inshokuten-jirei/nagare4.png" alt="申請から交付までの流れ: 商工会に相談し事業計画書を作成、電子申請でjGrantsに提出、採択発表を経て交付決定を待つ、発注・実施の後に実績報告"><figcaption>申請から交付までの流れ</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-inshokuten-jirei/nagare4.png" alt="申請から交付までの流れ: 商工会に相談し事業計画書を作成、電子申請でjGrantsに提出、採択発表を経て交付決定を待つ、発注・実施の後に実績報告" loading="lazy" decoding="async"><figcaption>申請から交付までの流れ</figcaption></figure>
 
 <p>事業計画書の作成前に、必ず管轄の商工会・商工会議所へ相談してください。経営計画書には<strong>事業支援計画書</strong>という商工会側の書類が必要で、これがないと申請自体ができません。</p>
 <p><a href="https://www.jgrants-portal.go.jp/" target="_blank" rel="noopener">電子申請システムjGrants</a>から申請し、採択発表後に交付決定通知が届いてから発注・契約に進みます。私たちは登録支援事業者として、この順番を誤って自己負担になってしまった相談を何度も見てきました。</p>

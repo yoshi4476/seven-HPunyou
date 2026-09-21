@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -205,7 +198,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec3">個人事業主が用意する必要書類3点</h2>
 <p><strong>個人事業主が用意する必要書類は、身分証明書、所得税納税証明書、確定申告書Bの控えの3点です。</strong>法人が用意する登記簿謄本や納税証明書とは種類が異なります。</p>
 <p>関連して、<a href="/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/">事業再構築補助金は法人成り後も続く？</a>もあわせてご確認ください。</p>
-<figure><img src="/images/kojin-jigyonushi-ai-hojokin/shorui3.png" alt="個人事業主が用意する書類3点: 身分証明書（運転免許証等）、所得税納税証明書（その1/2）、確定申告書Bの控え"><figcaption>個人事業主が用意する書類3点</figcaption></figure>
+<figure><img src="/images/kojin-jigyonushi-ai-hojokin/shorui3.png" alt="個人事業主が用意する書類3点: 身分証明書（運転免許証等）、所得税納税証明書（その1/2）、確定申告書Bの控え" loading="lazy" decoding="async"><figcaption>個人事業主が用意する書類3点</figcaption></figure>
 
 <p>1点目は運転免許証・運転経歴証明書・発行から3ヶ月以内の住民票のいずれかです。2点目は所得税の納税証明書で、「その1」「その2」のどちらでも要件を満たします。税目や種類の詳しい違いは<a href="https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/">AI導入補助金の納税証明書はどれ？その1とその2の違い</a>で解説しています。</p>
 <p>3点目は確定申告書B第一表の控えです。税務署の受付印、またはe-Taxの受信通知のいずれかが付いている控えが必要です。青色申告・白色申告のどちらでも、この条件を満たせば使えます。</p>
@@ -247,7 +240,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec5">GビズIDプライムの取得から交付決定までの流れ</h2>
 <p><strong>個人事業主の申請は、GビズID取得、支援事業者選定、交付申請、交付決定後の発注という4ステップで進みます。</strong>流れ自体は法人と同じです。</p>
-<figure><img src="/images/kojin-jigyonushi-ai-hojokin/flow4.png" alt="GビズID取得から交付決定までの4ステップ: GビズID取得（プライムを申請）、支援事業者選定（ツールを決める）、交付申請（事業計画書を提出）、交付決定後に発注（決定前はNG）"><figcaption>GビズID取得から交付決定までの4ステップ</figcaption></figure>
+<figure><img src="/images/kojin-jigyonushi-ai-hojokin/flow4.png" alt="GビズID取得から交付決定までの4ステップ: GビズID取得（プライムを申請）、支援事業者選定（ツールを決める）、交付申請（事業計画書を提出）、交付決定後に発注（決定前はNG）" loading="lazy" decoding="async"><figcaption>GビズID取得から交付決定までの4ステップ</figcaption></figure>
 
 <p>最初のGビズIDプライムは、発行までに約2〜3週間かかります。<strong>個人事業主も法人と同じプライムアカウントが必要で、簡易版のエントリーでは申請できません。</strong>早めの取得が、全体スケジュールを左右します。</p>
 <p><a href="https://it-shien.smrj.go.jp/applicant/flow/" target="_blank" rel="noopener">事務局が公開している申請手続きフロー</a>によると、SECURITY ACTIONの★一つ星以上の宣言も交付申請の必須条件です。申請全体のステップと期間の目安は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方｜受給までの5ステップを解説</a>にまとめています。</p>
@@ -255,7 +248,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec6">個人事業主が申請でつまずきやすい失敗例と対策</h2>
 <p><strong>個人事業主の申請でつまずきやすいのは、開業年数の見落とし、書類準備の後回し、GビズID取得の遅れの3パターンです。</strong>制度の複雑さより、準備の順番のミスが原因になっています。</p>
 <p>近い論点を<a href="/hojokin/kojinjigyonushi-pc-hojokin-hikaku/">個人事業主がパソコンを補助金で買う方法｜3制度を比較</a>で扱っています。</p>
-<figure><img src="/images/kojin-jigyonushi-ai-hojokin/ngok.png" alt="個人事業主の申請でよくあるNG・OK: NG例は開業1年未満で申請・証明書取得を後回し・GビズID未取得のまま進める、OK例は開業1年経過を確認・証明書を早めに取得・GビズIDを先に取得"><figcaption>個人事業主の申請でよくあるNG・OK</figcaption></figure>
+<figure><img src="/images/kojin-jigyonushi-ai-hojokin/ngok.png" alt="個人事業主の申請でよくあるNG・OK: NG例は開業1年未満で申請・証明書取得を後回し・GビズID未取得のまま進める、OK例は開業1年経過を確認・証明書を早めに取得・GビズIDを先に取得" loading="lazy" decoding="async"><figcaption>個人事業主の申請でよくあるNG・OK</figcaption></figure>
 
 <p><a href="https://www.chusho.meti.go.jp/koukai/yosan/r8/digital_ai_summary.pdf" target="_blank" rel="noopener">中小企業庁が公開した制度概要</a>でも、財務書類の準備が2026年度から全申請者で必須になったと案内されています。個人事業主は確定申告書類がこの財務書類にあたるため、準備不足は差し戻しの直接原因になります。</p>
 <p>私も相談の現場で、<mark>GビズIDの取得を後回しにして交付申請の締切に間に合わなかった</mark>個人事業主の方を何度か見てきました。<strong>書類とIDの準備は、ツール選びより先に着手する</strong>のが安全です。</p>

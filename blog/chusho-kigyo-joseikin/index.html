@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -60,7 +55,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -146,11 +141,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -225,7 +218,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>私たちは2020年3月の創業以来、大阪市東成区を拠点に店舗集客とAI活用の支援を行ってきました。相談の現場では、「助成金」と「補助金」を同じ意味で使う経営者の方が少なくありません。<strong>呼び方の違いを知っているだけで、申請前に「審査があるのか、要件確認だけでよいのか」の心構えが変わります。</strong></p>
 <h2 id="sec2">中小企業が使える補助金・助成金の3つの分類</h2>
 <p><strong>中小企業が使える公的資金は、国の補助金・国の助成金・自治体の補助金や助成金という3つに分類できます。</strong>どこが窓口かによって、探し方も申請の進め方も変わります。</p>
-<figure><img src="/images/chusho-kigyo-joseikin/bunrui3.png" alt="中小企業が使える助成金・補助金の3分類: 国の補助金は経済産業省系で審査により採択、国の助成金は厚生労働省系で要件を満たせば受給、自治体の補助金・助成金は地域限定で内容も多様"><figcaption>中小企業が使える助成金・補助金の3分類</figcaption></figure>
+<figure><img src="/images/chusho-kigyo-joseikin/bunrui3.png" alt="中小企業が使える助成金・補助金の3分類: 国の補助金は経済産業省系で審査により採択、国の助成金は厚生労働省系で要件を満たせば受給、自治体の補助金・助成金は地域限定で内容も多様" loading="lazy" decoding="async"><figcaption>中小企業が使える助成金・補助金の3分類</figcaption></figure>
 
 <p>国の補助金は、IT導入やものづくり投資など、経済産業省・中小企業庁が所管する制度が中心です。<a href="https://mirasapo-plus.go.jp/" target="_blank" rel="noopener">中小企業庁が運営する「ミラサポplus」</a>では、実施中の補助金公募スケジュールをまとめて確認できます。</p>
 <p>国の助成金は、<a href="https://www.mhlw.go.jp/seisakunitsuite/joseikin_shoureikin/index.html" target="_blank" rel="noopener">厚生労働省の各種助成金・奨励金等の制度</a>のように、雇用の維持や人材育成にかかわる費用を対象にしたものが中心です。採用や人事制度そのものの設計は当サイトの主題ではないため、詳しくは社会保険労務士や厚生労働省の窓口に確認することをおすすめします。</p>
@@ -277,7 +270,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact" data-cta="article_mid_contact" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">AI導入補助金の無料相談</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">要件の確認だけでもご利用いただけます</p></div>
 <h2 id="sec5">助成金・補助金の探し方4ステップ</h2>
 <p><strong>助成金・補助金は、課題整理→公的サイト検索→候補比較→事業者相談の4ステップで探すと遠回りしません。</strong>思いつきで検索サイトを回るより、先に自社の課題を言語化するほうが結果的に早く候補にたどり着きます。</p>
-<figure><img src="/images/chusho-kigyo-joseikin/sagashikata4.png" alt="助成金・補助金の探し方4ステップ: 課題を書き出す、ミラサポで検索する、候補を比較する、事業者に相談する"><figcaption>助成金・補助金の探し方4ステップ</figcaption></figure>
+<figure><img src="/images/chusho-kigyo-joseikin/sagashikata4.png" alt="助成金・補助金の探し方4ステップ: 課題を書き出す、ミラサポで検索する、候補を比較する、事業者に相談する" loading="lazy" decoding="async"><figcaption>助成金・補助金の探し方4ステップ</figcaption></figure>
 
 <p>まず、資金を使って何を解決したいのかを一文で書き出します。「IT化で業務を効率化したい」「新しい従業員を育てたい」のように目的が定まると、探すべき制度の分類（国の補助金か助成金か）も自然に絞られます。</p>
 <p>次に、<a href="https://mirasapo-plus.go.jp/" target="_blank" rel="noopener">中小企業庁が運営する「ミラサポplus」</a>で、業種やキーワードから該当しそうな制度を検索します。国の助成金を探す場合は、<a href="https://www.mhlw.go.jp/seisakunitsuite/joseikin_shoureikin/index.html" target="_blank" rel="noopener">厚生労働省の各種助成金・奨励金等の制度</a>のページも合わせて確認すると漏れが減ります。</p>
@@ -289,7 +282,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>厚生労働省の一覧から人材育成に関連する助成金を検索し、要件（対象となる研修の内容や雇用形態など）を満たせるかを社会保険労務士に確認する、という流れです。課題が「攻めの投資」か「雇用・育成」かで、最初に見るべきサイトごと変わる点を押さえておくと、遠回りを防げます。</p>
 <h2 id="sec6">申請でよくある失敗3つと対策</h2>
 <p><strong>申請でよくある失敗は、不採択を想定せずに動く、書類集めを後回しにする、1社だけで比較して決めるという3つです。</strong>いずれも準備の早さと比較の広さで防げます。</p>
-<figure><img src="/images/chusho-kigyo-joseikin/shippai-ng-ok.png" alt="申請でよくある失敗のNG・OK: NG例は不採択を想定せず動く・書類集めを後回しにする・1社だけで比較して決める、OK例は不採択も想定して準備する・書類は早めに集め始める・複数の窓口で比較する"><figcaption>申請でよくある失敗のNG・OK</figcaption></figure>
+<figure><img src="/images/chusho-kigyo-joseikin/shippai-ng-ok.png" alt="申請でよくある失敗のNG・OK: NG例は不採択を想定せず動く・書類集めを後回しにする・1社だけで比較して決める、OK例は不採択も想定して準備する・書類は早めに集め始める・複数の窓口で比較する" loading="lazy" decoding="async"><figcaption>申請でよくある失敗のNG・OK</figcaption></figure>
 
 <p>補助金は審査で不採択になる可能性がある制度です。<strong>採択前提で発注や契約を進めてしまうと、不採択になった場合に自己資金だけで投資を回収する必要が出てきます。</strong>交付決定の通知を受け取るまでは、発注を待つのが基本です。</p>
 <p>書類の準備を後回しにするのも典型的な失敗です。<mark>相談の現場でも、締切の直前になって必要書類が揃わず、申請自体を諦めたという事業者を見てきました。</mark>GビズIDの取得など、時間がかかる手続きは早めに着手してください。</p>

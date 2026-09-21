@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,7 +54,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -145,11 +140,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -187,7 +180,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <h2 id="sec1">美容室の書き方は「経営計画」と「補助事業計画」の8項目で決まる</h2>
 <p><strong>経営計画書（様式2）は、経営計画4項目と補助事業計画4項目の合計8項目で構成されます。</strong>この型に沿って埋めていくだけで、初めての申請でも骨格を作れます。</p>
 <p>近い論点を<a href="/blog/jizokuka-hojokin-esute/">小規模事業者持続化補助金｜エステサロン対象経費と5人以下基準</a>で扱っています。</p>
-<figure><img src="/images/jizokuka-hojokin-biyoushitsu-kakikata/keikaku.png" alt="経営計画に書く4つの項目: 企業概要（沿革・客単価・商品構成）、顧客ニーズ（市場動向とお客様の声）、自社の強み（競合と比較した強み）、経営方針（今後の展開と数値目標）"><figcaption>経営計画に書く4つの項目</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-biyoushitsu-kakikata/keikaku.png" alt="経営計画に書く4つの項目: 企業概要（沿革・客単価・商品構成）、顧客ニーズ（市場動向とお客様の声）、自社の強み（競合と比較した強み）、経営方針（今後の展開と数値目標）" loading="lazy" decoding="async"><figcaption>経営計画に書く4つの項目</figcaption></figure>
 
 <p>経営計画の4項目は、企業概要・顧客ニーズと市場の動向・自社の強み・経営方針の順で書きます。<a href="https://mirasapo-plus.go.jp/hint/6666/" target="_blank" rel="noopener">中小企業庁のミラサポplusの解説</a>によると、この4項目は「自社の現状分析→将来の方向性」という流れでつながっている必要があります。</p>
 <p>補助事業計画の4項目は、事業名・販路開拓等の取組・業務効率化（任意）・期待される効果です。事業名だけは30字以内という文字数制限がありますが、それ以外の項目に制限はなく、文章が苦手なら箇条書きでも構いません。</p>
@@ -256,7 +249,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>業務効率化の項目は任意ですが、書けるなら書いておくと計画に厚みが出ます。予約管理のデジタル化で受付業務の待ち時間を減らす、施術記録をクラウド化してスタッフ間の引き継ぎを早めるなど、販路開拓の取組と直接関係しない改善でも構いません。<strong>「投資したお金がどこで回収されるか」という一連のストーリーとして4項目を読み返す</strong>と、抜けている数字や説明に気づきやすくなります。</p>
 <h2 id="sec6">採択されやすい書き方とNG例の違い</h2>
 <p><strong>採択されやすい書き方は、数値目標・競合比較・視覚資料の3点をそろえることです。</strong>逆にこの3点が抜けると、内容が良くても伝わりにくくなります。</p>
-<figure><img src="/images/jizokuka-hojokin-biyoushitsu-kakikata/hikaku.png" alt="採択されやすい書き方とNG例の違い: NG例は目標が数値なし・自社目線の強みのみ・写真や表が無い。OK例は客単価を数値で明記・競合と比較した強み・写真・表で見せる"><figcaption>採択されやすい書き方とNG例の違い</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-biyoushitsu-kakikata/hikaku.png" alt="採択されやすい書き方とNG例の違い: NG例は目標が数値なし・自社目線の強みのみ・写真や表が無い。OK例は客単価を数値で明記・競合と比較した強み・写真・表で見せる" loading="lazy" decoding="async"><figcaption>採択されやすい書き方とNG例の違い</figcaption></figure>
 
 <p>私たちは登録支援事業者として、法人・個人事業主を問わず数多くの申請書づくりに伴走してきました。同じ美容室でも、写真や表を使って視覚的に見せている申請書のほうが、審査員に内容が伝わりやすい印象があります。</p>
 <p>たとえば客単価の推移は棒グラフに、施術メニューの構成比は円グラフにするだけで、文章だけの申請書より一目で状況が伝わります。専門用語を避け、数字と図表で示すことは、公募要領でも強く推奨されているポイントです。</p>
@@ -271,7 +264,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>賃金引上げ特例とインボイス特例を両方満たすと、補助上限は250万円まで拡大されます。赤字の美容室が賃金引上げ特例の対象になった場合、補助率は3分の2から3分の4に引き上げられ、優先的に採択される仕組みになっています。<mark>加点項目は年度ごとに内容が見直されるため、申請する回の公募要領で最新の項目を必ず確認してください。</mark></p>
 <h2 id="sec8">提出までのスケジュール｜第20回は12月15日締切</h2>
 <p><strong>第20回は、2026年11月5日に申請受付が始まり、12月15日17時に締め切られます。</strong>逆算してスケジュールを組むと、余裕を持って準備できます。</p>
-<figure><img src="/images/jizokuka-hojokin-biyoushitsu-kakikata/nagare.png" alt="申請書提出までの流れ: 経営計画書を作成（様式2を書く）、商工会に相談（支援計画書を発行）、電子申請（jGrantsで提出）、審査（経営計画・加点）、採択発表（結果通知）"><figcaption>申請書提出までの流れ</figcaption></figure>
+<figure><img src="/images/jizokuka-hojokin-biyoushitsu-kakikata/nagare.png" alt="申請書提出までの流れ: 経営計画書を作成（様式2を書く）、商工会に相談（支援計画書を発行）、電子申請（jGrantsで提出）、審査（経営計画・加点）、採択発表（結果通知）" loading="lazy" decoding="async"><figcaption>申請書提出までの流れ</figcaption></figure>
 
 <p>商工会・商工会議所が発行する「事業支援計画書（様式4）」は、12月4日までに発行を受け付けています。この書類が無いと電子申請ができないため、締切ぎりぎりでは間に合いません。経営計画書ができたら、遅くとも締切の1〜2週間前には商工会・商工会議所の窓口へ持ち込んでください。</p>
 <p>採択発表は2027年3月頃を予定しており、補助事業の実施期限は2028年3月31日です。<a href="https://r6.jizokukahojokin.info/" target="_blank" rel="noopener">小規模事業者持続化補助金の公式サイト</a>で、最新のスケジュールと公募要領を確認できます。</p>

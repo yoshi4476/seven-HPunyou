@@ -20,11 +20,6 @@
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Shippori+Mincho+B1:wght@800&family=Oswald:wght@500;600&display=swap" rel="stylesheet"></noscript>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -62,7 +57,7 @@
   --line:#e7e2d4; --line2:rgba(176,139,62,.45);
   --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
   --gold:#775c1c; --gold-strong:#7a5b14; --gold-ink:#171104;
-  --serif:"Shippori Mincho B1",serif; --sans:"Noto Sans JP",sans-serif; --num:"Oswald","Noto Sans JP",sans-serif;
+  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif; --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif; --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:80px}
@@ -148,11 +143,9 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+/* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
+window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
 </head>
 <body>
 <header>
@@ -191,7 +184,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p><strong>小売業が使える経費は、ソフトウェア費・導入関連費・クラウド利用料の3区分に分かれます。</strong>制度の正式名称は「デジタル化・AI導入補助金2026」です。</p>
 <p>レジ・POSシステム、在庫管理・需要予測ツール、ECサイト構築ツールなど、店舗運営に関わる幅広いソフトウェアが対象です。区分ごとに条件が異なるため、見積もりを取る前に全体像をつかんでおくと安心です。</p>
 <p>関連して、<a href="/blog/ai-hojokin-ikura-moraeru/">AI導入補助金はいくらもらえる？3つの枠の上限額と計算例</a>で補助額全体の目安を解説しています。申請の流れ自体は<a href="/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方｜受給までの5ステップを解説</a>を先にご確認ください。</p>
-<figure><img src="/images/kourigyou-ai-hojokin-keihi/keihikubun.png" alt="使える経費の3区分: ソフトウェア費、導入関連費、クラウド利用料"><figcaption>使える経費の3区分</figcaption></figure>
+<figure><img src="/images/kourigyou-ai-hojokin-keihi/keihikubun.png" alt="使える経費の3区分: ソフトウェア費、導入関連費、クラウド利用料" loading="lazy" decoding="async"><figcaption>使える経費の3区分</figcaption></figure>
 
 <p>当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。<strong>小売業の相談では、レジの更新費用が対象になるかどうかを最初に確認されることが多いです。</strong>枠の選び方次第で経費の範囲が変わるため、区分を先に理解しておくことが申請準備の第一歩になります。</p>
 <h2 id="sec2">レジ・POSシステムの経費区分とインボイス対応類型</h2>
@@ -221,7 +214,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 
 <h2 id="sec6">経費として認められないもの</h2>
 <p><strong>店舗の家賃・光熱費、レジ打ちスタッフの人件費、広告出稿費は原則として対象外です。</strong>見積もりに含めないよう注意してください。</p>
-<figure><img src="/images/kourigyou-ai-hojokin-keihi/taishogai.png" alt="対象になる経費・ならない経費の比較: 対象はPOSレジ本体・在庫管理システムの導入設定費・ECサイト構築ツールのクラウド利用料、対象外は通常枠でのレジ・PC単体の購入費・店舗の家賃光熱費・レジ打ちスタッフの人件費"><figcaption>対象になる経費・ならない経費</figcaption></figure>
+<figure><img src="/images/kourigyou-ai-hojokin-keihi/taishogai.png" alt="対象になる経費・ならない経費の比較: 対象はPOSレジ本体・在庫管理システムの導入設定費・ECサイト構築ツールのクラウド利用料、対象外は通常枠でのレジ・PC単体の購入費・店舗の家賃光熱費・レジ打ちスタッフの人件費" loading="lazy" decoding="async"><figcaption>対象になる経費・ならない経費</figcaption></figure>
 
 <div class="caution-box"><span class="box-title">注意: 通常枠でのハードウェア単体購入は<span class="txt-red">原則対象外</span></span><br>通常枠ではレジ・PC・タブレットなどのハードウェア単体は対象外です。ハードウェアを経費に含めたい場合は、インボイス対応類型で対象ソフトとあわせて発注する必要があります。混同したまま見積もりに含めないよう注意してください。</div>
 
@@ -321,7 +314,7 @@ gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 <p>割合はあくまでイメージであり、実際の見積もりでは大きく変わります。必ず個別の見積書で確認してください。</p>
 <h2 id="sec8">経費を計上する4ステップ</h2>
 <p><strong>経費を漏れなく計上するには、申請枠を決めてから証憑の保管まで一貫した流れで進めます。</strong>手順を先に知っておくと、途中で慌てずに済みます。</p>
-<figure><img src="/images/kourigyou-ai-hojokin-keihi/keihiflow.png" alt="経費を計上する4ステップ: 申請枠を選ぶ、見積書で経費区分を確認、交付決定後に区分ごと契約、実績報告で区分ごとに計上"><figcaption>経費を計上する4ステップ</figcaption></figure>
+<figure><img src="/images/kourigyou-ai-hojokin-keihi/keihiflow.png" alt="経費を計上する4ステップ: 申請枠を選ぶ、見積書で経費区分を確認、交付決定後に区分ごと契約、実績報告で区分ごとに計上" loading="lazy" decoding="async"><figcaption>経費を計上する4ステップ</figcaption></figure>
 
 <p>見積書を依頼する段階で「ソフトウェア費・ハードウェア費・導入関連費に分けてください」と伝えると、あとから区分をまとめて出し直してもらうより手間がかかりません。<strong>「一式」表記のままでは、実績報告の段階で区分ごとの証憑と突合できず、差し戻しの原因になります。</strong></p>
 <p>契約書・発注書・請求書は、経費区分ごとに分けて保管してください。実績報告の具体的な提出方法は<a href="/blog/ai-hojokin-jissekihoukoku-kakikata/">AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ</a>で解説しています。登録支援事業者の探し方は<a href="/blog/vendor-touroku-toha/">ベンダー登録とは？IT導入補助金の確認方法と2つのリスク</a>をご確認ください。</p>
