@@ -45,13 +45,13 @@ faq:
 
 **「建設業 電子申請システム」という言葉には、経審・許可用の行政ポータルと、民間の業務ツールという別の意味が混ざっています。**どちらを指しているかで、補助金の使える・使えないが真逆になります。
 
+関連する内容として[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/hojokin/kojinjigyonushi-kaigyoutodoke-denshishinsei/)も公開しています。
 
-関連して、[神奈川県のJCIP電子申請｜通知書はPDFと郵送どちらも選べる](/blog/kanagawa-kensetsugyou-denshishinsei/)もあわせてご確認ください。
 つまずきやすい点は[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)で整理しています。
 
-費用の目安は、[建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](/blog/kensetsugyou-denshishinsei-gyoseishoshi/)で解説しています。
+費用の目安は、[建設業の電子申請は行政書士に依頼すべき？](/blog/kensetsugyou-denshishinsei-gyoseishoshi/)で解説しています。
 
-実際の進め方を先に押さえるなら、[建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い](/blog/kensetsugyou-denshishinsei-etsuran/)が参考になります。
+実際の進め方を先に押さえるなら、[建設業の電子申請システムを閲覧する2つの方法](/blog/kensetsugyou-denshishinsei-etsuran/)が参考になります。
 
 私たちが登録支援事業者として相談を受ける中で、==「電子申請システムを補助金で導入したい」というご相談の中身が、実は経審のオンライン申請の操作方法だった==という場面に何度も出会っています。この2つを区別しないまま話を進めると、後の手続きでつまずきやすくなります。
 
@@ -61,25 +61,17 @@ faq:
 
 **経審・建設業許可の電子申請システム「JCIP」は国土交通省が運営する無料の行政ポータルで、IT導入補助金の対象にはなりません。**購入する製品ではなく、行政手続きの窓口そのものだからです。
 
-
-関連して、[建設業許可の電子申請｜JCIPでできる3手続きと5ステップ](/blog/kensetsugyou-kyoka-denshishinsei/)もあわせてご確認ください。
-<div class="definition-box"><span class="term">JCIPとは</span>、正式名称「建設業許可・経営事項審査電子申請システム」の略称です。<a href="https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/tochi_fudousan_kensetsugyo_const_tk1_000001_00019.html" target="_blank" rel="noopener">国土交通省の案内</a>によると、**2023年1月10日から運用が始まり**、建設業許可や経営事項審査の申請・届出をインターネット経由で行えます。</div>
+<div class="definition-box"><span class="term">JCIPとは</span>、正式名称「建設業許可・経営事項審査電子申請システム」の略称です。<a href="https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/tochi_fudousan_kensetsugyo_const_tk1_000001_00019.html" target="_blank" rel="noopener">国土交通省の案内</a>によると、<strong>2023年1月10日から運用が始まり</strong>、建設業許可や経営事項審査の申請・届出をインターネット経由で行えます。</div>
 
 <a href="https://prod.jcip.mlit.go.jp/TO/TO00001" target="_blank" rel="noopener">JCIP公式サイト</a>では、ログインにGビズIDでの認証が必要と案内されています。申請手数料は窓口での現金納付ではなく、Pay-easyによる電子納付を使います。
 
 <div class="caution-box"><span class="box-title">注意: JCIPの利用そのものは無料</span><br>JCIPは国が提供する行政システムで、月額利用料やライセンス費用は発生しません。「電子申請システムを補助金で安く導入できる」という説明を受けた場合は、指しているのがJCIPなのか別のツールなのかを必ず確認してください。</div>
 
-補助金の申請自体は「Jグランツ」という別のシステムで行います。JグランツとGビズIDの関係は[補助金の電子申請はいつから義務化？中小企業が今やること](/blog/hojokin-denshishinsei-gimuka-itsukara/)で詳しく整理しているので、あわせて確認してください。
-
 ## IT導入補助金で対象になる電子申請・電子契約機能とは
 
 **IT導入補助金の対象になるのは、事務局にITツールとして登録された、民間の電子契約・電子受発注クラウドサービスの利用料です。**JCIPのような行政システムとは対象の性質が異なります。
 
-
-関連して、[東京都のJCIP電子申請｜楽天銀行が使えない支払いの注意点](/blog/tokyo-kensetsugyou-denshishinsei/)もあわせてご確認ください。
 対象になるには、販売元が「IT導入支援事業者」として事務局に登録され、扱うツールも公式のITツール一覧に載っている必要があります。**登録の有無は、契約前にIT導入支援事業者へ確認するのが確実です。**
-
-施工管理アプリの中にも、電子契約機能を備えたものが増えています。ツール分野ごとの選び方は[建設業の2024年問題をAI導入補助金でどう埋めるか](/blog/ai-hojokin-kensetsugyou-katsuyou/)で解説しているので、施工管理・積算まで含めた全体像はそちらを参考にしてください。
 
 <figure><img src="/images/kensetsugyou-denshishinsei-system/jcip-vs-tool.png" alt="JCIPと電子契約ツールの違い: JCIPは国交省の行政ポータルで利用無料・経審や建設業許可の申請専用、電子契約・受発注ツールは民間のクラウドサービスで有料・契約書や見積書のやり取りに使う" loading="lazy"><figcaption>JCIPと電子契約ツールの違い</figcaption></figure>
 
@@ -119,7 +111,7 @@ IT導入補助金のツールは、事務局が定める業務プロセスの区
 
 <figure><img src="/images/kensetsugyou-denshishinsei-system/flow4.png" alt="建設業がIT導入補助金で電子契約ツールを導入する4ステップ: GビズIDを取得する、IT導入支援事業者とツールを選定、交付申請から契約・導入、実績報告を提出し交付額が確定" loading="lazy"><figcaption>建設業がIT導入補助金で電子契約ツールを導入する4ステップ</figcaption></figure>
 
-すでにJCIP用にGビズIDプライムを取得済みの会社なら、この手順はステップ2から始められます。GビズIDプライムの取得手順そのものは[AI導入補助金のGビズID取得方法｜プライム取得の5つの手順](/blog/ai-hojokin-gbizid-shutoku/)で解説しています。
+すでにJCIP用にGビズIDプライムを取得済みの会社なら、この手順はステップ2から始められます。GビズIDプライムの取得手順そのものは[AI導入補助金のGビズID取得方法](/blog/ai-hojokin-gbizid-shutoku/)で解説しています。
 
 ### ステップ1: GビズIDを取得しJCIPと補助金の違いを整理する
 
@@ -143,14 +135,11 @@ Jグランツで交付申請を行い、交付決定の通知を受けてから�
 
 **電子申請システム導入でつまずくのは、JCIP相談の混同・未登録ツールの契約・実績報告での経費付け違えの3パターンです。**制度そのものの難しさより、窓口の取り違えが原因になりがちです。
 
-
-関連して、[大阪府のJCIP電子申請｜GビズID取得に2週間かかる注意点](/blog/osaka-kensetsugyou-denshishinsei/)もあわせてご確認ください。
 **失敗1: JCIPの操作方法を補助金の相談として持ち込んでしまう。**JCIPは無料の行政システムのため、補助金申請の対象にはなりません。まず自社の悩みがJCIP側の操作なのか、ツール選定なのかを切り分けてください。
 
 **失敗2: 事務局に未登録のツールを契約してから気づく。**契約後に対象外と判明すると、交付申請そのものができません。<span class="txt-red">契約前に登録状況を確認する</span>のが唯一の防止策です。
 
 **失敗3: 経審・許可の電子申請にかかった費用を実績報告に含めてしまう。**JCIPの利用は無料なので、そもそも計上する費用が発生しません。実績報告の証憑整理でよくあるつまずきは[建設業の実績報告書｜下請け構造でも迷わない3つの証憑ポイント](/blog/kensetsugyou-jissekihoukokusho/)でも解説しているので、あわせて確認してください。
-
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
