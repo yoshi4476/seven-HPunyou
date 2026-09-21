@@ -145,6 +145,17 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 /* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
 window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
+<style>
+/* 外部プロフィール（フッター）。暗い面に置くので、既定は白の輪郭、触れると各サービスの色 */
+.social-links { list-style: none; display: flex; gap: .55rem; margin: .9rem 0 0; padding: 0; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px;
+  border: 1px solid rgba(255,255,255,.28); border-radius: 50%; color: rgba(255,255,255,.82);
+  text-decoration: none; transition: background-color .2s, border-color .2s, color .2s; }
+.social-links a span { font-size: .66rem; font-weight: 700; letter-spacing: .02em; }
+.social-links a:hover, .social-links a:focus-visible { color: #fff; border-color: transparent; }
+.social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
+.social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
+</style>
 </head>
 <body>
 <header>
@@ -392,6 +403,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <footer>
   <nav><a href="/">AI導入補助金LP</a><a href="/blog/">ブログ一覧</a><a href="/#diagnosis">無料診断</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="/privacy/">プライバシーポリシー</a></nav>
   <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
+      <ul class="social-links" aria-label="外部プロフィール"><li><a href="https://www.linkedin.com/in/yu-haraguchi" target="_blank" rel="noopener me" aria-label="LinkedIn（原口 優）" data-net="linkedin"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a href="https://note.com/yu_haraguchi" target="_blank" rel="noopener me" aria-label="note（原口 優）" data-net="note"><span>note</span></a></li></ul>
 </footer>
 <script>
 /* 記事本文のCTAクリックをGA4へ送る。
