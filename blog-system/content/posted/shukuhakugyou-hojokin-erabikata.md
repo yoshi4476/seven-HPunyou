@@ -51,12 +51,6 @@ faq:
 
 **宿泊業が使える補助金の入口は、デジタル化・AI導入補助金、新事業進出等補助金、持続化補助金の3つです。**それぞれ対象にする投資の規模と目的が異なります。
 
-近い論点を[事業再構築補助金で個人事業主が出す事業化状況報告](/blog/jigyou-saikouchiku-jigyouka-hokoku-kojin/)で扱っています。
-
-あわせて[小規模事業者持続化補助金](/blog/jizokuka-hojokin-clinic/)もご覧ください。
-
-関連する内容として[AI導入補助金2026](/blog/ai-hojokin-clinic-2026-schedule/)も公開しています。
-
 関連する内容は、[会計ソフトの補助金｜個人事業主が使える2つの枠と補助率](/hojokin/it-hojokin-kojinjigyonushi-kaikeisoft/)で解説しています。
 
 あわせて[クリニックのIT導入補助金](/hojokin/it-hojokin-clinic/)もご覧ください。
@@ -75,19 +69,19 @@ faq:
 
 **旧ものづくり補助金と旧事業再構築補助金は、2026年6月29日の統合で同じ制度の異なる申請枠になりました。**制度名の思い込みで探すと、古い情報に行き着いてしまいます。
 
-関連する内容については、[農業の倉庫投資は建物費NG](/hojokin/monozukuri-hojokin-nougyou-souko/)にまとめています。
+関連する内容については、[ものづくり補助金は美容室で使える？](/hojokin/monozukuri-hojokin-biyoushitsu/)にまとめています。
 
-関連する内容については、[事業再構築補助金は法人成り後も続く？](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)にまとめています。
-
-実際の例は[事業再構築補助金 美容室の脱毛転換3事例](/blog/jigyou-saikouchiku-biyoushitsu-jirei/)で整理しています。
-
-関連する内容は[事業再構築補助金 クリニックは医療法人不可](/blog/jigyou-saikouchiku-clinic-jirei/)で整理しています。
+関連する内容は[ものづくり補助金はクリニックで使える？](/hojokin/monozukuri-hojokin-clinic/)で整理しています。
 
 <div class="definition-box"><span class="term">新事業進出・ものづくり商業サービス補助金とは</span>、旧ものづくり補助金と旧事業再構築補助金（新事業進出補助金）が統合された制度の名称です。革新的新製品・サービス枠、新事業進出枠、グローバル枠という3つの申請枠に分かれています。</div>
 
 <a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>によると、この統合は2026年6月29日付で、業種を問わず共通の枠組みとして運用されています。<strong>上限額は申請枠によって異なり、最大9,000万円まで幅があります。</strong>
 
 私たちが宿泊業のオーナーから相談を受ける際、「ものづくり補助金」と「事業再構築補助金」を別の制度として探しているケースを何度か見てきました。探すべきは1つの制度の中のどの枠かという視点です。制度名ではなく、投資の目的から入る発想。
+
+事業再構築補助金として宿泊業が採択された実例は、[宿泊業のインバウンド投資を支えた事業再構築補助金](/blog/jigyou-saikouchiku-shukuhakugyou-jirei/)で紹介しています。
+
+ものづくり補助金として宿泊業が使える投資パターンの詳細は、[ものづくり補助金は宿泊業で使える？](/blog/monozukuri-hojokin-shukuhakugyou/)で解説しています。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
@@ -161,6 +155,8 @@ faq:
 ## 補助金選びの進め方｜3ステップ
 
 **補助金選びは、目的を整理する→制度を比較する→専門家に相談するという3ステップで進めます。**この順番を守ると、比較にかかる時間を短縮できます。
+
+選ぶときの基準を先に押さえるなら、[農業の補助金を世界と比較｜日本の3つの違いと使い方](/blog/nougyou-hojokin-sekai-hikaku/)が参考になります。
 
 <figure><img src="/images/shukuhakugyou-hojokin-erabikata/step-flow.png" alt="補助金選びの3ステップ: 目的を整理する、制度を比較する、専門家に相談する" loading="lazy"><figcaption>補助金選びの3ステップ</figcaption></figure>
 
