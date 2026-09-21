@@ -62,7 +62,7 @@ AI導入費用は、ツール利用料・初期設定費・運用費の3つに�
 AI導入費用は、どの業務にAIを使うかで大きく変わります。汎用的な生成AIチャットは安価に始められますが、専用のチャットボットや画像認識AIは費用帯が上がります。
 
 
-あわせて[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)もご覧ください。
+近い論点を[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)で扱っています。
 <a href="https://aismiley.co.jp/ai_news/chatgpt-business-plan/" target="_blank" rel="noopener">ChatGPT Businessプランの料金紹介記事</a>によると、<strong>法人向けのChatGPT Businessは1ユーザーあたり月額20〜25ドル（年払い・月払い）</strong>で契約できます。
 
 2026年8月時点のレートで換算すると、1人あたり月3,000〜4,000円程度の負担感です。文章作成やアイデア出しといった総務・企画系の業務なら、この価格帯で十分に運用できます。
