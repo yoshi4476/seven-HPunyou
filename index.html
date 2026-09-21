@@ -1603,7 +1603,8 @@ Object.keys(validators).forEach(id=>{
 document.getElementById("f-agree").addEventListener("change",vAgree);
 
 function sendPayload(data){
-  const payload=Object.assign({website:form?form.website.value:"",ts:TS},data);
+  // site が無いと管制塔で「（不明）」になる。referer は記事→問い合わせの対比に使う
+  const payload=Object.assign({site:"subsidy",referer:location.href,website:form?form.website.value:"",ts:TS},data);
   if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定: 送信内容→",payload); return Promise.resolve(); }
   return fetch(GAS_ENDPOINT,{method:"POST",mode:"no-cors",
     headers:{"Content-Type":"text/plain"},body:JSON.stringify(payload)});
