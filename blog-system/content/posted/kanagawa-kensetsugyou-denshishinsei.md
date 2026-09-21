@@ -51,8 +51,6 @@ faq:
 **法人と個人事業主で、揃えるものが変わります。**共通するのはGビズIDと見積書、事業計画書です。
 
 
-あわせて[社会保険の電子申請義務化](/blog/shakaihoken-denshishinsei-gimuka-chusho/)もご覧ください。
-
 あわせて[建設業許可の電子申請](/blog/kensetsugyou-kyoka-denshishinsei/)もご覧ください。
 
 <div class="definition-box"><span class="term">GビズIDプライムとは</span>、法人・個人事業主が行政の手続きをオンラインで行うための共通のアカウントです。==補助金の申請だけでなく、社会保険や建設業許可の電子申請にも使えます==。</div>
@@ -100,6 +98,8 @@ GビズIDプライムの申請では、申請書を印刷して印鑑証明書�
 
 **GビズIDから始めてください。**発行を待つ間に、他の書類を集められます。
 
+関連する内容として[小売業のAI導入補助金](/blog/kourigyou-ai-hojokin-keihi/)も公開しています。
+
 <figure><img src="/images/kanagawa-kensetsugyou-denshishinsei/flow-start.png" alt="書類を揃える順番: GビズIDを申請する、納税証明書を取りに行く、登記簿謄本を取得する、見積書を受け取る、事業計画書を書く" loading="lazy"><figcaption>書類を揃える順番</figcaption></figure>
 
 1. **GビズIDプライムを申請する**（2〜3週間かかる）
@@ -109,6 +109,8 @@ GビズIDプライムの申請では、申請書を印刷して印鑑証明書�
 5. 見積書の金額を使って事業計画書を書く
 
 順番を守る理由は5番目にあります。**見積書が無いと、事業計画書の数字が組めません。**導入費用が決まらないまま計画を書くと、後で全部書き直しになります。
+
+対象になる要件そのものは[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)で整理しています。
 
 <div class="cta-box"><p>自社が対象になるか、3分で判定できます。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis">3分の適性診断（無料・8問）</a></div>
 
@@ -193,6 +195,8 @@ GビズIDプライムの申請では、申請書を印刷して印鑑証明書�
 | 資金計画 | 導入費用と自己負担の内訳 |
 
 **現状の課題に数字が入っていない計画は、審査で比べようがありません。**「日報の転記に月8時間」のように、実測した数字を1つ入れるだけで説得力が変わります。
+
+不採択になる書き方の詳細は[建設業がAI導入補助金で不採択になる6つの理由と直し方](/blog/tokyo-kensetsugyou-denshishinsei/)で整理しています。
 
 ## 提出直前に確認する3点
 
