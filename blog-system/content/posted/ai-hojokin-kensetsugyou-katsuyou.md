@@ -66,9 +66,7 @@ faq:
 **対象ツールは、施工管理・積算/見積・電子契約の3分野に整理でき、優先順位をつけやすくなります。**現場と事務のどちらがボトルネックかによって、優先して導入すべきツールが変わります。
 
 
-近い論点を[ものづくり補助金｜建設業の採択事例3業種と上限9,000万円](/blog/monozukuri-hojokin-kensetsugyou-jirei/)で扱っています。
-
-近い論点を[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)で扱っています。
+あわせて[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)もご覧ください。
 
 <figure><img src="/images/ai-hojokin-kensetsugyou-katsuyou/tool-categories.png" alt="建設業で対象になるITツール3分野: 施工管理アプリ、積算・見積ソフト、電子契約・勤怠管理" loading="lazy"><figcaption>建設業で対象になるITツール3分野</figcaption></figure>
 
@@ -84,7 +82,7 @@ faq:
 
 **現場用のタブレットやノートPCは、インボイス枠で対象ソフトと同時導入する場合に限り上限10万円まで対象です。**単体でハードウェアだけを申請することはできません。
 
-あわせて[AI開発補助金とは？導入型との違いと使える3つの制度](/blog/ai-kaihatsu-hojokin/)もご覧ください。
+近い論点を[AI開発補助金とは？導入型との違いと使える3つの制度](/blog/ai-kaihatsu-hojokin/)で扱っています。
 
 <a href="https://hojyokin-portal.jp/columns/degital_ai_invoice" target="_blank" rel="noopener">インボイス枠のハードウェア要件を整理した解説記事</a>によると、<strong>パソコン・タブレット等は補助率1/2以内・上限10万円、レジ機能を持つ機器は補助率1/2以内・上限20万円</strong>とされています。
 
@@ -137,6 +135,8 @@ faq:
 
 
 関連する内容として[建設業のAI導入補助金はいくら？](/blog/fukuoka-kensetsugyou-denshishinsei/)も公開しています。
+
+あわせて[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
 
 **つまずきやすいのは、2024年問題による繁忙期の逼迫と、下請け構造での契約名義の混乱の2点です。**制度自体の難しさより、現場運営との両立の難しさが原因になりがちです。
 
