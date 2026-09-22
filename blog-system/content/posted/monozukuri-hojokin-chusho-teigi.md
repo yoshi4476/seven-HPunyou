@@ -50,6 +50,8 @@ faq:
 
 **ものづくり補助金の中小企業者とは、業種ごとに定められた資本金の額または従業員数のどちらか一方の基準を満たす事業者です。**両方を満たす必要はなく、どちらか一方で足ります。
 
+前提となる考え方は[中小企業省力化投資補助金とは](/blog/chusho-shoryokuka-toshi-hojokin/)でも扱っています。
+
 
 関連して、[社労士事務所のAI導入補助金](/blog/roudouhoken-nendokoshin-denshishinsei/)もあわせてご確認ください。
 
@@ -92,14 +94,6 @@ faq:
 
 **小規模事業者は中小企業者よりさらに厳しい従業員数基準で区分され、賃上げ特例の一部要件では補助率が2/3に優遇されます。**製造業その他は20人以下、商業・サービス業は5人以下が目安です。
 
-
-近い論点を[ものづくり補助金の給与支給総額とは？](/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/)で扱っています。
-
-あわせて[ものづくり補助金は製造業でどう使う？](/blog/monozukuri-hojokin-seizougyou/)もご覧ください。
-
-関連する内容として[建設業の電子申請は行政書士に依頼すべき？](/blog/kensetsugyou-denshishinsei-gyoseishoshi/)も公開しています。
-
-あわせて[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
 
 あわせて[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)もご覧ください。
 
