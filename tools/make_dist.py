@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """公開用 dist/ を生成する(内部資料を除外して配信対象だけをコピー)
    使い方: python tools/make_dist.py  →  npx wrangler pages deploy dist"""
+import re
 import shutil
 import sys, io
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
@@ -25,6 +26,10 @@ DIST.mkdir()
 copied = 0
 # Search Console の所有権確認ファイル (google*.html) はルート直下に置けば自動で配信対象にする
 PUBLIC_FILES += [f.name for f in ROOT.glob("google*.html")]
+# IndexNow の鍵ファイル (英数字だけの .txt)。ドメイン直下で配信されていないと通知が拒否される。
+# 実際、鍵を置いたのに dist へ入らず、公開した記事を検索エンジンへ知らせられていなかった
+PUBLIC_FILES += [f.name for f in ROOT.glob("*.txt")
+                 if re.fullmatch(r"[0-9a-f]{16,64}", f.stem)]
 
 for name in PUBLIC_FILES:
     src = ROOT / name
