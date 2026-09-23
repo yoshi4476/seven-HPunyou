@@ -53,7 +53,7 @@ faq:
 
 近い論点を[e-Gov電子申請とは](/blog/egov-denshishinsei-kojinjigyonushi/)で扱っています。
 
-関連する内容として[社会保険の電子申請義務化](/blog/shakaihoken-denshishinsei-gimuka-chusho/)も公開しています。
+近い論点を[社会保険の電子申請義務化](/blog/shakaihoken-denshishinsei-gimuka-chusho/)で扱っています。
 
 関連する内容は[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)で整理しています。
 
@@ -120,7 +120,7 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 
 **GビズIDプライムの審査期間は、オンライン申請が最短即日、書類申請が最大1か月です。**申請方法によって、期間の幅が大きく変わります。
 
-あわせて[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)もご覧ください。
+関連する内容として[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)も公開しています。
 <a href="https://gbiz-id.go.jp/top/apply/prime_document_01.html" target="_blank" rel="noopener">GビズID公式サイトの案内</a>では、書類申請について「申請から審査、アカウント発行まで最大1か月の時間がかかる」と明記されています。
 
 一方で<a href="https://it-shien.smrj.go.jp/applicant/measures/" target="_blank" rel="noopener">IT導入補助金事務局の申請前手続きページ</a>は、実務上の目安を案内しています。「GビズIDプライムの発行までおおむね2週間、SECURITY ACTION宣言の発行までおおむね2〜3日」を見込む内容です。
@@ -145,6 +145,8 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">
@@ -155,6 +157,8 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 <details><summary>個人事業主でもGビズIDプライムを取得できますか？</summary><p class="faq-a">取得できます。法人代表者と同じく、本人名義でオンラインか書類から申請します。</p></details>
 <details><summary>一度取得したGビズIDは他の補助金でも使えますか？</summary><p class="faq-a">使えます。取得済みのIDをそのまま、他の補助金や行政手続きに利用できます。</p></details>
 </div>
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: GビズIDは早めの取得が申請の近道
 
