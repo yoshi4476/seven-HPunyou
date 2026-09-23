@@ -65,8 +65,7 @@ faq:
 
 **対象ツールは、施工管理・積算/見積・電子契約の3分野に整理でき、優先順位をつけやすくなります。**現場と事務のどちらがボトルネックかによって、優先して導入すべきツールが変わります。
 
-
-あわせて[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)もご覧ください。
+関連する内容として[ものづくり補助金｜建設業の採択事例3業種と上限9,000万円](/blog/monozukuri-hojokin-kensetsugyou-jirei/)も公開しています。
 
 <figure><img src="/images/ai-hojokin-kensetsugyou-katsuyou/tool-categories.png" alt="建設業で対象になるITツール3分野: 施工管理アプリ、積算・見積ソフト、電子契約・勤怠管理" loading="lazy"><figcaption>建設業で対象になるITツール3分野</figcaption></figure>
 
@@ -133,11 +132,6 @@ faq:
 
 私たちセブンセンシズ株式会社（大阪市東成区・2020年3月創業）は、AI導入補助金の登録支援事業者として申請から実績報告まで伴走しています。建設業のご相談で最も多いのが、この元請・下請の線引きです。**「誰が導入して、誰が使うのか」を申請書で明確にできないケース**が目立ちます。
 
-
-関連する内容として[建設業のAI導入補助金はいくら？](/blog/fukuoka-kensetsugyou-denshishinsei/)も公開しています。
-
-あわせて[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
-
 **つまずきやすいのは、2024年問題による繁忙期の逼迫と、下請け構造での契約名義の混乱の2点です。**制度自体の難しさより、現場運営との両立の難しさが原因になりがちです。
 
 <a href="https://www.mlit.go.jp/hakusyo/mlit/r06/hakusho/r07/html/n1111000.html" target="_blank" rel="noopener">国土交通白書が示す建設業の労働実態</a>によると、<strong>2024年4月から時間外労働の上限が原則月45時間・年360時間に規制され、55歳以上の就業者割合は36.7%と全産業平均より4.3ポイント高い</strong>状況です。若手確保が進まないまま規制対応を迫られている会社が少なくありません。
@@ -177,6 +171,8 @@ faq:
 
 導入事例を先に確認しておくと、ツール選定で迷いにくくなります。他業種の活用イメージは[AI導入補助金のAI活用事例5選｜対象ツールと申請のコツ](https://lp.7senses.co.jp/blog/ai-hojokin-ai-katsuyo-jirei/)、交付決定後の手続きは[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)で解説しています。
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">
@@ -190,6 +186,8 @@ faq:
 
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 建設業は「工期に影響しない導入時期」から逆算する
 
