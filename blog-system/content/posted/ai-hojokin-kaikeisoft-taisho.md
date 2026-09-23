@@ -150,6 +150,8 @@ faq:
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">
@@ -159,6 +161,8 @@ faq:
 <details><summary>会計ソフト単体でパソコンも購入できますか？</summary><p class="faq-a">パソコン単体は対象外ですが、対象ソフトと同時導入する場合はインボイス対応類型の対象になります。</p></details>
 <details><summary>会計ソフトを導入する際に注意すべき点は何ですか？</summary><p class="faq-a">交付決定前に契約・発注すると補助対象外になるため、決定を待ってから発注してください。</p></details>
 </div>
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 会計ソフトは登録状況と経費区分を先に確認する
 
