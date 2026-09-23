@@ -13,7 +13,10 @@ DIST = ROOT / "dist"
 # 公開するもの(これ以外はデプロイされない)
 PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images"]
 PUBLIC_FILES = ["index.html", "404.html", "_headers", "_redirects", "robots.txt", "llms.txt", "sitemap.xml",
-                "favicon.png", "logo.png", "ogp.png"]
+                "favicon.png", "logo.png", "ogp.png",
+                # 配信済み原稿の指紋。管制塔側がこれを読んで「届いたか」を確かめる。
+                # dist へ入れていなかったため、配信しても毎週「未達」と報告され続けていた
+                "article-manifest.json"]
 # 公開ディレクトリ内でも除外するもの
 # ※特典PDF2冊はZoom無料相談の参加特典のため公開配信しない(スタッフがZoom内で手渡し)
 EXCLUDE_NAMES = {"_template.html", "chatgpt-starter-kit.pdf", "hojokin-checklist.pdf", "gbp-checksheet.pdf"}

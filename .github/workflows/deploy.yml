@@ -15,7 +15,6 @@ on:
   push:
     branches: [master]
     paths-ignore:            # 配信物に影響しない変更ではデプロイしない
-      - 'blog-system/scripts/**'
       - 'blog-system/logs/**'
       - 'blog-system/data/**'
       - 'automation/**'
