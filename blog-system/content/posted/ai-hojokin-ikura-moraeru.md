@@ -55,8 +55,6 @@ faq:
 
 エステサロンの場合は、[エステサロン AI導入補助金の補助額の目安](/blog/esute-ai-hojokin-hojogaku-mokuyasu/)を1人サロン・5名前後・複数店舗の3パターンで試算しています。
 
-対象になる範囲は[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で整理しています。
-
 選ぶときの基準は[AI開発補助金とは？導入型との違いと使える3つの制度](/blog/ai-kaihatsu-hojokin/)で整理しています。
 
 <figure><img src="/images/ai-hojokin-ikura-moraeru/waku3.png" alt="3つの申請枠と補助上限額: 通常枠は上限450万円、インボイス対応類型は上限350万円、電子取引類型は上限350万円、ハードウェアは上限20万円"><figcaption>3つの申請枠と補助上限額</figcaption></figure>
@@ -133,8 +131,6 @@ faq:
 
 **自社の補助額は「契約金額を確認する」「申請枠を選ぶ」「補助率を掛けて上限額と照らす」という3ステップで試算できます。**電卓があれば、契約額さえ分かればおおよその金額をその場で計算できます。
 
-近い論点を[ネイルサロンがAI導入補助金に落ちる理由](/blog/nail-salon-ai-hojokin-ochiru-riyu/)で扱っています。
-
 <figure><img src="/images/ai-hojokin-ikura-moraeru/shisan3.png" alt="自社の補助額を試算する3ステップ: 契約金額を確認する、申請枠を選ぶ、補助率を掛けて上限額と照らす"><figcaption>自社の補助額を試算する3ステップ</figcaption></figure>
 
 2つのケースで実際に計算してみます。
@@ -157,8 +153,6 @@ faq:
 
 **AI導入補助金は、ツールを導入・支払いした後に実績報告を提出し、確認が完了してから振り込まれる後払い方式です。**契約から着金までは、自己負担分だけでなく補助対象分も含めて一時的に立て替える必要があります。
 
-
-関連して、[AI導入補助金の着金はいつ？実績報告後の日数目安](/blog/ai-hojokin-chakkin-itsu/)もあわせてご確認ください。
 
 <div class="caution-box"><span class="box-title">注意: 交付決定前の発注は<span class="txt-red">対象外</span></span><br>交付決定の通知を受け取る前に発注・契約・支払いをすると、その分は補助対象から外れます。<span class="big">必ず交付決定通知を確認してから発注してください。</span></div>
 
