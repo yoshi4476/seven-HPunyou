@@ -53,10 +53,6 @@ faq:
 
 関連する内容として[ネイルサロンの補助金申請手順を8ステップで解説](/blog/nail-salon-hojokin-tejun/)も公開しています。
 
-あわせて[建設業のAI導入補助金｜必要書類10点と揃える順番](/blog/kanagawa-kensetsugyou-denshishinsei/)もご覧ください。
-
-関連する内容は、[AI導入補助金の着金はいつ？実績報告後の日数目安](/blog/ai-hojokin-chakkin-itsu/)で解説しています。
-
 対象になる範囲は、[学習塾はIT導入補助金の対象？](/blog/it-hojokin-gakushujuku/)で解説しています。
 
 <div class="definition-box"><span class="term">中小企業者とは</span>、中小企業基本法に基づき業種ごとに定められた資本金・従業員数の基準以下の事業者を指します。IT導入補助金を含む多くの補助金制度が、この定義を対象者の基準として採用しています。</div>
@@ -68,8 +64,6 @@ faq:
 ## 業種別の資本金・従業員数の基準
 
 **中小企業者の基準は、製造業等・卸売業・サービス業・小売業の4区分で異なります。**資本金の額と従業員数のどちらか一方が基準以下であれば該当します。
-
-近い論点を[建設業のAI導入補助金はいくら？](/blog/fukuoka-kensetsugyou-denshishinsei/)で扱っています。
 
 <figure><img src="/images/it-hojokin-chusho-teigi/kijun4.png" alt="業種別の資本金・従業員数の基準: 製造業・建設業等は資本金3億円以下or従業員300人以下、卸売業は資本金1億円以下or従業員100人以下、サービス業は資本金5000万円以下or従業員100人以下、小売業は資本金5000万円以下or従業員50人以下"><figcaption>業種別の資本金・従業員数の基準</figcaption></figure>
 
