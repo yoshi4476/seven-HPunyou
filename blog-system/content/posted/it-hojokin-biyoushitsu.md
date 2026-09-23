@@ -53,16 +53,6 @@ faq:
 
 関連する内容として[事業再構築補助金の確定申告](/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/)も公開しています。
 
-関連する内容として[事業再構築補助金は法人成り後も続く？](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)も公開しています。
-
-近い論点を[事業再構築補助金で個人事業主が出す事業化状況報告](/blog/jigyou-saikouchiku-jigyouka-hokoku-kojin/)で扱っています。
-
-あわせて[事業再構築補助金の飲食店活用事例3選と今の申請方法](/blog/jigyou-saikouchiku-inshokuten-jirei/)もご覧ください。
-
-あわせて[事業再構築補助金 美容室の脱毛転換3事例](/blog/jigyou-saikouchiku-biyoushitsu-jirei/)もご覧ください。
-
-近い論点を[美容室の助成金とは｜歩合給でも使える5制度と金額の目安](/blog/biyoushitsu-joseikin/)で扱っています。
-
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
 
 <a href="https://prtimes.jp/main/html/rd/p/000003196.000011414.html" target="_blank" rel="noopener">リクルートが公表した美容サロン就業実態調査</a>によると、<strong>美容師の就業率は43.6%にとどまり、休眠美容師が56.4%を占め</strong>、新卒入社から<strong>3年未満での離職率は42.5%</strong>に上ります。==美容師免許を持ちながら勤務経験がない「勤務未経験率」も22.0%まで上昇==しており、採用してもすぐに定着しない構造的な課題が続いています。
@@ -139,8 +129,6 @@ faq:
 
 **一人サロンの個人事業主でも、GビズIDとSECURITY ACTIONの宣言があれば申請できます。**法人と申請要件そのものは変わりません。
 
-あわせて[小規模事業者持続化補助金｜美容室の書き方4ステップ](/blog/jizokuka-hojokin-biyoushitsu-kakikata/)もご覧ください。
-
 <a href="https://it-shien.smrj.go.jp/applicant/flow/" target="_blank" rel="noopener">事務局が公開している申請手続きフロー</a>では、交付申請に「GビズIDプライム」と「SECURITY ACTION」の宣言が必須と案内されています。
 
 一人サロンでは、経理・総務の専任担当がいないケースがほとんどです。申請書類の作成やIT導入支援事業者とのやり取りに時間を割きにくい場合に検討したいのが、外部の申請サポートへの相談という選択肢です。
@@ -161,13 +149,7 @@ faq:
 
 **ITツール導入中心ならIT導入補助金、店舗改装や販路開拓の広告費中心なら小規模事業者持続化補助金が向いています。**目的が異なるため、両方の対象経費が重ならないよう切り分ける必要があります。
 
-関連する内容は[小規模事業者持続化補助金](/blog/jizokuka-hojokin-esute/)でも扱っています。
-
-近い論点を[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)で扱っています。
-
 つまずきやすい点を先に押さえるなら、[小規模事業者持続化補助金](/blog/jizokuka-hojokin-jidousha-seibi/)が参考になります。
-
-つまずきやすい点については、[自動車整備業のIT導入補助金2026](/blog/it-hojokin-jidousha-seibi/)にまとめています。
 
 対象になる範囲は、[学習塾はIT導入補助金の対象？](/blog/it-hojokin-gakushujuku/)で解説しています。
 
