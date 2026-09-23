@@ -49,6 +49,10 @@ faq:
 
 **AI導入補助金は、通常枠なら上限5万円〜450万円、インボイス対応類型・電子取引類型なら上限350万円まで補助されます。**補助率は枠ごとに1/2〜4/5の幅があり、契約金額と選ぶ枠の組み合わせで最終的な補助額が決まります。
 
+関連する内容は、[飲食店のAI導入補助金｜落ちる理由と現場の6つの原因](/blog/inshokuten-ai-hojokin-ochiru-riyu/)で解説しています。
+
+関連する内容は、[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
+
 エステサロンの場合は、[エステサロン AI導入補助金の補助額の目安](/blog/esute-ai-hojokin-hojogaku-mokuyasu/)を1人サロン・5名前後・複数店舗の3パターンで試算しています。
 
 対象になる範囲は[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で整理しています。
@@ -129,6 +133,8 @@ faq:
 
 **自社の補助額は「契約金額を確認する」「申請枠を選ぶ」「補助率を掛けて上限額と照らす」という3ステップで試算できます。**電卓があれば、契約額さえ分かればおおよその金額をその場で計算できます。
 
+近い論点を[ネイルサロンがAI導入補助金に落ちる理由](/blog/nail-salon-ai-hojokin-ochiru-riyu/)で扱っています。
+
 <figure><img src="/images/ai-hojokin-ikura-moraeru/shisan3.png" alt="自社の補助額を試算する3ステップ: 契約金額を確認する、申請枠を選ぶ、補助率を掛けて上限額と照らす"><figcaption>自社の補助額を試算する3ステップ</figcaption></figure>
 
 2つのケースで実際に計算してみます。
@@ -162,6 +168,8 @@ faq:
 
 資金繰り以外にも申請段階でつまずくケースは多く、代表的な失敗パターンは[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)にまとめています。
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">
@@ -175,6 +183,8 @@ faq:
 
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: いくらもらえるかは枠選びで決まる
 
