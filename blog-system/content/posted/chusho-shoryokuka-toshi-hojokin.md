@@ -152,6 +152,8 @@ GビズIDプライムアカウントの取得には、書類の郵送か、オ�
 
 他の制度との比較では、[AI開発補助金とは？導入型との違いと使える3つの制度](https://lp.7senses.co.jp/blog/ai-kaihatsu-hojokin/)もあわせて確認すると、自社に合う補助金を選びやすくなります。
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">
@@ -162,6 +164,8 @@ GビズIDプライムアカウントの取得には、書類の郵送か、オ�
 <details><summary>要件を達成できないとどうなりますか？</summary><p class="faq-a">事業計画期間内に未達のままだと、補助金の一部または全部の返還を求められることがあります。</p></details>
 <details><summary>AI導入補助金とはどう違いますか？</summary><p class="faq-a">省力化投資補助金は設備投資全般が対象で、AI導入補助金はソフトウェア・ITツールの導入が対象です。</p></details>
 </div>
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 設備投資かソフト導入かで制度を選ぶ
 
