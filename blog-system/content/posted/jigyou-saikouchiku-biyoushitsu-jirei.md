@@ -57,10 +57,6 @@ faq:
 
 関連する内容として[小規模事業者持続化補助金](/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/)も公開しています。
 
-近い論点を[小規模事業者持続化補助金](/blog/jizokuka-hojokin-esute/)で扱っています。
-
-近い論点を[小規模事業者持続化補助金](/blog/jizokuka-hojokin-clinic/)で扱っています。
-
 <div class="definition-box"><span class="term">事業再構築補助金とは</span>、新型コロナウイルス対応の緊急経済対策として2021年に始まった制度です。事業転換や業態転換に伴う設備投資を、新市場開拓や新分野展開を条件に支援していました。</div>
 
 <a href="https://jigyou-saikouchiku.go.jp/" target="_blank" rel="noopener">事業再構築補助金の事務局公式サイト</a>には「本補助金の公募は終了しております」と明記されています。第13回公募の採択結果は、応募3,100者に対し採択1,101者で、採択率は26.5%でした。過去形の制度であることを前提に、事例を参考情報として読み進めてください。
