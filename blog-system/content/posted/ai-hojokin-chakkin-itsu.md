@@ -161,6 +161,8 @@ faq:
 
 自社が補助金の対象になるかどうかは、[AI導入補助金の無料相談](https://lp.7senses.co.jp/#contact)で確認できます。申請要件の確認から実績報告まで伴走します。
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">
@@ -171,6 +173,8 @@ faq:
 <details><summary>着金が遅れる主な原因は何ですか？</summary><p class="faq-a">証憑の不備や請求書の記載ミス、提出期限ぎりぎりの申請による差し戻しが主な原因です。</p></details>
 <details><summary>着金後にも報告義務はありますか？</summary><p class="faq-a">はい。事業実施効果報告として複数年度にわたり提出が必要です。</p></details>
 </div>
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 着金は確定検査後。焦らず証憑の質を高める
 
