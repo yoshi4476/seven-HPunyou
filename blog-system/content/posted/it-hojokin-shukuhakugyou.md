@@ -53,8 +53,6 @@ faq:
 
 関連する内容を先に押さえるなら、[飲食店のIT導入補助金｜名称変更後の3つの確認点](/blog/it-hojokin-inshokuten/)が参考になります。
 
-費用の目安については、[宿泊業のAI導入補助金はいくら？](/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/)にまとめています。
-
 つまずきやすい点は[歯科医院のIT導入補助金](/hojokin/it-hojokin-shika-iin/)で整理しています。
 
 関連する内容は、[IT導入補助金を名古屋で使う](/blog/it-hojokin-nagoya/)で解説しています。
