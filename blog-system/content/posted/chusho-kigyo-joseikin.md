@@ -92,6 +92,7 @@ faq:
 
 **IT・AI導入では、デジタル化・AI導入補助金2026とものづくり系の補助金が代表的な2つです。**目的が異なるため、自社が実現したいことに合わせて選ぶ必要があります。
 
+関連する内容は、[建設業がAI導入補助金で不採択になる6つの理由と直し方](/blog/tokyo-kensetsugyou-denshishinsei/)で解説しています。
 
 実際の例を先に押さえるなら、[AI導入補助金の不採択理由](/blog/ai-hojokin-fusaitaku-riyu/)が参考になります。
 
@@ -108,8 +109,6 @@ faq:
 **中小企業の定義は業種ごとに異なり、資本金の額または従業員数のどちらか一方の基準を満たせば該当します。**多くの補助金・助成金は、この定義に沿って対象事業者を判定しています。
 
 製造業・建設業等は資本金3億円以下または従業員300人以下、卸売業は資本金1億円以下または従業員100人以下というように、業種によって基準の数値が変わります。<a href="https://www.chusho.meti.go.jp/soshiki/teigi.html" target="_blank" rel="noopener">中小企業庁が公表する中小企業者の定義</a>が根拠になっています。
-
-自社がどの区分に当てはまるかを迷う場合は、[IT導入補助金の中小企業とは？](/blog/it-hojokin-chusho-teigi/)で基準表を確認してください。
 
 <div class="caution-box"><span class="box-title">注意: 資本構成によっては<span class="txt-red">対象外</span></span><br>大企業が実質的に株式の大半を保有しているなど「みなし大企業」に該当すると、従業員数の基準を満たしていても中小企業として扱われないことがあります。<span class="big">資本構成に大企業が関わる場合は、事前に事務局へ確認してください。</span></div>
 
@@ -159,6 +158,8 @@ faq:
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。対象になるかどうかで迷う場合は、[無料相談](https://lp.7senses.co.jp/#contact)で状況を伝えていただければ、要件の確認から実績報告まで一緒に確認できます。
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">
@@ -169,6 +170,8 @@ faq:
 <details><summary>IT導入補助金とAI導入補助金は別の制度ですか？</summary><p class="faq-a">同じ制度の呼び方です。2026年度は「デジタル化・AI導入補助金2026」に名称が変わりました。</p></details>
 <details><summary>助成金は補助金より簡単にもらえますか？</summary><p class="faq-a">審査による採択がない分、要件を満たす証明書類の準備は補助金以上に丁寧さが必要です。</p></details>
 </div>
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: まず助成金か補助金かを見極める
 
