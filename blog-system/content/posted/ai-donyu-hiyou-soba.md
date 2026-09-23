@@ -45,7 +45,7 @@ AI導入費用は、ツール利用料・初期設定費・運用費の3つに�
 費用の目安は[農業の初期費用は平均400万円](/blog/nougyou-shoki-hiyou/)で整理しています。
 
 
-近い論点を[補助金でAIチャットボット導入｜対象条件と申請の流れ](/blog/ai-hojokin-chatbot-donyu/)で扱っています。
+関連する内容として[補助金でAIチャットボット導入｜対象条件と申請の流れ](/blog/ai-hojokin-chatbot-donyu/)も公開しています。
 
 当社は補助金を使ったAIツール導入を支援している登録支援事業者です。費用を抑える相談で最初に確認するのは、**その用途が補助対象の枠に当てはまるか**です。
 
@@ -62,7 +62,7 @@ AI導入費用は、ツール利用料・初期設定費・運用費の3つに�
 AI導入費用は、どの業務にAIを使うかで大きく変わります。汎用的な生成AIチャットは安価に始められますが、専用のチャットボットや画像認識AIは費用帯が上がります。
 
 
-あわせて[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)もご覧ください。
+近い論点を[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)で扱っています。
 <a href="https://aismiley.co.jp/ai_news/chatgpt-business-plan/" target="_blank" rel="noopener">ChatGPT Businessプランの料金紹介記事</a>によると、<strong>法人向けのChatGPT Businessは1ユーザーあたり月額20〜25ドル（年払い・月払い）</strong>で契約できます。
 
 2026年8月時点のレートで換算すると、1人あたり月3,000〜4,000円程度の負担感です。文章作成やアイデア出しといった総務・企画系の業務なら、この価格帯で十分に運用できます。
@@ -139,6 +139,10 @@ AI導入で費用面の失敗が起きるのは、契約前の確認不足がほ
 
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: AI導入費用はまず相場を知り、補助金で実質負担を下げる
 
