@@ -44,8 +44,6 @@ faq:
 
 実績報告とは、交付決定を受けたITツールを実際に導入し、支払いまで完了したことを証拠書類とともに事務局へ報告する手続きです。採択と入金の間をつなぐ、避けて通れない工程です。
 
-実際の例は、[AI導入補助金の不採択理由](/blog/ai-hojokin-fusaitaku-riyu/)で解説しています。
-
 実際の進め方については、[AI導入補助金のセキュリティアクション二つ星](/blog/ai-hojokin-security-action-hoshi2/)にまとめています。
 
 <div class="definition-box"><span class="term">実績報告とは</span>、交付決定を受けた事業者が、ITツールの発注・契約・納品・支払いを実際に行ったことを証憑とともに申請マイページから報告し、IT導入支援事業者の確認を経て事務局に提出する手続きです。事務局はこれをもとに交付額を確定します。</div>
@@ -56,6 +54,7 @@ faq:
 
 実績報告は、証憑の入力・事業者確認・事務局提出・交付額確定という4つの段階を順番に進めます。どこか一段階でも止まると全体が遅れます。
 
+関連する内容として[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)も公開しています。
 
 関連する内容は[運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁](/blog/unsougyou-jissekihoukokusho/)で整理しています。
 
@@ -166,10 +165,6 @@ faq:
 実績報告と入金が完了したら、次は導入したAIツールを現場に定着させ、投資効果を実際に引き出す段階に移ります。書類対応だけで終わらせないことが、補助金活用の本当の成果につながります。
 
 
-近い論点を[農業の補助金の申請方法｜制度の選び方と5ステップ](/blog/nougyou-hojokin-shinsei-houhou/)で扱っています。
-
-近い論点を[AI導入補助金のAI活用事例5選](/blog/ai-hojokin-ai-katsuyo-jirei/)で扱っています。
-
 実績報告の前提となる証憑の集め方に不安がある場合は、[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)も合わせて確認してください。
 
 申請時に提出した納税証明書の種類に迷った方には、[AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/)が参考になります。
@@ -177,6 +172,8 @@ faq:
 交付要件の確認方法が変わった経緯は、[AI導入補助金のみらデジ経営チェックは終了｜代わりの手順3つ](https://lp.7senses.co.jp/blog/ai-hojokin-miradigi-keieicheck/)で解説しています。
 
 導入したAIツールの活用実績を社外に発信し、次の商談や採用にもつなげたい場合は、[AI導入事例の書き方｜成果が伝わる6ステップと3つの落とし穴](https://ai.7senses.co.jp/ai-marketing/donyu-jirei-kakikata/)も参考になります。実績報告という事務手続きの先に、AI活用の成果を積み上げていく段階が待っています。
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -188,6 +185,8 @@ faq:
 <details><summary>実績報告の後にも報告義務はありますか？</summary><p class="faq-a">はい。事業実施効果報告として、交付決定後も複数年度にわたり提出が求められます。</p></details>
 <details><summary>実績報告は誰が事務局へ提出しますか？</summary><p class="faq-a">IT導入支援事業者の確認を経て、最終的には中小企業・小規模事業者自身が提出します。</p></details>
 </div>
+
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 実績報告は証憑の整合性と期限管理がすべて
 
