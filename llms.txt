@@ -68,6 +68,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [建設業のAI導入補助金｜必要書類10点と揃える順番](https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/): 建設業がAI導入補助金で用意する書類は、法人で10点・個人事業主で8点が目安です。取得に時間がかかる書類と、交付決定後に追加で求められるもの
 - [ネイルサロンの技術チェックAI化｜補助金の対象基準](https://lp.7senses.co.jp/blog/nail-salon-gijutsu-check/): ネイルサロンの技術チェック（採用試験・研修進捗・仕上がり検品）のAI化は、教育訓練プロセスに該当し登録済みならIT導入補助金の対象です。対象
 - [建設業がAI導入補助金の対象になる条件｜5つの要件と確認の順番](https://lp.7senses.co.jp/blog/osaka-kensetsugyou-denshishinsei/): 建設業がAI導入補助金（中小企業デジタル化・AI導入支援事業）の対象になるかは、資本金・従業員数・導入するソフトの3点で決まります。対象外に
+- [建設業がAI導入補助金で不採択になる6つの理由と直し方](https://lp.7senses.co.jp/blog/tokyo-kensetsugyou-denshishinsei/): 建設業がAI導入補助金で不採択になる理由は、導入効果が数字で書かれていない・現場での使い方が具体的でないなど6つに整理できます。審査で落ちる
 - [個人事業主がパソコンを補助金で買う方法｜3制度を比較](https://lp.7senses.co.jp/blog/kojinjigyonushi-pc-hojokin-hikaku/): 個人事業主がパソコンを補助金で買う方法を3制度で比較します。使えるのは事実上IT導入補助金インボイス枠のみで、持続化補助金とものづくり補助金
 - [ネイルサロンの補助金3種を比較｜IT導入・ものづくり・持続化](https://lp.7senses.co.jp/blog/nail-salon-hojokin-hikaku/): ネイルサロンが使える補助金は、IT導入補助金・ものづくり補助金・小規模事業者持続化補助金の3種類です。対象範囲・補助上限額・向いているケース
 - [ネイルサロンの補助金申請手順を8ステップで解説](https://lp.7senses.co.jp/blog/nail-salon-hojokin-tejun/): ネイルサロンが補助金を申請する手順は、情報収集から実績報告まで5フェーズ・8ステップです。GビズID取得や相見積もりの基準、交付決定前の発注
@@ -75,7 +76,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [IT導入補助金を名古屋で使う｜国・県・市の3制度と相談窓口](https://lp.7senses.co.jp/blog/it-hojokin-nagoya/): 名古屋でIT導入補助金（現・デジタル化・AI導入補助金2026）を使いたい中小企業向けに、全国共通の国の制度と名古屋市・愛知県の独自補助金の
 - [IT導入補助金のおすすめの選び方｜5つの基準と4つの枠](https://lp.7senses.co.jp/blog/it-hojokin-osusume/): IT導入補助金（デジタル化・AI導入補助金2026）のおすすめは特定のツール名ではなく選び方の基準です。ランキングサイトに頼らずツール・事業
 - [ベンダー登録とは？IT導入補助金の確認方法と2つのリスク](https://lp.7senses.co.jp/blog/vendor-touroku-toha/): ベンダー登録とは、IT導入支援事業者が国の事業に事前登録している状態を指します。登録済みか確認する2つの方法、未登録ベンダーと契約するリスク
-- [東京都のJCIP電子申請｜楽天銀行が使えない支払いの注意点](https://lp.7senses.co.jp/blog/tokyo-kensetsugyou-denshishinsei/): 東京都の建設業許可・経営事項審査の電子申請JCIPは2023年10月23日開始。手数料はペイジー決済のみで収入証紙は不可、楽天銀行のオンライ
 - [歯科医院のIT導入補助金｜対象4分野と医療機器の落とし穴](https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/): 歯科医院のIT導入補助金は2026年度も使え、正式名称は「デジタル化・AI導入補助金2026」です。対象になる4つのツール、口腔内スキャナー
 - [小規模事業者持続化補助金｜自動車整備業の経費区分3つと注意点](https://lp.7senses.co.jp/blog/jizokuka-hojokin-jidousha-seibi/): 自動車整備業は小規模事業者持続化補助金の対象で、サービス業として従業員5人以下なら申請できます。看板・チラシ・HP制作等の対象経費、部品代・
 - [ものづくり補助金は自動車整備業も対象｜設備投資750万円目安](https://lp.7senses.co.jp/blog/monozukuri-hojokin-jidousha-seibi/): ものづくり補助金は自動車整備業のリフト・タイヤチェンジャー・塗装ブースなど設備投資に使えます。対象になる5分野とスキャンツールの扱い、3つの
