@@ -42,7 +42,7 @@ faq:
 
 <div class="target-reader">この記事は、AI導入補助金・IT導入補助金やものづくり補助金で交付決定を受け、これから実績報告書を提出する運送業（一般貨物・軽貨物・個人事業主ドライバーを含む）の経営者・担当者向けです。</div>
 
-<p class="freshness">※ 2026年8月時点の情報です。実績報告の基本手続きは[実績報告の書き方の基本4ステップ](/blog/ai-hojokin-jissekihoukoku-kakikata/)もあわせてご確認ください。</p>
+<p class="freshness">※ 2026年8月時点の情報です。実績報告の基本手続きは<a href="/blog/ai-hojokin-jissekihoukoku-kakikata/">実績報告の書き方の基本4ステップ</a>もあわせてご確認ください。</p>
 
 <div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>運送業の実績報告書で追加になる証憑整理のポイント</li><li>傭車・庸車先分をどう扱えばよいか</li><li>デジタコ・車載器の対象可否</li><li>軽貨物・個人事業主ドライバーの注意点</li></ul></div>
 
@@ -91,6 +91,9 @@ faq:
 事業用口座を分けていない軽貨物ドライバーほど、支払い証明の準備に時間がかかります。振込明細だけで支払いを証明できない場合は、通帳の該当ページのコピーや、クレジットカードの利用明細を組み合わせて提出する方法もあります。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
+
+
+自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
 ## 繁忙期（3月・12月）に証憑集めを後回しにしないために
 
@@ -157,6 +160,6 @@ faq:
 
 書式の難しさよりも、自社便と委託先が混在する配送体制そのものが、運送業の実績報告を時間のかかる作業にしています。契約段階で名義と証憑の担当を決めておけば、事業実施期間の終盤に慌てて書類を集め直す事態は避けられます。
 
-一般貨物から軽貨物の個人事業主まで、実績報告の証憑整理に不安がある場合は、<a href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a>で申請要件の確認から実績報告まで伴走します。あわせて[運送業のIT導入補助金の対象範囲](/blog/it-hojokin-unsougyou/)や、[ものづくり補助金の運送業での活用](/blog/monozukuri-hojokin-unsougyou/)、[建設業の実績報告書](/blog/kensetsugyou-jissekihoukokusho/)もあわせてご覧ください。
+一般貨物から軽貨物の個人事業主まで、実績報告の証憑整理に不安がある場合は、<a href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a>で申請要件の確認から実績報告まで伴走します。あわせて運送業のIT導入補助金の対象範囲や、ものづくり補助金の運送業での活用、[建設業の実績報告書](/blog/kensetsugyou-jissekihoukokusho/)もあわせてご覧ください。
 
 <p class="freshness">※ 実績報告の要件・上限額は制度改定で変わることがあります。最新情報は<a href="https://it-shien.smrj.go.jp/download/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026公式サイトの資料ダウンロードページ</a>、交付決定後の手続きは<a href="https://it-shien.smrj.go.jp/aftergrantdecision/measures/" target="_blank" rel="noopener">交付決定後の手続きページ</a>で確認してください。</p>
