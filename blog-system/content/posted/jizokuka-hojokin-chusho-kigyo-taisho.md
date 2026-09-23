@@ -49,15 +49,9 @@ faq:
 
 あわせて[ものづくり補助金は小売業に使えない？](/blog/monozukuri-hojokin-kourigyou/)もご覧ください。
 
-あわせて[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)もご覧ください。
+あわせて[会計ソフトの補助金｜個人事業主が使える2つの枠と補助率](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)もご覧ください。
 
 関連する内容として[ものづくり補助金は宿泊業で使える？](/blog/monozukuri-hojokin-shukuhakugyou/)も公開しています。
-
-対象になる範囲を先に押さえるなら、[小規模事業者持続化補助金2025](/blog/jizokuka-hojokin-kensetsugyou/)が参考になります。
-
-対象になる範囲は[小規模事業者持続化補助金の飲食店の事例](/blog/jizokuka-hojokin-inshokuten-jirei/)で整理しています。
-
-関連する内容は[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)で整理しています。
 
 <div class="definition-box"><span class="term">小規模事業者とは</span>、中小企業者の中でもさらに従業員数が少ない事業者を指す区分です。商業・サービス業（宿泊業・娯楽業を除く）は5人以下、宿泊業・娯楽業と製造業その他は20人以下が基準になります。</div>
 
@@ -68,8 +62,6 @@ faq:
 ## 中小企業者と小規模事業者は何が違うのか｜基準一覧
 
 **中小企業者は資本金または従業員数のどちらかで判定し、小規模事業者は従業員数のみで判定する、より厳しい基準です。**この二段階構造を知らないと、対象を見誤ります。
-
-近い論点を[宿泊業の補助金は3つの入口｜目的別の選び方と優先順位](/blog/shukuhakugyou-hojokin-erabikata/)で扱っています。
 
 <figure><img src="/images/jizokuka-hojokin-chusho-kigyo-taisho/kijun.png" alt="小規模事業者の従業員数基準: 商業・サービス業5人以下、宿泊業・娯楽業20人以下、製造業その他20人以下、中小企業者より基準が厳しい" loading="lazy"><figcaption>小規模事業者の従業員数基準</figcaption></figure>
 
@@ -109,8 +101,6 @@ faq:
 ## 小規模事業者持続化補助金とIT導入補助金・ものづくり補助金の違い
 
 **3制度は対象者・対象経費・補助上限額のすべてが異なり、同じ「補助金」でも役割が違います。**名前が似ていても中身は別物と考えてください。
-
-選ぶときの基準は[ネイルサロンの補助金3種を比較](/blog/nail-salon-hojokin-hikaku/)でも扱っています。
 
 | 制度名 | 対象者 | 補助上限額 | 補助率 | 主な対象経費 |
 |:--|:--|:--|:--|:--|
