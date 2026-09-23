@@ -241,6 +241,8 @@ faq:
 <details><summary>申請前にまず何をすればよいですか？</summary><p class="faq-a">GビズIDの取得です。発行に2〜3週間かかり、無いと申請を始められません。</p></details>
 </div>
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## まとめ: ソフトか機械かで、使う制度が変わる
 
 <span class="big">農業がAI導入補助金で失敗する最大の原因は、機械を買おうとして対象外になることです。</span>この制度が支援するのはソフトウェアで、トラクターや選果機は含まれません。
