@@ -91,10 +91,9 @@ faq:
 
 **対象になるかどうかを分けるのは、経費が販路開拓という目的につながっているかどうかです。**改装や設備投資そのものが目的化していると対象外になります。
 
+関連する内容として[ネイルサロンのものづくり補助金](/blog/monozukuri-hojokin-nail-salon/)も公開しています。
 
-近い論点を[ネイルサロンのものづくり補助金](/blog/monozukuri-hojokin-nail-salon/)で扱っています。
-
-関連する内容として[ネイルサロンの補助金3種を比較](/blog/nail-salon-hojokin-hikaku/)も公開しています。
+あわせて[ネイルサロンの補助金3種を比較](/blog/nail-salon-hojokin-hikaku/)もご覧ください。
 
 <figure><img src="/images/jizokuka-hojokin-inshokuten-jirei/keihi-vs.png" alt="対象になる経費とならない経費: 対象にならないのは改装・修繕だけが目的の工事とテーブル・椅子の単純な入替。対象になるのは販路開拓につながる店舗改装とHP制作・厨房設備・POS導入"><figcaption>対象になる経費とならない経費</figcaption></figure>
 
