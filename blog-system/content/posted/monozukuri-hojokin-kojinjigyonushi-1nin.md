@@ -51,9 +51,9 @@ faq:
 **結論として、従業員が1人もいない個人事業主は、23次公募のものづくり補助金に申請できません。**基本要件の一つである賃上げ目標を設定する仕組み自体が、従業員の存在を前提にしているためです。
 
 
-つまずきやすい点は、[ものづくり補助金はクリニックで使える？](/hojokin/monozukuri-hojokin-clinic/)で解説しています。
+つまずきやすい点は、[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)で解説しています。
 
-対象になる範囲については、[ものづくり補助金は運送業も対象](/hojokin/monozukuri-hojokin-unsougyou/)にまとめています。
+対象になる範囲については、[ものづくり補助金は運送業も対象](/blog/monozukuri-hojokin-unsougyou/)にまとめています。
 
 関連する内容を先に押さえるなら、[ものづくり補助金2025年度](/blog/monozukuri-hojokin-2025-kojinjigyonushi/)が参考になります。
 
