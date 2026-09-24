@@ -53,7 +53,7 @@ faq:
 
 費用の目安は、[介護事業所のAI導入補助金はいくら？](/blog/kaigo-ai-hojokin-hojogaku-meyasu/)で解説しています。
 
-実際の進め方は[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/hojokin/kojinjigyonushi-kaigyoutodoke-denshishinsei/)で整理しています。
+実際の進め方は[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)で整理しています。
 
 実際の進め方は、[建設業の電子申請システムを閲覧する2つの方法](/blog/kensetsugyou-denshishinsei-etsuran/)で解説しています。
 
