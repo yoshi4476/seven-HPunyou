@@ -782,12 +782,27 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/industry/clinic/faq/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/industry/biyou/</loc>
     <lastmod>2026-09-17</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/industry/biyou/faq/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/industry/inshokuten/</loc>
+    <lastmod>2026-09-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/industry/inshokuten/faq/</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.6</priority>
   </url>
