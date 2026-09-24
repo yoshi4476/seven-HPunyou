@@ -194,3 +194,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [クリニック・医療機関のよくある質問](https://lp.7senses.co.jp/industry/clinic/faq/): 46問
 - [美容室・サロンのよくある質問](https://lp.7senses.co.jp/industry/biyou/faq/): 60問
 - [飲食店のよくある質問](https://lp.7senses.co.jp/industry/inshokuten/faq/): 42問
+- [自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方](https://lp.7senses.co.jp/blog/jidousha-seibi-hojokin-consul/): 自動車整備工場が補助金コンサルに頼むべきかは、使う制度で決まります。AI導入補助金・持続化・ものづくり補助金ごとの外部支援の要否と、公募要領が名指しする不適切な契約5つ、報酬の見方を2026年9月時点で整理します。
