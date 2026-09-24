@@ -110,7 +110,7 @@ faq:
 
 **義務化の対象外であっても、電子申請には窓口往復の削減や手続きの迅速化という実務上のメリットがあります。**義務だから仕方なく対応するのではなく、業務効率化の手段として前向きに検討する価値があります。
 
-あわせて[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/hojokin/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もご覧ください。
+あわせて[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もご覧ください。
 
 <span class="txt-blue">紙の申請書を労働基準監督署や年金事務所へ持参・郵送する手間がなくなる</span>点は、総務担当者が兼務で手続きを行っている中小企業ほど効果を実感しやすい部分です。加えて、電子申請の入り口となる<a href="https://gbiz-id.go.jp/top/" target="_blank" rel="noopener">GビズID</a>は、社会保険・労働保険の手続きだけでなく補助金の電子申請にも共通で使えるアカウントです。
 
