@@ -53,7 +53,7 @@ faq:
 
 関連する内容を先に押さえるなら、[飲食店のIT導入補助金｜名称変更後の3つの確認点](/blog/it-hojokin-inshokuten/)が参考になります。
 
-つまずきやすい点は[歯科医院のIT導入補助金](/hojokin/it-hojokin-shika-iin/)で整理しています。
+つまずきやすい点は[歯科医院のIT導入補助金](/blog/it-hojokin-shika-iin/)で整理しています。
 
 関連する内容は、[IT導入補助金を名古屋で使う](/blog/it-hojokin-nagoya/)で解説しています。
 
