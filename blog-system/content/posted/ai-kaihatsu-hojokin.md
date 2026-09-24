@@ -47,11 +47,11 @@ faq:
 
 **「AI開発補助金」は制度名ではなく、自社開発に使える複数制度をまとめた通称です。**自社で独自のAIシステムや新サービスを開発する際に使える補助金をこう呼びますが、「AI導入補助金」と混同されがちなため、まずこの違いを整理します。
 
-関連する内容を先に押さえるなら、[ものづくり補助金は美容室で使える？](/hojokin/monozukuri-hojokin-biyoushitsu/)が参考になります。
+関連する内容を先に押さえるなら、[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)が参考になります。
 
-関連する内容として[農業の倉庫投資は建物費NG](/hojokin/monozukuri-hojokin-nougyou-souko/)も公開しています。
+関連する内容として[農業の倉庫投資は建物費NG](/blog/monozukuri-hojokin-nougyou-souko/)も公開しています。
 
-近い論点を[クリニックのIT導入補助金](/hojokin/it-hojokin-clinic/)で扱っています。
+近い論点を[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)で扱っています。
 
 <div class="definition-box"><span class="term">AI開発とAI導入の違いとは</span>、既に完成しているAIツール・ソフトウェアを自社の業務に取り入れるのが「導入」、自社専用のAIエンジンや新しいAIサービスをゼロから作るのが「開発」です。補助金の世界ではこの2つで対象制度がはっきり分かれます。</div>
 
