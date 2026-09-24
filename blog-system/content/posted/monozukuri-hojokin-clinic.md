@@ -58,7 +58,7 @@ faq:
 
 関連する内容は[クリニックのAI導入補助金で使える経費](/blog/ai-hojokin-clinic-keihi/)でも扱っています。
 
-対象になる範囲は、[ものづくり補助金は運送業も対象](/hojokin/monozukuri-hojokin-unsougyou/)で解説しています。
+対象になる範囲は、[ものづくり補助金は運送業も対象](/blog/monozukuri-hojokin-unsougyou/)で解説しています。
 
 <div class="definition-box"><span class="term">ものづくり補助金とは</span>、中小企業が行う生産性向上のための設備投資を支援する国の補助金です。正式名称は「ものづくり・商業・サービス生産性向上促進補助金」で、個人事業として医療業を営む開業医も対象に含まれます。</div>
 
