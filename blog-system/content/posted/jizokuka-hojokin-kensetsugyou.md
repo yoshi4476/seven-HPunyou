@@ -49,7 +49,7 @@ faq:
 
 **小規模事業者持続化補助金は、小規模な事業者の販路開拓や生産性向上に使える経費の一部を補助する制度です。**業種を問わず申請でき、建設業も対象に含まれます。
 
-関連する内容については、[小規模事業者持続化補助金](/hojokin/jizokuka-hojokin-inshokuten-jirei/)にまとめています。
+関連する内容については、[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)にまとめています。
 
 あわせて[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
 
