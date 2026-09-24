@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 
 # 公開するもの(これ以外はデプロイされない)
-PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images"]
+PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images", "industry"]
 PUBLIC_FILES = ["index.html", "404.html", "_headers", "_redirects", "robots.txt", "llms.txt", "sitemap.xml",
                 "favicon.png", "logo.png", "ogp.png",
                 # 配信済み原稿の指紋。管制塔側がこれを読んで「届いたか」を確かめる。
