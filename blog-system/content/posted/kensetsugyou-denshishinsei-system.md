@@ -47,7 +47,7 @@ faq:
 
 関連する内容として[建設業の助成金4制度｜補助金との違いと使う順番](/blog/kensetsugyou-joseikin-hikaku/)も公開しています。
 
-関連する内容として[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/hojokin/kojinjigyonushi-kaigyoutodoke-denshishinsei/)も公開しています。
+関連する内容として[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)も公開しています。
 
 つまずきやすい点は[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)で整理しています。
 
