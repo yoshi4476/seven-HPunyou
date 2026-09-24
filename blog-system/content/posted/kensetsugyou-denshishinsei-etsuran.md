@@ -49,7 +49,7 @@ faq:
 
 **建設業の電子申請を閲覧する方法は、申請書類を見る「JCIP電子閲覧システム」と経審の点数を見る「CIIC」の2つです。**同じ「経審」を指していても、見たい情報によって使う窓口が変わります。
 
-あわせて[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/hojokin/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もご覧ください。
+あわせて[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もご覧ください。
 
 実際の進め方については、[建設業許可の電子申請](/blog/kensetsugyou-kyoka-denshishinsei/)にまとめています。
 
