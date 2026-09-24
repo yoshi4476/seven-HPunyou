@@ -53,7 +53,7 @@ faq:
 
 関連する内容は[IT導入補助金はネイルサロンも使える？](/blog/it-hojokin-nail-salon/)で整理しています。
 
-関連する内容は[ものづくり補助金はクリニックで使える？](/hojokin/monozukuri-hojokin-clinic/)で整理しています。
+関連する内容は[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)で整理しています。
 
 対象になる範囲を先に押さえるなら、[ネイルサロンの技術チェックAI化｜補助金の対象基準](/blog/nail-salon-gijutsu-check/)が参考になります。
 
