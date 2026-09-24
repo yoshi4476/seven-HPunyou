@@ -51,7 +51,7 @@ faq:
 
 **建設業許可の電子申請とは、国土交通省が運営する「JCIP」を使って許可・経審の手続きをインターネット経由で行うことです。**窓口に出向かなくても、24時間好きなタイミングで申請書を作成・提出できます。
 
-あわせて[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/hojokin/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もご覧ください。
+あわせて[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もご覧ください。
 
 つまずきやすい点は[福岡県の建設業電子申請「JCIP」窓口と手数料の注意点3つ](/blog/fukuoka-kensetsugyou-denshishinsei/)でも扱っています。
 
