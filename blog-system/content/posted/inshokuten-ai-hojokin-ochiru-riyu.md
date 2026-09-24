@@ -49,7 +49,7 @@ faq:
 
 **落ちる理由は、AI活用の説明不足・飲食店特有の数字の欠如・対象外経費の思い込みという3系統に整理できます。**要件を満たしていても、このどこかに当てはまれば不採択になります。
 
-近い論点を[小規模事業者持続化補助金](/hojokin/jizokuka-hojokin-inshokuten-jirei/)で扱っています。
+近い論点を[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)で扱っています。
 
 実際の進め方は、[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
 
