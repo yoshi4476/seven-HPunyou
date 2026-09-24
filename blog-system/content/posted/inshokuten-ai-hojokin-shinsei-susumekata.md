@@ -51,7 +51,7 @@ faq:
 
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)で整理しています。
 
-近い論点を[小規模事業者持続化補助金](/hojokin/jizokuka-hojokin-inshokuten-jirei/)で扱っています。
+近い論点を[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)で扱っています。
 
 対象要件を満たすかどうかは[飲食店のAI導入補助金 対象要件｜資本金・従業員数など5つの基準【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-taisho-youken/)で確認できます。要件を満たしたうえで、この記事の進め方に沿って手続きを進めてください。
 
