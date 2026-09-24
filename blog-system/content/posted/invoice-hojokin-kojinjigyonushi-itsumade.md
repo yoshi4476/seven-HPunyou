@@ -147,6 +147,8 @@ IDがあるなら、支援事業者に「9月29日に間に合うか」を今日
 
 <div class="cta-box"><p>申請要件の確認から実績報告まで伴走します。9月29日に間に合うかも、その場でお答えします。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
+<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+
 ## よくある質問
 
 <div class="faq">

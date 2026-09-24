@@ -51,8 +51,6 @@ faq:
 
 近い論点を[宿泊業のインバウンド投資を支えた事業再構築補助金](/blog/jigyou-saikouchiku-shukuhakugyou-jirei/)で扱っています。
 
-関連する内容として[事業再構築補助金の確定申告](/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/)も公開しています。
-
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
 
 <a href="https://prtimes.jp/main/html/rd/p/000003196.000011414.html" target="_blank" rel="noopener">リクルートが公表した美容サロン就業実態調査</a>によると、<strong>美容師の就業率は43.6%にとどまり、休眠美容師が56.4%を占め</strong>、新卒入社から<strong>3年未満での離職率は42.5%</strong>に上ります。==美容師免許を持ちながら勤務経験がない「勤務未経験率」も22.0%まで上昇==しており、採用してもすぐに定着しない構造的な課題が続いています。
