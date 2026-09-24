@@ -50,9 +50,9 @@ faq:
 **個人事業主も、要件さえ満たせば法人と同じ条件でものづくり補助金に申請できます。**
 
 
-実際の進め方は[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/hojokin/kojinjigyonushi-pc-hojokin-hikaku/)でも扱っています。
+実際の進め方は[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)でも扱っています。
 
-つまずきやすい点を先に押さえるなら、[ものづくり補助金はクリニックで使える？](/hojokin/monozukuri-hojokin-clinic/)が参考になります。
+つまずきやすい点を先に押さえるなら、[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)が参考になります。
 
 <div class="definition-box"><span class="term">ものづくり補助金2025年度</span>とは、第23次公募以降の「ものづくり・商業・サービス生産性向上促進補助金」を指します。個人事業主も応募資格を持ちますが、基本要件を満たす必要があります。</div>
 
