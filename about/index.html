@@ -38,9 +38,10 @@
       "sameAs": ["https://corp.7senses.co.jp/", "https://ai.7senses.co.jp/",
         "https://www.7senses.co.jp/",
         "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3120001227825",
-        "https://alarmbox.jp/companyinfo/entities/3120001227825"],
+        "https://alarmbox.jp/companyinfo/entities/3120001227825",
+        "https://www.google.com/maps?cid=815053100031552916"],
       "founder": { "@id": "https://lp.7senses.co.jp/#author" },
-      "address": { "@type": "PostalAddress", "postalCode": "537-0003", "addressRegion": "大阪府", "addressLocality": "大阪市東成区", "streetAddress": "神路1丁目7-4 コンフォートビル901・902", "addressCountry": "JP" } },
+      "location": { "@type": "Place", "geo": { "@type": "GeoCoordinates", "latitude": 34.6791137, "longitude": 135.555196 }, "hasMap": "https://www.google.com/maps?cid=815053100031552916" } },
     { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author",
       "name": "原口 優", "jobTitle": "代表取締役",
       "image": "https://lp.7senses.co.jp/assets/img/ceo.webp",
@@ -139,6 +140,44 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
+<style>
+/* アクセス: 地図は押したときだけ読む（1枚で数百KB） */
+.access{margin-top:46px}
+.access-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:28px;align-items:stretch;margin-top:18px}
+.access-coord{font-family:var(--num);font-variant-numeric:tabular-nums;font-weight:500;font-size:clamp(22px,2.6vw,30px);letter-spacing:.02em;color:var(--navy);line-height:1.2;margin:0 0 16px}
+.access-coord span{font-size:.55em;color:var(--gold-em);margin-left:.1em;letter-spacing:.1em}
+.access-coord i{font-style:normal;color:var(--line2);margin:0 .35em}
+.access dl{margin:0;display:grid;gap:12px}
+.access dl>div{display:grid;grid-template-columns:4.6em 1fr;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.access dt{font-size:12px;font-weight:700;color:var(--dim);letter-spacing:.1em;padding-top:2px}
+.access dd{margin:0;line-height:1.8;font-size:14.5px}
+.access dd a{font-family:var(--num);color:var(--navy);text-decoration:none;border-bottom:1px solid var(--gold-soft)}
+.access-note{font-size:13px;color:var(--muted);margin:14px 0 18px}
+.access-actions{display:flex;flex-wrap:wrap;gap:10px}
+.access-actions .btn-ghost{color:var(--navy);background:#fff;border:1.5px solid var(--line2)}
+.access-actions .btn-ghost:hover{border-color:var(--gold);color:var(--navy2)}
+.map-facade{position:relative;min-height:320px;border-radius:14px;overflow:hidden;background:var(--panel2);border:1px solid var(--line2);isolation:isolate;box-shadow:var(--shadow)}
+.map-facade .map-grid{position:absolute;inset:-20%;transform:rotate(-9deg);background:
+ linear-gradient(rgba(176,139,62,.34) 2px,transparent 2px) 0 0/120px 120px,
+ linear-gradient(90deg,rgba(176,139,62,.34) 2px,transparent 2px) 0 0/120px 120px,
+ linear-gradient(rgba(29,52,97,.07) 1px,transparent 1px) 0 0/24px 24px,
+ linear-gradient(90deg,rgba(29,52,97,.07) 1px,transparent 1px) 0 0/24px 24px}
+.map-facade:after{content:"";position:absolute;inset:0;background:radial-gradient(60% 55% at 50% 46%,transparent 40%,rgba(250,248,242,.88) 100%);pointer-events:none}
+.map-area{position:absolute;left:16px;top:14px;z-index:2;font-family:var(--serif);font-size:12px;font-weight:700;letter-spacing:.18em;color:var(--gold-em)}
+.map-pin{position:absolute;left:50%;top:44%;width:18px;height:18px;margin:-9px 0 0 -9px;border-radius:50%;background:var(--navy);box-shadow:0 0 0 5px #fff,0 0 0 6px var(--gold-soft),0 8px 18px rgba(29,52,97,.3);z-index:2}
+.map-pin:before{content:"";position:absolute;inset:-14px;border-radius:50%;border:2px solid var(--gold-soft);opacity:0;animation:map-ping 2.4s cubic-bezier(.19,1,.22,1) infinite}
+@keyframes map-ping{0%{transform:scale(.4);opacity:.95}100%{transform:scale(2.2);opacity:0}}
+.map-label{position:absolute;left:50%;top:calc(44% + 22px);transform:translateX(-50%);z-index:2;font-size:12px;font-weight:700;color:var(--navy);background:#fff;padding:3px 10px;border-radius:6px;border:1px solid var(--line);white-space:nowrap}
+.map-load{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:3;display:grid;justify-items:center;gap:2px;min-height:44px;padding:10px 22px;border:1px solid var(--line2);border-radius:10px;background:rgba(255,255,255,.95);color:var(--navy);font:700 14px var(--sans);cursor:pointer}
+.map-load small{font-size:11px;font-weight:500;color:var(--muted);white-space:nowrap}
+.map-load:hover{border-color:var(--gold)}
+.map-load:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px}
+.map-facade iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:4;opacity:0;transition:opacity .5s}
+.map-facade.is-ready iframe{opacity:1}
+.map-facade.is-loaded .map-load{display:none}
+@media(max-width:760px){.access-grid{grid-template-columns:1fr}.map-facade{min-height:300px;order:-1}.map-pin{top:36%}.map-label{top:calc(36% + 22px)}.map-load{bottom:14px;padding:8px 18px}}
+@media(prefers-reduced-motion:reduce){.map-pin:before{animation:none;opacity:.5;transform:scale(1.4)}.map-facade iframe{transition:none}}
+</style>
 </head>
 <body>
 <header>
@@ -218,6 +257,34 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
         </table>
       </div>
 
+      <div class="access" id="access" aria-labelledby="access-heading">
+        <p class="kicker" style="color:var(--gold)">Access</p>
+        <h2 id="access-heading">アクセス</h2>
+        <div class="access-grid">
+          <div>
+            <p class="access-coord" aria-label="北緯34.6791度、東経135.5552度">34.6791<span>°N</span><i>/</i>135.5552<span>°E</span></p>
+            <dl>
+              <div><dt>所在地</dt><dd>〒537-0003<br>大阪府大阪市東成区神路1丁目7-4<br>コンフォートビル901・902</dd></div>
+              <div><dt>最寄り</dt><dd>Osaka Metro 中央線「深江橋」駅</dd></div>
+              <div><dt>受付</dt><dd>9:00〜20:00（土日祝休）</dd></div>
+              <div><dt>電話</dt><dd><a href="tel:0643057547">06-4305-7547</a></dd></div>
+            </dl>
+            <p class="access-note">ご相談はオンラインで完結します。ご来社の際は、事前にお電話でご連絡ください。</p>
+            <div class="access-actions">
+              <a class="btn btn-primary" href="https://maps.app.goo.gl/GqS7DHHQSpyomZSQ9" target="_blank" rel="noopener">Googleマップで開く</a>
+              <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.6791137%2C135.555196" target="_blank" rel="noopener">経路を調べる</a>
+            </div>
+          </div>
+          <div class="map-facade" data-map-src="https://www.google.com/maps/embed?origin=mfe&amp;pb=!1m3!2m1!1s%E3%82%BB%E3%83%96%E3%83%B3%E3%82%BB%E3%83%B3%E3%82%B7%E3%82%BA%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE%20%E5%A4%A7%E9%98%AA%E5%B8%82%E6%9D%B1%E6%88%90%E5%8C%BA%E7%A5%9E%E8%B7%AF1%E4%B8%81%E7%9B%AE7-4%20%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%88%E3%83%93%E3%83%AB!6i17!3m1!1sja!5m1!1sja">
+            <div class="map-grid" aria-hidden="true"></div>
+            <span class="map-area" aria-hidden="true">大阪市東成区 神路</span>
+            <span class="map-pin" aria-hidden="true"></span>
+            <span class="map-label" aria-hidden="true">セブンセンシズ</span>
+            <button type="button" class="map-load">地図を表示する<small>Googleマップを読み込みます</small></button>
+          </div>
+        </div>
+      </div>
+
       <div class="cta-box">
         <p class="t">まずは「話を聞いてみる」から、<br>始めませんか。</p>
         <p class="d">補助金の対象確認・お見積り・4つの無料診断。どれも無料で、しつこい営業はいたしません。</p>
@@ -236,5 +303,10 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
   <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
       <ul class="social-links" aria-label="外部プロフィール"><li><a href="https://www.linkedin.com/in/yu-haraguchi" target="_blank" rel="noopener me" aria-label="LinkedIn（原口 優）" data-net="linkedin"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a href="https://note.com/yu_haraguchi" target="_blank" rel="noopener me" aria-label="note（原口 優）" data-net="note"><span>note</span></a></li></ul>
 </footer>
+<script>
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.map-load');if(!b)return;var box=b.closest('.map-facade');if(!box||box.classList.contains('is-loaded'))return;
+var f=document.createElement('iframe');f.src=box.getAttribute('data-map-src');f.title='セブンセンシズ株式会社の地図（Googleマップ）';f.loading='lazy';f.referrerPolicy='no-referrer-when-downgrade';f.setAttribute('allowfullscreen','');
+f.addEventListener('load',function(){box.classList.add('is-ready')});box.appendChild(f);box.classList.add('is-loaded');if(typeof gtag==='function')gtag('event','map_load',{page_path:location.pathname});});
+</script>
 </body>
 </html>
