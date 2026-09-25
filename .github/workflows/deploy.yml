@@ -66,11 +66,19 @@ jobs:
             echo "生成物に変更なし"
           else
             git commit -m "chore(blog): 納品記事のHTML生成 ($(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST'))"
+            # 管制塔からの配信と同時刻になると push が拒否される。取り込むとき、コミット対象外の
+            # 生成物が作業ツリーに残っていると pull --rebase が拒否されるので --autostash で退避する。
+            # rebase が始まっていないのに --abort すると終了コード128で工程ごと落ちていた
+            pushed=0
             for i in 1 2 3; do
-              git push && break
+              if git push; then pushed=1; break; fi
               echo "push拒否 → 取り込んで再試行 ($i/3)"
-              git pull --rebase -X ours origin master || git rebase --abort
+              git pull --rebase --autostash -X ours origin master || { git rebase --abort 2>/dev/null || true; }
             done
+            if [ "$pushed" != 1 ]; then
+              echo "::error::生成物を push できませんでした（次の点検の実行で再生成されます）"
+              exit 1
+            fi
           fi
 
       - name: 配信物を生成 (内部資料を除外)
