@@ -92,7 +92,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [社労士事務所のAI導入補助金｜労務ソフトは対象になるか](https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/): 社労士事務所がAI導入補助金を使えるかを解説します。士業も申請できますが、顧問先の労務手続きを自動化するソフトが対象になるかは枠と用途で変わ
 - [AI導入補助金のGビズID取得方法｜プライム取得の5つの手順](https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/): AI導入補助金にはGビズIDプライムが必須です。取得の流れとオンライン・書類申請の違い、審査にかかる日数の目安を2026年9月時点の公式情報
 - [AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-hoshi2/): AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月時点の公式情報から解説します。
-- [介護事業所の電子申請・届出システムとは？義務化はいつからか](https://lp.7senses.co.jp/blog/kaigo-denshishinsei-todokede/): 介護事業所の電子申請・届出システムは、指定申請や加算届などをオンラインで提出できる厚生労働省の仕組みです。対象事業所とgBizIDの取得方法
+- [介護事業所の電子申請・届出システムとは？義務化はいつからか](https://lp.7senses.co.jp/blog/kaigo-denshishinsei-todokede/): 介護事業所の電子申請・届出システムは、指定申請や加算届などをオンラインで提出できる厚生労働省の仕組みです。対象事業所とgBizIDの取得方法、義務化のスケジュール、IT導入補助金が使える範囲を2026年9月時点の情報で整理します。
 - [社会保険の電子申請義務化｜中小企業が対象になる3つの条件](https://lp.7senses.co.jp/blog/shakaihoken-denshishinsei-gimuka-chusho/): 社会保険の電子申請義務化は、資本金1億円超の企業と、常時50人以上の一部労働安全衛生手続きが対象です。多くの中小企業は対象外ですが、対象にな
 - [補助金の電子申請はいつから義務化？中小企業が今やること](https://lp.7senses.co.jp/blog/hojokin-denshishinsei-gimuka-itsukara/): 補助金の電子申請は法律上の義務ではなく、ものづくり補助金など主要制度が2020年前後から電子申請のみに移行したことで中小企業に事実上必須とな
 - [IT導入補助金はネイルサロンも使える？材料費と面貸しの壁](https://lp.7senses.co.jp/blog/it-hojokin-nail-salon/): ネイルサロンでもIT導入補助金は使えますが、ジェルやチップの材料費は対象外です。予約管理・POSレジ会計・デザインカルテの3分野が対象になる仕組み、面貸し契約でどちらが申請するかの考え方を2026年9月時点でまとめました。
