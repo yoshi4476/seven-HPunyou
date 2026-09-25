@@ -88,7 +88,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-etsuran/): 建設業許可・経営事項審査を電子申請したJCIPの記録は、2023年4月開始の電子閲覧システムとCIICの2つで無料検索できます。閲覧できる範囲と使い方の手順を2026年9月時点の情報で解説します。
 - [建設業の電子申請システムはIT導入補助金の対象になる？3つの誤解](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-system/): 建設業の電子申請システムには、経審用の行政ポータルJCIPとIT導入補助金の対象ツールの2種類があり、混同すると対象外の費用で申請してしまいます。違いと対象になる具体例、補助率を2026年9月時点の情報で解説します。
 - [e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/): e-Govは労働保険など省庁横断の行政手続きを電子申請できるポータルです。個人事業主が使う場面、e-Tax・Jグランツとの違い、GビズIDで
-- [開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/): 開業届の電子申請は、マイナンバーカードがあればe-Taxで自宅から出せます。2026年の提出期限の変更点、青色申告承認申請書との違い、個人事
+- [開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/): 開業届の電子申請は、マイナンバーカードがあればe-Taxで自宅から出せます。2026年の提出期限の変更点、青色申告承認申請書との違い、個人事業主がAI導入補助金・IT導入補助金を使う際に開業届が前提になる理由まで、5つの手順で解説します。
 - [社労士事務所のAI導入補助金｜労務ソフトは対象になるか](https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/): 社労士事務所がAI導入補助金を使えるかを解説します。士業も申請できますが、顧問先の労務手続きを自動化するソフトが対象になるかは枠と用途で変わ
 - [AI導入補助金のGビズID取得方法｜プライム取得の5つの手順](https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/): AI導入補助金にはGビズIDプライムが必須です。取得の流れとオンライン・書類申請の違い、審査にかかる日数の目安を2026年9月時点の公式情報
 - [AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-hoshi2/): AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月時点の公式情報から解説します。
