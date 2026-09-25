@@ -69,7 +69,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [中小企業の助成金とは？補助金との違いと探し方4ステップ](https://lp.7senses.co.jp/blog/chusho-kigyo-joseikin/): 中小企業が使える助成金は、審査で採択される「補助金」と要件を満たせば受給できる「助成金」の2種類に分かれます。違いの見分け方と、IT・AI導
 - [建設業のAI導入補助金はいくら？枠別の上限額と自己負担の試算](https://lp.7senses.co.jp/blog/fukuoka-kensetsugyou-denshishinsei/): 建設業がAI導入補助金でもらえる額は、選ぶ枠と導入するソフトの価格で決まります。枠ごとの補助率と上限額、補助の対象にならない費用、自己負担が
 - [建設業のAI導入補助金｜必要書類10点と揃える順番](https://lp.7senses.co.jp/blog/kanagawa-kensetsugyou-denshishinsei/): 建設業がAI導入補助金で用意する書類は、法人で10点・個人事業主で8点が目安です。取得に時間がかかる書類と、交付決定後に追加で求められるもの
-- [ネイルサロンの技術チェックAI化｜補助金の対象基準](https://lp.7senses.co.jp/blog/nail-salon-gijutsu-check/): ネイルサロンの技術チェック（採用試験・研修進捗・仕上がり検品）のAI化は、教育訓練プロセスに該当し登録済みならIT導入補助金の対象です。対象
+- [ネイルサロンの技術チェックAI化｜補助金の対象基準](https://lp.7senses.co.jp/blog/nail-salon-gijutsu-check/): ネイルサロンの技術チェック（採用試験・研修進捗・仕上がり検品）のAI化は、教育訓練プロセスに該当し登録済みならIT導入補助金の対象です。対象費用の境界線と一人サロン・複数店舗の投資対効果の違いを2026年9月時点でまとめました。
 - [建設業がAI導入補助金の対象になる条件｜5つの要件と確認の順番](https://lp.7senses.co.jp/blog/osaka-kensetsugyou-denshishinsei/): 建設業がAI導入補助金（中小企業デジタル化・AI導入支援事業）の対象になるかは、資本金・従業員数・導入するソフトの3点で決まります。対象外に
 - [建設業がAI導入補助金で不採択になる6つの理由と直し方](https://lp.7senses.co.jp/blog/tokyo-kensetsugyou-denshishinsei/): 建設業がAI導入補助金で不採択になる理由は、導入効果が数字で書かれていない・現場での使い方が具体的でないなど6つに整理できます。審査で落ちる
 - [個人事業主がパソコンを補助金で買う方法｜3制度を比較](https://lp.7senses.co.jp/blog/kojinjigyonushi-pc-hojokin-hikaku/): 個人事業主がパソコンを補助金で買う方法を3制度で比較します。使えるのは事実上IT導入補助金インボイス枠のみで、持続化補助金とものづくり補助金
