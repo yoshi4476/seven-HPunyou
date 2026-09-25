@@ -30,13 +30,16 @@ for d in sorted((ROOT / "blog").iterdir()):
     title = re.search(r"<title>(.*?)[||]", c)
     desc = re.search(r'name="description" content="(.*?)"', c)
     date = re.search(r'"datePublished":\s*"(\d{4}-\d{2}-\d{2})"', c)
+    # sitemap の lastmod は更新日。公開日のままだと、書き直した記事の再クロールが促されない
+    mod = re.search(r'"dateModified":\s*"(\d{4}-\d{2}-\d{2})"', c)
     cat = re.search(r'<span class="cat">(.*?)</span>', c)
     if not (title and desc and date and cat):
         print(f"WARN meta不足: {d.name}")
         continue
     heads = re.findall(r"<h2[^>]*>(.*?)</h2>", c, re.S)
     arts.append({"slug": d.name, "title": title.group(1).strip(), "desc": desc.group(1)[:80],
-                 "date": date.group(1), "cat": cat.group(1).strip(),
+                 "date": date.group(1), "mod": max(date.group(1), mod.group(1) if mod else ""),
+                 "cat": cat.group(1).strip(),
                  "heads": [re.sub(r"<[^>]+>", "", h) for h in heads]})
 arts.sort(key=lambda a: a["date"], reverse=True)
 print(f"記事: {len(arts)}本")
@@ -392,11 +395,11 @@ urls = [f"  <url>\n    <loc>{DOMAIN}{p}</loc>\n    <lastmod>{d}</lastmod>\n    <
         for p, d, pr in STATIC]
 for name, (slug, _, _) in CATS.items():
     cat_arts = [a for a in arts if a["cat"] == name]
-    last = max((a["date"] for a in cat_arts), default="2026-07-21")
+    last = max((a["mod"] for a in cat_arts), default="2026-07-21")
     urls.append(f"  <url>\n    <loc>{DOMAIN}/blog/category/{slug}/</loc>\n    <lastmod>{last}</lastmod>\n    <priority>0.6</priority>\n  </url>")
 for a in arts:
     pr = "0.9" if a["slug"] == "ai-hojokin-guide-2026" else "0.7"
-    urls.append(f"  <url>\n    <loc>{DOMAIN}/blog/{a['slug']}/</loc>\n    <lastmod>{a['date']}</lastmod>\n    <priority>{pr}</priority>\n  </url>")
+    urls.append(f"  <url>\n    <loc>{DOMAIN}/blog/{a['slug']}/</loc>\n    <lastmod>{a['mod']}</lastmod>\n    <priority>{pr}</priority>\n  </url>")
 if hub_pairs:
     urls.append(f"  <url>\n    <loc>{DOMAIN}/industry/</loc>\n    <lastmod>{arts[0]['date']}</lastmod>\n    <priority>0.6</priority>\n  </url>")
     for i, v in hub_pairs:
