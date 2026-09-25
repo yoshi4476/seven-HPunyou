@@ -147,7 +147,7 @@ faq:
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
 
-自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
+自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録なしで、その場で点数が表示されます。
 
 ## IT導入補助金・AI導入補助金との使い分け
 
