@@ -131,7 +131,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [ものづくり補助金は飲食店で使える？採択事例3パターン](https://lp.7senses.co.jp/blog/monozukuri-hojokin-inshokuten-jirei/): ものづくり補助金は飲食店でも申請できますが、対象経費の中心は店舗改装費ではなく厨房設備や食品製造機械です。飲食店が採択されやすい3つの事例パ
 - [事業再構築補助金は個人事業主もいつまで？後継3制度の使い方](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-itsumade/): 事業再構築補助金は2025年3月の第13回公募で新規申請を終了しました。個人事業主が今使える後継制度と、従業員0人は対象外になる注意点を20
 - [ものづくり補助金の給与支給総額とは？個人事業主の計算3ステップ](https://lp.7senses.co.jp/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/): ものづくり補助金の給与支給総額は、給料・賃金・賞与の合計で役員報酬や退職金は含みません。個人事業主が23次公募で満たすべき年3.5%増の計算
-- [小規模事業者持続化補助金は中小企業も対象｜3制度の使い分け](https://lp.7senses.co.jp/blog/jizokuka-hojokin-chusho-kigyo-taisho/): 小規模事業者持続化補助金の対象は中小企業者ではなく「小規模事業者」です。基準の違いと、対象外の場合に使えるIT導入補助金・ものづくり補助金と
+- [小規模事業者持続化補助金は中小企業も対象｜3制度の使い分け](https://lp.7senses.co.jp/blog/jizokuka-hojokin-chusho-kigyo-taisho/): 小規模事業者持続化補助金の対象は中小企業者ではなく「小規模事業者」です。基準の違いと、対象外の場合に使えるIT導入補助金・ものづくり補助金との使い分けを2026年8月時点の情報で整理します。
 - [ものづくり補助金は個人事業主1人だと対象外？23次の結論](https://lp.7senses.co.jp/blog/monozukuri-hojokin-kojinjigyonushi-1nin/): ものづくり補助金は23次公募から従業員1人あたり給与支給総額の年3.5%増が必須になり、従業員のいない個人事業主1人では目標値を設定できず申
 - [ものづくり補助金は資本金オーバーでも対象？中小企業者7区分](https://lp.7senses.co.jp/blog/monozukuri-hojokin-chusho-teigi/): ものづくり補助金の中小企業者は、資本金または従業員数のどちらか一方で判定します。小規模事業者は補助率が2/3に優遇され、みなし大企業や個人事
 - [ものづくり補助金は製造業でどう使う？対象経費3つと上限4,000万円](https://lp.7senses.co.jp/blog/monozukuri-hojokin-seizougyou/): ものづくり補助金は製造業の設備投資に使え、機械装置費の計上が全枠で必須です。対象経費・補助率1/2〜2/3・上限3,000万円(特例4,00
