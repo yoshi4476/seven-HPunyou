@@ -49,7 +49,7 @@ faq:
 
 関連する内容を先に押さえるなら、[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)が参考になります。
 
-関連する内容として[農業の倉庫投資は建物費NG](/blog/monozukuri-hojokin-nougyou-souko/)も公開しています。
+関連する内容として[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)も公開しています。
 
 近い論点を[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)で扱っています。
 
