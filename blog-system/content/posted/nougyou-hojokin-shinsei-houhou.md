@@ -59,6 +59,8 @@ faq:
 
 **小規模事業者持続化補助金とものづくり系の補助金では、対象になる農業者の従業員要件が異なります。**どちらも農業者が使える制度ですが、狙う投資の規模によって選ぶべき制度が変わります。
 
+費用の目安は[農業の初期費用は平均755万円](/blog/nougyou-shoki-hiyou-hojokin/)でも扱っています。
+
 あわせて[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)もご覧ください。
 
 関連して、[宿泊業のインバウンド投資を支えた事業再構築補助金](/blog/jigyou-saikouchiku-shukuhakugyou-jirei/)もあわせてご確認ください。
