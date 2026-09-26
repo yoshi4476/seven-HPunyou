@@ -51,11 +51,13 @@ faq:
 
 **宿泊業が使える補助金の入口は、デジタル化・AI導入補助金、新事業進出等補助金、持続化補助金の3つです。**それぞれ対象にする投資の規模と目的が異なります。
 
-あわせて[AI導入補助金2026](/blog/ai-hojokin-clinic-2026-schedule/)もご覧ください。
+あわせて[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)もご覧ください。
 
-あわせて[事業再構築補助金 クリニックは医療法人不可](/blog/jigyou-saikouchiku-clinic-jirei/)もご覧ください。
+関連する内容として[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)も公開しています。
 
-同業種向けの制度別の解説は、[宿泊業のIT導入補助金は有利？](/blog/it-hojokin-shukuhakugyou/)で詳しく扱っています。
+あわせて[農業機械補助金は4制度](/blog/nougyou-kikai-hojokin/)もご覧ください。
+
+関連する内容として[農業の倉庫投資は建物費NG](/blog/monozukuri-hojokin-nougyou-souko/)も公開しています。
 
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の通常枠ページ</a>によると、この制度はソフトウェア・クラウドサービスの導入費用を補助します。宿泊業ならPMSや予約システムが対象になりやすい分野です。
 
@@ -68,7 +70,6 @@ faq:
 ## 「ものづくり補助金」と「事業再構築補助金」は同じ制度に統合された
 
 **旧ものづくり補助金と旧事業再構築補助金は、2026年6月29日の統合で同じ制度の異なる申請枠になりました。**制度名の思い込みで探すと、古い情報に行き着いてしまいます。
-
 
 <div class="definition-box"><span class="term">新事業進出・ものづくり商業サービス補助金とは</span>、旧ものづくり補助金と旧事業再構築補助金（新事業進出補助金）が統合された制度の名称です。革新的新製品・サービス枠、新事業進出枠、グローバル枠という3つの申請枠に分かれています。</div>
 
