@@ -49,6 +49,8 @@ faq:
 
 **「給付金」は要件を満たせば原則支給される仕組みで、審査で採択者を選ぶ「補助金」とは性質が異なります。**同じ「もらえるお金」でも、申請の進め方はまったく違います。
 
+あわせて[美容室の助成金とは｜歩合給でも使える5制度と金額の目安](/blog/biyoushitsu-joseikin/)もご覧ください。
+
 関連して、[AI導入補助金の受発注ソフトとは？](/blog/ai-hojokin-juhatchu-soft-toha/)もあわせてご確認ください。
 
 <div class="definition-box"><span class="term">給付金とは</span>、国や自治体が定めた要件を満たす申請者に対して、原則として支給されるお金を指します。事業計画の審査や採択という手続きはありません。</div>
@@ -65,11 +67,9 @@ faq:
 
 **個人事業主が実際に使える制度の中心は、IT導入補助金・小規模事業者持続化補助金・ものづくり補助金・事業再構築補助金の4つです。**業種や導入したい内容によって選ぶ制度が変わります。
 
-近い論点を[IT導入補助金のおすすめの選び方](/blog/it-hojokin-osusume/)で扱っています。
+あわせて[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)もご覧ください。
 
-実際の進め方は、[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)で解説しています。
-
-関連して、[事業再構築補助金で個人事業主が出す事業化状況報告](/blog/jigyou-saikouchiku-jigyouka-hokoku-kojin/)もあわせてご確認ください。
+関連する内容として[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)も公開しています。
 
 <figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/seido3.png" alt="個人事業主が対象になる主な補助金: IT導入補助金、小規模事業者持続化補助金、ものづくり補助金、事業再構築補助金"><figcaption>個人事業主が対象になる主な補助金</figcaption></figure>
 
