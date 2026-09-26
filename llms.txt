@@ -195,3 +195,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [クリニック・医療機関のよくある質問](https://lp.7senses.co.jp/industry/clinic/faq/): 46問
 - [美容室・サロンのよくある質問](https://lp.7senses.co.jp/industry/biyou/faq/): 60問
 - [飲食店のよくある質問](https://lp.7senses.co.jp/industry/inshokuten/faq/): 42問
+- [農業の初期費用は平均755万円｜費目別に使える補助金4つ](https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou-hojokin/): 新規就農1年目の初期費用は平均755万円、中央値350万円です。機械・施設、生活費、運転資金、管理ソフトの費目ごとに使える補助金と融資、経営開始資金との併用で上限が下がる注意点を2026年9月時点の公表内容で整理します。
