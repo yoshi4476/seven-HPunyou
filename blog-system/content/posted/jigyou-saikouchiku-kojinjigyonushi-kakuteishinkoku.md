@@ -57,8 +57,6 @@ faq:
 
 実際の進め方は、[事業再構築補助金の飲食店活用事例3選と今の申請方法](/blog/jigyou-saikouchiku-inshokuten-jirei/)で解説しています。
 
-関連する内容については、[事業再構築補助金は法人成り後も続く？](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)にまとめています。
-
 <div class="definition-box"><span class="term">雑収入とは</span>、売上以外で事業に関連して得た収入のことで、補助金・助成金・保険金の受取などが該当します。青色申告決算書の損益計算書では「雑収入」の欄に記載します。</div>
 
 事業再構築補助金は2025年3月26日の第13回公募で新規申請を終了しています。ただし、過去に交付決定を受けて実際に補助金を受け取った個人事業主の方は、その年分の確定申告で必ず処理が必要になります。制度自体の現在の状況は、[事業再構築補助金は個人事業主もいつまで？](/blog/jigyou-saikouchiku-kojinjigyonushi-itsumade/)で解説しています。
