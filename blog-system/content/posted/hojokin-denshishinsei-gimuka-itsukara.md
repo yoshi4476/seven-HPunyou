@@ -49,11 +49,11 @@ faq:
 
 **主要な補助金の電子申請は2020年前後から原則化が進み、現在は多くの制度が郵送申請を受け付けていません。**制度ごとに導入時期は異なりますが、流れとしては共通しています。
 
+近い論点を[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)で扱っています。
+
 近い論点を[ネイルサロンの補助金申請手順を8ステップで解説](/blog/nail-salon-hojokin-tejun/)で扱っています。
 
 あわせて[ネイルサロンの補助金3種を比較](/blog/nail-salon-hojokin-hikaku/)もご覧ください。
-
-あわせて[小規模事業者持続化補助金](/blog/jizokuka-hojokin-clinic/)もご覧ください。
 
 前提となる考え方については、[介護事業所の電子申請・届出システムとは？](/blog/kaigo-denshishinsei-todokede/)にまとめています。
 
