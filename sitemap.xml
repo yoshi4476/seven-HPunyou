@@ -48,8 +48,13 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou-hojokin/</loc>
+    <lastmod>2026-09-25</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/invoice-hojokin-kojinjigyonushi-itsumade/</loc>
@@ -778,7 +783,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -810,9 +815,5 @@
     <loc>https://lp.7senses.co.jp/industry/inshokuten/faq/</loc>
     <lastmod>2026-09-15</lastmod>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou-hojokin/</loc>
-    <lastmod>2026-09-25</lastmod>
   </url>
 </urlset>
