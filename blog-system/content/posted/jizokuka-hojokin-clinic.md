@@ -117,6 +117,8 @@ faq:
 
 **新事業進出・ものづくり商業サービス補助金は、個人開業医のクリニックであれば対象に含まれる制度です。**ただし医療法人は、ものづくり補助金の系譜と同じくこちらも原則対象外になります。<a href="https://shinjigyou-monodukuri.smrj.go.jp/" target="_blank" rel="noopener">中小企業基盤整備機構の公式サイト</a>で最新の公募スケジュールを確認できます。
 
+あわせて[農業機械補助金は4制度](/blog/nougyou-kikai-hojokin/)もご覧ください。
+
 関連する内容については、[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)にまとめています。
 
 <div class="definition-box"><span class="term">新事業進出・ものづくり商業サービス補助金とは</span>、旧ものづくり補助金と新事業進出補助金を統合した後継制度です。第1回の申請受付は2026年8月31日に始まります。締切日は公募要領で最新情報を確認してください。</div>
