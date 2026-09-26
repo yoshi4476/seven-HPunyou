@@ -34,6 +34,8 @@ faq:
 
 申請の失敗は、準備不足・書類不備・期限管理ミスという3つの系統に大別できます。いずれも制度の難しさそのものより、時間配分のミスから生まれています。
 
+費用の目安を先に押さえるなら、[農業の初期費用は平均755万円](/blog/nougyou-shoki-hiyou-hojokin/)が参考になります。
+
 費用の目安は[宿泊業のAI導入補助金はいくら？](/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/)でも扱っています。
 
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
