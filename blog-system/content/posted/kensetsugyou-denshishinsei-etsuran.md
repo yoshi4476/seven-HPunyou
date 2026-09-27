@@ -1,5 +1,5 @@
 ---
-title: 建設業の電子申請システムを閲覧する2つの方法｜JCIPとCIICの違い
+title: 建設業の電子申請を閲覧するには？JCIP電子閲覧システムとCIIC
 description: 建設業許可・経営事項審査を電子申請したJCIPの記録は、2023年4月開始の電子閲覧システムとCIICの2つで無料検索できます。閲覧できる範囲と使い方の手順を2026年9月時点の情報で解説します。
 slug: kensetsugyou-denshishinsei-etsuran
 keyword: 建設業 電子申請 閲覧
