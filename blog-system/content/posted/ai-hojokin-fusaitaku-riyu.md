@@ -52,7 +52,7 @@ faq:
 
 業種別の試算例として、[エステサロン AI導入補助金の補助額の目安](/blog/esute-ai-hojokin-hojogaku-mokuyasu/)を規模別に整理した記事も参考になります。
 
-飲食店の場合、業種特有の[AI導入補助金で落ちる理由](/blog/inshokuten-ai-hojokin-ochiru-riyu/)もあわせて確認しておくと、より具体的な対策につながります。
+飲食店の場合、業種特有の[飲食店がAI導入補助金で落ちる理由](/blog/inshokuten-ai-hojokin-ochiru-riyu/)もあわせて確認しておくと、より具体的な対策につながります。
 
 <div class="definition-box"><span class="term">不採択とは</span>、審査の結果、交付候補として選ばれなかった状態を指します。書類が受理されても、事業計画の内容や加点・減点の点数が基準に届かなければ不採択になります。応募要件の準備段階でつまずく失敗については<a href="/blog/ai-hojokin-shinsei-shippai-yokuaru/">AI導入補助金の申請に失敗する5つの原因と対策</a>で詳しく解説しています。</div>
 
