@@ -59,7 +59,7 @@ faq:
 
 **日本の農業補助金は、事業計画書を提出して審査を通過した経営者だけが支給を受けられる仕組みです。**まず自分の投資計画を書類にまとめ、それが制度の目的に合っているかを国や自治体が審査します。
 
-近い論点を[農業の倉庫投資は建物費NG](/blog/monozukuri-hojokin-nougyou-souko/)で扱っています。
+近い論点を[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)で扱っています。
 
 あわせて[農業の補助金の申請方法｜制度の選び方と5ステップ](/blog/nougyou-hojokin-shinsei-houhou/)もご覧ください。
 
