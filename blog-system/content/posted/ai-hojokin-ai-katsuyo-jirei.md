@@ -139,7 +139,7 @@ AIチャットボットは、想定外の質問に誤った回答をしてしま
 
 <figure><img src="/images/ai-hojokin-ai-katsuyo-jirei/nagare.png" alt="AI活用事例を参考にした導入までの流れ: 課題整理、ツール調査、事業者への相談、交付申請・導入、効果測定" loading="lazy"><figcaption>AI活用事例を参考にした導入までの流れ</figcaption></figure>
 
-申請段階でつまずきたくない方は、[AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)もあわせて確認してください。
+申請段階でつまずきたくない方は、[よくあるAI導入補助金の申請失敗](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)もあわせて確認してください。
 
 導入したいツールが会計・受発注系であれば、[AI導入補助金の受発注ソフトとは？対象3枠と補助額を解説](https://lp.7senses.co.jp/blog/ai-hojokin-juhatchu-soft-toha/)が参考になります。
 
