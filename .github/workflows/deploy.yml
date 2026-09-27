@@ -51,6 +51,8 @@ jobs:
           python3 -m pip install --quiet markdown
           python3 tools/render_blog.py
           python3 tools/gen_blog_pages.py
+          # 記事の途中の案内とスマホの固定ボタン（何度呼んでも二重に入らない）
+          python3 tools/blog_cta.py
 
       # 管制塔は記事HTMLを直接納品するため、Markdown描画時の重複ガードを通らない。
       # 公開後に気づけるよう、ここで既存記事との重複を検査してログに出す。

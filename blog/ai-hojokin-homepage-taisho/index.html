@@ -234,6 +234,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>当社の支援事例では、リフォーム業(大阪府)が補助金で受発注システムを導入し、あわせてマップ集客の運用を開始しました。その結果、問い合わせが月2件から月11件に増加しています(※当社支援事例)。「サイト+業務機能+集客」を組み合わせた例です。</p>
 <p>▶ 今すぐ試せるアクション:上の表で、自社の計画がどの行に近いかをチェックしてみましょう。</p>
 <p><a id="h2-3"></a></p>
+<aside class="bcta-mid"><p class="t">御社の場合、補助金が使えるか3分で確かめる</p><p class="d">8つの質問に答えるだけで、補助金の使いやすさを判定し、その場で次にやることを表示します。登録不要です。</p><a class="cta" href="/#diagnosis" data-cta="blog_mid_diag">無料で診断する</a></aside>
 <h2 id="sec3">対象費用の範囲と、申請前に確認すべき注意点</h2>
 <p><strong>補助対象になりやすいのはツール導入費で、保守費や運用費・ドメイン費など継続費用は対象外になりやすいです。</strong> まずこの区分を押さえます。</p>
 <p>継続的にかかる費用は「導入」ではなく「維持」とみなされやすいため、扱いが分かれます。詳細は補助対象経費のページ(<a href="https://it-shien.smrj.go.jp/">https://it-shien.smrj.go.jp/</a>)で必ず確認してください。</p>
@@ -389,6 +390,26 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
+</script>
+<!-- blog-cta:v1 -->
+<style>
+.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
+.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
+.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
+.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
+.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
+.blog-sticky.on{transform:none}
+.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
+@media (min-width:761px){.blog-sticky{display:none}}
+@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
+</style>
+<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
+<script>
+(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
+var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
+if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
+document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
+function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
