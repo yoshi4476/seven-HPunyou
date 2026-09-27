@@ -129,7 +129,7 @@ faq:
 
 **ITツール導入中心ならIT導入補助金、チラシ等の広告費中心なら小規模事業者持続化補助金が向いています。**目的が異なるため、両方の対象経費が重ならないよう切り分ける必要があります。
 
-あわせて[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)もご覧ください。
+あわせて[学習塾がAI導入補助金の申請の進め方で迷う点](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)もご覧ください。
 
 選ぶときの基準を先に押さえるなら、[IT導入補助金のおすすめの選び方](/blog/it-hojokin-osusume/)が参考になります。
 
