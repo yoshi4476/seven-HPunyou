@@ -54,7 +54,7 @@ faq:
 
 あわせて[小規模事業者持続化補助金2025](/blog/jizokuka-hojokin-kensetsugyou/)もご覧ください。
 
-関連する内容は、[農業の倉庫投資は建物費NG](/blog/monozukuri-hojokin-nougyou-souko/)で解説しています。
+関連する内容は、[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)で解説しています。
 
 他業種の状況が気になる場合は、[ものづくり補助金の農業分野における採択事例](/blog/monozukuri-hojokin-nougyou-jirei/)も、専用設備への投資が評価される点は共通しています。
 
