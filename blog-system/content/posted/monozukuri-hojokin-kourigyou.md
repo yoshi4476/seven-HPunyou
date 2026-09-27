@@ -101,7 +101,7 @@ faq:
 
 **在庫管理や自動発注のシステム投資は、ハード込みか否かでものづくり補助金とIT導入補助金のどちらが向くか変わります。**どちらも小売業のシステム投資を支援する制度ですが、対象経費の考え方が異なります。
 
-近い論点を[農業の倉庫投資は建物費NG](/blog/monozukuri-hojokin-nougyou-souko/)で扱っています。
+近い論点を[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)で扱っています。
 
 あわせて[ものづくり補助金は運送業で使える？](/blog/monozukuri-hojokin-unsougyou/)もご覧ください。
 
