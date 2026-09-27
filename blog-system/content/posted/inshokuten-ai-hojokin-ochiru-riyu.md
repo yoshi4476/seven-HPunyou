@@ -51,11 +51,11 @@ faq:
 
 近い論点を[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)で扱っています。
 
-実際の進め方は、[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
+実際の手順は、[飲食店のAI導入補助金の申請の進め方](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
 
 一般的な不採択理由は[AI導入補助金の不採択理由](/blog/ai-hojokin-fusaitaku-riyu/)で解説しました。この記事では、飲食店の現場に絞って原因を掘り下げます。
 
-対象要件を満たすかどうかは[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で確認できます。要件を満たしていても、ここで挙げる原因で不採択になる店舗は少なくありません。
+自店が当てはまるかどうかは[飲食店のAI導入補助金の対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で確認できます。要件を満たしていても、ここで挙げる原因で不採択になる店舗は少なくありません。
 
 <a href="https://hojyokin-portal.jp/columns/degital_ai_saitaku" target="_blank" rel="noopener">補助金ポータルが公表した集計</a>によると、通常枠の採択率は2026年9月公表の3次締切で42.19%と、半数以上が不採択になっています。飲食店に限った統計はありませんが、業種を問わず数字と根拠が求められる審査である点は変わりません。
 
