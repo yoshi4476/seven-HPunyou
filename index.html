@@ -412,10 +412,6 @@ table.data .ok{color:var(--gold-em);font-weight:700}
   background-image:linear-gradient(45deg,transparent 50%,#8a93a6 50%),linear-gradient(135deg,#8a93a6 50%,transparent 50%);
   background-position:calc(100% - 20px) 21px,calc(100% - 14px) 21px;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
 .field select:focus{outline:none;border-color:var(--navy2)}
-/* 特典コードの案内 (親の .contact-copy p より詳細度を上げないと白系の文字色に負ける) */
-.form-card .perk-note{background:#fffaf0;border:1px solid #e6d3a3;border-radius:12px;padding:14px 16px;margin-bottom:22px;font-size:13px;line-height:1.85;color:#4a3b16}
-.form-card .perk-note b{display:inline-block;background:var(--navy);color:#fff;border-radius:6px;padding:2px 10px;font-size:15px;letter-spacing:.08em;margin:0 4px}
-.form-card .perk-note .cond{display:block;margin-top:8px;font-size:12px;color:#6b5c33}
 /* 同意チェック */
 .agree{display:flex;gap:10px;align-items:flex-start;margin:4px 0 18px;font-size:13px;color:var(--muted);line-height:1.7}
 .agree input{width:18px;height:18px;min-height:0;flex:none;margin-top:2px;accent-color:var(--navy)}
@@ -1626,8 +1622,6 @@ form.addEventListener("submit",e=>{
     tel:document.getElementById("f-tel").value.trim(),
     topic:document.getElementById("f-topic").value,
     message:detail,
-    // 特典コードは詳細欄への記入で申告してもらう運用。集計しやすいよう抽出して送る
-    perkCode:(detail.match(/\b3010\b/)?"3010":""),
     agreed:true})
   .finally(()=>{
     track("form_submit",{form_type:"contact"});
