@@ -53,7 +53,7 @@ faq:
 
 関連する内容は[卸売業のAI導入補助金](/blog/oroshiurigyou-ai-hojokin-ochiru-riyu/)でも扱っています。
 
-対象になる範囲を先に押さえるなら、[クリーニング店のAI導入補助金 対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)が参考になります。
+対象になる範囲を先に押さえるなら、[クリーニング店のAI導入補助金の対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)が参考になります。
 
 対象になる範囲については、[動物病院はAI導入補助金の対象になるか](/blog/doubutsu-byouin-ai-hojokin-taisho-youken/)にまとめています。
 
