@@ -51,7 +51,7 @@ faq:
 
 あわせて[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)もご覧ください。
 
-関連する内容として[クリーニング店のAI導入補助金 対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)も公開しています。
+関連する内容として[クリーニング店でAI導入補助金の対象要件を満たす条件](/blog/kurininguten-ai-hojokin-taisho-youken/)も公開しています。
 
 中小企業者の4区分と基準の全体像は[IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数](https://lp.7senses.co.jp/blog/it-hojokin-chusho-teigi/)で整理しています。動物病院がなぜ「サービス業」に入るのかは、次の章で詳しく見ていきます。
 
