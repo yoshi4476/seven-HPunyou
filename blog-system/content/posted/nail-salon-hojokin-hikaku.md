@@ -53,7 +53,7 @@ faq:
 
 あわせて[農業機械補助金は4制度](/blog/nougyou-kikai-hojokin/)もご覧ください。
 
-関連する内容として[農業の倉庫投資は建物費NG](/blog/monozukuri-hojokin-nougyou-souko/)も公開しています。
+関連する内容として[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)も公開しています。
 
 関連する内容として[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)も公開しています。
 
