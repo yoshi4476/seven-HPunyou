@@ -1,11 +1,11 @@
 ---
-title: 会計ソフトの補助金｜個人事業主が使える2つの枠と補助率
+title: 会計ソフトの補助金｜IT導入補助金で個人事業主が使える2枠と補助率
 description: 個人事業主もIT導入補助金（デジタル化・AI導入補助金2026）の会計ソフトを、通常枠・インボイス対応類型で申請できます。機能要件・補助率・クラウド利用料の補助期間を2026年8月時点で解説します。
 slug: it-hojokin-kojinjigyonushi-kaikeisoft
 keyword: 会計ソフト 補助金 個人事業主
 category: hojokin
 date: 2026-08-11
-modified: 2026-09-01
+modified: 2026-09-28
 depth: standard
 eyecatch: /images/it-hojokin-kojinjigyonushi-kaikeisoft/eyecatch.png
 score: 93
@@ -169,6 +169,10 @@ freeeやマネーフォワードといった名前で探しても、対象かど
 <figure><img src="/images/it-hojokin-kojinjigyonushi-kaikeisoft/flow4.png" alt="会計ソフト導入から補助金活用までの流れ: GビズID取得、支援事業者と契約、交付申請・決定、導入・実績報告" loading="lazy"><figcaption>会計ソフト導入から補助金活用までの流れ</figcaption></figure>
 
 最初のGビズIDプライムは発行までに約2〜3週間かかるため、早めの取得が全体スケジュールを左右します。取得後にIT導入支援事業者と契約し、交付申請を行う流れは[AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)で解説しています。
+
+交付申請から採択までの期間も、計画に入れておく必要があります。当社が2025年4月〜2026年3月に申請を支援した30社のうち、採択は25社でした（採択率83.3%）。
+
+**採択された25社は、全社が申請から31〜60日で採択されています。**会計ソフトの契約・支払いは交付決定後です。確定申告の時期に使い始めたいなら、その2か月前には申請を終えてください。
 
 交付決定後にソフトを導入・支払いし、利用実績を報告する段階になったら、[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)を確認してください。
 
