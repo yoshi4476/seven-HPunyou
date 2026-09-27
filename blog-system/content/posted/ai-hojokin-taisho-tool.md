@@ -49,7 +49,7 @@ faq:
 
 **対象ツールかどうかは、事務局のITツール検索に登録されているかどうかで見分けます。**「機能が優れているか」ではなく「登録済みカタログに載っているか」が第一の基準になります。
 
-近い論点を[会計ソフトの補助金｜個人事業主が使える2つの枠と補助率](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)で扱っています。
+会計ソフトに絞った枠と補助率は、[IT導入補助金の会計ソフト（個人事業主向け）](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)で扱っています。
 
 関連する内容は、[建設業がAI導入補助金で不採択になる6つの理由と直し方](/blog/tokyo-kensetsugyou-denshishinsei/)で解説しています。
 
