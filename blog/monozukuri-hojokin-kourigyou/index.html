@@ -188,6 +188,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">小売業は「モノ」ではなく「データ活用」への投資で評価される</h2>
 <p><strong>小売業の審査で評価されるのは、店舗の見た目ではなく在庫や発注をデータで管理する仕組みです。</strong>「ものづくり」という制度名から機械や工場を連想し、小売業には無関係だと考える経営者に何度も出会ってきました。</p>
+<p>関連する内容として<a href="/blog/monozukuri-hojokin-nougyou-jirei/">精米ラインで売上2倍｜農業のものづくり補助金採択事例</a>も公開しています。</p>
 <p>関連する内容として<a href="/blog/kourigyou-ai-hojokin-keihi/">小売業のAI導入補助金</a>も公開しています。</p>
 <div class="definition-box"><span class="term">ものづくり補助金とは</span>、中小企業が行う生産性向上のための設備投資を支援する国の補助金です。正式名称は「ものづくり・商業・サービス生産性向上促進補助金」で、小売業を含むサービス業も対象に含まれます。</div>
 
@@ -266,7 +267,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p><strong>在庫管理や自動発注のシステム投資は、ハード込みか否かでものづくり補助金とIT導入補助金のどちらが向くか変わります。</strong>どちらも小売業のシステム投資を支援する制度ですが、対象経費の考え方が異なります。</p>
 <p>近い論点を<a href="/blog/monozukuri-hojokin-nougyou-souko/">農業用倉庫に補助金は使える？</a>で扱っています。</p>
 <p>あわせて<a href="/blog/monozukuri-hojokin-unsougyou/">ものづくり補助金は運送業で使える？</a>もご覧ください。</p>
-<p>あわせて<a href="/blog/monozukuri-hojokin-kensetsugyou-jirei/">ものづくり補助金｜建設業の採択事例3業種と上限9,000万円</a>もご覧ください。</p>
 <p>自動発注システムや在庫管理システムを新規に構築し、機械装置と組み合わせて導入する場合はものづくり補助金が向きます。一方、会計ソフトやレジアプリなど既製のソフトウェアを単体で導入する場合は<a href="/blog/it-hojokin-chusho-teigi/">IT導入補助金の中小企業とは？</a>で扱うIT導入補助金のほうが手続きが軽くなります。</p>
 <p>私も相談の現場で、<mark>レジのソフトを入れ替えたいだけなのにものづくり補助金を検討していた</mark>小売業経営者に出会ったことがあります。投資の中身がハード込みのシステム構築かソフト単体導入かを先に切り分けると、制度選びで迷わずに済みます。</p>
 <p>補助率や手続きの重さだけで選ぶと、実際の投資内容と制度がずれてしまうことがあります。まずは「新しい機器やシステムを一から構築するのか」「既存のソフトを導入するだけなのか」を整理し、その結果に沿って制度を選ぶ順序が失敗を防ぎます。</p>
@@ -459,26 +459,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
