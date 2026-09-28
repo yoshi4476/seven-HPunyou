@@ -52,8 +52,6 @@ faq:
 
 対象になる範囲は[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)でも扱っています。
 
-関連する内容については、[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)にまとめています。
-
 関連する内容は[不動産会社のAI導入補助金](/blog/fudousan-ai-hojokin-teishutsu-shorui/)でも扱っています。
 
 <div class="definition-box"><span class="term">AI活用事例とは</span>、会計・営業支援・顧客対応などの既存ITツールにAI機能が搭載され、実際の業務で使われている導入例を指します。デジタル化・AI導入補助金2026では、ツール検索画面に「生成AI」「生成AI以外のAI」のタグが表示され、AI搭載ツールを見分けやすくなっています。</div>
