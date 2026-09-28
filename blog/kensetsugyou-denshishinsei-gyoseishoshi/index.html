@@ -188,6 +188,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">建設業の電子申請「JCIP」を行政書士に頼むべきかは会社の状況で決まる</h2>
 <p><strong>行政書士に頼むかどうかは、経審の予定・許可要件への不安・時間の余裕の3点で判断します。</strong>どれも当てはまらないなら、自分でJCIPを操作しても大きな負担にはなりません。</p>
+<p>近い論点を<a href="/blog/egov-denshishinsei-kojinjigyonushi/">e-Gov電子申請とは</a>で扱っています。</p>
 <p>JCIP自体の操作方法や画面の使い方は<a href="/blog/kensetsugyou-denshishinsei-etsuran/">建設業の電子申請システムを閲覧する2つの方法</a>で解説しています。まずは自社が「操作に迷っているだけ」なのか「そもそも依頼するか迷っている」のかを切り分けてください。</p>
 <p>私たちが登録支援事業者として建設業のご相談を受ける中では、<mark>初めての許可申請ほど行政書士へ依頼する会社が多く、更新や経審の慣れた会社ほど自分で申請する傾向</mark>があると感じています。判断に迷う場合は、まず次章の費用相場を確認してから決めても遅くありません。</p>
 <h2 id="sec2">行政書士に依頼する場合の費用相場はいくらか</h2>
@@ -224,6 +225,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec3">自分で申請する場合と行政書士に依頼する場合の違い</h2>
 <p><strong>自分で申請すれば費用は法定手数料のみですが、書類収集や窓口対応もすべて自社で行うことになります。</strong>逆に行政書士に依頼すれば報酬はかかるものの、書類の不備や記載ミスによる差し戻しを減らせます。</p>
+<p>関連する内容として<a href="/blog/kensetsugyou-joseikin-hikaku/">建設業の助成金4制度｜補助金との違いと使う順番</a>も公開しています。</p>
 <p>関連する内容として<a href="/blog/kensetsugyou-kyoka-denshishinsei/">建設業許可の電子申請</a>も公開しています。</p>
 <div class="definition-box"><span class="term">JCIPとは</span>、正式名称「建設業許可・経営事項審査電子申請システム」の略称です。国土交通省が運営し、<a href="https://www.mlit.go.jp/tochi_fudousan_kensetsugyo/const/tochi_fudousan_kensetsugyo_const_tk1_000001_00019.html" target="_blank" rel="noopener">国土交通省の案内</a>では2023年1月10日から運用が始まったとされています。</div>
 
@@ -391,26 +393,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
