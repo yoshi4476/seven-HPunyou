@@ -40,10 +40,6 @@ faq:
 
 対象になる範囲は[AI導入補助金で会計ソフトは対象？](/blog/ai-hojokin-kaikeisoft-taisho/)でも扱っています。
 
-関連する内容は[AI導入補助金の着金はいつ？実績報告後の日数目安](/blog/ai-hojokin-chakkin-itsu/)でも扱っています。
-
-実際の例については、[IT導入補助金の建設業事例4社｜課題別のツールと効果](/blog/it-hojokin-kensetsugyou-jirei/)にまとめています。
-
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
 
 
