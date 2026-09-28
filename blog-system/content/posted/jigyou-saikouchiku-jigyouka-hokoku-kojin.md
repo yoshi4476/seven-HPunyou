@@ -61,6 +61,12 @@ faq:
 
 **個人事業主は、法人が提出する決算書の代わりに、青色申告決算書か収支内訳書を提出します。**この違いを知らずに法人向けの案内をそのまま読むと、必要な書類を取り違えます。
 
+近い論点を[ものづくり補助金の給与支給総額とは？](/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/)で扱っています。
+
+関連する内容として[ものづくり補助金2025年度](/blog/monozukuri-hojokin-2025-kojinjigyonushi/)も公開しています。
+
+あわせて[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)もご覧ください。
+
 <figure><img src="/images/jigyou-saikouchiku-jigyouka-hokoku-kojin/document-list.png" alt="個人事業主が用意する提出書類: 青色申告決算書を提出、白色申告なら収支内訳書、実態把握調査票も入力" loading="lazy"><figcaption>個人事業主が用意する提出書類</figcaption></figure>
 
 <a href="https://trise-c.jp/blog/report-on-the-status-of-commercialization-of-business-restructuring-subsidies/" target="_blank" rel="noopener">個人事業主向けの書類要件を解説した記事</a>では、個人事業主は法人が提出する損益計算書・貸借対照表の代わりに、青色申告決算書または収支内訳書（白色申告）を提出すると案内されています。
@@ -118,6 +124,8 @@ faq:
 ## 個人事業主がつまずきやすい3つの注意点
 
 **個人事業主がつまずきやすいのは、決算書の読み替え、原価按分、屋号変更時の扱いの3点です。**制度自体の難しさより、日々の事業運営との両立が難しさの原因になりがちです。
+
+あわせて[農業の補助金の申請方法｜制度の選び方と5ステップ](/blog/nougyou-hojokin-shinsei-houhou/)もご覧ください。
 
 <figure><img src="/images/jigyou-saikouchiku-jigyouka-hokoku-kojin/report-vs.png" alt="事業化状況報告でつまずく提出方法の比較: 自己判断で按分して提出すると差し戻しの対象になりやすい、税理士に確認してから提出すると期限内に完了しやすい" loading="lazy"><figcaption>事業化状況報告でつまずく提出方法の比較</figcaption></figure>
 
