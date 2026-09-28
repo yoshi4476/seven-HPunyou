@@ -67,7 +67,7 @@ faq:
 
 **個人事業主も、業種ごとの従業員数の要件を満たせば小規模事業者持続化補助金の対象です。**法人か個人かでは判断されません。
 
-あわせて[運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁](/blog/unsougyou-jissekihoukokusho/)もご覧ください。
+近い論点を[建設業の電子申請を閲覧するには？](/blog/kensetsugyou-denshishinsei-etsuran/)で扱っています。
 
 <figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/taisho.png" alt="個人事業主が対象になる主な要件: 商業・サービス業5人以下、宿泊業・娯楽業20人以下、製造業その他20人以下、法人・個人問わず対象"><figcaption>個人事業主が対象になる主な要件</figcaption></figure>
 
