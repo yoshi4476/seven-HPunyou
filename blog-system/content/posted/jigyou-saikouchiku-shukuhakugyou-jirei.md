@@ -51,13 +51,13 @@ faq:
 
 **結論として、事業再構築補助金は宿泊業も対象で、インバウンド需要の回復を見込んだ業態転換や新分野展開の投資が数多く採択されてきました。**制度上、業種による除外はなく、旅館・ホテル・簡易宿泊所・民泊事業者まで幅広い事業者が申請していました。
 
+関連する内容として[ものづくり補助金｜建設業の採択事例3業種と上限9,000万円](/blog/monozukuri-hojokin-kensetsugyou-jirei/)も公開しています。
+
+近い論点を[事業再構築補助金は建設業も対象](/blog/jigyou-saikouchiku-kensetsugyou-jirei/)で扱っています。
+
 関連する内容として[宿泊業のIT導入補助金は有利？](/blog/it-hojokin-shukuhakugyou/)も公開しています。
 
 あわせて[宿泊業のAI導入補助金はいくら？](/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/)もご覧ください。
-
-他業種の事例は、[事業再構築補助金 クリニックは医療法人不可](/blog/jigyou-saikouchiku-clinic-jirei/)で紹介しています。
-
-飲食店の転換事例は[事業再構築補助金の飲食店活用事例3選と今の申請方法](/blog/jigyou-saikouchiku-inshokuten-jirei/)にまとめました。
 
 <div class="definition-box"><span class="term">事業再構築補助金とは</span>、新型コロナウイルス対応の緊急経済対策として2021年に始まった制度です。事業転換や業態転換に伴う設備投資を、新市場開拓や新分野展開を条件に支援していました。</div>
 
