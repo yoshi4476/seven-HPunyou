@@ -115,6 +115,8 @@ faq:
 
 **個人事業主の申請は、GビズID取得、支援事業者選定、交付申請、交付決定後の発注という4ステップで進みます。**流れ自体は法人と同じです。
 
+近い論点を[創業支援等事業者の補助金](/blog/sogyo-shien-hojokin-kojinjigyonushi/)で扱っています。
+
 <figure><img src="/images/kojin-jigyonushi-ai-hojokin/flow4.png" alt="GビズID取得から交付決定までの4ステップ: GビズID取得（プライムを申請）、支援事業者選定（ツールを決める）、交付申請（事業計画書を提出）、交付決定後に発注（決定前はNG）"><figcaption>GビズID取得から交付決定までの4ステップ</figcaption></figure>
 
 最初のGビズIDプライムは、発行までに約2〜3週間かかります。**個人事業主も法人と同じプライムアカウントが必要で、簡易版のエントリーでは申請できません。**早めの取得が、全体スケジュールを左右します。
@@ -127,6 +129,15 @@ faq:
 
 **個人事業主の申請でつまずきやすいのは、開業年数の見落とし、書類準備の後回し、GビズID取得の遅れの3パターンです。**制度の複雑さより、準備の順番のミスが原因になっています。
 
+近い論点を[ものづくり補助金は製造業でどう使う？](/blog/monozukuri-hojokin-seizougyou/)で扱っています。
+
+関連する内容は[事業再構築補助金の確定申告](/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/)で整理しています。
+
+関連する内容として[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)も公開しています。
+
+関連する内容として[ものづくり補助金2025年度](/blog/monozukuri-hojokin-2025-kojinjigyonushi/)も公開しています。
+
+あわせて[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)もご覧ください。
 
 <figure><img src="/images/kojin-jigyonushi-ai-hojokin/ngok.png" alt="個人事業主の申請でよくあるNG・OK: NG例は開業1年未満で申請・証明書取得を後回し・GビズID未取得のまま進める、OK例は開業1年経過を確認・証明書を早めに取得・GビズIDを先に取得"><figcaption>個人事業主の申請でよくあるNG・OK</figcaption></figure>
 
