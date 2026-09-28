@@ -222,7 +222,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 </tbody>
 </table></div>
 <p><a href="https://www.chusho.meti.go.jp/keiei/shokibo/jizoku/" target="_blank" rel="noopener">中小企業庁の制度紹介ページ</a>によると、小規模事業者持続化補助金は販路開拓や小規模な設備投資が対象で、商工会・商工会議所の支援を受けながら申請します。一方、大型の設備投資を計画している場合はものづくり系の補助金が候補になり、対象経費・採択事例の詳細は<a href="/blog/monozukuri-hojokin-nougyou-jirei/">精米ラインで売上2倍｜農業のものづくり補助金採択事例</a>で解説しています。</p>
-<p>なお、6次産業化への転換を主目的とした<span class="txt-red">事業再構築補助金は2025年3月26日の第13回公募で新規受付を終了しました。</span>この制度を探して本記事にたどり着いた場合は、<a href="/blog/jigyou-saikouchiku-nougyou-jirei/">事業再構築補助金で農業が使えたのは6次産業化</a>で後継制度への移行を確認してください。</p>
+<p>なお、6次産業化への転換を主目的とした<span class="txt-red">事業再構築補助金は2025年3月26日の第13回公募で新規受付を終了しました。</span>この制度を探して本記事にたどり着いた場合は、<a href="/blog/jigyou-saikouchiku-shukuhakugyou-jirei/">事業再構築補助金で農業が使えたのは6次産業化</a>で後継制度への移行を確認してください。</p>
 <p>2つの制度は併願もできません。小規模事業者持続化補助金は販路開拓・小規模な販促物や機器の導入が中心で、採択までの審査期間も比較的短い傾向があります。一方、ものづくり系の補助金は数百万円〜数千万円規模の設備投資が対象で、事業計画書に求められる分量も多くなります。投資額が50万円前後の小規模な取り組みなのか、ライン刷新のような大型投資なのかで、選ぶべき制度がおのずと決まります。</p>
 <h2 id="sec3">申請の5ステップ｜GビズID取得から交付決定まで</h2>
 <p><strong>申請の5ステップは、GビズID取得、制度選定、事業計画書作成、電子申請、交付決定後の発注という順で進みます。</strong>どの制度を選んでも、この基本の流れは共通しています。</p>
@@ -417,26 +417,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
