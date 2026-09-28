@@ -49,13 +49,13 @@ faq:
 
 **建設業の電子申請を閲覧する方法は、申請書類を見る「JCIP電子閲覧システム」と経審の点数を見る「CIIC」の2つです。**同じ「経審」を指していても、見たい情報によって使う窓口が変わります。
 
+関連する内容として[建設業の助成金4制度｜補助金との違いと使う順番](/blog/kensetsugyou-joseikin-hikaku/)も公開しています。
+
+関連する内容については、[建設業の電子申請は行政書士に依頼すべき？](/blog/kensetsugyou-denshishinsei-gyoseishoshi/)にまとめています。
+
 あわせて[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)もご覧ください。
 
 実際の進め方については、[建設業許可の電子申請](/blog/kensetsugyou-kyoka-denshishinsei/)にまとめています。
-
-つまずきやすい点は[大阪府のJCIP電子申請](/blog/osaka-kensetsugyou-denshishinsei/)で整理しています。
-
-選ぶときの基準を先に押さえるなら、[神奈川県のJCIP電子申請](/blog/kanagawa-kensetsugyou-denshishinsei/)が参考になります。
 
 私たちは登録支援事業者としてAI導入補助金の相談を受ける中で、==「電子申請の閲覧」という言葉の中身が、実は取引先の許可情報の確認だったという相談に何度も出会っています。==許可そのものを見たいのか、経審の点数を見たいのかを最初に切り分けると、迷わず目的の窓口にたどり着けます。
 
