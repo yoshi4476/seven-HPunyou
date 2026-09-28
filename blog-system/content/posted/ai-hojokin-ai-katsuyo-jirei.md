@@ -62,6 +62,8 @@ faq:
 
 **クラウド会計とAIを組み合わせると、仕訳入力にかかる時間を大幅に削減できます。**建設業を中心に、経理担当者の負担軽減を目的とした導入が進んでいます。
 
+関連する内容として[農業の初期費用は平均755万円](/blog/nougyou-shoki-hiyou-hojokin/)も公開しています。
+
 当社は登録支援事業者として申請に伴走しています。事例を読むときは、**自社と業種が同じかより、業務の流れが似ているか**を見てください。
 
 <figure><img src="/images/ai-hojokin-ai-katsuyo-jirei/bunya.png" alt="AI活用事例で押さえたい3つの分野: 経理・会計、営業支援、顧客対応" loading="lazy"><figcaption>AI活用事例で押さえたい3つの分野</figcaption></figure>
