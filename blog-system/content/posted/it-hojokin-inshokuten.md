@@ -57,7 +57,7 @@ faq:
 
 つまずきやすい点を先に押さえるなら、[歯科医院のIT導入補助金](/blog/it-hojokin-shika-iin/)が参考になります。
 
-関連する内容については、[製造業のIT導入補助金](/blog/it-hojokin-seizougyou/)にまとめています。
+関連する内容を先に押さえるなら、[製造業のIT導入補助金](/blog/it-hojokin-seizougyou/)が参考になります。
 
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
 
