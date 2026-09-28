@@ -69,7 +69,7 @@ faq:
 
 関連する内容として[事業再構築補助金は法人成り後も続く？](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)も公開しています。
 
-関連する内容として[事業再構築補助金は建設業も対象](/blog/jigyou-saikouchiku-kensetsugyou-jirei/)も公開しています。
+関連する内容として[事業再構築補助金は建設業も対象](/blog/jigyou-saikouchiku-biyoushitsu-jirei/)も公開しています。
 
 あわせて[事業再構築補助金 美容室の脱毛転換3事例](/blog/jigyou-saikouchiku-biyoushitsu-jirei/)もご覧ください。
 
