@@ -235,9 +235,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 </tr>
 </tbody>
 </table></div>
-<p>就農して間もない方なら、倉庫の建物は経営発展支援事業が第一候補です。費目ごとの制度の当て方は<a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用に使える補助金</a>で整理しています。</p>
 <p>倉庫を新しく建てて設備も入れるなら、建物は農業向けの制度、中の設備はものづくり補助金と分けて考えます。<strong>建物だけを建てて設備を変えない計画なら、ものづくり補助金は申請しない判断が正解です。</strong></p>
-<p>収穫量や出荷先を紙で管理していて手間がかかる場合は、ソフトの導入が先になることもあります。対象になるソフトの範囲は<a href="/blog/ai-hojokin-taisho-tool/">AI導入補助金の対象ツール6分野</a>で確認してください。</p>
 <h2 id="sec4">集出荷・保管施設で対象になる設備3分野</h2>
 <p><strong>倉庫関連で対象になりやすいのは、低温貯蔵・CA貯蔵設備、選果・仕分け・包装ライン、乾燥調製設備の3分野です。</strong>同じ「保管」でも、投資の狙いによって選ぶ設備が変わります。</p>
 <figure><img src="/images/monozukuri-hojokin-nougyou-souko/setsubi3.png" alt="農業の集出荷・保管施設で対象になる設備3分野: 低温貯蔵・CA貯蔵設備の構築、選果・仕分け・包装ラインの導入、乾燥調製設備によるスマート化" loading="lazy"><figcaption>農業の集出荷・保管施設で対象になる設備3分野</figcaption></figure>
@@ -441,26 +439,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
