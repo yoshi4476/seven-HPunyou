@@ -34,6 +34,8 @@ faq:
 
 申請の失敗は、準備不足・書類不備・期限管理ミスという3つの系統に大別できます。いずれも制度の難しさそのものより、時間配分のミスから生まれています。
 
+関連する内容は[AI導入補助金のみらデジ経営チェックは終了](/blog/ai-hojokin-miradigi-keieicheck/)で整理しています。
+
 近い論点を[農業の補助金を世界と比較｜日本の3つの違いと使い方](/blog/nougyou-hojokin-sekai-hikaku/)で扱っています。
 
 対象になる範囲は[AI導入補助金で会計ソフトは対象？](/blog/ai-hojokin-kaikeisoft-taisho/)でも扱っています。
@@ -42,14 +44,8 @@ faq:
 
 実際の例については、[IT導入補助金の建設業事例4社｜課題別のツールと効果](/blog/it-hojokin-kensetsugyou-jirei/)にまとめています。
 
-費用の目安を先に押さえるなら、[農業の初期費用は平均755万円](/blog/nougyou-shoki-hiyou-hojokin/)が参考になります。
-
-費用の目安は[宿泊業のAI導入補助金はいくら？](/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/)でも扱っています。
-
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
 
-
-関連する内容は、[建設業がAI導入補助金で不採択になる6つの理由と直し方](/blog/tokyo-kensetsugyou-denshishinsei/)で解説しています。
 
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称で、2026年に旧IT導入補助金から名称が変更された制度です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
 
@@ -61,10 +57,6 @@ faq:
 ## デジタル化・AI導入補助金2026の採択率はどのくらいか
 
 通常枠の採択率は2026年7月公表分で43.59%と、半数近くが不採択になっています。思ったより狭き門だと感じる経営者も多いはずです。
-
-関連する内容として[農業の補助金の申請方法｜制度の選び方と5ステップ](/blog/nougyou-hojokin-shinsei-houhou/)も公開しています。
-
-費用の目安は[建設業のAI導入補助金はいくら？](/blog/fukuoka-kensetsugyou-denshishinsei/)で整理しています。
 
 当社はAI導入補助金の登録支援事業者として申請を支援していますが、不採択の連絡を受けてから相談に来られる方の多くは、**「何が足りなかったか」を通知書からは読み取れていません**。以下は、支援の現場で繰り返し見てきたつまずきです。
 
@@ -137,6 +129,8 @@ GビズIDとSECURITY ACTIONの取得が遅れると、申請そのものに間�
 ## デジタル化・AI導入補助金と中小企業省力化投資補助金の違い
 
 ソフトウェア導入が中心ならデジタル化・AI導入補助金、設備投資が中心なら中小企業省力化投資補助金が向いています。目的に合わない制度を選ぶこと自体が失敗の入り口になります。
+
+関連する内容については、[士業事務所のAI導入補助金](/blog/shigyou-ai-hojokin-teishutsu-shorui/)にまとめています。
 
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠の補助率・補助上限額のページ</a>と<a href="https://shoryokuka.smrj.go.jp/ippan/" target="_blank" rel="noopener">中小企業省力化投資補助金（一般型）公式サイト</a>の情報を整理すると、次のような違いがあります。
 
