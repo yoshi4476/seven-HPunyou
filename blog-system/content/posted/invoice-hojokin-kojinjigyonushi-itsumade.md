@@ -63,6 +63,8 @@ faq:
 
 **個人事業主が小規模事業者に当たれば、ソフト代50万円以下の部分は4/5が補助されます。**中小企業の区分なら3/4です。
 
+関連する内容として[AI導入補助金で会計ソフトは対象？](/blog/ai-hojokin-kaikeisoft-taisho/)も公開しています。
+
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/digitalbase/" target="_blank" rel="noopener">インボイス対応類型の案内ページ</a>では、補助率と上限が次のように示されています。
 
 | 対象 | 補助率 | 上限 |
