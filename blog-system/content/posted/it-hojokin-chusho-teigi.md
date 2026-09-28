@@ -51,7 +51,7 @@ faq:
 
 実際の例は[IT導入補助金の建設業事例4社｜課題別のツールと効果](/blog/it-hojokin-kensetsugyou-jirei/)で整理しています。
 
-近い論点を[ネイルサロンがAI導入補助金に落ちる理由](/blog/nail-salon-ai-hojokin-ochiru-riyu/)で扱っています。
+関連する内容を先に押さえるなら、[ネイルサロンがAI導入補助金に落ちる理由](/blog/nail-salon-ai-hojokin-ochiru-riyu/)が参考になります。
 
 対象になる範囲は、[学習塾はIT導入補助金の対象？](/blog/it-hojokin-gakushujuku/)で解説しています。
 
