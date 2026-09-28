@@ -53,7 +53,7 @@ faq:
 
 近い論点を[e-Gov電子申請とは](/blog/egov-denshishinsei-kojinjigyonushi/)で扱っています。
 
-近い論点を[社会保険の電子申請義務化](/blog/shakaihoken-denshishinsei-gimuka-chusho/)で扱っています。
+あわせて[社会保険の電子申請義務化](/blog/shakaihoken-denshishinsei-gimuka-chusho/)もご覧ください。
 
 関連する内容は[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)で整理しています。
 
