@@ -55,7 +55,7 @@ faq:
 
 関連する内容として[AI導入補助金2026](/blog/ai-hojokin-clinic-2026-schedule/)も公開しています。
 
-関連する内容として[事業再構築補助金で農業が使えたのは6次産業化](/blog/jigyou-saikouchiku-nougyou-jirei/)も公開しています。
+関連する内容として[事業再構築補助金で農業が使えたのは6次産業化](/blog/jigyou-saikouchiku-shukuhakugyou-jirei/)も公開しています。
 
 関連する内容は[ものづくり補助金は宿泊業で使える？](/blog/monozukuri-hojokin-shukuhakugyou/)で整理しています。
 
