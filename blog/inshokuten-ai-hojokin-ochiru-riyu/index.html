@@ -201,6 +201,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>飲食店が選びやすいAIツールには、需要予測に基づく自動発注、電話予約の自動応答、セルフオーダー端末と連動した会計・在庫管理などがあります。どのツールを選ぶかより、選んだツールをどう説明するかで結果が変わるというのが、支援の現場で見えてきた実感です。</p>
 <h2 id="sec2">理由1: レジ・予約システムの刷新をAI活用と説明してしまう</h2>
 <p><strong>「レジを新しくしたい」という説明だけでは、AI要素が伝わらず審査で評価されません。</strong>飲食店の相談で最も多いつまずきです。</p>
+<p>あわせて<a href="/blog/it-hojokin-inshokuten/">飲食店のIT導入補助金｜名称変更後の3つの確認点</a>もご覧ください。</p>
 <p>飲食店が導入したいツールは、需要予測・自動応答・在庫管理などで実際にAIを使っています。ですが計画書では「レジの刷新」「予約管理の効率化」という表現にとどまりがちです。</p>
 <p>私たちが計画書のレビューを行う際は、<mark>どの機能がAIで、何を予測・判断しているかを1文で説明できるか</mark>を必ず確認します。</p>
 <div class="caution-box"><span class="box-title">注意: 「新しいレジ」ではAI活用と伝わらない</span><br>審査員は数字とAI要素の両方を短時間で確認します。ツール名だけでなく、AIが担う機能を具体的に書いてください。</div>
@@ -259,7 +260,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>忘年会シーズンの12月、大型連休のGW、お盆や年末年始は、飲食店にとって1年で最も忙しい時期です。この時期と実績報告の準備期間が重なる採択回を選ぶと、社内の余力が足りなくなりがちです。締切回ごとに実績報告の期限を確認し、繁忙期と重ならない日程を選ぶ視点も欠かせません。</p>
 <p>私たちが支援する飲食店でも、<mark>年末の繁忙期にベンダーとの打ち合わせが後回しになり、実績報告の準備が遅れかけた</mark>事例がありました。</p>
 <p><span class="big">繁忙期を避けて逆算したスケジュールを組むことが、実績報告での失敗を防ぐ最善策です。</span>採択後すぐに、繁忙期カレンダーと照らし合わせて日程を組んでください。</p>
-<p>実績報告の具体的な進め方は<a href="/blog/ai-hojokin-jissekihoukoku-kakikata/">AI導入補助金の実績報告の書き方</a>で解説しています。</p>
 <h2 id="sec7">理由6: 相見積もりを取らず1社に決め打ちする</h2>
 <p><strong>1社だけの提案で契約を決めると、事業計画書の説得力が不足しがちです。</strong>個人経営の飲食店ほど、付き合いのあるベンダー1社に決め打ちする傾向があります。</p>
 <p>複数のIT導入支援事業者を比較すると、機能・価格・サポート体制の違いが見えてきます。比較した過程そのものが、計画書での「ツール選定の根拠」として書けます。</p>
@@ -397,26 +397,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
