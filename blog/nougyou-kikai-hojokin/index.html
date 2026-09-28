@@ -189,6 +189,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">農業機械補助金とは｜中小企業向け補助金との違い</h2>
 <p><strong>「農業機械補助金」という単一の制度はなく、農林水産省が所管する複数の機械導入支援制度の総称です。</strong>中小企業庁系の補助金とは所管も対象範囲も別物。まずこの違いを押さえる必要があります。</p>
+<p>近い論点を<a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用は平均755万円</a>で扱っています。</p>
 <p>関連する内容として<a href="/blog/monozukuri-hojokin-nougyou-souko/">農業用倉庫に補助金は使える？</a>も公開しています。</p>
 <div class="definition-box"><span class="term">農業機械補助金とは</span>、農業用のトラクター・田植機・収穫機・スマート農業機械などの購入・更新にかかる費用を、国や都道府県が補助する制度の通称です。対象者や補助率は制度ごとに異なります。</div>
 
@@ -207,6 +208,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec3">農地利用効率化等支援事業｜融資と組み合わせて機械を導入</h2>
 <p><strong>新規就農者以外の担い手が機械を導入する場合は、農地利用効率化等支援事業の融資主体支援タイプが候補になります。</strong>融資を活用しつつ、その融資残額の一部を国が助成する仕組みです。</p>
+<p>あわせて<a href="/blog/seicho-kasokuka-hojokin-schedule/">中小企業成長加速化補助金</a>もご覧ください。</p>
 <p>融資主体支援タイプの補助率は事業費の3/10以内で、上限は300万円等とされています。<strong>先進的な農業経営の確立を目指す場合の枠では、上限が個人1,000万円・法人1,500万円まで広がります。</strong>日本政策金融公庫のスーパーL資金や農業近代化資金などの融資とセットで使う制度のため、先に融資の審査を進める必要があります。</p>
 <p><a href="https://www.maff.go.jp/j/keiei/sien/260226.html" target="_blank" rel="noopener">農林水産省の農地利用効率化等支援事業のページ</a>で、年度ごとの実施要綱・交付要綱が公開されています。融資を伴う分、審査の期間は補助金単体の制度より長くなる傾向があるため、機械の更新時期から逆算してスケジュールを組んでください。</p>
 <p>地域の中核的な担い手として位置づけられているかどうかで対象要件が変わるため、<strong>「地域計画」に自分の経営体が位置づけられているかを、先に市町村の農政担当窓口で確認しておく</strong>と手戻りが少なくなります。</p>
@@ -388,26 +390,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
