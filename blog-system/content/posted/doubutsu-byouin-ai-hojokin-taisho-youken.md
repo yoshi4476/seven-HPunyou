@@ -49,9 +49,13 @@ faq:
 
 **動物病院は中小企業基本法上「サービス業」に区分され、資本金5,000万円以下か従業員100人以下のどちらかを満たせば対象要件をクリアします。**業種名に「動物病院」という専用の枠が用意されているわけではなく、他業種と同じ判定基準に当てはめて考えます。見るべき数字は、資本金と従業員数の2つのみ。
 
-あわせて[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)もご覧ください。
+関連する内容として[飲食店のAI導入補助金｜落ちる理由と現場の6つの原因](/blog/inshokuten-ai-hojokin-ochiru-riyu/)も公開しています。
 
-関連する内容として[クリーニング店でAI導入補助金の対象要件を満たす条件](/blog/kurininguten-ai-hojokin-taisho-youken/)も公開しています。
+関連する内容については、[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)にまとめています。
+
+対象になる範囲は[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で整理しています。
+
+あわせて[クリーニング店でAI導入補助金の対象要件を満たす条件](/blog/kurininguten-ai-hojokin-taisho-youken/)もご覧ください。
 
 中小企業者の4区分と基準の全体像は[IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数](https://lp.7senses.co.jp/blog/it-hojokin-chusho-teigi/)で整理しています。動物病院がなぜ「サービス業」に入るのかは、次の章で詳しく見ていきます。
 
