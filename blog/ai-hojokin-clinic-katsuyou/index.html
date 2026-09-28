@@ -27,7 +27,7 @@
       "inLanguage": "ja",
       "mainEntityOfPage": "https://lp.7senses.co.jp/blog/ai-hojokin-clinic-katsuyou/",
       "about": [],
-      "mentions": [{"@type": "Thing", "name": "IT導入補助金", "sameAs": "https://it-shien.smrj.go.jp/"}, {"@type": "Thing", "name": "中小企業庁", "sameAs": "https://www.chusho.meti.go.jp/"}, {"@type": "Thing", "name": "gBizID", "sameAs": "https://gbiz-id.go.jp/"}],
+      "mentions": [{"@type": "Thing", "name": "IT導入補助金", "sameAs": "https://it-shien.smrj.go.jp/"}, {"@type": "Thing", "name": "事業再構築補助金", "sameAs": "https://jigyou-saikouchiku.go.jp/"}, {"@type": "Thing", "name": "中小企業庁", "sameAs": "https://www.chusho.meti.go.jp/"}, {"@type": "Thing", "name": "gBizID", "sameAs": "https://gbiz-id.go.jp/"}],
       "author": { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author", "name": "原口 優", "jobTitle": "代表取締役", "url": "https://ai.7senses.co.jp/author/haraguchi/" },
       "publisher": { "@type": "Organization", "@id": "https://lp.7senses.co.jp/#org", "name": "セブンセンシズ株式会社" },
       "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".summary", ".faq-sec"] } },
@@ -188,6 +188,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">AI導入補助金はクリニックの電子カルテ更新に使えるのか</h2>
 <p><strong>AI導入補助金は、クリニックの電子カルテ・レセコン更新費用を補助対象にできる制度です。</strong>紙カルテや古いレセコンをクラウド型システムへ置き換える投資の後押しとして設計されています。</p>
+<p>関連する内容は、<a href="/blog/jigyou-saikouchiku-clinic-jirei/">事業再構築補助金 クリニックは医療法人不可</a>で解説しています。</p>
 <p>対象になる範囲は<a href="/blog/kurininguten-ai-hojokin-taisho-youken/">クリーニング店のAI導入補助金 対象要件</a>でも扱っています。</p>
 <p>関連する内容は<a href="/blog/it-hojokin-clinic/">クリニックのIT導入補助金</a>で整理しています。</p>
 <p>実際の進め方は<a href="/blog/ai-hojokin-clinic-2026-schedule/">AI導入補助金2026</a>で整理しています。</p>
@@ -291,7 +292,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>申請の要件に自社が当てはまるかは、<a href="/#diagnosis">3分の適性診断（無料・8問）</a>で確かめられます。登録なしで、その場で点数が表示されます。</p>
 <h2 id="sec7">電子カルテ情報共有サービス補助金との違いは何か</h2>
 <p><strong>電子カルテ情報共有サービス補助金は主に病床20床以上の病院向けで、多くのクリニックはAI導入補助金が対象です。</strong>目的が異なるため、自院の規模に応じて使い分けが必要です。</p>
-<p>あわせて<a href="/blog/sogyo-shien-hojokin-kojinjigyonushi/">創業支援等事業者の補助金</a>もご覧ください。</p>
 <p><a href="https://www.wiseman.co.jp/column/welfare/31324/" target="_blank" rel="noopener">電子カルテ導入の補助金制度を比較した解説</a>によると、電子カルテ情報共有サービスの導入補助金は<strong>病床数20床以上の病院が対象で、補助率1/2を上限に最大657.9万円</strong>とされています。運用開始後に接続実績が確認できない場合は返還義務がある点も特徴です。</p>
 <div class="table-wrap"><table>
 <thead>
@@ -450,26 +450,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
