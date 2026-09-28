@@ -192,7 +192,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>関連する内容として<a href="/blog/monozukuri-hojokin-nougyou-souko/">農業用倉庫に補助金は使える？</a>も公開しています。</p>
 <div class="definition-box"><span class="term">農業機械補助金とは</span>、農業用のトラクター・田植機・収穫機・スマート農業機械などの購入・更新にかかる費用を、国や都道府県が補助する制度の通称です。対象者や補助率は制度ごとに異なります。</div>
 
-<p>事業再構築補助金の後継制度で農業がどう扱われるかは、<a href="/blog/jigyou-saikouchiku-nougyou-jirei/">事業再構築補助金で農業が使えたのは6次産業化</a>にまとめています。あの記事でも触れたとおり、<strong>汎用のトラクター等の農業機械は、加工・直売への転換を支援する制度では一貫して対象外</strong>です。</p>
+<p>事業再構築補助金の後継制度で農業がどう扱われるかは、<a href="/blog/jigyou-saikouchiku-shukuhakugyou-jirei/">事業再構築補助金で農業が使えたのは6次産業化</a>にまとめています。あの記事でも触れたとおり、<strong>汎用のトラクター等の農業機械は、加工・直売への転換を支援する制度では一貫して対象外</strong>です。</p>
 <p>私たちは登録支援事業者として日々さまざまな補助金の相談を受けていますが、「ものづくり補助金でトラクターを買いたい」という相談は、制度の対象範囲を説明するところから始めることが多いです。機械そのものを買う場合は、これから紹介する農水省系の制度を確認してください。</p>
 <h2 id="sec2">経営発展支援事業｜新規就農者は機械導入で最大500万円</h2>
 <p><strong>新規就農者が機械・施設を導入する場合、経営発展支援事業で国費上限500万円の支援が受けられます。</strong>都道府県が支援する額の2倍を国が上乗せする仕組みで、実質的な補助率は高くなります。</p>
@@ -388,26 +388,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
