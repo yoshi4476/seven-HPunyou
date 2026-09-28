@@ -204,7 +204,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>同記事では、水田の生育状況を計測するセンサーや、5G通信で自動走行するスマートトラクター、収穫量をカメラで推定するドローン画像認識技術の導入も、スマート農業の採択事例として言及されています。「新しい機械を1台買う」という発想ではなく、圃場のデータを収集する仕組みと、そのデータを使って生産・出荷を判断する仕組みをセットで計画すると、審査で評価されやすい事業計画になります。</p>
 <h2 id="sec3">精米機を補助金で刷新し売上を2倍にした事例</h2>
 <p><strong>岐阜県のブランド米生産者は、精米機・色彩センサー・エア吸引式昇降機を含む精米ラインを約3,500万円で刷新し、3年間で売上を2倍に拡大しました。</strong>設備投資が品質と販路の両方を押し上げた事例です。</p>
-<p>あわせて<a href="/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/">ものづくり補助金の給与支給総額とは？</a>もご覧ください。</p>
 <p><a href="https://j-support.jp/column/8220" target="_blank" rel="noopener">補助金の活用事例を紹介する記事</a>によると、この生産者は毎年10件以上発生していた品質クレームをほぼゼロにし、超大粒米という新しい商品カテゴリの開発にもつなげています。<strong>色彩センサーで異物や着色粒を自動選別できるようになったことが、クレーム減少の直接の要因です。</strong></p>
 <p>私も相談の現場で、<mark>選別を目視と経験に頼っていて、繁忙期に品質がぶれる</mark>という悩みを持つ生産者を見てきました。精米・選果の工程を機械化する投資は、品質のばらつきを抑えると同時に、対外的に説明できる根拠にもなります。</p>
 <h2 id="sec4">汎用品はNG｜農業で経費計上できる機械装置の基準</h2>
@@ -277,6 +276,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>海外向けの農産物・加工品を扱う場合は、補助率2/3のグローバル枠も選択肢です。国内向け投資とは補助率の水準が異なるため、輸出計画があるなら先にグローバル枠の対象要件を確認しておくと、枠の選び直しによる手戻りを防げます。</p>
 <h2 id="sec6">個人農家と農業法人｜中小企業者と認められる基準</h2>
 <p><strong>農業の中小企業者は、資本金3億円以下または従業員300人以下で判定され、小規模事業者は従業員20人以下が目安です。</strong>農業法人だけでなく、従業員を雇用する個人農家も対象に含まれます。</p>
+<p>近い論点を<a href="/blog/nougyou-hojokin-sekai-hikaku/">農業の補助金を世界と比較｜日本の3つの違いと使い方</a>で扱っています。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -428,26 +428,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
