@@ -63,7 +63,7 @@ faq:
 
 **自社開発のAIに使える主な制度は、新事業進出・ものづくり商業サービス補助金、省力化投資補助金（一般型）、小規模事業者持続化補助金の3つです。**投資規模と開発の内容によって、向いている制度が変わります。
 
-関連する内容として[農業の補助金を世界と比較｜日本の3つの違いと使い方](/blog/nougyou-hojokin-sekai-hikaku/)も公開しています。
+関連する内容として[農業機械補助金は4制度](/blog/nougyou-kikai-hojokin/)も公開しています。
 
 <figure><img src="/images/ai-kaihatsu-hojokin/kaihatsu3.png" alt="自社開発のAIに使える3制度と上限額: ものづくり系は上限9,000万円、省力化投資は上限1億円、持続化補助金は上限250万円"><figcaption>自社開発のAIに使える3制度と上限額</figcaption></figure>
 
