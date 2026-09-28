@@ -229,6 +229,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p><strong>銀行融資の審査では「その2」を求められることが多いため、既に手元にある場合はそのまま流用できます。</strong>新たに取得する場合は、窓口やオンラインで早く発行される方を選んで構いません。迷って時間を使うより、先に取得できたほうを申請フォームにアップロードするほうが、準備全体のスピードは上がります。</p>
 <h2 id="sec3">法人と個人事業主で証明する税目が違う</h2>
 <p>法人が用意するのは法人税の納税証明書、個人事業主が用意するのは所得税の納税証明書です。税目を間違えると、種類（その1・その2）が合っていても差し戻しの対象になります。</p>
+<p>近い論点を<a href="/blog/it-hojokin-2026-kojinjigyonushi/">IT導入補助金2026｜個人事業主の変更点と申請枠</a>で扱っています。</p>
 <p>あわせて<a href="/blog/sogyo-shien-hojokin-kojinjigyonushi/">創業支援等事業者の補助金</a>もご覧ください。</p>
 <p>個人事業主が対象になるかどうかの条件は、<a href="/blog/kojin-jigyonushi-ai-hojokin/">個人事業主のAI導入補助金</a>で解説しています。</p>
 <div class="caution-box"><span class="box-title">注意: 消費税の納税証明書は対象外</span><br>「納税証明書」と聞いて消費税の証明書を取得してしまう例があります。補助金の交付申請で求められるのは、法人税（法人）または所得税（個人事業主）の証明書のみです。税目を税務署の窓口で伝える際は、はっきり指定してください。</div>
@@ -389,26 +390,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
