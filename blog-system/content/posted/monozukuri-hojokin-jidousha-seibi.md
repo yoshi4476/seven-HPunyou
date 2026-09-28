@@ -66,6 +66,8 @@ faq:
 
 **自動車整備業の対象設備は、リフト・タイヤチェンジャー・ホイールバランサー・塗装ブース・洗車機の5分野に整理できます。**どの設備を優先するかは、自社のボトルネックによって変わります。
 
+あわせて[自動車整備の補助金コンサル選び](/blog/jidousha-seibi-hojokin-consul/)もご覧ください。
+
 <figure><img src="/images/monozukuri-hojokin-jidousha-seibi/setsubi5.png" alt="自動車整備業で対象になる設備投資5分野: 自動車リフト、タイヤチェンジャー、ホイールバランサー、塗装ブース、洗車機・診断機器" loading="lazy"><figcaption>自動車整備業で対象になる設備投資5分野</figcaption></figure>
 
 <a href="https://rigid-consulting.com/column/jidoushaseibikoujyou/" target="_blank" rel="noopener">中小企業診断士事務所が整理した解説記事</a>によると、2柱・4柱の自動車リフト、タイヤチェンジャー、アライメントテスター、塗装ブース、洗車機が主な活用設備として挙げられています。
@@ -79,6 +81,8 @@ faq:
 ## スキャンツール・診断機はものづくり補助金なら対象になるか
 
 **IT導入補助金では対象外のスキャンツール本体も、ものづくり補助金なら機械装置費として対象になり得ます。**制度の性質が異なるため、同じ機器でも扱いが変わります。
+
+近い論点を[IT導入補助金2026｜個人事業主の変更点と申請枠](/blog/it-hojokin-2026-kojinjigyonushi/)で扱っています。
 
 <figure><img src="/images/monozukuri-hojokin-jidousha-seibi/scantool-vs.png" alt="スキャンツール計上でよくあるNG・OK: NG例はIT導入補助金で機器単体を申請、OK例はものづくり補助金で機械装置として計上" loading="lazy"><figcaption>スキャンツール計上でよくあるNG・OK</figcaption></figure>
 
