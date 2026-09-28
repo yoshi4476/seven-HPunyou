@@ -51,7 +51,7 @@ faq:
 
 関連する内容は、[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)で解説しています。
 
-関連して、[事業再構築補助金で農業が使えたのは6次産業化](/blog/jigyou-saikouchiku-nougyou-jirei/)もあわせてご確認ください。
+関連して、[事業再構築補助金で農業が使えたのは6次産業化](/blog/jigyou-saikouchiku-shukuhakugyou-jirei/)もあわせてご確認ください。
 
 関連する内容については、[農業機械補助金は4制度](/blog/nougyou-kikai-hojokin/)にまとめています。
 
