@@ -138,6 +138,8 @@ faq:
 
 **建設業はまず助成金で採用・定着を固め、その後に補助金で設備投資に進むのが基本です。**申請の手順自体は、4制度ともおおむね共通しています。
 
+近い論点を[IT導入補助金の建設業事例4社｜課題別のツールと効果](/blog/it-hojokin-kensetsugyou-jirei/)で扱っています。
+
 あわせて[運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁](/blog/unsougyou-jissekihoukokusho/)もご覧ください。
 
 <figure><img src="/images/kensetsugyou-joseikin-hikaku/nagare4.png" alt="助成金の申請から受給までの基本の流れ: 労働局へ計画届を提出、取り組みを実施、実績報告書を提出、審査後に振り込まれる" loading="lazy"><figcaption>助成金の申請から受給までの基本の流れ</figcaption></figure>
