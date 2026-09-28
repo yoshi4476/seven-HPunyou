@@ -27,7 +27,7 @@
       "inLanguage": "ja",
       "mainEntityOfPage": "https://lp.7senses.co.jp/blog/jizokuka-hojokin-biyoushitsu-kakikata/",
       "about": [{"@type": "Thing", "name": "小規模事業者持続化補助金", "sameAs": "https://s23.jizokukahojokin.info/"}],
-      "mentions": [{"@type": "Thing", "name": "中小企業庁", "sameAs": "https://www.chusho.meti.go.jp/"}],
+      "mentions": [{"@type": "Thing", "name": "IT導入補助金", "sameAs": "https://it-shien.smrj.go.jp/"}, {"@type": "Thing", "name": "中小企業庁", "sameAs": "https://www.chusho.meti.go.jp/"}],
       "author": { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author", "name": "原口 優", "jobTitle": "代表取締役", "url": "https://ai.7senses.co.jp/author/haraguchi/" },
       "publisher": { "@type": "Organization", "@id": "https://lp.7senses.co.jp/#org", "name": "セブンセンシズ株式会社" },
       "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".summary", ".faq-sec"] } },
@@ -197,7 +197,8 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>対象になる範囲は、<a href="/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/">小規模事業者持続化補助金</a>で解説しています。</p>
 <h2 id="sec2">美容室が対象になる条件｜従業員5人以下の数え方</h2>
 <p><strong>美容室は商業・サービス業に区分され、常時使用する従業員が5人以下なら対象です。</strong>個人事業主の一人サロンも、法人化した複数店舗の美容室も、この人数要件で判定されます。</p>
-<p>関連する内容として<a href="/blog/biyoushitsu-joseikin/">美容室の助成金とは｜歩合給でも使える5制度と金額の目安</a>も公開しています。</p>
+<p>近い論点を<a href="/blog/it-hojokin-nail-salon/">IT導入補助金はネイルサロンも使える？</a>で扱っています。</p>
+<p>関連する内容として<a href="/blog/hojokin-denshishinsei-gimuka-itsukara/">補助金の電子申請はいつから義務化？</a>も公開しています。</p>
 <p>複数店舗を経営している場合は、全店舗の従業員数を合算して判定します。</p>
 <p>役員や同居の親族従業員、育児休業中のスタッフは、常時使用する従業員の人数から除外されます。パート・アルバイトの数え方に迷うケースもあるため、判断に迷う場合は商工会・商工会議所へ事前に確認してください。</p>
 <p>開業から日が浅く確定申告書の控えがまだ無い美容室は、開業届や事業計画書で事業実態を示す方法もあります。書類が足りないからとあきらめる前に、管轄の商工会・商工会議所へ相談してみてください。</p>
@@ -250,7 +251,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えるだけ。登録不要で、その場で判定が出ます</p></div>
 <h2 id="sec5">補助事業計画の書き方｜事業名30字と取組内容の具体化</h2>
 <p><strong>補助事業計画は、事業名・取組内容・業務効率化・期待される効果の順に、数字を使って具体化します。</strong>ここが曖昧だと、対象経費であっても計画審査で伸び悩みます。</p>
-<p>あわせて<a href="/blog/esute-ai-hojokin-hojogaku-mokuyasu/">エステサロンのAI導入補助金の補助額の目安</a>もご覧ください。</p>
 <p>事業名は30字以内で、投資内容と目的の両方が伝わる表現にします。たとえば「マイクロバブル導入による頭皮ケアメニュー新設事業」のように、手段と効果を1文に収めます。</p>
 <p>販路開拓等の取組では、従来のやり方との違い、工夫した点、具体的な進め方の3点を書きます。「新しい機械を導入する」だけでなく、「どの客層に」「どう告知して」「いつから始めるか」まで書くと、実現可能性が伝わりやすくなります。</p>
 <p>期待される効果には、売上への影響を数値目標で書きます。「客単価8,000円を10,000円に引き上げる」「新規顧客を月5人増やす」のように、時期と数値をセットで示すと、審査員が計画審査で評価しやすくなります。地域雇用や取引先への波及効果があれば、あわせて記載してください。</p>
@@ -388,26 +388,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
