@@ -79,6 +79,10 @@ faq:
 
 **証明書には、補助金のほかに登録免許税の軽減・信用保証の前倒し・日本政策金融公庫の特別利率という3つの優遇があります。**補助金に間に合わなくても、取る価値は残ります。
 
+近い論点を[事業再構築補助金で個人事業主が出す事業化状況報告](/blog/jigyou-saikouchiku-jigyouka-hokoku-kojin/)で扱っています。
+
+あわせて[事業再構築補助金の確定申告](/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/)もご覧ください。
+
 <figure><img src="/images/sogyo-shien-hojokin-kojinjigyonushi/yuugu.png" alt="証明書で受けられる4つの優遇: 持続化補助金の創業型、登録免許税の軽減、創業関連保証の前倒し、日本政策金融公庫の特別利率"><figcaption>証明書で受けられる4つの優遇</figcaption></figure>
 
 | 優遇 | 内容 | 個人事業主が使う場面 |
