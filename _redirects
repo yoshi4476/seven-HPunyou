@@ -45,3 +45,9 @@
 /blog/ai-hojokin-hitsuyoshorui-houjin/ /blog/ai-hojokin-hitsuyo-shorui-hojin/ 301
 # 重複統合 (2026-09-15): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
 /blog/ai-hojokin-hitsuyo-shorui-hojin/ /blog/ai-hojokin-hitsuyo-shorui-kojin/ 301
+# 統合: jigyou-saikouchiku-biyoushitsu-jirei に吸収（2026-09-28）
+/blog/jigyou-saikouchiku-kensetsugyou-jirei/ /blog/jigyou-saikouchiku-biyoushitsu-jirei/ 301
+# 統合: jigyou-saikouchiku-shukuhakugyou-jirei に吸収（2026-09-28）
+/blog/jigyou-saikouchiku-nougyou-jirei/ /blog/jigyou-saikouchiku-shukuhakugyou-jirei/ 301
+# 統合: inshokuten-ai-hojokin-taisho-youken に吸収（2026-09-28）
+/blog/doubutsu-byouin-ai-hojokin-taisho-youken/ /blog/inshokuten-ai-hojokin-taisho-youken/ 301
