@@ -49,9 +49,9 @@ faq:
 
 **結論として、事業再構築補助金は美容室も対象で、脱毛サロンやエステへの業態転換投資が数多く採択されてきました。**ただし2025年3月26日の第13回公募をもって新規申請の受付を終了しています。個人事業主も資本金要件なしで申請でき、従業員20人以下の小規模な美容室も対象でした。
 
-近い論点を[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)で扱っています。
+関連する内容は[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)でも扱っています。
 
-あわせて[美容室のIT導入補助金](/blog/it-hojokin-biyoushitsu/)もご覧ください。
+近い論点を[美容室のIT導入補助金](/blog/it-hojokin-biyoushitsu/)で扱っています。
 
 あわせて[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)もご覧ください。
 
