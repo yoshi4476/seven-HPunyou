@@ -199,6 +199,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>美容室の技術教育との共通点は<a href="/blog/it-hojokin-biyoushitsu/">美容室のIT導入補助金</a>でも扱っています。技術職を抱える店舗ビジネスに共通する課題です。</p>
 <h2 id="sec2">なぜ技術チェックにAIを使うのか、属人化が生む機会損失</h2>
 <p><strong>AIによる技術チェックは、採点基準を数値化しベテラン頼みの評価を店舗間で均一にします。</strong>写真を撮影してAIが判定するため、評価にかかる時間そのものも短縮できます。</p>
+<p>あわせて<a href="/blog/nail-salon-ai-hojokin-ochiru-riyu/">ネイルサロンがAI導入補助金に落ちる理由</a>もご覧ください。</p>
 <p>複数店舗を展開するネイルサロンでは、店舗ごとに評価基準がわずかに違うことで、同じ研修を受けたはずのスタッフの技術水準にばらつきが出やすくなります。<strong>評価者が異動・退職すると、その店舗だけ基準が緩む・厳しくなるという事態も起こりがちです。</strong></p>
 <p>私も相談の現場で、<mark>店長が忙しく新人の技術チェックが後回しになり、独り立ちの時期が読めない</mark>というネイルサロンオーナーの声を聞いたことがあります。AIによる技術チェックは、店長の稼働時間を空けながら評価の記録を残せる点が評価されています。</p>
 <p>一人ひとりの仕上がり写真を撮って判定するだけでなく、<strong>過去の判定結果を蓄積すれば、新人がどの工程でつまずいているかを数値の推移で追える</strong>ようになります。感覚的な「前より上手くなった」ではなく、根拠のある育成計画を立てやすくなる点が導入の動機です。</p>
@@ -353,9 +354,9 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/jidousha-seibi-hojokin-consul/">自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方</a></li>
-<li><a href="/blog/invoice-hojokin-kojinjigyonushi-itsumade/">インボイス補助金は個人事業主いつまで？締切と税の特例期限</a></li>
-<li><a href="/blog/sogyo-shien-hojokin-kojinjigyonushi/">創業支援等事業者の補助金｜個人事業主は証明書で上限200万円</a></li></ul>
+    <ul><li><a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用は平均755万円｜費目別に使える補助金4つ</a></li>
+<li><a href="/blog/jidousha-seibi-hojokin-consul/">自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方</a></li>
+<li><a href="/blog/invoice-hojokin-kojinjigyonushi-itsumade/">インボイス補助金は個人事業主いつまで？締切と税の特例期限</a></li></ul>
   </div>
 </div>
 <aside class="side">
@@ -410,26 +411,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
