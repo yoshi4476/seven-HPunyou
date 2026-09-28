@@ -53,7 +53,7 @@ faq:
 
 実際の例については、[ものづくり補助金は飲食店で使える？採択事例3パターン](/blog/monozukuri-hojokin-inshokuten-jirei/)にまとめています。
 
-あわせて[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)もご覧ください。
+近い論点を[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)で扱っています。
 
 実際の例については、[事業再構築補助金 クリニックは医療法人不可](/blog/jigyou-saikouchiku-clinic-jirei/)にまとめています。
 
