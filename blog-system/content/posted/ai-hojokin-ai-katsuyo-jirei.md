@@ -46,13 +46,15 @@ faq:
 
 **AI導入補助金のAI活用事例とは、通常枠のITツールにAI機能が組み込まれた具体的な導入例です。**専用の「AI枠」が独立してあるわけではありません。
 
-飲食店の不採択の傾向は、[飲食店がAI導入補助金で落ちる理由](/blog/inshokuten-ai-hojokin-ochiru-riyu/)で整理しています。
+対象になる範囲は、[クリーニング店のAI導入補助金 対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)で解説しています。
 
-手続きの順番は、[飲食店のAI導入補助金の申請の進め方](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)で解説しています。
+関連する内容として[補助金でAIチャットボット導入｜対象条件と申請の流れ](/blog/ai-hojokin-chatbot-donyu/)も公開しています。
+
+対象になる範囲は[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)でも扱っています。
+
+関連する内容については、[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)にまとめています。
 
 関連する内容は[不動産会社のAI導入補助金](/blog/fudousan-ai-hojokin-teishutsu-shorui/)でも扱っています。
-
-対象になる範囲は、[飲食店のAI導入補助金の対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)で解説しています。
 
 <div class="definition-box"><span class="term">AI活用事例とは</span>、会計・営業支援・顧客対応などの既存ITツールにAI機能が搭載され、実際の業務で使われている導入例を指します。デジタル化・AI導入補助金2026では、ツール検索画面に「生成AI」「生成AI以外のAI」のタグが表示され、AI搭載ツールを見分けやすくなっています。</div>
 
