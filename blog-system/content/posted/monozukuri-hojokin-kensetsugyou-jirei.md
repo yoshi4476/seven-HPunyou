@@ -67,7 +67,7 @@ faq:
 **建設業の採択事例は、総合工事業・鉄骨工事業・測量関連の技術サービス業の3パターンに整理できます。**同じ機械装置費でも、業種によって投資の狙いが異なります。
 
 
-関連して、[事業再構築補助金は建設業も対象](/blog/jigyou-saikouchiku-kensetsugyou-jirei/)もあわせてご確認ください。
+関連して、[事業再構築補助金は建設業も対象](/blog/jigyou-saikouchiku-biyoushitsu-jirei/)もあわせてご確認ください。
 
 <figure><img src="/images/monozukuri-hojokin-kensetsugyou-jirei/jirei3.png" alt="建設業の採択事例3パターン: 総合工事業は重機駆動システムやi-Construction活用の開発事例、鉄骨工事業は加工機導入で納期短縮・受注増加を実現、測量関連の技術サービス業は3Dレーザースキャナー等で精度向上" loading="lazy"><figcaption>建設業の採択事例3パターン</figcaption></figure>
 
