@@ -139,7 +139,7 @@ faq:
 
 **採択されても、先に全額を支払います。**ここを見落とすと資金繰りが詰まります。
 
-関連する内容を先に押さえるなら、[卸売業のAI導入補助金](/blog/oroshiurigyou-ai-hojokin-ochiru-riyu/)が参考になります。
+関連する内容を先に押さえるなら、[卸売業のAI導入補助金](/blog/inshokuten-ai-hojokin-ochiru-riyu/)が参考になります。
 
 費用の目安は[介護事業所のAI導入補助金はいくら？](/blog/kaigo-ai-hojokin-hojogaku-meyasu/)で整理しています。
 
