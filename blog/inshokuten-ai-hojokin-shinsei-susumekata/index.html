@@ -232,6 +232,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p><em>当社</em>は登録支援事業者として、飲食店からの申請相談を数多く受けてきました。<mark>要件を満たしていても、進め方の順番を間違えると現場が混乱する</mark>という相談が少なくありません。ここから局面ごとに、飲食店ならではの注意点を解説します。</p>
 <h2 id="sec2">局面1: 飲食店の課題に合わせてAIツールを1つに絞り込む</h2>
 <p><strong>最初にやることは、自店の一番の課題に効くAIツールを1つに絞ることです。</strong>複数のツールを同時に検討すると、事業計画書の説明がぼやけて審査に通りにくくなります。</p>
+<p>関連する内容として<a href="/blog/it-hojokin-inshokuten/">飲食店のIT導入補助金｜名称変更後の3つの確認点</a>も公開しています。</p>
 <div class="definition-box"><span class="term">飲食店で選ばれやすいAIツールとは</span>、需要予測に基づく自動発注、電話予約の自動応答、セルフオーダー端末と連動した会計・在庫管理などを指します。どれもAIが需要や注文内容を予測・判断する機能を持っています。</div>
 
 <p>私たちが相談を受ける際は、<mark>「人手不足で一番困っている業務は何か」を先に聞く</mark>ようにしています。発注業務に時間を取られているなら需要予測発注、電話対応が負担なら自動応答というように、課題から逆算してツールを絞り込むと計画書の説明がまとまりやすくなります。</p>
@@ -412,26 +413,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
