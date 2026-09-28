@@ -67,9 +67,9 @@ faq:
 
 **個人事業主が実際に使える制度の中心は、IT導入補助金・小規模事業者持続化補助金・ものづくり補助金・事業再構築補助金の4つです。**業種や導入したい内容によって選ぶ制度が変わります。
 
-あわせて[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)もご覧ください。
+近い論点を[事業再構築補助金 クリニックは医療法人不可](/blog/jigyou-saikouchiku-clinic-jirei/)で扱っています。
 
-関連する内容として[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)も公開しています。
+あわせて[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)もご覧ください。
 
 <figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/seido3.png" alt="個人事業主が対象になる主な補助金: IT導入補助金、小規模事業者持続化補助金、ものづくり補助金、事業再構築補助金"><figcaption>個人事業主が対象になる主な補助金</figcaption></figure>
 
