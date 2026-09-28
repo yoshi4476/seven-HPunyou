@@ -49,6 +49,10 @@ faq:
 
 **IT導入補助金は、限られたドライバー数と稼働時間で配送を回す仕組みづくりに使える制度です。**紙の日報や電話でのやり取りをITツールに置き換える投資の後押しとして設計されています。
 
+近い論点を[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)で扱っています。
+
+関連する内容として[ものづくり補助金は運送業も使える？](/blog/monozukuri-hojokin-unsougyou/)も公開しています。
+
 あわせて[運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁](/blog/unsougyou-jissekihoukokusho/)もご覧ください。
 
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
@@ -108,10 +112,6 @@ faq:
 **通常枠は補助率1/2以内・上限450万円で、賃上げ要件を満たすと2/3に引き上がります。**枠によって数字が変わるため、自社がどの枠に当てはまるかを先に確認してください。
 
 近い論点を[事業再構築補助金は法人成り後も続く？](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)で扱っています。
-
-関連する内容として[事業再構築補助金で個人事業主が出す事業化状況報告](/blog/jigyou-saikouchiku-jigyouka-hokoku-kojin/)も公開しています。
-
-関連する内容として[事業再構築補助金の確定申告](/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/)も公開しています。
 
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠の補助率・補助上限額のページ</a>によると、<strong>1プロセス以上の導入で5万円以上150万円未満、4プロセス以上の導入で150万円以上450万円以下</strong>の補助額が設定されています。*ソフトウェア*の月額利用料も、最大2年分がまとめて補助対象になります。
 
