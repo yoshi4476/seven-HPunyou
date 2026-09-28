@@ -191,7 +191,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>近い論点を<a href="/blog/it-hojokin-clinic/">クリニックのIT導入補助金</a>で扱っています。</p>
 <p>あわせて<a href="/blog/nougyou-kikai-hojokin/">農業機械補助金は4制度</a>もご覧ください。</p>
 <p>関連する内容として<a href="/blog/monozukuri-hojokin-nougyou-souko/">農業用倉庫に補助金は使える？</a>も公開しています。</p>
-<p>関連する内容として<a href="/blog/monozukuri-hojokin-clinic/">ものづくり補助金はクリニックで使える？</a>も公開しています。</p>
 <div class="definition-box"><span class="term">ネイルサロン向け補助金とは</span>、予約システムなどのソフト導入、集塵・換気設備やAI機器などのハード投資、広報・集客の販路開拓費のいずれかを対象に、国や自治体が費用の一部を補助する制度の総称です。</div>
 
 <div class="table-wrap"><table>
@@ -230,6 +229,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>制度ごとに公募回・締切・必要書類が異なる点にも注意が必要です。IT導入補助金は年に複数回の締切が設定される一方、ものづくり補助金や持続化補助金は公募回が数か月単位で区切られます。検討し始めたタイミングで、直近の締切に間に合うかどうかも合わせて確認してください。</p>
 <h2 id="sec2">IT導入補助金｜予約システムなどソフト導入向け</h2>
 <p><strong>IT導入補助金は、予約管理システムやPOSレジなどソフト単体の導入に向いています。</strong>通常枠の補助率は1/2〜2/3、上限は450万円です。</p>
+<p>近い論点を<a href="/blog/nail-salon-gijutsu-check/">ネイルサロンの技術チェックAI化｜補助金の対象基準</a>で扱っています。</p>
 <p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">IT導入補助金の通常枠ページ</a>によると、1プロセス以上の導入で5万円以上150万円未満、4プロセス以上の導入で150万円以上450万円以下の補助額が設定されています。予約管理・デザインカルテ・会計ソフトなど複数ツールをまとめて導入するほど、対象になる区分は上がりやすくなります。</p>
 <p>紙の予約台帳や電話対応に追われているサロンほど、ソフト導入の効果を実感しやすい制度です。詳しい対象ツールの内訳や面貸し契約時の申請主体は、<a href="https://lp.7senses.co.jp/blog/it-hojokin-nail-salon/">IT導入補助金はネイルサロンも使える？材料費と面貸しの壁</a>で整理しています。</p>
 <p>例えば、予約管理システムとデザインカルテ管理を合わせて年間30万円で契約したとします。<strong>補助率1/2なら15万円、賃上げ要件を満たして2/3になれば約20万円が補助され、実質負担は10〜15万円程度</strong>に収まる計算です。</p>
@@ -390,26 +390,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
