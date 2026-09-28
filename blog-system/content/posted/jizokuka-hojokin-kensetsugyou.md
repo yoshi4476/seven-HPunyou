@@ -57,12 +57,6 @@ faq:
 
 あわせて[ものづくり補助金は宿泊業で使える？](/blog/monozukuri-hojokin-shukuhakugyou/)もご覧ください。
 
-選ぶときの基準は[建設業の助成金4制度｜補助金との違いと使う順番](/blog/kensetsugyou-joseikin-hikaku/)でも扱っています。
-
-関連する内容については、[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)にまとめています。
-
-あわせて[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
-
 <div class="definition-box"><span class="term">小規模事業者持続化補助金とは</span>、商工会議所・商工会の管轄地域で、小規模事業者が経営計画に基づいて販路開拓等に取り組む経費の一部を補助する制度です。</div>
 
 建設業向けの補助金というと、機械や設備への投資が中心の新事業進出・ものづくり商業サービス補助金や、ITツール導入が中心のAI導入補助金をイメージする経営者が多いはずです。持続化補助金はそれらと異なり、**広報やホームページ制作など「知ってもらう・問い合わせを増やす」ための投資**に強い制度です。
