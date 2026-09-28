@@ -400,7 +400,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>1つ目は、資格者証の誤添付。求められていない書類を追加しても、審査は早くなりません。</p>
 <p>2つ目は名義の不一致です。屋号・個人名・法人名が書類ごとにバラバラだと、同一事業者の確認に時間がかかります。</p>
 <p>3つ目は士業法人特有の原因です。<span class="txt-red">登記簿上の代表社員と、GビズIDの申請者名が違うと差し戻されます。</span>共同経営の事務所ほど、この確認を怠りがちです。</p>
-<p>4つ目は見積書の記載です。「一式」とだけ書かれた見積書では、対象経費を確認できません。不採択になりやすい書き方は<a href="/blog/ai-hojokin-shinsei-shippai-yokuaru/">AI導入補助金の申請に失敗する原因</a>で整理しています。</p>
 <p>合同事務所で複数の資格者が同じソフトを共有する場合は注意してください。<strong>誰の利用割合が何%かを見積書に書いてもらうと、按分の根拠が審査側に伝わります。</strong>割合を書かずに一括請求のままにすると、対象経費の算定で差し戻されることがあります。</p>
 <p>私が相談を受けた中で多いのが、「顧問先の相談内容を具体的に書いた方が説得力が出るのでは」というものです。<strong>気持ちは分かりますが、守秘義務が優先されます。</strong>自事務所の内部業務に絞って書いてください。</p>
 <h2 id="sec8">実績報告で求められる書類</h2>
@@ -527,26 +526,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
