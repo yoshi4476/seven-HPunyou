@@ -57,7 +57,7 @@ faq:
 
 関連する内容は[飲食店のIT導入補助金｜名称変更後の3つの確認点](/blog/it-hojokin-inshokuten/)で整理しています。
 
-関連する内容は[卸売業のAI導入補助金](/blog/oroshiurigyou-ai-hojokin-ochiru-riyu/)でも扱っています。
+関連する内容は[卸売業のAI導入補助金](/blog/inshokuten-ai-hojokin-ochiru-riyu/)でも扱っています。
 
 対象になる範囲を先に押さえるなら、[クリーニング店のAI導入補助金の対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)が参考になります。
 
@@ -156,6 +156,8 @@ faq:
 ## 対象要件を満たすAIツールの見分け方
 
 **ツール側の対象要件は、事務局の「ITツール検索」に登録されているかどうかという1点でほぼ決まります。**業種特有の機能があるかどうかより、まずこの登録状況が優先されます。
+
+関連する内容として[補助金でAIチャットボット導入｜対象条件と申請の流れ](/blog/ai-hojokin-chatbot-donyu/)も公開しています。
 
 業種ごとに選ばれやすいツールの分野を表に整理しました。
 
