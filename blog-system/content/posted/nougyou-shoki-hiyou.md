@@ -64,7 +64,7 @@ faq:
 
 **栽培管理・出荷販売・経営会計の3つが中心です。**いずれも記録と集計を扱います。
 
-あわせて[事業再構築補助金で農業が使えたのは6次産業化](/blog/jigyou-saikouchiku-nougyou-jirei/)もご覧ください。
+あわせて[事業再構築補助金で農業が使えたのは6次産業化](/blog/jigyou-saikouchiku-shukuhakugyou-jirei/)もご覧ください。
 
 <figure><img src="/images/nougyou-shoki-hiyou/uchiwake3.png" alt="農業で対象になりやすいソフト3分野: 栽培管理は生育記録・作業日誌・圃場ごとの履歴、出荷販売は受注管理・出荷伝票・直売所との連携、経営会計は部門別の収支・作物ごとの原価" loading="lazy"><figcaption>農業で対象になりやすいソフト3分野</figcaption></figure>
 
