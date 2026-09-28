@@ -48,7 +48,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [小売業のAI導入補助金｜レジ・POSに使える経費は上限20万円](https://lp.7senses.co.jp/blog/kourigyou-ai-hojokin-keihi/): 小売業でレジやPOSを導入する場合、通常枠ではハードウェア単体が対象外になる点に注意が必要です。インボイス対応類型なら上限20万円まで補助さ
 - [学習塾はAI導入補助金の申請をどう進める？個人情報と繁忙期の壁【2026年】](https://lp.7senses.co.jp/blog/gakushujuku-ai-hojokin-shinsei-susumekata/): 学習塾がAI導入補助金を申請する進め方について、生徒・保護者の個人情報への配慮と、秋の閑散期を活かした導入計画の立て方を軸に2026年9月時
 - [宿泊業のAI導入補助金はいくら？契約額50万円が分かれ目](https://lp.7senses.co.jp/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/): 宿泊業のAI導入補助金の補助額を、個人経営の民宿・中規模ホテル・複数施設運営の3パターンで試算します。契約額50万円を境に変わる補助率と対象
-- [卸売業のAI導入補助金｜審査で落ちる3つの盲点と対処法](https://lp.7senses.co.jp/blog/oroshiurigyou-ai-hojokin-ochiru-riyu/): 卸売業がAI導入補助金の審査で落ちる理由を、中小企業者の要件誤認から受発注システムの説明不足、卸売業特有の数字不足まで、現場の相談で見えた3
 - [士業事務所のAI導入補助金｜提出書類の名義は3パターン](https://lp.7senses.co.jp/blog/shigyou-ai-hojokin-teishutsu-shorui/): 士業事務所がAI導入補助金で用意する提出書類は、士業法人で7点・個人開業で6点が目安です。社労士証票や税理士証票などの資格者証は提出不要で、確定申告書・見積書・登記簿謄本は書類ごとに名義が変わります。差し戻されやすい注意点も2026年9月時点で解説します。
 - [介護事業所のAI導入補助金はいくら？2制度の上限を比較](https://lp.7senses.co.jp/blog/kaigo-ai-hojokin-hojogaku-meyasu/): 介護事業所のAI導入補助金の補助額の目安を、一般のAI導入補助金と介護テクノロジー導入支援事業（介護ICT補助金）の2制度で比較します。職員
 - [不動産会社のAI導入補助金｜提出書類7点、宅建業免許は不要](https://lp.7senses.co.jp/blog/fudousan-ai-hojokin-teishutsu-shorui/): 不動産会社がAI導入補助金で用意する提出書類は、法人で7点・個人事業主で6点が目安です。宅建業の免許証は対象外で、複数店舗がある場合は労働者
@@ -120,7 +119,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [ものづくり補助金は運送業も使える？新事業進出枠とトラックの線引き](https://lp.7senses.co.jp/blog/monozukuri-hojokin-unsougyou/): 運送業もものづくり補助金（旧ものづくり・商業・サービス生産性向上促進補助金）の対象です。動態管理システム・庫内自動化設備など対象の3分野、ト
 - [小規模事業者持続化補助金2025｜建設業の対象条件と経費](https://lp.7senses.co.jp/blog/jizokuka-hojokin-kensetsugyou/): 小規模事業者持続化補助金は建設業でも従業員20人以下・一人親方から申請できます。対象になる経費とならない経費、補助率、第20回公募のスケジュ
 - [ものづくり補助金｜建設業の採択事例3業種と上限9,000万円](https://lp.7senses.co.jp/blog/monozukuri-hojokin-kensetsugyou-jirei/): ものづくり補助金（新事業進出・ものづくり商業サービス補助金）は建設業の設備投資にも使えます。総合工事業・鉄骨工事業・測量業の採択事例3パター
-- [ものづくり補助金は小売業に使えない？対象になる投資の見極め方](https://lp.7senses.co.jp/blog/monozukuri-hojokin-kourigyou/): ものづくり補助金は小売業も対象ですが、審査で評価されるのは内装や什器ではなく在庫管理・自動発注などのデータ活用投資です。業態別の対象経費、中
 - [事業再構築補助金の飲食店活用事例3選と今の申請方法](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-inshokuten-jirei/): 事業再構築補助金は飲食店でも業態転換やデリバリー進出などの事例で採択されてきましたが、2025年3月の第13回公募で新規受付を終了しました。
 - [事業再構築補助金は法人成り後も続く？承継に必要な4つの手続き](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/): 事業再構築補助金の後継制度は、交付決定後に個人事業主が法人成りしても、事務局へ事前相談し承認を得れば法人が事業を引き継げます。承継手続き・G
 - [事業再構築補助金の確定申告｜個人事業主が守る3つの注意点](https://lp.7senses.co.jp/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/): 事業再構築補助金を受け取った個人事業主は、確定申告で雑収入として事業所得に計上します。収入計上の時期・総収入金額不算入・消費税という3つの注
