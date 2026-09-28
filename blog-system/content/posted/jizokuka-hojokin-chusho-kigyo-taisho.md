@@ -55,10 +55,6 @@ faq:
 
 近い論点を[宿泊業の補助金は3つの入口｜目的別の選び方と優先順位](/blog/shukuhakugyou-hojokin-erabikata/)で扱っています。
 
-あわせて[ものづくり補助金は小売業に使えない？](/blog/monozukuri-hojokin-kourigyou/)もご覧ください。
-
-関連する内容として[会計ソフトの補助金｜個人事業主が使える2つの枠と補助率](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)も公開しています。
-
 <div class="definition-box"><span class="term">小規模事業者とは</span>、中小企業者の中でもさらに従業員数が少ない事業者を指す区分です。商業・サービス業（宿泊業・娯楽業を除く）は5人以下、宿泊業・娯楽業と製造業その他は20人以下が基準になります。</div>
 
 <a href="https://hojyokin-portal.jp/columns/jizokuka2025_summary" target="_blank" rel="noopener">補助金ポータルの解説記事</a>によると、この基準は法人・個人事業主を問わず共通です。資本金の額は判定に使いません。
