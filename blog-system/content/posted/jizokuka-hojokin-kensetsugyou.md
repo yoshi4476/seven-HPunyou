@@ -49,13 +49,19 @@ faq:
 
 **小規模事業者持続化補助金は、小規模な事業者の販路開拓や生産性向上に使える経費の一部を補助する制度です。**業種を問わず申請でき、建設業も対象に含まれます。
 
+あわせて[建設業の電子申請システムはIT導入補助金の対象になる？](/blog/kensetsugyou-denshishinsei-system/)もご覧ください。
+
+関連する内容として[建設業の電子申請を閲覧するには？](/blog/kensetsugyou-denshishinsei-etsuran/)も公開しています。
+
+近い論点を[ものづくり補助金の給与支給総額とは？](/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/)で扱っています。
+
+あわせて[ものづくり補助金は宿泊業で使える？](/blog/monozukuri-hojokin-shukuhakugyou/)もご覧ください。
+
+選ぶときの基準は[建設業の助成金4制度｜補助金との違いと使う順番](/blog/kensetsugyou-joseikin-hikaku/)でも扱っています。
+
 関連する内容については、[小規模事業者持続化補助金](/blog/jizokuka-hojokin-inshokuten-jirei/)にまとめています。
 
 あわせて[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)もご覧ください。
-
-あわせて[ものづくり補助金はエステサロン向け](/blog/monozukuri-hojokin-esute/)もご覧ください。
-
-対象になる範囲は、[小規模事業者持続化補助金](/blog/jizokuka-hojokin-esute/)で解説しています。
 
 <div class="definition-box"><span class="term">小規模事業者持続化補助金とは</span>、商工会議所・商工会の管轄地域で、小規模事業者が経営計画に基づいて販路開拓等に取り組む経費の一部を補助する制度です。</div>
 
