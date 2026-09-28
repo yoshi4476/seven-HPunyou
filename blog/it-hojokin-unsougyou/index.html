@@ -248,6 +248,8 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec5">補助率と上限額｜台数によって変わる考え方</h2>
 <p><strong>通常枠は補助率1/2以内・上限450万円で、賃上げ要件を満たすと2/3に引き上がります。</strong>枠によって数字が変わるため、自社がどの枠に当てはまるかを先に確認してください。</p>
+<p>近い論点を<a href="/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/">事業再構築補助金は法人成り後も続く？</a>で扱っています。</p>
+<p>関連する内容として<a href="/blog/jigyou-saikouchiku-jigyouka-hokoku-kojin/">事業再構築補助金で個人事業主が出す事業化状況報告</a>も公開しています。</p>
 <p>関連する内容として<a href="/blog/jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku/">事業再構築補助金の確定申告</a>も公開しています。</p>
 <p><a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">通常枠の補助率・補助上限額のページ</a>によると、<strong>1プロセス以上の導入で5万円以上150万円未満、4プロセス以上の導入で150万円以上450万円以下</strong>の補助額が設定されています。<em>ソフトウェア</em>の月額利用料も、最大2年分がまとめて補助対象になります。</p>
 <p>例えば車両8台・ドライバー10名の運送会社が、運行管理システムと配送ルート最適化ソフトを合わせて年間80万円で契約したとします。<strong>要件を満たせば補助率1/2でも40万円、2/3なら約53万円が補助され、実質負担は27〜40万円程度</strong>に収まる計算です。</p>
@@ -309,8 +311,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>傭車先が個人事業主のドライバーである場合、業務委託契約書の写しや、実際にツールを使用する事業者の一覧を求められることがあります。<strong>契約形態が複雑な運送業ほど、誰の名義で申請するかを最初に決めておく</strong>ことが、後戻りを防ぐ一番の近道です。元請け・傭車の関係が変わりやすい会社では、契約更新のタイミングで名義を見直す運用にしておくと、実績報告時の食い違いを避けやすくなります。</p>
 <h2 id="sec9">IT導入補助金と他制度（事業再構築・ものづくり）との使い分け</h2>
 <p><strong>ITツール導入中心ならIT導入補助金、事業転換や設備投資中心なら事業再構築補助金や新事業進出・ものづくり商業サービス補助金が向いています。</strong>目的が異なるため、両方の対象経費が重ならないよう切り分ける必要があります。</p>
-<p>選ぶときの基準については、<a href="/blog/it-hojokin-osusume/">IT導入補助金のおすすめの選び方</a>にまとめています。</p>
-<p>対象になる範囲は<a href="/blog/it-hojokin-shukuhakugyou/">宿泊業のIT導入補助金は有利？</a>でも扱っています。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -472,26 +472,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
