@@ -42,7 +42,7 @@ faq:
 
 **建設業は業種として除外されていません。**満たすべきは規模・形態・ソフト・時期・体制の5つです。
 
-対象になる範囲は、[動物病院はAI導入補助金の対象になるか](/blog/doubutsu-byouin-ai-hojokin-taisho-youken/)で解説しています。
+対象になる範囲は、[動物病院はAI導入補助金の対象になるか](/blog/inshokuten-ai-hojokin-taisho-youken/)で解説しています。
 
 あわせて[クリーニング店のAI導入補助金 対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)もご覧ください。
 
