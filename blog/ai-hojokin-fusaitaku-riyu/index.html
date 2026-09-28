@@ -253,11 +253,11 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>見積書や請求書の金額表記が税込みか税抜きかは、担当者が変わると見落としやすいポイントです。申請前に、対象経費の一覧と公募要領の対象経費区分を1行ずつ突き合わせてください。経費の一部だけが対象外だった場合でも、その部分の記載ミスが計画書全体の信頼性を下げてしまうことがあります。</p>
 <h2 id="sec7">理由5: 過去の採択プロセスと内容が重複している</h2>
 <p><strong>過去に交付決定を受けたプロセスと同一内容で再申請すると、減点や不採択の対象になります。</strong>制度は毎年似た枠組みのため、うっかり同じ内容で申請してしまう例が見られます。</p>
+<p>近い論点を<a href="/blog/ai-hojokin-kaikeisoft-taisho/">AI導入補助金で会計ソフトは対象？</a>で扱っています。</p>
 <p>主な減点要因には、<strong>過去採択者ペナルティ、同年度内の重複申請ペナルティ、プロセス重複ペナルティ、賃上げ目標の未達ペナルティ</strong>があります。前年に会計ソフトで交付決定を受けた企業が、翌年また同じ会計業務のプロセスで別ソフトを申請し、内容が重複していると指摘を受けた相談事例もありました。</p>
 <p>今回導入したいツールが、過去の申請とどのプロセスで重なるのかを事前に洗い出し、計画書の中で違いを明確に説明してください。過去の申請内容の棚卸し、これも計画書作成の前に済ませておきたい作業です。</p>
 <h2 id="sec8">理由6: 交付要件を満たさないまま提出している</h2>
 <p><strong>GビズID等の交付要件が未取得のまま提出すると、内容以前の理由で不採択になります。</strong>この系統の失敗は、審査の巧拙ではなく準備のスケジュール管理で防げます。</p>
-<p>関連する内容として<a href="/blog/nail-salon-hojokin-tejun/">ネイルサロンの補助金申請手順を8ステップで解説</a>も公開しています。</p>
 <p>GビズIDプライムの発行には概ね2週間かかるため、締切から逆算した準備が欠かせません。要件の準備手順は<a href="/blog/ai-hojokin-gbizid-shutoku/">AI導入補助金のGビズID取得方法</a>で解説しています。実際の申請の流れは<a href="/blog/ai-hojokin-shinsei-yarikata/">AI導入補助金の申請のやり方</a>も参考にしてください。</p>
 <p>私たちが支援先から相談を受けるケースでも、締切の直前になってGビズID未取得が発覚し、応募自体を1回分見送った事例がありました。担当者が1人しかいない体制だと、異動や休職で手続きが滞ることもあるため、社内で複数人に情報を共有しておくと安心です。</p>
 <h2 id="sec9">不採択通知を受けたらすべきこと</h2>
@@ -388,26 +388,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
