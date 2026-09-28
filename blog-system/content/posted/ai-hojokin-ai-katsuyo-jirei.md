@@ -48,8 +48,6 @@ faq:
 
 対象になる範囲は、[クリーニング店のAI導入補助金 対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)で解説しています。
 
-関連する内容として[補助金でAIチャットボット導入｜対象条件と申請の流れ](/blog/ai-hojokin-chatbot-donyu/)も公開しています。
-
 対象になる範囲は[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)でも扱っています。
 
 関連する内容は[不動産会社のAI導入補助金](/blog/fudousan-ai-hojokin-teishutsu-shorui/)でも扱っています。
