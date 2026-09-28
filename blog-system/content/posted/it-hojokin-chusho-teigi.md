@@ -53,8 +53,6 @@ faq:
 
 実際の例は[IT導入補助金の建設業事例4社｜課題別のツールと効果](/blog/it-hojokin-kensetsugyou-jirei/)で整理しています。
 
-関連する内容を先に押さえるなら、[ネイルサロンがAI導入補助金に落ちる理由](/blog/nail-salon-ai-hojokin-ochiru-riyu/)が参考になります。
-
 対象になる範囲は、[学習塾はIT導入補助金の対象？](/blog/it-hojokin-gakushujuku/)で解説しています。
 
 <div class="definition-box"><span class="term">中小企業者とは</span>、中小企業基本法に基づき業種ごとに定められた資本金・従業員数の基準以下の事業者を指します。IT導入補助金を含む多くの補助金制度が、この定義を対象者の基準として採用しています。</div>
