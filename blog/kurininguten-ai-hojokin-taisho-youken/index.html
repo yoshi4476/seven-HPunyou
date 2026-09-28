@@ -234,6 +234,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>自家工場を持つ本体店舗は、取次店より従業員数が多くなりやすい傾向があります。<strong>複数の取次店を展開する本体は、全店舗の従業員を合算して判定する点に注意してください。</strong>判定に迷う場合は、決算書の資本金額と直近の従業員名簿を用意した上で、契約予定の支援事業者に確認するとスムーズです。</p>
 <h2 id="sec3">取次店・フランチャイズ加盟店の対象要件は本部ではなく契約主体で判定される</h2>
 <p><strong>取次店やフランチャイズ加盟店の対象要件は、本部の規模ではなく、補助金を申請する契約主体自身の資本金・従業員数で判定します。</strong>看板や工場は本部と共通でも、経営主体が別であれば別々に判定される点がポイントです。</p>
+<p>あわせて<a href="/blog/egov-denshishinsei-kojinjigyonushi/">e-Gov電子申請とは</a>もご覧ください。</p>
 <p>クリーニング業界では、受付のみを行う取次店と、洗濯・仕上げを行う自家工場が分かれている運営形態が珍しくありません。<strong>多くの取次店は独立した個人事業主・法人がフランチャイズ契約で本部の看板を掲げて営業しています。</strong>この場合、対象要件の判定対象になるのは取次店を経営する事業者自身です。本部の資本金や全店舗合計の従業員数は関係ありません。</p>
 <div class="caution-box"><span class="box-title">注意: <span class="txt-red">直営店</span>は加盟店と扱いが異なる</span><br>本部が直接運営する直営店は、加盟店とは異なり本部と同一の経営主体とみなされます。本部が大企業規模であれば、直営店はみなし大企業に該当し対象外になる可能性があります。</div>
 
@@ -391,26 +392,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
