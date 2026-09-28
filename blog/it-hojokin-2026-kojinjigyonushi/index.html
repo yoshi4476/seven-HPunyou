@@ -196,6 +196,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>個人事業主にとって大事なのは、名称よりも自分が対象になるかどうかと、どの枠を選ぶかです。対象要件そのものの詳しい条件は<a href="/blog/kojin-jigyonushi-ai-hojokin/">個人事業主のAI導入補助金</a>で解説しています。次の章から、2026年度の状況を順に整理します。</p>
 <h2 id="sec2">2026年度の申請スケジュールと次の締切</h2>
 <p><strong>申請は年に複数回の締切が設定され、回次ごとに予算と採択率が変わります。</strong>直近の2026年9月公表分では、申請5,913者のうち2,601者が採択されました。</p>
+<p>近い論点を<a href="/blog/it-hojokin-kojinjigyonushi-pc/">IT導入補助金のパソコン購入</a>で扱っています。</p>
 <p><a href="https://mirasapo-plus.go.jp/infomation/33237/" target="_blank" rel="noopener">中小企業庁が2026年9月3日に公表した3次締切分の採択結果</a>によると、全体の採択率は44.0%でした。枠別では通常枠42.2%、インボイス対応類型44.7%、セキュリティ対策推進枠72.2%です。</p>
 <p>当サイトの実測では、「it導入補助金 会計ソフト」は平均23.6位で25回表示されました。1ページ目に届くまではクリックがほとんど発生しません。<strong>情報収集と同じく、申請の準備も早く動いた事業者から有利になります。</strong></p>
 <div class="caution-box"><span class="box-title">注意: <span class="txt-red">次の締切日は公式サイトで確認</span></span><br>次回の締切日は回次ごとに個別に公表されます。比較サイトや古い記事の締切情報をそのまま信じると、間に合わなくなるおそれがあります。<a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">公式サイトの公募要領</a>で最新の日程を確認してください。</div>
@@ -238,7 +239,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 </tr>
 </tbody>
 </table></div>
-<p>会計・受発注ソフトを導入したい個人事業主にはインボイス枠が候補になりやすく、詳しい機能要件は<a href="/blog/it-hojokin-kojinjigyonushi-kaikeisoft/">IT導入補助金の会計ソフトの枠と補助率</a>で解説しています。</p>
 <p>枠ごとの試算例は<a href="https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/">AI導入補助金はいくらもらえる？3つの枠の上限額と計算例</a>も参考になります。</p>
 <p>複数者連携枠は、商店街やサプライチェーンでつながる複数の事業者が共同でツールを導入する場合の枠です。<strong>個人事業主が単独で使う場面は少ないものの、取引先が同じ会計・受発注システムへの統一を進めている場合は候補になります。</strong>単独申請より補助率が引き上げられる代わりに、連携先との導入計画のすり合わせが必要です。</p>
 <p>枠を決める前に迷ったら、まず自分がどの業務に一番時間を取られているかを書き出してください。<strong>会計・請求書まわりならインボイス枠、サイバー攻撃対策を優先するならセキュリティ対策推進枠が候補になりやすい</strong>というのが、相談の現場でよく使う目安です。</p>
@@ -384,26 +384,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
