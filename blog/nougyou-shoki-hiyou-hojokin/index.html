@@ -27,7 +27,7 @@
       "inLanguage": "ja",
       "mainEntityOfPage": "https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou-hojokin/",
       "about": [],
-      "mentions": [{"@type": "Thing", "name": "gBizID", "sameAs": "https://gbiz-id.go.jp/"}],
+      "mentions": [{"@type": "Thing", "name": "ものづくり補助金", "sameAs": "https://portal.monodukuri-hojo.jp/"}, {"@type": "Thing", "name": "gBizID", "sameAs": "https://gbiz-id.go.jp/"}],
       "author": { "@type": "Person", "@id": "https://lp.7senses.co.jp/#author", "name": "原口 優", "jobTitle": "代表取締役", "url": "https://ai.7senses.co.jp/author/haraguchi/" },
       "publisher": { "@type": "Organization", "@id": "https://lp.7senses.co.jp/#org", "name": "セブンセンシズ株式会社" },
       "speakable": { "@type": "SpeakableSpecification", "cssSelector": [".summary", ".faq-sec"] } },
@@ -189,6 +189,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">農業の初期費用はいくらかかるのか</h2>
 <p><strong>就農1年目の営農費用は平均755万円で、うち561万円が機械・施設、194万円が種苗や肥料などの必要経費です。</strong>中央値は350万円で、半数の人はこの額以下で始めています。</p>
+<p>関連する内容として<a href="/blog/monozukuri-hojokin-nougyou-jirei/">精米ラインで売上2倍｜農業のものづくり補助金採択事例</a>も公開しています。</p>
 <p>数字の出どころは、全国新規就農相談センターの<a href="https://www.be-farmer.jp/research/statistics/" target="_blank" rel="noopener">新規就農者の就農実態に関する調査結果（令和3年度）</a>です。新規参入者2,355人を集計しています。</p>
 <p>同じ調査で、営農に充てた自己資金は平均281万円でした。費用との差は474万円あり、この差を補助金と融資で埋めるのが資金計画の中心です。生活面の自己資金は平均170万円、1年目の売上高は平均343万円でした。</p>
 <div class="definition-box"><span class="term">農業の初期費用とは</span>、就農1年目に必要な機械・施設の取得費と、種苗・肥料・燃料などの必要経費を合わせた営農面の費用です。農地の取得費や生活費は別に考えます。</div>
@@ -487,26 +488,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
