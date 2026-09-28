@@ -145,7 +145,7 @@ faq:
 
 人材育成と賃上げの土台を整えたら、次はITツール導入や設備投資を補助金で進める段階です。施工管理アプリの導入は[建設業の2024年問題をAI導入補助金でどう埋めるか](/blog/ai-hojokin-kensetsugyou-katsuyou/)、販路開拓は[小規模事業者持続化補助金2025](/blog/jizokuka-hojokin-kensetsugyou/)で解説しています。
 
-機械設備への投資規模が大きい場合は[ものづくり補助金｜建設業の採択事例3業種と上限9,000万円](/blog/monozukuri-hojokin-kensetsugyou-jirei/)、事業の再構築を伴う場合は[事業再構築補助金は建設業も対象](/blog/jigyou-saikouchiku-kensetsugyou-jirei/)も参考にしてください。助成金と補助金は対象経費が重複しなければ、同一年度での併用も可能です。
+機械設備への投資規模が大きい場合は[ものづくり補助金｜建設業の採択事例3業種と上限9,000万円](/blog/monozukuri-hojokin-kensetsugyou-jirei/)、事業の再構築を伴う場合は[事業再構築補助金は建設業も対象](/blog/jigyou-saikouchiku-biyoushitsu-jirei/)も参考にしてください。助成金と補助金は対象経費が重複しなければ、同一年度での併用も可能です。
 
 ただし、同じ従業員の人件費を複数の助成金で重複して申請することはできません。対象期間や対象者が重ならないよう、着手前に整理しておいてください。
 
