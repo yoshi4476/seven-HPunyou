@@ -189,7 +189,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p><strong>「AI開発補助金」は制度名ではなく、自社開発に使える複数制度をまとめた通称です。</strong>自社で独自のAIシステムや新サービスを開発する際に使える補助金をこう呼びますが、「AI導入補助金」と混同されがちなため、まずこの違いを整理します。</p>
 <p>関連する内容を先に押さえるなら、<a href="/blog/monozukuri-hojokin-biyoushitsu/">ものづくり補助金は美容室で使える？</a>が参考になります。</p>
 <p>関連する内容は、<a href="/blog/monozukuri-hojokin-nougyou-souko/">農業用倉庫に補助金は使える？</a>で解説しています。</p>
-<p>近い論点を<a href="/blog/it-hojokin-clinic/">クリニックのIT導入補助金</a>で扱っています。</p>
+<p>あわせて<a href="/blog/it-hojokin-clinic/">クリニックのIT導入補助金</a>もご覧ください。</p>
 <div class="definition-box"><span class="term">AI開発とAI導入の違いとは</span>、既に完成しているAIツール・ソフトウェアを自社の業務に取り入れるのが「導入」、自社専用のAIエンジンや新しいAIサービスをゼロから作るのが「開発」です。補助金の世界ではこの2つで対象制度がはっきり分かれます。</div>
 
 <p>私たちは登録支援事業者としてAI導入補助金の申請支援に携わっています。相談の現場では「自社でAIを開発したいので補助金を教えてほしい」という問い合わせを受けることが増えています。<strong>その多くは既製ツール向けのAI導入補助金では対象外で、別の制度を案内し直すケースです。</strong></p>
@@ -409,26 +409,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>

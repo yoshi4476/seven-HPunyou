@@ -51,7 +51,7 @@ faq:
 
 関連する内容は、[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)で解説しています。
 
-近い論点を[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)で扱っています。
+あわせて[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)もご覧ください。
 
 <div class="definition-box"><span class="term">AI開発とAI導入の違いとは</span>、既に完成しているAIツール・ソフトウェアを自社の業務に取り入れるのが「導入」、自社専用のAIエンジンや新しいAIサービスをゼロから作るのが「開発」です。補助金の世界ではこの2つで対象制度がはっきり分かれます。</div>
 
