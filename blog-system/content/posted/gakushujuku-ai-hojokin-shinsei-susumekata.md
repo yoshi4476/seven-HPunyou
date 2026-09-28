@@ -118,6 +118,12 @@ faq:
 
 **申請する公募回は、自塾の閑散期に合わせて選ぶと、後の導入作業がしやすくなります。**AI導入補助金は年に複数回の公募があり、どの回に申請するかは事業者側で選べます。
 
+あわせて[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)もご覧ください。
+
+関連する内容として[飲食店のAI導入補助金｜落ちる理由と現場の6つの原因](/blog/inshokuten-ai-hojokin-ochiru-riyu/)も公開しています。
+
+あわせて[飲食店のAI導入補助金](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)もご覧ください。
+
 <a href="https://hansokunodaigaku.com/keiei_post/9336/" target="_blank" rel="noopener">学習塾業界のトレンドを扱う業界メディアの記事</a>によると、<strong>学習塾の繁忙期は春期講習（3〜4月）・夏期講習（7〜8月）・冬期講習（12〜1月）に加えて定期テストや入試シーズンで、閑散期は秋（9〜11月）とされています。</strong>飲食店の「ニッパチ」とは逆に、学習塾は長期休みのない秋が最も動きやすい時期です。
 
 <a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の公式スケジュール</a>によると、<strong>2026年9月時点で通常枠・インボイス枠・セキュリティ対策推進枠の1〜5次締切分は2026年9月29日17時、交付決定は同年11月9日予定</strong>と案内されています。この回で交付決定を受ければ、導入作業を秋の閑散期のうちに終えて冬期講習前に運用を安定させやすくなります。
