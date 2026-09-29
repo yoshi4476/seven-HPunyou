@@ -67,11 +67,6 @@ faq:
 
 **対象ツールは、予約管理・POSレジ会計・電子カルテ顧客管理の3分野に整理でき、優先順位をつけやすくなります。**電話対応と会計処理のどちらがボトルネックかによって、優先して導入すべきツールが変わります。
 
-<<<<<<< Updated upstream
-近い論点を[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)で扱っています。
-
-=======
->>>>>>> Stashed changes
 <figure><img src="/images/it-hojokin-biyoushitsu/tool-categories.png" alt="美容室で対象になるITツール3分野: 予約管理システム、POSレジ・会計ソフト、電子カルテ・顧客管理" loading="lazy"><figcaption>美容室で対象になるITツール3分野</figcaption></figure>
 
 <a href="https://carearc.co.jp/blog/4528/" target="_blank" rel="noopener">美容室向けIT導入補助金の活用法を整理した解説記事</a>では、予約管理・電子カルテ・顧客分析ツールが通常枠の対象ツール例として、POSレジや会計ソフトがインボイス類型の対象ツール例として紹介されています。
