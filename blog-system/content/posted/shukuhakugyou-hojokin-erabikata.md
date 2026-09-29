@@ -59,11 +59,6 @@ faq:
 
 あわせて[精米ラインで売上2倍｜農業のものづくり補助金採択事例](/blog/monozukuri-hojokin-nougyou-jirei/)もご覧ください。
 
-<<<<<<< Updated upstream
-=======
-関連する内容として[AI導入補助金2026](/blog/ai-hojokin-clinic-2026-schedule/)も公開しています。
-
->>>>>>> Stashed changes
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の通常枠ページ</a>によると、この制度はソフトウェア・クラウドサービスの導入費用を補助します。宿泊業ならPMSや予約システムが対象になりやすい分野です。
 
 <a href="https://shinjigyou-monodukuri.smrj.go.jp/" target="_blank" rel="noopener">新事業進出・ものづくり商業サービス補助金の公式サイト</a>では、機械装置の導入から事業転換まで幅広い投資を対象にしています。厨房設備の更新のような小さめの投資から、客室のコンセプトを変える大規模投資まで、1つの制度の中に複数の枠があります。
