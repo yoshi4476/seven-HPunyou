@@ -38,8 +38,6 @@ faq:
 
 近い論点を[農業の補助金を世界と比較｜日本の3つの違いと使い方](/blog/nougyou-hojokin-sekai-hikaku/)で扱っています。
 
-対象になる範囲は[AI導入補助金で会計ソフトは対象？](/blog/ai-hojokin-kaikeisoft-taisho/)でも扱っています。
-
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
 
 
