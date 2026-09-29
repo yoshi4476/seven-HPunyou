@@ -57,11 +57,16 @@ def thumb_src(a):
         return f"/images/blog/{a['slug']}/thumbnail.webp", 1200, 630
     return thumb(a)
 
+def _alt(s):
+    import html
+    return html.escape(str(s), quote=True)
+
+
 def card(a):
     src, w, h = thumb_src(a)
     dj = a["date"].replace("-", ".")
     return f'''    <a class="post" href="/blog/{a["slug"]}/">
-      <div class="th"><img src="{src}" alt="" width="{w}" height="{h}" loading="lazy"></div>
+      <div class="th"><img src="{src}" alt="{_alt(a["title"])}のアイキャッチ画像" width="{w}" height="{h}" loading="lazy"></div>
       <div class="pb"><p class="cat">{a["cat"]}</p><h2>{a["title"]}</h2>
       <p>{a["desc"][:52]}…</p>
       <time datetime="{a["date"]}">{dj}</time></div>
@@ -180,6 +185,10 @@ def filters_html(current):
     return "\n    ".join(out)
 
 def page(url_path, title, desc, h1, lead, cards, current_cat, crumb_leaf, hub_html="", jsonld_extra=""):
+    # 一覧・業種ページの説明が短く（35〜44字）、検索結果と共有で何のページか伝わらなかった
+    # （サイト監査 2026-09-29）。運営者と中身の種類だけを添える（ページに無い事実は足さない）
+    if len(desc) < 90:
+        desc = desc.rstrip("。") + "。セブンセンシズ株式会社が、補助金の申請支援の現場で確かめた内容をもとにまとめています。"
     return f'''<!DOCTYPE html>
 <html lang="ja">
 <head>
