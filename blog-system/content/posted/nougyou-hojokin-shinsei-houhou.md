@@ -80,6 +80,8 @@ faq:
 
 **申請の5ステップは、GビズID取得、制度選定、事業計画書作成、電子申請、交付決定後の発注という順で進みます。**どの制度を選んでも、この基本の流れは共通しています。
 
+関連する内容として[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)も公開しています。
+
 <figure><img src="/images/nougyou-hojokin-shinsei-houhou/flow-steps.png" alt="申請の5ステップ: GビズID取得、制度を選ぶ、事業計画書作成、電子申請、交付決定後に着手" loading="lazy"><figcaption>申請の5ステップ</figcaption></figure>
 
 <a href="https://gbiz-id.go.jp/top/" target="_blank" rel="noopener">デジタル庁のGビズID公式サイト</a>によれば、<strong>エントリー版はオンラインで即日取得できますが、プライム版は印鑑証明書の郵送が必要で取得に数日かかります。</strong>電子申請にはプライム版が必須の制度が多いため、<strong>申請期限の2週間以上前に取得手続きを始めるのが安全です。</strong>
@@ -131,8 +133,6 @@ faq:
 ## 農業の補助金申請でよくある失敗と対策
 
 **農業の補助金申請でよくある失敗は、GビズID取得の遅れ、系統出荷のみでの応募、交付決定前の発注の3つです。**いずれも準備段階で防げるミス。
-
-選ぶときの基準は[農業の補助金を世界と比較｜日本の3つの違いと使い方](/blog/nougyou-hojokin-sekai-hikaku/)で整理しています。
 
 GビズIDプライムの取得を申請直前に始めてしまい、印鑑証明書の郵送待ちで締切に間に合わないケースが少なくありません。
 
