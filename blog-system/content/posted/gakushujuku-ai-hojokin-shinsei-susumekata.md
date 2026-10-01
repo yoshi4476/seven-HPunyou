@@ -118,6 +118,8 @@ faq:
 
 **申請する公募回は、自塾の閑散期に合わせて選ぶと、後の導入作業がしやすくなります。**AI導入補助金は年に複数回の公募があり、どの回に申請するかは事業者側で選べます。
 
+関連する内容として[建設業がAI導入補助金の対象になる条件](/blog/osaka-kensetsugyou-denshishinsei/)も公開しています。
+
 あわせて[飲食店のAI導入補助金 対象要件](/blog/inshokuten-ai-hojokin-taisho-youken/)もご覧ください。
 
 関連する内容として[飲食店のAI導入補助金｜落ちる理由と現場の6つの原因](/blog/inshokuten-ai-hojokin-ochiru-riyu/)も公開しています。
