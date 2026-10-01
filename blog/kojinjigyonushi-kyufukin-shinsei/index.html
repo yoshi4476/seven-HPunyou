@@ -199,8 +199,8 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>助成金の中には、賃金引き上げに取り組む事業者向けの業務改善助成金のように、従業員を1人でも雇っていれば個人事業主も対象になる制度があります。従業員を雇わず1人で事業を営む場合は、対象になる助成金がほとんどないという点も押さえておいてください。</p>
 <h2 id="sec2">個人事業主が対象になる給付金・補助金・助成金の一覧</h2>
 <p><strong>個人事業主が実際に使える制度の中心は、IT導入補助金・小規模事業者持続化補助金・ものづくり補助金・事業再構築補助金の4つです。</strong>業種や導入したい内容によって選ぶ制度が変わります。</p>
-<p>あわせて<a href="/blog/monozukuri-hojokin-biyoushitsu/">ものづくり補助金は美容室で使える？</a>もご覧ください。</p>
-<p>関連する内容として<a href="/blog/nougyou-kikai-hojokin/">農業機械補助金は4制度</a>も公開しています。</p>
+<p>近い論点を<a href="/blog/monozukuri-hojokin-biyoushitsu/">ものづくり補助金は美容室・小売業で使える？</a>で扱っています。</p>
+<p>あわせて<a href="/blog/nougyou-kikai-hojokin/">農業機械補助金は4制度</a>もご覧ください。</p>
 <figure><img src="/images/kojinjigyonushi-kyufukin-shinsei/seido3.png" alt="個人事業主が対象になる主な補助金: IT導入補助金、小規模事業者持続化補助金、ものづくり補助金、事業再構築補助金"><figcaption>個人事業主が対象になる主な補助金</figcaption></figure>
 
 <div class="table-wrap"><table>
@@ -391,26 +391,6 @@ document.addEventListener('click', function (e) {
     page_path: location.pathname
   });
 }, true);
-</script>
-<!-- blog-cta:v1 -->
-<style>
-.bcta-mid{background:linear-gradient(135deg,rgba(217,179,106,.16),rgba(217,179,106,.05));border:1px solid var(--line2,#e6d3a3);border-radius:14px;padding:22px 22px 20px;margin:36px 0;text-align:center}
-.bcta-mid .t{font-weight:800;font-size:17px;line-height:1.7;margin:0 0 6px}
-.bcta-mid .d{font-size:13px;color:var(--muted,#5b6472);margin:0 0 14px;line-height:1.8}
-.bcta-mid a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 26px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-.blog-sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(253,252,249,.96);box-shadow:0 -8px 24px -12px rgba(19,36,69,.35);transform:translateY(110%);transition:transform .3s ease}
-.blog-sticky.on{transform:none}
-.blog-sticky a{display:block;text-align:center;min-height:48px;line-height:48px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;font-weight:700;font-size:14px;text-decoration:none}
-@media (min-width:761px){.blog-sticky{display:none}}
-@media (prefers-reduced-motion:reduce){.blog-sticky{transition:none}}
-</style>
-<div class="blog-sticky" hidden><a class="cta" href="/#diagnosis" data-cta="blog_sticky_diag">3分の無料診断で「うちの場合」を確かめる</a></div>
-<script>
-(function(){var b=document.querySelector('.blog-sticky');if(!b||!matchMedia('(max-width:760px)').matches)return;b.hidden=false;
-var near=[];if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=near.indexOf(e.target);
-if(e.isIntersecting&&i<0)near.push(e.target);if(!e.isIntersecting&&i>=0)near.splice(i,1)});t()});
-document.querySelectorAll('.cta-box, footer').forEach(function(el){io.observe(el)})}
-function t(){b.classList.toggle('on',scrollY>innerHeight*1.5&&near.length===0)}addEventListener('scroll',t,{passive:true});t()})();
 </script>
 </body>
 </html>
