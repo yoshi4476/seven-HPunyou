@@ -49,11 +49,11 @@ faq:
 
 **事業再構築補助金は、2025年3月26日の第13回公募の締切をもって、新規の応募申請受付を終了しました。**個人事業主も法人も、これ以降は新規に申請できません。
 
+あわせて[会計ソフトの補助金｜IT導入補助金で個人事業主が使える2枠と補助率](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)もご覧ください。
+
 関連する内容については、[小規模事業者持続化補助金](/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/)にまとめています。
 
 関連する内容は[インボイス補助金は個人事業主いつまで？](/blog/invoice-hojokin-kojinjigyonushi-itsumade/)で整理しています。
-
-関連する内容は[事業再構築補助金は法人成り後も続く？](/blog/jigyou-saikouchiku-kojinjigyonushi-houjinnari/)で整理しています。
 
 <div class="definition-box"><span class="term">事業再構築補助金とは</span>、新型コロナウイルス対応の緊急経済対策として2021年に始まった制度で、事業転換や業態転換に伴う設備投資を支援するものでした。個人事業主も対象でしたが、要件がやや複雑で採択例は法人より少なめでした。</div>
 
