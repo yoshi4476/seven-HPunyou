@@ -66,8 +66,26 @@ def add_aicheck(html):
     return html.replace(SUPERVISOR_END, SUPERVISOR_END + "\n      " + AICHECK, 1)
 
 
+TABLE_CSS = "<style>.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}</style>"
+
+
+def wrap_tables(html):
+    """包まれていない表を .table-wrap で包む（6本が素の <table> のままだった）"""
+    return re.sub(r'(?<!<div class="table-wrap">)(?<!<div class="table-scroll">)<table\b(.*?)</table>',
+                  r'<div class="table-wrap"><table\1</table></div>', html, flags=re.S)
+
+
+def add_table_css(html):
+    """管制塔から届く記事は表を .table-wrap で包むが、雛形には .table-scroll しか無く、
+    スマホで表が画面からはみ出していた（2026-10-02 に118本で確認）"""
+    html = wrap_tables(html)
+    if 'class="table-wrap"' not in html or ".table-wrap{" in html:
+        return html
+    return html.replace("</head>", TABLE_CSS + "\n</head>", 1)
+
+
 def apply(html):
-    html = add_aicheck(html)
+    html = add_table_css(add_aicheck(html))
     if MARK in html:
         return html
     title = re.sub(r"<[^>]+>", "", (re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S) or [None, ""])[1])
