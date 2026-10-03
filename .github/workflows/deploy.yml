@@ -61,6 +61,9 @@ jobs:
           python3 tools/gen_blog_pages.py
           # 記事の途中の案内とスマホの固定ボタン（何度呼んでも二重に入らない）
           python3 tools/blog_cta.py
+          # 写真（記事の冒頭・一覧・業種ページ）と代替テキスト。一覧を作り直すと消えるので、作り直しの直後に必ず入れる。
+          # 本体は管制塔の scripts/subsidy_photos.py（配信のたびに tools/photos.py へ複製される）
+          python3 tools/photos.py .
 
       # 管制塔は記事HTMLを直接納品するため、Markdown描画時の重複ガードを通らない。
       # 公開後に気づけるよう、ここで既存記事との重複を検査してログに出す。
