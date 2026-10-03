@@ -46,7 +46,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [IT導入補助金2026｜個人事業主の変更点と申請枠](https://lp.7senses.co.jp/blog/it-hojokin-2026-kojinjigyonushi/): IT導入補助金（デジタル化・AI導入補助金2026）は個人事業主も対象です。2026年度の名称と申請枠、直近の採択状況、必要書類、GビズID
 - [農業の補助金を世界と比較｜日本の3つの違いと使い方](https://lp.7senses.co.jp/blog/nougyou-hojokin-sekai-hikaku/): 農業の補助金は、世界の直接支払い型と比べると、日本は審査を通過した事業者だけに支給する申請制です。EUの共通農業政策・アメリカの収入セーフテ
 - [小売業のAI導入補助金｜レジ・POSに使える経費は上限20万円](https://lp.7senses.co.jp/blog/kourigyou-ai-hojokin-keihi/): 小売業でレジやPOSを導入する場合、通常枠ではハードウェア単体が対象外になる点に注意が必要です。インボイス対応類型なら上限20万円まで補助さ
-- [学習塾はAI導入補助金の申請をどう進める？個人情報と繁忙期の壁【2026年】](https://lp.7senses.co.jp/blog/gakushujuku-ai-hojokin-shinsei-susumekata/): 学習塾がAI導入補助金を申請する進め方について、生徒・保護者の個人情報への配慮と、秋の閑散期を活かした導入計画の立て方を軸に2026年9月時
+- [学習塾はAI導入補助金の申請をどう進める？個人情報と繁忙期の壁【2026年】](https://lp.7senses.co.jp/blog/gakushujuku-ai-hojokin-shinsei-susumekata/): 学習塾がAI導入補助金を申請する進め方について、生徒・保護者の個人情報への配慮と、秋の閑散期を活かした導入計画の立て方を軸に2026年9月時点の情報で整理しました。
 - [宿泊業のAI導入補助金はいくら？契約額50万円が分かれ目](https://lp.7senses.co.jp/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/): 宿泊業のAI導入補助金の補助額を、個人経営の民宿・中規模ホテル・複数施設運営の3パターンで試算します。契約額50万円を境に変わる補助率と対象
 - [士業事務所のAI導入補助金｜提出書類の名義は3パターン](https://lp.7senses.co.jp/blog/shigyou-ai-hojokin-teishutsu-shorui/): 士業事務所がAI導入補助金で用意する提出書類は、士業法人で7点・個人開業で6点が目安です。社労士証票や税理士証票などの資格者証は提出不要で、
 - [介護事業所のAI導入補助金はいくら？2制度の上限を比較](https://lp.7senses.co.jp/blog/kaigo-ai-hojokin-hojogaku-meyasu/): 介護事業所のAI導入補助金の補助額の目安を、一般のAI導入補助金と介護テクノロジー導入支援事業（介護ICT補助金）の2制度で比較します。職員
