@@ -5,7 +5,7 @@ slug: ai-hojokin-shinsei-yarikata
 keyword: AI導入補助金 申請 やり方
 category: hojokin
 date: 2026-08-07
-modified: 2026-08-07
+modified: 2026-10-03
 depth: standard
 eyecatch: /images/ai-hojokin-shinsei-yarikata/eyecatch.png
 score: 95
@@ -48,8 +48,6 @@ faq:
 ## AI導入補助金の申請のやり方は5ステップです
 
 **AI導入補助金の申請は、準備・選定・交付申請・発注・実績報告という5つのステップで進みます。**制度の対象や補助率を知っていても、実際の手続き順序を誤ると審査や受給でつまずきます。
-
-実測の参考として、2025年4月〜2026年3月に申請を支援した30社のうち25社が採択されました（採択率83.3%）（出典: 自社の申請支援実績）。
 
 実際の進め方を先に押さえるなら、[農業の補助金の申請方法｜制度の選び方と5ステップ](/blog/nougyou-hojokin-shinsei-houhou/)が参考になります。
 
