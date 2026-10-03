@@ -38,6 +38,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [飲食店の補助金はいくら？上限額で見積もると外れる3つの落とし穴](https://lp.7senses.co.jp/blog/inshokuten-hojokin-ikura/): 飲食店が補助金でいくら受け取れるかは、上限額ではなく「税抜の投資額×補助率」で決まります。AI導入・持続化・ものづくりの3制度で、レジ・集客
+- [飲食店の助成金の条件｜22都道府県で業務改善助成金が締切済み](https://lp.7senses.co.jp/blog/inshokuten-joseikin-jouken/): 飲食店が助成金を受け取る条件を、雇用保険・着手前の手続き・時給の水準から整理。2026年度の業務改善助成金は、10月3日時点で47都道府県中
 - [農業の初期費用は平均755万円｜費目別に使える補助金4つ](https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou-hojokin/): 新規就農1年目の初期費用は平均755万円、中央値350万円です。機械・施設、生活費、運転資金、管理ソフトの費目ごとに使える補助金と融資、経営
 - [インボイス補助金は個人事業主いつまで？締切と税の特例期限](https://lp.7senses.co.jp/blog/invoice-hojokin-kojinjigyonushi-itsumade/): 個人事業主が使えるインボイス枠の締切は、2026年9月時点で公表済みの最終が9月29日17時です。6次以降は未公表。2割特例・3割特例など税
 - [自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方](https://lp.7senses.co.jp/blog/jidousha-seibi-hojokin-consul/): 自動車整備工場が補助金コンサルに頼むべきかは、使う制度で決まります。AI導入補助金・持続化・ものづくり補助金ごとの外部支援の要否と、公募要領
@@ -190,13 +191,13 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 - [クリニック・医療機関の補助金・AI導入](https://lp.7senses.co.jp/industry/clinic/): 6本
 - [美容室・サロンの補助金・AI導入](https://lp.7senses.co.jp/industry/biyou/): 14本
-- [飲食店の補助金・AI導入](https://lp.7senses.co.jp/industry/inshokuten/): 8本
+- [飲食店の補助金・AI導入](https://lp.7senses.co.jp/industry/inshokuten/): 9本
 - [建設業の補助金・AI導入](https://lp.7senses.co.jp/industry/kensetsu/): 14本
 - [宿泊業の補助金・AI導入](https://lp.7senses.co.jp/industry/shukuhaku/): 5本
 - [農業の補助金・AI導入](https://lp.7senses.co.jp/industry/nougyou/): 7本
 - [クリニック・医療機関のよくある質問](https://lp.7senses.co.jp/industry/clinic/faq/): 39問
 - [美容室・サロンのよくある質問](https://lp.7senses.co.jp/industry/biyou/faq/): 60問
-- [飲食店のよくある質問](https://lp.7senses.co.jp/industry/inshokuten/faq/): 53問
+- [飲食店のよくある質問](https://lp.7senses.co.jp/industry/inshokuten/faq/): 59問
 - [建設業のよくある質問](https://lp.7senses.co.jp/industry/kensetsu/faq/): 60問
 - [宿泊業のよくある質問](https://lp.7senses.co.jp/industry/shukuhaku/faq/): 38問
 - [農業のよくある質問](https://lp.7senses.co.jp/industry/nougyou/faq/): 44問

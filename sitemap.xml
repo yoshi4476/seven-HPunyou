@@ -57,6 +57,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/inshokuten-joseikin-jouken/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou-hojokin/</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.7</priority>
@@ -858,7 +863,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/sonota/</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <priority>0.6</priority>
   </url>
 </urlset>
