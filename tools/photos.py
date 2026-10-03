@@ -51,7 +51,9 @@ DARK = {
     "youkou/index.html": "/assets/img/documents.webp",
 }
 # 業種ページ → 写真の棚の鍵
-INDUSTRY = {"clinic": "clinic", "biyou": "salon", "inshokuten": "inshoku"}
+INDUSTRY = {"clinic": "clinic", "biyou": "salon", "inshokuten": "inshoku", "kensetsu": "kensetsu", "shukuhaku": "hotel", "nougyou": "nougyou"}
+# 制度別のまとめページ → 写真の棚の鍵
+SEIDO = {"ai-hojokin": "subsidy", "monozukuri": "seizou", "jizokuka": "kouri", "sonota": "subsidy-docs"}
 
 
 def _mark(html, key, block):
@@ -118,7 +120,13 @@ def decorate(repo: Path, rel: str, html: str) -> str:
         if src:
             html = _insert_after(html, r'<p class="lead">.*?</p>', "band",
                                  f'<figure class="ph-band">{img(src, "この業種の現場のイメージ", eager=True)}<figcaption>※ 写真はイメージです</figcaption></figure>')
-    if rel in ("blog/index.html", "industry/index.html"):
+    m = re.match(r"seido/([a-z-]+)/index\.html$", rel)
+    if m and m.group(1) in SEIDO:
+        src = _shelf(repo, SEIDO[m.group(1)], m.group(1))
+        if src:
+            html = _insert_after(html, r'<p class="lead">.*?</p>', "band",
+                                 f'<figure class="ph-band">{img(src, "この制度を使う場面のイメージ", eager=True)}<figcaption>※ 写真はイメージです</figcaption></figure>')
+    if rel in ("blog/index.html", "industry/index.html", "seido/index.html"):
         html = _insert_after(html, r'<p class="lead">.*?</p>', "band",
                              f'<figure class="ph-band">{img("/assets/img/meeting-jp.webp", "補助金の申請を打ち合わせる様子のイメージ", eager=True)}<figcaption>※ 写真はイメージです</figcaption></figure>')
     m = re.match(r"blog/([a-z0-9-]+)/index\.html$", rel)
@@ -179,6 +187,7 @@ def run(repo: Path):
     pages = [repo / "index.html", repo / "industry" / "index.html", repo / "blog" / "index.html"]
     pages += [repo / k for k in DARK]
     pages += list((repo / "industry").glob("*/index.html")) + list((repo / "blog").glob("*/index.html"))
+    pages += [repo / "seido" / "index.html"] + list((repo / "seido").glob("*/index.html"))
     n = sum(decorate_file(repo, p) for p in pages if p.is_file())
     print(f"SUBSIDY_PHOTOS={n}")
 

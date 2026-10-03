@@ -188,6 +188,12 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [クリニック・医療機関の補助金・AI導入](https://lp.7senses.co.jp/industry/clinic/): 6本
 - [美容室・サロンの補助金・AI導入](https://lp.7senses.co.jp/industry/biyou/): 14本
 - [飲食店の補助金・AI導入](https://lp.7senses.co.jp/industry/inshokuten/): 7本
+- [建設業の補助金・AI導入](https://lp.7senses.co.jp/industry/kensetsu/): 14本
+- [宿泊業の補助金・AI導入](https://lp.7senses.co.jp/industry/shukuhaku/): 5本
+- [農業の補助金・AI導入](https://lp.7senses.co.jp/industry/nougyou/): 7本
 - [クリニック・医療機関のよくある質問](https://lp.7senses.co.jp/industry/clinic/faq/): 39問
 - [美容室・サロンのよくある質問](https://lp.7senses.co.jp/industry/biyou/faq/): 60問
 - [飲食店のよくある質問](https://lp.7senses.co.jp/industry/inshokuten/faq/): 47問
+- [建設業のよくある質問](https://lp.7senses.co.jp/industry/kensetsu/faq/): 60問
+- [宿泊業のよくある質問](https://lp.7senses.co.jp/industry/shukuhaku/faq/): 38問
+- [農業のよくある質問](https://lp.7senses.co.jp/industry/nougyou/faq/): 44問

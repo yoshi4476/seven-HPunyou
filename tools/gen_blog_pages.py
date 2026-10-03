@@ -147,6 +147,7 @@ SIDEBAR = '''<aside class="side">
     <ul>
       <li><a href="/blog/category/hojokin/">補助金の記事一覧</a></li>
       <li><a href="/industry/">業種から探す</a></li>
+      <li><a href="/seido/">制度から探す</a></li>
     </ul>
   </div>
   <div class="sbox">
@@ -397,6 +398,59 @@ if IND_FILE.is_file():
             faq_html), encoding="utf-8")
         print(f"生成: industry/{ind['slug']}/faq/index.html ({len(fq)}問)")
 
+# ---- 制度から探す (/seido/<slug>/) ----
+# 143本が「補助金」1カテゴリに並ぶだけだったので、制度ごとに束ねる（記事のURLは変えない）。
+# 「まず読む1本」を上に置き、残りを新しい順に並べる。事業再構築補助金は受付が終わった制度なので束ねない
+SEIDO = [
+    ("ai-hojokin", "AI導入補助金（IT導入補助金）",
+     r"AI導入補助金|IT導入補助金|ベンダー|GビズID|みらデジ|セキュリティアクション|会計ソフト|受発注",
+     r"申請のやり方|とは|ガイド|いくら",
+     "AI・ITツールの導入費用を国が補助する制度です。対象ツール・申請の手順・必要書類・採択後の実績報告まで、申請の流れに沿って記事をまとめています。"),
+    ("monozukuri", "新事業進出・ものづくり商業サービス補助金（旧ものづくり補助金）", r"ものづくり",
+     r"中小企業の定義|1人|個人事業主",
+     "ものづくり補助金は、2026年度から新事業進出補助金と統合され「新事業進出・ものづくり商業サービス補助金」になりました。"
+     "ここに並ぶ記事は統合前の制度で書いたもので、業種ごとの使い方や要件の考え方の参考としてお読みください。最新の公募要領もあわせてご確認ください。"),
+    ("jizokuka", "小規模事業者持続化補助金", r"持続化", r"中小企業|対象|個人事業主",
+     "販路開拓や業務効率化の取り組みを支援する、小規模事業者向けの補助金です。業種ごとの書き方と採択の考え方をまとめています。"),
+    ("sonota", "助成金・電子申請・そのほかの制度", r"助成金|省力化|成長加速化|給付金|電子申請|開業届|創業|インボイス",
+     r"助成金とは|違い",
+     "補助金と助成金の違い、省力化投資補助金などの制度、申請に使う電子申請の手続きをまとめています。"),
+]
+seido_pairs = []
+for slug, name, rx, pillar_rx, lead_txt in SEIDO:
+    sa = [a for a in arts if re.search(rx, a["title"])]
+    if len(sa) < 3:
+        continue
+    pillar = next((a for a in sa if re.search(pillar_rx, a["title"])), sa[0])
+    rest = [a for a in sa if a is not pillar]
+    seido_pairs.append((slug, name, sa))
+    out = ROOT / "seido" / slug
+    out.mkdir(parents=True, exist_ok=True)
+    hub_html = (f'  <div class="hub">{lead_txt}</div>\n'
+                f'  <div class="hub"><b>まず読む1本:</b> <a href="/blog/{pillar["slug"]}/">{pillar["title"]}</a></div>')
+    jsonld_extra = f',\n      {{ "@type": "ListItem", "position": 3, "name": "{name}" }}'
+    (out / "index.html").write_text(page(
+        f"/seido/{slug}/",
+        f"{name.split('（')[0]}の記事({len(sa)}本)|セブンセンシズ株式会社",
+        f"{name}について、申請の実務から採択後の手続きまで書いた記事{len(sa)}本の一覧。",
+        f"<span style='color:#7a5b14'>{name}</span>",
+        f"{name}について書いた記事を{len(sa)}本まとめました。まず読む1本から、知りたい論点の記事へ進めます。",
+        "\n".join(card(a) for a in [pillar] + rest), "all",
+        f'<a href="/seido/">制度から探す</a> › {name}', hub_html, jsonld_extra),
+        encoding="utf-8")
+    print(f"生成: seido/{slug}/index.html ({len(sa)}本)")
+if seido_pairs:
+    lis = "".join(f'<li><a class="filter" href="/seido/{s}/">{n}（{len(v)}本）</a></li>' for s, n, v in seido_pairs)
+    (ROOT / "seido").mkdir(parents=True, exist_ok=True)
+    (ROOT / "seido" / "index.html").write_text(page(
+        "/seido/", f"制度から探す({len(seido_pairs)}制度)|AI導入補助金ブログ|セブンセンシズ株式会社",
+        "補助金・助成金の記事を制度ごとにまとめた入口。同じ制度の記事を横断して読めます。",
+        "制度から探す", "補助金・助成金の制度ごとに、記事をまとめています。",
+        "", "all", "制度から探す",
+        f'<div class="hub">事業再構築補助金は新規の受付が終わったため、ここには並べていません（採択後の手続きの記事はブログ一覧から読めます）。</div>\n'
+        f'  <ul class="filters" style="list-style:none">{lis}</ul>'), encoding="utf-8")
+    print(f"生成: seido/index.html ({len(seido_pairs)}制度)")
+
 # ---- sitemap.xml ----
 STATIC = [("/", "2026-07-21", "1.0"), ("/blog/", "2026-07-21", "0.8"),
           ("/service/hojokin/", "2026-07-21", "0.9"), ("/service/dev/", "2026-07-21", "0.8"),
@@ -418,6 +472,10 @@ if hub_pairs:
         urls.append(f"  <url>\n    <loc>{DOMAIN}/industry/{i['slug']}/</loc>\n    <lastmod>{v[0]['date']}</lastmod>\n    <priority>0.6</priority>\n  </url>")
         if i["slug"] in hub_faqs:
             urls.append(f"  <url>\n    <loc>{DOMAIN}/industry/{i['slug']}/faq/</loc>\n    <lastmod>{v[0]['date']}</lastmod>\n    <priority>0.6</priority>\n  </url>")
+if seido_pairs:
+    urls.append(f"  <url>\n    <loc>{DOMAIN}/seido/</loc>\n    <lastmod>{arts[0]['date']}</lastmod>\n    <priority>0.6</priority>\n  </url>")
+    for s, _, v in seido_pairs:
+        urls.append(f"  <url>\n    <loc>{DOMAIN}/seido/{s}/</loc>\n    <lastmod>{v[0]['date']}</lastmod>\n    <priority>0.6</priority>\n  </url>")
 # ---- llms.txt の記事セクション自動更新 (AIO: AIクローラーに全記事を提示) ----
 llms_path = ROOT / "llms.txt"
 if llms_path.is_file():
