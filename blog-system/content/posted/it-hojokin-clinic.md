@@ -53,6 +53,8 @@ faq:
 
 選ぶときの基準は[IT導入補助金のおすすめの選び方](/blog/it-hojokin-osusume/)で整理しています。
 
+関連する内容については、[クリニックのAI導入補助金で使える経費](/blog/ai-hojokin-clinic-keihi/)にまとめています。
+
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助します。</div>
 
 <a href="https://www.asasimple.jp/it-hojyokin-2026/" target="_blank" rel="noopener">IT導入補助金の変更点を整理した解説記事</a>によると、<strong>2026年度から「IT導入補助金」は正式に「デジタル化・AI導入補助金」へ改称されました</strong>。最大450万円という上限額の骨格は変わっていません。
