@@ -54,6 +54,32 @@ for d in PUBLIC_DIRS:
         shutil.copy2(f, dest)
         copied += 1
 
+
+def verify(dist=DIST):
+    """sitemap に載せたのに配信物に無いページと、日本語Webフォントの再混入を数える。
+    2026-10-03: /seido/ を作って sitemap に載せたが PUBLIC_DIRS に足し忘れ、本番は404だった。
+    2026-10 前半: ブログの生成テンプレートが Google Fonts を読み、モバイルの LCP が13秒だった"""
+    bad = []
+    sm = dist / "sitemap.xml"
+    if sm.is_file():
+        for loc in re.findall(r"<loc>https?://[^/<]+(/[^<]*)</loc>", sm.read_text(encoding="utf-8")):
+            rel = loc.strip("/")
+            cands = [dist / rel / "index.html", dist / f"{rel}.html", dist / rel] if rel else [dist / "index.html"]
+            if not any(c.is_file() for c in cands):
+                bad.append(f"404になる: {loc}")
+    for f in dist.rglob("*.html"):
+        if "fonts.googleapis.com" in f.read_text(encoding="utf-8", errors="ignore"):
+            bad.append(f"Google Fonts を読んでいる: {f.relative_to(dist)}")
+    return bad
+
+
+problems = verify()
+if problems:
+    print(f"配信を止めます（{len(problems)}件）:")
+    for p in problems[:30]:
+        print("  " + p)
+    sys.exit(1)
+
 total_mb = sum(f.stat().st_size for f in DIST.rglob("*") if f.is_file()) / 1024 / 1024
 print(f"dist/ 生成完了: {copied} ファイル / {total_mb:.1f} MB")
 print("除外済み: blog-system/ automation/ 資料/ 戦略設計書.md README.md _template.html 元jpg")
