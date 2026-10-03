@@ -94,7 +94,7 @@ def decorate(repo: Path, rel: str, html: str) -> str:
     else:
         html = html.replace("</head>", CSS + "\n</head>", 1)
     img = lambda src, alt="", cls="", eager=False: (
-        f'<img src="{src}" alt="{alt}" width="1600" height="900" loading="{"eager" if eager else "lazy"}" decoding="async"{(" class=" + chr(34) + cls + chr(34)) if cls else ""}>')
+        f'<img src="{src}" alt="{alt}" width="1600" height="900" loading="{"eager" if eager else "lazy"}"{' fetchpriority="high"' if eager else ""} decoding="async"{(" class=" + chr(34) + cls + chr(34)) if cls else ""}>')
 
     if rel in DARK:
         html = _insert_after(html, r'<div class="hero">', "hero",
@@ -117,10 +117,10 @@ def decorate(repo: Path, rel: str, html: str) -> str:
         src = _shelf(repo, INDUSTRY[m.group(1)], m.group(1))
         if src:
             html = _insert_after(html, r'<p class="lead">.*?</p>', "band",
-                                 f'<figure class="ph-band">{img(src, "この業種の現場のイメージ")}<figcaption>※ 写真はイメージです</figcaption></figure>')
+                                 f'<figure class="ph-band">{img(src, "この業種の現場のイメージ", eager=True)}<figcaption>※ 写真はイメージです</figcaption></figure>')
     if rel in ("blog/index.html", "industry/index.html"):
         html = _insert_after(html, r'<p class="lead">.*?</p>', "band",
-                             f'<figure class="ph-band">{img("/assets/img/meeting-jp.webp", "補助金の申請を打ち合わせる様子のイメージ")}<figcaption>※ 写真はイメージです</figcaption></figure>')
+                             f'<figure class="ph-band">{img("/assets/img/meeting-jp.webp", "補助金の申請を打ち合わせる様子のイメージ", eager=True)}<figcaption>※ 写真はイメージです</figcaption></figure>')
     m = re.match(r"blog/([a-z0-9-]+)/index\.html$", rel)
     if m and (repo / "images" / "blog" / m.group(1) / "thumbnail.webp").is_file():
         html = _insert_after(html, r'<div class="meta">.*?</div>', "eye",
