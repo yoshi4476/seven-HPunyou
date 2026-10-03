@@ -5,7 +5,7 @@ slug: ai-hojokin-shinsei-shippai-yokuaru
 keyword: AI導入補助金 申請 失敗 よくある
 category: hojokin
 date: 2026-08-03
-modified: 2026-08-03
+modified: 2026-10-03
 score: 92
 score_breakdown: {design: 17, seo: 19, editorial: 18, expert: 19, persona: 18, aio: 19}
 faq:
@@ -33,8 +33,6 @@ faq:
 ## AI導入補助金の申請でよくある失敗とは
 
 申請の失敗は、準備不足・書類不備・期限管理ミスという3つの系統に大別できます。いずれも制度の難しさそのものより、時間配分のミスから生まれています。
-
-実測の参考として、2025年4月〜2026年3月に申請を支援した30社のうち25社が採択されました（採択率83.3%）（出典: 自社の申請支援実績）。
 
 関連する内容は[AI導入補助金のみらデジ経営チェックは終了](/blog/ai-hojokin-miradigi-keieicheck/)で整理しています。
 
