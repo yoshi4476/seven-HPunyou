@@ -5,7 +5,7 @@ slug: inshokuten-ai-hojokin-shinsei-susumekata
 keyword: 飲食店 AI導入補助金の申請の進め方
 category: hojokin
 date: 2026-09-15
-modified: 2026-09-15
+modified: 2026-10-03
 depth: standard
 eyecatch: /images/inshokuten-ai-hojokin-shinsei-susumekata/eyecatch.png
 score: 95
@@ -48,8 +48,6 @@ faq:
 ## 飲食店がAI導入補助金を申請する流れは5つの局面です
 
 **申請の進め方は、ツール選定・事業者選び・準備と交付申請・交付決定待ち・導入と実績報告という5つの局面で進みます。**制度全体の手続きは[AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)で解説しましたが、この記事では飲食店の現場に絞って進め方を掘り下げます。
-
-実測の参考として、2025年4月〜2026年3月に申請を支援した30社のうち25社が採択されました（採択率83.3%）（出典: 自社の申請支援実績）。
 
 関連する内容は[学習塾のAI導入補助金の申請の進め方](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)で整理しています。
 
