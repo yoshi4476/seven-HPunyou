@@ -1,13 +1,10 @@
 # =============================================================
-# 記事の受け入れ + 公開
+# 公開（Cloudflare Pages へ配信するだけ）
 #
-# 役割は2つ:
-#   1. 自動化管制塔 (SS-AIO-LP) が blog-system/content/posted/ へ納品した Markdown を
-#      HTML化し、一覧・カテゴリ・sitemap・llms.txt を再生成してコミットする
-#   2. リポジトリの内容を Cloudflare Pages へ公開する
-#
-# 記事の生成・品質審査・画像生成は管制塔側が担当する (このリポジトリでは行わない)。
-# 手動実行 (Run workflow) でも同じ処理を実行できる。
+# 記事・一覧・制度別・業種別のページ、記事途中の案内、写真は、すべて自動化管制塔
+# (SS-AIO-LP の scripts/publish.py) が作って届ける。このリポジトリでは生成しない。
+# 2026-10-03 まではこのリポジトリの tools/ と blog-system/ でも生成しており、
+# 2つの仕組みが同じページを書き換えて食い違ったため、管制塔に一本化した。
 # =============================================================
 name: 記事の受け入れと公開
 
@@ -15,21 +12,15 @@ on:
   push:
     branches: [master]
     paths-ignore:            # 配信物に影響しない変更ではデプロイしない
-      - 'blog-system/logs/**'
-      - 'blog-system/data/**'
       - 'automation/**'
       - 'reports/**'
       - 'README.md'
       - '運用手順.md'
       - '.github/workflows/monthly-report.yml'
-  # 取りこぼしの保険。pushをきっかけにした実行が失敗・スキップされても、
-  # 2時間ごとの点検で未公開の納品記事を拾って公開する
-  schedule:
-    - cron: '15 */2 * * *'
   workflow_dispatch:
 
 permissions:
-  contents: write            # 生成したHTMLをコミットするため
+  contents: read
 
 concurrency:
   group: cloudflare-deploy   # 同時デプロイによるAPIレート制限を避けるため直列化
@@ -48,50 +39,9 @@ jobs:
       # git の衝突マーカーが原稿・ページに残っていたら公開しない（2026-09-29 に「<<<<<<< Updated upstream」が見出しとして公開された）
       - name: 衝突マーカーの検査
         run: |
-          if grep -rIl --exclude-dir=node_modules --exclude-dir=.git -e '<<<<<<< ' -e '>>>>>>> ' blog blog-system industry seido service index.html 2>/dev/null; then
+          if grep -rIl --exclude-dir=node_modules --exclude-dir=.git -e '<<<<<<< ' -e '>>>>>>> ' blog industry seido service index.html 2>/dev/null; then
             echo "::error::git の衝突マーカーが残っています（上のファイル）。解いてから公開してください"
             exit 1
-          fi
-
-      # 管制塔から納品された Markdown を記事HTMLへ変換し、一覧・sitemap・llms.txt を再生成
-      - name: 記事HTMLの生成・一覧の再生成
-        run: |
-          python3 -m pip install --quiet markdown
-          python3 tools/render_blog.py
-          python3 tools/gen_blog_pages.py
-          # 記事の途中の案内とスマホの固定ボタン（何度呼んでも二重に入らない）
-          python3 tools/blog_cta.py
-          # 写真（記事の冒頭・一覧・業種ページ）と代替テキスト。一覧を作り直すと消えるので、作り直しの直後に必ず入れる。
-          # 本体は管制塔の scripts/subsidy_photos.py（配信のたびに tools/photos.py へ複製される）
-          python3 tools/photos.py .
-
-      # 管制塔は記事HTMLを直接納品するため、Markdown描画時の重複ガードを通らない。
-      # 公開後に気づけるよう、ここで既存記事との重複を検査してログに出す。
-      - name: 記事の重複検査
-        run: python3 tools/check_duplicates.py
-
-      - name: 生成物をコミット
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A blog images sitemap.xml llms.txt
-          if git diff --cached --quiet; then
-            echo "生成物に変更なし"
-          else
-            git commit -m "chore(blog): 納品記事のHTML生成 ($(TZ='Asia/Tokyo' date '+%Y-%m-%d %H:%M JST'))"
-            # 管制塔からの配信と同時刻になると push が拒否される。取り込むとき、コミット対象外の
-            # 生成物が作業ツリーに残っていると pull --rebase が拒否されるので --autostash で退避する。
-            # rebase が始まっていないのに --abort すると終了コード128で工程ごと落ちていた
-            pushed=0
-            for i in 1 2 3; do
-              if git push; then pushed=1; break; fi
-              echo "push拒否 → 取り込んで再試行 ($i/3)"
-              git pull --rebase --autostash -X ours origin master || { git rebase --abort 2>/dev/null || true; }
-            done
-            if [ "$pushed" != 1 ]; then
-              echo "::error::生成物を push できませんでした（次の点検の実行で再生成されます）"
-              exit 1
-            fi
           fi
 
       - name: 配信物を生成 (内部資料を除外)
