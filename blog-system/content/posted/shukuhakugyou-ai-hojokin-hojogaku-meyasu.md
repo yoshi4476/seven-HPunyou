@@ -5,7 +5,7 @@ slug: shukuhakugyou-ai-hojokin-hojogaku-meyasu
 keyword: 宿泊業 AI導入補助金の補助額の目安
 category: hojokin
 date: 2026-09-20
-modified: 2026-09-20
+modified: 2026-10-03
 depth: standard
 score: 95
 score_breakdown: {design: 19, seo: 19, editorial: 19, expert: 19, persona: 19, aio: 19}
@@ -177,7 +177,7 @@ faq:
 
 <div class="caution-box"><span class="box-title">注意: 交付決定前の発注は<span class="txt-red">対象外</span></span><br>交付決定の通知を受け取る前に発注・契約・支払いをすると、その分は補助対象から外れます。<span class="big">必ず交付決定通知を確認してから発注してください。</span></div>
 
-当社は2025年4月〜2026年3月に申請を支援した30社のうち25社が採択されました（採択率83.3%）。==交付決定前に発注してしまい対象外になった==という相談を、宿泊業以外の業種でも実際に見てきました。
+当社はAI導入補助金の登録支援事業者として申請を支援しています。==交付決定前に発注してしまい対象外になった==という相談を、宿泊業以外の業種でも実際に見てきました。
 
 実績報告では、契約書・発注書・請求書・支払いを証明する書類の提出が必要です。日付が交付決定通知より後になっているか、発注のたびに確認してください。
 
