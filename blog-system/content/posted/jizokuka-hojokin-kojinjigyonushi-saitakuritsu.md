@@ -5,7 +5,7 @@ slug: jizokuka-hojokin-kojinjigyonushi-saitakuritsu
 keyword: 小規模事業者持続化補助金 個人事業主 採択率
 category: hojokin
 date: 2026-08-12
-modified: 2026-08-12
+modified: 2026-10-03
 depth: standard
 score: 93
 score_breakdown: {design: 19, seo: 19, editorial: 18, expert: 18, persona: 19, aio: 19}
@@ -46,8 +46,6 @@ faq:
 ## 小規模事業者持続化補助金の採択率は47.2%（第19回実績）
 
 **第19回の採択率は47.2%で、申請16,576件のうち7,819件が採択されました。**数字だけを見ると厳しく感じますが、傾向を知れば対策は立てられます。
-
-実測の参考として、2025年4月〜2026年3月に申請を支援した30社のうち25社が採択されました（採択率83.3%）（出典: 自社の申請支援実績）。
 
 実際の進め方については、[小規模事業者持続化補助金｜美容室の書き方4ステップ](/blog/jizokuka-hojokin-biyoushitsu-kakikata/)にまとめています。
 
