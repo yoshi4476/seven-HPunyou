@@ -197,3 +197,4 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [建設業のよくある質問](https://lp.7senses.co.jp/industry/kensetsu/faq/): 60問
 - [宿泊業のよくある質問](https://lp.7senses.co.jp/industry/shukuhaku/faq/): 38問
 - [農業のよくある質問](https://lp.7senses.co.jp/industry/nougyou/faq/): 44問
+- [飲食店の補助金はいくら？上限額で見積もると外れる3つの落とし穴](https://lp.7senses.co.jp/blog/inshokuten-hojokin-ikura/): 飲食店が補助金でいくら受け取れるかは、上限額ではなく「税抜の投資額×補助率」で決まります。AI導入・持続化・ものづくりの3制度で、レジ・集客・厨房設備ごとの受取額と、消費税・後払い・下限額の落とし穴を2026年10月時点で整理しました。
