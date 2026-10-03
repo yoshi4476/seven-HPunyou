@@ -251,6 +251,29 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
+<style id="ph-css">
+.hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
+.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
+.hero>.wrap{position:relative;z-index:1}
+.hero-ph-light{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 38%,rgba(0,0,0,.9) 78%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 38%,rgba(0,0,0,.9) 78%,#000 100%)}
+.hero-ph-light img{width:100%;height:100%;object-fit:cover;object-position:80% 20%;opacity:.95}
+#hero>.wrap{position:relative;z-index:1}
+.ph-side{margin:0;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(19,36,69,.45)}
+.ph-side img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+@media(min-width:900px){
+ .ph-grid{display:grid !important;grid-template-columns:.9fr 1.1fr;column-gap:56px;align-items:start;text-align:left !important}
+ .ph-grid>*{grid-column:2}
+ .ph-grid>.ph-side{grid-column:1;grid-row:1/span 12;position:sticky;top:110px}
+ .ph-grid .fit-cta{justify-content:flex-start !important}
+ .ph-grid .kicker{justify-content:flex-start !important}
+ .ph-grid .micro{text-align:left !important}
+}
+@media(max-width:899px){.ph-side{margin:0 0 22px}.ph-side img{aspect-ratio:16/9}}
+@media(max-width:760px){.hero-ph img{opacity:.25}.hero-ph-light img{opacity:.2}}
+.ph-band{margin:18px 0 22px;border-radius:16px;overflow:hidden}
+.ph-band img{display:block;width:100%;aspect-ratio:21/9;object-fit:cover}
+.ph-band figcaption{font-size:11px;color:#8a8f99;margin-top:6px}
+</style>
 </head>
 <body>
 <header>
@@ -260,7 +283,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
   </div>
 </header>
 
-<div class="hero">
+<div class="hero"><!--ph:hero--><div class="hero-ph" aria-hidden="true"><img src="/assets/img/code.webp" alt="" width="1600" height="900" loading="eager" decoding="async"></div><!--/ph:hero-->
   <div class="wrap">
     <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/#services">サービス</a> › システム開発・AI導入支援</nav>
     <p class="kicker">SYSTEM DEVELOPMENT</p>
@@ -487,7 +510,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
     <p style="font-size:12px;color:var(--dim);margin-top:10px">※内容は支援実績をもとにしたモデルケースです。</p>
   </div></section>
 
-  <section id="svcform"><div class="wrap">
+  <section id="svcform"><div class="wrap ph-grid"><!--ph:form--><figure class="ph-side"><img src="/assets/img/contact-call.webp" alt="オンラインで相談に応じる担当者のイメージ" width="1600" height="900" loading="lazy" decoding="async"></figure><!--/ph:form-->
     <h2>無料相談・<span class="accent">お問い合わせ</span></h2>
     <p class="lead">システム開発・AI導入について、3営業日以内にメールでご返信します。営業電話はいたしません。</p>
     <div class="form-card">
