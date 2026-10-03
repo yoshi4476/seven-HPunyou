@@ -48,7 +48,7 @@ jobs:
       # git の衝突マーカーが原稿・ページに残っていたら公開しない（2026-09-29 に「<<<<<<< Updated upstream」が見出しとして公開された）
       - name: 衝突マーカーの検査
         run: |
-          if grep -rIl --exclude-dir=node_modules --exclude-dir=.git -e '<<<<<<< ' -e '>>>>>>> ' blog blog-system industry service index.html 2>/dev/null; then
+          if grep -rIl --exclude-dir=node_modules --exclude-dir=.git -e '<<<<<<< ' -e '>>>>>>> ' blog blog-system industry seido service index.html 2>/dev/null; then
             echo "::error::git の衝突マーカーが残っています（上のファイル）。解いてから公開してください"
             exit 1
           fi
