@@ -5,7 +5,7 @@ slug: ai-hojokin-ai-katsuyo-jirei
 keyword: AI導入補助金 AI 活用 事例
 category: hojokin
 date: 2026-08-04
-modified: 2026-08-04
+modified: 2026-10-03
 eyecatch: /images/ai-hojokin-ai-katsuyo-jirei/eyecatch.png
 score: 97
 score_breakdown: {design: 20, seo: 19, editorial: 18, expert: 20, persona: 19, aio: 20}
@@ -45,8 +45,6 @@ faq:
 ## AI導入補助金のAI活用事例とは
 
 **AI導入補助金のAI活用事例とは、通常枠のITツールにAI機能が組み込まれた具体的な導入例です。**専用の「AI枠」が独立してあるわけではありません。
-
-実測の参考として、2025年4月〜2026年3月に申請を支援した30社のうち25社が採択されました（採択率83.3%）（出典: 自社の申請支援実績）。
 
 対象になる範囲は、[クリーニング店のAI導入補助金 対象要件](/blog/kurininguten-ai-hojokin-taisho-youken/)で解説しています。
 
