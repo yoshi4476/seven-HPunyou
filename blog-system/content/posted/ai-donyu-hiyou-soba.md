@@ -5,7 +5,7 @@ slug: ai-donyu-hiyou-soba
 keyword: AI導入 費用 中小企業 相場
 category: hojokin
 date: 2026-08-03
-modified: 2026-08-03
+modified: 2026-10-03
 score: 92
 score_breakdown: {design: 17, seo: 19, editorial: 18, expert: 18, persona: 18, aio: 20}
 faq:
@@ -33,8 +33,6 @@ faq:
 ## AI導入の費用相場はいくらか
 
 AI導入の費用は、月額0円〜15万円、初期費用0円〜100万円の範囲に収まることが多いです。既存のAIツールを契約するだけなら数万円から始められますが、業務に合わせて開発するほど費用は跳ね上がります。
-
-実測の参考として、2020年3月の創業から2026年9月までに、のべ50社以上の導入を支援しました（出典: 自社実績）。
 
 <div class="definition-box"><span class="term">AI導入費用とは</span>、AIツールの契約料・初期設定費・運用にかかる費用の総称です。ChatGPTのような汎用AIを使うだけなら低コストですが、自社専用のチャットボットや画像認識AIを開発する場合は費用の桁が変わります。</div>
 
