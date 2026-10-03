@@ -8,7 +8,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 
 - [対象になるかの確認](https://lp.7senses.co.jp/#fit): 4条件(事業者区分・決算1期以上・税の未納なし・受給歴)で適否を確認
 - [サービス内容](https://lp.7senses.co.jp/#services): 補助金申請の完全伴走/システム開発・AI導入/AIO・MEOによる集客支援
-- [IT導入補助金 申請サポート](https://lp.7senses.co.jp/service/hojokin/): GビズID取得から実績報告まで伴走。支援50社+・採択通過率90%以上※
+- [IT導入補助金 申請サポート](https://lp.7senses.co.jp/service/hojokin/): GビズID取得から実績報告まで伴走。
 - [システム開発・AI導入](https://lp.7senses.co.jp/service/dev/): 業務システム開発と生成AI活用を補助金で実現。80万円〜(税別・参考価格)
 - [AIOコンサルティング](https://lp.7senses.co.jp/service/aio/): ChatGPT・Perplexity等のAI検索に引用される最適化。月15万円〜(税別・参考価格)
 - [MEOコンサルティング](https://lp.7senses.co.jp/service/meo/): Googleマップ上位表示で地域集客。大阪拠点・月5万円〜(税別・参考価格)
@@ -172,8 +172,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [AI導入補助金2026はいくらもらえる?上限350万円と対象を解説](https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru-2026/): AI導入補助金はいくらもらえるのか。上限額350万円(目安/公式の最新公募要領で要確認)と補助率、自己負担の計算、対象経費、後払いの仕組み、
 - [AI導入補助金2026年最新版｜対象ツールの定義と選び方ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool-2026/): AI導入補助金の対象ツールを解説する記事。対象となる経費区分やツール例、選定時の注意点、申請の流れを中小企業経営者向けに整理した。
 - [AI導入補助金とは?令和8年度の完全ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-guide-2026/): AI導入補助金とは、AIツール導入費用の一部を国が補助する制度の総称です。令和8年度の補助上限350万円・対象条件・準備8ステップ・必要書類
-- [IT導入補助金の採択率を上げる5つの実務ポイント](https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu/): IT導入補助金の採択率を上げる方法とは、事前準備・加点項目・数値計画・書類精度・伴走体制の5点を固める実務です。採択通過率90%以上(※当社
-- [GビズIDプライムの取得方法(最短2週間の逆算スケジュール)](https://lp.7senses.co.jp/blog/gbizid-shutoku/): GビズIDプライムとは、補助金申請に必須の行政サービス共通アカウントです。取得は最長2週間・印鑑証明書が必要。必要書類・逆算スケジュール・つ
+- [IT導入補助金の採択率を上げる5つの実務ポイント](https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu/): IT導入補助金の採択率を上げる方法とは、事前準備・加点項目・数値計画・書類精度・伴走体制の5点を固める実務です。取得は最長2週間・印鑑証明書が必要。必要書類・逆算スケジュール・つ
 - [IT導入補助金の申請代行・サポート費用の相場](https://lp.7senses.co.jp/blog/it-hojokin-daiko-hiyou/): IT導入補助金の申請代行費用の相場は着手金+成功報酬10〜20%が一般的(※当社調べ・2026年7月時点)。完全成功報酬型・定額型など料金体
 - [IT導入補助金のベンダー(支援事業者)の選び方](https://lp.7senses.co.jp/blog/it-hojokin-vendor/): IT導入補助金のベンダー(IT導入支援事業者)の選び方を解説。役割と仕組み、実績・料金の透明性など5つの基準、良いベンダー・避けるべきベンダ
 - [IT導入補助金の対象ツールと選び方(令和8年度)](https://lp.7senses.co.jp/blog/it-hojokin-taisho-tool/): IT導入補助金の対象ツールは、事前登録されたITツールのみです。会計・受発注・EC・AIチャットボット等のカテゴリ別対象例、対象外になりやす
