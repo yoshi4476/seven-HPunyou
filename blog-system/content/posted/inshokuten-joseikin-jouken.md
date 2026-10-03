@@ -188,7 +188,9 @@ AI導入補助金など経済産業省系の補助金とは、数え方が違う
 
 使わない判断もあります。**賃上げの原資が設備投資の効果で回らないなら、助成金のために時給を上げるのは勧めません。**上げた時給は翌年も続くからです。
 
-補助金でいくら受け取れるかは[飲食店の補助金はいくら？](/blog/inshokuten-hojokin-ikura/)、申請の手順は[飲食店のAI導入補助金｜申請の進め方5ステップ](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)にまとめています。助成金と補助金の違いは[中小企業の助成金とは？](/blog/chusho-kigyo-joseikin/)も参考になります。
+補助金でいくら受け取れるかは[飲食店の補助金はいくら？](/blog/inshokuten-hojokin-ikura/)、申請の手順は[飲食店のAI導入補助金｜申請の進め方5ステップ](/blog/inshokuten-ai-hojokin-shinsei-susumekata/)にまとめています。
+
+助成金と補助金の違いは[中小企業の助成金とは？](/blog/chusho-kigyo-joseikin/)も参考になります。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
