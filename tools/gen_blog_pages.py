@@ -75,7 +75,7 @@ def card(a):
 STYLE = '''
 :root{--bg:#fdfcf9;--bg2:#f4f1e9;--panel:#ffffff;--line:#e7e2d4;--line2:rgba(176,139,62,.45);
 --text:#212b3d;--muted:#5b6472;--dim:#5c6472;--gold:#775c1c;--gold-strong:#7a5b14;--gold-ink:#171104;
---serif:"Shippori Mincho B1",serif;--sans:"Noto Sans JP",sans-serif;--num:"Oswald","Noto Sans JP",sans-serif}
+--serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif;--sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;--num:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15.5px;line-height:1.9;-webkit-font-smoothing:antialiased}
 a{color:inherit}
@@ -206,9 +206,6 @@ def page(url_path, title, desc, h1, lead, cards, current_cat, crumb_leaf, hub_ht
 <meta property="og:image" content="{DOMAIN}/ogp.png">
 <meta property="og:locale" content="ja_JP">
 <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho+B1:wght@600;800&family=Oswald:wght@500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {{
   "@context": "https://schema.org",
@@ -222,12 +219,9 @@ def page(url_path, title, desc, h1, lead, cards, current_cat, crumb_leaf, hub_ht
 }}
 </script>
 <style>{STYLE}</style>
-<!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS"></script>
-<script>
-window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}
-gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
-</script>
+<!-- GA4。日本語Webフォントと計測タグを先に読むと、スマホで一覧の表示に10秒以上かかっていた（ほかのページと同じく描画の後に読む） -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
+window.addEventListener('load',function(){{setTimeout(function(){{var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);}},1200);}});</script>
 </head>
 <body>
 <header>
