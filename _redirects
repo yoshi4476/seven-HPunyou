@@ -55,3 +55,6 @@
 /blog/monozukuri-hojokin-kourigyou/ /blog/monozukuri-hojokin-biyoushitsu/ 301
 # 統合: inshokuten-ai-hojokin-ochiru-riyu に吸収（2026-09-28）
 /blog/oroshiurigyou-ai-hojokin-ochiru-riyu/ /blog/inshokuten-ai-hojokin-ochiru-riyu/ 301
+# 統合: 採点が基準を大きく下回った旧形式の記事を、読者の近い記事へ（2026-10-04）
+/blog/ai-hojokin-kourigyou-katsuyou/ /blog/kourigyou-ai-hojokin-keihi/ 301
+/blog/ai-hojokin-hitsuyo-shorui-kojin/ /blog/kojin-jigyonushi-ai-hojokin/ 301
