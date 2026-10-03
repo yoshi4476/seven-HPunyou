@@ -300,10 +300,19 @@ if IND_FILE.is_file():
     _min = int(_ind.get("_min_articles") or 5)
 
     def _detect(a):
-        key = (a["title"] + " " + a["desc"]).lower()
-        for ind in _ind.get("industries", []):           # 定義の順（具体的なものが先）
-            if any(w.lower() in key for w in ind.get("synonyms", [])):
-                return ind["slug"]
+        # 題名の中で最初に出てくる業種の語を、その記事の主題とする（無ければ説明文で同じように見る）。
+        # 定義の順だけで見ると「飲食店の…｜動物病院…」が「病院」でクリニックに入っていた。
+        # 同じ位置なら定義の順（具体的なものが先）
+        for text in (a["title"], a["desc"]):
+            key = text.lower()
+            best = None
+            for order, ind in enumerate(_ind.get("industries", [])):
+                for w in ind.get("synonyms", []):
+                    i = key.find(w.lower())
+                    if i >= 0 and (best is None or (i, order) < best[:2]):
+                        best = (i, order, ind["slug"])
+            if best:
+                return best[2]
         return None
 
     _g = {}
