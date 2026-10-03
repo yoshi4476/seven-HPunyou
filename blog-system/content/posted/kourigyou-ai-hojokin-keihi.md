@@ -5,7 +5,7 @@ slug: kourigyou-ai-hojokin-keihi
 keyword: 小売業 AI導入補助金で使える経費
 category: hojokin
 date: 2026-09-21
-modified: 2026-09-21
+modified: 2026-10-03
 depth: standard
 score: 95
 score_breakdown: {design: 19, seo: 19, editorial: 19, expert: 19, persona: 19, aio: 19}
@@ -171,7 +171,7 @@ POSと連携して在庫数を自動更新するシステムや、発注点を�
 
 登録支援事業者の探し方は[ベンダー登録とは？IT導入補助金の確認方法と2つのリスク](/blog/vendor-touroku-toha/)をご確認ください。
 
-当社は2020年3月の創業以来、大阪市東成区を拠点にAI導入補助金の申請支援に携わり、2025年4月〜2026年3月に支援した30社のうち25社が採択されました（採択率83.3%）。経費区分の切り分けは、制度そのものの難しさというより、枠の選び方と見積もりの依頼の仕方で差がつく部分だと感じています。
+当社は2020年3月の創業以来、大阪市東成区を拠点にAI導入補助金の申請支援に携わっています。経費区分の切り分けは、制度そのものの難しさというより、枠の選び方と見積もりの依頼の仕方で差がつく部分だと感じています。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
