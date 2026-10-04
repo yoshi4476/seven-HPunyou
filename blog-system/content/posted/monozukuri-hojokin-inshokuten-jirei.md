@@ -56,8 +56,6 @@ faq:
 
 あわせて[小規模事業者持続化補助金2025](/blog/jizokuka-hojokin-kensetsugyou/)もご覧ください。
 
-関連する内容は、[農業用倉庫に補助金は使える？](/blog/monozukuri-hojokin-nougyou-souko/)で解説しています。
-
 <div class="definition-box"><span class="term">ものづくり補助金とは</span>、中小企業が行う生産性向上のための設備投資を支援する国の補助金です。正式名称は「ものづくり・商業・サービス生産性向上促進補助金」で、飲食店を含むサービス業も対象に含まれます。</div>
 
 <a href="https://portal.monodukuri-hojo.jp/" target="_blank" rel="noopener">ものづくり・商業・サービス生産性向上促進補助金の公式サイト</a>でも、対象は特定の業種に限定されていないと明記されています。ただし対象経費の中心が機械装置費であるため、==「飲食店だから使えない制度」と思い込んでいる==経営者に何度も出会ってきました。
