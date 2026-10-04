@@ -60,8 +60,6 @@ faq:
 
 関連する内容として[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)も公開しています。
 
-関連する内容は[運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁](/blog/unsougyou-jissekihoukokusho/)で整理しています。
-
 当社は登録支援事業者として、採択後の実績報告まで一貫して支援しています。採択されて安心し、**実績報告の期限を過ぎて交付決定が取り消される**ケースが実際にあります。採択通知を受け取った時点で、報告期限を先に手帳へ書き込んでください。
 
 <figure><img src="/images/ai-hojokin-jissekihoukoku-kakikata/flow-steps.png" alt="実績報告提出までの4ステップ: 申請マイページへ入力、IT導入支援事業者が確認、事務局へ提出、交付額の確定・入金" loading="lazy"><figcaption>実績報告提出までの4ステップ</figcaption></figure>

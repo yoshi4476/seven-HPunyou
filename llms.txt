@@ -169,6 +169,10 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [個人事業主もAI導入補助金は使える?条件と手順](https://lp.7senses.co.jp/blog/ai-hojokin-kojin/): AI導入補助金は個人事業主も活用できます。実務はIT導入補助金等の活用が中心で、令和8年度の補助上限は350万円。対象条件・法人との違い・必
 - [IT導入補助金 令和8年度のスケジュールと逆算準備](https://lp.7senses.co.jp/blog/it-hojokin-schedule/): IT導入補助金のスケジュールは通年で複数回の締切が設定される傾向があります。申請から着金まで約2〜3ヶ月のタイムライン、GビズID最長2週間
 
+## 当社の調査
+
+- [AIに補助金のことを聞くと答えは割れる｜21問の調査（当社調べ）](https://lp.7senses.co.jp/research/ai-hojokin/): 当社が2026-10-04にChatGPT・Claudeへ補助金の問いを21問聞いた結果。4問でAIどうしの結論が分かれました。問いごとの答えと根拠、確かめ方をまとめています。
+
 ## 記事カテゴリ
 
 - [補助金の記事一覧](https://lp.7senses.co.jp/blog/category/hojokin/)
