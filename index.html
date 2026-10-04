@@ -1115,6 +1115,8 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
               <option>その他</option>
             </select><p class="err">ご相談内容を選択してください</p></div>
           <div class="field"><label for="f-message">詳細<b>任意</b></label><textarea id="f-message" name="message" placeholder="現在の集客状況やお困りごとをご記入ください"></textarea></div>
+          <div class="field"><label for="f-way">希望の連絡方法<b>任意</b></label><select id="f-way" name="contact_way"><option value="">指定なし</option><option>メール</option><option>電話</option><option>オンライン面談</option></select></div>
+          <div class="field"><label for="f-when">相談したい時期<b>任意</b></label><select id="f-when" name="contact_when"><option value="">指定なし</option><option>すぐに</option><option>1か月以内</option><option>3か月以内</option><option>情報収集中</option></select></div>
           <!-- bot対策: ハニーポット(人間には見えない) -->
           <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
           <input type="hidden" name="ts" id="f-ts">
@@ -1613,6 +1615,8 @@ form.addEventListener("submit",e=>{
     tel:document.getElementById("f-tel").value.trim(),
     topic:document.getElementById("f-topic").value,
     message:detail,
+    contact_way:document.getElementById("f-way").value,
+    contact_when:document.getElementById("f-when").value,
     agreed:true})
   .finally(()=>{
     track("form_submit",{form_type:"contact"});
