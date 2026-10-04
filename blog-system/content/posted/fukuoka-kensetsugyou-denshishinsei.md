@@ -141,8 +141,6 @@ faq:
 
 費用の目安については、[飲食店の補助金はいくら？](/blog/inshokuten-hojokin-ikura/)にまとめています。
 
-関連する内容を先に押さえるなら、[卸売業のAI導入補助金](/blog/inshokuten-ai-hojokin-ochiru-riyu/)が参考になります。
-
 費用の目安は[介護事業所のAI導入補助金はいくら？](/blog/kaigo-ai-hojokin-hojogaku-meyasu/)で整理しています。
 
 <div class="caution-box"><span class="box-title">注意: 入金までの期間</span><br>実績報告の審査が終わってから振り込まれます。<span class="txt-red">発注から入金まで半年以上あくことも珍しくありません。</span>その間は全額を自社で立て替える形になります。</div>
