@@ -57,6 +57,8 @@ faq:
 
 開業届の提出期限は、2026年1月1日以降に開業した分から「開業した年の所得税の確定申告期限まで」に延長されました。
 
+対象になる範囲は[個人事業主の助成金の申請条件](/blog/kojinjigyonushi-joseikin-shinsei-jouken/)でも扱っています。
+
 近い論点を[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)で扱っています。
 
 以前は「事業の開始等の事実があった日から1か月以内」という短い期限でしたが、確定申告期限まで余裕を持てるようになっています。<a href="https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/shinkoku/annai/04.htm" target="_blank" rel="noopener">国税庁「個人事業の開業届出・廃業届出等手続」</a>で最新の提出期限を確認してください。
