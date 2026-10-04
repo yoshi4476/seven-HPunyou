@@ -40,8 +40,6 @@ faq:
 
 関連する内容は[AI導入補助金のみらデジ経営チェックは終了](/blog/ai-hojokin-miradigi-keieicheck/)で整理しています。
 
-近い論点を[農業の補助金を世界と比較｜日本の3つの違いと使い方](/blog/nougyou-hojokin-sekai-hikaku/)で扱っています。
-
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
 
 
