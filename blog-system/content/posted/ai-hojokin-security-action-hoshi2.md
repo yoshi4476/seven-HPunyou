@@ -1,6 +1,6 @@
 ---
 title: AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ
-description: AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月時点の公式情報から解説します。
+description: AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月時点の公式情報から解説します。交付申請には一つ星でも二つ星でも申請要件を満たせますが、二つ星は加点対象になるため優先して検討する価値があります。
 slug: ai-hojokin-security-action-hoshi2
 keyword: AI導入補助金 セキュリティアクション 二つ星
 category: hojokin
