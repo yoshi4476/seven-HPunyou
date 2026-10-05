@@ -288,10 +288,10 @@
     <loc>https://lp.7senses.co.jp/blog/biyoushitsu-joseikin/</loc>
     <lastmod>2026-09-12</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/biyoushitsu-joseikin/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/biyoushitsu-joseikin/joseikin5.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/biyoushitsu-joseikin/nagare4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/biyoushitsu-joseikin/chingin-vs.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/biyoushitsu-joseikin/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/kensetsugyou-kyoka-denshishinsei/</loc>
@@ -1038,10 +1038,10 @@
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/</loc>
     <lastmod>2026-08-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-taisho-tool/bunya6.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-taisho-tool/taishogai.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-taisho-tool/kakunin3step.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-taisho-tool/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-clinic-katsuyou/</loc>
