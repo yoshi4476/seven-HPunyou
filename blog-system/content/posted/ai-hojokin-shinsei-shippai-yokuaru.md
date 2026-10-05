@@ -38,8 +38,6 @@ faq:
 
 実際の例を先に押さえるなら、[AI導入補助金のAI活用事例5選【2026年最新】](/blog/ai-donyu-hojokin-jirei/)が参考になります。
 
-関連する内容は[AI導入補助金のみらデジ経営チェックは終了](/blog/ai-hojokin-miradigi-keieicheck/)で整理しています。
-
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
 
 
