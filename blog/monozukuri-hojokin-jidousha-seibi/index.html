@@ -107,7 +107,7 @@ article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:
 article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
 article strong{color:var(--gold-strong)}
 .em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
-.table-scroll{overflow-x:auto;margin:20px 0}
+.table-scroll,.table-wrap{overflow-x:auto;margin:20px 0}
 .action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
 .action-box b{color:var(--gold-strong)}
 .cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
@@ -153,7 +153,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
-<style>.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}</style>
 <style id="ph-css">
 .hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
@@ -214,6 +213,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">自動車整備業も対象｜「新事業進出・ものづくり商業サービス補助金」の概要</h2>
 <p><strong>ものづくり補助金は、機械装置やシステムへの投資を支援する制度で、自動車整備業を含む全業種が対象です。</strong>対象経費の中心が機械装置費であるため、老朽化したリフトや塗装ブースの入れ替えを検討する整備工場との相性が良い制度です。</p>
+<p>関連する内容を先に押さえるなら、<a href="/blog/monozukuri-hojokin-biyoushitsu/">ものづくり補助金は美容室・小売業で使える？</a>が参考になります。</p>
 <p>関連する内容を先に押さえるなら、<a href="/blog/monozukuri-hojokin-clinic/">ものづくり補助金はクリニックで使える？</a>が参考になります。</p>
 <div class="definition-box"><span class="term">ものづくり補助金とは</span>、中小企業庁が実施する「新事業進出・ものづくり商業サービス補助金」の通称です。旧ものづくり補助金と新事業進出補助金が統合され、2026年6月29日に第1回公募要領が公開されました。</div>
 
@@ -231,7 +231,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>塗装ブースや洗車機は、板金塗装や仕上げ工程を扱う工場ほど投資効果を実感しやすい設備です。既存ブースが小型で大型車に対応できない、換気性能が古く塗装品質にばらつきが出る、といった課題を抱える工場では、入れ替えの優先度が上がります。どの設備から着手するかは、自社の入庫台数と作業工程のどこに時間がかかっているかを洗い出すところから決めてください。</p>
 <h2 id="sec3">スキャンツール・診断機はものづくり補助金なら対象になるか</h2>
 <p><strong>IT導入補助金では対象外のスキャンツール本体も、ものづくり補助金なら機械装置費として対象になり得ます。</strong>制度の性質が異なるため、同じ機器でも扱いが変わります。</p>
-<p>近い論点を<a href="/blog/it-hojokin-2026-kojinjigyonushi/">IT導入補助金2026｜個人事業主の変更点と申請枠</a>で扱っています。</p>
 <figure><img src="/images/monozukuri-hojokin-jidousha-seibi/scantool-vs.png" alt="スキャンツール計上でよくあるNG・OK: NG例はIT導入補助金で機器単体を申請、OK例はものづくり補助金で機械装置として計上" loading="lazy"><figcaption>スキャンツール計上でよくあるNG・OK</figcaption></figure>
 
 <p>電子制御装置整備の認証に義務づけられたスキャンツールは、<a href="/blog/it-hojokin-jidousha-seibi/">自動車整備業のIT導入補助金2026</a>で解説した通りです。ソフトウェア導入を主眼とするIT導入補助金では、この機器単体は対象外という扱いになります。</p>
@@ -438,9 +437,9 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用は平均755万円｜費目別に使える補助金4つ</a></li>
-<li><a href="/blog/jidousha-seibi-hojokin-consul/">自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方</a></li>
-<li><a href="/blog/invoice-hojokin-kojinjigyonushi-itsumade/">インボイス補助金は個人事業主いつまで？締切と税の特例期限</a></li></ul>
+    <ul><li><a href="/blog/kojinjigyonushi-joseikin-shinsei-jouken/">個人事業主の助成金の申請条件｜家族だけ・1人では対象外の落とし穴</a></li>
+<li><a href="/blog/it-donyu-shienjigyosha-erabikata/">IT導入支援事業者の選び方｜契約前に断る5つの危険信号</a></li>
+<li><a href="/blog/inshokuten-joseikin-jouken/">飲食店の助成金の条件｜22都道府県で業務改善助成金が締切済み</a></li></ul>
   </div>
 </div>
 <aside class="side">
