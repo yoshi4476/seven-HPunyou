@@ -50,6 +50,8 @@ faq:
 
 **IT導入補助金の条件は、事業者の条件・手続きの条件・事業計画の条件の3種類に分かれます。**3種類すべてを満たして、はじめて交付申請を出せます。
 
+関連する内容として[IT導入補助金のパソコン購入](/blog/it-hojokin-kojinjigyonushi-pc/)も公開しています。
+
 <figure><img src="/images/it-hojokin-joken/joken-3sou.png" alt="IT導入補助金の申請の条件3種類: 事業者の条件、手続きの条件、事業計画の条件"><figcaption>申請の条件は3種類</figcaption></figure>
 
 事業者の条件は、会社の規模・業種と、対象外の項目に当たらないことです。手続きの条件は、GビズIDプライムの取得とSECURITY ACTIONの宣言の2つ。事業計画の条件は、労働生産性と賃上げの目標を3年分立てることです。
