@@ -105,7 +105,7 @@ article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:
 article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
 article strong{color:var(--gold-strong)}
 .em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
-.table-scroll{overflow-x:auto;margin:20px 0}
+.table-scroll,.table-wrap{overflow-x:auto;margin:20px 0}
 .action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
 .action-box b{color:var(--gold-strong)}
 .cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
@@ -151,7 +151,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
-<style>.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}</style>
 <style id="ph-css">
 .hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
@@ -212,6 +211,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">AI開発補助金とは？「導入」と「開発」で使える制度が違う</h2>
 <p><strong>「AI開発補助金」は制度名ではなく、自社開発に使える複数制度をまとめた通称です。</strong>自社で独自のAIシステムや新サービスを開発する際に使える補助金をこう呼びますが、「AI導入補助金」と混同されがちなため、まずこの違いを整理します。</p>
+<aside class="cta-inline" data-tool="hojokin_quiz" style="margin:24px 0 28px;padding:18px 20px;border:1px solid #dbe4f0;border-left:4px solid #1b4fa0;border-radius:12px;background:#f4f7fc"><p style="margin:0 0 12px;font-weight:700;color:#132445;line-height:1.6">御社が補助金を使えそうか、8つの質問に答えて確かめる（無料）</p><a class="cta-button" href="https://lp.7senses.co.jp/?diag=hojokin#diagnosis" data-cta="article_inline_hojokin_quiz" style="display:inline-block;padding:11px 24px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">質問に答える</a><p style="margin:8px 0 0;font-size:.8rem;color:#5b6980">結果はその場で表示されます。表示の前に、お名前とメールアドレスの入力が要ります</p><script>(function(){var b=document.currentScript.parentNode,p={page_path:location.pathname,tool:b.getAttribute("data-tool")};function g(n){if(typeof gtag==="function")gtag("event",n,p);}if("IntersectionObserver" in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){g("inline_tool_view");o.disconnect();}},{threshold:.6});o.observe(b);}b.querySelector("a").addEventListener("click",function(){g("inline_tool_submit");});})();</script></aside>
 <p>関連する内容を先に押さえるなら、<a href="/blog/monozukuri-hojokin-biyoushitsu/">ものづくり補助金は美容室で使える？</a>が参考になります。</p>
 <p>関連する内容は、<a href="/blog/monozukuri-hojokin-nougyou-souko/">農業用倉庫に補助金は使える？</a>で解説しています。</p>
 <p>あわせて<a href="/blog/it-hojokin-clinic/">クリニックのIT導入補助金</a>もご覧ください。</p>
@@ -302,7 +302,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <div class="definition-box"><span class="term">オーダーメイド型とは</span>、事前登録された汎用製品を選ぶカタログ型とは異なり、自社の課題に合わせてゼロから設計・開発する設備投資のことです。独自のAI画像認識システムや自社専用のAI検品装置など、既製品にない仕組みを作る場合はこちらに該当します。</div>
 
 <p>例えば、製造ラインの検品を自社専用のAIカメラシステムに置き換えたい場合を考えます。既製のカタログ品では対応できないケースが多く、一般型のオーダーメイド枠が候補になります。省力化の効果（労働生産性の向上率）を事業計画で数値として示す必要がある点は、他の2制度と比べても審査のハードルがやや高くなります。</p>
-<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えるだけ。登録不要で、その場で判定が出ます</p></div>
+<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えると判定が出ます（表示の前に、お名前とメールアドレスの入力が要ります）</p></div>
 <h2 id="sec5">小さく始めるなら小規模事業者持続化補助金</h2>
 <p><strong>小規模事業者持続化補助金は、従業員5人以下等の小規模事業者が対象で、補助上限は最大250万円です。</strong>通常の上限は50万円で、インボイス特例・賃金引上げ特例を併用すると250万円まで上がります。補助率は2/3、赤字事業者は3/4です。</p>
 <p>他の2制度と比べると規模は小さい制度です。ですが<strong>「AIを使った販促ツールを試作したい」「小さくAI活用の実証実験をしたい」という段階には、審査のハードルが低いこの制度が向いています。</strong>大規模な開発資金がまだ確保できていない事業者の、最初の一歩として使われることが多い制度。<a href="https://r6.jizokukahojokin.info/" target="_blank" rel="noopener">小規模事業者持続化補助金の公式サイト</a>でも、対象経費に広報費・開発関連費用の費目が含まれることが案内されています。</p>
@@ -378,9 +378,9 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用は平均755万円｜費目別に使える補助金4つ</a></li>
-<li><a href="/blog/jidousha-seibi-hojokin-consul/">自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方</a></li>
-<li><a href="/blog/invoice-hojokin-kojinjigyonushi-itsumade/">インボイス補助金は個人事業主いつまで？締切と税の特例期限</a></li></ul>
+    <ul><li><a href="/blog/kojinjigyonushi-joseikin-shinsei-jouken/">個人事業主の助成金の申請条件｜家族だけ・1人では対象外の落とし穴</a></li>
+<li><a href="/blog/it-donyu-shienjigyosha-erabikata/">IT導入支援事業者の選び方｜契約前に断る5つの危険信号</a></li>
+<li><a href="/blog/inshokuten-joseikin-jouken/">飲食店の助成金の条件｜22都道府県で業務改善助成金が締切済み</a></li></ul>
   </div>
 </div>
 <aside class="side">

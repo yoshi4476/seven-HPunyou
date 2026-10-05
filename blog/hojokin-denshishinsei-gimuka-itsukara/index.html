@@ -106,7 +106,7 @@ article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:
 article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
 article strong{color:var(--gold-strong)}
 .em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
-.table-scroll{overflow-x:auto;margin:20px 0}
+.table-scroll,.table-wrap{overflow-x:auto;margin:20px 0}
 .action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
 .action-box b{color:var(--gold-strong)}
 .cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
@@ -152,7 +152,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
-<style>.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}</style>
 <style id="ph-css">
 .hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
@@ -213,6 +212,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">補助金の電子申請はいつから原則になったのか</h2>
 <p><strong>主要な補助金の電子申請は2020年前後から原則化が進み、現在は多くの制度が郵送申請を受け付けていません。</strong>制度ごとに導入時期は異なりますが、流れとしては共通しています。</p>
+<aside class="cta-inline" data-tool="hojokin_quiz" style="margin:24px 0 28px;padding:18px 20px;border:1px solid #dbe4f0;border-left:4px solid #1b4fa0;border-radius:12px;background:#f4f7fc"><p style="margin:0 0 12px;font-weight:700;color:#132445;line-height:1.6">御社が補助金を使えそうか、8つの質問に答えて確かめる（無料）</p><a class="cta-button" href="https://lp.7senses.co.jp/?diag=hojokin#diagnosis" data-cta="article_inline_hojokin_quiz" style="display:inline-block;padding:11px 24px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">質問に答える</a><p style="margin:8px 0 0;font-size:.8rem;color:#5b6980">結果はその場で表示されます。表示の前に、お名前とメールアドレスの入力が要ります</p><script>(function(){var b=document.currentScript.parentNode,p={page_path:location.pathname,tool:b.getAttribute("data-tool")};function g(n){if(typeof gtag==="function")gtag("event",n,p);}if("IntersectionObserver" in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){g("inline_tool_view");o.disconnect();}},{threshold:.6});o.observe(b);}b.querySelector("a").addEventListener("click",function(){g("inline_tool_submit");});})();</script></aside>
 <p>近い論点を<a href="/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/">開業届の電子申請｜個人事業主がe-Taxで出す5ステップ</a>で扱っています。</p>
 <p>近い論点を<a href="/blog/nail-salon-hojokin-tejun/">ネイルサロンの補助金申請手順を8ステップで解説</a>で扱っています。</p>
 <p>あわせて<a href="/blog/nail-salon-hojokin-hikaku/">ネイルサロンの補助金3種を比較</a>もご覧ください。</p>
@@ -264,7 +264,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <h2 id="sec4">都道府県・市区町村の補助金にも電子申請の流れは及ぶか</h2>
 <p><strong>国の補助金だけでなく、都道府県・市区町村が独自に実施する補助金でも電子申請への移行が進んでいます。</strong>ただし自治体独自の制度は運営元がJグランツに参加していない場合もあり、扱いにばらつきがあります。</p>
 <p>自治体独自の補助金では、電子メールでの書類提出や自治体独自の申請システムを使うケースもまだ残っています。国の制度と同じ感覚でGビズIDだけを準備すれば足りるとは限りません。<strong>狙う補助金が国の制度か自治体独自の制度かを最初に確認し</strong>、それぞれの公募要領で申請方法を個別に確かめる必要があります。判断に迷う場合は、対象ツールの範囲とあわせて支援事業者に確認するのが確実です。</p>
-<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えるだけ。登録不要で、その場で判定が出ます</p></div>
+<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えると判定が出ます（表示の前に、お名前とメールアドレスの入力が要ります）</p></div>
 <h2 id="sec5">電子申請に必須のGビズIDとは</h2>
 <p><strong>GビズIDは、1つのID・パスワードで複数の行政サービスにログインできる事業者向けの共通アカウントです。</strong>補助金の電子申請だけでなく、社会保険や税の手続きにも使われます。</p>
 <div class="definition-box"><span class="term">GビズIDとは</span>、プライム（法人代表者・個人事業主向け・審査あり）、メンバー（従業員向け・プライムが作成）、エントリー（誰でも取得可・審査なし）の3種類のアカウントで構成される行政共通認証システムです。補助金の電子申請にはプライムが必要です。</div>
@@ -358,9 +358,9 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用は平均755万円｜費目別に使える補助金4つ</a></li>
-<li><a href="/blog/jidousha-seibi-hojokin-consul/">自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方</a></li>
-<li><a href="/blog/invoice-hojokin-kojinjigyonushi-itsumade/">インボイス補助金は個人事業主いつまで？締切と税の特例期限</a></li></ul>
+    <ul><li><a href="/blog/kojinjigyonushi-joseikin-shinsei-jouken/">個人事業主の助成金の申請条件｜家族だけ・1人では対象外の落とし穴</a></li>
+<li><a href="/blog/it-donyu-shienjigyosha-erabikata/">IT導入支援事業者の選び方｜契約前に断る5つの危険信号</a></li>
+<li><a href="/blog/inshokuten-joseikin-jouken/">飲食店の助成金の条件｜22都道府県で業務改善助成金が締切済み</a></li></ul>
   </div>
 </div>
 <aside class="side">

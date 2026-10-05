@@ -106,7 +106,7 @@ article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:
 article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
 article strong{color:var(--gold-strong)}
 .em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
-.table-scroll{overflow-x:auto;margin:20px 0}
+.table-scroll,.table-wrap{overflow-x:auto;margin:20px 0}
 .action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
 .action-box b{color:var(--gold-strong)}
 .cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
@@ -152,7 +152,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
-<style>.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}</style>
 <style id="ph-css">
 .hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
@@ -213,6 +212,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">建設業が使える助成金とは｜補助金との違いを先に整理</h2>
 <p><strong>助成金は、要件さえ満たせば審査を経ずに受給できる、建設業にとって着手しやすい制度です。</strong>厚生労働省が所管し、雇用の安定や人材育成に関する取り組みが対象になります。採択数が限られ競争審査のある補助金とは、この「要件充足型」という性質が異なります。</p>
+<aside class="cta-inline" data-tool="hojokin_quiz" style="margin:24px 0 28px;padding:18px 20px;border:1px solid #dbe4f0;border-left:4px solid #1b4fa0;border-radius:12px;background:#f4f7fc"><p style="margin:0 0 12px;font-weight:700;color:#132445;line-height:1.6">御社が補助金を使えそうか、8つの質問に答えて確かめる（無料）</p><a class="cta-button" href="https://lp.7senses.co.jp/?diag=hojokin#diagnosis" data-cta="article_inline_hojokin_quiz" style="display:inline-block;padding:11px 24px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">質問に答える</a><p style="margin:8px 0 0;font-size:.8rem;color:#5b6980">結果はその場で表示されます。表示の前に、お名前とメールアドレスの入力が要ります</p><script>(function(){var b=document.currentScript.parentNode,p={page_path:location.pathname,tool:b.getAttribute("data-tool")};function g(n){if(typeof gtag==="function")gtag("event",n,p);}if("IntersectionObserver" in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){g("inline_tool_view");o.disconnect();}},{threshold:.6});o.observe(b);}b.querySelector("a").addEventListener("click",function(){g("inline_tool_submit");});})();</script></aside>
 <div class="definition-box"><span class="term">助成金とは</span>、雇用の安定・人材育成など国の政策目標に沿った取り組みを行った事業主に対し、要件を満たせば支給される制度です。</div>
 
 <p>助成金と補助金の基本的な違いや探し方は、<a href="/blog/chusho-kigyo-joseikin/">中小企業の助成金とは？</a>で解説しています。本記事では建設業に絞り、使える制度と金額を具体的に見ていきます。</p>
@@ -304,7 +304,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <div class="caution-box"><span class="box-title">注意: <span class="txt-red">対象者要件は事前確認が必須</span></span><br>雇用形態や雇用期間の連続性など、対象者としての要件を満たしているかは転換前に確認してください。要件を誤ると不支給になります。</div>
 
 <p>申請の前提として、正社員転換の規定を含む就業規則の整備と、転換前後の賃金台帳・出勤簿の保存が必要です。<strong>書類が整っていないと、転換の事実そのものを証明できません。</strong>建設業は現場ごとに勤怠管理が分かれやすいため、本社での一元管理を早めに整えておくと安心です。</p>
-<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えるだけ。登録不要で、その場で判定が出ます</p></div>
+<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えると判定が出ます（表示の前に、お名前とメールアドレスの入力が要ります）</p></div>
 <h2 id="sec6">トライアル雇用助成金とは｜未経験者を試用雇用で採用する</h2>
 <p><strong>トライアル雇用助成金は、未経験者を試用雇用した建設業に月額最大4万円を支給します。</strong>建設業の人手不足対応として使いやすい制度です。</p>
 <p>対象者は、ハローワーク等の紹介を経て無期雇用を希望する求職者で、離職を繰り返している等の要件のいずれかに該当する人です。支給額は月額最大4万円（母子家庭・父子家庭は5万円）で、雇い入れの日から最長3か月間受け取れます（<a href="https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/koyou/newpage_16286.html" target="_blank" rel="noopener">厚生労働省のトライアル雇用助成金ページ</a>）。</p>
@@ -395,9 +395,9 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用は平均755万円｜費目別に使える補助金4つ</a></li>
-<li><a href="/blog/jidousha-seibi-hojokin-consul/">自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方</a></li>
-<li><a href="/blog/invoice-hojokin-kojinjigyonushi-itsumade/">インボイス補助金は個人事業主いつまで？締切と税の特例期限</a></li></ul>
+    <ul><li><a href="/blog/kojinjigyonushi-joseikin-shinsei-jouken/">個人事業主の助成金の申請条件｜家族だけ・1人では対象外の落とし穴</a></li>
+<li><a href="/blog/it-donyu-shienjigyosha-erabikata/">IT導入支援事業者の選び方｜契約前に断る5つの危険信号</a></li>
+<li><a href="/blog/inshokuten-joseikin-jouken/">飲食店の助成金の条件｜22都道府県で業務改善助成金が締切済み</a></li></ul>
   </div>
 </div>
 <aside class="side">

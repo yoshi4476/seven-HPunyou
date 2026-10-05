@@ -106,7 +106,7 @@ article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:
 article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
 article strong{color:var(--gold-strong)}
 .em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
-.table-scroll{overflow-x:auto;margin:20px 0}
+.table-scroll,.table-wrap{overflow-x:auto;margin:20px 0}
 .action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
 .action-box b{color:var(--gold-strong)}
 .cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
@@ -152,7 +152,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
-<style>.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}</style>
 <style id="ph-css">
 .hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
@@ -213,6 +212,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">建設業が対象になる5つの要件</h2>
 <p><strong>建設業は業種として除外されていません。</strong>満たすべきは規模・形態・ソフト・時期・体制の5つです。</p>
+<aside class="cta-inline" data-tool="hojokin_quiz" style="margin:24px 0 28px;padding:18px 20px;border:1px solid #dbe4f0;border-left:4px solid #1b4fa0;border-radius:12px;background:#f4f7fc"><p style="margin:0 0 12px;font-weight:700;color:#132445;line-height:1.6">御社が補助金を使えそうか、8つの質問に答えて確かめる（無料）</p><a class="cta-button" href="https://lp.7senses.co.jp/?diag=hojokin#diagnosis" data-cta="article_inline_hojokin_quiz" style="display:inline-block;padding:11px 24px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">質問に答える</a><p style="margin:8px 0 0;font-size:.8rem;color:#5b6980">結果はその場で表示されます。表示の前に、お名前とメールアドレスの入力が要ります</p><script>(function(){var b=document.currentScript.parentNode,p={page_path:location.pathname,tool:b.getAttribute("data-tool")};function g(n){if(typeof gtag==="function")gtag("event",n,p);}if("IntersectionObserver" in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){g("inline_tool_view");o.disconnect();}},{threshold:.6});o.observe(b);}b.querySelector("a").addEventListener("click",function(){g("inline_tool_submit");});})();</script></aside>
 <p>対象になる範囲は、<a href="/blog/inshokuten-ai-hojokin-taisho-youken/">動物病院はAI導入補助金の対象になるか</a>で解説しています。</p>
 <p>あわせて<a href="/blog/kurininguten-ai-hojokin-taisho-youken/">クリーニング店のAI導入補助金 対象要件</a>もご覧ください。</p>
 <div class="definition-box"><span class="term">中小企業デジタル化・AI導入支援事業とは</span>、中小企業や小規模事業者がソフトウェアを導入する費用の一部を国が補助する制度です。<mark>旧称のIT導入補助金で呼ばれることが多く、検索でもその名前で探されています</mark>。</div>
@@ -318,7 +318,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <p>ソフトが決まらないと、支援事業者も補助額も決まりません。<strong>要件を先に調べても、使いたいソフトが対象外なら意味がありません。</strong></p>
 <p>GビズIDプライムの発行には目安で2〜3週間かかります。私も相談の現場で、申請直前になって未取得だと分かり、公募回を1つ見送った事業者を何度か見てきました。取得だけは先に進めておいてください。</p>
 <p>必要書類の詳細は<a href="/blog/ai-hojokin-hitsuyo-shorui-hojin/">AI導入補助金の必要書類｜法人が用意する5点と取得先</a>で確認できます。</p>
-<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えるだけ。登録不要で、その場で判定が出ます</p></div>
+<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えると判定が出ます（表示の前に、お名前とメールアドレスの入力が要ります）</p></div>
 <h2 id="sec6">電子申請の手続きとは別物です</h2>
 <p><strong>建設業許可の電子申請（JCIP）とAI導入補助金は、まったく別の制度です。</strong>窓口も申請先も違います。</p>
 <div class="table-wrap"><table>
@@ -425,9 +425,9 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/nougyou-shoki-hiyou-hojokin/">農業の初期費用は平均755万円｜費目別に使える補助金4つ</a></li>
-<li><a href="/blog/jidousha-seibi-hojokin-consul/">自動車整備の補助金コンサル選び｜避けるべき5つの契約と頼み方</a></li>
-<li><a href="/blog/invoice-hojokin-kojinjigyonushi-itsumade/">インボイス補助金は個人事業主いつまで？締切と税の特例期限</a></li></ul>
+    <ul><li><a href="/blog/kojinjigyonushi-joseikin-shinsei-jouken/">個人事業主の助成金の申請条件｜家族だけ・1人では対象外の落とし穴</a></li>
+<li><a href="/blog/it-donyu-shienjigyosha-erabikata/">IT導入支援事業者の選び方｜契約前に断る5つの危険信号</a></li>
+<li><a href="/blog/inshokuten-joseikin-jouken/">飲食店の助成金の条件｜22都道府県で業務改善助成金が締切済み</a></li></ul>
   </div>
 </div>
 <aside class="side">

@@ -106,7 +106,7 @@ article th,article td{border:1px solid var(--line);padding:10px 14px;text-align:
 article th{background:#eef1f8;color:#1d3461;font-weight:700;white-space:nowrap}
 article strong{color:var(--gold-strong)}
 .em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px}
-.table-scroll{overflow-x:auto;margin:20px 0}
+.table-scroll,.table-wrap{overflow-x:auto;margin:20px 0}
 .action-box{background:rgba(217,179,106,.07);border:1px dashed var(--line2);border-radius:10px;padding:14px 18px;margin:20px 0;font-size:14px}
 .action-box b{color:var(--gold-strong)}
 .cta-box{background:linear-gradient(135deg,rgba(217,179,106,.13),rgba(217,179,106,.04));border:1px solid var(--line2);border-radius:14px;padding:30px 28px;margin:44px 0;text-align:center}
@@ -152,7 +152,6 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 .social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
-<style>.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:20px 0}</style>
 <style id="ph-css">
 .hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
@@ -191,7 +190,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
   <span class="cat">補助金</span>
   <h1>e-Gov電子申請とは｜個人事業主が使う場面と4ステップ</h1>
   <div class="meta">
-    <span>公開: 2026年9月3日</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 8分</span>
+    <span>公開: 2026年9月3日</span><span>執筆: 原口優(代表取締役)</span><span>読了目安: 9分</span>
   </div><!--ph:eye--><figure class="ph-band"><img src="/images/blog/egov-denshishinsei-kojinjigyonushi/thumbnail.webp" alt="記事の内容に関わる場面のイメージ" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async"><figcaption>※ 写真はイメージです</figcaption></figure><!--/ph:eye-->
   <p class="fresh-note">本記事は<b>2026年9月時点</b>の情報です|この記事は<b>従業員の雇用やAI導入補助金の申請を控え、e-Govという名前は聞いたことがあるが何に使うのか分からない個人事業主</b>向けです</p>
 
@@ -213,6 +212,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <h2 id="sec1">e-Govとは？個人事業主が使う電子申請ポータルの仕組み</h2>
 <p><strong>e-Govとは、厚生労働省・総務省など複数の府省が所管する行政手続きを、1つの窓口からオンラインで申請できるポータルサイトです。</strong>デジタル庁が運営基盤を管理し、各府省が個別のシステムを持たずに済む共通インフラとして機能しています。</p>
+<aside class="cta-inline" data-tool="hojokin_quiz" style="margin:24px 0 28px;padding:18px 20px;border:1px solid #dbe4f0;border-left:4px solid #1b4fa0;border-radius:12px;background:#f4f7fc"><p style="margin:0 0 12px;font-weight:700;color:#132445;line-height:1.6">御社が補助金を使えそうか、8つの質問に答えて確かめる（無料）</p><a class="cta-button" href="https://lp.7senses.co.jp/?diag=hojokin#diagnosis" data-cta="article_inline_hojokin_quiz" style="display:inline-block;padding:11px 24px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">質問に答える</a><p style="margin:8px 0 0;font-size:.8rem;color:#5b6980">結果はその場で表示されます。表示の前に、お名前とメールアドレスの入力が要ります</p><script>(function(){var b=document.currentScript.parentNode,p={page_path:location.pathname,tool:b.getAttribute("data-tool")};function g(n){if(typeof gtag==="function")gtag("event",n,p);}if("IntersectionObserver" in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){g("inline_tool_view");o.disconnect();}},{threshold:.6});o.observe(b);}b.querySelector("a").addEventListener("click",function(){g("inline_tool_submit");});})();</script></aside>
 <div class="definition-box"><span class="term">e-Gov電子申請とは</span>、労働保険・社会保険の届出をはじめとする行政手続きを、税務署や年金事務所へ出向かずにオンラインで完結させる仕組みです。日本年金機構によると、社会保険関連だけでも<strong>約330種類</strong>の届書等が申請対象になっています。</div>
 
 <p>個人事業主にとって最も身近な利用場面は、<mark>労働者を雇ったときに必要になる労働保険の届出</mark>です。従業員のいない個人事業主であれば、e-Govを使う機会自体がほとんどありません。</p>
@@ -263,7 +263,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
 <p>配偶者や子どもだけを手伝わせている段階では、労働保険の適用事業には該当しません。<span class="txt-blue">この段階でe-Gov電子申請を焦って準備する必要はありません</span>。事業が拡大し、親族以外のスタッフを1人でも雇い入れた瞬間に、状況が切り替わります。</p>
 <p>判断に迷う場合は、雇う予定の人が「生計を一にする親族かどうか」だけを確認してください。それ以外の従業員を1人でも雇う予定があるなら、雇用日が決まった時点でGビズIDの準備を始めておくと、10日の期限に余裕を持って対応できます。</p>
-<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えるだけ。登録不要で、その場で判定が出ます</p></div>
+<div class="cta-mid" style="background:#f4f7fc;border:1px solid #dbe4f0;border-radius:12px;padding:20px;margin:28px 0;text-align:center"><p style="margin:0 0 12px;font-weight:700">ここまでの内容が自社に当てはまるか、確認しませんか。</p><a class="cta-button" href="https://lp.7senses.co.jp/#diagnosis" data-cta="article_mid_diagnosis" style="display:inline-block;padding:12px 26px;border-radius:8px;background:#1b4fa0;color:#fff;text-decoration:none;font-weight:700">補助金が使えるか、3分で無料診断する</a><p style="margin:10px 0 0;font-size:.82rem;color:#5b6980">8問に答えると判定が出ます（表示の前に、お名前とメールアドレスの入力が要ります）</p></div>
 <h2 id="sec5">個人事業主がe-Govで電子申請する4つの手順</h2>
 <p><strong>個人事業主がe-Govで労働保険の電子申請をする流れは、GビズID取得・保険関係成立届の提出・概算保険料の申告・受付番号の保存という4ステップです。</strong></p>
 <p>関連する内容を先に押さえるなら、<a href="/blog/roudouhoken-nendokoshin-denshishinsei/">社労士事務所のAI導入補助金</a>が参考になります。</p>
@@ -303,6 +303,8 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 <h2 id="sec9">まとめ: e-Govは従業員を雇う段階で向き合う手続きの入口</h2>
 <p>e-Govは、労働保険をはじめとする複数府省の行政手続きを1つの窓口でオンライン完結できるポータルです。個人事業主にとっては、家族以外の従業員を雇った瞬間から向き合う手続きの入口になります。e-Tax・Jグランツとは所管も用途も別物ですが、GビズIDというログイン基盤は共通しています。</p>
 <p><span class="big">従業員の雇用予定があるなら、雇用日が決まった時点でGビズIDプライムの取得から始めてください。</span>10日という提出期限は短く、直前の駆け込みでは間に合わないことがあります。電子申請でつまずく原因の多くは、書類の中身ではなく期限の見落とし。AI導入補助金を使った採用・体制強化まで見据えている場合は、電子申請の準備段階から一緒に整理していくことをおすすめします。</p>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "原口 優", "@id": "https://ai.7senses.co.jp/author/haraguchi/#person", "url": "https://ai.7senses.co.jp/author/haraguchi/", "jobTitle": "セブンセンシズ株式会社 代表取締役", "sameAs": ["https://www.linkedin.com/in/yu-haraguchi", "https://note.com/yu_haraguchi", "https://corp.7senses.co.jp/", "https://www.houjin-bangou.nta.go.jp/henkorireki-johoto.html?selHouzinNo=3120001227825"]}</script>
+
   </article>
 
   <!-- FAQ(回答40〜60字・JSON-LDと完全一致させる) -->
@@ -355,9 +357,9 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   <div class="rel">
     <p class="t">RELATED</p>
-    <ul><li><a href="/blog/vendor-touroku-toha/">ベンダー登録とは？IT導入補助金の確認方法と2つのリスク</a></li>
-<li><a href="/blog/unsougyou-jissekihoukokusho/">運送業の実績報告書｜傭車の契約名義とデジタコ対応の壁</a></li>
-<li><a href="/blog/tokyo-kensetsugyou-denshishinsei/">建設業がAI導入補助金で不採択になる6つの理由と直し方</a></li></ul>
+    <ul><li><a href="/blog/kojinjigyonushi-joseikin-shinsei-jouken/">個人事業主の助成金の申請条件｜家族だけ・1人では対象外の落とし穴</a></li>
+<li><a href="/blog/it-donyu-shienjigyosha-erabikata/">IT導入支援事業者の選び方｜契約前に断る5つの危険信号</a></li>
+<li><a href="/blog/inshokuten-joseikin-jouken/">飲食店の助成金の条件｜22都道府県で業務改善助成金が締切済み</a></li></ul>
   </div>
 </div>
 <aside class="side">
