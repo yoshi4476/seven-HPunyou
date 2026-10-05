@@ -89,6 +89,8 @@ faq:
 
 **資本金のない個人事業主は、常時雇用する労働者の数だけで中小企業かどうかが決まります。**多くの雇用関係助成金は、中小企業のほうが支給額が大きく設定されています。
 
+あわせて[飲食店の補助金はいくら？](/blog/inshokuten-hojokin-ikura/)もご覧ください。
+
 共通要領は、資本金を持たない個人などは労働者数で判定すると明記しています。業種ごとの上限は次のとおりです。
 
 | 主な事業 | 中小企業になる労働者数 |
@@ -114,6 +116,12 @@ faq:
 
 **業務改善助成金は、いちばん低い時給を上げ、設備投資をした個人事業主も使えます。**ただし、引き上げる対象は週20時間以上の雇用保険の加入者に限られます。
 
+あわせて[美容室の助成金とは｜歩合給でも使える5制度と金額の目安](/blog/biyoushitsu-joseikin/)もご覧ください。
+
+近い論点を[AI導入補助金のAI活用事例5選【2026年最新】](/blog/ai-donyu-hojokin-jirei/)で扱っています。
+
+関連する内容として[AI導入補助金の不採択理由7つと再申請までにやるべき対策](/blog/ai-hojokin-futaitaku-riyu/)も公開しています。
+
 令和8年度の案内が示す主な条件は3つです。
 
 1. 中小企業・小規模事業者であること
@@ -133,8 +141,6 @@ faq:
 東京・大阪・愛知など残る25都道府県は、すでに期限を過ぎています。<span class="txt-red">期限内でも、交付決定の前に買った設備は対象外です。</span>
 
 ![個人事業主が助成金を使えるか確かめる順番](/images/kojinjigyonushi-joseikin-shinsei-jouken/kakunin-flow.png)
-
-時給の水準と期限の詳しい見方は、[飲食店の助成金の条件](/blog/inshokuten-joseikin-jouken/)でも業種に当てはめて整理しています。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
