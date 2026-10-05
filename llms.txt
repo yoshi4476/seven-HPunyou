@@ -160,11 +160,11 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [AI導入補助金の納税証明書はどれ？その1とその2の違い](https://lp.7senses.co.jp/blog/ai-hojokin-nozeishomeisho-dore/): AI導入補助金の納税証明書は「その1」「その2」のどちらでも申請できます。法人は法人税、個人事業主は所得税の証明書が必要です。2026年8月
 - [AI導入補助金の申請に失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/): AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年
 - [AI導入補助金の不採択理由7つと再申請までにやるべき対策](https://lp.7senses.co.jp/blog/ai-hojokin-futaitaku-riyu/): 直近の審査結果では通常枠の56.4%が不採択でした。書類不備・事業計画の内容・対象外要件・加点減点という4パターンの不採択理由と、再申請まで
-- [AI導入補助金のAI活用事例5選【2026年最新】](https://lp.7senses.co.jp/blog/ai-donyu-hojokin-jirei/): AI導入補助金（デジタル化・AI導入補助金2026）でAI活用に成功した中小企業の実例と、対象になりやすいAI活用のパターンを5つ紹介します
-- [AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-2star/): AI導入補助金の申請に必要なSECURITY ACTION二つ星を解説。一つ星との違い、宣言の手順、よくあるつまずきと対策を中小企業経営者向
-- [AI導入補助金とは?令和8年度の完全ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-guide-2026/): AI導入補助金とは、AIツール導入費用の一部を国が補助する制度の総称です。令和8年度の申請枠・補助額・補助率・対象者・申請の流れと、採択に向
-- [IT導入補助金の採択率を上げる5つの実務ポイント](https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu/): IT導入補助金の採択率を上げる方法とは、事前準備・加点項目・数値計画・書類精度・伴走体制の5点を固める実務です。
-- [GビズIDプライムの取得方法(最短2週間の逆算スケジュール)](https://lp.7senses.co.jp/blog/gbizid-shutoku/): GビズIDプライムとは、補助金申請に必須の行政サービス共通アカウントです。取得は最長2週間・印鑑証明書が必要。
+- [AI導入補助金の活用事例5選｜補助額と申請枠の選び方【2026年】](https://lp.7senses.co.jp/blog/ai-donyu-hojokin-jirei/): AI導入補助金（デジタル化・AI導入補助金2026）の活用事例を5パターン紹介します。補助額・補助率・5つの申請枠と、枠ごとに対象になりやす
+- [AI導入補助金2026｜SECURITY ACTION二つ星の宣言手順と注意点](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-2star/): AI導入補助金の申請で要件となるSECURITY ACTIONの二つ星を解説します。一つ星との違いを表で整理し、宣言の手順と、よくあるつまず
+- [AI導入補助金とは?令和8年度の完全ガイド](https://lp.7senses.co.jp/blog/ai-hojokin-guide-2026/): AI導入補助金とは、AIツールの導入費用の一部を国が補助する制度の総称で、令和8年度は最大350万円の補助が受けられます。申請枠・補助額・補
+- [IT導入補助金の採択率を上げる5つの実務ポイント](https://lp.7senses.co.jp/blog/it-hojokin-saitakuritsu/): IT導入補助金の不採択の多くは、事業内容ではなく準備不足で決まります。採択率を上げるために固める事前準備・加点項目・数値計画・書類の精度・伴
+- [GビズIDプライムの取得方法(最短2週間の逆算スケジュール)](https://lp.7senses.co.jp/blog/gbizid-shutoku/): GビズIDプライムは、1つのID・パスワードで複数の行政サービスにログインできる事業者向けの共通認証アカウントで、IT導入補助金の申請に必須
 - [IT導入補助金の申請代行・サポート費用の相場](https://lp.7senses.co.jp/blog/it-hojokin-daiko-hiyou/): IT導入補助金の申請代行費用の相場は着手金+成功報酬10〜20%が一般的(※当社調べ・2026年7月時点)。完全成功報酬型・定額型など料金体
 - [IT導入補助金のベンダー(支援事業者)の選び方](https://lp.7senses.co.jp/blog/it-hojokin-vendor/): IT導入補助金のベンダー(IT導入支援事業者)の選び方を解説。役割と仕組み、実績・料金の透明性など5つの基準、良いベンダー・避けるべきベンダ
 - [IT導入補助金の対象ツールと選び方(令和8年度)](https://lp.7senses.co.jp/blog/it-hojokin-taisho-tool/): IT導入補助金の対象ツールは、事前登録されたITツールのみです。会計・受発注・EC・AIチャットボット等のカテゴリ別対象例、対象外になりやす
