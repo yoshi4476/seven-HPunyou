@@ -14,6 +14,8 @@ DIST = ROOT / "dist"
 PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images", "industry", "seido", "research"]
 PUBLIC_FILES = ["index.html", "404.html", "_headers", "_redirects", "robots.txt", "llms.txt", "sitemap.xml",
                 "favicon.png", "logo.png", "ogp.png",
+                # Bing Webmaster Tools の所有権の確認（ドメイン直下で配信されないと確認できない）
+                "BingSiteAuth.xml",
                 # 配信済み原稿の指紋。管制塔側がこれを読んで「届いたか」を確かめる。
                 # dist へ入れていなかったため、配信しても毎週「未達」と報告され続けていた
                 "article-manifest.json"]
