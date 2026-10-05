@@ -1,6 +1,6 @@
 ---
 title: AI導入補助金の申請に失敗する5つの原因と対策
-description: AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年の最新データをもとに対策を解説します。
+description: AI導入補助金の申請の失敗は、GビズID・SECURITY ACTIONの準備不足、書類不備、実績報告の期限管理ミスに集中します。2026年の最新データをもとに対策を解説します。申請の失敗は、準備不足・書類不備・期限管理ミスという3つの系統に大別できます。
 slug: ai-hojokin-shinsei-shippai-yokuaru
 keyword: AI導入補助金 申請 失敗 よくある
 category: hojokin
