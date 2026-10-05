@@ -65,6 +65,9 @@
     <lastmod>2026-10-05</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shika-iin-joseikin-taisho/thumbnail.webp</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/shika-iin-joseikin-taisho/kyotsu.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/shika-iin-joseikin-taisho/junban.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/shika-iin-joseikin-taisho/ng-ok.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-donyu-shienjigyosha-erabikata/</loc>
@@ -348,10 +351,10 @@
     <loc>https://lp.7senses.co.jp/blog/chusho-kigyo-joseikin/</loc>
     <lastmod>2026-09-10</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/chusho-kigyo-joseikin/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyo-joseikin/bunrui3.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyo-joseikin/sagashikata4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyo-joseikin/shippai-ng-ok.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/chusho-kigyo-joseikin/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/fukuoka-kensetsugyou-denshishinsei/</loc>

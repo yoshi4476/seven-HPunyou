@@ -118,6 +118,8 @@ faq:
 
 **助成金・補助金は、課題整理→公的サイト検索→候補比較→事業者相談の4ステップで探すと遠回りしません。**思いつきで検索サイトを回るより、先に自社の課題を言語化するほうが結果的に早く候補にたどり着きます。
 
+対象になる範囲は、[歯科医院の助成金の対象は？](/blog/shika-iin-joseikin-taisho/)で解説しています。
+
 対象になる範囲は[飲食店の助成金の条件](/blog/inshokuten-joseikin-jouken/)で整理しています。
 
 <figure><img src="/images/chusho-kigyo-joseikin/sagashikata4.png" alt="助成金・補助金の探し方4ステップ: 課題を書き出す、ミラサポで検索する、候補を比較する、事業者に相談する"><figcaption>助成金・補助金の探し方4ステップ</figcaption></figure>
