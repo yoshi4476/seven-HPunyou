@@ -61,6 +61,12 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/it-hojokin-joken/junban.png</image:loc></image:image>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/smart-nougyou-hojokin/</loc>
+    <lastmod>2026-10-06</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/smart-nougyou-hojokin/thumbnail.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/kojinjigyonushi-joseikin-shinsei-jouken/</loc>
     <lastmod>2026-10-05</lastmod>
     <priority>0.7</priority>
@@ -467,10 +473,10 @@
     <loc>https://lp.7senses.co.jp/blog/vendor-touroku-toha/</loc>
     <lastmod>2026-09-08</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/vendor-touroku-toha/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/kakunin-list.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/kakunin-flow.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/vendor-ngok.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/vendor-touroku-toha/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/</loc>
@@ -1267,12 +1273,12 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/nougyou/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/nougyou/faq/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-06</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
