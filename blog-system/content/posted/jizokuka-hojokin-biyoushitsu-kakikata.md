@@ -5,7 +5,7 @@ slug: jizokuka-hojokin-biyoushitsu-kakikata
 keyword: 小規模事業者持続化補助金 美容室 書き方
 category: hojokin
 date: 2026-08-24
-modified: 2026-08-24
+modified: 2026-10-07
 depth: standard
 score: 95
 score_breakdown: {design: 19, seo: 19, editorial: 19, expert: 19, persona: 19, aio: 20}
@@ -168,6 +168,6 @@ faq:
 
 <span class="big">抽象的な言葉で埋めるより、数字とお客様の声、そして図表を使って見せることが、審査員に伝わる書き方への一番の近道です。</span>第20回は2026年12月15日締切、事業支援計画書の発行は12月4日までという期限も忘れずに逆算してください。
 
-当社は登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。経営計画書の書き方で迷ったときは、1人で抱え込まず早めに相談してください。公募要領は回ごとに更新されるため、申請の直前には必ず最新版を確認してください。
+当社は登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。経営計画書の書き方で迷ったときは、1人で抱え込まず早めに相談してください。公募要領は回ごとに更新されるため、申請の直前には必ず最新版を確認してください。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>

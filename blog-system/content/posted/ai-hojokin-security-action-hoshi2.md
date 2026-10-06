@@ -5,7 +5,7 @@ slug: ai-hojokin-security-action-hoshi2
 keyword: AI導入補助金 セキュリティアクション 二つ星
 category: hojokin
 date: 2026-09-02
-modified: 2026-09-02
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/ai-hojokin-security-action-hoshi2/eyecatch.png
 score: 95
@@ -116,7 +116,7 @@ GビズIDの取得手順は[AI導入補助金のGビズID取得方法](/blog/ai-
 
 <div class="caution-box"><span class="box-title">注意: GビズIDの不一致は<span class="txt-red">NG</span></span><br>SECURITY ACTIONの宣言に使うGビズIDと、補助金の交付申請に使うGビズIDが異なると、宣言済アカウントIDを交付申請で使えません。<span class="big">必ず同じGビズIDで両方の手続きを進めてください。</span></div>
 
-私たちは登録支援事業者として、AI導入補助金の対象ツール選定から申請書類の作成、採択後の実績報告まで一貫して支援してきました。**その中でよく見かける遅延理由は、以前に別の補助金で取得したSECURITY ACTIONのIDをそのまま使おうとして、GビズIDの不一致で差し戻されるパターン**です。過去に宣言した経験があっても、GビズIDが変われば再宣言が必要になります。
+私たちは登録支援事業者として、AI導入補助金の対象ツール選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援してきました（申請書類はお客様が作成し、私たちは内容の確認と助言を行います）。**その中でよく見かける遅延理由は、以前に別の補助金で取得したSECURITY ACTIONのIDをそのまま使おうとして、GビズIDの不一致で差し戻されるパターン**です。過去に宣言した経験があっても、GビズIDが変われば再宣言が必要になります。
 
 そのほかにも、基本方針を策定しただけで公開を忘れる、自社診断の回答内容を控えずに申込みへ進んでしまう、といった細かな抜けが手戻りにつながります。**着手前に、GビズIDの一致・基本方針の公開場所・診断結果の保管の3点だけでも確認しておくと、多くの手戻りを防げます。**
 
@@ -135,7 +135,7 @@ GビズIDの取得手順は[AI導入補助金のGビズID取得方法](/blog/ai-
 
 宣言済アカウントIDは有効期限が定められているわけではありませんが、事業者名や所在地に変更があった場合は、管理システムから情報を更新しておく必要があります。**移転や商号変更の予定がある場合は、宣言前に済ませておくと二度手間を防げます。**
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -148,7 +148,7 @@ GビズIDの取得手順は[AI導入補助金のGビズID取得方法](/blog/ai-
 <details><summary>一つ星から二つ星への切り替えはできますか？</summary><p class="faq-a">できます。自己診断と基本方針の公開を済ませたうえで、二つ星として再宣言してください。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 二つ星宣言はGビズID取得の直後に着手する
 

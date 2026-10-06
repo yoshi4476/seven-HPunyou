@@ -5,7 +5,7 @@ slug: it-hojokin-biyoushitsu
 keyword: 美容室 it導入補助金
 category: hojokin
 date: 2026-08-10
-modified: 2026-08-10
+modified: 2026-10-07
 depth: standard
 score: 94
 score_breakdown: {design: 19, seo: 19, editorial: 18, expert: 19, persona: 19, aio: 19}
@@ -166,7 +166,7 @@ IT導入補助金を選ぶ場合は、申請額150万円で変わる賃上げの
 
 正式名称と旧IT導入補助金の関係は[AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】](https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/)で詳しく整理しています。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -181,7 +181,7 @@ IT導入補助金を選ぶ場合は、申請額150万円で変わる賃上げの
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で見られます。登録は要らず、結果はその場で出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 美容室は「対象外の広告費」と切り分けて検討する
 

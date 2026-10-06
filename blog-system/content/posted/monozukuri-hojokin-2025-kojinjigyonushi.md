@@ -5,7 +5,7 @@ slug: monozukuri-hojokin-2025-kojinjigyonushi
 keyword: ものづくり補助金2025 個人事業主
 category: hojokin
 date: 2026-08-17
-modified: 2026-08-18
+modified: 2026-10-07
 depth: standard
 score: 95
 score_breakdown: {design: 19, seo: 20, editorial: 17, expert: 19, persona: 19, aio: 20}
@@ -154,7 +154,7 @@ GビズIDプライムの取得や事業計画書の作成といった準備の�
 
 個人事業主は法人ほど設備投資の予算が大きくないケースが多く、**投資対象を1〜2点の設備やシステムに絞り込み、その効果を集中的に説明する計画のほうが審査側に伝わりやすくなります。**あれもこれもと投資対象を広げるより、絞り込んだ計画の方が数値目標との整合性も保ちやすくなります。
 
-当社は登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。事業計画書の数値根拠づくりに迷う場合は、無料相談で状況を伝えてください。
+当社は登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。事業計画書の数値根拠づくりに迷う場合は、無料相談で状況を伝えてください。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 

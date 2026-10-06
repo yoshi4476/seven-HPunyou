@@ -5,7 +5,7 @@ slug: invoice-hojokin-kojinjigyonushi-itsumade
 keyword: インボイス 補助金 個人事業主 いつまで
 category: hojokin
 date: 2026-09-24
-modified: 2026-10-03
+modified: 2026-10-07
 depth: quick
 eyecatch: /images/invoice-hojokin-kojinjigyonushi-itsumade/eyecatch.png
 score: 90
@@ -151,7 +151,7 @@ IDがあるなら、支援事業者に「9月29日に間に合うか」を今日
 
 <div class="cta-box"><p>申請要件の確認から実績報告まで伴走します。9月29日に間に合うかも、その場でお答えします。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 

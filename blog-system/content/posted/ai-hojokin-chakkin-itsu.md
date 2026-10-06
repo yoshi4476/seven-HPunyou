@@ -5,7 +5,7 @@ slug: ai-hojokin-chakkin-itsu
 keyword: AI導入補助金 着金 いつ
 category: hojokin
 date: 2026-09-11
-modified: 2026-09-11
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/ai-hojokin-chakkin-itsu/eyecatch.png
 score: 96
@@ -165,7 +165,7 @@ faq:
 
 自社が補助金の対象になるかどうかは、[AI導入補助金の無料相談](https://lp.7senses.co.jp/#contact)で確認できます。申請要件の確認から実績報告まで伴走します。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -178,7 +178,7 @@ faq:
 <details><summary>着金後にも報告義務はありますか？</summary><p class="faq-a">はい。事業実施効果報告として複数年度にわたり提出が必要です。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 着金は確定検査後。焦らず証憑の質を高める
 

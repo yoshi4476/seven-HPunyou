@@ -5,7 +5,7 @@ slug: ai-hojokin-jissekihoukoku-kakikata
 keyword: AI導入補助金 実績報告 書き方
 category: hojokin
 date: 2026-08-04
-modified: 2026-08-04
+modified: 2026-10-07
 eyecatch: /images/ai-hojokin-jissekihoukoku-kakikata/eyecatch.png
 score: 92
 score_breakdown: {design: 18, seo: 18, editorial: 19, expert: 18, persona: 18, aio: 19}
@@ -172,7 +172,7 @@ faq:
 
 導入したAIツールの活用実績を社外に発信し、次の商談や採用にもつなげたい場合は、[AI導入事例の書き方｜成果が伝わる6ステップと3つの落とし穴](https://ai.7senses.co.jp/ai-marketing/donyu-jirei-kakikata/)も参考になります。実績報告という事務手続きの先に、AI活用の成果を積み上げていく段階が待っています。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -185,7 +185,7 @@ faq:
 <details><summary>実績報告は誰が事務局へ提出しますか？</summary><p class="faq-a">IT導入支援事業者の確認を経て、最終的には中小企業・小規模事業者自身が提出します。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 実績報告は証憑の整合性と期限管理がすべて
 

@@ -5,7 +5,7 @@ slug: ai-hojokin-nozeishomeisho-dore
 keyword: AI導入補助金 納税証明書 どれ
 category: hojokin
 date: 2026-08-03
-modified: 2026-08-03
+modified: 2026-10-07
 score: 93
 score_breakdown: {design: 18, seo: 19, editorial: 19, expert: 19, persona: 18, aio: 19}
 eyecatch: /images/ai-hojokin-nozeishomeisho-dore/eyecatch.png
@@ -141,7 +141,7 @@ GビズIDの取得にかかる日数は[最短2週間の逆算スケジュール
 
 ただし有効期限に明確な決まりが無い場合でも、内容が「直近」であることは求められます。古いものを使い回さないよう、保管の期限も管理してください。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -154,7 +154,7 @@ GビズIDの取得にかかる日数は[最短2週間の逆算スケジュール
 <details><summary>納税証明書はどの期間のものが必要ですか？</summary><p class="faq-a">法人は直近期分、個人事業主は直近年分の、申請時点で取得できる最新のものが必要です。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 納税証明書は「その1」「その2」どちらでも可。税目と形式に注意
 

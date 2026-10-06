@@ -5,7 +5,7 @@ slug: ai-hojokin-gbizid-shutoku
 keyword: AI導入補助金 GビズID 取得方法
 category: hojokin
 date: 2026-09-02
-modified: 2026-09-02
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/ai-hojokin-gbizid-shutoku/eyecatch.png
 score: 95
@@ -139,13 +139,13 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 
 <div class="caution-box"><span class="box-title">注意: 名義の取り違えは<span class="txt-red">NG</span></span><br>GビズIDプライムは法人代表者または個人事業主本人の名義で取得する必要があります。<span class="big">経理担当者や役員名義での取得は認められません。</span></div>
 
-私たちは登録支援事業者として、AI導入補助金の対象ツール選定から申請書類の作成、採択後の実績報告まで一貫して支援してきました。**その中で最も多い遅延理由は、締切の直前になってGビズID未取得に気づくパターン**です。事業計画書の準備に気を取られ、認証まわりの手続きを後回しにしてしまいがちです。
+私たちは登録支援事業者として、AI導入補助金の対象ツール選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援してきました（申請書類はお客様が作成し、私たちは内容の確認と助言を行います）。**その中で最も多い遅延理由は、締切の直前になってGビズID未取得に気づくパターン**です。事業計画書の準備に気を取られ、認証まわりの手続きを後回しにしてしまいがちです。
 
 そのほかにも、マイナンバーカードの有効期限切れ、SMSを受信できない固定電話番号での登録、印鑑証明書の発行日が古すぎる、といった細かなミスが差し戻しにつながります。**着手前に、代表者名義・カードの有効期限・SMS受信可否の3点だけでも確認しておくと、多くの遅延を防げます。**
 
 使えそうな補助金があるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で見られます。登録は要らず、結果はその場で出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -158,7 +158,7 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 <details><summary>一度取得したGビズIDは他の補助金でも使えますか？</summary><p class="faq-a">使えます。取得済みのIDをそのまま、他の補助金や行政手続きに利用できます。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: GビズIDは早めの取得が申請の近道
 

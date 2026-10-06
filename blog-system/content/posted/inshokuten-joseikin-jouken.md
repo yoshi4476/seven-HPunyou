@@ -5,7 +5,7 @@ slug: inshokuten-joseikin-jouken
 keyword: 飲食店 助成金 条件
 category: hojokin
 date: 2026-10-03
-modified: 2026-10-03
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/inshokuten-joseikin-jouken/eyecatch.png
 score: 90
@@ -200,7 +200,7 @@ AI導入補助金など経済産業省系の補助金とは、数え方が違う
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
-当社はAI導入補助金の登録支援事業者で、2020年3月の創業から2026年9月までに、のべ50社以上の導入を支援しました。MEO運用サービス「G-ran」では通算3,200店舗以上を運用し、飲食店の現場の事情も見てきました。
+当社はAI導入補助金の登録支援事業者です。MEO運用サービス「G-ran」では通算3,200店舗以上を運用し、飲食店の現場の事情も見てきました。
 
 自社が対象になるかを確かめたい場合は[3分の適性診断（無料・8問）](https://lp.7senses.co.jp/#diagnosis)もご利用ください。
 

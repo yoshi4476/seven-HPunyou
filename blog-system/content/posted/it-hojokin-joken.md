@@ -5,7 +5,7 @@ slug: it-hojokin-joken
 keyword: it導入補助金 条件
 category: hojokin
 date: 2026-10-06
-modified: 2026-10-06
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/it-hojokin-joken/eyecatch.png
 score: 90
@@ -62,7 +62,7 @@ faq:
 
 <div class="definition-box"><span class="term">IT導入補助金の条件とは</span>、交付申請を出すために申請者が満たすべき要件のことです。公募要領の「申請の対象となる事業者及び申請の要件」と「申請の対象外となる事業者」の2か所に書かれています。</div>
 
-一方で、申請の手前で止まりやすいのは事業計画の条件です。私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。相談の場で時間がかかるのは、規模の確認よりも、賃上げを約束できるかどうかの判断です。
+一方で、申請の手前で止まりやすいのは事業計画の条件です。私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、私たちは内容の確認と助言を行います）。相談の場で時間がかかるのは、規模の確認よりも、賃上げを約束できるかどうかの判断です。
 
 ## 申請できる事業者の条件は？資本金・従業員数と個人事業主
 
@@ -181,7 +181,7 @@ SECURITY ACTIONは、IPAの<a href="https://www.ipa.go.jp/security/security-acti
 
 申請の要件に自社が当てはまるかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録なしで、その場で点数が表示されます。
 
-<div class="cta-box"><p>条件の確認から賃上げ計画の立て方、申請書類の準備まで伴走します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>条件の確認から賃上げ計画の立て方まで、申請に向けた相談・助言で伴走します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## 自社の状況別に見る準備の順番
 
@@ -216,7 +216,7 @@ SECURITY ACTIONは、IPAの<a href="https://www.ipa.go.jp/security/security-acti
 <details><summary>今から準備して2026年の締切に間に合いますか？</summary><p class="faq-a">6次締切は10月30日17時です。GビズIDプライムが未取得なら、最短即日のオンライン申請を今日出してください。</p></details>
 </div>
 
-<div class="cta-box"><p>条件の確認から賃上げ計画の立て方、申請書類の準備まで伴走します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>条件の確認から賃上げ計画の立て方まで、申請に向けた相談・助言で伴走します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 条件は申請額を決める前に確かめる
 

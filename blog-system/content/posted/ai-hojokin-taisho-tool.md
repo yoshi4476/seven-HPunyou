@@ -5,7 +5,7 @@ slug: ai-hojokin-taisho-tool
 keyword: AI導入補助金 対象 ツール
 category: hojokin
 date: 2026-08-07
-modified: 2026-08-07
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/ai-hojokin-taisho-tool/eyecatch.png
 score: 95
@@ -155,7 +155,7 @@ faq:
 
 申請の要件に自社が当てはまるかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -168,7 +168,7 @@ faq:
 <details><summary>業種によって対象ツールの種類は変わりますか？</summary><p class="faq-a">分野の考え方は共通で、業種特有の機能要件がある場合のみ確認が必要です。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 対象ツールは登録状況を先に確認する
 

@@ -5,7 +5,7 @@ slug: jigyou-saikouchiku-kojinjigyonushi-kakuteishinkoku
 keyword: 事業再構築補助金 個人事業主 確定申告
 category: hojokin
 date: 2026-08-18
-modified: 2026-10-04
+modified: 2026-10-07
 depth: standard
 score: 92
 score_breakdown: {design: 18, seo: 18, editorial: 18, expert: 19, persona: 18, aio: 19}
@@ -139,7 +139,7 @@ faq:
 
 <div class="caution-box"><span class="box-title">注意: よくある3つの誤り</span><br>1. 補助金を非課税だと思い込み、雑収入に計上しない<br>2. 交付決定日を基準に年分を判断してしまう<br>3. 総収入金額不算入の明細書を添付し忘れる</div>
 
-**当社はAI導入補助金の登録支援事業者として、申請書類の作成から採択後の実績報告まで一貫して支援していますが、確定申告の年分を交付決定日で誤解していた個人事業主の方に、何度か相談を受けたことがあります。**
+**当社はAI導入補助金の登録支援事業者として、申請に向けた相談・助言から採択後の実績報告まで一貫して支援していますが、確定申告の年分を交付決定日で誤解していた個人事業主の方に、何度か相談を受けたことがあります。**
 
 補助金の種類が違っても、収入計上の考え方自体は共通です。事業再構築補助金以外の補助金を受け取った場合も、同じ基準で確認してください。
 
@@ -147,7 +147,7 @@ faq:
 
 使えそうな補助金があるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録なしで、その場で点数が表示されます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -160,7 +160,7 @@ faq:
 <details><summary>確定申告で用意する書類は何ですか？</summary><p class="faq-a">交付決定通知書・確定通知書・実績報告書の控え・入金確認書類をそろえてください。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 収入計上は「確定日」基準、圧縮記帳ではなく総収入金額不算入で繰り延べる
 

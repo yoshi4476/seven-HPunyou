@@ -5,7 +5,7 @@ slug: fukuoka-kensetsugyou-denshishinsei
 keyword: 建設業 AI導入補助金 いくら
 category: hojokin
 date: 2026-09-10
-modified: 2026-09-14
+modified: 2026-10-07
 updated: 2026-09-14
 depth: standard
 score: 95
@@ -181,7 +181,7 @@ faq:
 
 補助金の枠を使い切ることが目的ではありません。==現場が使わないシステムに半額を払うより、必要な範囲を確実に入れるほうが安く済みます==。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## 複数のソフトをまとめる場合
 

@@ -5,7 +5,7 @@ slug: ai-kaihatsu-hojokin
 keyword: ai開発補助金
 category: hojokin
 date: 2026-09-08
-modified: 2026-09-08
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/ai-kaihatsu-hojokin/eyecatch.png
 score: 94
@@ -142,7 +142,7 @@ faq:
 
 <div class="caution-box"><span class="box-title">注意: 交付決定前の着手は<span class="txt-red">対象外</span></span><br>公募締切に間に合わせようと交付決定前に発注・契約してしまうと、その分の経費は補助対象から外れます。<span class="big">必ず交付決定通知を受け取ってから着手してください。</span></div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -156,7 +156,7 @@ faq:
 
 自社の開発計画がどの制度に当てはまるかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で目安が分かります。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 「導入」か「開発」かで最初に制度を分ける
 

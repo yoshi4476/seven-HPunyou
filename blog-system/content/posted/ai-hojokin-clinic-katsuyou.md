@@ -5,7 +5,7 @@ slug: ai-hojokin-clinic-katsuyou
 keyword: AI導入 補助金 医療 クリニック
 category: hojokin
 date: 2026-08-06
-modified: 2026-08-06
+modified: 2026-10-07
 score: 96
 score_breakdown: {design: 19, seo: 20, editorial: 18, expert: 19, persona: 19, aio: 20}
 eyecatch: /images/ai-hojokin-clinic-katsuyou/eyecatch.png
@@ -165,7 +165,7 @@ AI問診システムを追加して3領域まで拡張しても、上限150万�
 
 導入費用そのものの目安は[AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/)も参考にしてください。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -178,7 +178,7 @@ AI問診システムを追加して3領域まで拡張しても、上限150万�
 <details><summary>電子カルテ情報共有サービス補助金とはどう違いますか？</summary><p class="faq-a">対象は主に病床20床以上の病院で、多くのクリニックはAI導入補助金が対象です。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: クリニックはツール連携と移行時期の見極めが鍵
 

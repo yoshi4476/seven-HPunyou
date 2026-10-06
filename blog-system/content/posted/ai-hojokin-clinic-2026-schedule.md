@@ -5,7 +5,7 @@ slug: ai-hojokin-clinic-2026-schedule
 keyword: ai導入補助金 2026 クリニック
 category: hojokin
 date: 2026-08-25
-modified: 2026-08-25
+modified: 2026-10-07
 depth: standard
 score: 95
 score_breakdown: {design: 19, seo: 19, editorial: 18, expert: 19, persona: 19, aio: 20}
@@ -55,7 +55,7 @@ faq:
 
 <div class="definition-box"><span class="term">AI導入補助金2026とは</span>、正式名称「デジタル化・AI導入補助金2026」で、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助します。</div>
 
-当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。医療機関の対象ツール・補助率・補助上限額の詳細は[医療・クリニックのAI導入と補助金](/blog/ai-hojokin-clinic-katsuyou/)で解説しているので、本記事では申請タイミングに絞って進めます。
+当社はAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。医療機関の対象ツール・補助率・補助上限額の詳細は[医療・クリニックのAI導入と補助金](/blog/ai-hojokin-clinic-katsuyou/)で解説しているので、本記事では申請タイミングに絞って進めます。
 
 <a href="https://www.phchd.com/jp/medicom/park/tech/ehr-penetrationrate" target="_blank" rel="noopener">ウィーメックスが公表した2025年11月時点の調査</a>によると、<strong>診療所の電子カルテ普及率は71.0%</strong>まで上昇しました。それでも、レセコン連携やAI問診の追加導入を締切に合わせて検討している医療機関はまだ多く残っています。
 

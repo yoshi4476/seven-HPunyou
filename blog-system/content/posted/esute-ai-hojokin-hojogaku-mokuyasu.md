@@ -5,7 +5,7 @@ slug: esute-ai-hojokin-hojogaku-mokuyasu
 keyword: エステサロン AI導入補助金の補助額の目安
 category: hojokin
 date: 2026-09-15
-modified: 2026-09-15
+modified: 2026-10-07
 depth: standard
 score: 98
 score_breakdown: {design: 20, seo: 19, editorial: 19, expert: 20, persona: 20, aio: 20}
@@ -166,7 +166,7 @@ faq:
 
 同時導入の確認も欠かせません。**レジ機能付きの機器だけを先に発注し、会計ソフトを後日契約すると、機器分は対象外になります。**見積書の発注日を1本にまとめておくと、この見落としを防げます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -181,7 +181,7 @@ faq:
 
 自店の規模でどのくらい補助されるかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 規模別のモデルケースから自店の目安を掴む
 

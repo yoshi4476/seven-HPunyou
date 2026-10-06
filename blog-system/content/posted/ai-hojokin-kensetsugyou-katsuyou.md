@@ -5,7 +5,7 @@ slug: ai-hojokin-kensetsugyou-katsuyou
 keyword: AI導入 補助金 建設業
 category: hojokin
 date: 2026-08-06
-modified: 2026-08-08
+modified: 2026-10-07
 score: 94
 score_breakdown: {design: 19, seo: 19, editorial: 18, expert: 19, persona: 19, aio: 19}
 eyecatch: /images/ai-hojokin-kensetsugyou-katsuyou/eyecatch.png
@@ -171,7 +171,7 @@ faq:
 
 導入事例を先に確認しておくと、ツール選定で迷いにくくなります。他業種の活用イメージは[AI導入補助金のAI活用事例5選｜対象ツールと申請のコツ](https://lp.7senses.co.jp/blog/ai-hojokin-ai-katsuyo-jirei/)、交付決定後の手続きは[AI導入補助金の実績報告の書き方｜必要書類と提出の4ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)で解説しています。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -187,7 +187,7 @@ faq:
 
 使えそうな補助金があるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で見られます。登録は要らず、結果はその場で出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 建設業は「工期に影響しない導入時期」から逆算する
 

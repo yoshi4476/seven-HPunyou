@@ -5,7 +5,7 @@ slug: monozukuri-hojokin-inshokuten-jirei
 keyword: ものづくり補助金 飲食店 事例
 category: hojokin
 date: 2026-08-17
-modified: 2026-08-17
+modified: 2026-10-07
 updated: 2026-09-14
 depth: standard
 score: 95
@@ -140,7 +140,7 @@ faq:
 
 GビズIDを取得したら、生産性向上の数値目標を含めた事業計画書を作成し、電子申請システムから提出します。**採択後もすぐに発注せず、交付決定の通知を受け取ってから機械装置の発注に進んでください。**
 
-当社は登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。飲食店特有の経費区分に迷う場合は、無料相談で投資内容を伝えてください。
+当社は登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。飲食店特有の経費区分に迷う場合は、無料相談で投資内容を伝えてください。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 

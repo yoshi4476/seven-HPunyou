@@ -5,7 +5,7 @@ slug: kojinjigyonushi-joseikin-shinsei-jouken
 keyword: 個人事業主 助成金 申請 条件
 category: hojokin
 date: 2026-10-05
-modified: 2026-10-05
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/kojinjigyonushi-joseikin-shinsei-jouken/eyecatch.png
 score: 90
@@ -195,7 +195,7 @@ faq:
 
 当サイトの実測では、「it導入補助金 個人事業主」は平均2.0位に表示されながら、38回の表示でクリックが発生しませんでした。出典は自社サイトのSearch Console実測（直近28日・2026年10月時点）です。「個人事業主も対象か」という答えだけなら、検索結果で済むと考えられます。
 
-実際に迷うのは、その先の「自分の場合はどれを選ぶか」です。当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。
+実際に迷うのは、その先の「自分の場合はどれを選ぶか」です。当社はAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。
 
 給付金・補助金・助成金の違いから整理したい方は[個人事業主の給付金・補助金](/blog/kojinjigyonushi-kyufukin-shinsei/)を、持続化補助金の採択の傾向は[小規模事業者持続化補助金｜個人事業主の採択率と対策](/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/)をご覧ください。
 

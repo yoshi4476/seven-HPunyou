@@ -5,7 +5,7 @@ slug: nail-salon-ai-hojokin-ochiru-riyu
 keyword: ネイルサロン AI導入補助金で落ちる理由
 category: hojokin
 date: 2026-09-17
-modified: 2026-09-17
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/nail-salon-ai-hojokin-ochiru-riyu/eyecatch.png
 score: 95
@@ -166,7 +166,7 @@ faq:
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
-**弊社は登録支援事業者として、ネイルサロンの対象ツール選定から事業計画書の作成、採択後の実績報告まで一貫して支援しています。**現場での相談実績をもとに、不採択になりやすいポイントを事前に洗い出せます。
+**弊社は登録支援事業者として、ネイルサロンの対象ツール選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、弊社は内容の確認と助言を行います）。**現場での相談実績をもとに、不採択になりやすいポイントを事前に洗い出せます。
 
 自社が対象になるかを確認したい場合は[3分の適性診断（無料・8問）](https://lp.7senses.co.jp/#diagnosis)もご利用ください。登録不要でその場で結果が出ます。
 

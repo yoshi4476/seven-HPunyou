@@ -5,7 +5,7 @@ slug: chusho-kigyo-joseikin
 keyword: 中小企業助成金
 category: hojokin
 date: 2026-09-10
-modified: 2026-09-10
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/chusho-kigyo-joseikin/eyecatch.png
 score: 92
@@ -98,7 +98,7 @@ faq:
 
 機械装置や生産設備への投資が中心なら、新事業進出・ものづくり商業サービス補助金が候補になります。**同じ「デジタル化」という言葉でも、ソフト導入かハード投資かで申請すべき制度が変わる**ため、最初にどちらの投資かを切り分けてください。
 
-当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。実際に申請まで進める手順は、[AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)で確認できます。
+当社はAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。実際に申請まで進める手順は、[AI導入補助金の申請のやり方｜受給までの5ステップを解説](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)で確認できます。
 
 ## 対象になる中小企業の定義
 
@@ -158,7 +158,7 @@ faq:
 
 申請の要件に自社が当てはまるかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録なしで、その場で点数が表示されます。対象になるかどうかで迷う場合は、[無料相談](https://lp.7senses.co.jp/#contact)で状況を伝えていただければ、要件の確認から実績報告まで一緒に確認できます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -171,7 +171,7 @@ faq:
 <details><summary>助成金は補助金より簡単にもらえますか？</summary><p class="faq-a">審査による採択がない分、要件を満たす証明書類の準備は補助金以上に丁寧さが必要です。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: まず助成金か補助金かを見極める
 

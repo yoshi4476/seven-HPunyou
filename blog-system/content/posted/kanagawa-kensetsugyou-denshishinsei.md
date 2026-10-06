@@ -5,7 +5,7 @@ slug: kanagawa-kensetsugyou-denshishinsei
 keyword: 建設業 AI導入補助金 必要書類
 category: hojokin
 date: 2026-09-10
-modified: 2026-09-14
+modified: 2026-10-07
 updated: 2026-09-14
 depth: standard
 score: 95
@@ -232,7 +232,7 @@ GビズIDプライムの申請では、申請書を印刷して印鑑証明書�
 <details><summary>建設業許可証は提出しますか？</summary><p class="faq-a">補助金の申請では原則不要です。建設業許可の手続きとは別の制度になります。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: GビズIDだけは、今日申請しておく
 

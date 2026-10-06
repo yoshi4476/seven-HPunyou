@@ -5,7 +5,7 @@ slug: osaka-kensetsugyou-denshishinsei
 keyword: 建設業 AI導入補助金 対象要件
 category: hojokin
 date: 2026-09-10
-modified: 2026-09-14
+modified: 2026-10-07
 updated: 2026-09-14
 depth: standard
 score: 95
@@ -199,7 +199,7 @@ GビズIDは一度取得すれば両方で使えます。許可の更新と補�
 <details><summary>申請前にまず何を決めればよいですか？</summary><p class="faq-a">導入するソフトです。ソフトが決まらないと支援事業者も補助額も決まりません。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: ソフトの登録確認が、要件確認より先
 

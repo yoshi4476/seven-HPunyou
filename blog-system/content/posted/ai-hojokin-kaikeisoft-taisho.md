@@ -5,7 +5,7 @@ slug: ai-hojokin-kaikeisoft-taisho
 keyword: AI導入補助金 会計ソフト 対象
 category: hojokin
 date: 2026-09-16
-modified: 2026-09-16
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/ai-hojokin-kaikeisoft-taisho/eyecatch.png
 score: 95
@@ -47,7 +47,7 @@ faq:
 
 **会計ソフトは、ITツール検索への登録と対象経費区分の一致という条件を満たせばAI導入補助金の対象になります。**名称だけでは判断できず、事務局のカタログに載っているかどうかが第一の基準です。
 
-私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援してきました。「今使っているツールが対象になるか」という相談は、支援の中でも特に多い質問の一つです。名前が似ているツールでも、登録内容が異なれば結果も変わります。
+私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援してきました（申請書類はお客様が作成し、私たちは内容の確認と助言を行います）。「今使っているツールが対象になるか」という相談は、支援の中でも特に多い質問の一つです。名前が似ているツールでも、登録内容が異なれば結果も変わります。
 
 <a href="https://it-shien.smrj.go.jp/search/" target="_blank" rel="noopener">事務局のITツール検索</a>でツール名を検索し、検索結果に表示されるかどうかをまず確認してください。表示されなければ、その時点で対象外と判断できます。
 
@@ -158,7 +158,7 @@ faq:
 
 申請の要件に自社が当てはまるかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録なしで、その場で点数が表示されます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -170,7 +170,7 @@ faq:
 <details><summary>会計ソフトを導入する際に注意すべき点は何ですか？</summary><p class="faq-a">交付決定前に契約・発注すると補助対象外になるため、決定を待ってから発注してください。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 会計ソフトは登録状況と経費区分を先に確認する
 

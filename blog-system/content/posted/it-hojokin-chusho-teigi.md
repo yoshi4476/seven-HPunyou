@@ -5,7 +5,7 @@ slug: it-hojokin-chusho-teigi
 keyword: 中小企業 it導入補助金
 category: hojokin
 date: 2026-08-08
-modified: 2026-08-08
+modified: 2026-10-07
 depth: standard
 score: 92
 score_breakdown: {design: 18, seo: 19, editorial: 17, expert: 18, persona: 19, aio: 19}
@@ -147,7 +147,7 @@ faq:
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録は不要で、その場で点数が出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -160,7 +160,7 @@ faq:
 <details><summary>個人事業主にも資本金・従業員数の基準は適用されますか？</summary><p class="faq-a">個人事業主に資本金の概念はないため、業種ごとの従業員数の基準だけで判定します。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 資本金・従業員数はどちらか一方の基準を満たせばよい
 

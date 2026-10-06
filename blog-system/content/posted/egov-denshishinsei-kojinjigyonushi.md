@@ -5,7 +5,7 @@ slug: egov-denshishinsei-kojinjigyonushi
 keyword: e-gov 電子申請 個人事業主
 category: hojokin
 date: 2026-09-03
-modified: 2026-09-03
+modified: 2026-10-07
 eyecatch: /images/egov-denshishinsei-kojinjigyonushi/eyecatch.png
 depth: standard
 score: 96
@@ -149,7 +149,7 @@ e-Govへのログインには、GビズIDプライムアカウントが使えま
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
-私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。申請の相談の中で「AIツールの運用を任せる人を雇いたい」という話に発展することも珍しくなく、その場合はGビズIDを軸にJグランツとe-Govの両方を案内しています。
+私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、私たちは内容の確認と助言を行います）。申請の相談の中で「AIツールの運用を任せる人を雇いたい」という話に発展することも珍しくなく、その場合はGビズIDを軸にJグランツとe-Govの両方を案内しています。
 
 GビズIDの取得手順そのものは[AI導入補助金のGビズID取得方法](/blog/ai-hojokin-gbizid-shutoku/)にまとめています。
 

@@ -5,7 +5,7 @@ slug: it-hojokin-kojinjigyonushi-kaikeisoft
 keyword: 会計ソフト 補助金 個人事業主
 category: hojokin
 date: 2026-08-11
-modified: 2026-10-03
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/it-hojokin-kojinjigyonushi-kaikeisoft/eyecatch.png
 score: 93
@@ -59,7 +59,7 @@ faq:
 
 <div class="definition-box"><span class="term">会計ソフトとは</span>、仕訳・記帳から決算書類の作成までを電子的に行うソフトウェアです。個人事業主向けの製品は、青色申告決算書や収支内訳書、確定申告書の作成・e-Tax連携までを担う機能が中心になっています。</div>
 
-私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。**「会計ソフトは補助対象になるのか」という相談は、個人事業主から特に多く寄せられます。**結論として、それは単独の申請枠ではなく、後述する複数の枠に組み込まれた機能要件の1つという位置づけです。
+私たちはAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、私たちは内容の確認と助言を行います）。**「会計ソフトは補助対象になるのか」という相談は、個人事業主から特に多く寄せられます。**結論として、それは単独の申請枠ではなく、後述する複数の枠に組み込まれた機能要件の1つという位置づけです。
 
 確定申告に対応したクラウド会計ソフトの多くは、事務局の「ITツール検索」に登録されたITツールです。対象ツール全体の分野は[AI導入補助金の対象ツール6分野｜対象外との見分け方](https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/)で解説しているとおり、登録の有無が対象になるかどうかの第一条件になります。
 
@@ -178,7 +178,7 @@ freeeやマネーフォワードといった名前で探しても、対象かど
 
 会計ソフトと同時にPCやタブレットの導入も検討している場合は、[AI導入補助金の受発注ソフトとは？対象3枠と補助額を解説](https://lp.7senses.co.jp/blog/ai-hojokin-juhatchu-soft-toha/)で紹介しているハードウェアの扱いも参考になります。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -191,7 +191,7 @@ freeeやマネーフォワードといった名前で探しても、対象かど
 <details><summary>白色申告でもインボイス対応のソフトは必要ですか？</summary><p class="faq-a">課税事業者として請求書を発行するなら、申告方式にかかわらず対応が必要です。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 会計ソフト選びは申告方式が最初の分かれ道
 

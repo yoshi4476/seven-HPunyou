@@ -5,7 +5,7 @@ slug: it-donyu-shienjigyosha-erabikata
 keyword: it導入支援事業者 選び方
 category: hojokin
 date: 2026-10-04
-modified: 2026-10-04
+modified: 2026-10-07
 depth: standard
 score: 90
 eyecatch: /images/it-donyu-shienjigyosha-erabikata/eyecatch.png
@@ -191,7 +191,7 @@ gBizIDプライムの手順は[AI導入補助金のgBizID取得](/blog/ai-hojoki
 
 書類の保管にも注意が要ります。登録要領では、補助事業の書類を完了した年度の終了後5年間保管するよう定めています。立入調査は予告なく行われる場合もあります。保管の分担も契約前に決めておきます。
 
-当社はAI導入補助金の登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。ほかの失敗の型は[AI導入補助金の申請に失敗する5つの原因と対策](/blog/ai-hojokin-shinsei-shippai-yokuaru/)にもまとめています。
+当社はAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。ほかの失敗の型は[AI導入補助金の申請に失敗する5つの原因と対策](/blog/ai-hojokin-shinsei-shippai-yokuaru/)にもまとめています。
 
 
 申請の要件に自社が当てはまるかは、[3分の適性診断（無料・8問）](/#diagnosis)で見られます。登録は要らず、結果はその場で出ます。

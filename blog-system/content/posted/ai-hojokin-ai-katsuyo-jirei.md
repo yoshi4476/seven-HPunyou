@@ -5,7 +5,7 @@ slug: ai-hojokin-ai-katsuyo-jirei
 keyword: AI導入補助金 AI 活用 事例
 category: hojokin
 date: 2026-08-04
-modified: 2026-10-03
+modified: 2026-10-07
 eyecatch: /images/ai-hojokin-ai-katsuyo-jirei/eyecatch.png
 score: 97
 score_breakdown: {design: 20, seo: 19, editorial: 18, expert: 20, persona: 19, aio: 20}
@@ -150,7 +150,7 @@ AI活用にかかる費用感を先につかんでおきたい場合は、[AI導
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で見られます。登録は要らず、結果はその場で出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -162,7 +162,7 @@ AI活用にかかる費用感を先につかんでおきたい場合は、[AI導
 <details><summary>AI活用事例を参考にするときの注意点は？</summary><p class="faq-a">他社事例をそのまま真似ず、自社の課題に近い事例を選んで効果を測定してください。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: AI活用事例は分野別に自社との近さで選ぶ
 

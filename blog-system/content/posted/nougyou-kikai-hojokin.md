@@ -5,7 +5,7 @@ slug: nougyou-kikai-hojokin
 keyword: 農業機械補助金
 category: hojokin
 date: 2026-09-13
-modified: 2026-09-13
+modified: 2026-10-07
 depth: standard
 score: 97
 score_breakdown: {design: 19, seo: 20, editorial: 18, expert: 19, persona: 20, aio: 20}
@@ -172,6 +172,6 @@ faq:
 
 <span class="big">新規就農者なら経営発展支援事業、団体での産地整備なら強い農業づくり交付金、融資と組み合わせたいなら農地利用効率化等支援事業と、自分の立場に合わせて制度を選んでください。</span>都道府県・市町村独自の上乗せ制度も見落とさないようにしてください。
 
-私たちは登録支援事業者として、対象ツールの選定から申請書類の作成、採択後の実績報告まで一貫して支援しています。ソフトウェア導入とあわせてIT導入補助金の活用も検討している場合は、機械とITツールのどちらから着手すべきか、無料相談で整理できます。
+私たちは登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで一貫して支援しています（申請書類はお客様が作成し、私たちは内容の確認と助言を行います）。ソフトウェア導入とあわせてIT導入補助金の活用も検討している場合は、機械とITツールのどちらから着手すべきか、無料相談で整理できます。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>

@@ -5,7 +5,7 @@ slug: jigyou-saikouchiku-jigyouka-hokoku-kojin
 keyword: 事業再構築補助金 事業化状況報告 個人事業主
 category: hojokin
 date: 2026-08-25
-modified: 2026-10-04
+modified: 2026-10-07
 depth: standard
 score: 96
 score_breakdown: {design: 19, seo: 20, editorial: 17, expert: 20, persona: 19, aio: 20}
@@ -175,7 +175,7 @@ faq:
 
 <span class="txt-red">報告は1回で終わりません。</span>数年にわたって続きます。最初の年に区分を作っておけば、以降はその設定のまま使えます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -188,7 +188,7 @@ faq:
 <details><summary>事業化状況報告システムへの入力だけで手続きは完了しますか？</summary><p class="faq-a">はい。システムへの入力が完了すれば、添付書類を別送する必要はありません。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 事業化状況報告は決算のたびに続く長期の義務
 

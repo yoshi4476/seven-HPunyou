@@ -5,7 +5,7 @@ slug: ai-hojokin-miradigi-keieicheck
 keyword: AI導入補助金 みらデジ 経営チェック
 category: hojokin
 date: 2026-08-03
-modified: 2026-08-03
+modified: 2026-10-07
 score: 92
 score_breakdown: {design: 18, seo: 19, editorial: 18, expert: 19, persona: 18, aio: 19}
 diagrams:
@@ -138,7 +138,7 @@ GビズIDプライムはオンラインでの申請登録から発行まで概�
 
 導入予算そのものの見積もりには、[AI導入の費用相場｜中小企業の内訳と抑える3つのコツ](https://lp.7senses.co.jp/blog/ai-donyu-hiyou-soba/)も役立ちます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -154,7 +154,7 @@ GビズIDプライムはオンラインでの申請登録から発行まで概�
 
 使えそうな補助金があるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で確かめられます。登録なしで、その場で点数が表示されます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: みらデジは終了、今はデジwithの加点を検討する段階
 

@@ -5,7 +5,7 @@ slug: ai-hojokin-shinsei-yarikata
 keyword: AI導入補助金 申請 やり方
 category: hojokin
 date: 2026-08-07
-modified: 2026-10-03
+modified: 2026-10-07
 depth: standard
 eyecatch: /images/ai-hojokin-shinsei-yarikata/eyecatch.png
 score: 95
@@ -166,7 +166,7 @@ GビズIDプライムの申請は、マイナンバーカードとスマート�
 
 自社が補助金の対象になるかどうかは、[3分の適性診断（無料・8問）](/#diagnosis)で見られます。登録は要らず、結果はその場で出ます。
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
 
@@ -179,7 +179,7 @@ GビズIDプライムの申請は、マイナンバーカードとスマート�
 <details><summary>実績報告では何を提出しますか？</summary><p class="faq-a">ツール導入の証憑書類と事業実施効果報告を提出し、確認後に補助金が交付されます。</p></details>
 </div>
 
-<div class="cta-box"><p>要件の確認から申請書類の準備まで、はじめての方でも進められるようご案内します。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
+<div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 
 ## まとめ: 申請のやり方は順番を守れば難しくない
 
