@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DIST = ROOT / "dist"
 
 # 公開するもの(これ以外はデプロイされない)
-PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images", "industry", "seido", "research"]
+PUBLIC_DIRS = ["assets", "blog", "service", "about", "privacy", "unsubscribe", "external", "downloads", "youkou", "images", "industry", "seido", "research", "compare", "glossary", "topics"]
 PUBLIC_FILES = ["index.html", "404.html", "_headers", "_redirects", "robots.txt", "llms.txt", "sitemap.xml",
                 "favicon.png", "logo.png", "ogp.png",
                 # Bing Webmaster Tools の所有権の確認（ドメイン直下で配信されないと確認できない）
