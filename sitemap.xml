@@ -52,6 +52,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/chusho-kigyocho-hojokin/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/chusho-kigyocho-hojokin/thumbnail.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-denkaru-kyoyu-clinic/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
@@ -1039,9 +1045,9 @@
     <loc>https://lp.7senses.co.jp/blog/seicho-kasokuka-hojokin-schedule/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/seicho-kasokuka-hojokin-schedule/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/seicho-kasokuka-hojokin-schedule/flow-schedule.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/seicho-kasokuka-hojokin-schedule/list-checkpoints.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/seicho-kasokuka-hojokin-schedule/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/</loc>
