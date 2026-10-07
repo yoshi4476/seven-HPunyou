@@ -172,11 +172,6 @@ footer a{color:var(--muted);text-decoration:none;margin:0 4px}
 .grade small{display:block;font-family:var(--sans);font-size:12px;color:var(--muted);letter-spacing:.2em;margin-top:8px}
 .rx{background:var(--gold-pale);border:1px solid var(--line2);border-radius:12px;padding:16px 18px;font-size:15px;margin:20px 0;line-height:1.9}
 .rx b{color:var(--gold-em)}
-.audit-total{font-family:var(--num);font-size:54px;font-weight:600;color:var(--gold-em);line-height:1;text-align:center}
-.audit-total small{display:block;font-size:12px;color:var(--muted);font-family:var(--sans);letter-spacing:.2em;margin-top:8px}
-.findings{display:grid;gap:8px;margin:16px 0 4px;padding:0;font-size:15px;color:var(--muted)}
-.findings li{list-style:none;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;line-height:1.7}
-.findings b{color:var(--gold-em)}
 .notice{font-size:13px;color:var(--muted);border:1px dashed var(--line2);background:var(--gold-pale);border-radius:10px;padding:12px 16px;margin:16px 0;line-height:1.9}
 .notice b{color:var(--gold-em)}
 .btn-block{width:100%}
@@ -830,84 +825,8 @@ function renderGate(){
     });
   });
 }
-/* ---- URL診断(AIOページ) ---- */
-let auditPromise=null;
-function mockAudit(url){
-  let h=0; for(const c of url) h=(h*31+c.charCodeAt(0))>>>0;
-  const ax={aio:20+h%30,seo:45+h%40,schema:15+(h>>3)%35,mobile:60+(h>>5)%35,trust:40+(h>>7)%40};
-  const total=Math.round(ax.aio*.3+ax.seo*.25+ax.schema*.2+ax.mobile*.15+ax.trust*.1);
-  return {ok:true,url,total,grade:total>=90?"S":total>=75?"A":total>=60?"B":total>=40?"C":"D",axes:ax,
-    findings:[{label:"llms.txtの設置",got:0,max:8,note:"AI向けサイト要約ファイルが未設置"},
-      {label:"FAQ構造化データ",got:0,max:8,note:"FAQPageスキーマなし"},
-      {label:"冒頭の定義文",got:0,max:6,note:"AIが要約を作りにくい構造"}]};
-}
-function fetchAudit(url){
-  if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定: モック診断"); return new Promise(r=>setTimeout(()=>r(mockAudit(url)),900)); }
-  const down={ok:false,error:"ただいま自動診断を調整中です。お手数ですが、お問い合わせから「サイト診断希望」とお送りください"};
-  // 受付に自動診断が無いと「稼働しています」（点数なし）が返る。点数の無い結果を出さない（「undefined / 100点」と出ていた。2026-10-08）
-  return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url)).then(r=>r.json())
-    .then(j=>j&&j.ok&&typeof j.total==="number"?j:down).catch(()=>down);
-}
-const AUDIT_AXES=[["aio","AIO対応"],["seo","SEO基礎"],["schema","構造化データ"],["mobile","モバイル"],["trust","信頼性"]];
-function renderAuditStart(){
-  stepLbl.textContent="STEP 1 / 3"; bar.style.width="5%";
-  body.innerHTML=`<p class="qnum">WEBSITE QUICK AUDIT</p>
-    <p class="qtext">診断したいサイトのURLを入力してください</p>
-    <div class="field"><label for="a-url">サイトURL</label><input id="a-url" type="url" inputmode="url" placeholder="https://example.com"><p class="err">https:// から始まるURLを入力してください</p></div>
-    <div class="notice"><b>これは簡易診断です。</b>HTMLを機械解析してスコア化します(100点満点・5軸)。検索順位/AI検索での実被引用/表示速度の実測/競合比較は含まれません。より精度の高い<b>精密診断やアドバイス方法に関しては<a href="#svcform" style="color:var(--gold-em)">お問い合わせ</a>まで</b>。</div>
-    <button type="button" id="a-start" class="btn btn-gold btn-block">無料で簡易診断を開始する</button>
-    <span class="micro2">約10秒で解析。診断は無料です。</span>`;
-  liveErr("a-url");
-  document.getElementById("a-start").addEventListener("click",()=>{
-    const input=document.getElementById("a-url"),url=input.value.trim();
-    const ok=/^https?:\/\/[^\s]+\.[^\s]+/.test(url);
-    input.parentElement.classList.toggle("invalid",!ok);
-    if(!ok) return;
-    auditPromise=fetchAudit(url); renderAuditGate();
-  });
-}
-function renderAuditGate(){
-  stepLbl.textContent="STEP 2 / 3"; bar.style.width="50%";
-  body.innerHTML=`<p class="qnum">LAST STEP</p>
-    <p class="qtext">解析中です。結果の送付先を入力してください。</p>
-    <div class="field"><label for="d-name">お名前</label><input id="d-name" type="text" autocomplete="name"><p class="err">お名前を入力してください</p></div>
-    <div class="field"><label for="d-email">メールアドレス</label><input id="d-email" type="email" autocomplete="email" inputmode="email"><p class="err">正しいメールアドレスを入力してください</p></div>
-    <div class="field"><label for="d-company">会社名<b>任意</b></label><input id="d-company" type="text" autocomplete="organization"></div>
-    <p class="send-err" id="a-err" role="alert" hidden></p>
-    <button type="button" class="btn btn-gold btn-block" id="a-show">診断結果を見る</button>
-    <span class="micro2">結果はこの場で表示され、控えをメールでお送りします。</span>`;
-  liveErr("d-name"); liveErr("d-email");
-  document.getElementById("a-show").addEventListener("click",()=>{
-    const n=document.getElementById("d-name"),m=document.getElementById("d-email");
-    if(!gateOk(n,m)) return;
-    const btn=document.getElementById("a-show"); btn.disabled=true; btn.textContent="解析中…";
-    auditPromise.then(res=>{
-      if(!res||!res.ok){
-        body.innerHTML=`<p class="qnum">ERROR</p><p class="qtext">${(res&&res.error)||"サイトにアクセスできませんでした"}</p>
-          <a class="btn btn-gold btn-block" href="#svcform" style="text-decoration:none">精密診断を無料相談で依頼する</a>`;
-        return;
-      }
-      diagForm.sent();
-      return sendPayload({type:"site_audit",form_type:"site_audit_svc",name:n.value.trim(),email:m.value.trim(),
-        company:document.getElementById("d-company").value.trim(),
-        audit:{url:res.url,total:res.total,grade:res.grade,axes:res.axes,findings:(res.findings||[]).slice(0,5)}})
-      .then(sent=>{
-      if(!sent.ok){ btn.disabled=false; btn.textContent="もう一度送る"; showSendError(document.getElementById("a-err"),sent); track("form_error",{form_type:"site_audit_svc",reason:errReason(sent)}); return; }
-      track("lead_capture",{source:"site_audit_svc",form_type:"site_audit_svc"});
-      track("site_audit_complete",{score:res.total,grade:res.grade});
-      const finds=(res.findings||[]).slice(0,5).map(f=>`<li><b>−${f.max-f.got}点</b> ${f.label}${f.note?`<br><span style="font-size:12px;color:var(--dim)">${f.note}</span>`:""}</li>`).join("");
-      body.innerHTML=`<p class="qnum">RESULT — 簡易診断</p>
-        <div class="radar-wrap"><div>${radarSVG(res.axes,AUDIT_AXES)}</div>
-        <div><p class="audit-total">${res.total}<small>/ 100点 ・ ${res.grade}判定</small></p></div></div>
-        ${finds?`<p style="font-size:13px;font-weight:700;margin-top:16px;color:var(--navy)">主な減点ポイント</p><ul class="findings">${finds}</ul>`:""}
-        <div class="notice"><b>この結果は簡易版です。</b>精密診断やアドバイス方法に関しては<a href="#svcform" style="color:var(--gold-em)">お問い合わせ</a>まで。</div>
-        <a class="btn btn-gold btn-block" href="#svcform" style="text-decoration:none">精密診断つき無料相談を予約する</a>`;
-      });
-    });
-  });
-}
-const diagForm=watchForm(body,()=>QUIZ?"diagnosis_svc":"site_audit_svc");
-if(QUIZ) renderQ(); else renderAuditStart();
+const diagForm=watchForm(body,"diagnosis_svc");
+renderQ();
 </script>
 
 

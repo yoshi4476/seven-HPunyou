@@ -142,7 +142,7 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
     </form>
     <div id="unsubDone" hidden style="text-align:center;padding:14px 0">
       <p style="font-family:var(--serif);font-size:19px;font-weight:800;margin-bottom:10px">配信停止を承りました。</p>
-      <p style="color:var(--muted);font-size:13.5px">確認メールをお送りしました。ご利用ありがとうございました。</p>
+      <p style="color:var(--muted);font-size:13.5px" id="unsubNote">確認メールをお送りしました。ご利用ありがとうございました。</p>
     </div>
   </div>
 </main>
@@ -168,12 +168,16 @@ form.addEventListener("submit",e=>{
   const payload={type:"unsubscribe",form_type:"unsubscribe",site:"subsidy",email:mail.value.trim(),website:"",ts:TS};
   const btn=document.getElementById("u-btn"), err=document.getElementById("u-err");
   btn.disabled=true; btn.textContent="送信中…"; err.hidden=true;
-  // 受付の返事 {ok} を読んで、届いたときだけ「承りました」を出す（以前は返事を読まず、通信が切れても完了と出していた）
+  // 受付の返事 {ok} を読んで、届いたときだけ「承りました」を出す（以前は返事を読まず、通信が切れても完了と出していた）。
+  // 受付は停止済みのアドレスには確認メールを送り直さず {already:true} を返すので、そのときは「お送りしました」と書かない
   fetch(GAS_ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
-    .then(r=>r.json().catch(()=>({})).then(j=>r.ok&&j&&j.ok===true&&!("message" in j)))
-    .catch(()=>false)
-    .then(ok=>{
-      if(ok){ form.hidden=true; document.getElementById("unsubDone").hidden=false; return; }
+    .then(r=>r.json().catch(()=>({})).then(j=>r.ok&&j&&j.ok===true&&!("message" in j)?(j.already?"already":"done"):""))
+    .catch(()=>"")
+    .then(st=>{
+      if(st){
+        if(st==="already") document.getElementById("unsubNote").textContent="このメールアドレスは、すでに配信停止を承っています。";
+        form.hidden=true; document.getElementById("unsubDone").hidden=false; return;
+      }
       btn.disabled=false; btn.textContent="配信を停止する";
       err.innerHTML='送信できませんでした。通信の状態をご確認のうえ、もう一度お試しください。届かない場合は、メール（<a href="mailto:info.ai@7senses.co.jp">info.ai@7senses.co.jp</a>）に「配信停止」とお送りください。';
       err.hidden=false;

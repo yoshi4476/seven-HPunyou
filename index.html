@@ -351,11 +351,6 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 .diag-tab{flex:1;min-height:50px;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);font-size:13px;font-weight:700;cursor:pointer;padding:12px 4px;font-family:var(--sans);transition:color .15s;white-space:nowrap}
 @media(max-width:560px){.diag-tab span{display:none}}
 .diag-tab[aria-selected="true"]{color:var(--navy);border-bottom-color:var(--gold-soft);background:#fff}
-.audit-total{font-family:var(--num);font-size:60px;font-weight:600;color:var(--gold-em);line-height:1;text-align:center}
-.audit-total small{display:block;font-size:12px;color:var(--muted);font-family:var(--sans);letter-spacing:.2em;margin-top:8px}
-.findings{display:grid;gap:8px;margin:18px 0 4px;padding:0;font-size:15px;color:var(--muted)}
-.findings li{list-style:none;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:10px 14px;line-height:1.7}
-.findings b{color:var(--gold-em)}
 .notice{font-size:13px;color:var(--muted);border:1px dashed var(--line2);background:var(--gold-pale);border-radius:10px;padding:12px 16px;margin:16px 0;line-height:1.9}
 .notice b{color:var(--gold-em)}
 .diag-head{padding:20px 28px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}
@@ -685,7 +680,7 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
         </div>
         <div>
           <a class="btn btn-ghost" href="#contact" data-cta="hero_diag">無料相談を予約する</a>
-          <span class="micro">8つの質問に答えるだけ。結果はその場で表示されます。</span>
+          <span class="micro">Zoomで30分。対象になるかを、その場で確認します。</span>
         </div>
       </div>
     </div>
@@ -1002,7 +997,7 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
           <h3>AI導入補助金 申請サポート</h3>
           <p>GビズID取得から電子申請の同席、採択後の実績報告まで8ステップを完全伴走。</p>
           <ul><li>GビズID取得から実績報告まで8ステップを伴走</li><li>事前準備は合計1.5〜3時間</li><li>申請から着金まで約2〜3ヶ月</li></ul>
-          <div class="sc-foot"><span class="sc-price">相談無料・着手金0円<small> 報酬は要見積</small></span><span class="sc-more">詳細を見る →</span></div>
+          <div class="sc-foot"><span class="sc-price">相談無料<small> 報酬は要見積</small></span><span class="sc-more">詳細を見る →</span></div>
         </div>
       </a>
       <a class="svc-card" href="/service/dev/">
@@ -1050,7 +1045,7 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
   <div class="wrap rev">
     <p class="kicker">Free Check</p>
     <h2><span class="accent">3分</span>でわかる。<br class="sp">4つの無料診断</h2>
-    <p class="lead" style="max-width:880px">補助金・Webサイト・MEO・AI活用の<span class="em-marker">全サービスカテゴリを無料診断</span>。質問に答える(またはURLを入れる)だけで、5軸レーダーと判定・処方箋をその場で表示します。</p>
+    <p class="lead" style="max-width:880px">補助金・Webサイト・MEO・AI活用の<span class="em-marker">全サービスカテゴリを無料診断</span>。補助金・MEO・AI活用は質問に答えるだけで、5軸レーダーと判定・処方箋をその場で表示します。Webサイトは、URLを入れると当社が運営するAI集客ラボの無料URL診断で採点します。</p>
     <div class="diag" id="diagWidget">
       <div class="diag-tabs" role="tablist" aria-label="診断の種類">
         <button type="button" class="diag-tab" role="tab" aria-selected="true" id="tabQuiz">補助金適性<span style="font-weight:400">(8問)</span></button>
@@ -1444,105 +1439,47 @@ function renderResult(s,grade){
 renderQ();
 
 /* ============================================================
-   Webサイト簡易診断(URL入力): タブ切り替え+GAS採点エンジン連携
-   注: 本診断はHTML静的解析の「簡易版」。順位・AI被引用・CWV実測は
-       含まれない旨を必ず表示し、精密診断(無料相談)へ誘導する。
+   Webサイト(URL): AI集客ラボの無料URL診断へつなぐ入口
+   受付（管制塔の Apps Script）には URL を採点する機能が無く、「稼働しています」の返事を点数として読んで
+   「undefined / 100点」と出ていた（その後「調整中」の表示に差し替え。2026-10-08）。
+   採点は AI集客ラボの URL診断（?url= で渡すとその場で測る）に任せ、ここでは入れた URL を渡すだけにする
 ============================================================ */
-const AUDIT_AXES=[["aio","AIO対応"],["seo","SEO基礎"],["schema","構造化データ"],["mobile","モバイル"],["trust","信頼性"]];
+const URL_CHECK="https://ai.7senses.co.jp/tools/url-check/";
 const TABS={hojokin:document.getElementById("tabQuiz"),audit:document.getElementById("tabAudit"),
             meo:document.getElementById("tabMeo"),ai:document.getElementById("tabAi")};
 const diagTitle=document.getElementById("diagTitle");
-let auditPromise=null;
 
 Object.keys(TABS).forEach(m=>TABS[m].addEventListener("click",()=>setDiagMode(m)));
 function setDiagMode(m){
   Object.keys(TABS).forEach(k=>TABS[k].setAttribute("aria-selected",k===m));
-  if(m==="audit"){ diagTitle.textContent="WEBSITE QUICK AUDIT"; renderAuditStart(); }
+  if(m==="audit"){ diagTitle.textContent="FREE URL CHECK"; renderUrlEntry(); }
   else{ quiz=QUIZZES[m]; diagTitle.textContent=quiz.title; qi=0; answers=[]; renderQ(); }
   track("cta_click",{cta_id:"diag_tab_"+m});
 }
 
-/* GAS_ENDPOINT未設定時はモック結果(開発検証用)。本番は必ずGASをデプロイして設定する */
-function mockAudit(url){
-  let h=0; for(const c of url) h=(h*31+c.charCodeAt(0))>>>0;
-  const ax={aio:20+h%30,seo:45+h%40,schema:15+(h>>3)%35,mobile:60+(h>>5)%35,trust:40+(h>>7)%40};
-  const total=Math.round((ax.aio*.3+ax.seo*.25+ax.schema*.2+ax.mobile*.15+ax.trust*.1));
-  return {ok:true,url,total,grade:total>=90?"S":total>=75?"A":total>=60?"B":total>=40?"C":"D",axes:ax,
-    findings:[
-      {label:"llms.txtの設置",got:0,max:8,note:"AI向けサイト要約ファイルが未設置"},
-      {label:"FAQ構造化データ",got:0,max:8,note:"FAQPageスキーマなし。AI検索が回答を引用しにくい状態"},
-      {label:"冒頭の定義文(「〜とは」構造)",got:0,max:6,note:"AIが要約を作りにくい構造"},
-      {label:"meta description",got:3,max:6,note:"文字数が最適範囲(50〜160字)外"}]};
-}
-function fetchAudit(url){
-  if(!GAS_ENDPOINT){
-    console.warn("GAS_ENDPOINT未設定: モック診断結果を返します(本番前に必ず設定)");
-    return new Promise(r=>setTimeout(()=>r(mockAudit(url)),1000));
-  }
-  const down={ok:false,error:"ただいま自動診断を調整中です。お手数ですが、下のお問い合わせから「サイト診断希望」とお送りください(担当が精密診断してご返信します)"};
-  // 受付に自動診断が無いと「稼働しています」（点数なし）が返る。点数の無い結果を出さない（「undefined / 100点」と出ていた。2026-10-08）
-  return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url))
-    .then(r=>r.json()).then(j=>j&&j.ok&&typeof j.total==="number"?j:down).catch(()=>down);
-}
-
-function renderAuditStart(){
-  stepLbl.textContent="STEP 1 / 3"; bar.style.width="5%";
-  body.innerHTML=`<p class="qnum">WEBSITE QUICK AUDIT</p>
-    <p class="qtext">診断したいサイトのURLを<br>入力してください</p>
-    <div class="field"><label for="a-url">サイトURL</label><input id="a-url" type="url" inputmode="url" placeholder="https://example.com" autocomplete="url"><p class="err">https:// から始まるURLを入力してください</p></div>
-    <div class="notice"><b>これは簡易診断です。</b>ページのHTMLを機械的に解析してスコア化します(100点満点・5軸)。検索順位/AI検索での実際の被引用/表示速度の実測/競合比較は簡易版には含まれません。より精度の高い<b>精密診断やアドバイス方法に関しては<a href="#contact" style="color:var(--gold-em)">お問い合わせ</a>まで</b>。</div>
-    <button type="button" id="a-start" class="btn btn-primary btn-block">無料で簡易診断を開始する</button>
-    <span class="micro" style="text-align:center">約10秒で解析。診断は無料です。</span>`;
+function renderUrlEntry(){
+  stepLbl.textContent="AI集客ラボ"; bar.style.width="0%";
+  body.innerHTML=`<p class="qnum">FREE URL CHECK</p>
+    <p class="qtext" style="word-break:keep-all">サイトのURLを入れて、<br>AI集客ラボの<wbr>無料URL診断で<wbr>確かめる</p>
+    <form id="a-form" action="${URL_CHECK}" method="get" target="_blank" rel="noopener" novalidate>
+      <input type="hidden" name="src" value="lp_subsidy"><input type="hidden" name="from" value="top">
+      <div class="field"><label for="a-url">サイトURL</label><input id="a-url" name="url" type="url" inputmode="url" placeholder="https://example.com" autocomplete="url"><p class="err">https:// から始まるURLを入力してください</p></div>
+      <div class="notice">当社が運営する<b>AI集客ラボ</b>の無料ツールが新しいタブで開き、AIが入れるか・検索に出るか・内容を読み取れるかを、100点満点でその場で採点します。登録は不要です。</div>
+      <button type="submit" id="a-go" class="btn btn-primary btn-block" style="word-break:keep-all">AI集客ラボの<wbr>無料URL診断で<wbr>確かめる</button>
+      <span class="micro" style="text-align:center">AI集客ラボ（ai.7senses.co.jp）が新しいタブで開きます。</span>
+    </form>`;
   const input=document.getElementById("a-url");
-  input.addEventListener("input",()=>{ if(input.parentElement.classList.contains("invalid")) input.parentElement.classList.remove("invalid"); });
-  document.getElementById("a-start").addEventListener("click",()=>{
-    const url=input.value.trim();
-    const ok=/^https?:\/\/[^\s]+\.[^\s]+/.test(url);
+  input.addEventListener("input",()=>input.parentElement.classList.remove("invalid"));
+  document.getElementById("a-form").addEventListener("submit",e=>{
+    // 「example.com」のように https:// を省いた入力は補う。空なら URL を付けずにツールを開く
+    let v=input.value.trim();
+    if(v&&!/^https?:\/\//i.test(v)) v="https://"+v;
+    const ok=!v||/^https?:\/\/[^\s]+\.[^\s]+/i.test(v);
     input.parentElement.classList.toggle("invalid",!ok);
-    if(!ok) return;
-    auditPromise=fetchAudit(url);   // ゲート入力中に裏で解析を進める
-    track("cta_click",{cta_id:"audit_start"});
-    renderAuditGate(url);
-  });
-}
-
-function renderAuditGate(url){
-  stepLbl.textContent="STEP 2 / 3"; bar.style.width="50%";
-  body.innerHTML=`<p class="qnum">LAST STEP</p>
-    <p class="qtext">解析中です。<br>結果の送付先を入力してください。</p>
-    <div class="field"><label for="a-name">お名前</label><input id="a-name" type="text" autocomplete="name"><p class="err">お名前を入力してください</p></div>
-    <div class="field"><label for="a-email">メールアドレス</label><input id="a-email" type="email" autocomplete="email" inputmode="email"><p class="err">正しいメールアドレスを入力してください</p></div>
-    <div class="field"><label for="a-company">会社名<b>任意</b></label><input id="a-company" type="text" autocomplete="organization"></div>
-    <p class="send-err" id="a-err" role="alert" hidden></p>
-    <button type="button" class="btn btn-primary btn-block" id="a-show">診断結果を見る</button>
-    <span class="micro" style="text-align:center">結果はこの場で表示され、控えをメールでお送りします。営業電話はいたしません。</span>`;
-  ["a-name","a-email"].forEach(id=>{
-    const el=document.getElementById(id);
-    el.addEventListener("input",()=>{ if(el.parentElement.classList.contains("invalid")) el.parentElement.classList.remove("invalid"); });
-  });
-  document.getElementById("a-show").addEventListener("click",()=>{
-    const n=document.getElementById("a-name"), m=document.getElementById("a-email");
-    let ok=!!n.value.trim();
-    n.parentElement.classList.toggle("invalid",!n.value.trim());
-    const okMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m.value);
-    m.parentElement.classList.toggle("invalid",!okMail); ok=ok&&okMail;
-    if(!ok) return;
-    const btn=document.getElementById("a-show"), err=document.getElementById("a-err");
-    btn.disabled=true; btn.textContent="解析中…"; err.hidden=true;
-    auditPromise.then(res=>{
-      if(!res||!res.ok){ renderAuditError(res&&res.error); return; }
-      diagForm.sent();
-      return sendPayload({type:"site_audit",form_type:"site_audit",name:n.value.trim(),email:m.value.trim(),
-        company:document.getElementById("a-company").value.trim(),
-        audit:{url:res.url,total:res.total,grade:res.grade,axes:res.axes,
-               findings:(res.findings||[]).slice(0,5)}})
-      .then(sent=>{
-        if(!sent.ok){ btn.disabled=false; btn.textContent="もう一度送る"; showSendError(err,sent); track("form_error",{form_type:"site_audit",reason:errReason(sent)}); return; }
-        track("lead_capture",{source:"site_audit",form_type:"site_audit"});
-        track("site_audit_complete",{score:res.total,grade:res.grade});
-        renderAuditResult(res);
-      });
-    });
+    if(!ok){ e.preventDefault(); return; }
+    input.value=v; input.name=v?"url":"";
+    diagForm.sent();
+    track("cta_click",{cta_id:"subsidy_urlcheck_top"});
   });
 }
 
@@ -1557,32 +1494,6 @@ document.querySelectorAll("[data-diag]").forEach(a=>{
     track("cta_click",{cta_id:"chooser_"+m});
   });
 });
-
-function renderAuditError(msg){
-  stepLbl.textContent="エラー"; bar.style.width="100%";
-  body.innerHTML=`<p class="qnum">ERROR</p>
-    <p class="qtext">${msg||"サイトにアクセスできませんでした"}</p>
-    <p style="font-size:13.5px;color:var(--muted);margin-bottom:22px">ログインが必要なページや一部のサイトは簡易診断で解析できない場合があります。<b style="color:var(--gold-em)">無料相談では専門スタッフが手動で精密診断</b>いたしますので、お気軽にご相談ください。</p>
-    <a class="btn btn-primary btn-block" href="#contact" data-cta="audit_error_contact">精密診断を無料相談で依頼する</a>
-    <button type="button" class="back" id="a-retry">← URLを入力し直す</button>`;
-  document.getElementById("a-retry").addEventListener("click",renderAuditStart);
-}
-
-function renderAuditResult(res){
-  stepLbl.textContent="STEP 3 / 3 診断結果"; bar.style.width="100%";
-  const finds=(res.findings||[]).slice(0,5).map(f=>
-    `<li><b>−${f.max-f.got}点</b> ${f.label}${f.note?`<br><span style="font-size:12px;color:var(--dim)">${f.note}</span>`:""}</li>`).join("");
-  body.innerHTML=`<p class="qnum">RESULT — 簡易診断</p>
-    <div class="radar-wrap">
-      <div>${radarSVG(res.axes,AUDIT_AXES)}</div>
-      <div><p class="audit-total">${res.total}<small>/ 100点 ・ ${res.grade}判定</small></p></div>
-    </div>
-    ${finds?`<p style="font-size:13px;font-weight:700;margin-top:18px;color:var(--navy)">主な減点ポイント</p><ul class="findings">${finds}</ul>`:""}
-    <div class="notice"><b>この結果は簡易版です。</b>HTMLの静的解析によるもので、検索順位・ChatGPT/Perplexity等での実際の被引用状況・表示速度の実測・競合比較は含まれていません。<b>無料相談では、専門スタッフがこれらを含む精密診断を行い、「何から直すと一番伸びるか」の優先順位までレポート</b>します。</div>
-    <a class="btn btn-primary btn-block" href="#contact" data-cta="audit_result">精密診断つき無料相談を予約する</a>
-    <span class="micro" style="text-align:center">診断結果の控えをメールでお送りしました。営業電話はいたしません。</span>`;
-  body.querySelector("[data-cta]").addEventListener("click",()=>track("cta_click",{cta_id:"audit_result"}));
-}
 
 /* ============================================================
    フォーム: リアルタイム検証+bot対策+1ステップ送信
@@ -1651,7 +1562,7 @@ function watchForm(root,type){
 }
 const leadForm=watchForm(form,"contact");
 const diagForm=watchForm(document.getElementById("diagBody"),
-  ()=>TABS.audit.getAttribute("aria-selected")==="true"?"site_audit":"diagnosis_"+quiz.kind);
+  ()=>TABS.audit.getAttribute("aria-selected")==="true"?"url_check":"diagnosis_"+quiz.kind);
 
 form.addEventListener("submit",e=>{
   e.preventDefault();
