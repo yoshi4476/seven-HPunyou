@@ -27,11 +27,11 @@
 
 # 既存記事と同テーマの記事を作ってしまったため統合 (2026-08-03)
 /blog/security-action-futatsuboshi/ /blog/ai-hojokin-security-action-2star/ 301
-/blog/ai-hojokin-hissho-shorui-hojin/ /blog/ai-hojokin-hitsuyo-shorui-hojin/ 301
+/blog/ai-hojokin-hissho-shorui-hojin/ /blog/kojin-jigyonushi-ai-hojokin/ 301
 # 重複統合 (2026-08-04): 旧パイプラインが同一テーマを2本作っていた
 /blog/it-hojokin-saitakuritsu-up/ /blog/it-hojokin-saitakuritsu/ 301
 # 重複統合 (2026-08-07): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
-/blog/ai-hojokin-toha-2026/ /blog/ai-hojokin-kourigyou-katsuyou/ 301
+/blog/ai-hojokin-toha-2026/ /blog/kourigyou-ai-hojokin-keihi/ 301
 # 重複統合 (2026-08-08): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
 /blog/ai-hojokin-kojinjigyonushi/ /blog/ai-hojokin-kojin/ 301
 # 重複統合 (2026-08-10): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
@@ -42,9 +42,9 @@
 # 重複統合 (2026-08-08): 活用事例が2本になっていた
 /blog/ai-hojokin-katsuyou-jirei-2026/ /blog/ai-hojokin-ai-katsuyo-jirei/ 301
 # 重複統合 (2026-09-11): 既存の法人向け必要書類記事と重複していたため統合
-/blog/ai-hojokin-hitsuyoshorui-houjin/ /blog/ai-hojokin-hitsuyo-shorui-hojin/ 301
+/blog/ai-hojokin-hitsuyoshorui-houjin/ /blog/kojin-jigyonushi-ai-hojokin/ 301
 # 重複統合 (2026-09-15): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
-/blog/ai-hojokin-hitsuyo-shorui-hojin/ /blog/ai-hojokin-hitsuyo-shorui-kojin/ 301
+/blog/ai-hojokin-hitsuyo-shorui-hojin/ /blog/kojin-jigyonushi-ai-hojokin/ 301
 # 統合: jigyou-saikouchiku-biyoushitsu-jirei に吸収（2026-09-28）
 /blog/jigyou-saikouchiku-kensetsugyou-jirei/ /blog/jigyou-saikouchiku-biyoushitsu-jirei/ 301
 # 統合: jigyou-saikouchiku-shukuhakugyou-jirei に吸収（2026-09-28）
