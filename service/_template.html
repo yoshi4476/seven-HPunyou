@@ -130,6 +130,34 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
 footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* ==== 相談の入力欄（サービスページ共通）・下の固定ボタン ==== */
+.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(253,252,249,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.sticky-cta .btn{flex:1;min-height:48px;font-size:14px;padding:10px 8px}
+.sticky-cta .btn-ghost{border:1.5px solid var(--navy2);color:var(--navy)}
+@media(max-width:860px){.sticky-cta{display:flex}footer{padding-bottom:110px}}
+.field{margin-bottom:18px}
+.field label{display:block;font-size:14px;color:var(--muted);margin-bottom:7px}
+.field label b{color:var(--gold-em);font-size:12px;border:1px solid var(--line2);border-radius:4px;padding:1px 6px;margin-left:8px;font-weight:500}
+.field input,.field textarea{width:100%;background:#fff;border:1px solid #cfd4de;border-radius:10px;padding:13px 16px;color:var(--text);font-size:15px;font-family:var(--sans);min-height:48px}
+.field textarea{min-height:120px;resize:vertical}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--navy2)}
+.field .err{display:none;color:#b3261e;font-size:13px;margin-top:5px}
+.field.invalid input,.field.invalid textarea{border-color:#c9564d}
+.field.invalid .err{display:block}
+.btn-block{width:100%}
+.btn-gold{background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:var(--gold-ink);border:none;cursor:pointer}
+.micro2{display:block;margin-top:10px;font-size:13px;color:var(--dim);text-align:center}
+.form-card{background:#fff;border:1px solid var(--line2);border-radius:18px;padding:34px 30px;box-shadow:var(--shadow);max-width:640px}
+@media(max-width:560px){.form-card{padding:26px 18px}}
+.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+/* 送れなかったときの知らせ（入力は残し、電話とメールを案内する） */
+.send-err{margin:0 0 14px;padding:12px 16px;border:1px solid #e6b8b0;background:#fbf0ee;border-radius:10px;color:var(--text);font-size:14px;line-height:1.8}
+.send-err b{color:#b3261e}
+.send-err a{color:var(--navy);font-weight:700}
+/* 白い地の上の線のボタン（完了の後の案内） */
+.btn-line{border:1.5px solid var(--navy2);color:var(--navy);background:#fff}
+.trust-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.trust-chips span{font-size:12px;font-weight:700;color:#7a5b14;background:#f9f1dc;border:1px solid rgba(176,139,62,.35);border-radius:999px;padding:5px 13px}
 </style>
 <!-- GA4 -->
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
@@ -162,7 +190,7 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
     <h1>{{H1}}</h1>
     <p class="hero-lead">{{HERO_LEAD}}</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="/#contact">無料で相談する</a>
+      <a class="btn btn-primary" href="#svcform">無料で相談する</a>
       <a class="btn btn-ghost" href="/#diagnosis">無料診断を試す</a>
     </div>
   </div>
@@ -177,12 +205,38 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 
   {{BODY}}
 
+  <section id="svcform"><div class="wrap">
+    <h2>無料相談・<span class="accent">お問い合わせ</span></h2>
+    <p class="lead">{{SERVICE_NAME}}について、3営業日以内にメールでご返信します。営業電話はいたしません。</p>
+    <div class="form-card">
+      <form id="svcForm" novalidate>
+        <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
+        <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
+        <div class="field"><label for="f-company">会社名<b>任意</b></label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="f-message">ご相談内容</label><textarea id="f-message" name="message" required placeholder="例)自社が対象になるか知りたい/進め方を相談したい"></textarea><p class="err">ご相談内容を入力してください</p></div>
+        <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+        <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
+        <p class="send-err" id="svcErr" role="alert" hidden></p>
+        <button class="btn btn-gold btn-block" type="submit" id="svcSubmit">無料で相談する</button>
+        <span class="micro2">送信後、3営業日以内にご返信します。営業電話はいたしません。</span>
+      </form>
+      <div id="svcDone" hidden tabindex="-1" style="text-align:center;padding:24px 0">
+        <p style="font-family:var(--serif);font-size:20px;font-weight:800;color:var(--navy);margin-bottom:10px">送信ありがとうございました。</p>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:20px">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+          <a class="btn btn-line" href="/#diagnosis" data-cta="svc_done_diag">無料診断を試す</a>
+          <a class="btn btn-line" href="/blog/" data-cta="svc_done_blog">ブログを読む</a>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
   <div class="wrap">
     <div class="cta-box">
       <p class="t">{{CTA_TITLE}}</p>
       <p class="d">{{CTA_DESC}}</p>
       <div class="row">
-        <a class="btn btn-primary" href="/#contact">無料で相談する</a>
+        <a class="btn btn-primary" href="#svcform">無料で相談する</a>
         <a class="btn btn-ghost" href="/#diagnosis">無料診断を試す</a>
       </div>
       <span class="micro">3営業日以内に返信します。営業電話はいたしません。</span>
@@ -195,11 +249,112 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
   </div>
 </main>
 
+<div class="sticky-cta" role="navigation" aria-label="固定CTA">
+  <a class="btn btn-ghost" href="/#diagnosis">無料診断を試す</a>
+  <a class="btn btn-primary" href="#svcform">無料で相談する</a>
+</div>
+
 <footer>
   <nav><a href="/">AI導入補助金LP</a><a href="/service/hojokin/">補助金サポート</a><a href="/service/dev/">システム開発</a><a href="/service/aio/">AIOコンサル</a><a href="/service/meo/">MEOコンサル</a><a href="/about/">会社案内</a><a href="/blog/">AI導入補助金ブログ</a><a href="/privacy/">プライバシーポリシー</a></nav>
   <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
   <p class="footer-credit" style="margin:.4em 0 0;font-size:12px"><a href="https://conflux-partners.jp/works/7senses-lp" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:2px">LP 制作：YW（CONFLUX PARTNERS）</a></p>
       <ul class="social-links" aria-label="外部プロフィール"><li><a href="https://x.com/sevensensece" target="_blank" rel="noopener me" aria-label="X（セブンセンシズ株式会社）" data-net="x"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li><li><a href="https://www.linkedin.com/in/yu-haraguchi" target="_blank" rel="noopener me" aria-label="LinkedIn（原口 優）" data-net="linkedin"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a href="https://note.com/yu_haraguchi" target="_blank" rel="noopener me" aria-label="note（原口 優）" data-net="note"><span>note</span></a></li></ul>
 </footer>
+<script id="svc-lead">
+/* 相談の入力欄（サービスページ共通。雛形 service/_template.html と同じ）。
+   送れたかを受付（管制塔の Apps Script）の返事 {ok} で確かめる。以前は返事を読まない送り方（no-cors）で、
+   通信が切れても「送信ありがとうございました」を出し、問い合わせとして数えていた（2026-10-07 の点検）。
+   受付の「稼働しています」（GET の返事、message つき）が返ったときは台帳に入っていないので、届かなかったとして扱う */
+const GAS_ENDPOINT="https://script.google.com/macros/s/AKfycbw9RRmWMJnR6lc9n4OmqOGECx4ZHKjdOpfPHFU88-2tQKxkoejbPvCLjr9Edc0Na1nu2w/exec";
+const SVC_LABEL="{{SERVICE_NAME}}", SVC_SLUG="{{SLUG}}";
+const TS=Date.now(); let lastSubmit=0;
+function track(ev,p){ if(typeof gtag!=="function") return; gtag("event",ev,p||{}); if(ev==="cta_click"&&p&&p.cta_id) gtag("event","cta_"+p.cta_id); if(ev==="lead_capture"&&p&&p.source) gtag("event","lead_"+p.source); }
+function sendPayload(d){
+  // site が無いと管制塔で「（不明）」になる。referer は記事→問い合わせの対比に使う
+  const payload=Object.assign({site:"subsidy",referer:location.href,website:"",ts:TS},d);
+  if(!GAS_ENDPOINT) return Promise.resolve({ok:false,error:"送信先が設定されていません。"});
+  return fetch(GAS_ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+    .then(r=>r.json().catch(()=>({})).then(j=>({ok:!!(r.ok&&j&&j.ok===true&&!("message" in j)),error:(j&&j.error)||""})))
+    .catch(()=>({ok:false,error:"",network:true}));
+}
+/* 送れなかったときは入力を残したまま、電話とメールを案内する */
+function showSendError(box,res){
+  box.innerHTML='<b></b><br>お急ぎの方・何度か試しても送れない方は、お電話（<a href="tel:0643057547">06-4305-7547</a>・平日9〜20時）'
+    +'またはメール（<a href="mailto:info.ai@7senses.co.jp">info.ai@7senses.co.jp</a>）でご連絡ください。入力した内容はこのまま残っています。';
+  box.firstChild.textContent=(res&&res.error)||"送信できませんでした。通信の状態をご確認のうえ、もう一度お試しください。";
+  box.hidden=false;
+}
+const errReason=res=>res.network?"network":(res.error||"unknown").slice(0,60);
+function liveErr(id){const el=document.getElementById(id);
+  el.addEventListener("input",()=>{ if(el.parentElement.classList.contains("invalid")) el.parentElement.classList.remove("invalid"); });}
+function gateOk(n,m){
+  let ok=!!n.value.trim();
+  n.parentElement.classList.toggle("invalid",!n.value.trim());
+  const okMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m.value);
+  m.parentElement.classList.toggle("invalid",!okMail);
+  return ok&&okMail;
+}
+/* 入力の開始と離脱（AI集客ラボの site.js と同じ数え方。1回の表示につき1回。戻る・進むで表示し直したら、その表示で触ったときだけ数え直す） */
+function watchForm(root,type){
+  let started=false,last="",sent=false,gone=false;
+  const kind=()=>typeof type==="function"?type():type;
+  root.addEventListener("focusin",e=>{
+    const el=e.target;
+    if(!el.matches||!el.matches("input,select,textarea")||el.type==="hidden"||el.name==="website") return;
+    last=el.name||el.id;
+    if(!started){ started=true; track("form_start",{form_type:kind(),page_path:location.pathname}); }
+  });
+  addEventListener("pagehide",()=>{ if(started&&!sent&&!gone){ gone=true; track("form_abandon",{form_type:kind(),last_field:last,page_path:location.pathname}); } });
+  addEventListener("pageshow",e=>{ if(e.persisted){ started=false; gone=false; sent=false; last=""; } });
+  return {sent:()=>{ sent=true; }};
+}
+/* 相談（#svcform）・診断（#shindan）への押下を、置き場所ごとに数える（data-cta があればその名前）。
+   以前はサービスページの押下を数えておらず、どの誘いが効いたか分からなかった */
+document.addEventListener("click",e=>{
+  const a=e.target.closest&&e.target.closest("a[href]");
+  if(!a) return;
+  const href=a.getAttribute("href");
+  const to=href==="#svcform"?"form":href==="#shindan"?"diag":/#contact$|#diagnosis$/.test(href)?"top":"";
+  if(!a.dataset.cta&&!to) return;
+  const place=a.closest("header")?"header":a.closest(".hero")?"hero":a.closest(".sticky-cta")?"sticky":a.closest(".float-cta")?"float"
+    :a.closest(".pricecard")?"price":a.closest(".cta-box")?"cta_box":a.closest("#shindan")?"diag":a.closest("footer")?"footer":"inline";
+  track("cta_click",{cta_id:a.dataset.cta||("svc_"+place+"_"+to),page_path:location.pathname,service:SVC_SLUG});
+});
+const form=document.getElementById("svcForm");
+const leadForm=watchForm(form,"contact_svc");
+["f-name","f-email","f-message"].forEach(liveErr);
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const now=Date.now();
+  if(form.website.value) return;
+  if(now-TS<3000) return;
+  if(now-lastSubmit<30000) return;
+  const n=document.getElementById("f-name"),m=document.getElementById("f-email"),msg=document.getElementById("f-message");
+  let ok=gateOk(n,m);
+  const okMsg=msg.value.trim().length>=5;
+  msg.parentElement.classList.toggle("invalid",!okMsg);
+  if(!(ok&&okMsg)) return;
+  lastSubmit=now; leadForm.sent();
+  const btn=document.getElementById("svcSubmit"), label=btn.textContent, err=document.getElementById("svcErr");
+  btn.disabled=true; btn.textContent="送信中…"; err.hidden=true;
+  sendPayload({type:"contact",form_type:"contact_svc",name:n.value.trim(),email:m.value.trim(),
+    company:document.getElementById("f-company").value.trim(),
+    message:"【"+SVC_LABEL+"の相談】"+msg.value.trim()})
+  .then(res=>{
+    if(!res.ok){
+      lastSubmit=0; btn.disabled=false; btn.textContent=label;
+      showSendError(err,res);
+      track("form_error",{form_type:"contact_svc",reason:errReason(res)});
+      return;
+    }
+    // 問い合わせとして数えるのは、受付が受け取ったと返したときだけ
+    track("form_submit",{form_type:"contact_svc"});
+    track("lead_capture",{source:"form_"+SVC_SLUG,form_type:"contact_svc"});
+    form.hidden=true;
+    const done=document.getElementById("svcDone");
+    done.hidden=false; done.focus();
+  });
+});
+</script>
 </body>
 </html>

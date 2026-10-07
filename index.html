@@ -484,6 +484,9 @@ table.data .ok{color:var(--gold-em);font-weight:700}
 .contact .micro{color:#8fa0c2}
 .form-card .micro{color:var(--dim)}
 .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+.send-err{margin:0 0 14px;padding:12px 16px;border:1px solid #e6b8b0;background:#fbf0ee;border-radius:10px;color:var(--text);font-size:14px;line-height:1.8}
+.send-err b{color:#b3261e}
+.send-err a{color:var(--navy);font-weight:700}
 footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg2)}
 .foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;font-size:13px;color:var(--muted)}
 .foot-grid nav{display:flex;flex-wrap:wrap;gap:20px}
@@ -1109,15 +1112,16 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
           <input type="hidden" name="ts" id="f-ts">
           <label class="agree" id="agreeWrap"><input type="checkbox" id="f-agree" name="agree" required><span><a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span></label>
           <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
+          <p class="send-err" id="formErr" role="alert" hidden></p>
           <button class="btn btn-primary btn-block" type="submit" id="submitBtn" data-cta="form_submit">無料相談を申し込む(現状分析レポート付き)</button>
           <span class="micro" style="text-align:center">いただいた情報は相談対応の目的以外には使用しません。</span>
         </form>
-        <div id="formDone" hidden style="text-align:center;padding:30px 0">
+        <div id="formDone" hidden tabindex="-1" style="text-align:center;padding:30px 0">
           <p style="font-family:var(--serif);font-size:22px;font-weight:800;margin-bottom:12px;color:var(--navy)">送信ありがとうございました。</p>
-          <p style="color:var(--muted);font-size:14px;margin-bottom:26px">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
+          <p style="color:var(--muted);font-size:15px;margin-bottom:26px">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
           <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
-            <a class="btn btn-ghost" href="#diagnosis">無料診断を試す</a>
-            <a class="btn btn-ghost" href="/blog/">ブログを読む</a>
+            <a class="btn btn-ghost" href="#diagnosis" data-cta="done_diag">無料診断を試す</a>
+            <a class="btn btn-ghost" href="/blog/" data-cta="done_blog">ブログを読む</a>
           </div>
         </div>
       </div>
@@ -1357,6 +1361,7 @@ function renderGate(){
     <div class="field"><label for="d-name">お名前</label><input id="d-name" type="text" autocomplete="name"><p class="err">お名前を入力してください</p></div>
     <div class="field"><label for="d-email">メールアドレス</label><input id="d-email" type="email" autocomplete="email" inputmode="email"><p class="err">正しいメールアドレスを入力してください</p></div>
     <div class="field"><label for="d-company">会社名<b>任意</b></label><input id="d-company" type="text" autocomplete="organization"></div>
+    <p class="send-err" id="d-err" role="alert" hidden></p>
     <button type="button" class="btn btn-primary btn-block" id="d-show">診断結果を無料で見る</button>
     <span class="micro" style="text-align:center">結果はこの場で表示され、控えをメールでお送りします。営業電話はいたしません。</span>`;
   // 入力中にエラーを即時解消(レイアウトずれによる誤クリック防止)
@@ -1371,13 +1376,19 @@ function renderGate(){
     const okMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m.value);
     m.parentElement.classList.toggle("invalid",!okMail); ok=ok&&okMail;
     if(!ok) return;
-    const scores=calcScores(), grade=calcGrade(scores);
-    track("lead_capture",{source:"diagnosis_"+quiz.kind});
-    track("diagnosis_complete",{grade,kind:quiz.kind});
-    sendPayload({type:"diagnosis",name:n.value.trim(),email:m.value.trim(),
+    const scores=calcScores(), grade=calcGrade(scores), kind=quiz.kind;
+    const btn=document.getElementById("d-show"), err=document.getElementById("d-err");
+    btn.disabled=true; btn.textContent="送信中…"; err.hidden=true; diagForm.sent();
+    sendPayload({type:"diagnosis",form_type:"diagnosis_"+kind,name:n.value.trim(),email:m.value.trim(),
       company:document.getElementById("d-company").value.trim(),
-      diagnosis:{kind:quiz.kind,answers,scores,grade}});
-    renderResult(scores,grade);
+      diagnosis:{kind,answers,scores,grade}})
+    .then(res=>{
+      // 控えを送れなかったのに「お送りしました」と出さない。入力は残して送り直せるようにする
+      if(!res.ok){ btn.disabled=false; btn.textContent="もう一度送る"; showSendError(err,res); track("form_error",{form_type:"diagnosis_"+kind,reason:errReason(res)}); return; }
+      track("lead_capture",{source:"diagnosis_"+kind,form_type:"diagnosis_"+kind});
+      track("diagnosis_complete",{grade,kind});
+      renderResult(scores,grade);
+    });
   });
 }
 
@@ -1447,8 +1458,10 @@ function fetchAudit(url){
     console.warn("GAS_ENDPOINT未設定: モック診断結果を返します(本番前に必ず設定)");
     return new Promise(r=>setTimeout(()=>r(mockAudit(url)),1000));
   }
+  const down={ok:false,error:"ただいま自動診断を調整中です。お手数ですが、下のお問い合わせから「サイト診断希望」とお送りください(担当が精密診断してご返信します)"};
+  // 受付に自動診断が無いと「稼働しています」（点数なし）が返る。点数の無い結果を出さない（「undefined / 100点」と出ていた。2026-10-08）
   return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url))
-    .then(r=>r.json()).catch(()=>({ok:false,error:"ただいま自動診断を調整中です。お手数ですが、下のお問い合わせから「サイト診断希望」とお送りください(担当が精密診断してご返信します)"}));
+    .then(r=>r.json()).then(j=>j&&j.ok&&typeof j.total==="number"?j:down).catch(()=>down);
 }
 
 function renderAuditStart(){
@@ -1479,6 +1492,7 @@ function renderAuditGate(url){
     <div class="field"><label for="a-name">お名前</label><input id="a-name" type="text" autocomplete="name"><p class="err">お名前を入力してください</p></div>
     <div class="field"><label for="a-email">メールアドレス</label><input id="a-email" type="email" autocomplete="email" inputmode="email"><p class="err">正しいメールアドレスを入力してください</p></div>
     <div class="field"><label for="a-company">会社名<b>任意</b></label><input id="a-company" type="text" autocomplete="organization"></div>
+    <p class="send-err" id="a-err" role="alert" hidden></p>
     <button type="button" class="btn btn-primary btn-block" id="a-show">診断結果を見る</button>
     <span class="micro" style="text-align:center">結果はこの場で表示され、控えをメールでお送りします。営業電話はいたしません。</span>`;
   ["a-name","a-email"].forEach(id=>{
@@ -1492,17 +1506,21 @@ function renderAuditGate(url){
     const okMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m.value);
     m.parentElement.classList.toggle("invalid",!okMail); ok=ok&&okMail;
     if(!ok) return;
-    const btn=document.getElementById("a-show");
-    btn.disabled=true; btn.textContent="解析中…";
+    const btn=document.getElementById("a-show"), err=document.getElementById("a-err");
+    btn.disabled=true; btn.textContent="解析中…"; err.hidden=true;
     auditPromise.then(res=>{
       if(!res||!res.ok){ renderAuditError(res&&res.error); return; }
-      track("lead_capture",{source:"site_audit"});
-      track("site_audit_complete",{score:res.total,grade:res.grade});
-      sendPayload({type:"site_audit",name:n.value.trim(),email:m.value.trim(),
+      diagForm.sent();
+      return sendPayload({type:"site_audit",form_type:"site_audit",name:n.value.trim(),email:m.value.trim(),
         company:document.getElementById("a-company").value.trim(),
         audit:{url:res.url,total:res.total,grade:res.grade,axes:res.axes,
-               findings:(res.findings||[]).slice(0,5)}});
-      renderAuditResult(res);
+               findings:(res.findings||[]).slice(0,5)}})
+      .then(sent=>{
+        if(!sent.ok){ btn.disabled=false; btn.textContent="もう一度送る"; showSendError(err,sent); track("form_error",{form_type:"site_audit",reason:errReason(sent)}); return; }
+        track("lead_capture",{source:"site_audit",form_type:"site_audit"});
+        track("site_audit_complete",{score:res.total,grade:res.grade});
+        renderAuditResult(res);
+      });
     });
   });
 }
@@ -1577,26 +1595,55 @@ Object.keys(validators).forEach(id=>{
 });
 document.getElementById("f-agree").addEventListener("change",vAgree);
 
+/* 受付（管制塔の Apps Script）の返事 {ok} を読んで、届いたかを確かめる（コーポレートと同じ送り方）。
+   以前は返事を読まない送り方（no-cors）で、通信が切れても「送信ありがとうございました」と出し、問い合わせとして数えていた（2026-10-07 の点検）。
+   受付の「稼働しています」（GET の返事、message つき）が返ったときは相談が台帳に入っていないので、届かなかったとして扱う（2026-10-08 に1回再現） */
 function sendPayload(data){
   // site が無いと管制塔で「（不明）」になる。referer は記事→問い合わせの対比に使う
   const payload=Object.assign({site:"subsidy",referer:location.href,website:form?form.website.value:"",ts:TS},data);
-  if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定: 送信内容→",payload); return Promise.resolve(); }
-  return fetch(GAS_ENDPOINT,{method:"POST",mode:"no-cors",
-    headers:{"Content-Type":"text/plain"},body:JSON.stringify(payload)});
+  if(!GAS_ENDPOINT) return Promise.resolve({ok:false,error:"送信先が設定されていません。"});
+  return fetch(GAS_ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+    .then(r=>r.json().catch(()=>({})).then(j=>({ok:!!(r.ok&&j&&j.ok===true&&!("message" in j)),error:(j&&j.error)||""})))
+    .catch(()=>({ok:false,error:"",network:true}));
 }
+/* 送れなかったときは入力を残したまま、電話とメールを案内する */
+function showSendError(box,res){
+  box.innerHTML='<b></b><br>お急ぎの方・何度か試しても送れない方は、お電話（<a href="tel:0643057547">06-4305-7547</a>・平日9〜20時）'
+    +'またはメール（<a href="mailto:info.ai@7senses.co.jp">info.ai@7senses.co.jp</a>）でご連絡ください。入力した内容はこのまま残っています。';
+  box.firstChild.textContent=(res&&res.error)||"送信できませんでした。通信の状態をご確認のうえ、もう一度お試しください。";
+  box.hidden=false;
+}
+const errReason=res=>res.network?"network":(res.error||"unknown").slice(0,60);
+/* 入力の開始と離脱（AI集客ラボの site.js と同じ数え方。1回の表示につき1回。戻る・進むで表示し直したら、その表示で触ったときだけ数え直す） */
+function watchForm(root,type){
+  let started=false,last="",sent=false,gone=false;
+  const kind=()=>typeof type==="function"?type():type;
+  root.addEventListener("focusin",e=>{
+    const el=e.target;
+    if(!el.matches||!el.matches("input,select,textarea")||el.type==="hidden"||el.name==="website") return;
+    last=el.name||el.id;
+    if(!started){ started=true; track("form_start",{form_type:kind(),page_path:location.pathname}); }
+  });
+  addEventListener("pagehide",()=>{ if(started&&!sent&&!gone){ gone=true; track("form_abandon",{form_type:kind(),last_field:last,page_path:location.pathname}); } });
+  addEventListener("pageshow",e=>{ if(e.persisted){ started=false; gone=false; sent=false; last=""; } });
+  return {sent:()=>{ sent=true; }};
+}
+const leadForm=watchForm(form,"contact");
+const diagForm=watchForm(document.getElementById("diagBody"),
+  ()=>TABS.audit.getAttribute("aria-selected")==="true"?"site_audit":"diagnosis_"+quiz.kind);
 
 form.addEventListener("submit",e=>{
   e.preventDefault();
   const now=Date.now();
   if(form.website.value) return;                 // ハニーポット
   if(now-TS<3000) return;                        // 3秒未満の即時送信=bot
-  if(now-lastSubmit<30000) return;               // 連投制限30秒
+  if(now-lastSubmit<30000) return;               // 連投制限30秒（届かなかったときは解いて、すぐ送り直せる）
   if(!(vName()&vComp()&vMail()&vTopic()&vAgree())) return;
-  lastSubmit=now;
-  const btn=document.getElementById("submitBtn");
-  btn.disabled=true; btn.textContent="送信中…";
+  lastSubmit=now; leadForm.sent();
+  const btn=document.getElementById("submitBtn"), label=btn.textContent, err=document.getElementById("formErr");
+  btn.disabled=true; btn.textContent="送信中…"; err.hidden=true;
   const detail=document.getElementById("f-message").value.trim();
-  sendPayload({type:"contact",
+  sendPayload({type:"contact",form_type:"contact",
     name:document.getElementById("f-name").value.trim(),
     company:document.getElementById("f-company").value.trim(),
     email:document.getElementById("f-email").value.trim(),
@@ -1606,11 +1653,19 @@ form.addEventListener("submit",e=>{
     contact_way:document.getElementById("f-way").value,
     contact_when:document.getElementById("f-when").value,
     agreed:true})
-  .finally(()=>{
+  .then(res=>{
+    if(!res.ok){
+      lastSubmit=0; btn.disabled=false; btn.textContent=label;
+      showSendError(err,res);
+      track("form_error",{form_type:"contact",reason:errReason(res)});
+      return;
+    }
+    // 問い合わせとして数えるのは、受付が受け取ったと返したときだけ
     track("form_submit",{form_type:"contact"});
-    track("lead_capture",{source:"form"});
+    track("lead_capture",{source:"form",form_type:"contact"});
     form.hidden=true;
-    document.getElementById("formDone").hidden=false;
+    const done=document.getElementById("formDone");
+    done.hidden=false; done.focus();
   });
 });
 </script>

@@ -58,9 +58,11 @@ for d in PUBLIC_DIRS:
 
 
 def verify(dist=DIST):
-    """sitemap に載せたのに配信物に無いページと、日本語Webフォントの再混入を数える。
+    """sitemap に載せたのに配信物に無いページと、日本語Webフォントの再混入と、送れたかを確かめない送り方を数える。
     2026-10-03: /seido/ を作って sitemap に載せたが PUBLIC_DIRS に足し忘れ、本番は404だった。
-    2026-10 前半: ブログの生成テンプレートが Google Fonts を読み、モバイルの LCP が13秒だった"""
+    2026-10 前半: ブログの生成テンプレートが Google Fonts を読み、モバイルの LCP が13秒だった。
+    2026-10-07: 相談・診断を返事を読まない送り方（no-cors）で受付へ送り、通信が切れても「送信ありがとうございました」と
+    出して問い合わせとして数えていた"""
     bad = []
     sm = dist / "sitemap.xml"
     if sm.is_file():
@@ -70,8 +72,11 @@ def verify(dist=DIST):
             if not any(c.is_file() for c in cands):
                 bad.append(f"404になる: {loc}")
     for f in dist.rglob("*.html"):
-        if "fonts.googleapis.com" in f.read_text(encoding="utf-8", errors="ignore"):
+        text = f.read_text(encoding="utf-8", errors="ignore")
+        if "fonts.googleapis.com" in text:
             bad.append(f"Google Fonts を読んでいる: {f.relative_to(dist)}")
+        if "script.google.com/macros" in text and re.search(r"mode\s*:\s*['\"]no-cors", text):
+            bad.append(f"送れたかを確かめない送り方（no-cors）で受付へ送っている: {f.relative_to(dist)}")
     return bad
 
 

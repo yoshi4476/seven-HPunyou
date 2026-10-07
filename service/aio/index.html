@@ -194,6 +194,12 @@ footer a{color:var(--muted);text-decoration:none;margin:0 10px}
 .form-card{background:#fff;border:1px solid var(--line2);border-radius:18px;padding:34px 30px;box-shadow:var(--shadow);max-width:640px}
 @media(max-width:560px){.form-card{padding:26px 18px}}
 .hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+/* 送れなかったときの知らせ（入力は残し、電話とメールを案内する） */
+.send-err{margin:0 0 14px;padding:12px 16px;border:1px solid #e6b8b0;background:#fbf0ee;border-radius:10px;color:var(--text);font-size:14px;line-height:1.8}
+.send-err b{color:#b3261e}
+.send-err a{color:var(--navy);font-weight:700}
+/* 白い地の上の線のボタン（完了の後の案内） */
+.btn-line{border:1.5px solid var(--navy2);color:var(--navy);background:#fff}
 
 
 /* ==== LP風ビジュアル移植 ==== */
@@ -536,18 +542,23 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
     <p class="lead">AIOコンサルティングについて、3営業日以内にメールでご返信します。営業電話はいたしません。</p>
     <div class="form-card">
       <form id="svcForm" novalidate>
-        <div class="field"><label for="f-name">お名前</label><input id="f-name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
-        <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
-        <div class="field"><label for="f-company">会社名<b>任意</b></label><input id="f-company" type="text" autocomplete="organization"></div>
-        <div class="field"><label for="f-message">ご相談内容</label><textarea id="f-message" required placeholder="例)自社サイトがAI検索に出てこない理由を知りたい/精密診断を依頼したい"></textarea><p class="err">ご相談内容を入力してください</p></div>
+        <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
+        <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required><p class="err">正しいメールアドレスを入力してください</p></div>
+        <div class="field"><label for="f-company">会社名<b>任意</b></label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+        <div class="field"><label for="f-message">ご相談内容</label><textarea id="f-message" name="message" required placeholder="例)自社サイトがAI検索に出てこない理由を知りたい/精密診断を依頼したい"></textarea><p class="err">ご相談内容を入力してください</p></div>
         <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
         <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
+        <p class="send-err" id="svcErr" role="alert" hidden></p>
           <button class="btn btn-gold btn-block" type="submit" id="svcSubmit">無料で相談する</button>
         <span class="micro2">送信後、3営業日以内にご返信します。営業電話はいたしません。</span>
       </form>
-      <div id="svcDone" hidden style="text-align:center;padding:24px 0">
+      <div id="svcDone" hidden tabindex="-1" style="text-align:center;padding:24px 0">
         <p style="font-family:var(--serif);font-size:20px;font-weight:800;color:var(--navy);margin-bottom:10px">送信ありがとうございました。</p>
-        <p style="color:var(--muted);font-size:13.5px">3営業日以内に担当よりメールでご連絡します。</p>
+        <p style="color:var(--muted);font-size:15px;margin-bottom:20px">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+          <a class="btn btn-line" href="https://ai.7senses.co.jp/tools/ai-check/?src=lp_subsidy&amp;from=svc_aio_done" target="_blank" rel="noopener" data-cta="svc_done_aicheck">AIにどう紹介されているか無料チェック</a>
+          <a class="btn btn-line" href="/blog/" data-cta="svc_done_blog">ブログを読む</a>
+        </div>
       </div>
     </div>
   </div></section>
@@ -585,18 +596,105 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
       <ul class="social-links" aria-label="外部プロフィール"><li><a href="https://x.com/sevensensece" target="_blank" rel="noopener me" aria-label="X（セブンセンシズ株式会社）" data-net="x"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li><li><a href="https://www.linkedin.com/in/yu-haraguchi" target="_blank" rel="noopener me" aria-label="LinkedIn（原口 優）" data-net="linkedin"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a href="https://note.com/yu_haraguchi" target="_blank" rel="noopener me" aria-label="note（原口 優）" data-net="note"><span>note</span></a></li></ul>
 </footer>
 
-<script>
-/* 訴求LP装備: 埋め込み診断+フォーム(GAS_ENDPOINT はLP本体と同じURLを設定) */
+<script id="svc-lead">
+/* 相談の入力欄（サービスページ共通。雛形 service/_template.html と同じ）。
+   送れたかを受付（管制塔の Apps Script）の返事 {ok} で確かめる。以前は返事を読まない送り方（no-cors）で、
+   通信が切れても「送信ありがとうございました」を出し、問い合わせとして数えていた（2026-10-07 の点検）。
+   受付の「稼働しています」（GET の返事、message つき）が返ったときは台帳に入っていないので、届かなかったとして扱う */
 const GAS_ENDPOINT="https://script.google.com/macros/s/AKfycbw9RRmWMJnR6lc9n4OmqOGECx4ZHKjdOpfPHFU88-2tQKxkoejbPvCLjr9Edc0Na1nu2w/exec";
-const SVC_LABEL="AIOコンサルティング";
-const QUIZ=null;
+const SVC_LABEL="AIOコンサルティング", SVC_SLUG="aio";
 const TS=Date.now(); let lastSubmit=0;
 function track(ev,p){ if(typeof gtag!=="function") return; gtag("event",ev,p||{}); if(ev==="cta_click"&&p&&p.cta_id) gtag("event","cta_"+p.cta_id); if(ev==="lead_capture"&&p&&p.source) gtag("event","lead_"+p.source); }
 function sendPayload(d){
-  const payload=Object.assign({website:"",ts:TS},d);
-  if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定:",payload); return Promise.resolve(); }
-  return fetch(GAS_ENDPOINT,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain"},body:JSON.stringify(payload)});
+  // site が無いと管制塔で「（不明）」になる。referer は記事→問い合わせの対比に使う
+  const payload=Object.assign({site:"subsidy",referer:location.href,website:"",ts:TS},d);
+  if(!GAS_ENDPOINT) return Promise.resolve({ok:false,error:"送信先が設定されていません。"});
+  return fetch(GAS_ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+    .then(r=>r.json().catch(()=>({})).then(j=>({ok:!!(r.ok&&j&&j.ok===true&&!("message" in j)),error:(j&&j.error)||""})))
+    .catch(()=>({ok:false,error:"",network:true}));
 }
+/* 送れなかったときは入力を残したまま、電話とメールを案内する */
+function showSendError(box,res){
+  box.innerHTML='<b></b><br>お急ぎの方・何度か試しても送れない方は、お電話（<a href="tel:0643057547">06-4305-7547</a>・平日9〜20時）'
+    +'またはメール（<a href="mailto:info.ai@7senses.co.jp">info.ai@7senses.co.jp</a>）でご連絡ください。入力した内容はこのまま残っています。';
+  box.firstChild.textContent=(res&&res.error)||"送信できませんでした。通信の状態をご確認のうえ、もう一度お試しください。";
+  box.hidden=false;
+}
+const errReason=res=>res.network?"network":(res.error||"unknown").slice(0,60);
+function liveErr(id){const el=document.getElementById(id);
+  el.addEventListener("input",()=>{ if(el.parentElement.classList.contains("invalid")) el.parentElement.classList.remove("invalid"); });}
+function gateOk(n,m){
+  let ok=!!n.value.trim();
+  n.parentElement.classList.toggle("invalid",!n.value.trim());
+  const okMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m.value);
+  m.parentElement.classList.toggle("invalid",!okMail);
+  return ok&&okMail;
+}
+/* 入力の開始と離脱（AI集客ラボの site.js と同じ数え方。1回の表示につき1回。戻る・進むで表示し直したら、その表示で触ったときだけ数え直す） */
+function watchForm(root,type){
+  let started=false,last="",sent=false,gone=false;
+  const kind=()=>typeof type==="function"?type():type;
+  root.addEventListener("focusin",e=>{
+    const el=e.target;
+    if(!el.matches||!el.matches("input,select,textarea")||el.type==="hidden"||el.name==="website") return;
+    last=el.name||el.id;
+    if(!started){ started=true; track("form_start",{form_type:kind(),page_path:location.pathname}); }
+  });
+  addEventListener("pagehide",()=>{ if(started&&!sent&&!gone){ gone=true; track("form_abandon",{form_type:kind(),last_field:last,page_path:location.pathname}); } });
+  addEventListener("pageshow",e=>{ if(e.persisted){ started=false; gone=false; sent=false; last=""; } });
+  return {sent:()=>{ sent=true; }};
+}
+/* 相談（#svcform）・診断（#shindan）への押下を、置き場所ごとに数える（data-cta があればその名前）。
+   以前はサービスページの押下を数えておらず、どの誘いが効いたか分からなかった */
+document.addEventListener("click",e=>{
+  const a=e.target.closest&&e.target.closest("a[href]");
+  if(!a) return;
+  const href=a.getAttribute("href");
+  const to=href==="#svcform"?"form":href==="#shindan"?"diag":/#contact$|#diagnosis$/.test(href)?"top":"";
+  if(!a.dataset.cta&&!to) return;
+  const place=a.closest("header")?"header":a.closest(".hero")?"hero":a.closest(".sticky-cta")?"sticky":a.closest(".float-cta")?"float"
+    :a.closest(".pricecard")?"price":a.closest(".cta-box")?"cta_box":a.closest("#shindan")?"diag":a.closest("footer")?"footer":"inline";
+  track("cta_click",{cta_id:a.dataset.cta||("svc_"+place+"_"+to),page_path:location.pathname,service:SVC_SLUG});
+});
+const form=document.getElementById("svcForm");
+const leadForm=watchForm(form,"contact_svc");
+["f-name","f-email","f-message"].forEach(liveErr);
+form.addEventListener("submit",e=>{
+  e.preventDefault();
+  const now=Date.now();
+  if(form.website.value) return;
+  if(now-TS<3000) return;
+  if(now-lastSubmit<30000) return;
+  const n=document.getElementById("f-name"),m=document.getElementById("f-email"),msg=document.getElementById("f-message");
+  let ok=gateOk(n,m);
+  const okMsg=msg.value.trim().length>=5;
+  msg.parentElement.classList.toggle("invalid",!okMsg);
+  if(!(ok&&okMsg)) return;
+  lastSubmit=now; leadForm.sent();
+  const btn=document.getElementById("svcSubmit"), label=btn.textContent, err=document.getElementById("svcErr");
+  btn.disabled=true; btn.textContent="送信中…"; err.hidden=true;
+  sendPayload({type:"contact",form_type:"contact_svc",name:n.value.trim(),email:m.value.trim(),
+    company:document.getElementById("f-company").value.trim(),
+    message:"【"+SVC_LABEL+"の相談】"+msg.value.trim()})
+  .then(res=>{
+    if(!res.ok){
+      lastSubmit=0; btn.disabled=false; btn.textContent=label;
+      showSendError(err,res);
+      track("form_error",{form_type:"contact_svc",reason:errReason(res)});
+      return;
+    }
+    // 問い合わせとして数えるのは、受付が受け取ったと返したときだけ
+    track("form_submit",{form_type:"contact_svc"});
+    track("lead_capture",{source:"form_"+SVC_SLUG,form_type:"contact_svc"});
+    form.hidden=true;
+    const done=document.getElementById("svcDone");
+    done.hidden=false; done.focus();
+  });
+});
+</script>
+<script>
+/* 訴求LP装備: このページの中で結果まで出す診断（送信・計測は上の svc-lead） */
+const QUIZ=null;
 const body=document.getElementById("diagBody"),bar=document.getElementById("diagBar"),stepLbl=document.getElementById("diagStep");
 function radarSVG(s,AX){
   const C=130,R=92,N=AX.length;
@@ -609,15 +707,6 @@ function radarSVG(s,AX){
     ${[.33,.66,1].map(k=>`<polygon points="${ring(R*k)}" fill="none" stroke="rgba(29,52,97,.14)"/>`).join("")}
     ${AX.map((_,i)=>{const[x,y]=pt(i,R);return`<line x1="130" y1="130" x2="${x}" y2="${y}" stroke="rgba(29,52,97,.14)"/>`}).join("")}
     <polygon points="${vals}" fill="rgba(217,179,106,.32)" stroke="#b08b3e" stroke-width="2"/>${labels}</svg>`;
-}
-function liveErr(id){const el=document.getElementById(id);
-  el.addEventListener("input",()=>{ if(el.parentElement.classList.contains("invalid")) el.parentElement.classList.remove("invalid"); });}
-function gateOk(n,m){
-  let ok=!!n.value.trim();
-  n.parentElement.classList.toggle("invalid",!n.value.trim());
-  const okMail=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m.value);
-  m.parentElement.classList.toggle("invalid",!okMail);
-  return ok&&okMail;
 }
 /* ---- クイズ型診断 ---- */
 let qi=0,answers=[];
@@ -648,6 +737,7 @@ function renderGate(){
     <div class="field"><label for="d-name">お名前</label><input id="d-name" type="text" autocomplete="name"><p class="err">お名前を入力してください</p></div>
     <div class="field"><label for="d-email">メールアドレス</label><input id="d-email" type="email" autocomplete="email" inputmode="email"><p class="err">正しいメールアドレスを入力してください</p></div>
     <div class="field"><label for="d-company">会社名<b>任意</b></label><input id="d-company" type="text" autocomplete="organization"></div>
+    <p class="send-err" id="d-err" role="alert" hidden></p>
     <button type="button" class="btn btn-gold btn-block" id="d-show">診断結果を無料で見る</button>
     <span class="micro2">結果はこの場で表示され、控えをメールでお送りします。営業電話はいたしません。</span>`;
   liveErr("d-name"); liveErr("d-email");
@@ -655,17 +745,23 @@ function renderGate(){
     const n=document.getElementById("d-name"),m=document.getElementById("d-email");
     if(!gateOk(n,m)) return;
     const [s,g]=calc();
-    track("lead_capture",{source:"diagnosis_"+QUIZ.kind+"_svc"});
-    track("diagnosis_complete",{grade:g,kind:QUIZ.kind});
-    sendPayload({type:"diagnosis",name:n.value.trim(),email:m.value.trim(),
+    const btn=document.getElementById("d-show"), err=document.getElementById("d-err");
+    btn.disabled=true; btn.textContent="送信中…"; err.hidden=true; diagForm.sent();
+    sendPayload({type:"diagnosis",form_type:"diagnosis_svc",name:n.value.trim(),email:m.value.trim(),
       company:document.getElementById("d-company").value.trim(),
-      diagnosis:{kind:QUIZ.kind,answers,scores:s,grade:g}});
+      diagnosis:{kind:QUIZ.kind,answers,scores:s,grade:g}})
+    .then(res=>{
+    // 控えを送れなかったのに「お送りしました」と出さない。入力は残して送り直せるようにする
+    if(!res.ok){ btn.disabled=false; btn.textContent="もう一度送る"; showSendError(err,res); track("form_error",{form_type:"diagnosis_svc",reason:errReason(res)}); return; }
+    track("lead_capture",{source:"diagnosis_"+QUIZ.kind+"_svc",form_type:"diagnosis_svc"});
+    track("diagnosis_complete",{grade:g,kind:QUIZ.kind});
     body.innerHTML=`<p class="qnum">RESULT</p>
       <div class="radar-wrap"><div>${radarSVG(s,QUIZ.axes)}</div>
       <div><p class="grade">${g}<small>5段階判定</small></p></div></div>
       <div class="rx"><b>あなたへの処方箋:</b> ${QUIZ.rx[g]}</div>
       <a class="btn btn-gold btn-block" href="#svcform" style="text-decoration:none">このまま無料相談する</a>
       <span class="micro2">診断結果の控えをメールでお送りしました。</span>`;
+    });
   });
 }
 /* ---- URL診断(AIOページ) ---- */
@@ -681,8 +777,10 @@ function mockAudit(url){
 }
 function fetchAudit(url){
   if(!GAS_ENDPOINT){ console.warn("GAS_ENDPOINT未設定: モック診断"); return new Promise(r=>setTimeout(()=>r(mockAudit(url)),900)); }
+  const down={ok:false,error:"ただいま自動診断を調整中です。お手数ですが、お問い合わせから「サイト診断希望」とお送りください"};
+  // 受付に自動診断が無いと「稼働しています」（点数なし）が返る。点数の無い結果を出さない（「undefined / 100点」と出ていた。2026-10-08）
   return fetch(GAS_ENDPOINT+"?action=audit&url="+encodeURIComponent(url)).then(r=>r.json())
-    .catch(()=>({ok:false,error:"ただいま自動診断を調整中です。お手数ですが、お問い合わせから「サイト診断希望」とお送りください"}));
+    .then(j=>j&&j.ok&&typeof j.total==="number"?j:down).catch(()=>down);
 }
 const AUDIT_AXES=[["aio","AIO対応"],["seo","SEO基礎"],["schema","構造化データ"],["mobile","モバイル"],["trust","信頼性"]];
 function renderAuditStart(){
@@ -709,6 +807,7 @@ function renderAuditGate(){
     <div class="field"><label for="d-name">お名前</label><input id="d-name" type="text" autocomplete="name"><p class="err">お名前を入力してください</p></div>
     <div class="field"><label for="d-email">メールアドレス</label><input id="d-email" type="email" autocomplete="email" inputmode="email"><p class="err">正しいメールアドレスを入力してください</p></div>
     <div class="field"><label for="d-company">会社名<b>任意</b></label><input id="d-company" type="text" autocomplete="organization"></div>
+    <p class="send-err" id="a-err" role="alert" hidden></p>
     <button type="button" class="btn btn-gold btn-block" id="a-show">診断結果を見る</button>
     <span class="micro2">結果はこの場で表示され、控えをメールでお送りします。</span>`;
   liveErr("d-name"); liveErr("d-email");
@@ -722,11 +821,14 @@ function renderAuditGate(){
           <a class="btn btn-gold btn-block" href="#svcform" style="text-decoration:none">精密診断を無料相談で依頼する</a>`;
         return;
       }
-      track("lead_capture",{source:"site_audit_svc"});
-      track("site_audit_complete",{score:res.total,grade:res.grade});
-      sendPayload({type:"site_audit",name:n.value.trim(),email:m.value.trim(),
+      diagForm.sent();
+      return sendPayload({type:"site_audit",form_type:"site_audit_svc",name:n.value.trim(),email:m.value.trim(),
         company:document.getElementById("d-company").value.trim(),
-        audit:{url:res.url,total:res.total,grade:res.grade,axes:res.axes,findings:(res.findings||[]).slice(0,5)}});
+        audit:{url:res.url,total:res.total,grade:res.grade,axes:res.axes,findings:(res.findings||[]).slice(0,5)}})
+      .then(sent=>{
+      if(!sent.ok){ btn.disabled=false; btn.textContent="もう一度送る"; showSendError(document.getElementById("a-err"),sent); track("form_error",{form_type:"site_audit_svc",reason:errReason(sent)}); return; }
+      track("lead_capture",{source:"site_audit_svc",form_type:"site_audit_svc"});
+      track("site_audit_complete",{score:res.total,grade:res.grade});
       const finds=(res.findings||[]).slice(0,5).map(f=>`<li><b>−${f.max-f.got}点</b> ${f.label}${f.note?`<br><span style="font-size:12px;color:var(--dim)">${f.note}</span>`:""}</li>`).join("");
       body.innerHTML=`<p class="qnum">RESULT — 簡易診断</p>
         <div class="radar-wrap"><div>${radarSVG(res.axes,AUDIT_AXES)}</div>
@@ -734,35 +836,12 @@ function renderAuditGate(){
         ${finds?`<p style="font-size:13px;font-weight:700;margin-top:16px;color:var(--navy)">主な減点ポイント</p><ul class="findings">${finds}</ul>`:""}
         <div class="notice"><b>この結果は簡易版です。</b>精密診断やアドバイス方法に関しては<a href="#svcform" style="color:var(--gold-em)">お問い合わせ</a>まで。</div>
         <a class="btn btn-gold btn-block" href="#svcform" style="text-decoration:none">精密診断つき無料相談を予約する</a>`;
+      });
     });
   });
 }
+const diagForm=watchForm(body,()=>QUIZ?"diagnosis_svc":"site_audit_svc");
 if(QUIZ) renderQ(); else renderAuditStart();
-/* ---- フォーム ---- */
-const form=document.getElementById("svcForm");
-["f-name","f-email","f-message"].forEach(liveErr);
-form.addEventListener("submit",e=>{
-  e.preventDefault();
-  const now=Date.now();
-  if(form.website.value) return;
-  if(now-TS<3000) return;
-  if(now-lastSubmit<30000) return;
-  const n=document.getElementById("f-name"),m=document.getElementById("f-email"),msg=document.getElementById("f-message");
-  let ok=gateOk(n,m);
-  const okMsg=msg.value.trim().length>=5;
-  msg.parentElement.classList.toggle("invalid",!okMsg);
-  if(!(ok&&okMsg)) return;
-  lastSubmit=now;
-  const btn=document.getElementById("svcSubmit"); btn.disabled=true; btn.textContent="送信中…";
-  sendPayload({type:"contact",name:n.value.trim(),email:m.value.trim(),
-    company:document.getElementById("f-company").value.trim(),
-    message:"【"+SVC_LABEL+"の相談】"+msg.value.trim()})
-  .finally(()=>{
-    track("form_submit",{form_type:"contact_svc"});
-    track("lead_capture",{source:"form_"+"aio"});
-    form.hidden=true; document.getElementById("svcDone").hidden=false;
-  });
-});
 </script>
 
 
