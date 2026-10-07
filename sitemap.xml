@@ -378,10 +378,10 @@
     <loc>https://lp.7senses.co.jp/blog/chusho-kigyo-joseikin/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/chusho-kigyo-joseikin/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyo-joseikin/bunrui3.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyo-joseikin/sagashikata4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyo-joseikin/shippai-ng-ok.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/chusho-kigyo-joseikin/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/fukuoka-kensetsugyou-denshishinsei/</loc>
@@ -598,9 +598,9 @@
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-security-action-hoshi2/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-security-action-hoshi2/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-security-action-hoshi2/flow5.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-security-action-hoshi2/ngok.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-security-action-hoshi2/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/kaigo-denshishinsei-todokede/</loc>
