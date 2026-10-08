@@ -31,17 +31,12 @@
 <style>
 :root{--bg:#fdfcf9;--bg2:#f4f1e9;--panel:#ffffff;--line:#e7e2d4;--line2:rgba(176,139,62,.45);
 --text:#212b3d;--muted:#5b6472;--dim:#5c6472;--gold:#775c1c;--gold-strong:#7a5b14;--gold-ink:#171104;
---serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif;--sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;--num:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif}
+--serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif;--sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "YuGothicM", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;--num:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "YuGothicM", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15.5px;line-height:1.9;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
 header{position:sticky;top:0;z-index:50;background:rgba(253,252,249,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.nav{max-width:1240px;margin:0 auto;padding:0 22px;height:62px;display:flex;align-items:center;justify-content:space-between;gap:14px}
-.logo{font-family:var(--num);font-weight:600;letter-spacing:.26em;font-size:14px;text-decoration:none;color:#1d3461}
-.logo b{color:var(--gold)}
-.logo img{height:38px;width:auto;display:block}
-.nav a.cta{display:inline-flex;align-items:center;min-height:42px;padding:8px 20px;border-radius:999px;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:var(--gold-ink);font-weight:700;font-size:13px;text-decoration:none}
 main{max-width:1240px;margin:0 auto;padding:56px 22px 90px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px;align-items:start}
 .main-col{min-width:0}
 .side{position:sticky;top:84px;display:grid;gap:16px}
@@ -50,23 +45,23 @@ main{max-width:1240px;margin:0 auto;padding:56px 22px 90px;display:grid;grid-tem
 .side .sbox p.t{font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--gold);margin:0 0 12px}
 .side .sbox ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .side .sbox li{margin:0}
-.side .sbox a{display:block;font-size:13.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
+.side .sbox a{display:block;font-size:14.5px;text-decoration:none;color:var(--text);padding:10px 12px;border:1px solid var(--line);border-radius:8px;line-height:1.5}
 .side .sbox a:hover{border-color:var(--line2);color:var(--gold-strong)}
 .side .scta{background:linear-gradient(150deg,#132445,#1d3461 60%,#24427c);border-radius:12px;padding:22px;color:#fff;text-align:center}
 .side .scta p{font-family:var(--serif);font-weight:800;font-size:15px;line-height:1.8;margin:0 0 12px;color:#fff}
-.side .scta a{display:block;background:linear-gradient(135deg,#ffb25e,#f97316 58%,#e8630a);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:13px;text-decoration:none;margin-top:8px}
+.side .scta a{display:block;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:#171104;border-radius:999px;padding:12px;font-weight:700;font-size:14px;text-decoration:none;margin-top:8px}
 .side .scta a.g{background:none;border:1.5px solid rgba(255,255,255,.5);color:#fff}
-.crumb{font-size:12px;color:var(--dim);margin-bottom:20px}
+.crumb{font-size:13px;color:var(--dim);margin-bottom:20px}
 .crumb a{color:var(--dim);text-decoration:none}
-.kicker{font-family:var(--num);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.kicker{font-family:var(--num);font-size:13px;font-weight:700;letter-spacing:.18em;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:16px}
 .kicker::before{content:"";width:34px;height:1px;background:var(--gold)}
 h1{font-family:var(--serif);font-weight:800;font-size:clamp(26px,4.4vw,38px);line-height:1.5;margin-bottom:12px;color:#1d3461}
 .lead{color:var(--muted);max-width:720px;margin-bottom:8px}
-.fresh{font-size:12.5px;color:var(--dim);margin-bottom:30px}
-.hub{background:#fff;border:1px solid var(--line2);border-radius:12px;padding:16px 20px;margin-bottom:30px;font-size:13.5px;color:var(--muted)}
+.fresh{font-size:13px;color:var(--dim);margin-bottom:30px}
+.hub{background:#fff;border:1px solid var(--line2);border-radius:12px;padding:16px 20px;margin-bottom:30px;font-size:15px;color:var(--muted)}
 .hub a{color:var(--gold-strong);font-weight:700}
 .filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
-.filter{display:inline-flex;align-items:center;min-height:44px;padding:8px 20px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:13px;font-weight:700;text-decoration:none;background:#fff}
+.filter{display:inline-flex;align-items:center;min-height:44px;padding:8px 20px;border-radius:999px;border:1px solid var(--line);color:var(--muted);font-size:14px;font-weight:700;text-decoration:none;background:#fff}
 .filter[aria-current="true"]{border-color:var(--line2);color:var(--gold-strong);background:rgba(217,179,106,.1)}
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 @media(max-width:600px){.grid{grid-template-columns:1fr}}
@@ -76,20 +71,98 @@ h1{font-family:var(--serif);font-weight:800;font-size:clamp(26px,4.4vw,38px);lin
 .post .th img{width:100%;height:100%;object-fit:cover;display:block}
 .post .pb{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
 .post .cat{font-size:12px;letter-spacing:.22em;color:var(--gold);margin-bottom:8px}
-.post h2{font-size:15px;font-weight:700;line-height:1.7;font-family:var(--sans)}
-.post p{font-size:12.5px;color:var(--dim);margin-top:8px;line-height:1.8}
-.post time{display:block;font-size:12px;color:var(--dim);margin-top:auto;padding-top:12px}
-.author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px;margin-top:48px;font-size:13.5px;color:var(--muted);max-width:760px}
+.post h2{font-size:15.5px;font-weight:700;line-height:1.7;font-family:var(--sans)}
+.post p{font-size:15px;color:var(--dim);margin-top:8px;line-height:1.8}
+.post time{display:block;font-size:13px;color:var(--dim);margin-top:auto;padding-top:12px}
+.author{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px;margin-top:48px;font-size:15px;color:var(--muted);max-width:760px}
 .author .sv-label{display:block;font-size:12px;letter-spacing:.14em;font-weight:700;color:var(--dim);margin:0 0 14px}
 .author .sv-body{display:flex;gap:16px}
 .author img.av{width:56px;height:56px;border-radius:50%;object-fit:cover;border:1px solid var(--line2);flex:none}
 .author b{color:var(--text)}
-footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:12.5px;color:var(--muted);text-align:center;line-height:1.9}
+footer{border-top:1px solid var(--line);background:var(--bg2);padding:40px 22px;font-size:13.5px;color:var(--muted);text-align:center;line-height:1.9}
 footer a{color:var(--muted);text-decoration:none;margin:0 10px}
+</style>
+<style id="social-css">
+/* 外部プロフィール（フッター）。明るい面に置くので、灰色の輪郭で中央に並べ、触れると各サービスの色 */
+.social-links { list-style: none; display: flex; flex-wrap: wrap; justify-content: center; gap: .6rem; margin: .9rem 0 0; padding: 0; }
+.social-links a { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px;
+  border: 1px solid #d8d2c2; border-radius: 50%; color: #5b6472; background: #fff;
+  text-decoration: none; transition: background-color .2s, border-color .2s, color .2s; }
+.social-links a span { font-size: .72rem; font-weight: 700; letter-spacing: .02em; }
+.social-links a:hover, .social-links a:focus-visible { color: #fff; border-color: transparent; }
+.social-links a[data-net="linkedin"]:hover, .social-links a[data-net="linkedin"]:focus-visible { background: #0a66c2; }
+.social-links a[data-net="x"]:hover, .social-links a[data-net="x"]:focus-visible { background: #000; }
+.social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
 <!-- GA4。日本語Webフォントと計測タグを先に読むと、スマホで一覧の表示に10秒以上かかっていた（ほかのページと同じく描画の後に読む） -->
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 window.addEventListener('load',function(){setTimeout(function(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-MXQQM8DJTS';document.head.appendChild(s);},1200);});</script>
+<style id="ss-common">
+/* サイト共通の枠（ヘッダー・文字・足元）。管制塔の scripts/subsidy/pages.py が配信のたびに全ページへ揃える。ここを直接直さない */
+@font-face{font-family:"YuGothicM";src:local("Yu Gothic Medium"),local("YuGothic-Medium");font-weight:400}
+@font-face{font-family:"YuGothicM";src:local("Yu Gothic Bold"),local("YuGothic-Bold");font-weight:700}
+:root{--sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","YuGothicM","Yu Gothic","Noto Sans JP","Noto Sans CJK JP","BIZ UDPGothic",Meiryo,sans-serif;
+--num:"Oswald","Hiragino Kaku Gothic ProN","Hiragino Sans","YuGothicM","Yu Gothic","Noto Sans JP","Noto Sans CJK JP","BIZ UDPGothic",Meiryo,sans-serif}
+.gh-in{max-width:1360px;margin:0 auto;padding:0 22px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.gh-logo{flex:none;display:block;line-height:0}
+.gh-logo img{display:block;height:38px;width:auto;max-width:none}
+.gh-nav{min-width:0}
+.gh .gh-list,.gh .gh-sub{list-style:none;margin:0;padding:0}
+.gh .gh-list li{margin:0}
+.gh-list{display:flex;align-items:center;gap:18px}
+.gh-list>li{position:relative}
+.gh-list a{display:inline-block;padding:10px 2px;font-size:14px;line-height:1.5;font-weight:500;color:#5b6472;text-decoration:none;white-space:nowrap}
+.gh-list a:hover,.gh-list a:focus-visible{color:#1d3461}
+.gh-has>a::after{content:"▾";font-size:10px;color:#b08b3e;margin-left:5px}
+.gh-sub{position:absolute;top:100%;left:-14px;z-index:70;display:none;min-width:228px;padding:8px;background:#fff;border:1px solid #e7e2d4;border-radius:12px;box-shadow:0 18px 44px rgba(29,52,97,.16)}
+.gh-has:hover>.gh-sub,.gh-has:focus-within>.gh-sub{display:grid;gap:2px}
+.gh-sub a{display:block;padding:10px 14px;border-radius:8px;color:#212b3d}
+.gh-sub a:hover,.gh-sub a:focus-visible{background:#f4ead3;color:#7a5b14}
+.gh-tel{flex:none;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:6px 8px;border-radius:10px;color:#1d3461;text-decoration:none;white-space:nowrap}
+.gh-tel:hover{background:rgba(42,74,138,.06)}
+.gh-tel b{font-family:var(--num);font-size:17px;font-weight:600;letter-spacing:.03em}
+.gh-tel small{font-size:12px;color:#5b6472}
+.gh-cta{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 22px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:#171104;font-size:14px;font-weight:700;line-height:1.4;text-decoration:none;white-space:nowrap;box-shadow:0 6px 18px rgba(176,139,62,.32)}
+.gh-menu{display:none}
+@media(max-width:1479px){.gh-list .gh-ext{display:none}}
+@media(max-width:1199px){.gh-list{gap:13px}.gh-list a{font-size:13.5px}.gh-tel small{display:none}}
+@media(max-width:1079px){
+ .gh-in{height:60px;gap:8px}
+ .gh-logo{margin-right:auto}
+ .gh-nav{display:none;position:absolute;left:0;right:0;top:100%;max-height:calc(100vh - 60px);overflow-y:auto;padding:4px 22px 24px;background:#fdfcf9;border-top:1px solid #e7e2d4;border-bottom:1px solid #e7e2d4;box-shadow:0 22px 40px -18px rgba(19,36,69,.3)}
+ .gh.gh-open .gh-nav{display:block}
+ .gh-list{display:block}
+ .gh-list>li{border-bottom:1px solid #ece6d6}
+ .gh-list a{display:block;padding:13px 2px;font-size:16px;color:#212b3d}
+ .gh-has>a::after{content:none}
+ .gh-sub{position:static;display:grid;gap:0;min-width:0;padding:0 0 10px 14px;background:none;border:0;border-radius:0;box-shadow:none}
+ .gh-sub a{padding:10px 2px;font-size:15px;color:#5b6472}
+ .gh-list .gh-ext{display:block}
+ .gh-tel{width:44px;height:44px;padding:0;justify-content:center;border:1.5px solid #2a4a8a;border-radius:50%}
+ .gh-tel b,.gh-tel small{display:none}
+ .gh-cta{padding:8px 16px;font-size:13.5px;box-shadow:none}
+ .gh-menu{flex:none;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:52px;height:44px;padding:0;border:0;border-radius:10px;background:none;color:#1d3461;font:inherit;font-size:12px;font-weight:700;line-height:1;cursor:pointer}
+ .gh-bars,.gh-bars::before,.gh-bars::after{content:"";display:block;width:22px;height:2px;border-radius:2px;background:currentColor;transition:transform .2s}
+ .gh-bars{position:relative;margin:6px 0 5px}
+ .gh-bars::before,.gh-bars::after{position:absolute;left:0}
+ .gh-bars::before{top:-7px}
+ .gh-bars::after{top:7px}
+ .gh-open .gh-bars{background:transparent}
+ .gh-open .gh-bars::before{top:0;transform:rotate(45deg)}
+ .gh-open .gh-bars::after{top:0;transform:rotate(-45deg)}
+ .gh-lock .sticky-cta,.gh-lock .blog-sticky,.gh-lock .float-cta{visibility:hidden}
+}
+@media(max-width:420px){.gh-in{padding:0 14px}.gh-cta{padding:8px 14px}}
+@media(max-width:389px){.gh-long{display:none}}
+/* スマホの下の固定ボタン: 入力欄・診断が見えている間と、入力中は引っ込める（入力欄に重なっていた） */
+.sticky-cta{transition:transform .25s ease,opacity .25s ease}
+.sticky-cta.is-hidden{transform:translateY(110%);opacity:0;pointer-events:none}
+/* 足元のリンクは指で押せる大きさに（スマホで高さ16px・間隔0〜9pxだった） */
+footer nav a[href]{display:inline-block;padding:.6rem .4rem}
+/* 「※ 写真はイメージです」が地の色と 3.16:1 で読みにくかった */
+figure.ph-band figcaption{font-size:12px;color:#6b7280}
+@media(prefers-reduced-motion:reduce){.sticky-cta,.gh-bars,.gh-bars::before,.gh-bars::after{transition:none}}
+</style>
 <style id="ph-css">
 .hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
 .hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
@@ -116,16 +189,19 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 </style>
 </head>
 <body>
-<header>
-  <div class="nav">
-    <a class="logo" href="/"><img src="/assets/img/logo-h.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="372" height="148"></a>
-    <a class="cta" href="/#contact">無料で相談する</a>
+<header class="gh" id="gh">
+  <div class="gh-in">
+    <a class="gh-logo" href="/"><img src="/assets/img/logo-h.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="372" height="148"></a>
+    <nav class="gh-nav" id="gh-nav" aria-label="サイト内のメニュー"><ul class="gh-list"><li class="gh-has"><a href="/#services">サービス</a><ul class="gh-sub"><li><a href="/service/hojokin/">補助金申請サポート</a></li><li><a href="/service/dev/">システム開発・AI導入</a></li><li><a href="/service/aio/">AIOコンサルティング</a></li><li><a href="/service/meo/">MEOコンサルティング</a></li></ul></li><li><a href="/youkou/">補助金要項</a></li><li class="gh-has"><a href="/blog/">記事・資料</a><ul class="gh-sub"><li><a href="/blog/">AI導入補助金ブログ</a></li><li><a href="/seido/">制度から探す</a></li><li><a href="/industry/">業種から探す</a></li><li><a href="/topics/">テーマから探す</a></li><li><a href="/compare/">比較表</a></li><li><a href="/glossary/">用語集</a></li><li><a href="/research/ai-hojokin/">AIへの聞き取り調査</a></li></ul></li><li><a href="/#cases">事例</a></li><li><a href="/#diagnosis">無料診断</a></li><li><a href="/about/">会社概要</a></li><li><a href="/#faq">FAQ</a></li><li class="gh-ext"><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a></li><li class="gh-ext"><a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">AI集客ラボ</a></li></ul></nav>
+    <a class="gh-tel" href="tel:0643057547" data-cta="tel_header" aria-label="電話で相談する 06-4305-7547 受付は平日9時から20時"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a13 13 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><b>06-4305-7547</b><small>9〜20時</small></a>
+    <a class="gh-cta" href="/#contact" data-cta="header">無料<span class="gh-long">で</span>相談<span class="gh-long">する</span></a>
+    <button class="gh-menu" type="button" aria-expanded="false" aria-controls="gh-nav"><span class="gh-bars" aria-hidden="true"></span><span class="gh-menu-t">メニュー</span></button>
   </div>
 </header>
 <main>
 <div class="main-col">
   <nav class="crumb" aria-label="パンくず"><a href="/">ホーム</a> › <a href="/industry/">業種から探す</a> › 美容室・サロン</nav>
-  <p class="kicker">Blog — 毎日更新</p>
+  <p class="kicker">業種から探す</p>
   <h1><span style='color:#7a5b14'>美容室・サロン</span>の補助金・AI導入</h1>
   <p class="lead">美容室・サロンで使える補助金と申請の実務について書いた記事を、14本まとめました。自社に近い記事から読めます。</p><!--ph:band--><figure class="ph-band"><img src="/images/shelf/salon-1.webp" alt="この業種の現場のイメージ" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async"><figcaption>※ 写真はイメージです</figcaption></figure><!--/ph:band-->
   <p class="fresh">本ページは2026年7月時点の情報です</p>
@@ -258,6 +334,31 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
   <nav><a href="/">AI導入補助金LP</a><a href="/service/hojokin/">補助金サポート</a><a href="/service/aio/">AIOコンサル</a><a href="/service/meo/">MEOコンサル</a><a href="/service/dev/">システム開発</a><a href="/#diagnosis">無料診断</a><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a><a href="/privacy/">プライバシーポリシー</a></nav>
   <p>© 2026 SEVEN SENSES INC. セブンセンシズ株式会社|大阪市東成区神路1-7-4</p>
   <p class="footer-credit" style="margin:.4em 0 0;font-size:12px"><a href="https://conflux-partners.jp/works/7senses-lp" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;text-underline-offset:2px">LP 制作：YW（CONFLUX PARTNERS）</a></p>
+  <ul class="social-links" aria-label="外部プロフィール"><li><a href="https://x.com/sevensensece" target="_blank" rel="noopener me" aria-label="X（セブンセンシズ株式会社）" data-net="x"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a></li><li><a href="https://www.linkedin.com/in/yu-haraguchi" target="_blank" rel="noopener me" aria-label="LinkedIn（原口 優）" data-net="linkedin"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg></a></li><li><a href="https://note.com/yu_haraguchi" target="_blank" rel="noopener me" aria-label="note（原口 優）" data-net="note"><span>note</span></a></li></ul>
 </footer>
+<script id="ss-common-js">
+/* サイト共通の枠（管制塔の scripts/subsidy/pages.py が揃える）: スマホのメニューの開閉と、下の固定ボタンを引っ込める */
+(function(){
+var h=document.getElementById("gh"),b=h&&h.querySelector(".gh-menu"),t=b&&b.querySelector(".gh-menu-t");
+if(b){
+ var set=function(o){h.classList.toggle("gh-open",o);document.documentElement.classList.toggle("gh-lock",o);b.setAttribute("aria-expanded",o?"true":"false");if(t)t.textContent=o?"閉じる":"メニュー";};
+ b.addEventListener("click",function(){set(!h.classList.contains("gh-open"));});
+ h.querySelector(".gh-nav").addEventListener("click",function(e){if(e.target.closest("a"))set(false);});
+ document.addEventListener("keydown",function(e){if(e.key==="Escape"&&h.classList.contains("gh-open")){set(false);b.focus();}});
+ addEventListener("pageshow",function(e){if(e.persisted)set(false);});
+}
+var bar=document.querySelector(".sticky-cta");
+if(bar){
+ var seen=[],typing=false,isField=function(el){return !!(el&&el.matches&&el.matches("input,textarea,select"));};
+ var upd=function(){var hide=seen.length>0||typing;bar.classList.toggle("is-hidden",hide);bar.inert=hide;};
+ if("IntersectionObserver" in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){var i=seen.indexOf(e.target);if(e.isIntersecting&&i<0)seen.push(e.target);if(!e.isIntersecting&&i>=0)seen.splice(i,1);});upd();});
+  document.querySelectorAll("main form, .diag").forEach(function(el){io.observe(el);});
+ }
+ document.addEventListener("focusin",function(e){if(isField(e.target)){typing=true;upd();}});
+ document.addEventListener("focusout",function(){setTimeout(function(){typing=isField(document.activeElement);upd();},0);});
+}
+})();
+</script>
 </body>
 </html>
