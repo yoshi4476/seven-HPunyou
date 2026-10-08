@@ -51,7 +51,7 @@ faq:
 
 あわせて[IT導入補助金のパソコン購入](/blog/it-hojokin-kojinjigyonushi-pc/)もご覧ください。
 
-あわせて[e-Gov電子申請とは](/blog/egov-denshishinsei-kojinjigyonushi/)もご覧ください。
+あわせてe-Gov電子申請とはもご覧ください。
 
 近い論点を[宿泊業の補助金は3つの入口｜目的別の選び方と優先順位](/blog/shukuhakugyou-hojokin-erabikata/)で扱っています。
 
