@@ -386,10 +386,10 @@
     <loc>https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nougyou-shoki-hiyou/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou/uchiwake3.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou/seido-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou/flow-steps.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nougyou-shoki-hiyou/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/shukuhakugyou-hojokin-erabikata/</loc>
@@ -440,8 +440,8 @@
     <loc>https://lp.7senses.co.jp/blog/osaka-kensetsugyou-denshishinsei/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/osaka-kensetsugyou-denshishinsei/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/osaka-kensetsugyou-denshishinsei/junbi-flow.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/osaka-kensetsugyou-denshishinsei/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/tokyo-kensetsugyou-denshishinsei/</loc>
