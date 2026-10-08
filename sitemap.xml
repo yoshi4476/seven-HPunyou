@@ -156,7 +156,7 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou-hojokin/himoku4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou-hojokin/heiyou-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou-hojokin/flow-steps.png</image:loc></image:image>
-    <video:video><video:thumbnail_loc>https://i.ytimg.com/vi/XR42uoRLpOs/hqdefault.jpg</video:thumbnail_loc><video:title>農業の初期費用は平均755万円｜費目別に使える補助金4つ</video:title><video:description>新規就農1年目の初期費用は平均755万円、中央値350万円です。機械・施設、生活費、運転資金、管理ソフトの費目ごとに使える補助金と融資、経営開始資金との併用で上限が下がる注意点を2026年9月時点の公表内容で整理します。</video:description><video:player_loc>https://www.youtube.com/embed/XR42uoRLpOs</video:player_loc><video:duration>371</video:duration><video:publication_date>2026-10-03</video:publication_date></video:video>
+    <video:video><video:thumbnail_loc>https://i.ytimg.com/vi/XR42uoRLpOs/hqdefault.jpg</video:thumbnail_loc><video:title>農業の初期費用は平均755万円｜費目別に使える補助金4つ</video:title><video:description>新規就農1年目の初期費用は平均755万円、中央値350万円です。機械・施設、生活費、運転資金、管理ソフトの費目ごとに使える補助金と融資、経営開始資金との併用で上限が下がる注意点を2026年9月時点の公表内容で整理します。</video:description><video:player_loc>https://www.youtube.com/embed/XR42uoRLpOs</video:player_loc><video:duration>371</video:duration><video:publication_date>2026-10-03T00:00:00+09:00</video:publication_date></video:video>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/invoice-hojokin-kojinjigyonushi-itsumade/</loc>
@@ -188,10 +188,10 @@
     <loc>https://lp.7senses.co.jp/blog/sogyo-shien-hojokin-kojinjigyonushi/</loc>
     <lastmod>2026-10-03</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/sogyo-shien-hojokin-kojinjigyonushi/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/sogyo-shien-hojokin-kojinjigyonushi/yuugu.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/sogyo-shien-hojokin-kojinjigyonushi/shippai.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/sogyo-shien-hojokin-kojinjigyonushi/steps.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/sogyo-shien-hojokin-kojinjigyonushi/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/chusho-shoryokuka-toshi-hojokin/</loc>
@@ -493,10 +493,10 @@
     <loc>https://lp.7senses.co.jp/blog/vendor-touroku-toha/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/vendor-touroku-toha/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/kakunin-list.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/kakunin-flow.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/vendor-ngok.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/vendor-touroku-toha/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/</loc>
