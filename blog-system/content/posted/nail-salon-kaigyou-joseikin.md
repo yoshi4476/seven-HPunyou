@@ -199,8 +199,6 @@ faq:
 
 当社はAI導入補助金の登録支援事業者として、対象ツールの選定から、申請に向けた相談・助言、採択後の実績報告まで支援しています（申請書類はお客様が作成し、当社は内容の確認と助言を行います）。採択は事務局が決めるため、保証はできません。
 
-当サイトは、どの記事がどの検索で読まれたかをSearch Consoleで日次に記録しています。制度の比較は[ネイルサロンの補助金3種の比較](/blog/nail-salon-hojokin-hikaku/)もあわせて読むと、選び方が固まります。
-
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
 ## よくある質問
