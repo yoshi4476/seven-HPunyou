@@ -50,9 +50,9 @@ faq:
 
 **法人と個人事業主で、揃えるものが変わります。**共通するのはGビズIDと見積書、事業計画書です。
 
-近い論点を[社会保険の電子申請義務化](/blog/shakaihoken-denshishinsei-gimuka-chusho/)で扱っています。
+近い論点を社会保険の電子申請義務化で扱っています。
 
-あわせて[建設業許可の電子申請](/blog/kensetsugyou-kyoka-denshishinsei/)もご覧ください。
+あわせて建設業許可の電子申請もご覧ください。
 
 <div class="definition-box"><span class="term">GビズIDプライムとは</span>、法人・個人事業主が行政の手続きをオンラインで行うための共通のアカウントです。==補助金の申請だけでなく、社会保険や建設業許可の電子申請にも使えます==。</div>
 
