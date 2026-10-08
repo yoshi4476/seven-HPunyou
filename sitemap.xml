@@ -52,6 +52,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/kojin-jigyonushi-kuruma-kounyu-hojokin/</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kojin-jigyonushi-kuruma-kounyu-hojokin/thumbnail.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/chusho-kigyocho-hojokin/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
@@ -579,10 +585,10 @@
     <loc>https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kaigyoutodoke-denshishinsei/vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kaigyoutodoke-denshishinsei/steps.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kaigyoutodoke-denshishinsei/pitfalls.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/</loc>
@@ -1238,7 +1244,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1308,7 +1314,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-08</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
