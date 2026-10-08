@@ -170,10 +170,10 @@
     <loc>https://lp.7senses.co.jp/blog/jidousha-seibi-hojokin-consul/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/jidousha-seibi-hojokin-consul/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/jidousha-seibi-hojokin-consul/seido-hantei.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/jidousha-seibi-hojokin-consul/keiyaku-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/jidousha-seibi-hojokin-consul/kakunin-list.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/jidousha-seibi-hojokin-consul/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-kensetsugyou-jirei/</loc>
@@ -1047,10 +1047,10 @@
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-unsougyou/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-unsougyou/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/it-hojokin-unsougyou/tool-categories.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/it-hojokin-unsougyou/hardware-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/it-hojokin-unsougyou/flow-steps.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-unsougyou/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/</loc>
