@@ -38,6 +38,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [個人事業主の車購入に補助金は使える？電動車の新車と3つの条件](https://lp.7senses.co.jp/blog/kojin-jigyonushi-kuruma-kounyu-hojokin/): 個人事業主が車の購入に使える主な国の補助金は、電動車の新車が対象のCEV補助金です。持続化・新事業進出・デジタル化AI導入の各補助金は車両が
+- [ネイルサロン開業で助成金は使える？開業日と雇用で分かれる5制度](https://lp.7senses.co.jp/blog/nail-salon-kaigyou-joseikin/): ネイルサロンの開業で使えるのは、一人なら持続化補助金＜創業型＞、都内なら創業助成事業、翌年以降はAI導入補助金です。厚労省の助成金はスタッフ
 - [中小企業庁の補助金6制度｜投資の目的と金額で選ぶ早見表](https://lp.7senses.co.jp/blog/chusho-kigyocho-hojokin/): 中小企業庁の補助金は、AI・ITツールならデジタル化・AI導入補助金、人手を減らす機器なら省力化投資補助金のように、投資の目的と金額で選びま
 - [電子カルテ情報共有サービスの補助金はクリニック対象外？使える3制度](https://lp.7senses.co.jp/blog/it-hojokin-denkaru-kyoyu-clinic/): 電子カルテ情報共有サービスの国の補助金は、20床以上の病院が対象でクリニックは使えません。無床・19床以下の診療所が使えるのは、都道府県の事
 - [IT導入補助金の条件｜申請額150万円で変わる賃上げ要件と対象外](https://lp.7senses.co.jp/blog/it-hojokin-joken/): IT導入補助金（2026年度からデジタル化・AI導入補助金）の条件を、公募要領の原文で整理しました。全員に必須の5条件、申請額150万円以上
@@ -188,7 +189,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## 業種から探す
 
 - [クリニック・医療機関の補助金・AI導入](https://lp.7senses.co.jp/industry/clinic/): 7本
-- [美容室・サロンの補助金・AI導入](https://lp.7senses.co.jp/industry/biyou/): 14本
+- [美容室・サロンの補助金・AI導入](https://lp.7senses.co.jp/industry/biyou/): 15本
 - [飲食店の補助金・AI導入](https://lp.7senses.co.jp/industry/inshokuten/): 9本
 - [建設業の補助金・AI導入](https://lp.7senses.co.jp/industry/kensetsu/): 14本
 - [宿泊業の補助金・AI導入](https://lp.7senses.co.jp/industry/shukuhaku/): 5本
@@ -209,6 +210,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [小規模事業者持続化補助金の記事](https://lp.7senses.co.jp/topics/5903bdb5/): テーマ「小規模事業者持続化補助金」の記事7本。まず読む1本は「小規模事業者持続化補助金｜飲食店で対象になる4つの投資」です。
 - [申請の記事](https://lp.7senses.co.jp/topics/4aafe911/): テーマ「申請」の記事3本。まず読む1本は「個人事業主の給付金・補助金｜申請方法と使える4つの制度」です。
 - [電子申請の記事](https://lp.7senses.co.jp/topics/e585d13f/): テーマ「電子申請」の記事7本。まず読む1本は「個人事業主の開業届を電子申請｜青色申告の出し忘れで初年度は白色に」です。
+- [ネイルサロンの記事](https://lp.7senses.co.jp/topics/1e4a75b1/): テーマ「ネイルサロン」の記事3本。まず読む1本は「ネイルサロン開業で助成金は使える？開業日と雇用で分かれる5制度」です。
 - [助成金の記事](https://lp.7senses.co.jp/topics/1b7e7599/): テーマ「助成金」の記事4本。まず読む1本は「美容室の助成金とは｜歩合給でも使える5制度と金額の目安」です。
 - [テーマから探す](https://lp.7senses.co.jp/topics/): 同じ主題の記事を束ね、まず読む1本と掘り下げる記事に分けたテーマの一覧です。
 - [用語集](https://lp.7senses.co.jp/glossary/): 記事で定義した用語88語の意味を、1ページにまとめた用語集です。
