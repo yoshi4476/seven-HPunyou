@@ -55,8 +55,6 @@ faq:
 
 実際の進め方は[ネイルサロンの補助金申請手順を8ステップで解説](/blog/nail-salon-hojokin-tejun/)で整理しています。
 
-関連する内容は[ネイルサロンがAI導入補助金に落ちる理由](/blog/nail-salon-ai-hojokin-ochiru-riyu/)でも扱っています。
-
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化や生産性向上を後押しします。</div>
 
 <figure><img src="/images/it-hojokin-nail-salon/tool3.png" alt="ネイルサロンで対象になるITツール3分野: 予約管理システム、POSレジ・会計ソフト、デザインカルテ・顧客管理" loading="lazy"><figcaption>ネイルサロンで対象になるITツール3分野</figcaption></figure>
