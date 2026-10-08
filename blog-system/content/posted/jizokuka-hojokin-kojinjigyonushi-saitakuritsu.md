@@ -67,7 +67,7 @@ faq:
 
 **個人事業主も、業種ごとの従業員数の要件を満たせば小規模事業者持続化補助金の対象です。**法人か個人かでは判断されません。
 
-近い論点を[建設業の電子申請を閲覧するには？](/blog/kensetsugyou-denshishinsei-etsuran/)で扱っています。
+近い論点を建設業の電子申請を閲覧するには？で扱っています。
 
 <figure><img src="/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/taisho.png" alt="個人事業主が対象になる主な要件: 商業・サービス業5人以下、宿泊業・娯楽業20人以下、製造業その他20人以下、法人・個人問わず対象"><figcaption>個人事業主が対象になる主な要件</figcaption></figure>
 
@@ -156,7 +156,7 @@ faq:
 
 個人事業主がAI・IT導入補助金と迷う場合は、[個人事業主のAI導入補助金｜開業1年未満は対象外？条件を解説](https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/)もあわせて確認してください。制度ごとの対象条件を比較すると、自分に合う制度が見つかりやすくなります。
 
-給付金と補助金の違いから知りたい方は、[個人事業主の給付金・補助金｜申請方法と使える4つの制度](https://lp.7senses.co.jp/blog/kojinjigyonushi-kyufukin-shinsei/)を参考にしてください。
+給付金と補助金の違いから知りたい方は、個人事業主の給付金・補助金｜申請方法と使える4つの制度を参考にしてください。
 
 採択後の実績報告の進め方は[実績報告書の書き方](https://lp.7senses.co.jp/blog/ai-hojokin-jissekihoukoku-kakikata/)にまとめています。
 
