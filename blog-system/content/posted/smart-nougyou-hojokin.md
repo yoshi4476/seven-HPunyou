@@ -62,6 +62,8 @@ faq:
 
 **4つの入口は、申請者と対象が違います。**産地はスマ転事業、認定を受けた農業者は税と融資、個人の機械は就農・担い手向けの事業、ソフトはAI導入補助金です。
 
+あわせて[個人事業主の車購入に補助金は使える？](/blog/kojin-jigyonushi-kuruma-kounyu-hojokin/)もご覧ください。
+
 <figure><img src="/images/smart-nougyou-hojokin/iriguchi4.png" alt="スマート農業の補助金4つの入口: 産地でまとめて導入するスマ転事業、計画の認定で受ける特別償却と公庫融資、個人で機械を導入する経営発展支援事業など、ソフト・データのAI導入補助金" loading="lazy"><figcaption>スマート農業の補助金4つの入口</figcaption></figure>
 
 | 入口 | 主な申請者 | 対象 | 金額・率の目安 | 相談先 |
