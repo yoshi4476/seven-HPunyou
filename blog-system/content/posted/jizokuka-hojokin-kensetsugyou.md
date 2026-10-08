@@ -51,7 +51,7 @@ faq:
 
 あわせて[建設業の電子申請システムはIT導入補助金の対象になる？](/blog/kensetsugyou-denshishinsei-system/)もご覧ください。
 
-関連する内容として[建設業の電子申請を閲覧するには？](/blog/kensetsugyou-denshishinsei-etsuran/)も公開しています。
+関連する内容として建設業の電子申請を閲覧するには？も公開しています。
 
 近い論点を[ものづくり補助金の給与支給総額とは？](/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/)で扱っています。
 
