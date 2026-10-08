@@ -159,7 +159,7 @@ faq:
 
 一般のAI導入補助金全体の枠組みと上限額は[AI導入補助金はいくらもらえる？](/blog/ai-hojokin-ikura-moraeru/)で詳しく整理しています。
 
-介護事業所が電子申請・届出への対応を進める場合は、[介護事業所の電子申請・届出システムとは？](/blog/kaigo-denshishinsei-todokede/)もあわせてご確認ください。
+介護事業所が電子申請・届出への対応を進める場合は、介護事業所の電子申請・届出システムとは？もあわせてご確認ください。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
