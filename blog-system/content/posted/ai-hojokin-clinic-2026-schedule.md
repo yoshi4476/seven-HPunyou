@@ -69,8 +69,6 @@ faq:
 
 近い論点を[創業支援等事業者の補助金](/blog/sogyo-shien-hojokin-kojinjigyonushi/)で扱っています。
 
-関連する内容は、[IT導入補助金2026｜個人事業主の変更点と申請枠](/blog/it-hojokin-2026-kojinjigyonushi/)で解説しています。
-
 <a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">事務局が公開している事業スケジュール</a>によると、この締切分の事業実施期間・実績報告期限は2027年4月30日（金）17:00までとされています。事務局は「確定している募集回のスケジュールのみ公表」する運用のため、この先の締切は決まり次第の掲載です。
 
 | 枠 | 締切日 | 交付決定予定日 | 実績報告期限 |
