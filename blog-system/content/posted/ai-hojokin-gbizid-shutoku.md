@@ -49,11 +49,11 @@ faq:
 
 **GビズIDは、複数の行政サービスに1つのIDでログインできる共通認証システムです。**AI導入補助金の交付申請は電子申請のみで受け付けられており、この電子申請システムへのログインにGビズIDを使います。
 
-関連する内容として[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)も公開しています。
+関連する内容として開業届の電子申請｜個人事業主がe-Taxで出す5ステップも公開しています。
 
-近い論点を[e-Gov電子申請とは](/blog/egov-denshishinsei-kojinjigyonushi/)で扱っています。
+近い論点をe-Gov電子申請とはで扱っています。
 
-あわせて[社会保険の電子申請義務化](/blog/shakaihoken-denshishinsei-gimuka-chusho/)もご覧ください。
+あわせて社会保険の電子申請義務化もご覧ください。
 
 関連する内容は[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)で整理しています。
 
