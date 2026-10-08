@@ -641,10 +641,10 @@
     <loc>https://lp.7senses.co.jp/blog/shakaihoken-denshishinsei-gimuka-chusho/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shakaihoken-denshishinsei-gimuka-chusho/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shakaihoken-denshishinsei-gimuka-chusho/joken3.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shakaihoken-denshishinsei-gimuka-chusho/flow4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shakaihoken-denshishinsei-gimuka-chusho/ngok.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shakaihoken-denshishinsei-gimuka-chusho/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/hojokin-denshishinsei-gimuka-itsukara/</loc>
@@ -1065,9 +1065,9 @@
     <loc>https://lp.7senses.co.jp/blog/seicho-kasokuka-hojokin-schedule/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/seicho-kasokuka-hojokin-schedule/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/seicho-kasokuka-hojokin-schedule/flow-schedule.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/seicho-kasokuka-hojokin-schedule/list-checkpoints.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/seicho-kasokuka-hojokin-schedule/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/</loc>
