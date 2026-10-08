@@ -212,15 +212,6 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/it-hojokin-2026-kojinjigyonushi/ngok.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/nougyou-hojokin-sekai-hikaku/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nougyou-hojokin-sekai-hikaku/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-hojokin-sekai-hikaku/sekai-tokucho.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-hojokin-sekai-hikaku/ai-hojokin-3step.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-hojokin-sekai-hikaku/gokai-vs.png</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/kourigyou-ai-hojokin-keihi/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
@@ -354,15 +345,6 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/biyoushitsu-joseikin/joseikin5.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/biyoushitsu-joseikin/nagare4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/biyoushitsu-joseikin/chingin-vs.png</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/kensetsugyou-kyoka-denshishinsei/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kensetsugyou-kyoka-denshishinsei/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-kyoka-denshishinsei/tetsuzuki3.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-kyoka-denshishinsei/flow5.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-kyoka-denshishinsei/junbi-vs.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/</loc>
@@ -511,10 +493,10 @@
     <loc>https://lp.7senses.co.jp/blog/vendor-touroku-toha/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/vendor-touroku-toha/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/kakunin-list.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/kakunin-flow.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/vendor-touroku-toha/vendor-ngok.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/vendor-touroku-toha/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/</loc>
@@ -544,15 +526,6 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/monozukuri-hojokin-jidousha-seibi/flow-steps.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-gyoseishoshi/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kensetsugyou-denshishinsei-gyoseishoshi/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-gyoseishoshi/self-vs-gyosei.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-gyoseishoshi/flow-daikou.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-gyoseishoshi/list-cases.png</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
@@ -568,39 +541,12 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/it-hojokin-jidousha-seibi/flow-steps.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-etsuran/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kensetsugyou-denshishinsei-etsuran/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-etsuran/flow4.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-etsuran/dekiru-dekinai.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-etsuran/katsuyou3.png</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-system/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kensetsugyou-denshishinsei-system/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-system/jcip-vs-tool.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kensetsugyou-denshishinsei-system/flow4.png</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/egov-denshishinsei-kojinjigyonushi/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/egov-denshishinsei-kojinjigyonushi/taisho-vs.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/egov-denshishinsei-kojinjigyonushi/steps4.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/egov-denshishinsei-kojinjigyonushi/pitfalls3.png</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kaigyoutodoke-denshishinsei/vs.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kaigyoutodoke-denshishinsei/steps.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kaigyoutodoke-denshishinsei/pitfalls.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/</loc>
@@ -627,24 +573,6 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-security-action-hoshi2/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-security-action-hoshi2/flow5.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-security-action-hoshi2/ngok.png</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/kaigo-denshishinsei-todokede/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kaigo-denshishinsei-todokede/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kaigo-denshishinsei-todokede/shinsei-vs.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kaigo-denshishinsei-todokede/schedule4.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kaigo-denshishinsei-todokede/junbi4.png</image:loc></image:image>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/blog/shakaihoken-denshishinsei-gimuka-chusho/</loc>
-    <lastmod>2026-10-07</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shakaihoken-denshishinsei-gimuka-chusho/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/shakaihoken-denshishinsei-gimuka-chusho/joken3.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/shakaihoken-denshishinsei-gimuka-chusho/flow4.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/shakaihoken-denshishinsei-gimuka-chusho/ngok.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/hojokin-denshishinsei-gimuka-itsukara/</loc>
@@ -1008,15 +936,6 @@
     <image:image><image:loc>https://lp.7senses.co.jp/images/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/nagare.png</image:loc></image:image>
   </url>
   <url>
-    <loc>https://lp.7senses.co.jp/blog/kojinjigyonushi-kyufukin-shinsei/</loc>
-    <lastmod>2026-08-12</lastmod>
-    <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kojinjigyonushi-kyufukin-shinsei/thumbnail.webp</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kyufukin-shinsei/seido3.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kyufukin-shinsei/flow5.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-kyufukin-shinsei/kyufuhojo.png</image:loc></image:image>
-  </url>
-  <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
@@ -1192,10 +1111,10 @@
     <loc>https://lp.7senses.co.jp/blog/ai-donyu-hojokin-jirei/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-donyu-hojokin-jirei/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-donyu-hojokin-jirei/wakugumi.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-donyu-hojokin-jirei/nagare.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-donyu-hojokin-jirei/hikaku.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-donyu-hojokin-jirei/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-security-action-2star/</loc>
@@ -1371,14 +1290,6 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/5903bdb5/</loc>
-    <lastmod>2026-10-08</lastmod>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/topics/4aafe911/</loc>
-    <lastmod>2026-10-08</lastmod>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/topics/e585d13f/</loc>
     <lastmod>2026-10-08</lastmod>
   </url>
   <url>

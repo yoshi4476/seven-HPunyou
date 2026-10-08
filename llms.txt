@@ -55,7 +55,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [創業支援等事業者の補助金｜個人事業主は証明書で上限200万円](https://lp.7senses.co.jp/blog/sogyo-shien-hojokin-kojinjigyonushi/): 特定創業支援等事業の証明書を持つ個人事業主は、小規模事業者持続化補助金＜創業型＞（上限200万円・補助率2/3）に申請できます。第4回の対象
 - [中小企業省力化投資補助金とは｜補助率と上限1億円の要件](https://lp.7senses.co.jp/blog/chusho-shoryokuka-toshi-hojokin/): 中小企業省力化投資補助金の一般型とカタログ注文型の違い、従業員数別の補助率・上限額、対象になるための3つの必須要件、申請から入金までの流れを
 - [IT導入補助金2026｜個人事業主の変更点と申請枠](https://lp.7senses.co.jp/blog/it-hojokin-2026-kojinjigyonushi/): IT導入補助金（デジタル化・AI導入補助金2026）は個人事業主も対象です。2026年度の名称と申請枠、直近の採択状況、必要書類、GビズID
-- [農業の補助金を世界と比較｜日本の3つの違いと使い方](https://lp.7senses.co.jp/blog/nougyou-hojokin-sekai-hikaku/): 農業の補助金は、世界の直接支払い型と比べると、日本は審査を通過した事業者だけに支給する申請制です。EUの共通農業政策・アメリカの収入セーフテ
 - [小売業のAI導入補助金｜レジ・POSに使える経費は上限20万円](https://lp.7senses.co.jp/blog/kourigyou-ai-hojokin-keihi/): 小売業でレジやPOSを導入する場合、通常枠ではハードウェア単体が対象外になる点に注意が必要です。インボイス対応類型なら上限20万円まで補助さ
 - [学習塾はAI導入補助金の申請をどう進める？個人情報と繁忙期の壁【2026年】](https://lp.7senses.co.jp/blog/gakushujuku-ai-hojokin-shinsei-susumekata/): 学習塾がAI導入補助金を申請する進め方について、生徒・保護者の個人情報への配慮と、秋の閑散期を活かした導入計画の立て方を軸に2026年9月時
 - [宿泊業のAI導入補助金はいくら？契約額50万円が分かれ目](https://lp.7senses.co.jp/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/): 宿泊業のAI導入補助金の補助額を、個人経営の民宿・中規模ホテル・複数施設運営の3パターンで試算します。契約額50万円を境に変わる補助率と対象
@@ -71,7 +70,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [飲食店のAI導入補助金 対象要件｜動物病院も含む業種別の判定基準【2026年】](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-taisho-youken/): 飲食店と動物病院がAI導入補助金の対象要件を満たすかを、資本金・従業員数・業種区分の基準から整理。個人事業主の扱いや、対象外になる3つのケー
 - [農業機械補助金は4制度｜ものづくり補助金では買えない理由](https://lp.7senses.co.jp/blog/nougyou-kikai-hojokin/): 農業機械の購入は、ものづくり補助金や事業再構築の後継制度では汎用機械として対象外です。使えるのは農林水産省の経営発展支援事業・農地利用効率化
 - [美容室の助成金とは｜歩合給でも使える5制度と金額の目安](https://lp.7senses.co.jp/blog/biyoushitsu-joseikin/): 美容室が使える助成金は業務改善助成金・キャリアアップ助成金など5制度が中心です。歩合給の美容師でも対象になるか、補助金との違い、支給額の目安
-- [建設業許可の電子申請｜JCIPでできる3手続きと5ステップ](https://lp.7senses.co.jp/blog/kensetsugyou-kyoka-denshishinsei/): 建設業許可の電子申請（JCIP）は、新規・許可更新・決算報告等の変更届出に対応しています。準備するもの3つと申請までの5ステップ、DX化とA
 - [AI導入補助金の着金はいつ？実績報告後の日数目安](https://lp.7senses.co.jp/blog/ai-hojokin-chakkin-itsu/): AI導入補助金の着金は事務局が日数を公表しておらず、確定検査を経て1〜2か月程度が目安です。実績報告から着金までの流れ、遅れる5つの原因、資
 - [建設業の助成金4制度｜補助金との違いと使う順番](https://lp.7senses.co.jp/blog/kensetsugyou-joseikin-hikaku/): 建設業が使える助成金は、人材開発支援助成金・業務改善助成金・キャリアアップ助成金・トライアル雇用助成金の4制度が中心です。対象者・助成額の目
 - [農業はAI導入補助金の対象か｜トラクターは対象外になる落とし穴](https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou/): 農業でAI導入補助金の対象になるのはソフトだけで、トラクターやハウスは出ません。交付決定前の発注や開業直後の書類不足など、対象外になりやすい
@@ -92,18 +90,12 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [歯科医院のIT導入補助金｜対象4分野と医療機器の落とし穴](https://lp.7senses.co.jp/blog/it-hojokin-shika-iin/): 歯科医院のIT導入補助金は2026年度も使え、正式名称は「デジタル化・AI導入補助金2026」です。対象になる4つのツール、口腔内スキャナー
 - [小規模事業者持続化補助金 自動車整備｜部品代・代車は対象外の落とし穴](https://lp.7senses.co.jp/blog/jizokuka-hojokin-jidousha-seibi/): 整備工場の経営者が「代車も対象のはず」と誤解しやすい経費の線引きを、相談の現場の事例から解説します。従業員5人以下の要件、看板・HP制作など
 - [ものづくり補助金は自動車整備業も対象｜設備投資750万円目安](https://lp.7senses.co.jp/blog/monozukuri-hojokin-jidousha-seibi/): ものづくり補助金は自動車整備業のリフト・タイヤチェンジャー・塗装ブースなど設備投資に使えます。対象になる5分野とスキャンツールの扱い、3つの
-- [建設業の電子申請は行政書士に依頼すべき？費用相場3つの基準](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-gyoseishoshi/): 建設業の電子申請（JCIP）を行政書士に依頼すべきか、費用相場（新規許可で法定手数料9万円+報酬15万円台〜）と自分で申請する場合の違い、G
 - [AI導入補助金の不採択理由｜審査で落ちる6つのパターン](https://lp.7senses.co.jp/blog/ai-hojokin-fusaitaku-riyu/): AI導入補助金が不採択になる理由は、事業計画書の論理性不足・数値裏付けの欠如・加点不足・対象外経費・過去申請との重複・交付要件未達の6つに整
 - [自動車整備業のIT導入補助金2026｜スキャンツールは対象外になる理由](https://lp.7senses.co.jp/blog/it-hojokin-jidousha-seibi/): IT導入補助金（デジタル化・AI導入補助金2026）は自動車整備業の予約・見積・車検管理システムに使えますが、特定整備で義務化されたスキャン
-- [建設業の電子申請を閲覧するには？JCIP電子閲覧システムとCIIC](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-etsuran/): 建設業許可・経営事項審査を電子申請したJCIPの記録は、2023年4月開始の電子閲覧システムとCIICの2つで無料検索できます。閲覧できる範
 - [建設業の電子申請システムはIT導入補助金の対象になる？3つの誤解](https://lp.7senses.co.jp/blog/kensetsugyou-denshishinsei-system/): 建設業の電子申請システムには、経審用の行政ポータルJCIPとIT導入補助金の対象ツールの2種類があり、混同すると対象外の費用で申請してしまい
-- [e-Gov電子申請とは｜個人事業主が使う場面と4ステップ](https://lp.7senses.co.jp/blog/egov-denshishinsei-kojinjigyonushi/): e-Govは労働保険など省庁横断の行政手続きを電子申請できるポータルです。個人事業主が使う場面、e-Tax・Jグランツとの違い、GビズIDで
-- [個人事業主の開業届を電子申請｜青色申告の出し忘れで初年度は白色に](https://lp.7senses.co.jp/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/): e-Taxならマイナンバーカードとスマホで自宅から24時間送信できます。ただし受付印付きの控えは付かず、融資の予定があるなら窓口提出が向く場
 - [社労士事務所のAI導入補助金｜労務ソフトは対象になるか](https://lp.7senses.co.jp/blog/roudouhoken-nendokoshin-denshishinsei/): 社労士事務所がAI導入補助金を使えるかを解説します。士業も申請できますが、顧問先の労務手続きを自動化するソフトが対象になるかは枠と用途で変わ
 - [AI導入補助金のGビズID取得方法｜プライム取得の5つの手順](https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/): AI導入補助金にはGビズIDプライムが必須です。取得の流れとオンライン・書類申請の違い、審査にかかる日数の目安を2026年9月時点の公式情報
 - [AI導入補助金のセキュリティアクション二つ星｜宣言5ステップ](https://lp.7senses.co.jp/blog/ai-hojokin-security-action-hoshi2/): AI導入補助金の交付申請にはSECURITY ACTIONの宣言が必須です。一つ星と二つ星の違い、二つ星宣言までの5ステップを2026年9月
-- [介護事業所の電子申請・届出システムとは？義務化はいつからか](https://lp.7senses.co.jp/blog/kaigo-denshishinsei-todokede/): 介護事業所の電子申請・届出システムは、指定申請や加算届などをオンラインで提出できる厚生労働省の仕組みです。対象事業所とgBizIDの取得方法
-- [社会保険の電子申請義務化｜中小企業が対象になる3つの条件](https://lp.7senses.co.jp/blog/shakaihoken-denshishinsei-gimuka-chusho/): 社会保険の電子申請義務化は、資本金1億円超の企業と、常時50人以上の一部労働安全衛生手続きが対象です。多くの中小企業は対象外ですが、対象にな
 - [補助金の電子申請はいつから義務化？中小企業が今やること](https://lp.7senses.co.jp/blog/hojokin-denshishinsei-gimuka-itsukara/): 補助金の電子申請は法律上の義務ではなく、ものづくり補助金など主要制度が2020年前後から電子申請のみに移行したことで中小企業に事実上必須とな
 - [IT導入補助金はネイルサロンも使える？材料費と面貸しの壁](https://lp.7senses.co.jp/blog/it-hojokin-nail-salon/): ネイルサロンでもIT導入補助金は使えますが、ジェルやチップの材料費は対象外です。予約管理・POSレジ会計・デザインカルテの3分野が対象になる
 - [小規模事業者持続化補助金｜エステサロン対象経費と5人以下基準](https://lp.7senses.co.jp/blog/jizokuka-hojokin-esute/): エステサロンは商業・サービス業として小規模事業者持続化補助金の対象です。回数券契約の特定継続的役務提供該当、広報費・ウェブサイト関連費等の対
@@ -145,7 +137,6 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [飲食店のIT導入補助金｜名称変更後の3つの確認点](https://lp.7senses.co.jp/blog/it-hojokin-inshokuten/): 「IT導入補助金」で検索した飲食店オーナー向けに、現行のデジタル化・AI導入補助金2026でも対象は変わらないこと、中小企業の判定基準、対象
 - [製造業のIT導入補助金｜技能継承と人手不足への活かし方](https://lp.7senses.co.jp/blog/it-hojokin-seizougyou/): IT導入補助金（デジタル化・AI導入補助金2026）は製造業の生産管理・品質管理システムにも使えます。対象ツール3分野、技能継承や人手不足へ
 - [小規模事業者持続化補助金｜個人事業主の採択率47.2%と対策](https://lp.7senses.co.jp/blog/jizokuka-hojokin-kojinjigyonushi-saitakuritsu/): 小規模事業者持続化補助金＜一般型・通常枠＞の第19回採択率は47.2%でした。個人事業主が対象になる従業員要件、採択率が回ごとに変わる理由、
-- [個人事業主の給付金・補助金｜申請方法と使える4つの制度](https://lp.7senses.co.jp/blog/kojinjigyonushi-kyufukin-shinsei/): 個人事業主が使える給付金は限られ、多くはIT導入補助金など審査を経て採択される補助金です。給付金と補助金の違い、対象になる制度、AI・IT導
 - [会計ソフトの補助金｜IT導入補助金で個人事業主が使える2枠と補助率](https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-kaikeisoft/): 個人事業主もIT導入補助金（デジタル化・AI導入補助金2026）の会計ソフトを、通常枠・インボイス対応類型で申請できます。機能要件・補助率・
 - [IT導入補助金のパソコン購入｜個人事業主の条件と上限10万円](https://lp.7senses.co.jp/blog/it-hojokin-kojinjigyonushi-pc/): 個人事業主がIT導入補助金でパソコンを購入する条件を解説します。単体購入は対象外ですが、対象ソフトと同時導入すれば補助率1/2以内・上限10
 - [美容室のIT導入補助金｜対象ツール3分野と対象外の注意点](https://lp.7senses.co.jp/blog/it-hojokin-biyoushitsu/): 美容室もIT導入補助金（デジタル化・AI導入補助金2026）の対象です。予約管理・POSレジ・電子カルテの対象3分野、広告掲載費が対象外にな
@@ -191,26 +182,24 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [クリニック・医療機関の補助金・AI導入](https://lp.7senses.co.jp/industry/clinic/): 7本
 - [美容室・サロンの補助金・AI導入](https://lp.7senses.co.jp/industry/biyou/): 15本
 - [飲食店の補助金・AI導入](https://lp.7senses.co.jp/industry/inshokuten/): 9本
-- [建設業の補助金・AI導入](https://lp.7senses.co.jp/industry/kensetsu/): 14本
+- [建設業の補助金・AI導入](https://lp.7senses.co.jp/industry/kensetsu/): 11本
 - [宿泊業の補助金・AI導入](https://lp.7senses.co.jp/industry/shukuhaku/): 5本
-- [農業の補助金・AI導入](https://lp.7senses.co.jp/industry/nougyou/): 8本
+- [農業の補助金・AI導入](https://lp.7senses.co.jp/industry/nougyou/): 7本
 - [クリニック・医療機関のよくある質問](https://lp.7senses.co.jp/industry/clinic/faq/): 45問
 - [美容室・サロンのよくある質問](https://lp.7senses.co.jp/industry/biyou/faq/): 60問
 - [飲食店のよくある質問](https://lp.7senses.co.jp/industry/inshokuten/faq/): 59問
 - [建設業のよくある質問](https://lp.7senses.co.jp/industry/kensetsu/faq/): 60問
 - [宿泊業のよくある質問](https://lp.7senses.co.jp/industry/shukuhaku/faq/): 38問
-- [農業のよくある質問](https://lp.7senses.co.jp/industry/nougyou/faq/): 50問
+- [農業のよくある質問](https://lp.7senses.co.jp/industry/nougyou/faq/): 44問
 
 ## まとめのページ
 - [補助金の比較表](https://lp.7senses.co.jp/compare/hojokin/): 補助金の記事にある比較表20表を1か所に集めました。表は記事のものと同じです。
 - [比較表から探す](https://lp.7senses.co.jp/compare/): 記事の比較表をカテゴリごとに集め、違いと費用を見比べられる入口です。
-- [導入補助金の記事](https://lp.7senses.co.jp/topics/b29d00b8/): テーマ「導入補助金」の記事53本。まず読む1本は「IT導入補助金のおすすめの選び方｜5つの基準と4つの枠」です。
+- [導入補助金の記事](https://lp.7senses.co.jp/topics/b29d00b8/): テーマ「導入補助金」の記事54本。まず読む1本は「IT導入補助金のおすすめの選び方｜5つの基準と4つの枠」です。
 - [補助金の記事](https://lp.7senses.co.jp/topics/bbcbe660/): テーマ「補助金」の記事33本。まず読む1本は「ものづくり補助金は運送業も使える？新事業進出枠とトラックの線引き」です。
 - [事業再構築補助金の記事](https://lp.7senses.co.jp/topics/f8d4ea56/): テーマ「事業再構築補助金」の記事8本。まず読む1本は「事業再構築補助金は法人成り後も続く？承継に必要な4つの手続き」です。
 - [小規模事業者持続化補助金の記事](https://lp.7senses.co.jp/topics/5903bdb5/): テーマ「小規模事業者持続化補助金」の記事7本。まず読む1本は「小規模事業者持続化補助金｜飲食店で対象になる4つの投資」です。
-- [申請の記事](https://lp.7senses.co.jp/topics/4aafe911/): テーマ「申請」の記事3本。まず読む1本は「個人事業主の給付金・補助金｜申請方法と使える4つの制度」です。
-- [電子申請の記事](https://lp.7senses.co.jp/topics/e585d13f/): テーマ「電子申請」の記事7本。まず読む1本は「個人事業主の開業届を電子申請｜青色申告の出し忘れで初年度は白色に」です。
 - [ネイルサロンの記事](https://lp.7senses.co.jp/topics/1e4a75b1/): テーマ「ネイルサロン」の記事3本。まず読む1本は「ネイルサロン開業で助成金は使える？開業日と雇用で分かれる5制度」です。
-- [助成金の記事](https://lp.7senses.co.jp/topics/1b7e7599/): テーマ「助成金」の記事4本。まず読む1本は「美容室の助成金とは｜歩合給でも使える5制度と金額の目安」です。
+- [助成金の記事](https://lp.7senses.co.jp/topics/1b7e7599/): テーマ「助成金」の記事5本。まず読む1本は「美容室の助成金とは｜歩合給でも使える5制度と金額の目安」です。
 - [テーマから探す](https://lp.7senses.co.jp/topics/): 同じ主題の記事を束ね、まず読む1本と掘り下げる記事に分けたテーマの一覧です。
-- [用語集](https://lp.7senses.co.jp/glossary/): 記事で定義した用語88語の意味を、1ページにまとめた用語集です。
+- [用語集](https://lp.7senses.co.jp/glossary/): 記事で定義した用語81語の意味を、1ページにまとめた用語集です。
