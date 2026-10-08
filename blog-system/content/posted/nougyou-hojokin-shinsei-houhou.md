@@ -82,7 +82,7 @@ faq:
 
 **申請の5ステップは、GビズID取得、制度選定、事業計画書作成、電子申請、交付決定後の発注という順で進みます。**どの制度を選んでも、この基本の流れは共通しています。
 
-関連する内容として[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)も公開しています。
+関連する内容として開業届の電子申請｜個人事業主がe-Taxで出す5ステップも公開しています。
 
 <figure><img src="/images/nougyou-hojokin-shinsei-houhou/flow-steps.png" alt="申請の5ステップ: GビズID取得、制度を選ぶ、事業計画書作成、電子申請、交付決定後に着手" loading="lazy"><figcaption>申請の5ステップ</figcaption></figure>
 
