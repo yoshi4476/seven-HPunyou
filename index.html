@@ -676,11 +676,11 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
       <div class="hero-cta">
         <div>
           <a class="btn btn-primary" href="#fit" data-cta="hero_main">3分で対象か確認する</a>
-          <span class="micro">営業電話はいたしません。3営業日以内にメールで返信します。</span>
+          <span class="micro">このページの4つの条件で、対象になりそうかをその場で確かめます。名前や連絡先の入力は要りません。</span>
         </div>
         <div>
           <a class="btn btn-ghost" href="#contact" data-cta="hero_diag">無料相談を予約する</a>
-          <span class="micro">Zoomで30分。対象になるかを、その場で確認します。</span>
+          <span class="micro">Zoomで約60分。対象になるかを、その場で確認します。</span>
         </div>
       </div>
     </div>
@@ -746,7 +746,7 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
       <a class="choice" href="#contact">
         <span class="ci" aria-hidden="true">💬</span>
         <b>まず話を聞いてみたい</b>
-        <span class="cd">無料相談(Zoom30分・営業電話なし)へ →</span>
+        <span class="cd">無料相談(Zoomで約60分・営業電話なし)へ →</span>
       </a>
     </div>
   </div>
@@ -973,7 +973,7 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
     <p class="kicker">Flow</p>
     <h2>お申し込みから着金まで、<br class="sp">4つのフェーズ</h2>
     <div class="steps">
-      <div class="step"><p class="no">STEP 01</p><h3>無料相談・適合確認</h3><p>Zoomで30分。応募要項4条件(売上・納税・申請歴・決算期)への適合をその場で確認します。</p></div>
+      <div class="step"><p class="no">STEP 01</p><h3>無料相談・適合確認</h3><p>Zoomで約60分。応募要項4条件(売上・納税・申請歴・決算期)への適合をその場で確認します。</p></div>
       <div class="step"><p class="no">STEP 02</p><h3>準備・電子申請</h3><p>書類準備はチェックリストで並走。電子申請は当社スタッフが1時間のZoomで同席します。</p></div>
       <div class="step"><p class="no">STEP 03</p><h3>採択・導入</h3><p>申請から約1ヶ月で合格発表。契約・お支払い後、システム納品と運用支援を開始します。</p></div>
       <div class="step"><p class="no">STEP 04</p><h3>実績報告・着金</h3><p>実績報告書の提出まで当社が伴走。事務局承認後、補助金(最大350万円(インボイス枠))が貴社口座へ着金します。</p></div>
@@ -1280,7 +1280,7 @@ const QUIZZES={
   ],
   rx:{
    S:"補助金適合度・活用余地ともに非常に高い状態です。<b>公募締切から逆算し、無料相談で申請スケジュールを確定</b>させることをおすすめします。",
-   A:"補助金活用の適性が高い状態です。<b>応募要項の最終確認と対象ツールの選定</b>から始めましょう。無料相談で30分あれば確認できます。",
+   A:"補助金活用の適性が高い状態です。<b>応募要項の最終確認と対象ツールの選定</b>から始めましょう。無料相談(Zoomで約60分)で、その場で確認できます。",
    B:"活用の余地は十分ですが、いくつか確認事項があります。<b>決算期・売上要件の個別確認</b>を無料相談でご案内します。",
    C:"現時点では確認すべき条件が複数あります。<b>下位プランでのご案内可否</b>を含めて個別に確認しますので、まずはご相談ください。",
    D:"今すぐの申請はハードルがある可能性があります。ただし<b>準備を始める時期としては最適</b>です。来期に向けた逆算スケジュールをご提案します。"
@@ -1432,7 +1432,7 @@ function renderResult(s,grade){
       <div><p class="grade">${grade}<small>${gradeLabel}(5段階)</small></p></div>
     </div>
     <div class="rx"><b>あなたへの処方箋:</b> ${quiz.rx[grade]}</div>
-    <a class="btn btn-primary btn-block" href="#contact" data-cta="diag_result">この結果を持って、30分だけ無料相談する</a>
+    <a class="btn btn-primary btn-block" href="#contact" data-cta="diag_result">この結果を持って無料相談する(Zoomで約60分)</a>
     <span class="micro" style="text-align:center">診断結果の控えを、ご入力のメールアドレスへお送りしました。</span>`;
   body.querySelector("[data-cta]").addEventListener("click",()=>track("cta_click",{cta_id:"diag_result"}));
 }
