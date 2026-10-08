@@ -95,6 +95,8 @@ faq:
 
 **トラックや乗用車など汎用性の高い車両は、原則として対象外です。**建設業からの相談で最も誤解が多いポイントです。
 
+関連する内容として[AI導入補助金の不採択理由](/blog/ai-hojokin-fusaitaku-riyu/)も公開しています。
+
 <figure><img src="/images/jizokuka-hojokin-kensetsugyou/keihi-vs.png" alt="対象になる経費とならない経費: 対象外は汎用性の高い車両の購入と単純な入替・更新のみの機械、対象は専用性の高い小型機材と広報・集客につながる投資" loading="lazy"><figcaption>対象になる経費とならない経費</figcaption></figure>
 
 | 経費の種類 | 対象になるか | 判断のポイント |
