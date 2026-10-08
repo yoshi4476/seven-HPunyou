@@ -95,7 +95,7 @@ faq:
 
 近い論点を[個人事業主の助成金の申請条件](/blog/kojinjigyonushi-joseikin-shinsei-jouken/)で扱っています。
 
-関連する内容として[開業届の電子申請｜個人事業主がe-Taxで出す5ステップ](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)も公開しています。
+関連する内容として開業届の電子申請｜個人事業主がe-Taxで出す5ステップも公開しています。
 
 <figure><img src="/images/it-hojokin-clinic/reservation-vs.png" alt="電話予約とオンライン予約システムの違い: 電話予約は受電に時間を取られ営業時間外は予約を逃す、オンライン予約は24時間受付でき電子カルテ連携と自動リマインドでキャンセルを抑制できる" loading="lazy"><figcaption>電話予約とオンライン予約システムの違い</figcaption></figure>
 
