@@ -48,8 +48,14 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/shoene-hojokin-chusho-kigyo/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shoene-hojokin-chusho-kigyo/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/kojin-jigyonushi-kuruma-kounyu-hojokin/</loc>
@@ -1175,7 +1181,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1245,7 +1251,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
