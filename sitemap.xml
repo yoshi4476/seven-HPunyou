@@ -52,6 +52,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://lp.7senses.co.jp/blog/nougyou-hojokin-tractor/</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nougyou-hojokin-tractor/thumbnail.webp</image:loc></image:image>
+  </url>
+  <url>
     <loc>https://lp.7senses.co.jp/blog/shoene-hojokin-chusho-kigyo/</loc>
     <lastmod>2026-10-09</lastmod>
     <priority>0.7</priority>
@@ -1239,12 +1245,12 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/nougyou/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/nougyou/faq/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-09</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
