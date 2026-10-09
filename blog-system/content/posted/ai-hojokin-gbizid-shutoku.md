@@ -120,6 +120,8 @@ GビズIDアプリは、iOSならApp Store、AndroidならGoogle Playからそ�
 
 **GビズIDプライムの審査期間は、オンライン申請が最短即日、書類申請が最大1か月です。**申請方法によって、期間の幅が大きく変わります。
 
+あわせて[省エネルギー補助金は中小企業も使える？](/blog/shoene-hojokin-chusho-kigyo/)もご覧ください。
+
 関連する内容として[中小企業成長加速化補助金](/blog/seicho-kasokuka-hojokin-schedule/)も公開しています。
 <a href="https://gbiz-id.go.jp/top/apply/prime_document_01.html" target="_blank" rel="noopener">GビズID公式サイトの案内</a>では、書類申請について「申請から審査、アカウント発行まで最大1か月の時間がかかる」と明記されています。
 
