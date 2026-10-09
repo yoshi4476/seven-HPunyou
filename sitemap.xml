@@ -56,6 +56,9 @@
     <lastmod>2026-10-09</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nougyou-hojokin-tractor/thumbnail.webp</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-hojokin-tractor/iriguchi.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-hojokin-tractor/yushi.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-hojokin-tractor/nagare.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/shoene-hojokin-chusho-kigyo/</loc>
@@ -383,10 +386,10 @@
     <loc>https://lp.7senses.co.jp/blog/nougyou-shoki-hiyou/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nougyou-shoki-hiyou/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou/uchiwake3.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou/seido-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nougyou-shoki-hiyou/flow-steps.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nougyou-shoki-hiyou/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/shukuhakugyou-hojokin-erabikata/</loc>
