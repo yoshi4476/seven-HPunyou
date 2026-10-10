@@ -621,6 +621,25 @@ if(bar){
  document.addEventListener("focusout",function(){setTimeout(function(){typing=isField(document.activeElement);upd();},0);});
 }
 })();
+/* 最初に来たときの流入元（参照元のドメイン・utm・広告のクリック）と最初に見たページを180日覚え、相談・診断の送信に添える
+   （ssTs.send が足す。4サイト共通の形。管制塔の台帳の送信元ページに「流入: …｜入口: …｜送信: …」と入る）。
+   覚えられないときはこのページを開いた時点の値を送る。どちらでも送信は止めない */
+(function(){
+var KEY="ss_first",cur=null;
+try{cur=JSON.parse(localStorage.getItem(KEY)||"null");}catch(e){cur=null;}
+if(!cur||!(Date.now()-cur.t<180*864e5)){
+ var q=new URLSearchParams(location.search),ref="";
+ try{ref=document.referrer?new URL(document.referrer).hostname:"";}catch(e){ref="";}
+ var utm=["utm_source","utm_medium","utm_campaign"].map(function(k){return (q.get(k)||"").slice(0,60);});
+ cur={r:ref,u:utm.join("")?utm.join("|"):"",a:q.get("gclid")?"gclid":"",l:location.pathname.slice(0,150),t:Date.now()};
+ try{localStorage.setItem(KEY,JSON.stringify(cur));}catch(e){}
+}
+window.ssFirst=function(){
+ var d=new Date(cur.t),p=function(n){return ("0"+n).slice(-2);};
+ return {first_ref:cur.r||"",first_utm:cur.u||"",first_ad:cur.a||"",first_land:cur.l||"",
+  first_at:d.getFullYear()+"-"+p(d.getMonth()+1)+"-"+p(d.getDate()),send_page:location.pathname.slice(0,150)};
+};
+})();
 </script>
 <!-- blog-cta:v1 -->
 <style>
