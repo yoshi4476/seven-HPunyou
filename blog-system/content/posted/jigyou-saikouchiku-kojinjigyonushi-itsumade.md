@@ -51,7 +51,7 @@ faq:
 
 **事業再構築補助金は、2025年3月26日の第13回公募の締切をもって、新規の応募申請受付を終了しました。**個人事業主も法人も、これ以降は新規に申請できません。
 
-対象になる範囲は[事業承継の補助金は個人事業主も対象](/blog/jigyou-shoukei-hojokin-kojinjigyonushi/)で整理しています。
+親族や従業員に事業を継ぐときの設備投資なら、[事業承継の補助金を個人事業主が使う5つの条件](/blog/jigyou-shoukei-hojokin-kojinjigyonushi/)が代わりの候補になります。
 
 あわせて[会計ソフトの補助金｜IT導入補助金で個人事業主が使える2枠と補助率](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)もご覧ください。
 
