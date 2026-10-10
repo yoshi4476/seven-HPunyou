@@ -670,7 +670,7 @@ function sendPayload(d){
   // site が無いと管制塔で「（不明）」になる。referer は記事→問い合わせの対比に使う
   const payload=Object.assign({site:"subsidy",referer:location.href,website:"",ts:TS},d);
   if(!GAS_ENDPOINT) return Promise.resolve({ok:false,error:"送信先が設定されていません。"});
-  return fetch(GAS_ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)})
+  return (window.ssTs?ssTs.send(GAS_ENDPOINT,payload):fetch(GAS_ENDPOINT,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)}))
     .then(r=>r.json().catch(()=>({})).then(j=>({ok:!!(r.ok&&j&&j.ok===true&&!("message" in j)),error:(j&&j.error)||""})))
     .catch(()=>({ok:false,error:"",network:true}));
 }
@@ -873,6 +873,75 @@ if(bar){
  document.addEventListener("focusin",function(e){if(isField(e.target)){typing=true;upd();}});
  document.addEventListener("focusout",function(){setTimeout(function(){typing=isField(document.activeElement);upd();},0);});
 }
+})();
+</script>
+<script id="ss-turnstile-js">
+/* ロボットよけ（Cloudflare Turnstile。管制塔の scripts/subsidy/turnstile_block.py が揃える）。フォームに触れた時点で部品を読み、
+   送る直前に答えを添える（最大6秒待ち、無くても送る。断るかは管制塔が決める）。見た目は interaction-only */
+window.ssTs=(function(){
+var KEY="0x4AAAAAAFNDzhowC4hFfwIZ",SCOPE="#contactForm,#svcForm,#unsubForm,#diagBody",HIDE="position:absolute;width:0;height:0;overflow:hidden";
+var ready=null,last=null;
+function load(){
+ if(ready)return ready;
+ ready=new Promise(function(done){
+  if(window.turnstile)return done(window.turnstile);
+  window.ssTsReady=function(){done(window.turnstile||null);};
+  var s=document.createElement("script");
+  s.src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=ssTsReady";
+  s.async=true;s.onerror=function(){done(null);};
+  document.head.appendChild(s);
+ });
+ return ready;
+}
+function btnOf(sc){return sc.querySelector('button[type="submit"],#d-show');}
+function mount(sc){
+ var st=sc._ts;
+ if(st&&(!st.box||st.box.isConnected))return;
+ st=sc._ts={state:"wait",box:null,id:null};
+ load().then(function(ts){
+  var b=btnOf(sc);
+  if(!ts||!sc.isConnected||!b){st.state="off";return;}
+  var box=document.createElement("div");
+  box.className="ts-box";box.style.cssText=HIDE;
+  b.parentNode.insertBefore(box,b);
+  st.box=box;st.state="run";
+  try{
+   st.id=ts.render(box,{sitekey:KEY,appearance:"interaction-only",language:"ja",action:"subsidy",
+    callback:function(){st.state="ok";},
+    "expired-callback":function(){st.state="run";},
+    "error-callback":function(){st.state="err";},
+    "before-interactive-callback":function(){st.state="ask";box.style.cssText="margin:8px 0";}});
+  }catch(e){st.state="off";}
+ });
+}
+function touch(e){
+ var sc=e.target&&e.target.closest?e.target.closest(SCOPE):null;
+ if(!sc||(sc.id==="diagBody"&&!sc.querySelector("#d-show")))return;
+ last=sc;mount(sc);
+}
+document.addEventListener("focusin",touch,true);
+document.addEventListener("pointerdown",touch,true);
+function tok(st){var i=st&&st.box&&st.box.querySelector('input[name="cf-turnstile-response"]');return i?i.value:"";}
+function token(){
+ var st=last&&last._ts,t0=Date.now();
+ return new Promise(function(done){
+  (function poll(){
+   var t=tok(st);
+   if(t||!st||!st.box&&st.state!=="wait"||(st.state!=="wait"&&st.state!=="run"&&st.state!=="ask")||Date.now()-t0>6000)return done(t);
+   setTimeout(poll,150);
+  })();
+ });
+}
+function renew(st){try{if(st&&st.id!=null&&window.turnstile){window.turnstile.reset(st.id);st.state="run";}}catch(e){}}
+return {send:function(url,payload){
+ var st=last&&last._ts;
+ return token().catch(function(){return "";}).then(function(t){
+  var b=t?Object.assign({"cf-turnstile-response":t},payload):payload;
+  var p=fetch(url,{method:"POST",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(b)});
+  p.then(function(){renew(st);},function(){renew(st);});
+  return p;
+ });
+}};
 })();
 </script>
 </body>
