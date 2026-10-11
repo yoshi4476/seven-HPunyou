@@ -56,6 +56,9 @@
     <lastmod>2026-10-11</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://lp.7senses.co.jp/images/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/thumbnail.webp</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/gaikokujin-koyou-joseikin-kojinjigyonushi/kaisei-hikaku.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/gaikokujin-koyou-joseikin-kojinjigyonushi/sochi-kaisou.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/gaikokujin-koyou-joseikin-kojinjigyonushi/nagare.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/jigyou-shoukei-hojokin-kojinjigyonushi/</loc>
@@ -142,10 +145,10 @@
     <loc>https://lp.7senses.co.jp/blog/kojinjigyonushi-joseikin-shinsei-jouken/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kojinjigyonushi-joseikin-shinsei-jouken/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-joseikin-shinsei-jouken/jouken4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-joseikin-shinsei-jouken/kakunin-flow.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/kojinjigyonushi-joseikin-shinsei-jouken/ng-ok.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/kojinjigyonushi-joseikin-shinsei-jouken/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/shika-iin-joseikin-taisho/</loc>
