@@ -50,7 +50,7 @@ faq:
 
 **個人事業主も法人と同じ条件で申請でき、最初に問われるのは雇用保険の適用事業所かどうかです。**法人でないことを理由に外されることはありません。
 
-対象になる範囲は、[外国人雇用の助成金は個人事業主も対象](/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/)で解説しています。
+外国人を雇う個人事業主の条件と10月改正後の受給額は、[外国人雇用の助成金は個人事業主も対象](/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/)で解説しています。
 
 <div class="definition-box"><span class="term">助成金とは</span>、雇用や賃金の改善に取り組んだ事業主に、国が費用の一部を支給する返済不要のお金です。主に厚生労働省が所管し、要件を満たせば受け取れます。</div>
 
