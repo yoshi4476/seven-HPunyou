@@ -54,6 +54,8 @@ faq:
 
 **親族や従業員に継ぐなら事業承継促進枠、第三者に売るなら専門家活用枠です。**事業承継・M&A補助金には4つの枠があり、継ぎ方で申請先が変わります。
 
+対象になる範囲は[外国人雇用の助成金は個人事業主も対象](/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/)でも扱っています。
+
 <figure><img src="/images/jigyou-shoukei-hojokin-kojinjigyonushi/waku.png" alt="事業承継・M&A補助金の4つの枠: 親族・従業員が継ぐなら事業承継促進枠、第三者に売る・買うなら専門家活用枠、買った後の統合はPMI推進枠、畳んで出直すなら廃業・再チャレンジ枠" loading="lazy"><figcaption>事業承継・M&A補助金の4つの枠</figcaption></figure>
 
 <div class="definition-box"><span class="term">事業承継・M&A補助金とは</span>、中小企業や個人事業主が事業を引き継ぐときの設備投資や専門家費用の一部を国が補助する制度です。==旧名は「事業承継・引継ぎ補助金」==で、中小企業庁の事業です。2026年10月時点で16次公募が受付中です。</div>
