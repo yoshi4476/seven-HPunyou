@@ -1,5 +1,10 @@
 # Cloudflare Pages 用ヘッダー設定
 # セキュリティ基本セット+静的アセットの長期キャッシュ
+#
+# CSP は読み込み先（script・img・style・connect・frame・default）を縛らない。計測タグ・受付（Apps Script）・
+# YouTube の埋め込み・JSON-LD を、管制塔が新しく足したときに黙って止めないため。枠への埋め込み（X-Frame-Options
+# と同じく禁止）・<base>・<object>・フォームの送り先だけを閉じる。送り先は自サイトと、トップ・AIO のページから
+# 新しいタブで開く AI集客ラボの URL診断（ai.7senses.co.jp/tools/url-check/）。外へ送るフォームを足すときはここにも足す
 
 /*
   X-Frame-Options: DENY
@@ -7,6 +12,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: frame-ancestors 'none'; base-uri 'self'; object-src 'none'; form-action 'self' https://ai.7senses.co.jp; upgrade-insecure-requests
 
 # 画像・ロゴ類はファイル名を変えない限り不変 → 1年キャッシュ
 /assets/*
