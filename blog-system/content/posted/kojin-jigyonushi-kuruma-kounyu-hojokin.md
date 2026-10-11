@@ -49,6 +49,8 @@ faq:
 
 **今回確かめた国の4制度のうち、車の購入費そのものに使えるのはCEV補助金だけです。**事業向けの代表的な補助金は、どれも車両を対象外経費に挙げています。
 
+あわせて[外国人雇用の助成金は個人事業主も対象](/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/)もご覧ください。
+
 関連する内容については、[ものづくり補助金は運送業も使える？](/blog/monozukuri-hojokin-unsougyou/)にまとめています。
 
 <figure><img src="/images/kojin-jigyonushi-kuruma-kounyu-hojokin/seido-hikaku.png" alt="補助金ごとの車両の扱い: CEV補助金は電動車の新車が対象、持続化補助金と新事業進出・ものづくり補助金とデジタル化・AI導入補助金は車の購入費が対象外" loading="lazy"><figcaption>補助金ごとの車両の扱い</figcaption></figure>
