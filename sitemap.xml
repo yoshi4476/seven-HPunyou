@@ -48,18 +48,24 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/</loc>
+    <lastmod>2026-10-11</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/jigyou-shoukei-hojokin-kojinjigyonushi/</loc>
     <lastmod>2026-10-10</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/jigyou-shoukei-hojokin-kojinjigyonushi/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/jigyou-shoukei-hojokin-kojinjigyonushi/waku.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/jigyou-shoukei-hojokin-kojinjigyonushi/jouken.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/jigyou-shoukei-hojokin-kojinjigyonushi/nagare.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/jigyou-shoukei-hojokin-kojinjigyonushi/junban.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/jigyou-shoukei-hojokin-kojinjigyonushi/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/nougyou-hojokin-tractor/</loc>
@@ -1203,7 +1209,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1273,7 +1279,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1293,47 +1299,43 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/sonota/</loc>
-    <lastmod>2026-10-08</lastmod>
+    <lastmod>2026-10-11</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/hojokin/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/b29d00b8/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/bbcbe660/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/f8d4ea56/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/5903bdb5/</loc>
-    <lastmod>2026-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://lp.7senses.co.jp/topics/1e4a75b1/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/1b7e7599/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/glossary/</loc>
-    <lastmod>2026-10-10</lastmod>
+    <lastmod>2026-10-11</lastmod>
   </url>
 </urlset>
