@@ -77,6 +77,8 @@ faq:
 
 **分けて考えないと、最後に足りない書類が出て公募回を逃します。**
 
+近い論点を[中小企業庁の補助金6制度](/blog/chusho-kigyocho-hojokin/)で扱っています。
+
 <figure><img src="/images/kanagawa-kensetsugyou-denshishinsei/dekiru-dekinai.png" alt="すぐ揃う書類と時間がかかる書類の比較: すぐ揃うのは見積書・決算書の写し・労働者名簿・事業計画書。時間がかかるのはGビズIDプライム2〜3週間・納税証明書は窓口で半日・登記簿謄本は法務局へ・加点用の認定は約45日" loading="lazy"><figcaption>すぐ揃う書類・時間がかかる書類</figcaption></figure>
 
 自社の書棚から出せるのは、決算書・確定申告書・労働者名簿です。**これらは当日中に揃います。**
