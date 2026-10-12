@@ -54,7 +54,11 @@ faq:
 
 **親族や従業員に継ぐなら事業承継促進枠、第三者に売るなら専門家活用枠です。**事業承継・M&A補助金には4つの枠があり、継ぎ方で申請先が変わります。
 
-あわせて[外国人雇用の助成金は個人事業主も対象](/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/)もご覧ください。
+近い論点を[飲食店の助成金の条件](/blog/inshokuten-joseikin-jouken/)で扱っています。
+
+あわせて[歯科医院の助成金の対象は？](/blog/shika-iin-joseikin-taisho/)もご覧ください。
+
+対象になる範囲は、[外国人雇用の助成金は個人事業主も対象](/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/)で解説しています。
 
 <figure><img src="/images/jigyou-shoukei-hojokin-kojinjigyonushi/waku.png" alt="事業承継・M&A補助金の4つの枠: 親族・従業員が継ぐなら事業承継促進枠、第三者に売る・買うなら専門家活用枠、買った後の統合はPMI推進枠、畳んで出直すなら廃業・再チャレンジ枠" loading="lazy"><figcaption>事業承継・M&A補助金の4つの枠</figcaption></figure>
 
@@ -74,6 +78,8 @@ faq:
 ## 事業承継促進枠に個人事業主が申請できる5つの条件
 
 **個人事業主が申請するには、譲る側と継ぐ側の両方が条件を満たす必要があります。**1つでも欠けると、書類審査の前の資格審査で外れます。
+
+あわせて[IT導入補助金の条件](/blog/it-hojokin-joken/)もご覧ください。
 
 <figure><img src="/images/jigyou-shoukei-hojokin-kojinjigyonushi/jouken.png" alt="個人事業主が満たす5つの条件: 親が青色申告で開業から5年以上、後継者は親族か3年以上の従業員、親の廃業と後継者の開業で引き継ぐ、認定支援機関の確認書を取る、2031年11月5日までに承継を終える" loading="lazy"><figcaption>個人事業主が満たす5つの条件</figcaption></figure>
 
