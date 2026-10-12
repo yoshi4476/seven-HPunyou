@@ -79,6 +79,8 @@ faq:
 
 **ものづくり補助金の後継制度とデジタル化・AI導入補助金は電子申請のみ、持続化補助金は電子申請が基本です。**制度によってGビズIDの要否や取得までの目安期間も変わります。
 
+近い論点を[会計ソフトの補助金｜IT導入補助金で個人事業主が使える2枠と補助率](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)で扱っています。
+
 あわせて[事業承継の補助金は個人事業主も対象](/blog/jigyou-shoukei-hojokin-kojinjigyonushi/)もご覧ください。
 
 | 制度 | 申請方法 | GビズID | 出典 |
