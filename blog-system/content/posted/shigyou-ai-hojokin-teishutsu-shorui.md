@@ -54,6 +54,8 @@ faq:
 
 **士業法人は法人と同じ7点、個人開業の先生は確定申告書に置き換えた6点が目安です。**共通するのはGビズIDと見積書、事業計画書です。
 
+関連する内容を先に押さえるなら、[飲食店のAI導入補助金の提出書類は？](/blog/inshokuten-ai-hojokin-teishutsu-shorui/)が参考になります。
+
 関連する内容は[不動産会社のAI導入補助金](/blog/fudousan-ai-hojokin-teishutsu-shorui/)でも扱っています。
 
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/" target="_blank" rel="noopener">事務局が公開している制度の案内</a>では、申請に必要な提出物が枠ごとに示されています。士業事務所の場合も、通常枠での申請が中心です。
