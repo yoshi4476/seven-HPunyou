@@ -51,8 +51,6 @@ faq:
 
 同じ基準でも、[中小企業向けの省エネルギー補助金](/blog/shoene-hojokin-chusho-kigyo/)では個人事業主は青色申告者に限られます。
 
-関連する内容は[中小企業庁の補助金6制度](/blog/chusho-kigyocho-hojokin/)で整理しています。
-
 規模以外に必要なGビズIDや賃上げの約束は、[IT導入補助金の条件](/blog/it-hojokin-joken/)で整理しています。
 
 関連する内容を先に押さえるなら、[IT導入補助金を名古屋で使う](/blog/it-hojokin-nagoya/)が参考になります。
