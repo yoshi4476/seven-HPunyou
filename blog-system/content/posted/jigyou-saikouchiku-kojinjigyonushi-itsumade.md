@@ -53,7 +53,7 @@ faq:
 
 実際の進め方は、[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)で解説しています。
 
-関連する内容は[個人事業主の開業届を電子申請](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)でも扱っています。
+関連する内容は個人事業主の開業届を電子申請でも扱っています。
 
 親族や従業員に事業を継ぐときの設備投資なら、[事業承継の補助金を個人事業主が使う5つの条件](/blog/jigyou-shoukei-hojokin-kojinjigyonushi/)が代わりの候補になります。
 
