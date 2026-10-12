@@ -143,9 +143,9 @@ e-Taxで取得する際、発行形式を選べる画面でXML形式を選んで
 
 申請から受給までの全体の流れは、[AI導入補助金の申請のやり方](/blog/ai-hojokin-shinsei-yarikata/)で解説しています。
 
-納税証明書はその1点だけを見れば単純な手続きですが、他の書類との足並みをそろえる視点も欠かせません。法人が用意する書類の全体像は[必要書類の一覧と準備の順番](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-hojin/)にまとめています。
+納税証明書はその1点だけを見れば単純な手続きですが、他の書類との足並みをそろえる視点も欠かせません。法人が用意する書類の全体像は[必要書類の一覧と準備の順番](https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/)にまとめています。
 
-個人事業主の方は[個人事業主の必要書類チェックリスト](https://lp.7senses.co.jp/blog/ai-hojokin-hitsuyo-shorui-kojin/)をご覧ください。
+個人事業主の方は[個人事業主の必要書類チェックリスト](https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/)をご覧ください。
 
 GビズIDの取得にかかる日数は[最短2週間の逆算スケジュール](https://lp.7senses.co.jp/blog/gbizid-shutoku/)で確認できます。申請でつまずきやすい点は[失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)にまとめました。
 

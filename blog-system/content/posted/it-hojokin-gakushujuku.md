@@ -150,7 +150,7 @@ faq:
 
 フランチャイズ加盟塾の判定基準や業種区分の詳細は[IT導入補助金の中小企業とは？業種別4区分の資本金・従業員数](https://lp.7senses.co.jp/blog/it-hojokin-chusho-teigi/)で整理しています。
 
-正式名称と旧IT導入補助金の関係は[AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】](https://lp.7senses.co.jp/blog/ai-hojokin-it-hojokin-chigai/)で詳しく整理しています。
+正式名称と旧IT導入補助金の関係は[AI導入補助金とIT導入補助金の違いは?結論は同じ制度【2026年の呼び方】](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/)で詳しく整理しています。
 
 <div class="cta-box"><p>要件の確認から申請までの進め方を、はじめての方にもわかるようにご案内します。申請書類はお客様が作成し、当社は内容の確認と助言を行います。</p><a class="cta-button" href="https://lp.7senses.co.jp/#contact">AI導入補助金の無料相談</a></div>
 

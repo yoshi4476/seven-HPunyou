@@ -59,7 +59,7 @@ faq:
 
 あわせて社会保険の電子申請義務化もご覧ください。
 
-関連する内容は[AI導入補助金の必要書類一覧と準備の順番](/blog/ai-hojokin-hitsuyo-shorui-hojin/)で整理しています。
+関連する内容は[AI導入補助金の必要書類一覧と準備の順番](/blog/kojin-jigyonushi-ai-hojokin/)で整理しています。
 
 <div class="definition-box"><span class="term">GビズIDとは</span>、経済産業省が運営する法人・個人事業主向けの共通認証システムです。1つのアカウントで社会保険手続きや補助金の電子申請など、複数の行政サービスを利用できます。</div>
 
