@@ -122,7 +122,7 @@ faq:
 
 **個人事業主の申請でつまずきやすいのは、開業年数の見落とし、書類準備の後回し、GビズID取得の遅れの3パターンです。**制度の複雑さより、準備の順番のミスが原因になっています。
 
-関連する内容については、[個人事業主の開業届を電子申請](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)にまとめています。
+関連する内容については、個人事業主の開業届を電子申請にまとめています。
 
 <figure><img src="/images/kojin-jigyonushi-ai-hojokin/ngok.png" alt="個人事業主の申請でよくあるNG・OK: NG例は開業1年未満で申請・証明書取得を後回し・GビズID未取得のまま進める、OK例は開業1年経過を確認・証明書を早めに取得・GビズIDを先に取得"><figcaption>個人事業主の申請でよくあるNG・OK</figcaption></figure>
 
