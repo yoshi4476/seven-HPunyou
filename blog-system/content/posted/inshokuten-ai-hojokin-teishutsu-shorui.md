@@ -53,6 +53,8 @@ faq:
 
 **添付する書類は、法人か個人事業主かで分かれます。**店の規模や業態では変わりません。
 
+関連する内容として[会計ソフトの補助金｜IT導入補助金で個人事業主が使える2枠と補助率](/blog/it-hojokin-kojinjigyonushi-kaikeisoft/)も公開しています。
+
 <figure><img src="/images/inshokuten-ai-hojokin-teishutsu-shorui/shorui-wake.png" alt="飲食店が出す書類の分け方: 法人の店は登記簿と法人税の納税証明書、個人店は本人確認と所得税の納税証明書と申告書の控え、事前の手続きはGビズIDとSECURITY ACTION" loading="lazy"><figcaption>飲食店が出す書類の分け方</figcaption></figure>
 
 <a href="https://it-shien.smrj.go.jp/pdf/it2026_koubo_tsujyo.pdf" target="_blank" rel="noopener">通常枠の公募要領</a>と<a href="https://it-shien.smrj.go.jp/pdf/it2026_manual_kofu.pdf" target="_blank" rel="noopener">交付申請マニュアル</a>をもとに、申請者が添付する書類を表にしました。
