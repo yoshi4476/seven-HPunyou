@@ -91,6 +91,8 @@ faq:
 
 **申請額にかかわらず、国内での事業・最低賃金以上の賃金・GビズIDプライム・SECURITY ACTION・生産性3%の計画の5つが必須です。**1つでも欠けると交付申請を出せません。
 
+関連する内容として[AI導入補助金のみらデジ経営チェックは終了](/blog/ai-hojokin-miradigi-keieicheck/)も公開しています。
+
 <figure><img src="/images/it-hojokin-joken/hissu5.png" alt="申請額に関係なく必須の5条件: 国内で登記・事業を営んでいる、事業場内最低賃金が地域別最低賃金以上、GビズIDプライム取得済み、SECURITY ACTION宣言、労働生産性を年3%以上伸ばす3年計画"><figcaption>申請額に関係なく必須の5条件</figcaption></figure>
 
 | 条件 | 中身 | 確認する書類・場所 |
@@ -136,7 +138,7 @@ SECURITY ACTIONは、IPAの<a href="https://www.ipa.go.jp/security/security-acti
 
 **IT導入補助金2022〜2025で交付決定を受けた事業者は、申請額150万円未満でも、給与を年平均3.5%以上伸ばす計画と表明が必須です。**初めての申請者より条件が1段重くなります。
 
-関連する内容として[電子カルテ情報共有サービスの補助金はクリニック対象外？](/blog/it-hojokin-denkaru-kyoyu-clinic/)も公開しています。
+あわせて[電子カルテ情報共有サービスの補助金はクリニック対象外？](/blog/it-hojokin-denkaru-kyoyu-clinic/)もご覧ください。
 
 2026年の主な変更点がここです。過去に受給した事業者は、申請額によって次のように変わります。
 
