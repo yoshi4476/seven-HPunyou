@@ -107,6 +107,8 @@ faq:
 
 **交付申請には、GビズID・SECURITY ACTION宣言IDに加え、飲食店ならではの準備物が必要です。**一般的な必要書類は前述の申請のやり方の記事で解説したため、ここでは飲食店特有の準備物に絞って説明します。
 
+登記簿や納税証明書など、飲食店がAI導入補助金で添付する提出書類の一覧は[飲食店のAI導入補助金の提出書類](/blog/inshokuten-ai-hojokin-teishutsu-shorui/)にまとめました。
+
 あわせて[AI導入補助金の着金はいつ？実績報告後の日数目安](/blog/ai-hojokin-chakkin-itsu/)もご覧ください。
 
 <figure><img src="/images/inshokuten-ai-hojokin-shinsei-susumekata/junbi.png" alt="飲食店特有の準備物4つ: 保健所の営業許可証、POS・予約システムの契約書、客数・客単価の記録、重複導入がないかの確認"><figcaption>飲食店特有の準備物4つ</figcaption></figure>
