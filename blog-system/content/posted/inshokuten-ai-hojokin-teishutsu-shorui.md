@@ -75,7 +75,7 @@ faq:
 
 **GビズIDプライムとSECURITY ACTIONは、書類より先に手続きを始めます。**どちらも無いと交付申請を作れません。
 
-<a href="https://it-shien.smrj.go.jp/applicant/measures/" target="_blank" rel="noopener">事務局の「申請を行う前に必要な手続き」</a>では、GビズIDプライムの発行に**おおむね2週間**かかると案内されています。SECURITY ACTIONは「一つ星」か「二つ星」の宣言が要件で、IDの発行に**2〜3日**ほどかかります。
+<a href="https://it-shien.smrj.go.jp/applicant/measures/" target="_blank" rel="noopener">事務局の「申請を行う前に必要な手続き」</a>では、GビズIDプライムの発行に<strong>おおむね2週間</strong>かかると案内されています。SECURITY ACTIONは「一つ星」か「二つ星」の宣言が要件で、IDの発行に<strong>2〜3日</strong>ほどかかります。
 
 取得の手順は[AI導入補助金のGビズID取得方法](/blog/ai-hojokin-gbizid-shutoku/)と[SECURITY ACTION二つ星の宣言手順](/blog/ai-hojokin-security-action-hoshi2/)にまとめています。
 
@@ -111,7 +111,7 @@ faq:
 
 <figure><img src="/images/inshokuten-ai-hojokin-teishutsu-shorui/gyakusan.png" alt="10月30日締切から逆算する準備: 今すぐGビズIDプライムを申請する（おおむね2週間）、同じ日にSECURITY ACTIONを宣言する（2〜3日）、待つ間に登記簿や納税証明書を取る、10月30日までに支援事業者と交付申請を出す（17時締切）" loading="lazy"><figcaption>10月30日締切から逆算する準備</figcaption></figure>
 
-<a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">事務局のスケジュール</a>では、通常枠の締切は**2026年10月30日17時**です。交付決定は12月10日の予定で、事業の実施と実績報告の期限は2027年5月31日（予定）です。
+<a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">事務局のスケジュール</a>では、通常枠の締切は<strong>2026年10月30日17時</strong>です。交付決定は12月10日の予定で、事業の実施と実績報告の期限は2027年5月31日（予定）です。
 
 判断の目安は次のとおりです。
 
