@@ -49,7 +49,7 @@ faq:
 
 **個人事業主も、要件さえ満たせば法人と同じ条件でものづくり補助金に申請できます。**
 
-関連する内容は[個人事業主の開業届を電子申請](/blog/kojinjigyonushi-kaigyoutodoke-denshishinsei/)で整理しています。
+関連する内容は個人事業主の開業届を電子申請で整理しています。
 
 関連する内容については、[ものづくり補助金は運送業も使える？](/blog/monozukuri-hojokin-unsougyou/)にまとめています。
 
