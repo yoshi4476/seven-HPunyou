@@ -86,6 +86,8 @@ AI導入補助金は、<a href="https://it-shien.smrj.go.jp/" target="_blank" re
 
 **ものづくり補助金の公募要領は、不適切な支援者の行為を5つ例示しています。**当てはまる相手とは契約しないでください。
 
+関連する内容として[AI導入補助金の不採択理由7つと再申請までにやるべき対策](/blog/ai-hojokin-futaitaku-riyu/)も公開しています。
+
 <a href="https://portal.monodukuri-hojo.jp/about.html" target="_blank" rel="noopener">ものづくり補助金の第23次公募要領</a>は、4ページで「事業計画書作成支援者」に注意を促しています。挙げられている不適切な行為は次の5つです。
 
 | # | 公募要領が挙げる不適切な行為 | 整備工場で起きやすい場面 |
