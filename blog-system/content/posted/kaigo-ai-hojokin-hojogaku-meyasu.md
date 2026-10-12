@@ -82,6 +82,8 @@ faq:
 
 **会計・受発注など汎用的なAIツールを導入する場合は、一般のデジタル化・AI導入補助金が対象になります。**通常枠は上限450万円まで補助されます。
 
+関連する内容として[飲食店の補助金はいくら？](/blog/inshokuten-hojokin-ikura/)も公開しています。
+
 関連する内容として[宿泊業の補助金は3つの入口｜目的別の選び方と優先順位](/blog/shukuhakugyou-hojokin-erabikata/)も公開しています。
 
 費用の目安は、[宿泊業のAI導入補助金はいくら？](/blog/shukuhakugyou-ai-hojokin-hojogaku-meyasu/)で解説しています。
