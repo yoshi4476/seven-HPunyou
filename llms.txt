@@ -38,6 +38,7 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 ## ブログ記事(全記事・新しい順)
 
 - [AIシステム開発の費用は補助対象経費になる？見積のどの行が通るか](https://lp.7senses.co.jp/blog/ai-system-kaihatsu-hojo-taisho-keihi/): AIシステム開発の費用は、デジタル化・AI導入補助金では一から作る開発費の区分が無く、そのままでは補助対象経費になりません。対象は事前登録さ
+- [農業の補助金は50歳以上でも使える？年齢要件の線引き](https://lp.7senses.co.jp/blog/nogyo-hojokin-50sai-ijo/): 農業の補助金は50歳以上でも使えるものがあります。新規就農者向けの経営発展支援事業は49歳以下ですが、スマ転事業やスマート農業の計画認定、デ
 - [飲食店のAI導入補助金の提出書類は？個人店と法人で何が違う](https://lp.7senses.co.jp/blog/inshokuten-ai-hojokin-teishutsu-shorui/): 飲食店のAI導入補助金の提出書類は、法人なら履歴事項全部証明書と法人税の納税証明書、個人店なら本人確認書類・所得税の納税証明書・確定申告書の
 - [外国人雇用の助成金は個人事業主も対象｜10月改正で受給額は最大25万円](https://lp.7senses.co.jp/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/): 外国人雇用の助成金（人材確保等支援助成金の外国人労働者就労環境整備助成コース）は、雇用保険に入った外国人を雇う個人事業主も対象です。2026
 - [事業承継の補助金は個人事業主も対象｜継ぐ前に申請する5つの条件](https://lp.7senses.co.jp/blog/jigyou-shoukei-hojokin-kojinjigyonushi/): 個人事業主の事業承継には、事業承継・M&A補助金の事業承継促進枠が使えます。親から継ぐ前に、親と後継者の2人で共同申請するのが条件です。16
@@ -190,14 +191,14 @@ AI導入補助金とは、AIツールやITシステムの導入費用を国が�
 - [飲食店の補助金・AI導入](https://lp.7senses.co.jp/industry/inshokuten/): 10本
 - [建設業の補助金・AI導入](https://lp.7senses.co.jp/industry/kensetsu/): 11本
 - [宿泊業の補助金・AI導入](https://lp.7senses.co.jp/industry/shukuhaku/): 5本
-- [農業の補助金・AI導入](https://lp.7senses.co.jp/industry/nougyou/): 8本
+- [農業の補助金・AI導入](https://lp.7senses.co.jp/industry/nougyou/): 9本
 - [クリニック・医療機関のよくある質問](https://lp.7senses.co.jp/industry/clinic/faq/): 45問
 - [美容室・サロンのよくある質問](https://lp.7senses.co.jp/industry/biyou/faq/): 60問
 - [飲食店のよくある質問](https://lp.7senses.co.jp/industry/inshokuten/faq/): 60問
 - [建設業のよくある質問](https://lp.7senses.co.jp/industry/kensetsu/faq/): 60問
 - [宿泊業のよくある質問](https://lp.7senses.co.jp/industry/shukuhaku/faq/): 38問
-- [農業のよくある質問](https://lp.7senses.co.jp/industry/nougyou/faq/): 50問
+- [農業のよくある質問](https://lp.7senses.co.jp/industry/nougyou/faq/): 56問
 
 ## まとめのページ
-- [補助金の比較表](https://lp.7senses.co.jp/compare/hojokin/): 補助金の記事にある比較表8表を1か所に集めました。表は記事のものと同じです。記事3本をまとめています。掲載している記事の例: AI導入の費用相場｜中小企業の内訳と抑える3つのコツ／ネイルサロンの技術チェックAI化｜補助金の対象基準／AIシステム開発の費用は補助対象経費になる？見積のどの行が通るか。
-- [比較表から探す（補助金）](https://lp.7senses.co.jp/compare/): 記事の比較表をカテゴリごとに集め、違いと費用を見比べられる入口です。掲載している記事の例: AIシステム開発の費用は補助対象経費になる？見積のどの行が通るか／ネイルサロンの技術チェックAI化｜補助金の対象基準／ネイルサロンの補助金申請手順を8ステップで解説／AI導入の費用相場｜中小企業の内訳と抑える3つのコツ。
+- [補助金の比較表](https://lp.7senses.co.jp/compare/hojokin/): 補助金の記事にある比較表5表を1か所に集めました。表は記事のものと同じです。記事2本をまとめています。掲載している記事の例: AI導入の費用相場｜中小企業の内訳と抑える3つのコツ／ネイルサロンの技術チェックAI化｜補助金の対象基準。
+- [比較表から探す（補助金）](https://lp.7senses.co.jp/compare/): 記事の比較表をカテゴリごとに集め、違いと費用を見比べられる入口です。掲載している記事の例: 農業の補助金は50歳以上でも使える？年齢要件の線引き／ネイルサロンの技術チェックAI化｜補助金の対象基準／ネイルサロンの補助金申請手順を8ステップで解説／AI導入の費用相場｜中小企業の内訳と抑える3つのコツ。
