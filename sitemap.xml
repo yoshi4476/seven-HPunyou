@@ -56,6 +56,9 @@
     <lastmod>2026-10-16</lastmod>
     <priority>0.7</priority>
     <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nogyo-hojokin-hensai-fuyou/thumbnail.webp</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/nogyo-hojokin-hensai-fuyou/hikaku.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/nogyo-hojokin-hensai-fuyou/henkan.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/nogyo-hojokin-hensai-fuyou/nagare.png</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-system-kaihatsu-hojo-taisho-keihi/</loc>
@@ -525,10 +528,10 @@
     <loc>https://lp.7senses.co.jp/blog/nail-salon-hojokin-tejun/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nail-salon-hojokin-tejun/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nail-salon-hojokin-tejun/phase5.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nail-salon-hojokin-tejun/hacchu-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nail-salon-hojokin-tejun/jisseki-docs.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nail-salon-hojokin-tejun/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-kaihatsu-hojokin/</loc>
