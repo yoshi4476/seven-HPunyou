@@ -54,7 +54,7 @@ faq:
 
 関連する内容は[クリニックのIT導入補助金](/blog/it-hojokin-clinic/)で整理しています。
 
-実際の進め方は[AI導入補助金2026](/blog/ai-hojokin-clinic-2026-schedule/)で整理しています。
+実際の進め方は[AI導入補助金2026 クリニックの落とし穴](/blog/ai-hojokin-clinic-2026-schedule/)で整理しています。
 
 <div class="definition-box"><span class="term">デジタル化・AI導入補助金とは</span>、中小企業庁が実施する「中小企業デジタル化・AI導入支援事業」の愛称です。ソフトウェアやクラウドサービスの導入費用の一部を補助し、業務効率化を後押しします。</div>
 

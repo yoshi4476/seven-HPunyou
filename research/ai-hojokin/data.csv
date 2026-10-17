@@ -1,41 +1,41 @@
-﻿調べた日,問い,AI,結論,根拠の一文,記事
-2026-10-04,AI導入補助金 福岡の会社ですが、大阪のサポート会社に遠隔で相談・依頼しても大丈夫ですか？,ChatGPT,はい（対象になる・できる）,はい。国の「デジタル化・AI導入補助金2026（旧：IT導入補助金）」のことなら、福岡の会社が大阪のサポート会社に遠隔で相談・依頼することは、基本的に可能です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 福岡の会社ですが、大阪のサポート会社に遠隔で相談・依頼しても大丈夫ですか？,Claude,条件による,結論: 大丈夫です。ただし、大阪の会社が「IT導入支援事業者」として事務局に登録されていることが条件です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 不採択だった場合、福岡からでも再申請はできますか？,ChatGPT,はい（対象になる・できる）,はい、福岡からでも再申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 不採択だった場合、福岡からでも再申請はできますか？,Claude,はい（対象になる・できる）,結論: 再申請できます。福岡であることが不利になる、または申請できなくなるという記載は、検索結果には見当たりませんでした。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,2026年 AI導入補助金でホームページ制作は対象?,ChatGPT,いいえ（対象外・できない）,2026年の「デジタル化・AI導入補助金」では、ホームページ制作は補助対象外です。ECサイト制作も対象外です。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,2026年 AI導入補助金でホームページ制作は対象?,Claude,いいえ（対象外・できない）,結論: 単体のホームページ制作は対象外です。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,AI導入補助金 コーポレートサイトのリニューアルだけでも対象になりますか?,ChatGPT,いいえ（対象外・できない）,コーポレートサイトのリニューアルだけでは、対象になりません。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,AI導入補助金 コーポレートサイトのリニューアルだけでも対象になりますか?,Claude,いいえ（対象外・できない）,コーポレートサイトのリニューアルだけでは、原則として対象になりません。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,AI導入補助金 保守費やドメイン費は補助対象になりますか?,ChatGPT,条件による,国の「デジタル化・AI導入補助金2026」を指す場合、保守費は条件付きで対象、ドメイン費は単独では原則対象外です。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,AI導入補助金 保守費やドメイン費は補助対象になりますか?,Claude,条件による,結論: 保守費は条件付きで補助対象になる可能性が高いです。ドメイン費は、確認できた範囲では対象と明記されたものが見つからず、対象外の可能性が高いです。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,AI導入補助金 個人事業主でも申請できますか?,ChatGPT,はい（対象になる・できる）,はい、個人事業主でも申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,AI導入補助金 個人事業主でも申請できますか?,Claude,はい（対象になる・できる）,結論: 申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
-2026-10-04,AI導入補助金 補助金は申請すれば必ずもらえますか?,ChatGPT,いいえ（対象外・できない）,いいえ、申請すれば必ずもらえるわけではありません。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
-2026-10-04,AI導入補助金 補助金は申請すれば必ずもらえますか?,Claude,いいえ（対象外・できない）,いいえ、申請しても必ずもらえるわけではありません。 審査があり、採択されなければ補助金は受けられません。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
-2026-10-04,AI導入補助金 個人事業主や小規模な会社でも対象になりますか?,ChatGPT,はい（対象になる・できる）,はい、個人事業主や小規模な会社も対象になります。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
-2026-10-04,AI導入補助金 個人事業主や小規模な会社でも対象になりますか?,Claude,はい（対象になる・できる）,はい、対象になります。個人事業主も小規模事業者も申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
-2026-10-04,AI導入補助金 不採択になった場合、翌年度の再申請はできますか?,ChatGPT,条件による,原則として、翌年度も申請できます。ただし、翌年度に公募があり、その年度の申請要件を満たすことが条件です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 不採択になった場合、翌年度の再申請はできますか?,Claude,はい（対象になる・できる）,結論:再申請はできます。 不採択に対するペナルティや回数制限は、確認できた範囲ではありません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,今使っている会計ソフトの月額利用料(サブスク)は、AI導入補助金の対象になりますか?,ChatGPT,いいえ（対象外・できない）,今使っている会計ソフトの月額利用料を、そのまま補助してもらうことは原則できません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
-2026-10-04,今使っている会計ソフトの月額利用料(サブスク)は、AI導入補助金の対象になりますか?,Claude,条件による,結論: 補助金の対象になる可能性はありますが、今使っている契約のままでは対象外とみられます。ただし、この「既存契約は対象外」という点は、今回の検索では確認できていません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
-2026-10-04,AI導入補助金 会計ソフトと受発注システムを同時に導入する場合も補助の対象になりますか?,ChatGPT,はい（対象になる・できる）,はい、要件を満たせば、会計ソフトと受発注システムを同時に導入する場合も補助対象になります。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
-2026-10-04,AI導入補助金 会計ソフトと受発注システムを同時に導入する場合も補助の対象になりますか?,Claude,はい（対象になる・できる）,結論: 対象になります。 会計ソフトと受発注システムの同時導入は補助対象です。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
-2026-10-04,無料の会計ソフトはAI導入補助金の対象になりますか?,ChatGPT,いいえ（対象外・できない）,完全無料の会計ソフトを使うだけでは、原則として補助金は受け取れません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
-2026-10-04,無料の会計ソフトはAI導入補助金の対象になりますか?,Claude,いいえ（対象外・できない）,結論: 無料の会計ソフトは、基本的に対象になりません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
-2026-10-04,AI導入補助金 神戸の会社ですが、大阪の会社に申請サポートを頼んでも問題ありませんか？,ChatGPT,はい（対象になる・できる）,はい。国の「デジタル化・AI導入補助金2026（旧：IT導入補助金）」のことなら、神戸の会社が大阪の会社に申請サポートを頼むことは、原則として問題ありません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 神戸の会社ですが、大阪の会社に申請サポートを頼んでも問題ありませんか？,Claude,はい（対象になる・できる）,結論: 問題ありません。 検索した範囲では、会社の所在地と支援事業者の所在地を揃える必要があるという記載は見つかりませんでした。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 京都以外の業者に申請代行を頼んでも問題ありませんか？,ChatGPT,はい（対象になる・できる）,国の「デジタル化・AI導入補助金2026（旧IT導入補助金）」のことであれば、京都以外の業者に申請支援を頼んでも、所在地だけを理由に問題になることはありません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 京都以外の業者に申請代行を頼んでも問題ありませんか？,Claude,条件による,結論: 京都以外の業者でも、一般的には問題ない可能性が高いですが、検索結果に「問題ない」と明記したページはなく、公式要領の本文は確認できていません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 京都府や京都市に独自の補助制度はありますか？,ChatGPT,はい（対象になる・できる）,はい。京都府・京都市には、AI活用を支援する独自の補助制度があります。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 京都府や京都市に独自の補助制度はありますか？,Claude,はい（対象になる・できる）,あります。 京都府と京都市のどちらにも、国の「デジタル化・AI導入補助金2026」とは別に、AI・DX関連の独自補助制度があります。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金のサポートは、名古屋にオフィスがない会社 (大阪など) に依頼しても大丈夫ですか?,ChatGPT,はい（対象になる・できる）,はい。国の「デジタル化・AI導入補助金2026（旧：IT導入補助金）」であれば、名古屋にオフィスがない大阪などの会社にも依頼できます。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
-2026-10-04,AI導入補助金のサポートは、名古屋にオフィスがない会社 (大阪など) に依頼しても大丈夫ですか?,Claude,はい（対象になる・できる）,結論: 大阪など名古屋にオフィスがない会社に頼んでも、基本的に問題ありません。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
-2026-10-04,AI導入補助金 不採択だった場合、名古屋の事業者でも再申請はできますか?,ChatGPT,はい（対象になる・できる）,はい、名古屋の事業者でも再申請できます。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
-2026-10-04,AI導入補助金 不採択だった場合、名古屋の事業者でも再申請はできますか?,Claude,はい（対象になる・できる）,結論:再申請できます。名古屋の事業者であることが理由で制限される、という記載は見つかりませんでした。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
-2026-10-04,大阪の中小企業ですが、AI導入補助金はうちの規模でも申請できますか？,ChatGPT,はい（対象になる・できる）,はい、大阪の中小企業でも申請対象になり得ます。従業員数人の会社や個人事業主も対象です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,大阪の中小企業ですが、AI導入補助金はうちの規模でも申請できますか？,Claude,はい（対象になる・できる）,大阪の中小企業なら、基本的に申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 個人事業主やフリーランスでも対象になりますか？,ChatGPT,はい（対象になる・できる）,はい、個人事業主やフリーランスも対象になります。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 個人事業主やフリーランスでも対象になりますか？,Claude,はい（対象になる・できる）,はい、個人事業主・フリーランスも対象です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
-2026-10-04,AI導入補助金 不採択だった場合、再申請はできますか?,ChatGPT,はい（対象になる・できる）,はい、再申請できます。,https://lp.7senses.co.jp/blog/it-hojokin-seizougyou/
-2026-10-04,AI導入補助金 不採択だった場合、再申請はできますか?,Claude,はい（対象になる・できる）,はい、再申請できます。,https://lp.7senses.co.jp/blog/it-hojokin-seizougyou/
+﻿調べた日,問い,AI,結論,根拠の一文,記事
+2026-10-04,AI導入補助金 福岡の会社ですが、大阪のサポート会社に遠隔で相談・依頼しても大丈夫ですか？,ChatGPT,はい（対象になる・できる）,はい。国の「デジタル化・AI導入補助金2026（旧：IT導入補助金）」のことなら、福岡の会社が大阪のサポート会社に遠隔で相談・依頼することは、基本的に可能です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 福岡の会社ですが、大阪のサポート会社に遠隔で相談・依頼しても大丈夫ですか？,Claude,条件による,結論: 大丈夫です。ただし、大阪の会社が「IT導入支援事業者」として事務局に登録されていることが条件です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 不採択だった場合、福岡からでも再申請はできますか？,ChatGPT,はい（対象になる・できる）,はい、福岡からでも再申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 不採択だった場合、福岡からでも再申請はできますか？,Claude,はい（対象になる・できる）,結論: 再申請できます。福岡であることが不利になる、または申請できなくなるという記載は、検索結果には見当たりませんでした。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,2026年 AI導入補助金でホームページ制作は対象?,ChatGPT,いいえ（対象外・できない）,2026年の「デジタル化・AI導入補助金」では、ホームページ制作は補助対象外です。ECサイト制作も対象外です。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,2026年 AI導入補助金でホームページ制作は対象?,Claude,いいえ（対象外・できない）,結論: 単体のホームページ制作は対象外です。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,AI導入補助金 コーポレートサイトのリニューアルだけでも対象になりますか?,ChatGPT,いいえ（対象外・できない）,コーポレートサイトのリニューアルだけでは、対象になりません。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,AI導入補助金 コーポレートサイトのリニューアルだけでも対象になりますか?,Claude,いいえ（対象外・できない）,コーポレートサイトのリニューアルだけでは、原則として対象になりません。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,AI導入補助金 保守費やドメイン費は補助対象になりますか?,ChatGPT,条件による,国の「デジタル化・AI導入補助金2026」を指す場合、保守費は条件付きで対象、ドメイン費は単独では原則対象外です。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,AI導入補助金 保守費やドメイン費は補助対象になりますか?,Claude,条件による,結論: 保守費は条件付きで補助対象になる可能性が高いです。ドメイン費は、確認できた範囲では対象と明記されたものが見つからず、対象外の可能性が高いです。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,AI導入補助金 個人事業主でも申請できますか?,ChatGPT,はい（対象になる・できる）,はい、個人事業主でも申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,AI導入補助金 個人事業主でも申請できますか?,Claude,はい（対象になる・できる）,結論: 申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-taisho-tool/
+2026-10-04,AI導入補助金 補助金は申請すれば必ずもらえますか?,ChatGPT,いいえ（対象外・できない）,いいえ、申請すれば必ずもらえるわけではありません。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
+2026-10-04,AI導入補助金 補助金は申請すれば必ずもらえますか?,Claude,いいえ（対象外・できない）,いいえ、申請しても必ずもらえるわけではありません。 審査があり、採択されなければ補助金は受けられません。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
+2026-10-04,AI導入補助金 個人事業主や小規模な会社でも対象になりますか?,ChatGPT,はい（対象になる・できる）,はい、個人事業主や小規模な会社も対象になります。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
+2026-10-04,AI導入補助金 個人事業主や小規模な会社でも対象になりますか?,Claude,はい（対象になる・できる）,はい、対象になります。個人事業主も小規模事業者も申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/
+2026-10-04,AI導入補助金 不採択になった場合、翌年度の再申請はできますか?,ChatGPT,条件による,原則として、翌年度も申請できます。ただし、翌年度に公募があり、その年度の申請要件を満たすことが条件です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 不採択になった場合、翌年度の再申請はできますか?,Claude,はい（対象になる・できる）,結論:再申請はできます。 不採択に対するペナルティや回数制限は、確認できた範囲ではありません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,今使っている会計ソフトの月額利用料(サブスク)は、AI導入補助金の対象になりますか?,ChatGPT,いいえ（対象外・できない）,今使っている会計ソフトの月額利用料を、そのまま補助してもらうことは原則できません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
+2026-10-04,今使っている会計ソフトの月額利用料(サブスク)は、AI導入補助金の対象になりますか?,Claude,条件による,結論: 補助金の対象になる可能性はありますが、今使っている契約のままでは対象外とみられます。ただし、この「既存契約は対象外」という点は、今回の検索では確認できていません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
+2026-10-04,AI導入補助金 会計ソフトと受発注システムを同時に導入する場合も補助の対象になりますか?,ChatGPT,はい（対象になる・できる）,はい、要件を満たせば、会計ソフトと受発注システムを同時に導入する場合も補助対象になります。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
+2026-10-04,AI導入補助金 会計ソフトと受発注システムを同時に導入する場合も補助の対象になりますか?,Claude,はい（対象になる・できる）,結論: 対象になります。 会計ソフトと受発注システムの同時導入は補助対象です。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
+2026-10-04,無料の会計ソフトはAI導入補助金の対象になりますか?,ChatGPT,いいえ（対象外・できない）,完全無料の会計ソフトを使うだけでは、原則として補助金は受け取れません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
+2026-10-04,無料の会計ソフトはAI導入補助金の対象になりますか?,Claude,いいえ（対象外・できない）,結論: 無料の会計ソフトは、基本的に対象になりません。,https://lp.7senses.co.jp/blog/ai-hojokin-kaikeisoft-taisho/
+2026-10-04,AI導入補助金 神戸の会社ですが、大阪の会社に申請サポートを頼んでも問題ありませんか？,ChatGPT,はい（対象になる・できる）,はい。国の「デジタル化・AI導入補助金2026（旧：IT導入補助金）」のことなら、神戸の会社が大阪の会社に申請サポートを頼むことは、原則として問題ありません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 神戸の会社ですが、大阪の会社に申請サポートを頼んでも問題ありませんか？,Claude,はい（対象になる・できる）,結論: 問題ありません。 検索した範囲では、会社の所在地と支援事業者の所在地を揃える必要があるという記載は見つかりませんでした。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 京都以外の業者に申請代行を頼んでも問題ありませんか？,ChatGPT,はい（対象になる・できる）,国の「デジタル化・AI導入補助金2026（旧IT導入補助金）」のことであれば、京都以外の業者に申請支援を頼んでも、所在地だけを理由に問題になることはありません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 京都以外の業者に申請代行を頼んでも問題ありませんか？,Claude,条件による,結論: 京都以外の業者でも、一般的には問題ない可能性が高いですが、検索結果に「問題ない」と明記したページはなく、公式要領の本文は確認できていません。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 京都府や京都市に独自の補助制度はありますか？,ChatGPT,はい（対象になる・できる）,はい。京都府・京都市には、AI活用を支援する独自の補助制度があります。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 京都府や京都市に独自の補助制度はありますか？,Claude,はい（対象になる・できる）,あります。 京都府と京都市のどちらにも、国の「デジタル化・AI導入補助金2026」とは別に、AI・DX関連の独自補助制度があります。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金のサポートは、名古屋にオフィスがない会社 (大阪など) に依頼しても大丈夫ですか?,ChatGPT,はい（対象になる・できる）,はい。国の「デジタル化・AI導入補助金2026（旧：IT導入補助金）」であれば、名古屋にオフィスがない大阪などの会社にも依頼できます。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
+2026-10-04,AI導入補助金のサポートは、名古屋にオフィスがない会社 (大阪など) に依頼しても大丈夫ですか?,Claude,はい（対象になる・できる）,結論: 大阪など名古屋にオフィスがない会社に頼んでも、基本的に問題ありません。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
+2026-10-04,AI導入補助金 不採択だった場合、名古屋の事業者でも再申請はできますか?,ChatGPT,はい（対象になる・できる）,はい、名古屋の事業者でも再申請できます。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
+2026-10-04,AI導入補助金 不採択だった場合、名古屋の事業者でも再申請はできますか?,Claude,はい（対象になる・できる）,結論:再申請できます。名古屋の事業者であることが理由で制限される、という記載は見つかりませんでした。,https://lp.7senses.co.jp/blog/it-hojokin-nagoya/
+2026-10-04,大阪の中小企業ですが、AI導入補助金はうちの規模でも申請できますか？,ChatGPT,はい（対象になる・できる）,はい、大阪の中小企業でも申請対象になり得ます。従業員数人の会社や個人事業主も対象です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,大阪の中小企業ですが、AI導入補助金はうちの規模でも申請できますか？,Claude,はい（対象になる・できる）,大阪の中小企業なら、基本的に申請できます。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 個人事業主やフリーランスでも対象になりますか？,ChatGPT,はい（対象になる・できる）,はい、個人事業主やフリーランスも対象になります。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 個人事業主やフリーランスでも対象になりますか？,Claude,はい（対象になる・できる）,はい、個人事業主・フリーランスも対象です。,https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-yarikata/
+2026-10-04,AI導入補助金 不採択だった場合、再申請はできますか?,ChatGPT,はい（対象になる・できる）,はい、再申請できます。,https://lp.7senses.co.jp/blog/it-hojokin-seizougyou/
+2026-10-04,AI導入補助金 不採択だった場合、再申請はできますか?,Claude,はい（対象になる・できる）,はい、再申請できます。,https://lp.7senses.co.jp/blog/it-hojokin-seizougyou/
