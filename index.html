@@ -7,7 +7,7 @@
 <meta name="description" content="デジタル化・AI導入補助金(旧IT導入補助金)とは、AI・ITツールの導入費を国が補助する制度です。令和8年度は上限350万円(インボイス枠)。申請からシステム開発・AIO・MEOまで一気通貫で伴走します。4つの無料診断で今すぐ適性を確認できます。">
 <link rel="canonical" href="https://lp.7senses.co.jp/">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-<meta name="theme-color" content="#fdfcf9">
+<meta name="theme-color" content="#ffffff">
 <!-- OGP -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI導入補助金(旧IT導入補助金)最大350万円(インボイス枠)|セブンセンシズ株式会社">
@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="セブンセンシズ株式会社">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="/favicon.png">
-<!-- フォント: Noto Sans JP(本文)+Shippori Mincho B1(見出し)+Oswald(数字) display=swap -->
+<!-- 書体: 端末の書体だけで描く（Web フォントは読まない。決まりは DESIGN.md） -->
 <!-- GA4 -->
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-MXQQM8DJTS');
 /* 計測タグ(172KB)は描画の後に読む。先に読むと文字が出るのが遅れる。それまでの出来事は dataLayer に溜まり、読み込み後にまとめて送られる */
@@ -90,457 +90,295 @@ window.addEventListener('load',function(){setTimeout(function(){var s=document.c
 </script>
 
 <style>
-/* ================= Design Tokens(白ベース) ================= */
-:root{
-  --bg:#fdfcf9; --bg2:#f4f1e9; --panel:#ffffff; --panel2:#faf8f2;
-  --line:#e7e2d4; --line2:rgba(176,139,62,.45);
-  --text:#212b3d; --muted:#5b6472; --dim:#5c6472;
-  --navy:#1d3461; --navy2:#2a4a8a; --navy-deep:#132445;
-  --gold:#775c1c; --gold-em:#7a5b14; --gold-soft:#d9b36a; --gold-pale:#f4ead3; --gold-ink:#171104;
-  --serif:"Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Noto Serif CJK JP", serif;
-  /* YuGothicM: Windows の游ゴシックは既定の太さだと細く読みにくいので、Medium を先に使う（@font-face はサイト共通の枠 ss-common） */
-  --sans:"Hiragino Kaku Gothic ProN", "Hiragino Sans", "YuGothicM", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
-  --num:"Oswald","Hiragino Kaku Gothic ProN", "Hiragino Sans", "YuGothicM", "Yu Gothic", "Noto Sans JP", "Noto Sans CJK JP", "BIZ UDPGothic", Meiryo, sans-serif;
-  --maxw:1240px; --radius:14px;
-  --shadow:0 10px 34px rgba(29,52,97,.08);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.95;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-img{max-width:100%;height:auto;display:block}
-a{color:inherit}
-:focus-visible{outline:2px solid var(--navy2);outline-offset:3px;border-radius:4px}
-::selection{background:var(--gold-soft);color:var(--gold-ink)}
+/* トップ（AI導入補助金LP）。色・文字・ボタン・ヘッダー・足元はサイト共通の ss-common。決まりは DESIGN.md
+   話の順: 使える制度か → 申請の流れと落とし穴 → 当社の支援の範囲 → 料金と進め方 → 相談 */
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+@media(min-width:641px){br.sp{display:none}}
+/* ---- 章: 左に項目（見出し）、右に中身。帳票の形 ---- */
+.sec{padding:112px 0;border-top:1px solid var(--rule)}
+.sec.is-sheet{background:var(--sheet)}
+.sec-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:32px 64px;align-items:start}
+.sec-head{min-width:0}
+.sec-head h2{margin:0 0 16px}
+.sec-head .lead{margin:0;font-size:var(--fs-16);line-height:1.9;color:var(--ink-2)}
+.sec-body{min-width:0}
+.sec-wide .sec-head{max-width:760px;margin-bottom:40px}
+@media(min-width:1024px){.sec-grid>.sec-head{position:sticky;top:96px}}
+@media(max-width:1023px){.sec{padding:64px 0}.sec-grid{grid-template-columns:minmax(0,1fr)}}
+.ch{margin:0 0 14px;font-size:var(--fs-14);font-weight:700;color:var(--ai)}
+.lead{color:var(--ink-2)}
+/* ---- ヒーロー ---- */
+.hero{padding:64px 0 8px}
 
-/* 背景の空気感: 淡い金・藍のグロー(装飾のみ) */
-.atmos{position:fixed;inset:0;z-index:-1;pointer-events:none;
-  background:
-    radial-gradient(900px 520px at 88% -6%,rgba(217,179,106,.14),transparent 60%),
-    radial-gradient(760px 520px at -10% 30%,rgba(42,74,138,.07),transparent 60%),
-    var(--bg);}
+.hero-grid{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px 64px;align-items:start}
+@media(max-width:960px){.hero-grid{grid-template-columns:minmax(0,1fr)}}
+.form-no{display:inline-block;margin:0 0 22px;padding:5px 12px;border:1px solid var(--ink);font-size:13px;font-weight:700;line-height:1.5;color:var(--ink)}
+.hero h1{margin:0 0 24px;font-size:var(--fs-display);line-height:1.28;letter-spacing:0}
+.hero h1 .num{font-variant-numeric:tabular-nums}
+.hero-sub{max-width:36em;margin:0 0 32px;font-size:var(--fs-18);line-height:1.85;color:var(--ink-2)}
+.hero-sub .em-big{font-weight:700;color:var(--ink)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:16px 20px;align-items:flex-start}
+.hero-cta>div{display:flex;flex-direction:column;flex:1 1 260px;max-width:340px}
+.hero-cta .micro{margin-top:8px}
+.hero .fresh{margin:28px 0 0;font-size:var(--fs-14);color:var(--ink-3)}
+.hero .fresh b{font-weight:700;color:var(--ink-2)}
+/* 自己負担の計算（帳簿の形）。このサイトの顔。読み込み時に計算の順に1回だけ出る */
+.ledger{border:1px solid var(--rule-strong);background:var(--paper)}
+.ledger-t{margin:0;padding:12px 20px;border-bottom:1px solid var(--rule-strong);background:var(--sheet);font-size:15px;font-weight:700}
+.ledger-t small{display:block;font-size:13px;font-weight:400;color:var(--ink-3)}
+.ledger dl{margin:0;padding:6px 20px 0}
+.lr{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px dashed var(--rule)}
+.lr dt{font-size:15px;color:var(--ink-2)}
+.lr dd{margin:0;font-size:28px;font-weight:700;line-height:1.2;color:var(--ink);font-variant-numeric:tabular-nums;white-space:nowrap}
+.lr dd small{margin-left:2px;font-size:15px;font-weight:700}
+.lr.minus dd{color:var(--ai)}
+.lr.total{position:relative;border-bottom:0;padding:20px 0 16px}
+.lr.total::before{content:"";position:absolute;left:0;right:0;top:0;height:5px;border-top:1.5px solid var(--ink);border-bottom:1.5px solid var(--ink)}
+.lr.total dt{font-weight:700;color:var(--ink)}
+.lr.total dd{font-size:44px}
+.ledger-bar{display:flex;height:12px;margin:4px 20px 0;background:var(--rule)}
+.ledger-bar i{display:block;height:100%}
+.ledger-bar .b-sub{width:63.6%;background:var(--ai)}
+.ledger-bar .b-self{width:36.4%;background:var(--ink)}
+.ledger-key{display:flex;justify-content:space-between;gap:12px;margin:6px 20px 0;font-size:13px;color:var(--ink-2)}
+.ledger .cost-note{margin:0;padding:14px 20px 18px}
+@keyframes lrIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes ruleIn{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+.ledger .lr{animation:lrIn .42s var(--ease-out) both}
+.ledger .lr:nth-child(1){animation-delay:.12s}
+.ledger .lr:nth-child(2){animation-delay:.19s}
+.ledger .lr:nth-child(3){animation-delay:.26s}
+.ledger .lr.total::before{animation:ruleIn .36s var(--ease-out) .5s both}
+.ledger-bar i{transform-origin:left;animation:lrIn .42s var(--ease-out) .33s both}
+@media(prefers-reduced-motion:reduce){.ledger .lr,.ledger .lr.total::before,.ledger-bar i{animation:none}}
+/* 制度と当社の要点（罫線で区切った1行） */
+.facts{margin:64px 0 0;border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule)}
+.facts dl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:0}
+.facts dl>div{padding:18px 20px 16px;border-left:1px solid var(--rule)}
+.facts dl>div:first-child{border-left:0;padding-left:0}
+.facts dt{font-size:13px;color:var(--ink-3)}
+.facts dd{margin:2px 0 0;font-size:26px;font-weight:700;line-height:1.3;font-variant-numeric:tabular-nums}
+.facts dd small{margin-left:2px;font-size:14px}
+.facts .foot{margin:0;padding:10px 0 12px;border-top:1px solid var(--rule);font-size:13px;line-height:1.7;color:var(--ink-3)}
+@media(max-width:960px){.facts dl{grid-template-columns:repeat(2,minmax(0,1fr))}.facts dl>div{border-left:0;border-top:1px solid var(--rule);padding:14px 0}.facts dl>div:nth-child(-n+2){border-top:0}.facts dl>div:last-child{grid-column:span 2}}
+/* このページの順番（目次） */
+.page-toc{margin:28px 0 0}
+.page-toc p{margin:0 0 6px;font-size:13px;color:var(--ink-3)}
+.page-toc ol{display:flex;flex-wrap:wrap;gap:4px 0;margin:0;padding:0;list-style:none;counter-reset:pt}
+.page-toc li{counter-increment:pt;margin:0}
+.page-toc a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;font-size:var(--fs-14);color:var(--ink);text-decoration:none;border-left:1px solid var(--rule)}
+.page-toc li:first-child a{padding-left:0;border-left:0}
+.page-toc a::before{content:counter(pt);margin-right:6px;font-weight:700;color:var(--ai);font-variant-numeric:tabular-nums}
+.page-toc a:hover{color:var(--ai);text-decoration:underline}
+@media(max-width:640px){.page-toc ol{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule)}.page-toc li a,.page-toc li:first-child a{padding:0;border-left:0;border-bottom:1px solid var(--rule);width:100%}}
+/* ---- 目的から選ぶ ---- */
+.chooser{padding:56px 0}
+.chooser h2{margin:0 0 20px;font-size:var(--fs-22)}
+.choose-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule-strong)}
+@media(max-width:820px){.choose-grid{grid-template-columns:minmax(0,1fr)}}
+.choice{display:flex;flex-direction:column;gap:4px;min-height:44px;padding:18px 20px 18px 0;border-bottom:1px solid var(--rule);color:var(--ink);text-decoration:none}
+.choice+.choice{padding-left:20px;border-left:1px solid var(--rule)}
+@media(max-width:820px){.choice+.choice{padding-left:0;border-left:0}}
+.choice b{font-size:17px;line-height:1.5}
+.choice .cd{font-size:var(--fs-14);color:var(--ai);font-weight:700}
+.choice:hover b{color:var(--ai);text-decoration:underline;text-underline-offset:4px}
+/* ---- 対象の確認 ---- */
+.fit-list{margin:0 0 20px;padding:0;list-style:none;border-top:1px solid var(--rule-strong)}
+.fit-list li{position:relative;margin:0;padding:16px 0 16px 40px;border-bottom:1px solid var(--rule);font-size:17px;line-height:1.6}
+.fit-list li::before{content:"";position:absolute;left:4px;top:18px;width:20px;height:20px;border:1.5px solid var(--ink);border-radius:2px}
 
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 22px}
-section{padding:96px 0}
-.kicker{font-family:var(--num);font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:18px}
-.kicker::before{content:"";width:34px;height:1px;background:var(--gold-soft)}
-h2{font-family:var(--serif);font-weight:800;font-size:clamp(26px,4.2vw,40px);line-height:1.45;letter-spacing:.02em;margin-bottom:14px;color:var(--navy)}
-h2 .accent{color:var(--gold-em)}
-.lead{color:var(--muted);max-width:760px}
-.gold{color:var(--gold-em)}
-
-/* ---- 写真(Unsplash License・商用可) ---- */
-figure.photo{margin:0;position:relative;overflow:hidden;border-radius:var(--radius)}
-figure.photo img{width:100%;height:100%;object-fit:cover;display:block}
-figure.photo figcaption{position:absolute;right:10px;bottom:8px;font-size:12px;color:#fff;background:rgba(19,36,69,.6);padding:2px 10px;border-radius:999px;letter-spacing:.06em}
-.prob-head{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;margin-bottom:6px}
-@media(max-width:820px){.prob-head{grid-template-columns:1fr}}
-.prob-head figure.photo{height:230px;box-shadow:var(--shadow)}
-.sol-photo{margin:-32px -26px 20px;height:140px;overflow:hidden}
-.sol-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.banner-photo{height:280px;margin-top:36px;box-shadow:var(--shadow)}
-@media(max-width:640px){.banner-photo{height:190px}}
-.cv-photo{height:190px;margin-bottom:20px;border-radius:10px;overflow:hidden;position:relative;z-index:1}
-.cv-photo img{width:100%;height:100%;object-fit:cover;display:block}
-
-/* ---- 資料DLライトフォーム ---- */
-
-/* ---- クイックスタート3択 ---- */
-.choose-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
-@media(max-width:820px){.choose-grid{grid-template-columns:1fr}}
-.choice{display:flex;flex-direction:column;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:16px;padding:26px 24px;text-decoration:none;color:var(--text);box-shadow:var(--shadow);transition:transform .18s,border-color .18s;min-height:44px}
-.choice:hover{transform:translateY(-4px);border-color:var(--gold-soft)}
-.choice .ci{font-size:28px;line-height:1}
-.choice b{font-family:var(--serif);font-size:17px;color:var(--navy);line-height:1.5}
-.choice .cd{font-size:14px;color:#c2410c;font-weight:700}
-
-/* ---- 文字の緩急ユーティリティ ---- */
-/* 灰色の地の文の中でも、マーカーの上は本文の色にする（灰色のままだと金の上で 4:1 程度だった） */
-.em-marker{background:linear-gradient(transparent 62%,rgba(217,179,106,.5) 62%);font-weight:700;padding:0 2px;color:#212b3d}
-.em-big{font-family:var(--serif);font-size:1.2em;font-weight:800;color:var(--navy)}
-.em-gold{color:var(--gold-em);font-weight:700}
-.em-navy{color:var(--navy);font-weight:900}
-
-/* ================= ボタン(タップ領域44px以上) ================= */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;padding:14px 30px;border-radius:999px;font-weight:700;font-size:15.5px;text-decoration:none;cursor:pointer;border:1.5px solid transparent;transition:transform .18s ease,box-shadow .18s ease,background .18s ease;font-family:var(--sans)}
-.btn-primary{background:linear-gradient(135deg,#e8c988,var(--gold-soft) 55%,#c39a4e);color:var(--gold-ink);box-shadow:0 8px 24px rgba(176,139,62,.32)}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(176,139,62,.42)}
-.btn-ghost{border-color:var(--navy2);color:var(--navy);background:#fff}
-.btn-ghost:hover{background:rgba(42,74,138,.06)}
-.btn-block{width:100%}
-.micro{display:block;margin-top:10px;font-size:13px;color:var(--dim);letter-spacing:.04em}
-
-/* ================= 1. 固定ヘッダー ================= */
-/* 中身（ナビ・電話・相談・スマホのメニュー）は全ページ共通。管制塔の scripts/subsidy/pages.py が配信のたびに揃える（CSS は ss-common） */
-header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(253,252,249,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-
-/* ================= 2. ヒーロー ================= */
-.hero{padding:170px 0 88px;position:relative;overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center}
-@media(max-width:920px){.hero-grid{grid-template-columns:1fr}}
-.hero .fresh{font-size:13px;color:var(--dim);letter-spacing:.06em;margin-bottom:14px}
-.hero .fresh b{color:var(--muted);font-weight:500}
-.badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
-.badge{font-size:12px;letter-spacing:.14em;padding:7px 16px;border:1px solid var(--line2);border-radius:999px;color:var(--gold-em);background:var(--gold-pale)}
-.badge.navy{border-color:rgba(42,74,138,.35);color:var(--navy);background:rgba(42,74,138,.07)}
-/* 希少性バッジ(行動色=オレンジ+鼓動ドット) */
-.badge.hot{display:inline-flex;align-items:center;gap:8px;background:#fff1e6;border-color:#fdba74;color:#9a3412;font-weight:700}
-.badge.hot i{width:8px;height:8px;border-radius:50%;background:#f97316;animation:beat 1.6s ease-in-out infinite}
-@keyframes beat{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.6);opacity:.55}}
-h1{font-family:var(--serif);font-weight:800;font-size:clamp(32px,5.8vw,60px);line-height:1.36;letter-spacing:.01em;margin-bottom:22px;color:var(--navy)}
-h1 .num{font-family:var(--num);font-weight:600;font-size:1.3em;letter-spacing:.02em;background:linear-gradient(115deg,#b08b3e 20%,#f97316 80%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero-sub{color:var(--muted);font-size:clamp(15px,1.6vw,17px);max-width:640px;margin-bottom:34px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start}
-.hero-cta>div{display:flex;flex-direction:column;flex:1 1 300px;max-width:420px}
-/* ヒーロー右: 実質負担ビジュアル(カード+ミニ棒グラフ) */
-.cost-card{border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;background:#fff;position:relative;box-shadow:var(--shadow)}
-.cost-card .tag{position:absolute;top:-13px;left:24px;background:var(--navy);color:#fff;font-size:12px;font-weight:700;letter-spacing:.16em;padding:4px 14px;border-radius:999px}
-.cost-row{display:flex;justify-content:space-between;align-items:baseline;padding:11px 0;border-bottom:1px dashed var(--line);font-size:15px;color:var(--muted)}
-.cost-row .v{font-family:var(--num);font-size:22px;color:var(--navy);letter-spacing:.03em}
-.cost-row.minus .v{color:var(--gold-em)}
-.cost-row.total{border-bottom:none;padding-top:16px}
-.cost-row.total .v{font-size:38px;color:var(--gold-em)}
-.cost-bars{display:flex;align-items:flex-end;gap:18px;height:88px;margin:16px 6px 4px;border-bottom:2px solid var(--line)}
-.cost-bars .cb{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px;height:100%}
-.cost-bars .bar{width:70%;border-radius:5px 5px 0 0}
-.cost-bars .b1{height:100%;background:linear-gradient(180deg,var(--navy2),var(--navy))}
-.cost-bars .b2{height:36%;background:linear-gradient(180deg,#e8c988,var(--gold-soft))}
-.cost-bars .lbl{font-size:12px;color:var(--dim);letter-spacing:.08em}
-.cost-note{font-size:13px;color:var(--dim);margin-top:12px;line-height:1.7}
-
-/* ================= 3. 実績数値バー(ネイビー帯で緩急) ================= */
-.stats{background:linear-gradient(135deg,var(--navy-deep),var(--navy) 55%,#24427c);padding:52px 0;position:relative;overflow:hidden}
-.stats::after{content:"";position:absolute;right:-120px;top:-160px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(217,179,106,.3);pointer-events:none}
-.stats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;text-align:center}
-@media(max-width:860px){.stats-grid{grid-template-columns:repeat(2,1fr);row-gap:30px}.stats-grid .stat:last-child{grid-column:span 2}}
-.stat .n{font-family:var(--num);font-weight:600;font-size:clamp(34px,4.6vw,52px);color:#e8c988;letter-spacing:.02em;line-height:1.15;min-height:1.15em}
-.stat .n small{font-size:.5em;font-family:var(--sans);font-weight:700;color:var(--gold-soft)}
-.stat .l{font-size:13px;color:#c9d2e4;letter-spacing:.12em;margin-top:6px}
-.stats .foot{text-align:center;font-size:13px;color:#aab8d6;margin-top:22px}
-
-/* ================= 5. 課題 ================= */
-.checks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:38px 0 30px}
-@media(max-width:720px){.checks{grid-template-columns:1fr}}
-.check{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-size:15px;box-shadow:0 4px 14px rgba(29,52,97,.05)}
-.check svg{flex:none;margin-top:5px}
-.bridge{font-family:var(--serif);font-size:clamp(19px,2.6vw,27px);font-weight:800;text-align:center;padding:34px 20px 4px;line-height:1.9;color:var(--navy)}
-
-/* ================= 6. 解決策 3カラム+対象条件表 ================= */
-.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
-@media(max-width:860px){.cols3{grid-template-columns:1fr}}
-.sol{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 26px;position:relative;overflow:hidden;box-shadow:var(--shadow);border-top:3px solid var(--gold-soft);transition:transform .18s,border-color .18s}
-.sol:hover{transform:translateY(-4px);border-color:var(--gold-soft)}
-/* カード全体をクリック可能に(stretched link) */
-.sol a.stretch::after{content:"";position:absolute;inset:0;z-index:1}
-.sol a{position:relative;z-index:2}
-.sol a.stretch{z-index:auto}
-.sol::before{content:attr(data-no);position:absolute;top:12px;right:18px;font-family:var(--num);font-size:44px;font-weight:600;color:rgba(255,255,255,.85);text-shadow:0 2px 12px rgba(0,0,0,.5);z-index:2}
-.sol h3{font-family:var(--serif);font-size:20px;font-weight:800;margin:14px 0 12px;line-height:1.5;color:var(--navy)}
-.sol p{font-size:15px;color:var(--muted)}
-.sol .icon{width:46px;height:46px;border-radius:12px;background:var(--gold-pale);border:1px solid var(--line2);display:flex;align-items:center;justify-content:center}
-/* 汎用テーブル */
-.table-scroll{overflow-x:auto;margin:34px 0 8px}
-table.data{width:100%;border-collapse:collapse;font-size:15px;background:#fff;box-shadow:var(--shadow);border-radius:12px;overflow:hidden}
-table.data th,table.data td{border:1px solid var(--line);padding:13px 16px;text-align:left;vertical-align:top}
-table.data thead th{background:var(--navy);color:#fff;font-weight:700;border-color:rgba(255,255,255,.15);letter-spacing:.06em}
-table.data tbody th{background:var(--panel2);color:var(--navy);font-weight:700;white-space:nowrap}
-table.data .ok{color:var(--gold-em);font-weight:700}
-.table-note{font-size:13px;color:var(--dim);margin-top:10px}
-
-
-/* ================= サービス統合カード(概要+料金) ================= */
-.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:44px}
-@media(max-width:820px){.svc-grid{grid-template-columns:1fr}}
-.svc-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);text-decoration:none;color:var(--text);transition:transform .18s,border-color .18s}
-.svc-card:hover{transform:translateY(-4px);border-color:var(--gold-soft)}
-.sc-photo{height:150px;position:relative;overflow:hidden}
-.sc-photo img{width:100%;height:100%;object-fit:cover;display:block}
-.sc-tag{position:absolute;left:14px;bottom:10px;background:rgba(19,36,69,.78);color:#fff;font-size:12px;letter-spacing:.12em;padding:5px 14px;border-radius:999px}
-.sc-body{padding:22px 24px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
-.sc-body h3{font-family:var(--serif);font-size:18.5px;font-weight:800;color:var(--navy);line-height:1.5}
-.sc-body>p{font-size:15px;color:var(--muted);margin:0}
-.sc-body ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;font-size:15px;color:var(--muted)}
-.sc-body ul li{padding-left:18px;position:relative}
-.sc-body ul li::before{content:"✓";position:absolute;left:0;color:var(--gold-soft);font-weight:900}
-.sc-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-top:1px dashed var(--line);padding-top:14px}
-.sc-price{font-family:var(--num);font-size:20px;color:var(--gold-em);font-weight:600}
-.sc-price small{font-size:12px;font-family:var(--sans);color:var(--muted);font-weight:400}
-.sc-more{color:var(--navy2);font-weight:700;font-size:14px;white-space:nowrap}
-
-/* ================= 7. 事例(ミニグラフ付き) ================= */
-.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
-@media(max-width:920px){.cases{grid-template-columns:1fr}}
-.case{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
-.case .visual{padding:18px 20px 6px;background:linear-gradient(135deg,#f2f5fb,#eef1f8);border-bottom:1px solid var(--line)}
-.case .visual .cno{font-family:var(--num);letter-spacing:.3em;font-size:12px;color:var(--navy2);display:block;margin-bottom:4px}
-.case .body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:12px;flex:1}
-.case .ind{font-size:12px;letter-spacing:.18em;color:var(--gold-em)}
-.case h3{font-family:var(--serif);font-size:17.5px;font-weight:800;line-height:1.6;color:var(--navy)}
-.case dl{font-size:15px;color:var(--muted);display:grid;gap:8px}
-.case dt{color:var(--dim);font-size:12px;letter-spacing:.2em;margin-bottom:2px}
-.case .ba{display:flex;align-items:center;gap:12px;background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:14px;margin-top:auto}
-.case .ba .a,.case .ba .b{text-align:center;flex:1}
-.case .ba .lbl{font-size:12px;letter-spacing:.2em;color:var(--dim)}
-.case .ba .val{font-family:var(--num);font-size:21px;color:var(--navy)}
-.case .ba .b .val{color:var(--gold-em);font-size:25px}
-.case .ba .arrow{color:var(--gold-soft);flex:none}
-.case-note{font-size:13px;color:var(--dim);margin-top:18px}
-
-/* ================= 8. 無料オファー / 13. 診断 共通パネル ================= */
-
-.offer h3{font-family:var(--serif);font-size:clamp(21px,2.8vw,28px);font-weight:800;line-height:1.6;margin-bottom:12px;color:var(--navy)}
-.offer p{color:var(--muted);font-size:15px}
-
-
-/* ================= 9. お客様の声 ================= */
-.voices{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:44px}
-@media(max-width:920px){.voices{grid-template-columns:1fr}}
-.voice{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;font-size:15px;color:var(--muted);display:flex;flex-direction:column;gap:16px;box-shadow:var(--shadow)}
-.voice .q{font-family:var(--serif);color:var(--text);font-size:15.5px;line-height:1.95}
-.voice .q b{color:var(--gold-em)}
-.voice .who{display:flex;align-items:center;gap:12px;font-size:13px;margin-top:auto}
-.voice .who .av{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#dfe6f2,#eef1f8);border:1px solid var(--line);flex:none;object-fit:cover;display:block}
-
-/* ================= 10. Why Us ================= */
-.why{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;margin-top:44px;align-items:start}
-@media(max-width:860px){.why{grid-template-columns:1fr}}
-.profile{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
-.profile .ph{aspect-ratio:1/1;border-radius:12px;background:linear-gradient(150deg,#e8edf6,#f4f6fb);border:1px solid var(--line);margin-bottom:18px;display:flex;align-items:center;justify-content:center;color:var(--dim);font-size:12px;letter-spacing:.3em}
-.profile h3{font-family:var(--serif);font-size:19px;font-weight:800;color:var(--navy)}
-.profile .role{font-size:12px;letter-spacing:.2em;color:var(--gold-em);margin-bottom:12px}
-.profile p{font-size:15px;color:var(--muted)}
-.reasons{display:grid;gap:16px}
-.reason{display:flex;gap:20px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 26px;box-shadow:var(--shadow)}
-.reason .no{font-family:var(--num);font-size:26px;font-weight:600;color:var(--gold-soft);flex:none;line-height:1.3}
-.reason h3{font-family:var(--serif);font-size:18px;font-weight:800;margin-bottom:8px;line-height:1.6;color:var(--navy)}
-.reason p{font-size:15px;color:var(--muted)}
-.donut-wrap{display:flex;gap:22px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;box-shadow:var(--shadow);margin-bottom:16px}
-.donut-wrap p{font-size:15px;color:var(--muted)}
-.donut-wrap p b{color:var(--navy);font-size:15px}
-
-/* ================= 11. 料金 ================= */
-.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
-@media(max-width:1020px){.plans{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:640px){.plans{grid-template-columns:1fr}}
-.plan{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column;gap:14px;position:relative;box-shadow:var(--shadow)}
-.plan.hot{border-color:var(--gold-soft);background:linear-gradient(180deg,#fdf8ec,#fff 55%)}
-.plan .flag{position:absolute;top:-12px;left:20px;background:var(--gold-soft);color:var(--gold-ink);font-size:12px;font-weight:700;letter-spacing:.14em;padding:3px 12px;border-radius:999px}
-.plan h3{font-family:var(--serif);font-size:17px;font-weight:800;line-height:1.6;color:var(--navy)}
-.plan .p{font-family:var(--num);font-size:26px;color:var(--gold-em);letter-spacing:.02em}
-.plan .p small{font-size:12px;font-family:var(--sans);color:var(--muted);letter-spacing:0}
-.plan ul{list-style:none;font-size:15px;color:var(--muted);display:grid;gap:8px;margin-bottom:6px}
-.plan ul li{padding-left:18px;position:relative}
-.plan ul li::before{content:"✓";position:absolute;left:0;color:var(--gold-soft);font-weight:900}
-.plan .btn{margin-top:auto;min-height:46px;font-size:13.5px;padding:10px 16px}
-.plan-note{font-size:13px;color:var(--dim);margin-top:16px}
-
-/* ================= 12. 流れ ================= */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
-@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}
-@media(max-width:560px){.steps{grid-template-columns:1fr}}
-.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative;box-shadow:var(--shadow);border-top:3px solid var(--navy2)}
-.step .no{font-family:var(--num);font-size:13px;letter-spacing:.3em;color:var(--navy2);margin-bottom:10px}
-.step h3{font-family:var(--serif);font-size:16.5px;font-weight:800;margin-bottom:8px;line-height:1.6;color:var(--navy)}
-.step p{font-size:15px;color:var(--muted)}
-.step::after{content:"→";position:absolute;right:-14px;top:50%;transform:translateY(-50%);color:var(--gold-soft);z-index:2;font-weight:900}
-.step:last-child::after{content:""}
-@media(max-width:860px){.step::after{content:""}}
-
-/* ================= 13. 診断ウィジェット ================= */
-.diag{background:#fff;border:1px solid var(--line);border-radius:18px;max-width:880px;margin:44px auto 0;overflow:hidden;box-shadow:var(--shadow)}
-.diag-tabs{display:flex;border-bottom:1px solid var(--line);background:var(--panel2)}
-.diag-tab{flex:1;min-height:50px;background:none;border:none;border-bottom:2px solid transparent;color:var(--muted);font-size:13px;font-weight:700;cursor:pointer;padding:12px 4px;font-family:var(--sans);transition:color .15s;white-space:nowrap}
+.fit-note{margin:0 0 24px;color:var(--ink-2)}
+.fit-cta{display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:560px){.fit-cta .btn{width:100%}}
+/* ---- 無料診断 ---- */
+.diag{border:1px solid var(--rule-strong);border-radius:var(--r-md);background:var(--paper);overflow:hidden}
+.diag-tabs{display:flex;border-bottom:1px solid var(--rule-strong);background:var(--sheet)}
+.diag-tab{flex:1;min-height:52px;padding:10px 4px;border:0;border-right:1px solid var(--rule);background:none;color:var(--ink-2);font-family:var(--font);font-size:var(--fs-14);font-weight:700;cursor:pointer;white-space:nowrap;transition:color .15s,background-color .15s}
+.diag-tab:last-child{border-right:0}
+.diag-tab:hover{color:var(--ink)}
+.diag-tab[aria-selected="true"]{background:var(--paper);color:var(--ai);box-shadow:inset 0 -3px 0 var(--ai)}
 @media(max-width:560px){.diag-tab span{display:none}}
-.diag-tab[aria-selected="true"]{color:var(--navy);border-bottom-color:var(--gold-soft);background:#fff}
-.notice{font-size:13px;color:var(--muted);border:1px dashed var(--line2);background:var(--gold-pale);border-radius:10px;padding:12px 16px;margin:16px 0;line-height:1.9}
-.notice b{color:var(--gold-em)}
-.diag-head{padding:20px 28px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}
-.diag-head .t{font-family:var(--num);font-size:12px;letter-spacing:.28em;color:var(--gold)}
-.diag-prog{height:5px;background:var(--bg2)}
-.diag-prog i{display:block;height:100%;width:0%;background:linear-gradient(90deg,var(--gold-soft),#e8c988);transition:width .35s ease}
-.diag-body{padding:42px 44px 46px;min-height:380px}
-@media(max-width:560px){.diag-body{padding:28px 20px 32px}}
-.diag .qnum{font-family:var(--num);font-size:12px;letter-spacing:.26em;color:var(--gold);margin-bottom:12px}
-.diag .qtext{font-family:var(--serif);font-size:clamp(18px,2.6vw,23px);font-weight:800;line-height:1.7;margin-bottom:28px;color:var(--navy)}
-.diag .opts{display:grid;gap:12px}
-.diag .opt{min-height:58px;text-align:left;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px 20px;color:var(--text);font-size:15.5px;cursor:pointer;transition:border-color .15s,background .15s;font-family:var(--sans)}
-.diag .opt:hover{border-color:var(--gold-soft);background:var(--gold-pale)}
-.diag .back{margin-top:22px;background:none;border:none;color:var(--dim);font-size:13px;cursor:pointer;padding:10px;font-family:var(--sans)}
-.diag .back:hover{color:var(--muted)}
-.field{margin-bottom:18px}
-.field label{display:block;font-size:14px;color:var(--muted);margin-bottom:7px}
-.field label b{color:var(--gold-em);font-size:12px;border:1px solid var(--line2);border-radius:4px;padding:1px 6px;margin-left:8px;font-weight:500}
-.field input,.field textarea{width:100%;background:#fff;border:1px solid #cfd4de;border-radius:10px;padding:13px 16px;color:var(--text);font-size:15px;font-family:var(--sans);min-height:48px}
-.field textarea{min-height:130px;resize:vertical}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--navy2)}
-.field .err{display:none;color:#b3261e;font-size:13px;margin-top:5px}
-.field.invalid input,.field.invalid textarea,.field.invalid select{border-color:#c9564d}
-.field.invalid .err{display:block}
-.field select{width:100%;background:#fff;border:1px solid #cfd4de;border-radius:10px;padding:13px 16px;color:var(--text);font-size:15px;font-family:var(--sans);min-height:48px;appearance:none;
-  background-image:linear-gradient(45deg,transparent 50%,#8a93a6 50%),linear-gradient(135deg,#8a93a6 50%,transparent 50%);
-  background-position:calc(100% - 20px) 21px,calc(100% - 14px) 21px;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
-.field select:focus{outline:none;border-color:var(--navy2)}
-/* 同意チェック */
-.agree{display:flex;gap:10px;align-items:flex-start;margin:4px 0 18px;font-size:14px;color:var(--muted);line-height:1.7}
-.agree input{width:18px;height:18px;min-height:0;flex:none;margin-top:2px;accent-color:var(--navy)}
-.agree a{color:var(--navy2);text-decoration:underline}
-.agree.invalid{color:#b3261e}
+.diag-head{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 28px;border-bottom:1px solid var(--rule)}
+.diag-head .t{font-size:var(--fs-14);font-weight:700;color:var(--ink)}
+.diag-prog{height:4px;background:var(--sheet)}
+.diag-prog i{display:block;height:100%;width:0;background:var(--ai);transition:width .3s var(--ease-out)}
+.diag-body{min-height:380px;padding:36px 40px 40px}
+@media(max-width:560px){.diag-body{padding:24px 18px 28px}.diag-head{padding:12px 18px}}
+.diag .qnum{margin:0 0 8px;font-size:var(--fs-14);font-weight:700;color:var(--ai)}
+.diag .qtext{margin:0 0 24px;font-size:clamp(19px,2.4vw,22px);font-weight:700;line-height:1.6}
+.diag .opts{display:grid;gap:10px}
+.diag .opt{min-height:56px;padding:14px 18px;border:1px solid var(--rule-strong);border-radius:var(--r-sm);background:var(--paper);color:var(--ink);font-family:var(--font);font-size:16px;text-align:left;cursor:pointer;transition:border-color .15s,background-color .15s,transform .12s var(--ease-out)}
+.diag .opt:hover{border-color:var(--ai);background:var(--ai-tint)}
+.diag .opt:active{transform:scale(.985)}
+.diag .back{margin-top:18px;padding:10px 0;border:0;background:none;color:var(--ink-2);font-family:var(--font);font-size:var(--fs-14);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.notice{margin:16px 0;padding:12px 16px;border-left:3px solid var(--ai);background:var(--ai-tint);font-size:var(--fs-14);line-height:1.8;color:var(--ink)}
 .radar-wrap{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
 @media(max-width:620px){.radar-wrap{grid-template-columns:1fr}}
-.grade{font-family:var(--num);font-size:64px;font-weight:600;color:var(--gold-em);line-height:1;text-align:center}
-.grade small{display:block;font-family:var(--sans);font-size:12px;color:var(--muted);letter-spacing:.2em;margin-top:8px}
-.rx{background:var(--gold-pale);border:1px solid var(--line2);border-radius:12px;padding:18px 20px;font-size:15px;margin:22px 0;line-height:1.9}
-.rx b{color:var(--gold-em)}
-
-/* ================= 14. ブログ ================= */
-.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
-@media(max-width:920px){.blog-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:600px){.blog-grid{grid-template-columns:1fr}}
-.post{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;transition:border-color .15s,transform .15s;box-shadow:var(--shadow)}
-.post:hover{border-color:var(--gold-soft);transform:translateY(-3px)}
-.post .th{height:110px;background:linear-gradient(135deg,#eef1f8,#e4e9f4);display:flex;align-items:center;justify-content:center;font-family:var(--num);font-size:12px;letter-spacing:.3em;color:var(--navy2);border-bottom:1px solid var(--line);overflow:hidden}
-.post .th img{width:100%;height:100%;object-fit:cover;display:block}
-.post .pb{padding:18px 18px 20px}
-.post .cat{font-size:12px;letter-spacing:.22em;color:var(--gold-em);margin-bottom:8px}
-.post h3{font-size:15.5px;font-weight:700;line-height:1.7;color:var(--text)}
-.post time{display:block;font-size:13px;color:var(--dim);margin-top:10px}
-
-/* ================= 会社概要 ================= */
-.company-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;margin-top:44px;align-items:start}
-@media(max-width:860px){.company-grid{grid-template-columns:1fr}}
-.company-visual{background:linear-gradient(150deg,var(--navy-deep),var(--navy) 60%,#24427c);border-radius:var(--radius);padding:36px 32px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow)}
-.company-visual::after{content:"";position:absolute;right:-90px;bottom:-120px;width:300px;height:300px;border-radius:50%;border:1px solid rgba(217,179,106,.35)}
-.company-visual .cv-logo{font-family:var(--num);letter-spacing:.3em;font-size:16px;margin-bottom:18px}
-.company-visual .cv-logo b{color:var(--gold-soft)}
-.company-visual p{font-size:15px;color:#c9d2e4;line-height:2}
-.company-visual .cv-nums{display:flex;gap:20px;margin-top:22px}
-.company-visual .cv-num b{display:block;font-family:var(--num);font-size:24px;color:#e8c988;font-weight:600}
-.company-visual .cv-num span{font-size:12px;color:#8fa0c2;letter-spacing:.12em}
-
-
-
-/* ================= 15. FAQ ================= */
-.faq{max-width:820px;margin:40px auto 0;display:grid;gap:12px}
-.faq details{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(29,52,97,.05)}
-.faq summary{list-style:none;cursor:pointer;padding:20px 54px 20px 24px;font-weight:700;font-size:15px;position:relative;min-height:44px;line-height:1.7;color:var(--navy)}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:22px;color:var(--gold-soft);transition:transform .2s}
-.faq details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
-.faq .a{padding:0 24px 22px;color:var(--muted);font-size:15px}
-
-/* ================= 16. フォーム(ネイビー帯で締める)+フッター ================= */
-.contact{background:linear-gradient(150deg,var(--navy-deep),var(--navy) 55%,#24427c);position:relative;overflow:hidden}
-.contact::before{content:"";position:absolute;left:-140px;top:-140px;width:420px;height:420px;border-radius:50%;border:1px solid rgba(217,179,106,.25);pointer-events:none}
-.contact .kicker{color:var(--gold-soft)}
-.contact h2{color:#fff}
-.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;margin-top:44px;align-items:start}
-@media(max-width:880px){.contact-grid{grid-template-columns:1fr}}
-.contact-copy h3{font-family:var(--serif);font-size:clamp(20px,2.8vw,27px);font-weight:800;line-height:1.7;margin-bottom:16px;color:#fff}
-.contact-copy h3 .cg{color:#e8c988}
-.contact-copy p{color:#c9d2e4;font-size:15px;margin-bottom:22px}
-.promise{display:grid;gap:10px;font-size:15px;color:#c9d2e4}
-.promise li{list-style:none;padding-left:22px;position:relative}
-.promise li::before{content:"✓";position:absolute;left:0;color:var(--gold-soft);font-weight:900}
-/* 電話ボックス(ネイビー面上) */
-.tel-box{margin-top:26px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:20px 22px}
-.tel-box .tb-t{font-family:var(--serif);font-weight:800;font-size:15px;color:#fff;margin:0 0 8px}
-.tel-box .tb-num{display:inline-flex;align-items:center;gap:10px;font-family:var(--num);font-weight:600;font-size:28px;letter-spacing:.04em;color:#e8c988;text-decoration:none;min-height:44px}
-.tel-box .tb-h{font-size:13px;color:#c9d2e4;margin:4px 0 10px}
-.tel-box .tb-note{font-size:13px;color:#c9d2e4;margin:0;line-height:1.9}
-.tel-box .tb-note b{color:#fff}
-.form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px 32px;box-shadow:0 18px 50px rgba(11,23,48,.35)}
-@media(max-width:560px){.form-card{padding:28px 20px}}
-.contact .micro{color:#c3cde0}
-.form-card .micro{color:var(--dim)}
-.hp{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
-.send-err{margin:0 0 14px;padding:12px 16px;border:1px solid #e6b8b0;background:#fbf0ee;border-radius:10px;color:var(--text);font-size:14px;line-height:1.8}
-.send-err b{color:#b3261e}
-.send-err a{color:var(--navy);font-weight:700}
-footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg2)}
-.foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;font-size:14px;color:var(--muted)}
-.foot-grid nav{display:flex;flex-wrap:wrap;gap:2px 10px}
-.foot-grid .social-links{justify-content:flex-start}
-.foot-grid nav a{color:var(--muted);text-decoration:none}
-.foot-grid nav a:hover{color:var(--navy)}
-.copyright{margin-top:30px;font-size:13px;color:var(--muted)}
-.footer-credit{color:var(--muted)}
-
-/* ================= スマホ追従CTAバー ================= */
-.sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:60;display:none;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(253,252,249,.92);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
-.sticky-cta .btn{flex:1;min-height:48px;font-size:13.5px;padding:10px 8px}
-@media(max-width:860px){.sticky-cta{display:flex}}
-
-
-/* 折りたたみテーブル(情報密度の緩和) */
-.fold{margin-top:34px}
-.fold>summary{list-style:none;cursor:pointer;font-family:var(--serif);font-weight:800;font-size:16.5px;color:var(--navy);background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 54px 18px 22px;position:relative;box-shadow:var(--shadow)}
-.fold>summary::-webkit-details-marker{display:none}
-.fold>summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-family:var(--num);font-size:22px;color:var(--gold-soft)}
-.fold[open]>summary{border-radius:12px 12px 0 0}
-.fold[open]>summary::after{content:"−"}
-.fold .table-scroll{margin-top:0}
-.fold table.data{border-radius:0 0 12px 12px}
-
-/* ================= モーション(インパクト強化・reduced-motion対応) ================= */
-/* CTAボタンの光沢スイープ */
-.btn-primary{position:relative;overflow:hidden}
-.btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(255,255,255,.55) 50%,transparent 65%);transform:translateX(-140%);animation:sheen 4.6s ease-in-out infinite;pointer-events:none}
-@keyframes sheen{0%,55%{transform:translateX(-140%)}75%,100%{transform:translateX(140%)}}
-/* ヒーローカードの浮遊 */
-.cost-card{animation:floaty 7s ease-in-out infinite}
-@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-/* ヒーロー背景の光彩 */
-.hero::before{content:"";position:absolute;right:-160px;top:-60px;width:520px;height:520px;border-radius:50%;pointer-events:none;z-index:-1;
-  background:radial-gradient(circle at 40% 40%,rgba(249,115,22,.15),transparent 65%);animation:glow 9s ease-in-out infinite alternate}
-@keyframes glow{from{transform:scale(.92);opacity:.7}to{transform:scale(1.08);opacity:1}}
-/* 実績ティッカー(無限マーキー) */
-.ticker{overflow:hidden;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.ticker-track{display:flex;gap:0;white-space:nowrap;width:max-content;animation:tick 30s linear infinite}
-.ticker span{display:inline-flex;align-items:center;gap:10px;padding:13px 28px;font-family:var(--num);font-size:13px;letter-spacing:.16em;color:var(--navy)}
-.ticker span::after{content:"★";color:#fb923c;font-size:10px;margin-left:28px}
-@keyframes tick{to{transform:translateX(-50%)}}
-
-/* ================= 出現アニメーション(JS有効時のみ) ================= */
-.js .rev{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
-.js .rev.in{opacity:1;transform:none}
-/* モバイル専用改行 */
-@media(min-width:641px){br.sp{display:none}}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  .js .rev{opacity:1;transform:none;transition:none}
-  .btn,.post{transition:none}
-  .btn-primary::after,.cost-card,.hero::before,.ticker-track,.badge.hot i{animation:none}
+.grade{margin:0;font-size:72px;font-weight:700;line-height:1;text-align:center;color:var(--ai)}
+.grade small{display:block;margin-top:10px;font-size:var(--fs-14);font-weight:400;color:var(--ink-2)}
+.rx{margin:22px 0;padding:16px 18px;border-left:3px solid var(--ai);background:var(--sheet);font-size:15px;line-height:1.85}
+.rx b{color:var(--ink)}
+/* ---- 入力欄（相談・診断） ---- */
+.field{margin-bottom:18px}
+.field label{display:block;margin-bottom:6px;font-size:var(--fs-14);font-weight:700;color:var(--ink)}
+.field label b{margin-left:8px;padding:1px 6px;border:1px solid var(--rule-strong);border-radius:2px;font-size:12px;font-weight:400;color:var(--ink-2)}
+.field input,.field textarea,.field select{width:100%;min-height:48px;padding:12px 14px;border:1px solid var(--rule-strong);border-radius:var(--r-sm);background:var(--paper);color:var(--ink);font-family:var(--font);font-size:16px}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--ai);outline-offset:0;border-color:var(--ai)}
+.field select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--ink-2) 50%),linear-gradient(135deg,var(--ink-2) 50%,transparent 50%);background-position:calc(100% - 20px) 21px,calc(100% - 14px) 21px;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+.field .err{display:none;margin:6px 0 0;font-size:var(--fs-14);font-weight:700;color:var(--shu)}
+.field.invalid input,.field.invalid textarea,.field.invalid select{border-color:var(--shu)}
+.field.invalid .err{display:block}
+.agree{display:flex;gap:10px;align-items:flex-start;margin:4px 0 18px;font-size:var(--fs-14);line-height:1.7;color:var(--ink-2)}
+.agree input{flex:none;width:20px;height:20px;margin-top:1px;accent-color:var(--ai)}
+.agree.invalid{color:var(--shu)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;opacity:0}
+.send-err{margin:0 0 14px;padding:12px 16px;border-left:3px solid var(--shu);background:var(--shu-tint);font-size:var(--fs-14);line-height:1.8;color:var(--ink)}
+.send-err b{color:var(--shu)}
+.trust-chips{display:flex;flex-wrap:wrap;gap:6px 18px;margin:0 0 14px;font-size:13px;color:var(--ink-2)}
+.trust-chips span{white-space:nowrap}
+/* ---- 表（お金の流れ・会社） ---- */
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.table-scroll table:has(thead tr>:nth-child(3)){min-width:560px}
+table.data{width:100%;font-size:15px;line-height:1.7;background:var(--paper);border-top:1px solid var(--rule-strong);border-bottom:1px solid var(--rule-strong)}
+table.data caption{padding:0 0 10px;text-align:left;font-size:var(--fs-14);font-weight:700;color:var(--ink-2)}
+table.data th,table.data td{padding:14px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--rule)}
+table.data thead th{background:var(--sheet);font-size:var(--fs-14);color:var(--ink-2);white-space:nowrap}
+table.data tbody th{font-weight:700;white-space:nowrap}
+table.data .ok{font-weight:700;color:var(--ai);white-space:nowrap}
+.money-note{margin:16px 0 0;padding:12px 16px;border-left:3px solid var(--shu);background:var(--shu-tint);font-size:15px;line-height:1.8}
+.money-note b{color:var(--shu)}
+/* ---- お悩み ---- */
+.checks{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule-strong)}
+.checks li{position:relative;margin:0;padding:14px 0 14px 28px;border-bottom:1px solid var(--rule);line-height:1.7}
+.checks li::before{content:"";position:absolute;left:2px;top:24px;width:12px;height:1.5px;background:var(--ink-3)}
+.prob-photo{margin:28px 0 0}
+.prob-photo img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:var(--r-md)}
+.prob-photo figcaption{margin-top:6px;font-size:12px;color:var(--ink-3)}
+.bridge{margin:28px 0 20px;font-size:var(--fs-22);font-weight:700;line-height:1.6}
+/* ---- 選ばれる理由・会社 ---- */
+.profile{margin-top:28px;display:grid;grid-template-columns:112px minmax(0,1fr);gap:18px;align-items:start}
+.profile img{display:block;width:112px;height:150px;object-fit:cover;border-radius:var(--r-sm)}
+.profile h3{margin:0;font-size:18px}
+.profile .role{margin:0 0 8px;font-size:13px;color:var(--ink-3)}
+.profile p{margin:0;font-size:var(--fs-14);line-height:1.8;color:var(--ink-2)}
+.profile p+p{margin-top:8px}
+.reasons{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule-strong)}
+.reasons li{margin:0;padding:22px 0;border-bottom:1px solid var(--rule)}
+.reasons h3{margin:0 0 6px;font-size:19px}
+.reasons p{margin:0;color:var(--ink-2)}
+.why-lead{margin:0 0 20px;padding:14px 18px;border-left:3px solid var(--ai);background:var(--sheet)}
+.why-lead b{display:block;color:var(--ink)}
+.company-block{margin-top:56px}
+.company-block .sub-h{margin:0 0 14px;font-size:var(--fs-18)}
+.company-block .table-note{margin:8px 0 0}
+/* ---- 事例 ---- */
+.cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule-strong)}
+@media(max-width:960px){.cases{grid-template-columns:minmax(0,1fr)}}
+.case{display:flex;flex-direction:column;gap:10px;padding:24px 24px 24px 0;border-bottom:1px solid var(--rule)}
+.case+.case{padding-left:24px;border-left:1px solid var(--rule)}
+@media(max-width:960px){.case,.case+.case{padding:24px 0;border-left:0}}
+.case .ind{margin:0;font-size:13px;color:var(--ink-3)}
+.case h3{margin:0;font-size:18px;line-height:1.55}
+.case dl{display:grid;gap:8px;margin:0;font-size:15px;color:var(--ink-2)}
+.case dt{font-size:13px;font-weight:700;color:var(--ink)}
+.case dd{margin:0}
+.case .ba{display:flex;align-items:baseline;gap:12px;margin-top:auto;padding-top:14px;border-top:1px solid var(--rule)}
+.case .ba .lbl{font-size:12px;color:var(--ink-3)}
+.case .ba .val{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.case .ba .b .val{font-size:26px;color:var(--ai)}
+.case .ba .arrow{color:var(--ink-3)}
+.case-note{margin:16px 0 0}
+/* ---- サービスと料金 ---- */
+.svc-list{margin:0;padding:0;list-style:none;border-top:1px solid var(--rule-strong)}
+.svc-list>li{margin:0;border-bottom:1px solid var(--rule)}
+.svc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:8px 32px;align-items:start;padding:24px 0;color:var(--ink);text-decoration:none}
+@media(max-width:860px){.svc{grid-template-columns:minmax(0,1fr)}}
+.svc h3{margin:0 0 6px;font-size:19px;transition:color .15s}
+.svc p{margin:0;font-size:15px;color:var(--ink-2)}
+.svc ul{margin:0;padding-left:1.2em;list-style:disc;font-size:var(--fs-14);color:var(--ink-2)}
+.svc ul li::marker{color:var(--ink-3)}
+.svc ul li{margin:2px 0}
+.svc .price{text-align:right;white-space:nowrap}
+@media(max-width:860px){.svc .price{text-align:left}}
+.svc .price b{display:block;font-size:17px}
+.svc .price small{display:block;font-size:13px;color:var(--ink-3)}
+.svc .more{display:inline-block;margin-top:8px;font-size:var(--fs-14);font-weight:700;color:var(--ai)}
+.svc:hover h3{color:var(--ai);text-decoration:underline;text-underline-offset:4px}
+.youkou-link{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;margin-top:32px;padding:20px 22px;border:1px solid var(--rule-strong)}
+.youkou-link p{margin:0}
+.youkou-link .t{font-size:17px;font-weight:700}
+.youkou-link .d{font-size:var(--fs-14);color:var(--ink-2)}
+/* ---- 流れ（お客様と当社の役割） ---- */
+.roles{display:grid;grid-template-columns:112px repeat(5,minmax(0,1fr));grid-template-rows:auto auto auto;grid-auto-flow:column;gap:0;border-top:1px solid var(--rule-strong)}
+.rl-corner{border-bottom:1px solid var(--rule-strong)}
+.rl-lane{display:flex;flex-direction:column;justify-content:center;padding:14px 12px 14px 0;font-weight:700;font-size:15px;line-height:1.5;border-bottom:1px solid var(--rule)}
+.rl-lane small{font-weight:400;font-size:12px;color:var(--ink-3)}
+.rl-ph{display:flex;align-items:baseline;gap:8px;padding:12px 14px;border-left:1px solid var(--rule);border-bottom:1px solid var(--rule-strong);font-weight:700;font-size:15px;line-height:1.45}
+.rl-ph b{font-size:15px;color:var(--ai);font-variant-numeric:tabular-nums}
+.rl-ph.is-key{background:var(--ai-tint)}
+.rl-you,.rl-us{display:block;padding:14px;border-left:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:var(--fs-14);line-height:1.75;color:var(--ink)}
+.rl-us{color:var(--ink-2);background:var(--sheet)}
+.rl-you.is-key{background:var(--ai-tint);font-weight:700}
+.rl-you em{display:table;margin-bottom:4px;padding:1px 8px;border:1px solid var(--shu);font-style:normal;font-size:12px;font-weight:700;color:var(--shu)}
+.rl-you::before,.rl-us::before{display:none}
+.roles-fig{margin:0}
+.roles-fig figcaption{margin-top:20px;padding:14px 18px;border-left:3px solid var(--shu);background:var(--shu-tint);font-size:15px;line-height:1.85}
+.roles-fig figcaption b{color:var(--ink)}
+@media(max-width:860px){
+ .roles{display:block;border-top:0}
+ .rl-corner,.rl-lane{display:none}
+ .rl-ph{margin-top:20px;padding:10px 0;border-left:0;border-bottom:1px solid var(--rule-strong)}
+ .rl-ph.is-key{padding-left:10px}
+ .rl-you,.rl-us{border-left:3px solid var(--rule);margin-top:0}
+ .rl-you{border-left-color:var(--ai)}
+ .rl-you::before,.rl-us::before{display:block;margin-bottom:2px;font-size:12px;font-weight:700}
+ .rl-you::before{content:"お客様";color:var(--ai)}
+ .rl-us::before{content:"当社";color:var(--ink-2)}
 }
-
-/* ==== リードブースター ==== */
-.float-cta{position:fixed;right:26px;bottom:26px;z-index:65;display:none;align-items:center;gap:4px;
-  opacity:0;transform:translateY(14px);transition:opacity .35s ease,transform .35s ease;pointer-events:none}
-.float-cta.show{opacity:1;transform:none;pointer-events:auto}
-@media(min-width:861px){.float-cta{display:flex}}
-.float-cta a{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);
-  color:#171104;font-weight:700;font-size:14px;text-decoration:none;padding:15px 24px;border-radius:999px;
-  box-shadow:0 14px 36px rgba(176,139,62,.42);font-family:var(--sans)}
-.float-cta a:hover{transform:translateY(-2px)}
-.float-cta .fdot{width:9px;height:9px;border-radius:50%;background:#7c2d12;animation:beat2 1.6s ease-in-out infinite}
-@keyframes beat2{0%,100%{transform:scale(1)}50%{transform:scale(1.5);opacity:.6}}
-.float-cta button{background:rgba(33,43,61,.55);border:none;color:#fff;width:26px;height:26px;border-radius:50%;
-  cursor:pointer;font-size:13px;line-height:1;margin-left:2px}
-.trust-chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
-.trust-chips span{font-size:12px;font-weight:700;color:#7a5b14;background:#f9f1dc;border:1px solid rgba(176,139,62,.35);
-  border-radius:999px;padding:5px 13px}
-@media(prefers-reduced-motion:reduce){.float-cta .fdot{animation:none}.float-cta{transition:none}}
-
-
-/* 適合チェック */
-.fit-list{list-style:none;display:grid;gap:12px;margin:26px 0 18px;max-width:760px}
-.fit-list li{position:relative;padding:16px 18px 16px 52px;background:var(--panel);border:1px solid var(--line);border-radius:12px;font-size:15px;box-shadow:var(--shadow)}
-.fit-list li::before{content:"";position:absolute;left:20px;top:50%;width:9px;height:16px;margin-top:-10px;border:solid var(--gold-soft);border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
-.fit-note{font-size:15px;color:var(--muted);margin-bottom:24px}
-.fit-cta{display:flex;gap:14px;flex-wrap:wrap}
-@media(max-width:560px){.fit-cta .btn{width:100%}}
-
-/* 運営会社(選ばれる理由に統合) */
-.company-block{margin-top:52px;padding-top:38px;border-top:1px solid var(--line)}
-.company-block .sub-h{font-family:var(--serif);font-size:19px;color:var(--navy);margin-bottom:18px}
+/* ---- よくある質問 ---- */
+.faq{border-top:1px solid var(--rule-strong)}
+.faq details{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;position:relative;min-height:44px;padding:18px 44px 18px 0;font-weight:700;line-height:1.7}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:10px;top:50%;width:12px;height:12px;margin-top:-6px;background:linear-gradient(var(--ai),var(--ai)) center/12px 2px no-repeat,linear-gradient(var(--ai),var(--ai)) center/2px 12px no-repeat;transition:transform .2s var(--ease-out)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{color:var(--ai)}
+.faq .a{margin:0;padding:0 0 18px;color:var(--ink-2)}
+/* ---- 相談 ---- */
+.contact{background:var(--sheet)}
+.contact-copy h3{margin:0 0 14px;font-size:var(--fs-22);line-height:1.6}
+.contact-copy>p{margin:0 0 20px;color:var(--ink-2)}
+.promise{margin:0 0 24px;padding:0;list-style:none;border-top:1px solid var(--rule)}
+.promise li{position:relative;margin:0;padding:10px 0 10px 26px;border-bottom:1px solid var(--rule);font-size:15px}
+.promise li::before{content:"";position:absolute;left:4px;top:17px;width:6px;height:11px;border:solid var(--ai);border-width:0 2px 2px 0;transform:rotate(45deg)}
+.tel-box{padding:18px 0 0;border-top:1px solid var(--rule-strong)}
+.tel-box .tb-t{margin:0 0 4px;font-size:15px;font-weight:700}
+.tel-box .tb-num{display:inline-flex;align-items:center;gap:10px;min-height:44px;font-size:30px;font-weight:700;letter-spacing:.02em;color:var(--ink);text-decoration:none;font-variant-numeric:tabular-nums}
+.tel-box .tb-num:hover{color:var(--ai)}
+.tel-box .tb-h{margin:0 0 8px;font-size:var(--fs-14);color:var(--ink-2)}
+.tel-box .tb-note{margin:0;font-size:var(--fs-14);line-height:1.8;color:var(--ink-2)}
+.tel-box .tb-mail{margin-top:18px;padding-top:14px;border-top:1px solid var(--rule)}
+.tel-box .tb-mail .tb-num{font-size:18px}
+.form-card{padding:32px;border:1px solid var(--rule-strong);border-radius:var(--r-md);background:var(--paper)}
+@media(max-width:560px){.form-card{padding:22px 16px}}
+.form-done{padding:24px 0;text-align:left}
+.form-done .t{margin:0 0 10px;font-size:var(--fs-22);font-weight:700}
+.form-done .d{margin:0 0 20px;color:var(--ink-2)}
+.form-done .row{display:flex;flex-wrap:wrap;gap:12px}
+/* ---- 記事 ---- */
+.blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;border-top:1px solid var(--rule-strong)}
+@media(max-width:860px){.blog-grid{grid-template-columns:minmax(0,1fr)}}
+.post{display:block;padding:20px 0;border-bottom:1px solid var(--rule);color:var(--ink);text-decoration:none}
+.post .th{aspect-ratio:1200/630;overflow:hidden;border-radius:var(--r-sm);background:var(--sheet)}
+.post .th img{display:block;width:100%;height:100%;object-fit:cover}
+.post .pb{padding-top:12px}
+.post .cat{display:none}
+.post h3{margin:0;font-size:16px;line-height:1.65;transition:color .15s}
+.post time{display:block;margin-top:6px;font-size:13px;color:var(--ink-3)}
+.post:hover h3{color:var(--ai);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:860px){.post{display:grid;grid-template-columns:104px minmax(0,1fr);gap:14px}.post .pb{padding-top:0}.post h3{font-size:15px}}
+.blog-more{margin-top:28px}
 </style>
 <style id="social-css">
 /* 外部プロフィール（フッター）。明るい面に置くので、灰色の輪郭で中央に並べ、触れると各サービスの色 */
@@ -555,75 +393,113 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
 .social-links a[data-net="note"]:hover, .social-links a[data-net="note"]:focus-visible { background: #41c9b4; }
 </style>
 <style id="ph-css">
-.hero-ph{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 34%,rgba(0,0,0,.85) 72%,#000 100%)}
-.hero-ph img{width:100%;height:100%;object-fit:cover;object-position:right center;opacity:.5}
+/* 写真の置き方（決まりは補助金サイトの DESIGN.md）。ページの題の右に写真を置く（文字に重ねない）。スマホでは題の下に短い帯で出す */
+.hero:has(>.hero-ph){position:relative;display:flex;flex-direction:column}
+.hero-ph{position:absolute;top:0;right:0;bottom:0;width:min(38vw,540px);z-index:0;pointer-events:none;background:var(--sheet,#f3f5f1)}
+.hero-ph img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
 .hero>.wrap{position:relative;z-index:1}
-.hero-ph-light{position:absolute;inset:0;z-index:0;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,transparent 38%,rgba(0,0,0,.9) 78%,#000 100%);mask-image:linear-gradient(90deg,transparent 0%,transparent 38%,rgba(0,0,0,.9) 78%,#000 100%)}
-.hero-ph-light img{width:100%;height:100%;object-fit:cover;object-position:80% 20%;opacity:.95}
-#hero>.wrap{position:relative;z-index:1}
-.ph-side{margin:0;border-radius:18px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(19,36,69,.45)}
+.hero:has(>.hero-ph)>.wrap{width:100%}
+@media(min-width:1024px){.hero:has(>.hero-ph)>.wrap>*{max-width:min(620px,52vw)}}
+@media(max-width:1023px){.hero-ph{position:static;order:2;width:auto;height:200px;margin-top:28px}.hero:has(>.hero-ph){padding-bottom:0}}
+.ph-side{margin:0;border-radius:var(--r-md,8px);overflow:hidden}
 .ph-side img{display:block;width:100%;height:auto;object-fit:cover;aspect-ratio:4/3}
 @media(min-width:900px){
  .ph-grid{display:grid !important;grid-template-columns:.9fr 1.1fr;column-gap:56px;align-items:start;text-align:left !important}
  .ph-grid>*{grid-column:2}
- .ph-grid>.ph-side{grid-column:1;grid-row:1/span 12;position:sticky;top:110px}
+ .ph-grid>.ph-side{grid-column:1;grid-row:1/span 12;position:sticky;top:96px}
  .ph-grid .fit-cta{justify-content:flex-start !important}
- .ph-grid .kicker{justify-content:flex-start !important}
  .ph-grid .micro{text-align:left !important}
 }
 @media(max-width:899px){.ph-side{margin:0 0 22px}.ph-side img{aspect-ratio:16/9}}
-@media(max-width:760px){.hero-ph img{opacity:.25}.hero-ph-light img{opacity:.2}}
-.ph-band{margin:18px 0 22px;border-radius:16px;overflow:hidden}
+.ph-band{margin:24px 0;border-radius:var(--r-md,8px);overflow:hidden}
 .ph-band img{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:cover}
-.ph-band figcaption{font-size:11px;color:#8a8f99;margin-top:6px}
+.ph-band figcaption{margin-top:6px;font-size:12px;color:var(--ink-3,#616a79)}
 @media(pointer:coarse){.crumb a,footer li>a,footer nav a{display:inline-block;padding:9px 0}}
 </style>
 <style id="ss-common">
-/* サイト共通の枠（ヘッダー・文字・足元）。管制塔の scripts/subsidy/pages.py が配信のたびに全ページへ揃える。ここを直接直さない */
+/* サイト共通の土台（色・文字・ヘッダー・足元・ボタン・差し込みの部品）。決まりは補助金サイトの DESIGN.md。
+   管制塔の scripts/subsidy/pages.py が配信のたびに全ページへ揃える。ここを直接直さない。
+   土台（ss-base の層）はページごとの CSS より弱く、ヘッダー・足元・差し込みの部品は層の外に置いてページより強くする */
 @font-face{font-family:"YuGothicM";src:local("Yu Gothic Medium"),local("YuGothic-Medium");font-weight:400}
 @font-face{font-family:"YuGothicM";src:local("Yu Gothic Bold"),local("YuGothic-Bold");font-weight:700}
-:root{--sans:"Hiragino Kaku Gothic ProN","Hiragino Sans","YuGothicM","Yu Gothic","Noto Sans JP","Noto Sans CJK JP","BIZ UDPGothic",Meiryo,sans-serif;
---num:"Oswald","Hiragino Kaku Gothic ProN","Hiragino Sans","YuGothicM","Yu Gothic","Noto Sans JP","Noto Sans CJK JP","BIZ UDPGothic",Meiryo,sans-serif}
-.gh-in{max-width:1360px;margin:0 auto;padding:0 22px;height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+:root{
+--paper:#fff;--sheet:#f3f5f1;--ink:#1a2230;--ink-2:#4d5666;--ink-3:#616a79;
+--ai:#233f7c;--ai-deep:#172c59;--ai-tint:#e9eef7;--rule:#d5dad2;--rule-strong:#9aa3a0;
+--shu:#b3402a;--shu-tint:#fbefea;--marker:#ffeb99;
+--font:"BIZ UDPGothic","Hiragino Kaku Gothic ProN","Hiragino Sans","YuGothicM","Yu Gothic","Noto Sans JP","Noto Sans CJK JP",Meiryo,sans-serif;
+--fs-12:12px;--fs-14:14px;--fs-16:16px;--fs-18:18px;--fs-22:22px;--fs-28:clamp(24px,3vw,30px);--fs-display:clamp(30px,5vw,50px);
+--s-4:4px;--s-8:8px;--s-12:12px;--s-16:16px;--s-24:24px;--s-32:32px;--s-48:48px;--s-64:64px;--s-96:96px;
+--r-sm:4px;--r-md:8px;--shadow-float:0 12px 32px -12px rgb(26 34 48 / .28);
+--ease-out:cubic-bezier(.23,1,.32,1);--maxw:1160px;--gutter:24px;
+/* 旧来の名前（管制塔が差し込む部品が使う）。新しい色に向けておく。新しく書く CSS では使わない */
+--bg:var(--paper);--bg2:var(--sheet);--panel:var(--paper);--panel2:var(--sheet);--line:var(--rule);--line2:var(--rule-strong);
+--text:var(--ink);--muted:var(--ink-2);--dim:var(--ink-3);--navy:var(--ink);--navy2:var(--ai);--navy-deep:var(--ai-deep);
+--gold:var(--ai);--gold-strong:var(--ai);--gold-em:var(--ink);--gold-soft:var(--ai);--gold-pale:var(--ai-tint);--gold-ink:var(--ink);
+--serif:var(--font);--sans:var(--font);--num:var(--font);--radius:var(--r-md);--shadow:none}
+@media(max-width:600px){:root{--gutter:16px}}
+@layer ss-base{
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font);font-size:var(--fs-16);line-height:1.9;-webkit-font-smoothing:antialiased;overflow-wrap:anywhere}
+h1,h2,h3,h4{font-family:var(--font);font-weight:700;color:var(--ink);letter-spacing:.01em;text-wrap:pretty;word-break:auto-phrase}
+h1{font-size:var(--fs-display);line-height:1.3}
+h2{font-size:var(--fs-28);line-height:1.45}
+h3{font-size:var(--fs-22);line-height:1.5}
+p,ul,ol,dl,figure{margin-top:0}
+img{max-width:100%;height:auto}
+a{color:var(--ai);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+b,strong{font-weight:700}
+table{border-collapse:collapse}
+.num,time,td,.tnum{font-variant-numeric:tabular-nums}
+::selection{background:var(--marker);color:var(--ink)}
+:focus-visible{outline:2px solid var(--ai);outline-offset:3px;border-radius:2px}
+}
+/* ---- ヘッダー ---- */
+.gh{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--rule)}
+.gh-in{max-width:1360px;margin:0 auto;padding:0 var(--gutter);height:64px;display:flex;align-items:center;justify-content:space-between;gap:16px}
 .gh-logo{flex:none;display:block;line-height:0}
-.gh-logo img{display:block;height:38px;width:auto;max-width:none}
+.gh-logo img{display:block;height:36px;width:auto;max-width:none}
 .gh-nav{min-width:0}
 .gh .gh-list,.gh .gh-sub{list-style:none;margin:0;padding:0}
 .gh .gh-list li{margin:0}
-.gh-list{display:flex;align-items:center;gap:18px}
+.gh-list{display:flex;align-items:center;gap:20px}
 .gh-list>li{position:relative}
-.gh-list a{display:inline-block;padding:10px 2px;font-size:14px;line-height:1.5;font-weight:500;color:#5b6472;text-decoration:none;white-space:nowrap}
-.gh-list a:hover,.gh-list a:focus-visible{color:#1d3461}
-.gh-has>a::after{content:"▾";font-size:10px;color:#b08b3e;margin-left:5px}
-.gh-sub{position:absolute;top:100%;left:-14px;z-index:70;display:none;min-width:228px;padding:8px;background:#fff;border:1px solid #e7e2d4;border-radius:12px;box-shadow:0 18px 44px rgba(29,52,97,.16)}
-.gh-has:hover>.gh-sub,.gh-has:focus-within>.gh-sub{display:grid;gap:2px}
-.gh-sub a{display:block;padding:10px 14px;border-radius:8px;color:#212b3d}
-.gh-sub a:hover,.gh-sub a:focus-visible{background:#f4ead3;color:#7a5b14}
-.gh-tel{flex:none;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:6px 8px;border-radius:10px;color:#1d3461;text-decoration:none;white-space:nowrap}
-.gh-tel:hover{background:rgba(42,74,138,.06)}
-.gh-tel b{font-family:var(--num);font-size:17px;font-weight:600;letter-spacing:.03em}
-.gh-tel small{font-size:12px;color:#5b6472}
-.gh-cta{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 22px;border-radius:999px;background:linear-gradient(135deg,#e8c988,#d9b36a 55%,#c39a4e);color:#171104;font-size:14px;font-weight:700;line-height:1.4;text-decoration:none;white-space:nowrap;box-shadow:0 6px 18px rgba(176,139,62,.32)}
+.gh-list a{display:inline-block;padding:10px 0;font-size:14px;line-height:1.5;font-weight:400;color:var(--ink-2);text-decoration:none;white-space:nowrap;transition:color .15s}
+.gh-list a:hover,.gh-list a:focus-visible{color:var(--ink);text-decoration:underline;text-underline-offset:6px}
+.gh-has>a::after{content:"";display:inline-block;width:5px;height:5px;margin:0 0 3px 7px;border:solid currentColor;border-width:0 1.5px 1.5px 0;transform:rotate(45deg)}
+.gh-sub{position:absolute;top:100%;left:-16px;z-index:70;display:grid;gap:0;min-width:236px;padding:6px;background:var(--paper);border:1px solid var(--rule);border-radius:var(--r-md);box-shadow:var(--shadow-float);opacity:0;visibility:hidden;transform:translateY(4px);transition:opacity .16s var(--ease-out),transform .16s var(--ease-out),visibility 0s .16s}
+.gh-has:hover>.gh-sub,.gh-has:focus-within>.gh-sub{opacity:1;visibility:visible;transform:none;transition:opacity .16s var(--ease-out),transform .16s var(--ease-out),visibility 0s}
+.gh-sub a{display:block;padding:9px 12px;border-radius:var(--r-sm);color:var(--ink)}
+.gh-sub a:hover,.gh-sub a:focus-visible{background:var(--sheet);color:var(--ink);text-decoration:none}
+.gh-tel{flex:none;display:inline-flex;align-items:center;gap:7px;min-height:44px;padding:6px 4px;color:var(--ink);text-decoration:none;white-space:nowrap}
+.gh-tel:hover b{text-decoration:underline;text-underline-offset:4px}
+.gh-tel b{font-size:17px;font-weight:700;letter-spacing:.02em;font-variant-numeric:tabular-nums}
+.gh-tel small{font-size:12px;color:var(--ink-3)}
+.gh-cta{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 20px;border-radius:var(--r-sm);background:var(--ai);color:#fff;font-size:14px;font-weight:700;line-height:1.4;text-decoration:none;white-space:nowrap;transition:background-color .15s,transform .12s var(--ease-out)}
+.gh-cta:hover{background:var(--ai-deep);color:#fff}
+.gh-cta:active{transform:scale(.97)}
 .gh-menu{display:none}
 @media(max-width:1479px){.gh-list .gh-ext{display:none}}
-@media(max-width:1199px){.gh-list{gap:13px}.gh-list a{font-size:13.5px}.gh-tel small{display:none}}
+@media(max-width:1199px){.gh-list{gap:14px}.gh-list a{font-size:13.5px}.gh-tel small{display:none}}
 @media(max-width:1079px){
  .gh-in{height:60px;gap:8px}
  .gh-logo{margin-right:auto}
- .gh-nav{display:none;position:absolute;left:0;right:0;top:100%;max-height:calc(100vh - 60px);overflow-y:auto;padding:4px 22px 24px;background:#fdfcf9;border-top:1px solid #e7e2d4;border-bottom:1px solid #e7e2d4;box-shadow:0 22px 40px -18px rgba(19,36,69,.3)}
+ .gh-logo img{height:32px}
+ .gh-nav{display:none;position:absolute;left:0;right:0;top:100%;max-height:calc(100vh - 60px);overflow-y:auto;padding:4px var(--gutter) 24px;background:var(--paper);border-bottom:1px solid var(--rule);box-shadow:var(--shadow-float)}
  .gh.gh-open .gh-nav{display:block}
  .gh-list{display:block}
- .gh-list>li{border-bottom:1px solid #ece6d6}
- .gh-list a{display:block;padding:13px 2px;font-size:16px;color:#212b3d}
+ .gh-list>li{border-bottom:1px solid var(--rule)}
+ .gh-list a{display:block;padding:13px 0;font-size:16px;color:var(--ink)}
  .gh-has>a::after{content:none}
- .gh-sub{position:static;display:grid;gap:0;min-width:0;padding:0 0 10px 14px;background:none;border:0;border-radius:0;box-shadow:none}
- .gh-sub a{padding:10px 2px;font-size:15px;color:#5b6472}
+ .gh-sub{position:static;opacity:1;visibility:visible;transform:none;transition:none;min-width:0;padding:0 0 10px 14px;background:none;border:0;border-radius:0;box-shadow:none}
+ .gh-sub a{padding:9px 0;font-size:15px;color:var(--ink-2)}
  .gh-list .gh-ext{display:block}
- .gh-tel{width:44px;height:44px;padding:0;justify-content:center;border:1.5px solid #2a4a8a;border-radius:50%}
+ .gh-tel{width:44px;height:44px;padding:0;justify-content:center;border:1.5px solid var(--ai);border-radius:var(--r-sm);color:var(--ai)}
  .gh-tel b,.gh-tel small{display:none}
- .gh-cta{padding:8px 16px;font-size:13.5px;box-shadow:none}
- .gh-menu{flex:none;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:52px;height:44px;padding:0;border:0;border-radius:10px;background:none;color:#1d3461;font:inherit;font-size:12px;font-weight:700;line-height:1;cursor:pointer}
- .gh-bars,.gh-bars::before,.gh-bars::after{content:"";display:block;width:22px;height:2px;border-radius:2px;background:currentColor;transition:transform .2s}
+ .gh-cta{padding:8px 14px;font-size:13.5px}
+ .gh-menu{flex:none;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:52px;height:44px;padding:0;border:0;border-radius:var(--r-sm);background:none;color:var(--ink);font:inherit;font-size:12px;font-weight:700;line-height:1;cursor:pointer}
+ .gh-bars,.gh-bars::before,.gh-bars::after{content:"";display:block;width:22px;height:2px;border-radius:1px;background:currentColor;transition:transform .2s var(--ease-out)}
  .gh-bars{position:relative;margin:6px 0 5px}
  .gh-bars::before,.gh-bars::after{position:absolute;left:0}
  .gh-bars::before{top:-7px}
@@ -633,23 +509,73 @@ footer{border-top:1px solid var(--line);padding:54px 0 110px;background:var(--bg
  .gh-open .gh-bars::after{top:0;transform:rotate(-45deg)}
  .gh-lock .sticky-cta,.gh-lock .blog-sticky,.gh-lock .float-cta{visibility:hidden}
 }
-@media(max-width:420px){.gh-in{padding:0 14px}.gh-cta{padding:8px 14px}}
+@media(max-width:420px){.gh-in{padding:0 12px}.gh-cta{padding:8px 12px}}
 @media(max-width:389px){.gh-long{display:none}}
-/* スマホの下の固定ボタン: 入力欄・診断が見えている間と、入力中は引っ込める（入力欄に重なっていた） */
-.sticky-cta{transition:transform .25s ease,opacity .25s ease}
+/* ---- ボタン（藍の地・角丸4px。丸い金のボタンはやめた） ---- */
+.btn,.btn-gold,.btn-line{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:var(--r-sm);border:1.5px solid transparent;font-family:var(--font);font-size:15px;font-weight:700;line-height:1.5;text-align:center;text-decoration:none;cursor:pointer;box-shadow:none;transition:background-color .15s,border-color .15s,color .15s,transform .12s var(--ease-out)}
+.btn:active,.btn-gold:active,.btn-line:active{transform:scale(.97)}
+.btn-primary,.btn-gold{background:var(--ai);color:#fff}
+.btn-primary:hover,.btn-gold:hover{background:var(--ai-deep);color:#fff;transform:none;box-shadow:none}
+.btn-primary::after{content:none}
+.btn-ghost,.btn-line{background:var(--paper);border-color:var(--ai);color:var(--ai)}
+.btn-ghost:hover,.btn-line:hover{background:var(--ai-tint);color:var(--ai-deep)}
+.btn-block{display:flex;width:100%}
+.btn[disabled],button[disabled]{opacity:.6;cursor:progress}
+/* ---- 文字の部品 ---- */
+.em-marker{background:linear-gradient(transparent 58%,var(--marker) 58%);color:var(--ink);font-weight:700;padding:0 1px}
+.micro{display:block;margin-top:8px;font-size:var(--fs-14);line-height:1.7;color:var(--ink-3)}
+.table-note,.cost-note,.case-note,.plan-note{font-size:var(--fs-14);line-height:1.7;color:var(--ink-3)}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+/* ---- 足元（どのページも同じ見た目） ---- */
+body>footer{background:var(--sheet);border-top:1px solid var(--rule);color:var(--ink-2);font-size:var(--fs-14);line-height:1.8;padding:56px max(var(--gutter),calc((100% - var(--maxw)) / 2 + var(--gutter))) 40px;text-align:left}
+body>footer .wrap{padding:0}
+body>footer nav{display:flex;flex-wrap:wrap;align-content:flex-start;gap:0 18px;margin-bottom:14px}
+
+body>footer nav a,body>footer a{color:var(--ink-2);text-decoration:none;margin:0}
+body>footer a:hover{color:var(--ink);text-decoration:underline}
+footer nav a[href]{display:inline-block;padding:.55rem 0}
+body>footer p{margin:6px 0 0}
+body>footer .foot-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px}
+body>footer .foot-grid nav{max-width:640px}
+body>footer .copyright{margin-top:24px}
+body>footer .social-links{justify-content:flex-start;margin-top:16px}
+@media(max-width:860px){body>footer{padding-bottom:104px}}
+/* ---- スマホの下の固定ボタン（入力欄・診断が見えている間と入力中は引っ込める） ---- */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:8px;padding:8px 12px calc(8px + env(safe-area-inset-bottom,0px));background:var(--paper);border-top:1px solid var(--rule);box-shadow:var(--shadow-float);transition:transform .25s var(--ease-out),opacity .25s var(--ease-out)}
+.sticky-cta .btn{flex:1;min-width:0;min-height:48px;padding:6px 8px;font-size:13.5px;line-height:1.35}
+@media(max-width:860px){.sticky-cta{display:flex}}
 .sticky-cta.is-hidden{transform:translateY(110%);opacity:0;pointer-events:none}
-/* 足元のリンクは指で押せる大きさに（スマホで高さ16px・間隔0〜9pxだった） */
-footer nav a[href]{display:inline-block;padding:.6rem .4rem}
-/* 「※ 写真はイメージです」が地の色と 3.16:1 で読みにくかった */
-figure.ph-band figcaption{font-size:12px;color:#6b7280}
-@media(prefers-reduced-motion:reduce){.sticky-cta,.gh-bars,.gh-bars::before,.gh-bars::after{transition:none}}
+.float-cta{position:fixed;right:24px;bottom:24px;z-index:65;display:none;align-items:center;gap:6px;opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s var(--ease-out),transform .2s var(--ease-out)}
+.float-cta.show{opacity:1;transform:none;pointer-events:auto}
+@media(min-width:861px){.float-cta{display:flex}}
+.float-cta a{display:inline-flex;align-items:center;gap:8px;min-height:48px;padding:12px 20px;border-radius:var(--r-sm);background:var(--ai);color:#fff;font-size:14px;font-weight:700;text-decoration:none;box-shadow:var(--shadow-float)}
+.float-cta a:hover{background:var(--ai-deep)}
+.float-cta .fdot{display:none}
+.float-cta button{width:32px;height:32px;border:1px solid var(--rule);border-radius:var(--r-sm);background:var(--paper);color:var(--ink-2);font-size:13px;line-height:1;cursor:pointer}
+/* ---- 記事に差し込まれる案内（管制塔の publish.py・subsidy_cta.py が書く。style 属性の色をここで揃える） ---- */
+.bcta-mid,.cta-mid{margin:40px 0!important;padding:20px 22px!important;background:var(--sheet)!important;border:0!important;border-top:2px solid var(--ai)!important;border-radius:0!important;text-align:left!important}
+.bcta-mid .t,.cta-mid>p:first-child{margin:0 0 6px!important;font-size:var(--fs-18);font-weight:700;line-height:1.6;color:var(--ink)}
+.bcta-mid .d,.cta-mid>p:last-child{margin:8px 0 0!important;font-size:var(--fs-14)!important;line-height:1.7;color:var(--ink-3)!important}
+.bcta-mid a,.cta-mid a.cta-button,.cta-inline a.cta-button,.blog-sticky a{display:inline-flex!important;align-items:center;justify-content:center;min-height:48px;padding:11px 22px!important;border-radius:var(--r-sm)!important;background:var(--ai)!important;color:#fff!important;font-size:15px;font-weight:700;line-height:1.5;text-decoration:none;transition:background-color .15s,transform .12s var(--ease-out)}
+.bcta-mid a:hover,.cta-mid a.cta-button:hover,.cta-inline a.cta-button:hover{background:var(--ai-deep)!important}
+.bcta-mid a:active,.cta-mid a.cta-button:active,.cta-inline a.cta-button:active{transform:scale(.97)}
+.cta-inline{margin:28px 0 32px!important;padding:18px 20px!important;background:var(--paper)!important;border:1px solid var(--rule)!important;border-left:3px solid var(--ai)!important;border-radius:0!important}
+.cta-inline>p{color:var(--ink)!important}
+.cta-inline>p+a+p,.cta-inline p:last-of-type{color:var(--ink-3)!important}
+.blog-sticky{background:var(--paper)!important;border-top:1px solid var(--rule);box-shadow:var(--shadow-float)!important}
+.blog-sticky a{display:flex!important;width:100%}
+aside:has(>a[data-cta^="subsidy_aicheck"]),.author aside,.diag+aside{max-width:none!important;margin:24px 0 0!important;padding:16px 18px!important;border:1px solid var(--rule)!important;border-radius:0!important;background:var(--paper)!important;font-size:var(--fs-14)!important}
+main>aside:has(>a[data-cta^="subsidy_aicheck"]){max-width:calc(880px - 2 * var(--gutter))!important;margin:32px auto 0!important}
+@media(max-width:880px){main>aside:has(>a[data-cta^="subsidy_aicheck"]){margin:32px var(--gutter) 0!important}}
+
+aside:has(>a[data-cta^="subsidy_aicheck"]) b,.author aside b{color:var(--ink)!important}
+/* 写真の注記（※ 写真はイメージです） */
+figure.ph-band figcaption{font-size:var(--fs-12);color:var(--ink-3)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<script>document.documentElement.classList.add("js");</script>
-<div class="atmos" aria-hidden="true"></div>
 
-<!-- ========== 01. 固定ヘッダー ========== -->
 <header class="gh" id="gh">
   <div class="gh-in">
     <a class="gh-logo" href="/"><img src="/assets/img/logo-h.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="372" height="148"></a>
@@ -662,366 +588,413 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
 
 <main id="top">
 
-<!-- ========== 02. ヒーロー ========== -->
-<section class="hero" id="hero"><!--ph:hero--><div class="hero-ph-light" aria-hidden="true"><img src="/assets/img/hero-owner.webp" alt="新しい管理システムを入れたタブレットを持つ経営者のイメージ" width="1600" height="900" loading="eager" fetchpriority="high" decoding="async"></div><!--/ph:hero-->
-  <div class="wrap hero-grid">
-    <div>
-      <p class="fresh">本ページは<b>2026年7月時点</b>の情報です|このサービスは、AI導入を検討する<b>中小企業・個人事業主</b>向けです</p>
-      <div class="badge-row">
-        <span class="badge navy">令和8年度 デジタル化・AI導入補助金 対応</span>
-      </div>
-      <h1>AI導入補助金で、<br>導入費を最大<span class="num">350</span>万円<br>圧縮する。</h1>
-      <!-- AIO: 冒頭200字の断言文+キーワード(AI検索が最重要視するシグナル) -->
-      <p class="hero-sub"><span class="em-big">AI導入補助金</span>とは、AI・ITツールの導入費用を国が補助する「デジタル化・AI導入補助金」(2026年度に「IT導入補助金」から改称)の通称です。令和8年度は<span class="em-marker">補助上限350万円(インボイス枠)</span>、申請から開発・集客まで当社が一気通貫で伴走します。</p>
-      <div class="hero-cta">
-        <div>
-          <a class="btn btn-primary" href="#fit" data-cta="hero_main">3分で対象か確認する</a>
-          <span class="micro">このページの4つの条件で、対象になりそうかをその場で確かめます。名前や連絡先の入力は要りません。</span>
+<!-- ========== ヒーロー: 何の制度で、自己負担はいくらになりうるか ========== -->
+<section class="hero" id="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="form-no">令和8年度 デジタル化・AI導入補助金 対応</p>
+        <h1>AI導入補助金で、<br>導入費を最大<span class="num">350</span>万円<br>圧縮する。</h1>
+        <!-- AIO: 冒頭200字の断言文+キーワード(AI検索が最重要視するシグナル) -->
+        <p class="hero-sub"><span class="em-big">AI導入補助金</span>とは、AI・ITツールの導入費用を国が補助する「デジタル化・AI導入補助金」(2026年度に「IT導入補助金」から改称)の通称です。令和8年度は<span class="em-marker">補助上限350万円(インボイス枠)</span>、申請から開発・集客まで当社が一気通貫で伴走します。</p>
+        <div class="hero-cta">
+          <div>
+            <a class="btn btn-primary" href="#fit" data-cta="hero_main">3分で対象か確認する</a>
+            <span class="micro">このページの4つの条件で、対象になりそうかをその場で確かめます。名前や連絡先の入力は要りません。</span>
+          </div>
+          <div>
+            <a class="btn btn-ghost" href="#contact" data-cta="hero_diag">無料相談を予約する</a>
+            <span class="micro">Zoomで約60分。対象になるかを、その場で確認します。</span>
+          </div>
         </div>
-        <div>
-          <a class="btn btn-ghost" href="#contact" data-cta="hero_diag">無料相談を予約する</a>
-          <span class="micro">Zoomで約60分。対象になるかを、その場で確認します。</span>
+        <p class="fresh">本ページは<b>2026年7月時点</b>の情報です|このサービスは、AI導入を検討する<b>中小企業・個人事業主</b>向けです</p>
+      </div>
+      <div>
+        <div class="ledger" role="group" aria-label="実質負担のモデルケース">
+          <p class="ledger-t">自己負担のモデルケース<small>導入費550万円の場合</small></p>
+          <dl>
+            <div class="lr"><dt>導入費用(例)</dt><dd>550<small>万円</small></dd></div>
+            <div class="lr minus"><dt>補助金(上限)</dt><dd>−350<small>万円</small></dd></div>
+            <div class="lr total"><dt>自己負担(例)</dt><dd>200<small>万円</small></dd></div>
+          </dl>
+          <div class="ledger-bar" aria-hidden="true"><i class="b-sub"></i><i class="b-self"></i></div>
+          <p class="ledger-key" aria-hidden="true"><span>補助金 350万</span><span>自己負担 200万</span></p>
+          <p class="cost-note">※導入費550万円の場合のモデルケースです。補助額は導入内容と審査結果により変動します(補助金は精算払い・後払いです)。</p>
         </div>
       </div>
     </div>
-    <div>
-      <div class="cost-card" aria-label="実質負担のモデルケース">
-        <span class="tag">MODEL CASE</span>
-        <div class="cost-bars" aria-hidden="true">
-          <div class="cb"><div class="bar b1"></div><span class="lbl">通常 550万</span></div>
-          <div class="cb"><div class="bar b2"></div><span class="lbl">自己負担 200万</span></div>
-        </div>
-        <div class="cost-row"><span>導入費用(例)</span><span class="v">550<small>万円</small></span></div>
-        <div class="cost-row minus"><span>補助金(上限)</span><span class="v">−350<small>万円</small></span></div>
-        <div class="cost-row total"><span>自己負担(例)</span><span class="v">200<small>万円</small></span></div>
-        <p class="cost-note">※導入費550万円の場合のモデルケースです。補助額は導入内容と審査結果により変動します(補助金は精算払い・後払いです)。</p>
-      </div>
+    <div class="facts">
+      <dl>
+        <div><dt>補助上限(インボイス枠)※</dt><dd>350<small>万円</small></dd></div>
+        <div><dt>補助率(50万円以下の部分)※</dt><dd>3/4</dd></div>
+        <div><dt>事前準備の目安</dt><dd>1.5〜3<small>時間</small></dd></div>
+        <div><dt>申請から着金まで</dt><dd>2〜3<small>ヶ月</small></dd></div>
+        <div><dt>無料診断(その場で結果)</dt><dd>4<small>種</small></dd></div>
+      </dl>
+      <p class="foot">※デジタル化・AI導入補助金2026(旧IT導入補助金)インボイス枠の補助額・補助率。事務局の公表(<a href="https://it-shien.smrj.go.jp/news/40013" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の概要</a>)による。枠と条件で異なります。</p>
     </div>
+    <nav class="page-toc" aria-label="このページの順番">
+      <p>このページの順番</p>
+      <ol>
+        <li><a href="#fit">使えるかを確かめる</a></li>
+        <li><a href="#money">申請の流れと落とし穴</a></li>
+        <li><a href="#problem">当社の支援の範囲</a></li>
+        <li><a href="#services">料金と進め方</a></li>
+        <li><a href="#contact">相談する</a></li>
+      </ol>
+    </nav>
   </div>
 </section>
 
-<!-- 実績ティッカー(マーキー。トラックは2周分でループ) -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker-track">
-    <span>補助金上限 350万円(インボイス枠)</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
-    <span>補助金上限 350万円(インボイス枠)</span><span>無料診断4種 その場で結果</span><span>事前準備は合計1.5〜3時間</span><span>申請から着金まで 約2〜3ヶ月</span><span>大阪拠点・全国オンライン対応</span>
-  </div>
-</div>
-<!-- 動画スロット: 実写・会社紹介動画(mp4)を assets/video/hero.mp4 に配置し、
-     ここに <video autoplay muted loop playsinline poster=/assets/img/meeting-jp.webp> と
-     <source> タグでヒーロー直下に挿入する(用意でき次第有効化) -->
-
-<!-- ========== 03. 実績数値バー ========== -->
-<div class="stats">
+<!-- ========== 目的から選ぶ ========== -->
+<section class="chooser" id="chooser">
   <div class="wrap">
-    <div class="stats-grid">
-      <div class="stat"><div class="n"><span class="count" data-to="350">0</span><small>万円</small></div><div class="l">補助上限(インボイス枠)※</div></div>
-      <div class="stat"><div class="n">3/4</div><div class="l">補助率(50万円以下の部分)※</div></div>
-      <div class="stat"><div class="n"><span class="count" data-to="4">0</span><small>種</small></div><div class="l">無料診断(その場で結果)</div></div>
-      <div class="stat"><div class="n">1.5〜3<small>時間</small></div><div class="l">事前準備の目安</div></div>
-      <div class="stat"><div class="n">2〜3<small>ヶ月</small></div><div class="l">申請から着金まで</div></div>
-    </div>
-    <p class="foot">※デジタル化・AI導入補助金2026(旧IT導入補助金)インボイス枠の補助額・補助率。事務局の公表(<a href="https://it-shien.smrj.go.jp/news/40013" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の概要</a>)による。枠と条件で異なります。</p>
-  </div>
-</div>
-
-<!-- ========== 04. クイックスタート ========== -->
-
-<!-- ========== 適合チェック: 対象かどうかを最初に確定させる ========== -->
-<section class="chooser" id="chooser" style="padding:64px 0 56px">
-  <div class="wrap rev">
-    <p class="kicker">Quick Start</p>
-    <h2>今日は、<span class="accent">どちら</span>をお探しですか?</h2>
+    <h2>今日は、どちらをお探しですか?</h2>
     <div class="choose-grid">
       <a class="choice" href="#diagnosis" data-diag="hojokin">
-        <span class="ci" aria-hidden="true">💰</span>
         <b>補助金が使えるか知りたい</b>
-        <span class="cd">8問・3分の適性診断へ →</span>
+        <span class="cd">8問・3分の適性診断へ</span>
       </a>
       <a class="choice" href="#diagnosis" data-diag="audit">
-        <span class="ci" aria-hidden="true">🔍</span>
         <b>サイト・集客を診断したい</b>
-        <span class="cd">URLを入れるだけのサイト診断へ →</span>
+        <span class="cd">URLを入れるだけのサイト診断へ</span>
       </a>
       <a class="choice" href="#contact">
-        <span class="ci" aria-hidden="true">💬</span>
         <b>まず話を聞いてみたい</b>
-        <span class="cd">無料相談(Zoomで約60分・営業電話なし)へ →</span>
+        <span class="cd">無料相談(Zoomで約60分・営業電話なし)へ</span>
       </a>
     </div>
   </div>
 </section>
-<section id="fit" style="padding:64px 0 56px">
-  <div class="wrap rev ph-grid" style="text-align:center"><!--ph:fit--><figure class="ph-side"><img src="/assets/img/step-check.webp" alt="チェックリストで対象かを確かめる経営者のイメージ" width="1600" height="900" loading="lazy" decoding="async"></figure><!--/ph:fit-->
-    <p class="kicker" style="justify-content:center">Step 1</p>
-    <h2>まず、<span class="accent">対象になるか</span>を確認してください</h2>
-    <p class="lead" style="margin-left:auto;margin-right:auto">補助金は誰でも使えるわけではありません。次の4つに当てはまるかで、ほぼ決まります。</p>
-    <ul class="fit-list" style="margin-left:auto;margin-right:auto;text-align:left">
-      <li>中小企業・小規模事業者、または個人事業主である</li>
-      <li>直近の決算を1期以上終えている</li>
-      <li>税金の未納がない</li>
-      <li>同じ補助金を過去に受給していない(または受給から一定期間が経過している)</li>
-    </ul>
-    <p class="fit-note">4つとも当てはまれば、申請できる可能性が高い状態です。判断がつかない項目があれば、そこだけ確認します。</p>
-    <div class="fit-cta" style="justify-content:center">
-      <a class="btn btn-primary" href="#contact" data-cta="fit_ok">4つとも当てはまる → 無料相談へ</a>
-      <a class="btn btn-ghost" href="#diagnosis" data-cta="fit_unsure" data-diag="hojokin">判断がつかない → 3分の適性診断へ</a>
+
+<!-- ========== 1. 使える制度か ========== -->
+<section class="sec" id="fit">
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <p class="ch">使えるかを確かめる</p>
+      <h2>まず、対象になるかを確認してください</h2>
+      <p class="lead">補助金は誰でも使えるわけではありません。次の4つに当てはまるかで、ほぼ決まります。</p>
     </div>
-    <p class="micro" style="text-align:center;margin-top:14px">※要件は公募回により変わります。最新の公募要領もあわせてご確認ください。</p>
+    <div class="sec-body">
+      <ul class="fit-list">
+        <li>中小企業・小規模事業者、または個人事業主である</li>
+        <li>直近の決算を1期以上終えている</li>
+        <li>税金の未納がない</li>
+        <li>同じ補助金を過去に受給していない(または受給から一定期間が経過している)</li>
+      </ul>
+      <p class="fit-note">4つとも当てはまれば、申請できる可能性が高い状態です。判断がつかない項目があれば、そこだけ確認します。</p>
+      <div class="fit-cta">
+        <a class="btn btn-primary" href="#contact" data-cta="fit_ok">4つとも当てはまる:無料相談へ</a>
+        <a class="btn btn-ghost" href="#diagnosis" data-cta="fit_unsure" data-diag="hojokin">判断がつかない:3分の適性診断へ</a>
+      </div>
+      <p class="micro">※要件は公募回により変わります。最新の公募要領もあわせてご確認ください。</p>
+    </div>
   </div>
 </section>
-<!-- ========== 05. 課題提起 ========== -->
-<section id="problem" style="background:var(--bg2)">
-  <div class="wrap rev">
-    <div class="prob-head">
-      <div>
-        <p class="kicker">Problem</p>
-        <h2>こんなお悩み、<br class="sp">ありませんか?</h2>
-        <p class="lead">紙とエクセルの事務作業、進まないAI導入、見つけてもらえないホームページ。<span class="em-marker">1つでも当てはまれば</span>、このページがお役に立てます。</p>
+
+<!-- ========== 無料診断 ========== -->
+<section class="sec" id="diagnosis">
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <h2>3分でわかる。<br class="sp">4つの無料診断</h2>
+      <p class="lead">補助金・Webサイト・MEO・AI活用の<span class="em-marker">全サービスカテゴリを無料診断</span>。補助金・MEO・AI活用は質問に答えるだけで、5軸レーダーと判定・処方箋をその場で表示します。Webサイトは、URLを入れると当社が運営するAI集客ラボの無料URL診断で採点します。</p>
+    </div>
+    <div class="sec-body">
+      <div class="diag" id="diagWidget">
+        <div class="diag-tabs" role="tablist" aria-label="診断の種類">
+          <button type="button" class="diag-tab" role="tab" aria-selected="true" id="tabQuiz">補助金適性<span style="font-weight:400">(8問)</span></button>
+          <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAudit">Webサイト<span style="font-weight:400">(URL)</span></button>
+          <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabMeo">MEO集客<span style="font-weight:400">(6問)</span></button>
+          <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAi">AI活用<span style="font-weight:400">(6問)</span></button>
+        </div>
+        <div class="diag-head"><span class="t" id="diagTitle">補助金の適性診断</span><span id="diagStep" style="font-size:13px;color:var(--ink-3)">1 / 8問</span></div>
+        <div class="diag-prog" aria-hidden="true"><i id="diagBar"></i></div>
+        <div class="diag-body" id="diagBody" aria-live="polite"><!-- JSで描画 --></div>
       </div>
-      <figure class="photo">
+      <aside style="max-width:880px;margin:28px auto 0;padding:18px 22px;border:1px solid rgba(19,36,69,.14);border-radius:14px;background:#fff;text-align:left;font-size:14px;line-height:1.9"><b style="display:block;font-size:15px;color:#132445">AIに、御社はどう紹介されていますか？</b>地域と業種を入れると、AIに「地域名＋業種 おすすめ」など3つの質問をして、答えの出典に御社のサイトや社名が出ているかを確かめます（無料）。 <a href="https://ai.7senses.co.jp/tools/ai-check/?src=lp_subsidy&amp;from=top" target="_blank" rel="noopener" data-cta="subsidy_aicheck_top" style="font-weight:700">無料でチェックする</a></aside>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 2. 申請の流れと落とし穴: お金は後払い ========== -->
+<section class="sec is-sheet" id="money">
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <p class="ch">申請の流れと落とし穴</p>
+      <h2>お金は、先に出て、後から戻ります</h2>
+      <p class="lead">補助金は後払いです。導入費用をいったん全額お支払いいただき、実績報告のあとに補助金が着金します。</p>
+    </div>
+    <div class="sec-body">
+      <div class="table-scroll">
+        <table class="data">
+          <caption>お金の動き(クライアント視点)</caption>
+          <thead><tr><th>タイミング</th><th>お金の流れ</th><th style="width:22%">金額(例)</th></tr></thead>
+          <tbody>
+            <tr><th>① 申請</th><td>貴社 → 国(GビズIDで電子申請・国が審査)</td><td class="ok">0円</td></tr>
+            <tr><th>② 採択後の支払い</th><td>貴社 → 当社(ツール代金の一括前払い・納品と運用開始)</td><td>550万円</td></tr>
+            <tr><th>③ 実績報告</th><td>貴社 → 国(利用実績・経費の証拠書類を提出し補助額確定)</td><td>—</td></tr>
+            <tr><th>④ 補助金の着金</th><td>国 → 貴社口座(精算払い・後払い)</td><td class="ok">最大350万円(インボイス枠)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="money-note"><b>補助金は後払いです。</b>お支払いから着金まで約2〜3ヶ月を見込んだ資金計画をおすすめします。</p>
+      <p class="table-note" style="margin-top:12px">資金繰りにご不安がある場合は、分割でのお支払いやつなぎ融資のご相談も承ります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AIに聞いた調査の要点（scripts/subsidy/research.py の put_top が配信のたびに入れ直す。手で書かない） -->
+<!--research:top-->
+<section id="research" class="sec rs" aria-labelledby="rs-h">
+<style>
+#research .rs-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media(max-width:700px){#research .rs-grid{grid-template-columns:1fr;gap:28px}}
+#research .rs-card{margin:0;min-width:0;padding-top:16px;border-top:1px solid var(--rule-strong)}
+#research .rs-k{margin:0 0 10px;font-size:15px;font-weight:700;color:var(--ink)}
+#research .rs-big{margin:0 0 14px;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+#research .rs-big b{font-size:56px;font-weight:700;letter-spacing:-.01em}
+#research .rs-big small{margin-left:6px;font-size:15px;color:var(--ink-2)}
+#research .rs-cells{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;max-width:420px}
+#research .rs-cells i{display:block;height:24px;background:var(--rule)}
+#research .rs-cells i.is-split{background:var(--ai)}
+#research .rs-key{display:flex;flex-wrap:wrap;gap:4px 16px;margin:10px 0 0;font-size:var(--fs-14);color:var(--ink-2)}
+#research .rs-key span::before{content:"";display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px;background:var(--rule)}
+#research .rs-key span.is-split::before{background:var(--ai)}
+#research .rs-bars{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+#research .rs-bars li{display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:baseline;margin:0;font-size:var(--fs-14)}
+#research .rs-l{color:var(--ink)}
+#research .rs-v{font-size:17px;font-weight:700;color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+#research .rs-v small{margin-left:2px;font-size:13px;font-weight:400;color:var(--ink-2)}
+#research .rs-t{grid-column:1/-1;display:block;height:10px;background:var(--sheet)}
+#research .rs-t span{display:block;height:100%;min-width:3px;background:var(--rule-strong)}
+#research li.is-em .rs-l{font-weight:700}
+#research li.is-em .rs-t span{background:var(--ai)}
+#research figcaption{margin-top:14px;font-size:var(--fs-14);line-height:1.8;color:var(--ink-2)}
+#research .rs-note{margin:28px 0 0;padding:12px 16px;border-left:3px solid var(--shu);background:var(--shu-tint);font-size:15px;line-height:1.85;color:var(--ink)}
+#research .rs-cta{margin:20px 0 0}
+</style>
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <h2 id="rs-h">補助金をAIに聞くと、答えは割れます</h2>
+      <p class="lead">当社が2026年10月4日にChatGPT・Claudeへ、補助金について読者が聞きそうな問いを20問聞き、AIの結論と、根拠にしたページを数えました（当社調べ）。</p>
+    </div>
+    <div class="sec-body">
+      <div class="rs-grid">
+        <figure class="rs-card">
+          <p class="rs-k">AIどうしで結論が分かれた問い</p>
+          <div role="img" aria-label="調べた20問のうち4問で、ChatGPT・Claudeの結論が分かれました。残りの16問は結論が同じでした。">
+            <p class="rs-big"><b>4</b>問<small>／20問中</small></p>
+            <div class="rs-cells"><i class="is-split"></i><i class="is-split"></i><i class="is-split"></i><i class="is-split"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
+            <p class="rs-key"><span class="is-split">結論が分かれた 4問</span><span>結論が同じ 16問</span></p>
+          </div>
+          <figcaption>調べた20問のうち4問で、ChatGPT・Claudeの結論が分かれました。残りの16問は結論が同じでした。</figcaption>
+        </figure>
+        <figure class="rs-card">
+          <p class="rs-k">AIが根拠にしたページの種類（226件）</p>
+          <ol class="rs-bars" role="img" aria-label="AIが根拠にしたページ226件のうち、公的機関のページは51件（22%）、民間のサイトは173件（76%）でした。"><li class=""><span class="rs-l">民間のサイト</span><span class="rs-v">173件<small>（76%）</small></span><span class="rs-t"><span style="width:76.5%"></span></span></li><li class="is-em"><span class="rs-l">公的機関（go.jp など）</span><span class="rs-v">51件<small>（22%）</small></span><span class="rs-t"><span style="width:22.6%"></span></span></li><li class=""><span class="rs-l">報道・SNS・動画</span><span class="rs-v">2件<small>（1%未満）</small></span><span class="rs-t"><span style="width:0.9%"></span></span></li></ol>
+          <figcaption>AIが根拠にしたページ226件のうち、公的機関のページは51件（22%）、民間のサイトは173件（76%）でした。</figcaption>
+        </figure>
+      </div>
+      <p class="rs-note">AIの答えは、申請の可否を決める根拠になりません。補助の対象・金額・締切は、公募要領と事務局のページで確かめてください。調べた日は2026年10月4日で、その日の1回の結果です。</p>
+      <p class="rs-cta"><a class="btn btn-ghost" href="/research/ai-hojokin/" data-cta="top_research">問いごとの答えと根拠を見る</a></p>
+    </div>
+  </div>
+</section>
+<!--/research:top-->
+
+<!-- ========== 3. 当社の支援の範囲 ========== -->
+<section class="sec" id="problem">
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <p class="ch">当社の支援の範囲</p>
+      <h2>こんなお悩み、<br class="sp">ありませんか?</h2>
+      <p class="lead">紙とエクセルの事務作業、進まないAI導入、見つけてもらえないホームページ。<span class="em-marker">1つでも当てはまれば</span>、このページがお役に立てます。</p>
+      <figure class="prob-photo">
         <img src="/assets/img/documents.webp" alt="書類仕事に追われる事務作業のイメージ" width="1200" height="801" loading="lazy">
         <figcaption>写真はイメージです</figcaption>
       </figure>
     </div>
-    <div class="checks">
-      <div class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.2 4.5L16 3.5" stroke="#b08b3e" stroke-width="2.2" stroke-linecap="round"/></svg>見積書・請求書・受発注を、いまだにエクセルと紙で回している</div>
-      <div class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.2 4.5L16 3.5" stroke="#b08b3e" stroke-width="2.2" stroke-linecap="round"/></svg>AIを導入したいが、何から始めればいいか分からない</div>
-      <div class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.2 4.5L16 3.5" stroke="#b08b3e" stroke-width="2.2" stroke-linecap="round"/></svg>補助金は気になるが、申請書類の山を想像して手が止まっている</div>
-      <div class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.2 4.5L16 3.5" stroke="#b08b3e" stroke-width="2.2" stroke-linecap="round"/></svg>人手不足で、事務作業が経営者・幹部の夜の仕事になっている</div>
-      <div class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.2 4.5L16 3.5" stroke="#b08b3e" stroke-width="2.2" stroke-linecap="round"/></svg>ホームページはあるが、検索でもGoogleマップでも見つけてもらえない</div>
-      <div class="check"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 9.5l4.2 4.5L16 3.5" stroke="#b08b3e" stroke-width="2.2" stroke-linecap="round"/></svg>ITベンダーに騙されないか、正直不安だ</div>
-    </div>
-    <p class="bridge">その課題、<span class="em-marker">国の補助金</span>と<span class="em-marker">伴走型の導入支援</span>で、<br>まとめて解決できます。</p>
-    <div style="text-align:center;margin-top:26px">
+    <div class="sec-body">
+      <ul class="checks">
+        <li>見積書・請求書・受発注を、いまだにエクセルと紙で回している</li>
+        <li>AIを導入したいが、何から始めればいいか分からない</li>
+        <li>補助金は気になるが、申請書類の山を想像して手が止まっている</li>
+        <li>人手不足で、事務作業が経営者・幹部の夜の仕事になっている</li>
+        <li>ホームページはあるが、検索でもGoogleマップでも見つけてもらえない</li>
+        <li>ITベンダーに騙されないか、正直不安だ</li>
+      </ul>
+      <p class="bridge">その課題、<span class="em-marker">国の補助金</span>と<span class="em-marker">伴走型の導入支援</span>で、まとめて解決できます。</p>
       <a class="btn btn-primary" href="#contact" data-cta="after_problem">まず無料で相談してみる</a>
       <span class="micro">対象になるかの確認だけでもOKです。</span>
     </div>
   </div>
 </section>
-<!-- 支援事例(掲載許諾済み・2026年7月確認) -->
-<!-- ========== お金の動き: 後払いという最大の前提を早い段階で開示する ========== -->
-<section id="money">
-  <div class="wrap rev">
-    <p class="kicker">Cash Flow</p>
-    <h2>お金は、<span class="accent">先に出て、後から戻ります</span></h2>
-<div class="fold-open">
-<p class="lead">補助金は後払いです。導入費用をいったん全額お支払いいただき、実績報告のあとに補助金が着金します。</p>
-<div class="table-scroll">
-      <table class="data">
-        <caption style="text-align:left;font-family:var(--serif);font-weight:800;font-size:17px;color:var(--navy);padding-bottom:12px">お金の動き(クライアント視点)</caption>
-        <thead><tr><th>タイミング</th><th>お金の流れ</th><th style="width:20%">金額(例)</th></tr></thead>
-        <tbody>
-          <tr><th>① 申請</th><td>貴社 → 国(GビズIDで電子申請・国が審査)</td><td class="ok">0円</td></tr>
-          <tr><th>② 採択後の支払い</th><td>貴社 → 当社(ツール代金の一括前払い・納品と運用開始)</td><td>550万円</td></tr>
-          <tr><th>③ 実績報告</th><td>貴社 → 国(利用実績・経費の証拠書類を提出し補助額確定)</td><td>—</td></tr>
-          <tr><th>④ 補助金の着金</th><td>国 → 貴社口座(精算払い・後払い)</td><td class="ok">最大350万円(インボイス枠)</td></tr>
-        </tbody>
-      </table>
+
+<section class="sec" id="why">
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <h2>なぜ、この会社に頼むのか</h2>
+      <div class="profile">
+        <img src="/assets/img/ceo.webp" alt="セブンセンシズ株式会社 代表取締役 原口優" width="400" height="600" loading="lazy"><!-- 公式サイト(7senses.co.jp/company)掲載の代表写真 -->
+        <div>
+          <h3>原口 優</h3>
+          <p class="role">セブンセンシズ株式会社 代表取締役</p>
+          <p>大阪・東成区を拠点に、デジタルマーケティングとAI導入支援を展開。</p>
+          <p>正直に言うと、当社も最初の申請支援では書類の差し戻しを経験しました。その失敗をチェックリスト化し、提出前の確認に使っています。</p>
+        </div>
+      </div>
     </div>
-    <p class="table-note">※補助金は後払いです。お支払いから着金まで約2〜3ヶ月を見込んだ資金計画をおすすめします。</p>
-<p style="font-size:14px;color:var(--muted);margin-top:12px">資金繰りにご不安がある場合は、分割でのお支払いやつなぎ融資のご相談も承ります。</p>
-</div>
+    <div class="sec-body">
+      <p class="why-lead"><b>差し戻しの失敗を、全部チェックリストに。</b>申請で差し戻されやすい箇所を一覧にし、提出前に1つずつ確かめます。</p>
+      <ul class="reasons">
+        <li><h3>申請だけで終わらない、一気通貫の伴走</h3>
+          <p>士業は申請まで、ベンダーは納品まで。当社は<span class="em-marker">申請の伴走→開発→集客(AIO/MEO)→実績報告まで1社で完結</span>するので、「導入したのに使われないシステム」が生まれません。</p></li>
+        <li><h3>AIOを「自社で実践」している数少ない会社</h3>
+          <p>地味ですが、これが最大の証拠です。<span class="em-marker">本サイト自体がAI検索最適化の実験場</span>(llms.txt・構造化データ・被引用設計を実装済み)。自社でやっていない施策は、お客様に売りません。</p></li>
+        <li><h3>大阪拠点・全国オンライン対応</h3>
+          <p>初回打ち合わせから電子申請の同席まで<span class="em-marker">Zoomで完結</span>。関西圏は訪問対応も可能です。申請から着金まで約2〜3ヶ月、各フェーズの進捗を必ず数字で報告します。</p></li>
+      </ul>
+      <div id="company" class="company-block">
+        <h3 class="sub-h">運営会社</h3>
+        <div class="table-scroll">
+          <table class="data">
+            <tbody>
+              <tr><th style="width:28%">社名</th><td>セブンセンシズ株式会社(SEVEN SENSES Inc.)</td></tr>
+              <tr><th>代表者</th><td>代表取締役 原口 優</td></tr>
+              <tr><th>所在地</th><td>〒537-0003<br>大阪府大阪市東成区神路1丁目7-4 コンフォートビル901・902</td></tr>
+              <tr><th>連絡先</th><td>TEL: 06-4305-7547(9:00〜20:00 土日祝休)/Mail: <a href="mailto:info.ai@7senses.co.jp">info.ai@7senses.co.jp</a></td></tr>
+              <tr><th>関連サイト</th><td><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a>/<a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">AI集客ラボ(運営メディア)</a></td></tr>
+              <tr><th>事業内容</th><td>デジタル化・AI導入補助金 申請サポート/システム開発・AI導入支援/AIOコンサルティング/MEOコンサルティング(G-ran)/HP・LP制作</td></tr>
+              <tr><th>対応エリア</th><td>全国(オンライン完結)/関西圏は訪問対応可</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">※設立年・資本金などの詳細はコーポレートサイトをご覧ください。デジタルマーケティングとAI導入支援のスペシャリスト集団として、MEO・AIO領域で培った知見を活かし、補助金申請から成果創出まで一気通貫で伴走します。</p>
+      </div>
+    </div>
   </div>
 </section>
-<section id="cases" style="background:var(--bg2)">
-  <div class="wrap rev">
-    <p class="kicker">Case Study</p>
-    <h2>事務作業<span class="accent">▲85%</span>・マップ予約<span class="accent">3.2倍</span>。<br class="sp">導入支援のモデルケース</h2>
+
+<!-- 支援事例(掲載許諾済み・2026年7月確認) -->
+<section class="sec sec-wide" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>事務作業▲85%・マップ予約3.2倍。<br class="sp">導入支援のモデルケース</h2>
+    </div>
     <div class="cases">
       <article class="case">
-        <div class="visual">
-          <span class="cno">CASE 01 — 事務時間の推移(月)</span>
-          <svg viewBox="0 0 260 74" role="img" aria-label="事務時間 月40時間から6時間へ" style="width:100%;height:auto">
-            <rect x="10" y="10" width="150" height="20" rx="4" fill="#2a4a8a"/>
-            <text x="168" y="25" font-size="12" fill="#1d3461" font-family="Oswald">40h</text>
-            <rect x="10" y="42" width="24" height="20" rx="4" fill="#d9b36a"/>
-            <text x="42" y="57" font-size="12" fill="#8a6a20" font-family="Oswald" font-weight="600">6h ▼85%</text>
-          </svg>
-        </div>
-        <div class="body">
-          <p class="ind">設備工事業|従業員12名</p>
-          <h3>夜22時の請求書作成が、翌朝の自動処理に。</h3>
-          <dl>
-            <div><dt>課題</dt><dd>見積・請求・原価管理がすべてエクセル。経営者が毎晩2時間の事務作業。</dd></div>
-            <div><dt>施策</dt><dd>補助金で受発注・会計システムを導入し、見積テンプレとAI下書きを整備。</dd></div>
-          </dl>
-          <div class="ba">
-            <div class="a"><div class="lbl">BEFORE</div><div class="val">月40時間</div></div>
-            <div class="arrow" aria-hidden="true">→</div>
-            <div class="b"><div class="lbl">AFTER</div><div class="val">月6時間</div></div>
-          </div>
+        <p class="ind">設備工事業|従業員12名・事務時間(月)</p>
+        <h3>夜22時の請求書作成が、翌朝の自動処理に。</h3>
+        <dl>
+          <div><dt>課題</dt><dd>見積・請求・原価管理がすべてエクセル。経営者が毎晩2時間の事務作業。</dd></div>
+          <div><dt>施策</dt><dd>補助金で受発注・会計システムを導入し、見積テンプレとAI下書きを整備。</dd></div>
+        </dl>
+        <div class="ba" role="img" aria-label="事務時間 月40時間から6時間へ">
+          <div class="a"><div class="lbl">導入前</div><div class="val">月40時間</div></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="b"><div class="lbl">導入後</div><div class="val">月6時間</div></div>
         </div>
       </article>
       <article class="case">
-        <div class="visual">
-          <span class="cno">CASE 02 — マップ経由予約(月)</span>
-          <svg viewBox="0 0 260 74" role="img" aria-label="予約数 月18件から58件へ" style="width:100%;height:auto">
-            <rect x="10" y="10" width="47" height="20" rx="4" fill="#2a4a8a"/>
-            <text x="65" y="25" font-size="12" fill="#1d3461" font-family="Oswald">18件</text>
-            <rect x="10" y="42" width="150" height="20" rx="4" fill="#d9b36a"/>
-            <text x="168" y="57" font-size="12" fill="#8a6a20" font-family="Oswald" font-weight="600">58件 ×3.2</text>
-          </svg>
-        </div>
-        <div class="body">
-          <p class="ind">飲食店|大阪市内2店舗</p>
-          <h3>Googleマップ経由の予約が、3.2倍に。</h3>
-          <dl>
-            <div><dt>課題</dt><dd>検索でもマップでも競合に埋もれ、新規はポータル依存で手数料が重い。</dd></div>
-            <div><dt>施策</dt><dd>MEO対策+口コミ運用を設計。補助金でHP・予約導線もリニューアル。</dd></div>
-          </dl>
-          <div class="ba">
-            <div class="a"><div class="lbl">BEFORE</div><div class="val">月18件</div></div>
-            <div class="arrow" aria-hidden="true">→</div>
-            <div class="b"><div class="lbl">AFTER</div><div class="val">月58件</div></div>
-          </div>
+        <p class="ind">飲食店|大阪市内2店舗・マップ経由予約(月)</p>
+        <h3>Googleマップ経由の予約が、3.2倍に。</h3>
+        <dl>
+          <div><dt>課題</dt><dd>検索でもマップでも競合に埋もれ、新規はポータル依存で手数料が重い。</dd></div>
+          <div><dt>施策</dt><dd>MEO対策+口コミ運用を設計。補助金でHP・予約導線もリニューアル。</dd></div>
+        </dl>
+        <div class="ba" role="img" aria-label="予約数 月18件から58件へ">
+          <div class="a"><div class="lbl">導入前</div><div class="val">月18件</div></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="b"><div class="lbl">導入後</div><div class="val">月58件</div></div>
         </div>
       </article>
       <article class="case">
-        <div class="visual">
-          <span class="cno">CASE 03 — AI検索経由の相談(月)</span>
-          <svg viewBox="0 0 260 74" role="img" aria-label="AI検索経由相談 0件から月4件へ" style="width:100%;height:auto">
-            <rect x="10" y="10" width="6" height="20" rx="3" fill="#2a4a8a"/>
-            <text x="24" y="25" font-size="12" fill="#1d3461" font-family="Oswald">0件</text>
-            <rect x="10" y="42" width="120" height="20" rx="4" fill="#d9b36a"/>
-            <text x="138" y="57" font-size="12" fill="#8a6a20" font-family="Oswald" font-weight="600">月4件 NEW</text>
-          </svg>
-        </div>
-        <div class="body">
-          <p class="ind">士業事務所|従業員5名</p>
-          <h3>「ChatGPTで検索したら出てきた」で新規契約。</h3>
-          <dl>
-            <div><dt>課題</dt><dd>紹介依存で新規獲得が頭打ち。AI検索時代の露出がゼロだった。</dd></div>
-            <div><dt>施策</dt><dd>AIOサイト診断→構造化データ・FAQ・llms.txt整備で被引用を獲得。</dd></div>
-          </dl>
-          <div class="ba">
-            <div class="a"><div class="lbl">BEFORE</div><div class="val">AI経由 0件</div></div>
-            <div class="arrow" aria-hidden="true">→</div>
-            <div class="b"><div class="lbl">AFTER</div><div class="val">月4件</div></div>
-          </div>
+        <p class="ind">士業事務所|従業員5名・AI検索経由の相談(月)</p>
+        <h3>「ChatGPTで検索したら出てきた」で新規契約。</h3>
+        <dl>
+          <div><dt>課題</dt><dd>紹介依存で新規獲得が頭打ち。AI検索時代の露出がゼロだった。</dd></div>
+          <div><dt>施策</dt><dd>AIOサイト診断→構造化データ・FAQ・llms.txt整備で被引用を獲得。</dd></div>
+        </dl>
+        <div class="ba" role="img" aria-label="AI検索経由相談 0件から月4件へ">
+          <div class="a"><div class="lbl">導入前</div><div class="val">AI経由 0件</div></div>
+          <div class="arrow" aria-hidden="true">→</div>
+          <div class="b"><div class="lbl">導入後</div><div class="val">月4件</div></div>
         </div>
       </article>
     </div>
     <p class="case-note">※上記は当社の支援事例に基づきます(掲載許諾済み)。成果は業種・体制により変動します。</p>
   </div>
 </section>
-<!-- ========== 12. 選ばれる理由 Why Us ========== -->
-<section id="why" style="background:var(--bg2)">
-  <div class="wrap rev">
-    <p class="kicker">Why Us</p>
-    <h2>なぜ、<span class="accent">この会社</span>に頼むのか</h2>
-    <figure class="photo banner-photo">
-      <img src="/assets/img/meeting-jp.webp" alt="導入支援チームの打ち合わせ風景のイメージ" width="1280" height="853" loading="lazy">
-      <figcaption>打ち合わせ風景(写真はイメージです)</figcaption>
-    </figure>
-    <div class="why">
-      <div>
-        <div class="donut-wrap"><p><b>差し戻しの失敗を、全部チェックリストに。</b><br>申請で差し戻されやすい箇所を一覧にし、提出前に1つずつ確かめます。</p></div>
-        <div class="profile">
-          <div class="ph" style="aspect-ratio:2/3"><img src="/assets/img/ceo.webp" alt="セブンセンシズ株式会社 代表取締役 原口優" width="400" height="600" loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:12px"><!-- 公式サイト(7senses.co.jp/company)掲載の代表写真 --></div>
-          <h3>原口 優</h3>
-          <p class="role">セブンセンシズ株式会社 代表取締役</p>
-          <p>大阪・東成区を拠点に、デジタルマーケティングとAI導入支援を展開。</p>
-          <p style="margin-top:10px;font-size:12.5px;color:var(--dim)">正直に言うと、当社も最初の申請支援では書類の差し戻しを経験しました。その失敗をチェックリスト化し、提出前の確認に使っています。</p>
+
+<!-- ========== 4. 料金と進め方 ========== -->
+<section class="sec is-sheet" id="services">
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <span id="pricing" style="position:relative;top:-90px"></span>
+      <p class="ch">料金と進め方</p>
+      <h2>4つのサービスで、<br class="sp">申請から集客まで。</h2>
+      <p class="lead">補助金申請だけの士業でも、開発だけのベンダーでもありません。<span class="em-marker">「補助金で導入して、成果が出るまで運用する」</span>を1本の線でつなぎます。</p>
+    </div>
+    <div class="sec-body">
+      <ul class="svc-list">
+        <li><a class="svc" href="/service/hojokin/">
+          <div><h3>AI導入補助金 申請サポート</h3><p>GビズID取得から電子申請の同席、採択後の実績報告まで8ステップを完全伴走。</p></div>
+          <ul><li>GビズID取得から実績報告まで8ステップを伴走</li><li>事前準備は合計1.5〜3時間</li><li>申請から着金まで約2〜3ヶ月</li></ul>
+          <div class="price"><b>相談無料</b><small>報酬は要見積</small><span class="more">詳細を見る</span></div>
+        </a></li>
+        <li><a class="svc" href="/service/dev/">
+          <div><h3>システム開発・AI導入</h3><p>見積・請求・受発注のエクセル脱却と、ChatGPT等の生成AI活用を補助金で実現。</p></div>
+          <ul><li>会計・受発注・業務システム</li><li>補助対象ツールとして設計</li><li>生成AIの業務組み込みに対応</li></ul>
+          <div class="price"><b>個別お見積り</b><small>要件を伺って概算をご提示</small><span class="more">詳細を見る</span></div>
+        </a></li>
+        <li><a class="svc" href="/service/aio/">
+          <div><h3>AIOコンサルティング</h3><p>ChatGPT・Perplexity・AI Overviewに「引用される」サイトへ。当サイト自体が実験場。</p></div>
+          <ul><li>AIOサイト診断(5軸スコア)</li><li>llms.txt・構造化データ実装</li><li>月次の露出レポート</li></ul>
+          <div class="price"><b>個別お見積り</b><small>現状を伺ってご提案</small><span class="more">詳細を見る</span></div>
+        </a></li>
+        <li><a class="svc" href="/service/meo/">
+          <div><h3>MEOコンサルティング</h3><p>Googleマップ「地域名+業種」で上位表示。大阪でMEO事業「G-ran」を運営する実働ノウハウ。</p></div>
+          <ul><li>ビジネスプロフィール最適化</li><li>口コミ獲得・返信の運用設計</li><li>来店・問合せの計測レポート</li></ul>
+          <div class="price"><b>個別お見積り</b><small>店舗数・商圏に応じて</small><span class="more">詳細を見る</span></div>
+        </a></li>
+      </ul>
+      <p class="table-note" style="margin-top:12px">※費用は内容により変わります。お見積りは無料相談でご提示します。</p>
+      <!-- 補助金要項ページへの導線(対象条件・必要書類は /youkou/ に集約) -->
+      <div class="youkou-link">
+        <div>
+          <p class="t">AI導入補助金の要項・必要書類を確認する</p>
+          <p class="d">対象になる事業者(4つの条件)・補助額・必要書類・スケジュール・採択後の義務まで、1ページに整理しています。</p>
         </div>
-      </div>
-      <div class="reasons">
-        <div class="reason"><span class="no">01</span>
-          <div><h3>申請だけで終わらない、一気通貫の伴走</h3>
-          <p>士業は申請まで、ベンダーは納品まで。当社は<span class="em-marker">申請の伴走→開発→集客(AIO/MEO)→実績報告まで1社で完結</span>するので、「導入したのに使われないシステム」が生まれません。</p></div>
-        </div>
-        <div class="reason"><span class="no">02</span>
-          <div><h3>AIOを「自社で実践」している数少ない会社</h3>
-          <p>地味ですが、これが最大の証拠です。<span class="em-marker">本サイト自体がAI検索最適化の実験場</span>(llms.txt・構造化データ・被引用設計を実装済み)。自社でやっていない施策は、お客様に売りません。</p></div>
-        </div>
-        <div class="reason"><span class="no">03</span>
-          <div><h3>大阪拠点・全国オンライン対応</h3>
-          <p>初回打ち合わせから電子申請の同席まで<span class="em-marker">Zoomで完結</span>。関西圏は訪問対応も可能です。申請から着金まで約2〜3ヶ月、各フェーズの進捗を必ず数字で報告します。</p></div>
-        </div>
+        <a class="btn btn-ghost" href="/youkou/" data-cta="youkou_link">補助金要項を見る</a>
       </div>
     </div>
-    <div id="company" class="company-block">
-      <h3 class="sub-h">運営会社</h3>
-    <div class="company-grid">
-      <div class="table-scroll" style="margin-top:0">
-        <table class="data">
-          <tbody>
-            <tr><th style="width:32%">社名</th><td>セブンセンシズ株式会社(SEVEN SENSES Inc.)</td></tr>
-            <tr><th>代表者</th><td>代表取締役 原口 優</td></tr>
-            <tr><th>所在地</th><td>〒537-0003<br>大阪府大阪市東成区神路1丁目7-4 コンフォートビル901・902</td></tr>
-            <tr><th>連絡先</th><td>TEL: 06-4305-7547(9:00〜20:00 土日祝休)/Mail: <a href="mailto:info.ai@7senses.co.jp">info.ai@7senses.co.jp</a></td></tr>
-            <tr><th>関連サイト</th><td><a href="https://corp.7senses.co.jp/" target="_blank" rel="noopener">コーポレートサイト</a>/<a href="https://ai.7senses.co.jp/" target="_blank" rel="noopener">AI集客ラボ(運営メディア)</a></td></tr>
-            <tr><th>事業内容</th><td>デジタル化・AI導入補助金 申請サポート/システム開発・AI導入支援/AIOコンサルティング/MEOコンサルティング(G-ran)/HP・LP制作</td></tr>
-            <tr><th>対応エリア</th><td>全国(オンライン完結)/関西圏は訪問対応可</td></tr>
-          </tbody>
-        </table>
-        <p class="table-note">※設立年・資本金などの詳細はコーポレートサイトをご覧ください。</p>
-      </div>
-      <div class="company-visual">
-        <div class="cv-photo"><img src="/assets/img/building.webp" alt="オフィスビル群のイメージ" width="1280" height="853" loading="lazy"></div>
-        <img src="/assets/img/logo-w.webp" alt="SEVEN SENSES セブンセンシズ株式会社" width="700" height="348" loading="lazy" style="height:64px;width:auto;margin-bottom:16px;position:relative;z-index:1">
-        <p>デジタルマーケティングとAI導入支援のスペシャリスト集団。MEO・AIO領域で培った知見を活かし、補助金申請から成果創出まで一気通貫で伴走します。</p>
-        </div>
-      </div>
-    </div>
-    </div>
+  </div>
 </section>
-<!-- ========== 15. 会社概要 ========== -->
-<!-- ========== 13. ご利用の流れ ========== -->
-<section id="flow" style="background:var(--bg2);padding-top:0">
-  <div class="wrap rev">
-    <p class="kicker">Flow</p>
-    <h2>ご相談から<span class="accent">申請</span>までの流れ</h2>
-    <p class="lead">申請の手続きはお客様ご自身が行い、当社は各段階の相談・確認・助言で伴走します。お客様がすること（上の段）と、当社がすること（下の段）を分けて示します。</p>
-    <style>
-    /* ご相談から申請までの流れ（お客様と当社の役割）。CSS だけで描く。パソコンは5段階×2レーン、スマホは段階ごとに縦に並べる */
-    .roles{display:grid;grid-template-columns:112px repeat(5,minmax(0,1fr));grid-template-rows:auto auto auto;grid-auto-flow:column;gap:10px;margin:30px 0 0}
-    .rl-lane{display:flex;flex-direction:column;justify-content:center;font-weight:700;font-size:15px;line-height:1.5;padding-right:4px}
-    .rl-lane small{font-weight:500;font-size:12px;color:var(--muted)}
-    .rl-lane.is-you{color:var(--navy)}
-    .rl-lane.is-us{color:var(--gold-em)}
-    .rl-ph{display:flex;align-items:center;gap:8px;min-height:54px;padding:8px 22px 8px 16px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;line-height:1.45;clip-path:polygon(0 0,calc(100% - 13px) 0,100% 50%,calc(100% - 13px) 100%,0 100%,13px 50%)}
-    .rl-ph b{font-family:var(--num);font-weight:600;font-size:16px;color:var(--gold-soft)}
-    .rl-ph.is-key{background:var(--navy2)}
-    .rl-you,.rl-us{display:block;padding:14px 14px 15px;border-radius:10px;font-size:14px;line-height:1.75;color:var(--text)}
-    .rl-you{background:#fff;border:1px solid var(--line);border-top:4px solid var(--navy2);box-shadow:var(--shadow)}
-    .rl-us{background:#f8f2e2;border:1px dashed rgba(176,139,62,.65)}
-    .rl-you.is-key{background:var(--navy);border-color:var(--navy);color:#fff}
-    .rl-you em{display:table;font-style:normal;font-size:12px;font-weight:700;background:var(--gold-soft);color:var(--gold-ink);border-radius:999px;padding:2px 10px;margin-bottom:6px}
-    .rl-you::before,.rl-us::before{display:none}
-    .roles-fig{margin:0}
-    .roles-fig figcaption{margin-top:18px;padding:16px 18px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold-soft);border-radius:10px;font-size:14.5px;line-height:1.9;color:var(--text)}
-    .roles-fig figcaption b{color:var(--navy)}
-    @media(max-width:860px){
-      .roles{display:block;margin-top:24px}
-      .rl-corner,.rl-lane{display:none}
-      .rl-ph{clip-path:none;border-radius:10px;margin-top:18px;min-height:0;padding:10px 14px}
-      .rl-ph:nth-child(4){margin-top:0}
-      .rl-you,.rl-us{margin-top:8px}
-      .rl-you::before,.rl-us::before{display:block;font-size:12px;font-weight:700;letter-spacing:.06em;margin-bottom:2px}
-      .rl-you::before{content:"お客様";color:var(--navy2)}
-      .rl-us::before{content:"当社";color:var(--gold-em)}
-      .rl-you.is-key::before{color:var(--gold-soft)}
-    }
-    </style>
+
+<section class="sec sec-wide is-sheet" id="flow" style="border-top:0;padding-top:24px">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>ご相談から申請までの流れ</h2>
+      <p class="lead">申請の手続きはお客様ご自身が行い、当社は各段階の相談・確認・助言で伴走します。お客様がすること（上の段）と、当社がすること（下の段）を分けて示します。</p>
+    </div>
     <figure class="roles-fig">
     <div class="roles" role="img" aria-label="ご相談から申請までの流れを、お客様と当社の役割に分けた図。1 ご相談・対象の確認: お客様が相談を申し込み、当社はZoomで約60分、対象になるかと進め方を回答。2 事前準備: お客様がGビズIDプライムの取得や書類の準備を進め、当社は手順書と助言。3 交付申請: お客様が申請マイページで入力し、ご自身で提出。当社は内容の確認と助言のみで、提出の代行はしない。4 交付決定・導入: お客様は交付決定の後に契約・支払い、当社はシステムの導入と研修。5 実績報告・入金: お客様が実績報告を出して補助金を受け取り、当社は確認と助言。">
       <span class="rl-corner"></span>
       <span class="rl-lane is-you">お客様<small>手続きをする</small></span>
       <span class="rl-lane is-us">当社<small>相談・助言・伴走</small></span>
-      <span class="rl-ph"><b>01</b>ご相談・対象の確認</span>
+      <span class="rl-ph"><b>1</b>ご相談・対象の確認</span>
       <span class="rl-you">無料相談を申し込み、事業の状況と導入したいことを伝える</span>
       <span class="rl-us">Zoomで約60分。対象になるか・補助額の概算・進め方をその場で回答</span>
-      <span class="rl-ph"><b>02</b>事前準備</span>
+      <span class="rl-ph"><b>2</b>事前準備</span>
       <span class="rl-you">GビズIDプライムの取得、必要書類の準備、SECURITY ACTIONの宣言を進める</span>
       <span class="rl-us">段取り表と手順書を用意し、つまずいた所は画面共有で助言</span>
-      <span class="rl-ph is-key"><b>03</b>交付申請</span>
+      <span class="rl-ph is-key"><b>3</b>交付申請</span>
       <span class="rl-you is-key"><em>提出はお客様</em>申請マイページで入力し、ご自身で提出する</span>
       <span class="rl-us">入力した内容を一緒に確かめ、助言する（提出の代行はしません）</span>
-      <span class="rl-ph"><b>04</b>交付決定・導入</span>
+      <span class="rl-ph"><b>4</b>交付決定・導入</span>
       <span class="rl-you">交付決定の後に契約・お支払い（決定前の契約は補助の対象外）</span>
       <span class="rl-us">システムの導入と操作の研修</span>
-      <span class="rl-ph"><b>05</b>実績報告・入金</span>
+      <span class="rl-ph"><b>5</b>実績報告・入金</span>
       <span class="rl-you">実績報告を提出し、補助金を受け取る（補助金は後払い）</span>
       <span class="rl-us">期限内に出せるよう、内容の確認と助言</span>
     </div>
@@ -1029,144 +1002,16 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
     </figure>
   </div>
 </section>
-<!-- 回答はJSON-LDのFAQPageと完全一致(40〜60字・AIO引用最適) -->
-<section id="services" style="background:var(--bg2);padding-top:88px">
-  <div class="wrap rev">
-    <span id="pricing" style="position:relative;top:-70px"></span>
-    <p class="kicker">Service &amp; Price</p>
-    <h2>4つのサービスで、<br class="sp"><span class="accent">申請から集客まで。</span></h2>
-    <p class="lead">補助金申請だけの士業でも、開発だけのベンダーでもありません。<span class="em-marker">「補助金で導入して、成果が出るまで運用する」</span>を1本の線でつなぎます。カードをクリックすると各サービスの詳細へ。</p>
-    <div class="svc-grid">
-      <a class="svc-card" href="/service/hojokin/">
-        <div class="sc-photo"><img src="/assets/img/handshake.webp" alt="補助金申請サポート" width="1280" height="855" loading="lazy"><span class="sc-tag">01|補助金申請</span></div>
-        <div class="sc-body">
-          <h3>AI導入補助金 申請サポート</h3>
-          <p>GビズID取得から電子申請の同席、採択後の実績報告まで8ステップを完全伴走。</p>
-          <ul><li>GビズID取得から実績報告まで8ステップを伴走</li><li>事前準備は合計1.5〜3時間</li><li>申請から着金まで約2〜3ヶ月</li></ul>
-          <div class="sc-foot"><span class="sc-price">相談無料<small> 報酬は要見積</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-      <a class="svc-card" href="/service/dev/">
-        <div class="sc-photo"><img src="/assets/img/code.webp" alt="システム開発・AI導入" width="1200" height="801" loading="lazy"><span class="sc-tag">02|システム開発</span></div>
-        <div class="sc-body">
-          <h3>システム開発・AI導入</h3>
-          <p>見積・請求・受発注のエクセル脱却と、ChatGPT等の生成AI活用を補助金で実現。</p>
-          <ul><li>会計・受発注・業務システム</li><li>補助対象ツールとして設計</li><li>生成AIの業務組み込みに対応</li></ul>
-          <div class="sc-foot"><span class="sc-price">個別お見積り<small> 要件を伺って概算をご提示</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-      <a class="svc-card" href="/service/aio/">
-        <div class="sc-photo"><img src="/assets/img/chip.webp" alt="AIOコンサルティング" width="1200" height="800" loading="lazy"><span class="sc-tag">03|AIO(AI検索対策)</span></div>
-        <div class="sc-body">
-          <h3>AIOコンサルティング</h3>
-          <p>ChatGPT・Perplexity・AI Overviewに「引用される」サイトへ。当サイト自体が実験場。</p>
-          <ul><li>AIOサイト診断(5軸スコア)</li><li>llms.txt・構造化データ実装</li><li>月次の露出レポート</li></ul>
-          <div class="sc-foot"><span class="sc-price">個別お見積り<small> 現状を伺ってご提案</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-      <a class="svc-card" href="/service/meo/">
-        <div class="sc-photo"><img src="/assets/img/osaka.webp" alt="MEOコンサルティング" width="800" height="1200" loading="lazy"><span class="sc-tag">04|MEO(マップ集客)</span></div>
-        <div class="sc-body">
-          <h3>MEOコンサルティング</h3>
-          <p>Googleマップ「地域名+業種」で上位表示。大阪でMEO事業「G-ran」を運営する実働ノウハウ。</p>
-          <ul><li>ビジネスプロフィール最適化</li><li>口コミ獲得・返信の運用設計</li><li>来店・問合せの計測レポート</li></ul>
-          <div class="sc-foot"><span class="sc-price">個別お見積り<small> 店舗数・商圏に応じて</small></span><span class="sc-more">詳細を見る →</span></div>
-        </div>
-      </a>
-    </div>
-    <p class="table-note">※費用は内容により変わります。お見積りは無料相談でご提示します。</p>
 
-    <!-- 補助金要項ページへの導線(対象条件・必要書類は /youkou/ に集約) -->
-    <div style="margin-top:28px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;box-shadow:var(--shadow)">
-      <div>
-        <p style="font-family:var(--serif);font-weight:800;font-size:16.5px;color:var(--navy);margin:0 0 4px">AI導入補助金の<span class="accent">要項・必要書類</span>を確認する</p>
-        <p style="font-size:13px;color:var(--muted);margin:0">対象になる事業者(4つの条件)・補助額・必要書類・スケジュール・採択後の義務まで、1ページに整理しています。</p>
-      </div>
-      <a class="btn btn-ghost" href="/youkou/" data-cta="youkou_link" style="flex:none">補助金要項を見る →</a>
+<!-- ========== 5. 相談 ========== -->
+<!-- 回答はJSON-LDのFAQPageと完全一致(40〜60字・AIO引用最適) -->
+<section class="sec" id="faq">
+  <div class="wrap sec-grid">
+    <div class="sec-head">
+      <p class="ch">相談する</p>
+      <h2>よくあるご質問</h2>
     </div>
-  </div>
-</section>
-<!-- ========== 08. 無料診断 ========== -->
-<section id="diagnosis">
-  <div class="wrap rev">
-    <p class="kicker">Free Check</p>
-    <h2><span class="accent">3分</span>でわかる。<br class="sp">4つの無料診断</h2>
-    <p class="lead" style="max-width:880px">補助金・Webサイト・MEO・AI活用の<span class="em-marker">全サービスカテゴリを無料診断</span>。補助金・MEO・AI活用は質問に答えるだけで、5軸レーダーと判定・処方箋をその場で表示します。Webサイトは、URLを入れると当社が運営するAI集客ラボの無料URL診断で採点します。</p>
-    <div class="diag" id="diagWidget">
-      <div class="diag-tabs" role="tablist" aria-label="診断の種類">
-        <button type="button" class="diag-tab" role="tab" aria-selected="true" id="tabQuiz">補助金適性<span style="font-weight:400">(8問)</span></button>
-        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAudit">Webサイト<span style="font-weight:400">(URL)</span></button>
-        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabMeo">MEO集客<span style="font-weight:400">(6問)</span></button>
-        <button type="button" class="diag-tab" role="tab" aria-selected="false" id="tabAi">AI活用<span style="font-weight:400">(6問)</span></button>
-      </div>
-      <div class="diag-head"><span class="t" id="diagTitle">HOJOKIN FIT CHECK</span><span id="diagStep" style="font-size:12px;color:var(--dim)">Q1 / 8</span></div>
-      <div class="diag-prog" aria-hidden="true"><i id="diagBar"></i></div>
-      <div class="diag-body" id="diagBody" aria-live="polite"><!-- JSで描画 --></div>
-    </div>
-    <aside style="max-width:880px;margin:28px auto 0;padding:18px 22px;border:1px solid rgba(19,36,69,.14);border-radius:14px;background:#fff;text-align:left;font-size:14px;line-height:1.9"><b style="display:block;font-size:15px;color:#132445">AIに、御社はどう紹介されていますか？</b>地域と業種を入れると、AIに「地域名＋業種 おすすめ」など3つの質問をして、答えの出典に御社のサイトや社名が出ているかを確かめます（無料）。 <a href="https://ai.7senses.co.jp/tools/ai-check/?src=lp_subsidy&amp;from=top" target="_blank" rel="noopener" data-cta="subsidy_aicheck_top" style="font-weight:700">無料でチェックする</a></aside>
-  </div>
-</section>
-<!-- AIに聞いた調査の要点（scripts/subsidy/research.py の put_top が配信のたびに入れ直す。手で書かない） -->
-<!--research:top-->
-<section id="research" class="rs" aria-labelledby="rs-h" style="background:var(--bg2)">
-<style>
-#research .rs-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;margin-top:30px}
-@media(max-width:860px){#research .rs-grid{grid-template-columns:1fr}}
-#research .rs-card{margin:0;min-width:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px 24px 20px;box-shadow:var(--shadow)}
-#research .rs-k{font-size:14px;font-weight:700;color:var(--navy);margin-bottom:12px}
-#research .rs-big{font-family:var(--num);color:var(--navy);line-height:1.1;margin-bottom:14px}
-#research .rs-big b{font-size:52px;font-weight:600;letter-spacing:.02em}
-#research .rs-big small{font-family:var(--sans);font-size:15px;color:var(--muted);margin-left:6px}
-#research .rs-cells{display:grid;grid-template-columns:repeat(20,1fr);gap:3px;max-width:420px}
-#research .rs-cells i{display:block;height:26px;border-radius:4px;background:#ebe5d6}
-#research .rs-cells i.is-split{background:var(--navy2)}
-#research .rs-key{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:10px;font-size:13px;color:var(--muted)}
-#research .rs-key span::before{content:"";display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:#ebe5d6}
-#research .rs-key span.is-split::before{background:var(--navy2)}
-#research .rs-bars{list-style:none;margin:0;padding:0;display:grid;gap:12px}
-#research .rs-bars li{display:grid;grid-template-columns:1fr auto;gap:4px 12px;align-items:baseline;font-size:14px}
-#research .rs-l{color:var(--text)}
-#research .rs-v{font-family:var(--num);font-size:17px;color:var(--text);white-space:nowrap}
-#research .rs-v small{font-family:var(--sans);font-size:12.5px;color:var(--muted);margin-left:2px}
-#research .rs-t{grid-column:1/-1;display:block;height:12px;border-radius:6px;background:#f1ece0;overflow:hidden}
-#research .rs-t span{display:block;height:100%;min-width:3px;border-radius:6px;background:#c9bfa6}
-#research li.is-em .rs-l{font-weight:700;color:var(--navy)}
-#research li.is-em .rs-t span{background:var(--navy2)}
-#research figcaption{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:14px;color:var(--muted);line-height:1.8}
-#research .rs-note{margin-top:22px;font-size:14px;color:var(--muted);max-width:860px}
-#research .rs-cta{margin-top:18px}
-</style>
-  <div class="wrap rev">
-    <p class="kicker">Research</p>
-    <h2 id="rs-h">補助金をAIに聞くと、<br class="sp"><span class="accent">答えは割れます</span></h2>
-    <p class="lead">当社が2026年10月4日にChatGPT・Claudeへ、補助金について読者が聞きそうな問いを20問聞き、AIの結論と、根拠にしたページを数えました（当社調べ）。</p>
-    <div class="rs-grid">
-      <figure class="rs-card">
-        <p class="rs-k">AIどうしで結論が分かれた問い</p>
-        <div role="img" aria-label="調べた20問のうち4問で、ChatGPT・Claudeの結論が分かれました。残りの16問は結論が同じでした。">
-          <p class="rs-big"><b>4</b>問<small>／20問中</small></p>
-          <div class="rs-cells"><i class="is-split"></i><i class="is-split"></i><i class="is-split"></i><i class="is-split"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div>
-          <p class="rs-key"><span class="is-split">結論が分かれた 4問</span><span>結論が同じ 16問</span></p>
-        </div>
-        <figcaption>調べた20問のうち4問で、ChatGPT・Claudeの結論が分かれました。残りの16問は結論が同じでした。</figcaption>
-      </figure>
-      <figure class="rs-card">
-        <p class="rs-k">AIが根拠にしたページの種類（226件）</p>
-        <ol class="rs-bars" role="img" aria-label="AIが根拠にしたページ226件のうち、公的機関のページは51件（22%）、民間のサイトは173件（76%）でした。"><li class=""><span class="rs-l">民間のサイト</span><span class="rs-v">173件<small>（76%）</small></span><span class="rs-t"><span style="width:76.5%"></span></span></li><li class="is-em"><span class="rs-l">公的機関（go.jp など）</span><span class="rs-v">51件<small>（22%）</small></span><span class="rs-t"><span style="width:22.6%"></span></span></li><li class=""><span class="rs-l">報道・SNS・動画</span><span class="rs-v">2件<small>（1%未満）</small></span><span class="rs-t"><span style="width:0.9%"></span></span></li></ol>
-        <figcaption>AIが根拠にしたページ226件のうち、公的機関のページは51件（22%）、民間のサイトは173件（76%）でした。</figcaption>
-      </figure>
-    </div>
-    <p class="rs-note">AIの答えは、申請の可否を決める根拠になりません。補助の対象・金額・締切は、公募要領と事務局のページで確かめてください。調べた日は2026年10月4日で、その日の1回の結果です。</p>
-    <p class="rs-cta"><a class="btn btn-ghost" href="/research/ai-hojokin/" data-cta="top_research">問いごとの答えと根拠を見る</a></p>
-  </div>
-</section>
-<!--/research:top-->
-<!-- ========== 14. ブログ/発信 ========== -->
-<section id="faq">
-  <div class="wrap rev">
-    <p class="kicker">FAQ</p>
-    <h2>よくあるご質問</h2>
-    <div class="faq">
+    <div class="sec-body faq">
       <details><summary>AI導入補助金とはどんな制度ですか?</summary><p class="a">AIツールやITシステムの導入費を国が補助する「デジタル化・AI導入補助金」(2026年度に「IT導入補助金」から改称)の通称で、令和8年度の上限は350万円です。</p></details>
       <details><summary>費用はいくらかかりますか?</summary><p class="a">相談・診断・申請可否の確認まで無料です。導入費用は補助金適用後の自己負担額をお見積りで事前にご提示します。</p></details>
       <details><summary>申請から着金までどのくらいかかりますか?</summary><p class="a">お申し込みから補助金の着金まで約2〜3ヶ月が目安です。合格発表は申請後約1ヶ月です。</p></details>
@@ -1177,33 +1022,34 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
     </div>
   </div>
 </section>
-<!-- ========== 18. 大型フォーム→クロージング ========== -->
-<section id="contact" class="contact">
-  <div class="wrap rev">
-    <p class="kicker">Contact</p>
-    <h2>無料相談・資料請求</h2>
-    <div class="contact-grid">
-      <div class="contact-copy">
-        <h3>まずは<span class="cg">「対象かどうか」</span>だけ、<br>無料で確かめませんか。</h3>
-        <p>相談したからといって申し込む必要はありません。応募要項に合わないと分かれば、その場で正直にお伝えします。<br>ご相談内容が固まっていなくても構いません。「対象になるか知りたい」だけでもお受けしています。</p>
-        <ul class="promise">
-          <li>3営業日以内にメールで返信します</li>
-          <li>営業電話はいたしません</li>
-          <li>相談・診断・適合確認まで完全無料</li>
-          <li>秘密保持:ご相談内容は社外に出しません</li>
-        </ul>
-        <div class="tel-box">
-          <p class="tb-t">お急ぎの方は、お電話でどうぞ</p>
-          <a class="tb-num" href="tel:0643057547" data-cta="tel_contact">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a13 13 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-            06-4305-7547
-          </a>
-          <p class="tb-h">受付 9:00〜20:00(土日祝休)</p>
-          <p class="tb-note">※お電話の際は<b>「AI導入補助金のページ(LP)を見た」</b>と、ご要件をお伝えいただくとご案内がスムーズです。</p>
-          <p class="tb-t" style="margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.18)">メールでのお問い合わせ</p>
-          <a class="tb-num" href="mailto:info.ai@7senses.co.jp" data-cta="mail_contact" style="font-size:17px;letter-spacing:.02em">info.ai@7senses.co.jp</a>
-        </div><!-- /.tel-box -->
-      </div><!-- /.contact-copy -->
+
+<section class="sec contact" id="contact">
+  <div class="wrap sec-grid">
+    <div class="sec-head contact-copy">
+      <h2>無料相談・資料請求</h2>
+      <h3>まずは「対象かどうか」だけ、<br>無料で確かめませんか。</h3>
+      <p>相談したからといって申し込む必要はありません。応募要項に合わないと分かれば、その場で正直にお伝えします。<br>ご相談内容が固まっていなくても構いません。「対象になるか知りたい」だけでもお受けしています。</p>
+      <ul class="promise">
+        <li>3営業日以内にメールで返信します</li>
+        <li>営業電話はいたしません</li>
+        <li>相談・診断・適合確認まで完全無料</li>
+        <li>秘密保持:ご相談内容は社外に出しません</li>
+      </ul>
+      <div class="tel-box">
+        <p class="tb-t">お急ぎの方は、お電話でどうぞ</p>
+        <a class="tb-num" href="tel:0643057547" data-cta="tel_contact">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a13 13 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          06-4305-7547
+        </a>
+        <p class="tb-h">受付 9:00〜20:00(土日祝休)</p>
+        <p class="tb-note">※お電話の際は<b>「AI導入補助金のページ(LP)を見た」</b>と、ご要件をお伝えいただくとご案内がスムーズです。</p>
+        <div class="tb-mail">
+          <p class="tb-t">メールでのお問い合わせ</p>
+          <a class="tb-num" href="mailto:info.ai@7senses.co.jp" data-cta="mail_contact">info.ai@7senses.co.jp</a>
+        </div>
+      </div><!-- /.tel-box -->
+    </div><!-- /.contact-copy -->
+    <div class="sec-body">
       <div class="form-card">
         <form id="contactForm" novalidate>
           <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required><p class="err">お名前を入力してください</p></div>
@@ -1227,15 +1073,15 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
           <div class="hp" aria-hidden="true"><label>このフィールドは空のままにしてください<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
           <input type="hidden" name="ts" id="f-ts">
           <label class="agree" id="agreeWrap"><input type="checkbox" id="f-agree" name="agree" required><span><a href="/privacy/" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する</span></label>
-          <div class="trust-chips"><span>✓ 相談・診断は無料</span><span>✓ 営業電話なし</span><span>✓ 3営業日以内に返信</span></div>
+          <div class="trust-chips"><span>相談・診断は無料</span><span>営業電話なし</span><span>3営業日以内に返信</span></div>
           <p class="send-err" id="formErr" role="alert" hidden></p>
           <button class="btn btn-primary btn-block" type="submit" id="submitBtn" data-cta="form_submit">無料相談を申し込む(現状分析レポート付き)</button>
-          <span class="micro" style="text-align:center">いただいた情報は相談対応の目的以外には使用しません。</span>
+          <span class="micro">いただいた情報は相談対応の目的以外には使用しません。</span>
         </form>
-        <div id="formDone" hidden tabindex="-1" style="text-align:center;padding:30px 0">
-          <p style="font-family:var(--serif);font-size:22px;font-weight:800;margin-bottom:12px;color:var(--navy)">送信ありがとうございました。</p>
-          <p style="color:var(--muted);font-size:15px;margin-bottom:26px">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+        <div id="formDone" class="form-done" hidden tabindex="-1">
+          <p class="t">送信ありがとうございました。</p>
+          <p class="d">3営業日以内に担当よりメールでご連絡します。<br>お待ちの間、こちらもどうぞ。</p>
+          <div class="row">
             <a class="btn btn-ghost" href="#diagnosis" data-cta="done_diag">無料診断を試す</a>
             <a class="btn btn-ghost" href="/blog/" data-cta="done_blog">ブログを読む</a>
           </div>
@@ -1244,18 +1090,20 @@ figure.ph-band figcaption{font-size:12px;color:#6b7280}
     </div>
   </div>
 </section>
-<!-- ========== 06. 解決策=サービス概要 ========== -->
-<section id="blog" style="background:var(--bg2)">
-  <div class="wrap rev">
-    <p class="kicker">Blog — 毎日更新</p>
-    <h2>AI導入補助金の<br class="sp">最新ノウハウを毎日発信</h2>
-    <p class="lead">申請の実務から採択のコツ・必要書類まで、支援の現場で得た一次情報を毎日更新しています。</p>
+
+<!-- ========== 記事 ========== -->
+<section class="sec sec-wide" id="blog">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>AI導入補助金の<br class="sp">最新ノウハウを毎日発信</h2>
+      <p class="lead">申請の実務から採択のコツ・必要書類まで、支援の現場で得た一次情報を毎日更新しています。</p>
+    </div>
     <div class="blog-grid"><!--latest-->
       <a class="post" href="/blog/it-hojokin-seitaiin/"><div class="th"><img src="/images/blog/it-hojokin-seitaiin/thumbnail.webp" alt="整体院はIT導入補助金を使える？対象になる3つのツールと締切のイメージ" width="1200" height="630" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>整体院はIT導入補助金を使える？対象になる3つのツールと締切</h3><time datetime="2026-10-18">2026.10.18</time></div></a>
       <a class="post" href="/blog/fudousan-kaisha-joseikin/"><div class="th"><img src="/images/blog/fudousan-kaisha-joseikin/thumbnail.webp" alt="不動産会社が使える助成金は？補助金を含む4制度と今年の締切のイメージ" width="1200" height="630" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>不動産会社が使える助成金は？補助金を含む4制度と今年の締切</h3><time datetime="2026-10-17">2026.10.17</time></div></a>
       <a class="post" href="/blog/nogyo-hojokin-hensai-fuyou/"><div class="th"><img src="/images/blog/nogyo-hojokin-hensai-fuyou/thumbnail.webp" alt="農業の補助金は返済不要？返還を求められる5つの場面のイメージ" width="1200" height="630" loading="lazy"></div><div class="pb"><p class="cat">補助金</p><h3>農業の補助金は返済不要？返還を求められる5つの場面</h3><time datetime="2026-10-16">2026.10.16</time></div></a>
     <!--/latest--></div>
-    <div style="text-align:center;margin-top:34px"><a class="btn btn-ghost" href="/blog/" data-cta="blog_more">ブログをもっと読む</a></div>
+    <p class="blog-more"><a class="btn btn-ghost" href="/blog/" data-cta="blog_more">ブログをもっと読む</a></p>
   </div>
 </section>
 </main>
@@ -1335,30 +1183,13 @@ addEventListener("scroll",()=>{
   marks.forEach(m=>{ if(p>=m && !fired.has(m)){ fired.add(m); track("scroll_depth",{percent:m}); }});
 },{passive:true});
 
-/* ---------- 出現アニメーション+数値カウントアップ ---------- */
-const io=new IntersectionObserver(es=>es.forEach(e=>{
-  if(!e.isIntersecting) return;
-  e.target.classList.add("in"); io.unobserve(e.target);
-}),{threshold:.15});
-document.querySelectorAll(".rev").forEach(el=>io.observe(el));
-
-const cio=new IntersectionObserver(es=>es.forEach(e=>{
-  if(!e.isIntersecting) return; cio.unobserve(e.target);
-  const el=e.target, to=+el.dataset.to;
-  if(REDUCED){ el.textContent=to; return; }
-  const t0=performance.now(), dur=1400;
-  (function tick(t){ const k=Math.min((t-t0)/dur,1);
-    el.textContent=Math.round(to*(1-Math.pow(1-k,3)));
-    if(k<1) requestAnimationFrame(tick); })(t0);
-}),{threshold:.6});
-document.querySelectorAll(".count").forEach(el=>cio.observe(el));
 
 /* ============================================================
    無料診断ウィジェット(3種のクイズ+URL診断)
    クイズ: 質問に回答 → リードゲート → 5軸レーダー+判定+処方箋
 ============================================================ */
 const QUIZZES={
- hojokin:{ kind:"hojokin", title:"HOJOKIN FIT CHECK", weight:{yoken:2},
+ hojokin:{ kind:"hojokin", title:"補助金の適性診断", weight:{yoken:2},
   axes:[["yoken","要件適合"],["junbi","申請準備"],["keikaku","導入計画"],["kouka","効果の言語化"],["kigen","スケジュール"]],
   questions:[
    {ax:"yoken", q:"直近の年間売上高はどのくらいですか?",
@@ -1385,7 +1216,7 @@ const QUIZZES={
    C:"現時点では確認すべき条件が複数あります。<b>下位プランでのご案内可否</b>を含めて個別に確認しますので、まずはご相談ください。",
    D:"今すぐの申請はハードルがある可能性があります。ただし<b>準備を始める時期としては最適</b>です。来期に向けた逆算スケジュールをご提案します。"
   }},
- meo:{ kind:"meo", title:"MEO GROWTH CHECK", weight:{},
+ meo:{ kind:"meo", title:"MEO集客の診断", weight:{},
   axes:[["profile","プロフィール整備"],["kuchikomi","口コミ力"],["post","投稿・写真"],["nap","情報の一致"],["kyoso","競合優位"]],
   questions:[
    {ax:"profile", q:"Googleビジネスプロフィールの状態は?",
@@ -1408,7 +1239,7 @@ const QUIZZES={
    C:"一定の運用ができています。<b>競合比較と検索キーワードの見直し</b>で上位表示を狙いましょう。",
    D:"すでに良い運用状態です。現状維持に加えて<b>AI検索(AIO)対応</b>など次の一手をご提案できます。"
   }},
- ai:{ kind:"ai", title:"AI UTILIZATION CHECK", weight:{gyomu:2},
+ ai:{ kind:"ai", title:"AI活用の診断", weight:{gyomu:2},
   axes:[["gyomu","自動化余地"],["data","データ整備"],["tool","AI活用度"],["jinzai","推進体制"],["invest","投資準備"]],
   questions:[
    {ax:"gyomu", q:"毎週くり返す定型作業(転記・集計・書類作成)は合計どのくらい?",
@@ -1439,12 +1270,12 @@ const body=document.getElementById("diagBody"), bar=document.getElementById("dia
 function renderQ(){
   const N=quiz.questions.length;
   const q=quiz.questions[qi];
-  stepLbl.textContent=`Q${qi+1} / ${N}`;
+  stepLbl.textContent=`${qi+1} / ${N}問`;
   bar.style.width=(qi/N*100)+"%";
-  body.innerHTML=`<p class="qnum">QUESTION ${String(qi+1).padStart(2,"0")}</p>
+  body.innerHTML=`<p class="qnum">質問 ${qi+1}</p>
     <p class="qtext">${q.q}</p>
     <div class="opts" role="group">${q.o.map((o,i)=>`<button type="button" class="opt" data-i="${i}">${o[0]}</button>`).join("")}</div>
-    ${qi>0?'<button type="button" class="back">← 前の質問に戻る</button>':""}`;
+    ${qi>0?'<button type="button" class="back">前の質問に戻る</button>':""}`;
   body.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
     answers[qi]=+b.dataset.i;
     qi++; qi<quiz.questions.length?renderQ():renderGate();
@@ -1472,7 +1303,7 @@ function calcGrade(s){
 
 function renderGate(){
   bar.style.width="100%"; stepLbl.textContent="結果表示";
-  body.innerHTML=`<p class="qnum">LAST STEP</p>
+  body.innerHTML=`<p class="qnum">最後に</p>
     <p class="qtext">診断が完了しました。<br>結果の送付先を入力してください。</p>
     <div class="field"><label for="d-name">お名前</label><input id="d-name" type="text" autocomplete="name"><p class="err">お名前を入力してください</p></div>
     <div class="field"><label for="d-email">メールアドレス</label><input id="d-email" type="email" autocomplete="email" inputmode="email"><p class="err">正しいメールアドレスを入力してください</p></div>
@@ -1515,18 +1346,18 @@ function radarSVG(s,axesDef){
   const ring=r=>Array.from({length:N},(_,i)=>pt(i,r).join(",")).join(" ");
   const vals=AX.map(([k],i)=>pt(i,R*(s[k]||0)/100).join(",")).join(" ");
   const labels=AX.map(([k,l],i)=>{const[x,y]=pt(i,R+26);
-    return`<text x="${x}" y="${y}" font-size="11" fill="#5b6472" text-anchor="middle" dominant-baseline="middle" font-family="'Noto Sans JP',sans-serif">${l}</text>`}).join("");
-  return`<svg viewBox="0 0 260 260" role="img" aria-label="5軸レーダーチャート" style="width:100%;max-width:300px;margin:0 auto;display:block">
-    ${[.33,.66,1].map(k=>`<polygon points="${ring(R*k)}" fill="none" stroke="rgba(29,52,97,.14)"/>`).join("")}
-    ${AX.map((_,i)=>{const[x,y]=pt(i,R);return`<line x1="130" y1="130" x2="${x}" y2="${y}" stroke="rgba(29,52,97,.14)"/>`}).join("")}
-    <polygon points="${vals}" fill="rgba(217,179,106,.32)" stroke="#b08b3e" stroke-width="2"/>
+    return`<text x="${x}" y="${y}" font-size="11" fill="#4d5666" text-anchor="middle" dominant-baseline="middle">${l}</text>`}).join("");
+  return`<svg viewBox="-36 -8 332 276" role="img" aria-label="5軸レーダーチャート" style="width:100%;max-width:300px;margin:0 auto;display:block">
+    ${[.33,.66,1].map(k=>`<polygon points="${ring(R*k)}" fill="none" stroke="rgba(26,34,48,.16)"/>`).join("")}
+    ${AX.map((_,i)=>{const[x,y]=pt(i,R);return`<line x1="130" y1="130" x2="${x}" y2="${y}" stroke="rgba(26,34,48,.16)"/>`}).join("")}
+    <polygon points="${vals}" fill="rgba(35,63,124,.18)" stroke="#233f7c" stroke-width="2"/>
     ${labels}</svg>`;
 }
 
 function renderResult(s,grade){
   stepLbl.textContent="診断結果";
   const gradeLabel={hojokin:"補助金活用 適性判定",meo:"MEO集客 優先度判定",ai:"AI活用 効果期待度判定"}[quiz.kind]||"判定";
-  body.innerHTML=`<p class="qnum">RESULT</p>
+  body.innerHTML=`<p class="qnum">診断結果</p>
     <div class="radar-wrap">
       <div>${radarSVG(s,quiz.axes)}</div>
       <div><p class="grade">${grade}<small>${gradeLabel}(5段階)</small></p></div>
@@ -1552,14 +1383,14 @@ const diagTitle=document.getElementById("diagTitle");
 Object.keys(TABS).forEach(m=>TABS[m].addEventListener("click",()=>setDiagMode(m)));
 function setDiagMode(m){
   Object.keys(TABS).forEach(k=>TABS[k].setAttribute("aria-selected",k===m));
-  if(m==="audit"){ diagTitle.textContent="FREE URL CHECK"; renderUrlEntry(); }
+  if(m==="audit"){ diagTitle.textContent="サイトのURL診断"; renderUrlEntry(); }
   else{ quiz=QUIZZES[m]; diagTitle.textContent=quiz.title; qi=0; answers=[]; renderQ(); }
   track("cta_click",{cta_id:"diag_tab_"+m});
 }
 
 function renderUrlEntry(){
   stepLbl.textContent="AI集客ラボ"; bar.style.width="0%";
-  body.innerHTML=`<p class="qnum">FREE URL CHECK</p>
+  body.innerHTML=`<p class="qnum">サイトのURL診断</p>
     <p class="qtext" style="word-break:keep-all">サイトのURLを入れて、<br>AI集客ラボの<wbr>無料URL診断で<wbr>確かめる</p>
     <form id="a-form" action="${URL_CHECK}" method="get" target="_blank" rel="noopener" novalidate>
       <input type="hidden" name="src" value="lp_subsidy"><input type="hidden" name="from" value="top">
