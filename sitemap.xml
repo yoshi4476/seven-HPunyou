@@ -48,8 +48,14 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/category/hojokin/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://lp.7senses.co.jp/blog/it-hojokin-seitaiin/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/it-hojokin-seitaiin/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/fudousan-kaisha-joseikin/</loc>
@@ -1109,10 +1115,10 @@
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-clinic-katsuyou/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-clinic-katsuyou/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-clinic-katsuyou/tool-categories.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-clinic-katsuyou/timing-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ai-hojokin-clinic-katsuyou/flow-steps.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ai-hojokin-clinic-katsuyou/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-kensetsugyou-katsuyou/</loc>
@@ -1256,7 +1262,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/industry/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1326,12 +1332,12 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/ai-hojokin/</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-18</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1351,38 +1357,38 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/hojokin/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/b29d00b8/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/bbcbe660/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/1b7e7599/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/f8d4ea56/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/5903bdb5/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/glossary/</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
 </urlset>
