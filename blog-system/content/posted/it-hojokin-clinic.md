@@ -136,6 +136,8 @@ faq:
 
 契約額別の試算は[AI導入補助金はいくらもらえる？3つの枠の上限額と計算例](https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/)でも紹介しています。
 
+保険医療機関ではない整体院は、賃上げ要件の扱いがクリニックと異なります。違いは[整体院のIT導入補助金で確かめる下限額と締切](/blog/it-hojokin-seitaiin/)で整理しました。
+
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
 ## 個人開業医・医療法人が申請する流れ
