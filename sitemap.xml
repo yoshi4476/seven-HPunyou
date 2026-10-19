@@ -55,10 +55,10 @@
     <loc>https://lp.7senses.co.jp/blog/ryokogaisha-hojokin/</loc>
     <lastmod>2026-10-19</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ryokogaisha-hojokin/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ryokogaisha-hojokin/keito.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ryokogaisha-hojokin/shippai.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/ryokogaisha-hojokin/junbi.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/ryokogaisha-hojokin/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-seitaiin/</loc>
@@ -1084,9 +1084,9 @@
     <loc>https://lp.7senses.co.jp/blog/seicho-kasokuka-hojokin-schedule/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/seicho-kasokuka-hojokin-schedule/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/seicho-kasokuka-hojokin-schedule/flow-schedule.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/seicho-kasokuka-hojokin-schedule/list-checkpoints.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/seicho-kasokuka-hojokin-schedule/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/ai-hojokin-ikura-moraeru/</loc>
