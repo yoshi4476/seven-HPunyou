@@ -147,7 +147,7 @@ e-Taxで取得する際、発行形式を選べる画面でXML形式を選んで
 
 個人事業主の方は[個人事業主の必要書類チェックリスト](https://lp.7senses.co.jp/blog/kojin-jigyonushi-ai-hojokin/)をご覧ください。
 
-GビズIDの取得にかかる日数は[最短2週間の逆算スケジュール](https://lp.7senses.co.jp/blog/gbizid-shutoku/)で確認できます。申請でつまずきやすい点は[失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)にまとめました。
+GビズIDの取得にかかる日数は[最短2週間の逆算スケジュール](https://lp.7senses.co.jp/blog/ai-hojokin-gbizid-shutoku/)で確認できます。申請でつまずきやすい点は[失敗する5つの原因と対策](https://lp.7senses.co.jp/blog/ai-hojokin-shinsei-shippai-yokuaru/)にまとめました。
 
 納税証明書だけを先に完璧にそろえても、他の書類が遅れれば交付申請はできません。全体のチェックリストと合わせて、並行して準備を進めてください。
 
