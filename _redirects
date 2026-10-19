@@ -26,16 +26,16 @@
 /blog/category/dev/ /service/dev/ 301
 
 # 既存記事と同テーマの記事を作ってしまったため統合 (2026-08-03)
-/blog/security-action-futatsuboshi/ /blog/ai-hojokin-security-action-2star/ 301
+/blog/security-action-futatsuboshi/ /blog/ai-hojokin-security-action-hoshi2/ 301
 /blog/ai-hojokin-hissho-shorui-hojin/ /blog/kojin-jigyonushi-ai-hojokin/ 301
 # 重複統合 (2026-08-04): 旧パイプラインが同一テーマを2本作っていた
-/blog/it-hojokin-saitakuritsu-up/ /blog/it-hojokin-saitakuritsu/ 301
+/blog/it-hojokin-saitakuritsu-up/ /blog/ai-hojokin-fusaitaku-riyu/ 301
 # 重複統合 (2026-08-07): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
 /blog/ai-hojokin-toha-2026/ /blog/kourigyou-ai-hojokin-keihi/ 301
 # 重複統合 (2026-08-08): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
-/blog/ai-hojokin-kojinjigyonushi/ /blog/ai-hojokin-kojin/ 301
+/blog/ai-hojokin-kojinjigyonushi/ /blog/kojin-jigyonushi-ai-hojokin/ 301
 # 重複統合 (2026-08-10): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
-/blog/kojin-jigyonushi-digitalka-kiban-pc/ /blog/ai-hojokin-kojin/ 301
+/blog/kojin-jigyonushi-digitalka-kiban-pc/ /blog/kojin-jigyonushi-ai-hojokin/ 301
 
 # 重複統合 (2026-08-15): 自動パイプラインが既存記事と同テーマの記事を作ってしまったため統合
 /blog/ai-hojokin-inshokuten-katsuyou/  /blog/ai-hojokin-kensetsugyou-katsuyou/  301
