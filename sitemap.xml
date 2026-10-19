@@ -74,10 +74,10 @@
     <loc>https://lp.7senses.co.jp/blog/fudousan-kaisha-joseikin/</loc>
     <lastmod>2026-10-17</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/fudousan-kaisha-joseikin/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/fudousan-kaisha-joseikin/wakekata.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/fudousan-kaisha-joseikin/hikaku.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/fudousan-kaisha-joseikin/shimekiri.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/fudousan-kaisha-joseikin/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/nogyo-hojokin-hensai-fuyou/</loc>
@@ -173,9 +173,9 @@
     <loc>https://lp.7senses.co.jp/blog/chusho-kigyocho-hojokin/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/chusho-kigyocho-hojokin/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyocho-hojokin/junbi-flow.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/chusho-kigyocho-hojokin/shippai-vs.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/chusho-kigyocho-hojokin/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-hojokin-denkaru-kyoyu-clinic/</loc>
