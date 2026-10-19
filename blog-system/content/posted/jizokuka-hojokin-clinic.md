@@ -5,7 +5,7 @@ slug: jizokuka-hojokin-clinic
 keyword: 小規模事業者持続化補助金 クリニック
 category: hojokin
 date: 2026-08-27
-modified: 2026-10-07
+modified: 2026-10-20
 depth: standard
 score: 97
 score_breakdown: {design: 19, seo: 20, editorial: 19, expert: 19, persona: 19, aio: 20}
@@ -121,7 +121,7 @@ faq:
 
 関連する内容については、[ものづくり補助金は美容室で使える？](/blog/monozukuri-hojokin-biyoushitsu/)にまとめています。
 
-<div class="definition-box"><span class="term">新事業進出・ものづくり商業サービス補助金とは</span>、旧ものづくり補助金と新事業進出補助金を統合した後継制度です。第1回の申請受付は2026年8月31日に始まります。締切日は公募要領で最新情報を確認してください。</div>
+<div class="definition-box"><span class="term">新事業進出・ものづくり商業サービス補助金とは</span>、旧ものづくり補助金と新事業進出補助金を統合した後継制度です。第1回の申請受付は2026年9月30日に始まり、締切は2026年10月30日18時です（2026年10月20日に公式サイトで確認）。最新の日程は公式サイトで確認してください。</div>
 
 <figure><img src="/images/jizokuka-hojokin-clinic/seido-vs.png" alt="持続化補助金と代わりに使える2制度の違い: 持続化補助金は業種で一律除外され自由診療でも対象外。代替2制度は医療法人も個人も対象で、検査機器やシステムの投資が対象" loading="lazy"><figcaption>持続化補助金と代わりに使える2制度の違い</figcaption></figure>
 
