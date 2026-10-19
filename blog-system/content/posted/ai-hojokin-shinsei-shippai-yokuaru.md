@@ -38,8 +38,6 @@ faq:
 
 医療機関では、対象外の制度で予算を組む失敗もあります。病床数で使える制度が分かれる例は[電子カルテ情報共有サービスの補助金はクリニック対象外？](/blog/it-hojokin-denkaru-kyoyu-clinic/)で整理しています。
 
-関連する内容は[AI導入補助金の不採択理由7つと再申請までにやるべき対策](/blog/ai-hojokin-futaitaku-riyu/)で整理しています。
-
 関連する内容は[学習塾はAI導入補助金の申請をどう進める？](/blog/gakushujuku-ai-hojokin-shinsei-susumekata/)でも扱っています。
 
 
