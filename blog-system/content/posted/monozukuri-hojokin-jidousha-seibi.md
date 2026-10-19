@@ -5,7 +5,7 @@ slug: monozukuri-hojokin-jidousha-seibi
 keyword: ものづくり補助金 自動車整備
 category: hojokin
 date: 2026-09-06
-modified: 2026-09-06
+modified: 2026-10-20
 depth: standard
 score: 95
 score_breakdown: {design: 19, seo: 19, editorial: 19, expert: 19, persona: 19, aio: 19}
@@ -43,7 +43,7 @@ faq:
 
 <div class="target-reader">この記事は、リフトや塗装ブースなど整備機器の入れ替えを検討していて、ものづくり補助金が自社の整備工場でどう使えるか知りたい経営者向けです。</div>
 
-<p class="freshness">※ 2026年9月時点の情報です。第1回公募の申請受付は2026年8月31日に開始、締切は2026年9月30日18時です。</p>
+<p class="freshness">※ 2026年9月時点の情報です。第1回公募の日程は2026年10月20日時点の内容に更新しました（申請受付は9月30日開始、締切は10月30日18時）。</p>
 
 <div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>自動車整備業で対象になる設備投資5分野</li><li>スキャンツール・診断機がものづくり補助金の対象になるか</li><li>3つの申請枠の補助率・補助上限額</li><li>IT導入補助金との使い分け</li></ul></div>
 
@@ -57,7 +57,7 @@ faq:
 
 <div class="definition-box"><span class="term">ものづくり補助金とは</span>、中小企業庁が実施する「新事業進出・ものづくり商業サービス補助金」の通称です。旧ものづくり補助金と新事業進出補助金が統合され、2026年6月29日に第1回公募要領が公開されました。</div>
 
-<a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>によると、申請受付は2026年8月31日に始まり、締切は2026年9月30日18時と案内されています。採択はゴールではなく、実績報告を終えて初めて交付額が確定します。
+<a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>によると当初、申請受付は2026年8月31日、締切は2026年9月30日18時と案内されていました。その後、<a href="https://shinjigyou-monodukuri.smrj.go.jp/schedule/" target="_blank" rel="noopener">事務局のスケジュール</a>では申請受付が9月30日、締切が2026年10月30日18時に変更されています（2026年10月20日に公式サイトで確認）。採択はゴールではなく、実績報告を終えて初めて交付額が確定します。
 
 過去に「ものづくり・商業・サービス生産性向上促進補助金」という名称で呼ばれていたため、今もその名前で探す経営者が多くいます。**制度の系譜や中小企業者の判定基準は、[ものづくり補助金は資本金オーバーでも対象？](/blog/monozukuri-hojokin-chusho-teigi/)で解説しています。**
 
