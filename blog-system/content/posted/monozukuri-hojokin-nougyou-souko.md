@@ -5,7 +5,7 @@ slug: monozukuri-hojokin-nougyou-souko
 keyword: ものづくり補助金 農業 倉庫
 category: hojokin
 date: 2026-08-29
-modified: 2026-10-03
+modified: 2026-10-20
 depth: standard
 score: 92
 score_breakdown: {design: 18, seo: 19, editorial: 18, expert: 18, persona: 19, aio: 19}
@@ -43,7 +43,7 @@ faq:
 
 <div class="target-reader">この記事は、収穫物の保管・出荷体制を強化したい農業者で、ものづくり補助金が倉庫関連の投資にどこまで使えるか知りたい方向けです。</div>
 
-<p class="freshness">※ 2026年9月時点の情報です。第1回公募の締切は2026年9月30日18時と案内されています。</p>
+<p class="freshness">※ 2026年9月時点の情報です。第1回公募の締切は、2026年10月30日18時に変更されています。</p>
 
 <div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>倉庫の建設費・購入費が対象外になる理由</li><li>集出荷・保管施設で対象になる設備3分野</li><li>農業での採択事例と補助率・上限額</li><li>農業の中小企業者基準と申請の流れ</li></ul></div>
 
@@ -71,7 +71,7 @@ faq:
 
 私たちセブンセンシズ株式会社は、登録支援事業者として補助金の相談を受けています。==「倉庫を建てれば補助金が出る」==という誤解を農業者の方からよく聞きますが、実際には建物費と設備費で扱いが大きく異なります。
 
-<a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>では、申請受付が2026年8月31日に始まり、締切は2026年9月30日18時と案内されています。対象経費の中心は機械装置・システム構築費で、全ての申請枠でこの費目の計上が必須です。
+<a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>では当初、申請受付が2026年8月31日、締切が2026年9月30日18時と案内されていました。その後、<a href="https://shinjigyou-monodukuri.smrj.go.jp/schedule/" target="_blank" rel="noopener">事務局のスケジュール</a>では申請受付が9月30日、締切が2026年10月30日18時に変更されています（2026年10月20日に公式サイトで確認）。対象経費の中心は機械装置・システム構築費で、全ての申請枠でこの費目の計上が必須です。
 
 ## 倉庫の建設・購入費が対象外になる理由
 
