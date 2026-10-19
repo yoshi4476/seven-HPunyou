@@ -85,6 +85,8 @@ faq:
 
 **2026年8月時点で個人事業主が使えるのは「新事業進出・ものづくり商業サービス補助金」です。**中小企業新事業進出補助金とものづくり補助金を統合した制度で、事業再構築補助金からは2段階先にあたります。
 
+つまずきやすい点は[電子カルテ情報共有サービスの補助金はクリニック対象外？](/blog/it-hojokin-denkaru-kyoyu-clinic/)で整理しています。
+
 <figure><img src="/images/jigyou-saikouchiku-kojinjigyonushi-itsumade/seido-flow.png" alt="事業再構築補助金から今の制度までの流れ: 事業再構築補助金は2025年3月終了、新事業進出補助金は2026年6月終了、新事業進出ものづくり補助金が現在申請可能"><figcaption>事業再構築補助金から今の制度までの流れ</figcaption></figure>
 
 第1回の公募要領は2026年6月29日に公開されました。技術的革新性のある製品・サービスの開発、既存事業とは異なる新市場・高付加価値事業への進出、海外市場開拓に向けた設備投資などが対象です。
@@ -120,8 +122,6 @@ faq:
 | 新事業進出・ものづくり商業サービス補助金 | 申請受付中 | 2026年9月30日18時（第1回） |
 
 <a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>によると、申請には電子申請システムでのGビズIDプライムの取得が必要です。GビズIDプライムは発行までに2〜3週間かかるため、締切ぎりぎりでは間に合わない可能性があります。
-
-補助金の申請でGビズIDが必要になる点は他の制度でも共通です。取得の流れを先に知っておきたい場合は[GビズIDプライムの取得方法(最短2週間の逆算スケジュール)](/blog/gbizid-shutoku/)を参考にしてください。
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
