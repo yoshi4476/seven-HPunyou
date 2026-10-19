@@ -5,7 +5,7 @@ slug: jigyou-saikouchiku-biyoushitsu-jirei
 keyword: 事業再構築補助金 美容室
 category: hojokin
 date: 2026-08-24
-modified: 2026-10-07
+modified: 2026-10-20
 depth: standard
 score: 92
 score_breakdown: {design: 18, seo: 18, editorial: 18, expert: 19, persona: 18, aio: 19}
@@ -127,7 +127,7 @@ faq:
 
 <figure><img src="/images/jigyou-saikouchiku-biyoushitsu-jirei/seido-flow.png" alt="事業再構築補助金から今の制度までの流れ: 事業再構築補助金は2025年3月終了、新事業進出補助金は2026年6月終了、新事業進出ものづくり補助金が現在申請可能" loading="lazy"><figcaption>事業再構築補助金から今の制度までの流れ</figcaption></figure>
 
-事業再構築補助金は2025年6月に中小企業新事業進出補助金へ引き継がれ、この制度も2026年6月19日の第4回公募で終了しました。第1回公募要領は2026年6月29日に公開され、申請受付は2026年8月31日に始まる予定です。
+事業再構築補助金は2025年6月に中小企業新事業進出補助金へ引き継がれ、この制度も2026年6月19日の第4回公募で終了しました。第1回公募要領は2026年6月29日に公開され、申請受付は2026年9月30日に始まりました。締切は当初の9月30日から変更された2026年10月30日18時です（2026年10月20日に公式サイトで確認）。
 
 <a href="https://shinjigyou-monodukuri.smrj.go.jp/" target="_blank" rel="noopener">中小企業基盤整備機構の制度公式サイト</a>では、新市場・高付加価値事業への進出や海外市場開拓に向けた設備投資が対象と説明されています。制度名が短期間で変わっているため、古い記事の情報を鵜呑みにしないことが大切です。
 
