@@ -82,3 +82,21 @@
 /blog/ai-hojokin-nagoya-support/ /blog/it-hojokin-nagoya/ 301
 # 旧形式の記事の取り下げ（書き直しても一次性が基準に届かず）→ it-hojokin-seizougyou（2026-10-04）
 /blog/ai-hojokin-seizougyou-jirei-2026/ /blog/it-hojokin-seizougyou/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ kojin-jigyonushi-ai-hojokin（2026-10-20）
+/blog/ai-hojokin-kojin/ /blog/kojin-jigyonushi-ai-hojokin/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ ai-hojokin-security-action-hoshi2（2026-10-20）
+/blog/ai-hojokin-security-action-2star/ /blog/ai-hojokin-security-action-hoshi2/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ ai-hojokin-gbizid-shutoku（2026-10-20）
+/blog/gbizid-shutoku/ /blog/ai-hojokin-gbizid-shutoku/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ ai-hojokin-taisho-tool（2026-10-20）
+/blog/it-hojokin-taisho-tool/ /blog/ai-hojokin-taisho-tool/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ it-donyu-shienjigyosha-erabikata（2026-10-20）
+/blog/it-hojokin-vendor/ /blog/it-donyu-shienjigyosha-erabikata/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ it-donyu-shienjigyosha-erabikata（2026-10-20）
+/blog/it-hojokin-daiko-hiyou/ /blog/it-donyu-shienjigyosha-erabikata/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ ai-hojokin-fusaitaku-riyu（2026-10-20）
+/blog/it-hojokin-saitakuritsu/ /blog/ai-hojokin-fusaitaku-riyu/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ ai-hojokin-clinic-2026-schedule（2026-10-20）
+/blog/it-hojokin-schedule/ /blog/ai-hojokin-clinic-2026-schedule/ 301
+# 原稿の無い旧形式の記事の取り下げ（運用者の決定 2026-10-20: 制度名・日程が古い可能性・28日のクリック0）→ ai-hojokin-taisho-tool（2026-10-20）
+/blog/ai-hojokin-guide-2026/ /blog/ai-hojokin-taisho-tool/ 301
