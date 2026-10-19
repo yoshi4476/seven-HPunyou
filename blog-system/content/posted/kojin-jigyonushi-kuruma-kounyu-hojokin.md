@@ -1,6 +1,6 @@
 ---
-title: 個人事業主の車購入に補助金は使える？電動車の新車と3つの条件
-description: 個人事業主が車の購入に使える主な国の補助金は、電動車の新車が対象のCEV補助金です。持続化・新事業進出・デジタル化AI導入の各補助金は車両が対象外です。白ナンバーの条件、受付終了見込みの12月までの流れ、つまずく失敗を2026年10月時点の公募要領で整理します。
+title: 個人事業主の車購入に補助金は使える？持続化補助金では買えない
+description: 個人事業主が車の購入費に使える国の補助金は、確かめた4制度のうち電動車の新車が対象のCEV補助金だけです。キッチンカーも持続化補助金の対象外。白ナンバーの条件、受付終了見込みの12月までの流れ、申請しないほうがよい場合を2026年10月時点の公募要領で整理します。
 slug: kojin-jigyonushi-kuruma-kounyu-hojokin
 keyword: 個人事業主 車 購入 補助金
 category: hojokin
@@ -49,13 +49,13 @@ faq:
 
 **今回確かめた国の4制度のうち、車の購入費そのものに使えるのはCEV補助金だけです。**事業向けの代表的な補助金は、どれも車両を対象外経費に挙げています。
 
+あわせて[電子カルテ情報共有サービスの補助金はクリニック対象外？](/blog/it-hojokin-denkaru-kyoyu-clinic/)もご覧ください。
+
 実際の進め方は[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)でも扱っています。
 
 関連する内容として[農業機械補助金は交付決定前の発注で対象外](/blog/nougyou-kikai-hojokin/)も公開しています。
 
 関連する内容を先に押さえるなら、[ものづくり補助金は美容室・小売業で使える？](/blog/monozukuri-hojokin-biyoushitsu/)が参考になります。
-
-対象になる範囲は[外国人雇用の助成金は個人事業主も対象](/blog/gaikokujin-koyou-joseikin-kojinjigyonushi/)でも扱っています。
 
 <figure><img src="/images/kojin-jigyonushi-kuruma-kounyu-hojokin/seido-hikaku.png" alt="補助金ごとの車両の扱い: CEV補助金は電動車の新車が対象、持続化補助金と新事業進出・ものづくり補助金とデジタル化・AI導入補助金は車の購入費が対象外" loading="lazy"><figcaption>補助金ごとの車両の扱い</figcaption></figure>
 
