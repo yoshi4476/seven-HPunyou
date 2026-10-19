@@ -5,7 +5,7 @@ slug: inshokuten-ai-hojokin-shinsei-susumekata
 keyword: 飲食店 AI導入補助金の申請の進め方
 category: hojokin
 date: 2026-09-15
-modified: 2026-10-07
+modified: 2026-10-20
 depth: standard
 eyecatch: /images/inshokuten-ai-hojokin-shinsei-susumekata/eyecatch.png
 score: 95
@@ -128,7 +128,7 @@ faq:
 
 <a href="https://prtimes.jp/main/html/rd/p/000000332.000001049.html" target="_blank" rel="noopener">飲食店向けメディアを運営する株式会社シンクロ・フードの調査</a>によると、<strong>飲食店の閑散期は2月(61.6%)・1月(50.0%)・8月(38.7%)が「月平均より売上が低い」と回答した割合の上位</strong>でした。業界で「ニッパチ」と呼ばれる2月・8月は、特に売上が落ち込みやすい時期とされています。
 
-<a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の公式スケジュール</a>によると、<strong>2026年9月時点で通常枠・インボイス枠・セキュリティ対策推進枠の1〜5次締切分は2026年9月29日17時、交付決定は同年11月9日予定</strong>と案内されています。交付決定から導入・実績報告までの期間を逆算し、自店の閑散期に導入作業が重なるよう公募回を選ぶと、営業への影響を抑えられます。
+<a href="https://it-shien.smrj.go.jp/schedule/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の公式スケジュール</a>によると、<strong>2026年9月時点で通常枠・インボイス枠・セキュリティ対策推進枠の1〜5次締切分は2026年9月29日17時、交付決定は同年11月9日予定</strong>と案内されていました。その後、9月29日の締切は終了し、現在は通常枠などの6次締切分が2026年10月30日17時、交付決定は12月10日予定です（2026年10月20日に公式サイトで確認）。交付決定から導入・実績報告までの期間を逆算し、自店の閑散期に導入作業が重なるよう公募回を選ぶと、営業への影響を抑えられます。
 
 <div class="caution-box"><span class="box-title">注意: 交付決定前の発注はNG</span><br>交付決定を受け取る前にツールを発注・契約・支払いすると補助対象外になります。通知が来るまでは、見積もり以上の行動を取らないでください。</div>
 
