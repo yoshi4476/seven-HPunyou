@@ -5,7 +5,7 @@ slug: monozukuri-hojokin-unsougyou
 keyword: ものづくり補助金 運送業
 category: hojokin
 date: 2026-08-22
-modified: 2026-09-01
+modified: 2026-10-20
 depth: standard
 updated: 2026-09-06
 score: 93
@@ -44,7 +44,7 @@ faq:
 
 <div class="target-reader">この記事は、庫内作業の自動化や新しい物流サービスへの参入を検討していて、ものづくり補助金が自社の運送業でどう使えるか知りたい経営者向けです。</div>
 
-<p class="freshness">※ 2026年9月時点の情報です。第1回公募の申請受付は2026年8月31日に開始予定です。</p>
+<p class="freshness">※ 2026年9月時点の情報です。第1回公募の日程は2026年10月20日時点の内容に更新しました。</p>
 
 <div class="lead-summary"><p class="lst-title">この記事でわかること</p><ul><li>運送業で対象になる設備投資3分野</li><li>トラック本体・汎用車両が対象外になる理由</li><li>3つの申請枠の補助率・補助上限額</li><li>IT導入補助金との使い分け</li></ul></div>
 
@@ -64,7 +64,7 @@ faq:
 
 私たちセブンセンシズ株式会社（大阪市東成区・2020年3月創業）は、登録支援事業者として補助金の相談を受けています。==「ものづくり補助金は工場を持つ製造業向け」==という思い込みを運送業の経営者からもよく聞きます。
 
-<a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>では、申請受付が2026年8月31日に始まり、締切は2026年9月30日18時と案内されています。採択はゴールではなく、実績報告を終えて初めて交付額が確定する点も忘れずに押さえておいてください。
+<a href="https://www.chusho.meti.go.jp/koukai/hojyokin/kobo/2026/260630002.html" target="_blank" rel="noopener">中小企業庁が公開した第1回公募要領</a>では当初、申請受付が2026年8月31日、締切が2026年9月30日18時と案内されていました。その後、<a href="https://shinjigyou-monodukuri.smrj.go.jp/schedule/" target="_blank" rel="noopener">事務局のスケジュール</a>では申請受付が9月30日、締切が2026年10月30日18時に変更されています（2026年10月20日に公式サイトで確認）。採択はゴールではなく、実績報告を終えて初めて交付額が確定する点も忘れずに押さえておいてください。
 
 ## 「生産性向上促進補助金」という名前で探している場合
 
