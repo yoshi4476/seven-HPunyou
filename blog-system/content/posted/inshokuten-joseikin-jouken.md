@@ -200,7 +200,7 @@ AI導入補助金など経済産業省系の補助金とは、数え方が違う
 
 <div style="text-align:center;margin:32px 0;"><a href="https://lp.7senses.co.jp/#contact" class="cta-button" target="_blank" rel="noopener">AI導入補助金の無料相談</a></div>
 
-当社はAI導入補助金の登録支援事業者です。MEO運用サービス「G-ran」では通算3,200店舗以上を運用し、飲食店の現場の事情も見てきました。
+当社はAI導入補助金の登録支援事業者です。MEO運用サービス「G-ran」を含むAIO・SEO・MEOの支援では累計3,200件以上（うちMEO 2,000件以上）を運用し、飲食店の現場の事情も見てきました。
 
 自社が対象になるかを確かめたい場合は[3分の適性診断（無料・8問）](https://lp.7senses.co.jp/#diagnosis)もご利用ください。
 
