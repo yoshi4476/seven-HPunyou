@@ -49,13 +49,13 @@ faq:
 
 **今回確かめた国の4制度のうち、車の購入費そのものに使えるのはCEV補助金だけです。**事業向けの代表的な補助金は、どれも車両を対象外経費に挙げています。
 
+あわせて[歯科医院の助成金、対象外になる5つの失敗](/blog/shika-iin-joseikin-taisho/)もご覧ください。
+
+関連する内容として[農業の補助金でトラクターは買える？](/blog/nougyou-hojokin-tractor/)も公開しています。
+
 あわせて[電子カルテ情報共有サービスの補助金はクリニック対象外？](/blog/it-hojokin-denkaru-kyoyu-clinic/)もご覧ください。
 
 実際の進め方は[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)でも扱っています。
-
-関連する内容として[農業機械補助金は交付決定前の発注で対象外](/blog/nougyou-kikai-hojokin/)も公開しています。
-
-関連する内容を先に押さえるなら、[ものづくり補助金は美容室・小売業で使える？](/blog/monozukuri-hojokin-biyoushitsu/)が参考になります。
 
 <figure><img src="/images/kojin-jigyonushi-kuruma-kounyu-hojokin/seido-hikaku.png" alt="補助金ごとの車両の扱い: CEV補助金は電動車の新車が対象、持続化補助金と新事業進出・ものづくり補助金とデジタル化・AI導入補助金は車の購入費が対象外" loading="lazy"><figcaption>補助金ごとの車両の扱い</figcaption></figure>
 
