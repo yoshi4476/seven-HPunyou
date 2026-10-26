@@ -217,10 +217,10 @@
     <loc>https://lp.7senses.co.jp/blog/shika-iin-joseikin-taisho/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shika-iin-joseikin-taisho/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shika-iin-joseikin-taisho/kyotsu.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shika-iin-joseikin-taisho/junban.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shika-iin-joseikin-taisho/ng-ok.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shika-iin-joseikin-taisho/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/it-donyu-shienjigyosha-erabikata/</loc>
@@ -547,10 +547,10 @@
     <loc>https://lp.7senses.co.jp/blog/nail-salon-hojokin-hikaku/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nail-salon-hojokin-hikaku/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nail-salon-hojokin-hikaku/hojokin3.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nail-salon-hojokin-hikaku/flow4.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/nail-salon-hojokin-hikaku/erabikata-vs.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/nail-salon-hojokin-hikaku/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/nail-salon-hojokin-tejun/</loc>
@@ -1298,7 +1298,7 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/seido/monozukuri/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -1313,38 +1313,38 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/hojokin/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/b29d00b8/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/bbcbe660/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/1b7e7599/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/f8d4ea56/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/5903bdb5/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/glossary/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
   </url>
 </urlset>
