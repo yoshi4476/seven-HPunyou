@@ -51,13 +51,13 @@ faq:
 
 **宿泊業が使える補助金の入口は、デジタル化・AI導入補助金、新事業進出等補助金、持続化補助金の3つです。**それぞれ対象にする投資の規模と目的が異なります。
 
+関連する内容として[歯科医院の助成金、対象外になる5つの失敗](/blog/shika-iin-joseikin-taisho/)も公開しています。
+
+近い論点を[農業の補助金でトラクターは買える？](/blog/nougyou-hojokin-tractor/)で扱っています。
+
+近い論点を[ネイルサロンの補助金](/blog/nail-salon-hojokin-hikaku/)で扱っています。
+
 あわせて[電子カルテ情報共有サービスの補助金はクリニック対象外？](/blog/it-hojokin-denkaru-kyoyu-clinic/)もご覧ください。
-
-近い論点を[個人事業主がパソコンを補助金で買う方法｜3制度を比較](/blog/kojinjigyonushi-pc-hojokin-hikaku/)で扱っています。
-
-関連する内容は[ものづくり補助金はクリニックで使える？](/blog/monozukuri-hojokin-clinic/)で整理しています。
-
-関連する内容は[ものづくり補助金は美容室・小売業で使える？](/blog/monozukuri-hojokin-biyoushitsu/)で整理しています。
 
 <a href="https://it-shien.smrj.go.jp/applicant/subsidy/normal/" target="_blank" rel="noopener">デジタル化・AI導入補助金2026の通常枠ページ</a>によると、この制度はソフトウェア・クラウドサービスの導入費用を補助します。宿泊業ならPMSや予約システムが対象になりやすい分野です。
 
