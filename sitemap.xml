@@ -477,10 +477,10 @@
     <loc>https://lp.7senses.co.jp/blog/shukuhakugyou-hojokin-erabikata/</loc>
     <lastmod>2026-10-07</lastmod>
     <priority>0.7</priority>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shukuhakugyou-hojokin-erabikata/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shukuhakugyou-hojokin-erabikata/hojokin-list.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shukuhakugyou-hojokin-erabikata/erabikata-vs.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/shukuhakugyou-hojokin-erabikata/step-flow.png</image:loc></image:image>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/shukuhakugyou-hojokin-erabikata/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/chusho-kigyo-joseikin/</loc>
@@ -967,10 +967,10 @@
     <loc>https://lp.7senses.co.jp/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/</loc>
     <lastmod>2026-10-20</lastmod>
     <priority>0.7</priority>
-    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/thumbnail.webp</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/monozukuri-hojokin-kyuyo-shikyu-sogaku/fukumu-list.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/monozukuri-hojokin-kyuyo-shikyu-sogaku/keisan-3step.png</image:loc></image:image>
     <image:image><image:loc>https://lp.7senses.co.jp/images/monozukuri-hojokin-kyuyo-shikyu-sogaku/keisan-ng-vs.png</image:loc></image:image>
+    <image:image><image:loc>https://lp.7senses.co.jp/images/blog/monozukuri-hojokin-kyuyo-shikyu-sogaku/thumbnail.webp</image:loc></image:image>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/blog/jizokuka-hojokin-chusho-kigyo-taisho/</loc>
@@ -1313,38 +1313,38 @@
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/hojokin/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/compare/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/b29d00b8/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/bbcbe660/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/1b7e7599/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/f8d4ea56/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/5903bdb5/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/topics/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
   <url>
     <loc>https://lp.7senses.co.jp/glossary/</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-10-31</lastmod>
   </url>
 </urlset>
